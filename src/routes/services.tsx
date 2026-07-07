@@ -87,6 +87,8 @@ function ServicesPage() {
         </div>
       </section>
 
+      <FeaturedLandingPages />
+
       <ServicesGroup
         icon={Building2}
         eyebrow="לחברות וסטארטאפים"
