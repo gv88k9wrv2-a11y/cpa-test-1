@@ -17,6 +17,7 @@ import {
   Users,
 } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
+import { ProcessSection, TestimonialsSection, WhyUsSection } from "../components/home-sections";
 import heroImage from "../assets/hero-office.jpg";
 
 const FAQS = [
@@ -226,6 +227,9 @@ function HomePage() {
         </div>
       </section>
 
+      <WhyUsSection />
+      <ProcessSection />
+
       {/* ABOUT */}
       <section className="border-y border-border/60 bg-secondary/50 py-20">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:items-center">
@@ -307,6 +311,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <TestimonialsSection />
 
       {/* FAQ */}
       <section id="faq" className="py-20">
