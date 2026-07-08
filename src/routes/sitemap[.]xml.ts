@@ -22,8 +22,19 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/cpa-freelancers", changefreq: "monthly", priority: "0.9" },
           { path: "/cpa-international", changefreq: "monthly", priority: "0.9" },
           { path: "/cpa-foreign-companies", changefreq: "monthly", priority: "0.9" },
+          { path: "/tax-consulting", changefreq: "monthly", priority: "0.9" },
+          { path: "/audit", changefreq: "monthly", priority: "0.9" },
+          { path: "/bookkeeping", changefreq: "monthly", priority: "0.9" },
+          { path: "/payroll", changefreq: "monthly", priority: "0.9" },
+          { path: "/team", changefreq: "monthly", priority: "0.7" },
+          { path: "/faq", changefreq: "monthly", priority: "0.8" },
+          { path: "/blog", changefreq: "weekly", priority: "0.8" },
+          { path: "/blog/tax-planning-2026", changefreq: "monthly", priority: "0.7" },
+          { path: "/blog/startup-equity-102", changefreq: "monthly", priority: "0.7" },
+          { path: "/blog/crypto-reporting", changefreq: "monthly", priority: "0.7" },
           { path: "/about", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", changefreq: "yearly", priority: "0.6" },
+          { path: "/accessibility", changefreq: "yearly", priority: "0.3" },
         ];
 
         const urls = entries.map((e) =>
