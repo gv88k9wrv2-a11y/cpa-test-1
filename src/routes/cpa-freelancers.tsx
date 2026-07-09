@@ -124,6 +124,7 @@ export const Route = createFileRoute("/cpa-freelancers")({
         },
       ]}
       faqs={FAQS}
+      resources={RESOURCES}
       ctaHeadline="מוכן לקבל שקט נפשי? קבע פגישת ייעוץ ראשונית."
     />
   ),
