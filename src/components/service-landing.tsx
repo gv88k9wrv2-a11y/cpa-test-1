@@ -38,6 +38,7 @@ export function ServiceLanding({
   faqs,
   ctaHeadline = "מוכנים להתקדם? נשמח לפגישת ייעוץ ראשונית ללא התחייבות.",
   icon: Icon,
+  resources,
 }: ServiceLandingProps) {
   return (
     <div className="min-h-screen bg-background">
