@@ -122,6 +122,7 @@ export const Route = createFileRoute("/cpa-startups")({
         },
       ]}
       faqs={FAQS}
+      resources={RESOURCES}
       ctaHeadline="חושבים על הקמת סטארטאפ או לפני גיוס? בואו נדבר."
     />
   ),
