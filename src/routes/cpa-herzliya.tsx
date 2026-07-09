@@ -118,6 +118,7 @@ export const Route = createFileRoute("/cpa-herzliya")({
         },
       ]}
       faqs={FAQS}
+      resources={RESOURCES}
     />
   ),
 });
