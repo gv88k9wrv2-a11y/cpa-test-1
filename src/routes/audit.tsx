@@ -108,6 +108,7 @@ export const Route = createFileRoute("/audit")({
         },
       ]}
       faqs={FAQS}
+      resources={RESOURCES}
     />
   ),
 });
