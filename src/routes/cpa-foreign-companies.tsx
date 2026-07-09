@@ -126,6 +126,7 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
         },
       ]}
       faqs={FAQS}
+      resources={RESOURCES}
       ctaHeadline="שוקלים כניסה לשוק הישראלי? נשמח לתאם שיחת ייעוץ ראשונית."
     />
   ),
