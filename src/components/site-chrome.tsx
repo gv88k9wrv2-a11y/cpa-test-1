@@ -28,8 +28,19 @@ const MAIN_LINKS = [
   { to: "/contact", label: "צור קשר" },
 ] as const;
 
+type ServiceRoute =
+  | "/bookkeeping"
+  | "/payroll"
+  | "/audit"
+  | "/tax-consulting"
+  | "/cpa-startups"
+  | "/cpa-freelancers"
+  | "/cpa-foreign-companies"
+  | "/cpa-herzliya"
+  | "/cpa-international";
+
 type ServiceItem = {
-  to: string;
+  to: ServiceRoute;
   label: string;
   desc: string;
   icon: typeof Building2;
