@@ -52,6 +52,10 @@ export const Route = createFileRoute("/audit")({
         content: "ביקורת מקצועית לחברות, עמותות ושותפויות – Israeli GAAP ו-IFRS.",
       },
       { property: "og:url", content: "/audit" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/audit" }],
     scripts: [

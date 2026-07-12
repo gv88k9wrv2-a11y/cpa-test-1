@@ -45,6 +45,10 @@ export const Route = createFileRoute("/tax-consulting")({
       { property: "og:title", content: "ייעוץ מס | נמרודי ושות׳" },
       { property: "og:description", content: "ייעוץ מס אסטרטגי, חוות דעת מקצועיות וליווי מול רשות המסים." },
       { property: "og:url", content: "/tax-consulting" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/tax-consulting" }],
     scripts: [

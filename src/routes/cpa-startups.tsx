@@ -53,6 +53,10 @@ export const Route = createFileRoute("/cpa-startups")({
           "ליווי חשבונאי ופיננסי לסטארטאפים בכל שלב – מהקמה ועד גיוסים, אופציות ו-Exit.",
       },
       { property: "og:url", content: "/cpa-startups" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/cpa-startups" }],
     scripts: [
