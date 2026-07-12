@@ -80,6 +80,7 @@ const ORG_JSONLD = {
   description:
     "משרד רואי חשבון בוטיק בהרצליה פיתוח. למעלה מ־25 שנות ניסיון בליווי חברות, סטארטאפים, עצמאים ופרילנסרים – ביקורת, דיווח, ייעוץ מס וגיוסי הון.",
   url: "https://www.nimrodi.co.il",
+  image: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg",
   telephone: "+972-9-9582211",
   areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
   address: {
@@ -89,7 +90,24 @@ const ORG_JSONLD = {
   },
   founder: { "@type": "Person", name: "שלמה נמרודי" },
   priceRange: "$$",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+      opens: "08:30",
+      closes: "18:00",
+    },
+  ],
   sameAs: ["https://maps.app.goo.gl/jxWz9287qp3QRVFg8"],
+};
+
+const WEBSITE_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "נמרודי ושות׳ – רואי חשבון",
+  url: "https://www.nimrodi.co.il",
+  inLanguage: "he-IL",
+  publisher: { "@type": "Organization", name: "נמרודי ושות׳ – רואי חשבון" },
 };
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -99,6 +117,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#1a2545" },
       { name: "author", content: "נמרודי ושות׳ – רואי חשבון" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "נמרודי ושות׳ – רואי חשבון" },
       { property: "og:locale", content: "he_IL" },
@@ -118,6 +137,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         type: "application/ld+json",
         children: JSON.stringify(ORG_JSONLD),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(WEBSITE_JSONLD),
       },
     ],
   }),
