@@ -242,7 +242,8 @@ export function SiteHeader() {
           <MobileMenu />
         </div>
       </div>
-    </header>
+      </header>
+    </>
   );
 }
 
