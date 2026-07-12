@@ -12,6 +12,10 @@ export const Route = createFileRoute("/accessibility")({
       },
       { property: "og:title", content: "הצהרת נגישות – נמרודי ושות׳" },
       { property: "og:url", content: "/accessibility" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/accessibility" }],
   }),
@@ -23,6 +27,7 @@ function AccessibilityPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
+      <main id="main-content">
       <section className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
           <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
@@ -68,6 +73,8 @@ function AccessibilityPage() {
           </p>
         </div>
       </section>
+
+      </main>
 
       <SiteFooter />
       <FloatingWhatsApp />

@@ -122,7 +122,14 @@ const ALL_SERVICES: ServiceItem[] = SERVICE_GROUPS.flatMap((g) => g.items);
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md">
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:right-2 focus:z-[100] focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground focus:shadow-lg"
+      >
+        דלג לתוכן העיקרי
+      </a>
+      <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         {/* Logo */}
         <Link to="/" className="flex min-w-0 flex-col leading-tight">
@@ -235,7 +242,8 @@ export function SiteHeader() {
           <MobileMenu />
         </div>
       </div>
-    </header>
+      </header>
+    </>
   );
 }
 

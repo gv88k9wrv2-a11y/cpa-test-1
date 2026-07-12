@@ -59,6 +59,10 @@ export const Route = createFileRoute("/")({
           "משרד בוטיק עם מעל 25 שנות ניסיון – ליווי חשבונאי, ייעוץ מס וניהול כספים לחברות, סטארטאפים ועצמאים.",
       },
       { property: "og:url", content: "/" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -124,6 +128,7 @@ function HomePage() {
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
+      <main id="main-content">
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border/50">
         <div className="absolute inset-0">
@@ -373,6 +378,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      </main>
 
       <SiteFooter />
       <FloatingWhatsApp />

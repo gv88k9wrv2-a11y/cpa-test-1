@@ -142,6 +142,10 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: loaderData.post.excerpt },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `/blog/${params.slug}` },
+        { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
         { property: "article:published_time", content: loaderData.post.date },
         { property: "article:section", content: loaderData.post.category },
       ],
@@ -177,6 +181,7 @@ function PostNotFound() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
+      <main id="main-content">
       <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
         <h1 className="font-display text-3xl font-bold text-primary">המאמר לא נמצא</h1>
         <p className="mt-3 text-muted-foreground">ייתכן שהקישור השתנה או שהמאמר הוסר.</p>
@@ -187,6 +192,7 @@ function PostNotFound() {
           חזרה לבלוג
         </Link>
       </div>
+      </main>
       <SiteFooter />
     </div>
   );

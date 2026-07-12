@@ -18,6 +18,10 @@ export const Route = createFileRoute("/contact")({
           "טלפון, וואטסאפ ופרטי הגעה למשרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח.",
       },
       { property: "og:url", content: "/contact" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),
@@ -29,6 +33,7 @@ function ContactPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
+      <main id="main-content">
       <section className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
           <div className="text-sm font-semibold uppercase tracking-widest text-gold">
@@ -130,6 +135,8 @@ function ContactPage() {
           </form>
         </div>
       </section>
+
+      </main>
 
       <SiteFooter />
       <FloatingWhatsApp />
