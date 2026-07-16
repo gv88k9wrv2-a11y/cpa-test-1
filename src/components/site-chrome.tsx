@@ -223,7 +223,7 @@ export function SiteHeader() {
         <div className="flex shrink-0 items-center gap-2">
           <Link
             to="/en"
-            className="hidden items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary sm:inline-flex"
+            className="inline-flex items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary"
             aria-label="English version"
           >
             EN
@@ -313,7 +313,14 @@ function MobileMenu() {
           </div>
 
           {/* Contact */}
-          <div className="mt-4 grid grid-cols-2 gap-2 border-t border-border pt-4">
+          <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border pt-4">
+            <Link
+              to="/en"
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary"
+              aria-label="English version"
+            >
+              EN / English
+            </Link>
             <a
               href="tel:+97299582211"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-primary px-3 py-2.5 text-sm font-semibold text-primary"
