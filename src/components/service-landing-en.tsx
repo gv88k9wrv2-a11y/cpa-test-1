@@ -20,6 +20,8 @@ export type ServiceLandingEnProps = {
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
   icon: LucideIcon;
+  heroImage?: string;
+  heroImageAlt?: string;
 };
 
 export function ServiceLandingEn({
@@ -31,6 +33,8 @@ export function ServiceLandingEn({
   faqs,
   ctaHeadline = "Ready to move forward? Book a free introductory consultation.",
   icon: Icon,
+  heroImage,
+  heroImageAlt,
 }: ServiceLandingEnProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
