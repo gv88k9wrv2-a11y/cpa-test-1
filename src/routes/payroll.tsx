@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ReceiptText } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-payroll.jpg";
 
 const FAQS = [
   {
@@ -64,6 +65,8 @@ export const Route = createFileRoute("/payroll")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="תלושי שכר וחישובי שכר על שולחן"
       icon={ReceiptText}
       eyebrow="שכר ותלושים"
       title="שירותי שכר מלאים – דיוק, זמן וציות רגולטורי"

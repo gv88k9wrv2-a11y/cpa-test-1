@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Award, GraduationCap, Linkedin, Mail } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
+import teamPhoto from "../assets/team-photo.jpg";
 
 const TEAM = [
   {
@@ -66,6 +67,21 @@ function TeamPage() {
             צוות מקצועי, זמין ומחויב – עם ניסיון של עשרות שנים בליווי חברות, סטארטאפים
             ועצמאים.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-border/60">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
+            <img
+              src={teamPhoto}
+              alt="צוות משרד רואי חשבון נמרודי ושות׳"
+              width={1024}
+              height={1024}
+              loading="lazy"
+              className="h-72 w-full object-cover sm:h-96"
+            />
+          </div>
         </div>
       </section>
 

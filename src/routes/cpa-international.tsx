@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-international.jpg";
 
 const FAQS = [
   {
@@ -65,6 +66,8 @@ export const Route = createFileRoute("/cpa-international")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="מפת עולם עם חיבורי מיסוי בינלאומי"
       icon={Plane}
       eyebrow="ייעוץ מס בינלאומי ורילוקיישן"
       title="ייעוץ מס בינלאומי, רילוקיישן ותושבים חוזרים"

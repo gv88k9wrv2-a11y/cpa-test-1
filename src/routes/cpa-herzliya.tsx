@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MapPin } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-startups.jpg";
 
 const FAQS = [
   {
@@ -60,6 +61,8 @@ export const Route = createFileRoute("/cpa-herzliya")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="משרד רואי חשבון בהרצליה פיתוח"
       icon={MapPin}
       eyebrow="רואה חשבון בהרצליה"
       title="רואה חשבון בהרצליה פיתוח – שירות בוטיק מקומי ואישי"

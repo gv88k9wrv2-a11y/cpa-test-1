@@ -6,6 +6,15 @@ import {
   SiteHeader,
   WHATSAPP_URL,
 } from "../components/site-chrome";
+import imgTax from "../assets/blog-tax-planning.jpg";
+import imgEquity from "../assets/blog-equity.jpg";
+import imgCrypto from "../assets/blog-crypto.jpg";
+
+const POST_IMAGES: Record<string, string> = {
+  "tax-planning-2026": imgTax,
+  "startup-equity-102": imgEquity,
+  "crypto-reporting": imgCrypto,
+};
 
 type PostContent = {
   title: string;
@@ -199,7 +208,8 @@ function PostNotFound() {
 }
 
 function BlogPostPage() {
-  const { post } = Route.useLoaderData() as { post: PostContent; slug: string };
+  const { post, slug } = Route.useLoaderData() as { post: PostContent; slug: string };
+  const heroImg = POST_IMAGES[slug];
 
   return (
     <div className="min-h-screen bg-background">
@@ -234,6 +244,12 @@ function BlogPostPage() {
             {post.readMin} דק׳ קריאה
           </span>
         </div>
+
+        {heroImg ? (
+          <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
+            <img src={heroImg} alt={post.title} width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-96" />
+          </div>
+        ) : null}
 
         <p className="mt-8 text-lg leading-relaxed text-foreground/90">{post.excerpt}</p>
 

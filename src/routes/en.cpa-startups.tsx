@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Rocket } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
+import heroImg from "../assets/service-startups.jpg";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
@@ -31,6 +32,8 @@ export const Route = createFileRoute("/en/cpa-startups")({
   }),
   component: () => (
     <ServiceLandingEn
+      heroImage={heroImg}
+      heroImageAlt="Nimrodi & Co. — service illustration"
       icon={Rocket}
       eyebrow="Startups & Tech"
       title="CPA for Israeli startups — from incorporation to exit"
