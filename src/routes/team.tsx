@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Award, GraduationCap, Linkedin, Mail } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
+import teamPhoto from "../assets/team-photo.jpg";
 
 const TEAM = [
   {
