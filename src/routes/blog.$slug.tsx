@@ -245,6 +245,12 @@ function BlogPostPage() {
           </span>
         </div>
 
+        {heroImg ? (
+          <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
+            <img src={heroImg} alt={post.title} width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-96" />
+          </div>
+        ) : null}
+
         <p className="mt-8 text-lg leading-relaxed text-foreground/90">{post.excerpt}</p>
 
         <div className="mt-8 space-y-10">
