@@ -20,6 +20,8 @@ export type ServiceLandingProps = {
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
   icon: LucideIcon;
+  heroImage?: string;
+  heroImageAlt?: string;
 };
 
 export function ServiceLanding({
