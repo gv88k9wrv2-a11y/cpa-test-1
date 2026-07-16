@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import heroImg from "../assets/contact-office.jpg";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 
@@ -48,6 +49,14 @@ function ContactPage() {
           </p>
         </div>
       </section>
+      <section className="border-b border-border/60">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
+            <img src={heroImg} alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳" width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-80" />
+          </div>
+        </div>
+      </section>
+
 
       <section className="py-16">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-5">
