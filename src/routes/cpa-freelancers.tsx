@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Briefcase } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-freelancers.jpg";
 
 const FAQS = [
   {
@@ -65,6 +66,8 @@ export const Route = createFileRoute("/cpa-freelancers")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="פרילנסרית עובדת במשרד ביתי מודרני"
       icon={Briefcase}
       eyebrow="רואה חשבון לעצמאים ופרילנסרים"
       title="רואה חשבון לעצמאים ופרילנסרים – שקט נפשי מלא"

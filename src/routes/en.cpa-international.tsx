@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
+import heroImg from "../assets/service-international.jpg";
+import heroImg from "../assets/service-international.jpg";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
@@ -29,6 +31,8 @@ export const Route = createFileRoute("/en/cpa-international")({
   }),
   component: () => (
     <ServiceLandingEn
+      heroImage={heroImg}
+      heroImageAlt="Nimrodi & Co. — service illustration"
       icon={Plane}
       eyebrow="International Tax"
       title="Relocation, olim and cross-border tax planning"

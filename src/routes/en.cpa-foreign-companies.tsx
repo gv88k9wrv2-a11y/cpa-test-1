@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Globe2 } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
+import heroImg from "../assets/service-foreign.jpg";
+import heroImg from "../assets/service-foreign.jpg";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
@@ -30,6 +32,8 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
   }),
   component: () => (
     <ServiceLandingEn
+      heroImage={heroImg}
+      heroImageAlt="Nimrodi & Co. — service illustration"
       icon={Globe2}
       eyebrow="Foreign Companies in Israel"
       title="Full local support for international companies entering Israel"

@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileSearch } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-audit.jpg";
 
 const FAQS = [
   {
@@ -64,6 +65,8 @@ export const Route = createFileRoute("/audit")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="זכוכית מגדלת מעל דוחות כספיים"
       icon={FileSearch}
       eyebrow="ביקורת ודוחות כספיים"
       title="ביקורת דוחות כספיים – אמון מקצועי שמחזיק לאורך שנים"

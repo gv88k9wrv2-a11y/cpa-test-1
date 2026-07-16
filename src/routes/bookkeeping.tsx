@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Calculator } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-bookkeeping.jpg";
 
 const FAQS = [
   {
@@ -64,6 +65,8 @@ export const Route = createFileRoute("/bookkeeping")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="עמדת הנהלת חשבונות עם מסכי דשבורד"
       icon={Calculator}
       eyebrow="הנהלת חשבונות"
       title="הנהלת חשבונות דיגיטלית – שקיפות מלאה בזמן אמת"

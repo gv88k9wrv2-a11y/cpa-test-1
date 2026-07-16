@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-tax.jpg";
 
 const FAQS = [
   {
@@ -57,6 +58,8 @@ export const Route = createFileRoute("/tax-consulting")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="מסמכי תכנון מס על שולחן משרדי יוקרתי"
       icon={FileSpreadsheet}
       eyebrow="ייעוץ מס"
       title="ייעוץ מס אסטרטגי לחברות, בעלי שליטה ויחידים"

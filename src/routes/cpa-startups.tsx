@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Rocket } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-startups.jpg";
 
 const FAQS = [
   {
@@ -65,6 +66,8 @@ export const Route = createFileRoute("/cpa-startups")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="משרד סטארטאפ בהרצליה פיתוח"
       icon={Rocket}
       eyebrow="רואה חשבון לסטארטאפים"
       title="רואה חשבון לסטארטאפים – מהקמה ועד Exit"

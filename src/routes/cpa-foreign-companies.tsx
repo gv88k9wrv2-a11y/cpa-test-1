@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Globe2 } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
+import heroImg from "../assets/service-foreign.jpg";
 
 const FAQS = [
   {
@@ -53,6 +54,8 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
   }),
   component: () => (
     <ServiceLanding
+      heroImage={heroImg}
+      heroImageAlt="מגדל משרדים עם דגלים של חברות בינלאומיות"
       icon={Globe2}
       eyebrow="ליווי חברות זרות בישראל"
       title="ליווי חברות זרות בהקמת פעילות בישראל"
