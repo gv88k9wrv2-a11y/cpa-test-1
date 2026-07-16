@@ -6,6 +6,15 @@ import {
   SiteHeader,
   WHATSAPP_URL,
 } from "../components/site-chrome";
+import imgTax from "../assets/blog-tax-planning.jpg";
+import imgEquity from "../assets/blog-equity.jpg";
+import imgCrypto from "../assets/blog-crypto.jpg";
+
+const POST_IMAGES: Record<string, string> = {
+  "tax-planning-2026": imgTax,
+  "startup-equity-102": imgEquity,
+  "crypto-reporting": imgCrypto,
+};
 
 type PostContent = {
   title: string;
