@@ -70,15 +70,21 @@ function ContactPage() {
             <ContactCard
               icon={MessageCircle}
               title="וואטסאפ"
-              value="054-5207207"
+              value="054-6688681"
               href={WHATSAPP_URL}
               accent
             />
             <ContactCard
+              icon={Mail}
+              title="דוא״ל"
+              value="office@nimrodi.co.il"
+              href="mailto:office@nimrodi.co.il"
+            />
+            <ContactCard
               icon={MapPin}
               title="כתובת המשרד"
-              value="הרצליה פיתוח, ישראל"
-              href="https://maps.app.goo.gl/jxWz9287qp3QRVFg8"
+              value="גלגלי הפלדה 16, הרצליה פיתוח"
+              href="https://www.google.com/maps/search/?api=1&query=גלגלי+הפלדה+16+הרצליה+פיתוח"
             />
             <ContactCard
               icon={Clock}
