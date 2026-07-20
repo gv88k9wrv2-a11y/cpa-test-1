@@ -162,6 +162,7 @@ export function ServiceLandingEn({
         </section>
       </main>
 
+      <LeadForm lang="en" />
       <SiteFooterEn />
       <FloatingWhatsAppEn />
     </div>
