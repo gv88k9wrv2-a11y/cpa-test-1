@@ -92,6 +92,8 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
 export const ALL_SERVICES_EN: ServiceItem[] = SERVICE_GROUPS_EN.flatMap((g) => g.items);
 
 export function SiteHeaderEn() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const heHref = toHebrewPath(pathname);
   return (
     <>
       <a
