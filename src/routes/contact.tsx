@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.jpg";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
+import { LeadForm } from "../components/lead-form";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
