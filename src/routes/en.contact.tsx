@@ -99,7 +99,7 @@ function ContactEn() {
                   <div>
                     <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Office</div>
                     <p className="mt-1 text-primary">Herzliya Pituach, Israel</p>
-                    <p className="mt-1 text-xs text-muted-foreground">Sun–Thu 08:30–18:00</p>
+                    <p className="mt-1 text-xs text-muted-foreground">Sun–Thu 09:00–18:00</p>
                   </div>
                 </div>
               </div>
