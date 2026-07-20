@@ -3,7 +3,7 @@ import { Briefcase } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-freelancers.jpg";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "When should I register as osek patur vs. osek murshe?", a: "Osek patur (VAT-exempt dealer) is available under an annual revenue threshold updated yearly by the ITA. Above the threshold — or if your clients need VAT invoices — you must register as osek murshe. We assess the right fit at setup." },
   { q: "Company or self-employed — what's better?", a: "It depends on income level, expenses, savings goals and family situation. We run a personal simulation comparing after-tax cash — usually a company becomes attractive above a certain net profit range." },

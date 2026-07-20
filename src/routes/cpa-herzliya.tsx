@@ -61,10 +61,10 @@ export const Route = createFileRoute("/cpa-herzliya")({
         content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. ליווי חברות, סטארטאפים ועצמאים באזור השרון.",
       },
       { property: "og:url", content: "/cpa-herzliya" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/cpa-herzliya" }],
     scripts: [

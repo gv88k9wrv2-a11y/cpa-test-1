@@ -3,7 +3,7 @@ import { Globe2 } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-foreign.jpg";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "Subsidiary or branch — which is better?", a: "Each has pros and cons. An Israeli subsidiary (Ltd) is a separate legal entity with limited liability and 23% corporate tax. A branch is an extension of the foreign parent — simpler to set up but exposes the parent. Choice depends on activity scale, home-country tax and treaties." },
   { q: "How long does it take to set up an Israeli subsidiary?", a: "Registration itself takes 3–5 business days. Bank account opening for a foreign-owned entity can take 4–8 weeks due to KYC. We manage the entire process." },

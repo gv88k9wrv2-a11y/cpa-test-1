@@ -80,7 +80,7 @@ const ORG_JSONLD = {
   description:
     "משרד רואי חשבון בוטיק בהרצליה פיתוח. למעלה מ־25 שנות ניסיון בליווי חברות, סטארטאפים, עצמאים ופרילנסרים – ביקורת, דיווח, ייעוץ מס וגיוסי הון.",
   url: "https://www.nimrodi.co.il",
-  image: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg",
+  image: "https://cpa-test-1.lovable.app/og-image.jpg",
   telephone: "+972-9-9582211",
   areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
   address: {
