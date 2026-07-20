@@ -4,6 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useRouterState,
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
@@ -11,6 +12,10 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+
+// Replace with your GA4 Measurement ID (e.g. "G-XXXXXXXXXX") to enable analytics.
+const GA4_MEASUREMENT_ID = "G-XXXXXXXXXX";
+const GA_ENABLED = GA4_MEASUREMENT_ID.startsWith("G-") && !GA4_MEASUREMENT_ID.includes("XXXX");
 
 function NotFoundComponent() {
   return (
