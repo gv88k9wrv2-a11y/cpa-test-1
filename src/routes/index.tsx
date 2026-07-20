@@ -167,7 +167,7 @@ function HomePage() {
                 ייעוץ ראשוני ללא התחייבות
               </a>
               <a
-                href="tel:+97299582211"
+                href="tel:099582211"
                 className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
               >
                 <Phone className="h-5 w-5" aria-hidden />

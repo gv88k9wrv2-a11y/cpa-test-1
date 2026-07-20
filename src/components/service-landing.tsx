@@ -87,7 +87,7 @@ export function ServiceLanding({
               ייעוץ ראשוני בוואטסאפ
             </a>
             <a
-              href="tel:+97299582211"
+              href="tel:099582211"
               className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
             >
               <Phone className="h-4 w-4" aria-hidden />
