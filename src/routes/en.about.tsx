@@ -49,7 +49,7 @@ function AboutEn() {
             <article>
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our story</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Founded by Shlomo Nimrodi, CPA — a graduate of one of Israel's leading Big-Four firms — the practice grew by word of mouth: entrepreneurs, executives and families who wanted a real advisor rather than a form-filler. Today we serve hundreds of active clients across tech, professional services, real estate and family offices, both in Israel and abroad.
+                Founded by Shlomo Nimrodi, CPA — with more than 30 years of experience in accounting, financial management and business advisory. Earlier in his career, Shlomo served as controller and CFO of public companies, including leading IPO processes on the Tel Aviv Stock Exchange. The practice grew by word of mouth: entrepreneurs, executives and families who wanted a real advisor rather than a form-filler. Today we serve active clients across tech, professional services, real estate and family offices, both in Israel and abroad.
               </p>
             </article>
 
