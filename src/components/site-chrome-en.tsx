@@ -13,7 +13,9 @@ import {
   FileSearch,
   FileSpreadsheet,
   Plane,
+  LineChart,
 } from "lucide-react";
+
 
 export const WHATSAPP_URL_EN =
   "https://wa.me/972546688681?text=" +
@@ -49,6 +51,7 @@ type ServiceRoute =
   | "/en/payroll"
   | "/en/audit"
   | "/en/tax-consulting"
+  | "/en/fractional-cfo"
   | "/en/cpa-startups"
   | "/en/cpa-freelancers"
   | "/en/cpa-foreign-companies"
@@ -66,12 +69,14 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
   {
     label: "Core Services",
     items: [
+      { to: "/en/fractional-cfo", label: "Fractional CFO", desc: "Burn · Runway · Board · VC prep", icon: LineChart },
       { to: "/en/bookkeeping", label: "Bookkeeping", desc: "Priority · Xero · QuickBooks", icon: Calculator },
       { to: "/en/payroll", label: "Payroll", desc: "Section 102, ESOP, form 106", icon: ReceiptText },
       { to: "/en/audit", label: "Audit & Assurance", desc: "Israeli GAAP · IFRS", icon: FileSearch },
       { to: "/en/tax-consulting", label: "Tax Advisory", desc: "Planning, Pre-Ruling, appeals", icon: FileSpreadsheet },
     ],
   },
+
   {
     label: "By Client Type",
     items: [

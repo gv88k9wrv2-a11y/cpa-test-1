@@ -13,7 +13,9 @@ import {
   FileSearch,
   FileSpreadsheet,
   Plane,
+  LineChart,
 } from "lucide-react";
+
 
 const WHATSAPP_URL =
   "https://wa.me/972546688681?text=" +
@@ -51,6 +53,7 @@ type ServiceRoute =
   | "/payroll"
   | "/audit"
   | "/tax-consulting"
+  | "/fractional-cfo"
   | "/cpa-startups"
   | "/cpa-freelancers"
   | "/cpa-foreign-companies"
@@ -68,6 +71,12 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
   {
     label: "שירותי ליבה",
     items: [
+      {
+        to: "/fractional-cfo",
+        label: "ניהול כספים ו-CFO",
+        desc: "Fractional CFO · Burn · Runway · בורד",
+        icon: LineChart,
+      },
       {
         to: "/bookkeeping",
         label: "הנהלת חשבונות",
@@ -94,6 +103,7 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
       },
     ],
   },
+
   {
     label: "לפי סוג לקוח",
     items: [
