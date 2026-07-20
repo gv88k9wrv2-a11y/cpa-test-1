@@ -46,7 +46,7 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
       sections={[
         {
           title: "Why local matters",
-          body: "Herzliya Pituach is home to Microsoft, Apple, Meta and many of Israel's most important startups and VC funds. Being physically here means we know the ecosystem, work with local counsel and can meet you and your team in person on short notice.",
+          body: "Herzliya Pituach is home to major global tech companies and many of Israel's leading startups and VC funds. Being physically here means we know the ecosystem, work with local counsel and can meet you and your team in person on short notice.",
         },
         {
           title: "Who we serve locally",
