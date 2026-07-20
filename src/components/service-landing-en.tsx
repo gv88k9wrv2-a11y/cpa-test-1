@@ -8,6 +8,7 @@ import {
   SiteHeaderEn,
   WHATSAPP_URL_EN,
 } from "./site-chrome-en";
+import { LeadForm } from "./lead-form";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -161,6 +162,7 @@ export function ServiceLandingEn({
         </section>
       </main>
 
+      <LeadForm lang="en" />
       <SiteFooterEn />
       <FloatingWhatsAppEn />
     </div>
