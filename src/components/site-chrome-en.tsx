@@ -260,11 +260,12 @@ export function SiteFooterEn() {
           <p className="mt-2 text-sm text-primary-foreground/70">
             Boutique CPA firm in Herzliya Pituach. Over 25 years of experience serving companies, startups, freelancers and foreign investors in Israel.
           </p>
-          <div className="mt-4 space-y-1 text-sm text-primary-foreground/80">
-            <div><a href="tel:+97299582211" className="hover:text-gold">Phone: +972-9-9582211</a></div>
-            <div><a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="hover:text-gold">WhatsApp: +972-54-5207207</a></div>
-            <div>Herzliya Pituach, Israel</div>
-          </div>
+          <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
+            <div><a href={PHONE_TEL} className="hover:text-gold">Phone: {PHONE_DISPLAY_EN}</a></div>
+            <div><a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="hover:text-gold">WhatsApp: {WHATSAPP_DISPLAY_EN}</a></div>
+            <div><a href={`mailto:${EMAIL}`} className="hover:text-gold">{EMAIL}</a></div>
+            <div><a href={MAPS_URL} target="_blank" rel="noopener" className="hover:text-gold">{ADDRESS_EN}</a></div>
+          </address>
         </div>
         <div>
           <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">Navigation</div>
