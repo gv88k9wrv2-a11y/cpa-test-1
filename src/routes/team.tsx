@@ -7,20 +7,8 @@ const TEAM = [
   {
     name: "רו״ח שלמה נמרודי",
     role: "שותף מייסד",
-    bio: "בעל ותק של למעלה מ־30 שנה בחשבונאות, ניהול פיננסי וייעוץ עסקי. שימש בעברו כחשב ומנהל כספים של חברות ציבוריות, לרבות ליווי הליכי הנפקה בבורסה. מוסמך על ידי לשכת רואי החשבון בישראל.",
+    bio: "בעל ותק של למעלה מ־30 שנה בחשבונאות, ניהול פיננסי וייעוץ עסקי. שימש בעברו כחשב ומנהל כספים של חברות ציבוריות, לרבות ליווי הליכי הנפקה בבורסה בישראל. מוסמך על ידי לשכת רואי החשבון בישראל.",
     credentials: ["רו״ח מוסמך", "תואר B.A. בחשבונאות וכלכלה", "30+ שנות ניסיון"],
-  },
-  {
-    name: "צוות ראשי צוות",
-    role: "ראשי צוות חשבונאות ומס",
-    bio: "צוות ראשי צוות מקצועי המתמחה בליווי חברות טכנולוגיה, סטארטאפים ועצמאים – עם ניסיון בדוחות כספיים, ייעוץ מס, תלושי שכר וליווי גיוסים.",
-    credentials: ["רו״ח מוסמכים", "התמחות בטכנולוגיה", "ליווי גיוסי הון"],
-  },
-  {
-    name: "צוות הנהלת חשבונות",
-    role: "מנהלי חשבונות בכירים",
-    bio: "מנהלי חשבונות בכירים המתמחים בעבודה במערכות דיגיטליות מתקדמות – Priority, ריווחית, חשבשבת ו-QuickBooks. שקיפות מלאה ודיוק בכל דיווח.",
-    credentials: ["מנהלי חשבונות סוג 3", "מערכות דיגיטליות", "שכר וניכויים"],
   },
 ];
 
@@ -39,10 +27,10 @@ export const Route = createFileRoute("/team")({
         content: "רואי חשבון, מנהלי חשבונות ומומחי מס בוטיק בהרצליה פיתוח.",
       },
       { property: "og:url", content: "/team" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/team" }],
   }),

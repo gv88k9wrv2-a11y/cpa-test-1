@@ -3,7 +3,7 @@ import { MapPin } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-startups.jpg";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "Where is the office located?", a: "In the Herzliya Pituach business district — walking distance from the main tech campuses (Microsoft, Apple, Meta and Israel's leading startups)." },
   { q: "Do you serve clients outside Herzliya?", a: "Yes — we serve clients across Israel and abroad. But being local in Herzliya Pituach gives us deep familiarity with the tech, biotech and finance ecosystem here." },
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
       sections={[
         {
           title: "Why local matters",
-          body: "Herzliya Pituach is home to Microsoft, Apple, Meta and many of Israel's most important startups and VC funds. Being physically here means we know the ecosystem, work with local counsel and can meet you and your team in person on short notice.",
+          body: "Herzliya Pituach is home to major global tech companies and many of Israel's leading startups and VC funds. Being physically here means we know the ecosystem, work with local counsel and can meet you and your team in person on short notice.",
         },
         {
           title: "Who we serve locally",

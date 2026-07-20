@@ -3,7 +3,7 @@ import { Calculator } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-bookkeeping.jpg";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "Which accounting software do you support?", a: "Priority, Xero, QuickBooks Online, NetSuite, Rivhit and SAP Business One. We choose the right platform per client and manage the full setup, chart of accounts and integrations." },
   { q: "Can you take over from an existing bookkeeper?", a: "Yes. We handle a clean migration: opening balances, historical reconciliations, VAT alignment and full handover from the previous provider — usually within 2–4 weeks." },

@@ -4,7 +4,7 @@ import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { useState } from "react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 
 export const Route = createFileRoute("/en/contact")({
   head: () => ({
@@ -99,7 +99,7 @@ function ContactEn() {
                   <div>
                     <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Office</div>
                     <p className="mt-1 text-primary">Herzliya Pituach, Israel</p>
-                    <p className="mt-1 text-xs text-muted-foreground">Sun–Thu 08:30–18:00</p>
+                    <p className="mt-1 text-xs text-muted-foreground">Sun–Thu 09:00–18:00</p>
                   </div>
                 </div>
               </div>

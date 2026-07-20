@@ -12,10 +12,10 @@ export const Route = createFileRoute("/accessibility")({
       },
       { property: "og:title", content: "הצהרת נגישות – נמרודי ושות׳" },
       { property: "og:url", content: "/accessibility" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/accessibility" }],
   }),
@@ -69,7 +69,7 @@ function AccessibilityPage() {
             </li>
           </ul>
           <p className="pt-4 text-sm">
-            הצהרה זו עודכנה לאחרונה בחודש נובמבר 2026.
+            הצהרה זו עודכנה לאחרונה בחודש {new Date().toLocaleDateString("he-IL", { month: "long", year: "numeric" })}.
           </p>
         </div>
       </section>

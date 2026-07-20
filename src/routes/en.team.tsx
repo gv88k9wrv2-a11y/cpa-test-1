@@ -3,7 +3,7 @@ import heroImg from "../assets/team-photo.jpg";
 import { Users } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 
 export const Route = createFileRoute("/en/team")({
   head: () => ({
@@ -26,10 +26,7 @@ export const Route = createFileRoute("/en/team")({
 });
 
 const TEAM = [
-  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "25+ years in Israeli and international taxation. Big-Four alumnus. Trusted advisor to founders, executives and global families." },
-  { name: "Senior Tax Partner", role: "Tax Advisory", bio: "Specializes in Pre-Rulings, corporate reorganizations and cross-border transactions." },
-  { name: "Audit Partner", role: "Audit & Assurance", bio: "Statutory audits under Israeli GAAP and IFRS, M&A due diligence and quality of earnings work." },
-  { name: "International Tax Manager", role: "Relocation & Treaties", bio: "US-Israel taxation, olim benefits, residency severance and treaty planning." },
+  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "Over 30 years of experience in accounting, financial management and business advisory. Previously served as controller and CFO of public companies, including leading IPO processes on the Tel Aviv Stock Exchange. Trusted advisor to founders, executives and international families." },
 ];
 
 function TeamEn() {

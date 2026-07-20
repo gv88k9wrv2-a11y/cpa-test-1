@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 
 export const Route = createFileRoute("/en/accessibility")({
   head: () => ({
@@ -42,7 +42,7 @@ function AccessibilityEn() {
             <li>Email: <a href="mailto:office@nimrodi.co.il" className="text-primary hover:text-gold">office@nimrodi.co.il</a></li>
             <li>Phone: <a href="tel:+97299582211" className="text-primary hover:text-gold">+972-9-9582211</a></li>
           </ul>
-          <p className="text-xs">Last updated: July 2026.</p>
+          <p className="text-xs">Last updated: {new Date().toLocaleDateString("en-US", { month: "long", year: "numeric" })}.</p>
         </div>
       </main>
       <SiteFooterEn />

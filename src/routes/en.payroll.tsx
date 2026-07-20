@@ -3,7 +3,7 @@ import { ReceiptText } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-payroll.jpg";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "Can you run payroll for a foreign company with employees in Israel?", a: "Yes. We register the entity as an Israeli employer, set up payroll, National Insurance (Bituach Leumi), income tax and pension arrangements, and produce compliant Israeli payslips (tlush)." },
   { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate Tax Authority approvals, produce Form 106, and support employees through exercise and sale." },

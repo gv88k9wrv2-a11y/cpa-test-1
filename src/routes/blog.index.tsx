@@ -8,7 +8,7 @@ export const POSTS = [
     title: "תכנון מס לסוף שנת 2026 – מה חשוב לדעת עכשיו",
     excerpt:
       "המדריך המלא לתכנון מס לפני סוף השנה: הפקדות פנסיוניות, קרנות השתלמות, הכרה בהוצאות והקדמת הכנסות – כל מה שיכול לחסוך לכם עשרות אלפי שקלים.",
-    date: "2026-11-15",
+    date: "2026-06-10",
     readMin: 7,
     category: "מיסוי",
   },
@@ -17,7 +17,7 @@ export const POSTS = [
     title: "אופציות לעובדים בסטארטאפ – מסלול 102 שווי הוני",
     excerpt:
       "איך להעניק אופציות לעובדים בצורה שממקסמת הטבות מס גם למעסיק וגם לעובד. מסלול 102 שווי הוני, אישור נאמן, ומלכודות שכדאי להימנע מהן.",
-    date: "2026-09-20",
+    date: "2026-05-20",
     readMin: 9,
     category: "סטארטאפים",
   },
@@ -32,7 +32,7 @@ export const POSTS = [
   },
 ];
 
-export const Route = createFileRoute("/blog")({
+export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
       { title: "בלוג מקצועי | נמרודי ושות׳ – רואי חשבון בהרצליה" },
@@ -47,10 +47,10 @@ export const Route = createFileRoute("/blog")({
         content: "עדכונים ומאמרים על מיסוי, חשבונאות וגיוסי הון.",
       },
       { property: "og:url", content: "/blog" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/blog" }],
   }),
