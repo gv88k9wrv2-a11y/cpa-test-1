@@ -140,6 +140,8 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
 const ALL_SERVICES: ServiceItem[] = SERVICE_GROUPS.flatMap((g) => g.items);
 
 export function SiteHeader() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const enHref = toEnglishPath(pathname);
   return (
     <>
       <a
