@@ -30,7 +30,7 @@ const POST_CONTENT: Record<string, PostContent> = {
     title: "תכנון מס לסוף שנת 2026 – מה חשוב לדעת עכשיו",
     excerpt:
       "המדריך המלא לתכנון מס לפני סוף השנה: הפקדות פנסיוניות, קרנות השתלמות, הכרה בהוצאות והקדמת הכנסות.",
-    date: "2026-11-15",
+    date: "2026-06-10",
     readMin: 7,
     category: "מיסוי",
     sections: [
