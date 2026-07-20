@@ -336,15 +336,16 @@ function MobileMenu({ enHref }: { enHref: string }) {
 
           {/* Contact */}
           <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border pt-4">
-            <Link
-              to="/en"
+            <a
+              href={enHref}
               className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary"
               aria-label="English version"
+              hrefLang="en"
             >
               EN / English
-            </Link>
+            </a>
             <a
-              href="tel:+97299582211"
+              href={PHONE_TEL}
               className="inline-flex items-center justify-center gap-2 rounded-md border border-primary px-3 py-2.5 text-sm font-semibold text-primary"
             >
               <Phone className="h-4 w-4" aria-hidden />
