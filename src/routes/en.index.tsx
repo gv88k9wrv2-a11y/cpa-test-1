@@ -121,15 +121,29 @@ function HomeEn() {
             <div className="mt-14 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
               {[
                 { n: "25+", l: "Years of experience" },
-                { n: "300+", l: "Active clients" },
-                { n: "$500M+", l: "Raised by clients" },
-                { n: "40+", l: "Countries" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-display text-3xl font-bold text-gold sm:text-4xl">{s.n}</div>
-                  <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.l}</div>
-                </div>
-              ))}
+                { n: "5.0", l: "Google rating", href: "https://maps.app.goo.gl/jxWz9287qp3QRVFg8" },
+                { n: "80+", l: "Client reviews", href: "https://maps.app.goo.gl/jxWz9287qp3QRVFg8" },
+                { n: "100%", l: "Personal attention & transparency" },
+              ].map((s) =>
+                s.href ? (
+                  <a
+                    key={s.l}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener"
+                    aria-label={`${s.l} – view Google reviews`}
+                    className="block rounded-md transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
+                  >
+                    <div className="font-display text-3xl font-bold text-gold sm:text-4xl">{s.n}</div>
+                    <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.l}</div>
+                  </a>
+                ) : (
+                  <div key={s.l}>
+                    <div className="font-display text-3xl font-bold text-gold sm:text-4xl">{s.n}</div>
+                    <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.l}</div>
+                  </div>
+                ),
+              )}
             </div>
           </div>
         </section>
