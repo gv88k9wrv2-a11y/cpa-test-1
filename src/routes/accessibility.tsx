@@ -59,8 +59,8 @@ function AccessibilityPage() {
             פנייה ולתקן בהקדם:
           </p>
           <ul className="list-inside list-disc space-y-1">
-            <li>טלפון: 09-9582211</li>
-            <li>וואטסאפ: 054-5207207</li>
+            <li>טלפון: <a href="tel:099582211" className="text-primary hover:text-gold">09-9582211</a></li>
+            <li>וואטסאפ: 054-6688681</li>
             <li>
               דוא״ל:{" "}
               <a href="mailto:office@nimrodi.co.il" className="font-semibold text-primary hover:text-gold">
