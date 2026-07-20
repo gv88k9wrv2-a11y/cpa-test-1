@@ -41,7 +41,7 @@ const FAQS = [
   },
   {
     q: "Do you handle foreign income, crypto and relocation?",
-    a: "Yes. We have a dedicated international tax practice — foreign account reporting (FBAR/FATCA counterparts), crypto taxation, residency severance and advisory for new immigrants and returning residents.",
+    a: "Yes. We hold specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, facilitating the repatriation of crypto funds into Israeli banks, and filing tailored compliance reports with the Tax Authority. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
   },
 ];
 
