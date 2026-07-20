@@ -194,7 +194,7 @@ export function SiteHeaderEn() {
   );
 }
 
-function MobileMenuEn() {
+function MobileMenuEn({ heHref }: { heHref: string }) {
   return (
     <details className="group relative lg:hidden">
       <summary aria-label="Open menu" className="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-md border border-border bg-card text-primary [&::-webkit-details-marker]:hidden">
