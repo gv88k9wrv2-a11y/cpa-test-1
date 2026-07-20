@@ -82,9 +82,11 @@ const ORG_JSONLD = {
   url: "https://www.nimrodi.co.il",
   image: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg",
   telephone: "+972-9-9582211",
+  email: "office@nimrodi.co.il",
   areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "גלגלי הפלדה 16",
     addressLocality: "הרצליה פיתוח",
     addressCountry: "IL",
   },
@@ -96,6 +98,14 @@ const ORG_JSONLD = {
       dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
       opens: "08:30",
       closes: "18:00",
+    },
+  ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+972-54-6688681",
+      contactType: "customer service",
+      availableLanguage: ["he", "en"],
     },
   ],
   sameAs: ["https://maps.app.goo.gl/jxWz9287qp3QRVFg8"],

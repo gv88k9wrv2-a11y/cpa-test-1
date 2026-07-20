@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import {
   Phone,
   MessageCircle,
@@ -16,7 +16,24 @@ import {
 } from "lucide-react";
 
 export const WHATSAPP_URL_EN =
-  "https://wa.me/972545207207?text=Hello%2C%20I%27d%20like%20a%20consultation%20from%20Nimrodi%20%26%20Co.";
+  "https://wa.me/972546688681?text=" +
+  encodeURIComponent("Inquiry from website - Nimrodi and Co");
+
+const PHONE_TEL = "tel:+97299582211";
+const PHONE_DISPLAY_EN = "+972-9-9582211";
+const WHATSAPP_DISPLAY_EN = "+972-54-6688681";
+const EMAIL = "office@nimrodi.co.il";
+const ADDRESS_EN = "16 Galgalei ha-Plada St, Herzliya Pituach";
+const MAPS_URL =
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent("16 Galgalei ha-Plada St, Herzliya Pituach");
+
+/** Map current English path → Hebrew equivalent. */
+function toHebrewPath(pathname: string): string {
+  if (!pathname || pathname === "/en" || pathname === "/en/") return "/";
+  if (pathname.startsWith("/en/")) return pathname.slice(3);
+  return pathname;
+}
 
 const MAIN_LINKS = [
   { to: "/en", label: "Home" },
@@ -75,6 +92,8 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
 export const ALL_SERVICES_EN: ServiceItem[] = SERVICE_GROUPS_EN.flatMap((g) => g.items);
 
 export function SiteHeaderEn() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const heHref = toHebrewPath(pathname);
   return (
     <>
       <a
@@ -146,16 +165,17 @@ export function SiteHeaderEn() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-2">
-            <Link
-              to="/"
+            <a
+              href={heHref}
               className="hidden items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary sm:inline-flex"
               aria-label="Hebrew version"
+              hrefLang="he"
             >
               עברית
-            </Link>
-            <a href="tel:+97299582211" className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex">
+            </a>
+            <a href={PHONE_TEL} className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex">
               <Phone className="h-4 w-4" aria-hidden />
-              +972-9-9582211
+              {PHONE_DISPLAY_EN}
             </a>
             <a
               href={WHATSAPP_URL_EN}
@@ -166,7 +186,7 @@ export function SiteHeaderEn() {
               <MessageCircle className="h-4 w-4" aria-hidden />
               Free consult
             </a>
-            <MobileMenuEn />
+            <MobileMenuEn heHref={heHref} />
           </div>
         </div>
       </header>
@@ -174,7 +194,7 @@ export function SiteHeaderEn() {
   );
 }
 
-function MobileMenuEn() {
+function MobileMenuEn({ heHref }: { heHref: string }) {
   return (
     <details className="group relative lg:hidden">
       <summary aria-label="Open menu" className="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-md border border-border bg-card text-primary [&::-webkit-details-marker]:hidden">
@@ -217,9 +237,9 @@ function MobileMenuEn() {
             ))}
           </div>
           <div className="mt-4 grid grid-cols-2 gap-2 border-t border-border pt-4">
-            <Link to="/" className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary">
+            <a href={heHref} className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary" hrefLang="he">
               עברית
-            </Link>
+            </a>
             <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center justify-center gap-2 rounded-md bg-gold px-3 py-2.5 text-sm font-semibold text-gold-foreground">
               <MessageCircle className="h-4 w-4" aria-hidden />
               WhatsApp
@@ -240,11 +260,12 @@ export function SiteFooterEn() {
           <p className="mt-2 text-sm text-primary-foreground/70">
             Boutique CPA firm in Herzliya Pituach. Over 25 years of experience serving companies, startups, freelancers and foreign investors in Israel.
           </p>
-          <div className="mt-4 space-y-1 text-sm text-primary-foreground/80">
-            <div><a href="tel:+97299582211" className="hover:text-gold">Phone: +972-9-9582211</a></div>
-            <div><a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="hover:text-gold">WhatsApp: +972-54-5207207</a></div>
-            <div>Herzliya Pituach, Israel</div>
-          </div>
+          <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
+            <div><a href={PHONE_TEL} className="hover:text-gold">Phone: {PHONE_DISPLAY_EN}</a></div>
+            <div><a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="hover:text-gold">WhatsApp: {WHATSAPP_DISPLAY_EN}</a></div>
+            <div><a href={`mailto:${EMAIL}`} className="hover:text-gold">{EMAIL}</a></div>
+            <div><a href={MAPS_URL} target="_blank" rel="noopener" className="hover:text-gold">{ADDRESS_EN}</a></div>
+          </address>
         </div>
         <div>
           <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">Navigation</div>

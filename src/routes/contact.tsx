@@ -10,7 +10,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "יצירת קשר עם משרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח. טלפון 09-9582211, וואטסאפ 054-5207207. פגישת ייעוץ ראשונית ללא התחייבות.",
+          "יצירת קשר עם משרד רואי חשבון נמרודי ושות׳ – גלגלי הפלדה 16, הרצליה פיתוח. טלפון 09-9582211, וואטסאפ 054-6688681, דוא״ל office@nimrodi.co.il. פגישת ייעוץ ראשונית ללא התחייבות.",
       },
       { property: "og:title", content: "צור קשר – נמרודי ושות׳ רואי חשבון" },
       {
@@ -65,20 +65,26 @@ function ContactPage() {
               icon={Phone}
               title="טלפון"
               value="09-9582211"
-              href="tel:+97299582211"
+              href="tel:099582211"
             />
             <ContactCard
               icon={MessageCircle}
               title="וואטסאפ"
-              value="054-5207207"
+              value="054-6688681"
               href={WHATSAPP_URL}
               accent
             />
             <ContactCard
+              icon={Mail}
+              title="דוא״ל"
+              value="office@nimrodi.co.il"
+              href="mailto:office@nimrodi.co.il"
+            />
+            <ContactCard
               icon={MapPin}
               title="כתובת המשרד"
-              value="הרצליה פיתוח, ישראל"
-              href="https://maps.app.goo.gl/jxWz9287qp3QRVFg8"
+              value="גלגלי הפלדה 16, הרצליה פיתוח"
+              href="https://www.google.com/maps/search/?api=1&query=גלגלי+הפלדה+16+הרצליה+פיתוח"
             />
             <ContactCard
               icon={Clock}
@@ -101,7 +107,7 @@ function ContactPage() {
               const message = String(data.get("message") || "");
               const text = `פנייה מהאתר\nשם: ${name}\nטלפון: ${phone}\nהודעה: ${message}`;
               window.open(
-                `https://wa.me/972545207207?text=${encodeURIComponent(text)}`,
+                `https://wa.me/972546688681?text=${encodeURIComponent(text)}`,
                 "_blank",
                 "noopener",
               );
