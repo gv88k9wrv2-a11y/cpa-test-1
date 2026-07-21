@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Award, GraduationCap, Linkedin, Mail } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
-import teamPhoto from "../assets/team-photo.jpg";
+import teamPhoto from "../assets/team-photo.webp";
 
 const TEAM = [
   {
@@ -39,10 +39,10 @@ export const Route = createFileRoute("/team")({
         content: "רואי חשבון, מנהלי חשבונות ומומחי מס בוטיק בהרצליה פיתוח.",
       },
       { property: "og:url", content: "/team" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/team" },

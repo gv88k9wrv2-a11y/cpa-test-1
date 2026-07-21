@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "../assets/contact-office.jpg";
+import heroImg from "../assets/contact-office.webp";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";

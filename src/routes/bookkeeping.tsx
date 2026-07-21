@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Calculator } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
-import heroImg from "../assets/service-bookkeeping.jpg";
+import heroImg from "../assets/service-bookkeeping.webp";
 
 const FAQS = [
   {
@@ -65,10 +65,10 @@ export const Route = createFileRoute("/bookkeeping")({
         content: "שירותי הנהלת חשבונות שוטפת לחברות ועצמאים במערכות דיגיטליות מובילות.",
       },
       { property: "og:url", content: "/bookkeeping" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/bookkeeping" },

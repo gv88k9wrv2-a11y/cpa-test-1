@@ -10,7 +10,7 @@ import {
   Users,
 } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
-import aboutImage from "../assets/about-visual.jpg";
+import aboutImage from "../assets/about-visual.webp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -28,10 +28,10 @@ export const Route = createFileRoute("/about")({
           "מעל 25 שנות ניסיון בליווי חברות טכנולוגיה, סטארטאפים, עצמאים ופרילנסרים בהרצליה והסביבה.",
       },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:type", content: "article" },
     ],
     links: [

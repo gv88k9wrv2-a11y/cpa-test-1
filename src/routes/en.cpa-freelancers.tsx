@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Briefcase } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
-import heroImg from "../assets/service-freelancers.jpg";
+import heroImg from "../assets/service-freelancers.webp";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [

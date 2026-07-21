@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Rocket } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
-import heroImg from "../assets/service-startups.jpg";
+import heroImg from "../assets/service-startups.webp";
 
 const FAQS = [
   {
@@ -66,10 +66,10 @@ export const Route = createFileRoute("/cpa-startups")({
           "ליווי חשבונאי ופיננסי לסטארטאפים בכל שלב – מהקמה ועד גיוסים, אופציות ו-Exit.",
       },
       { property: "og:url", content: "/cpa-startups" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/cpa-startups" },

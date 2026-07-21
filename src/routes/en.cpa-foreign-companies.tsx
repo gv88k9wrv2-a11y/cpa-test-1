@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Globe2 } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
-import heroImg from "../assets/service-foreign.jpg";
+import heroImg from "../assets/service-foreign.webp";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [

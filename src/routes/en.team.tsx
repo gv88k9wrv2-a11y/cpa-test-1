@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "../assets/team-photo.jpg";
+import heroImg from "../assets/team-photo.webp";
 import { Users } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 

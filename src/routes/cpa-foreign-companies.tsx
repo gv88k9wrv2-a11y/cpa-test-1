@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Globe2 } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
-import heroImg from "../assets/service-foreign.jpg";
+import heroImg from "../assets/service-foreign.webp";
 
 const FAQS = [
   {
@@ -54,10 +54,10 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
           "משרד רואי חשבון בעל ניסיון עשיר בליווי חברות בינלאומיות בישראל – הקמה, ניהול, מיסוי ורגולציה.",
       },
       { property: "og:url", content: "/cpa-foreign-companies" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/cpa-foreign-companies" },
