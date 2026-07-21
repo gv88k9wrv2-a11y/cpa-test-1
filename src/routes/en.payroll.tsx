@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ReceiptText } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
-import heroImg from "../assets/service-payroll.jpg";
+import heroImg from "../assets/service-payroll.webp";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/payroll")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Israeli payslips and salary calculations on a desk"
       icon={ReceiptText}
       eyebrow="Payroll & ESOP"
       title="Israeli payroll, equity compensation and employer compliance"

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "../assets/contact-office.jpg";
+import heroImg from "../assets/contact-office.webp";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";
@@ -42,7 +42,7 @@ function ContactEn() {
         <section className="border-b border-border/60">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-              <img src={heroImg} alt="Nimrodi & Co. office reception" width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-80" />
+              <img src={heroImg} alt="Reception area at the Nimrodi & Co. CPA office in Herzliya Pituach" width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
             </div>
           </div>
         </section>

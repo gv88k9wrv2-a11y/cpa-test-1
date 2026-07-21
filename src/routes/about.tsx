@@ -10,7 +10,7 @@ import {
   Users,
 } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
-import aboutImage from "../assets/about-visual.jpg";
+import aboutImage from "../assets/about-visual.webp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -28,10 +28,10 @@ export const Route = createFileRoute("/about")({
           "מעל 25 שנות ניסיון בליווי חברות טכנולוגיה, סטארטאפים, עצמאים ופרילנסרים בהרצליה והסביבה.",
       },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:type", content: "article" },
     ],
     links: [
@@ -101,11 +101,12 @@ function AboutPage() {
             <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
               <img
                 src={aboutImage}
-                alt="פתרונות חשבונאיים מקצועיים – נמרודי ושות׳"
+                alt="פתרונות חשבונאיים ופיננסיים מקצועיים במשרד רואי החשבון נמרודי ושות׳"
                 width={1200}
                 height={900}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                decoding="async"
+                className="h-auto w-full object-cover"
               />
             </div>
             <div className="mt-6 rounded-xl border border-gold/40 bg-gold/10 p-6">

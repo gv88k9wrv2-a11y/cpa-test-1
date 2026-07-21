@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Briefcase } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
-import heroImg from "../assets/service-freelancers.jpg";
+import heroImg from "../assets/service-freelancers.webp";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Freelancer working in a modern home office"
       icon={Briefcase}
       eyebrow="Freelancers, Consultants & Single-Member Companies"
       title="CPA for freelancers, elite consultants and boutique agencies"

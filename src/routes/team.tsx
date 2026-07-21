@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Award, GraduationCap, Linkedin, Mail } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
-import teamPhoto from "../assets/team-photo.jpg";
+import teamPhoto from "../assets/team-photo.webp";
 
 const TEAM = [
   {
@@ -39,10 +39,10 @@ export const Route = createFileRoute("/team")({
         content: "רואי חשבון, מנהלי חשבונות ומומחי מס בוטיק בהרצליה פיתוח.",
       },
       { property: "og:url", content: "/team" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/team" },
@@ -79,11 +79,12 @@ function TeamPage() {
           <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
             <img
               src={teamPhoto}
-              alt="צוות משרד רואי חשבון נמרודי ושות׳"
+              alt="צוות משרד רואי חשבון נמרודי ושות׳ במשרדי המשרד בהרצליה פיתוח"
               width={1024}
               height={1024}
               loading="lazy"
-              className="h-72 w-full object-cover sm:h-96"
+              decoding="async"
+              className="h-auto w-full object-cover"
             />
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "../assets/contact-office.jpg";
+import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { LeadForm } from "../components/lead-form";
@@ -20,10 +20,10 @@ export const Route = createFileRoute("/contact")({
           "טלפון, וואטסאפ ופרטי הגעה למשרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח.",
       },
       { property: "og:url", content: "/contact" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/contact" },
@@ -57,7 +57,7 @@ function ContactPage() {
       <section className="border-b border-border/60">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-            <img src={heroImg} alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳" width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-80" />
+            <img src={heroImg} alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח" width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
           </div>
         </div>
       </section>

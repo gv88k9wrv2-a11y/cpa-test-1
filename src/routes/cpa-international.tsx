@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
-import heroImg from "../assets/service-international.jpg";
+import heroImg from "../assets/service-international.webp";
 
 const FAQS = [
   {
@@ -66,10 +66,10 @@ export const Route = createFileRoute("/cpa-international")({
           "ליווי מקצועי בתכנוני מס בינלאומיים – רילוקיישן, עולים, תושבים חוזרים, ניתוק תושבות ופעילות עסקית בין-מדינתית.",
       },
       { property: "og:url", content: "/cpa-international" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/cpa-international" },

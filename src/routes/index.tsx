@@ -19,7 +19,7 @@ import {
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { ProcessSection, TestimonialsSection, WhyUsSection } from "../components/home-sections";
 import { ClientLogosStrip, ExecutiveTestimonials } from "../components/social-proof";
-import heroImage from "../assets/hero-office.jpg";
+import heroImage from "../assets/hero-office.webp";
 
 const FAQS = [
   {
@@ -60,10 +60,10 @@ export const Route = createFileRoute("/")({
           "משרד רואי חשבון בוטיק מוביל בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון.",
       },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/" },
@@ -144,6 +144,9 @@ function HomePage() {
             alt="משרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח"
             width={1920}
             height={1280}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-l from-primary/95 via-primary/85 to-primary/60" />

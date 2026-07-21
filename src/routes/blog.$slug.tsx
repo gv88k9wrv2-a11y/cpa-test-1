@@ -6,9 +6,9 @@ import {
   SiteHeader,
   WHATSAPP_URL,
 } from "../components/site-chrome";
-import imgTax from "../assets/blog-tax-planning.jpg";
-import imgEquity from "../assets/blog-equity.jpg";
-import imgCrypto from "../assets/blog-crypto.jpg";
+import imgTax from "../assets/blog-tax-planning.webp";
+import imgEquity from "../assets/blog-equity.webp";
+import imgCrypto from "../assets/blog-crypto.webp";
 
 const POST_IMAGES: Record<string, string> = {
   "tax-planning-2026": imgTax,
@@ -151,10 +151,10 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: loaderData.post.excerpt },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `/blog/${params.slug}` },
-        { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+        { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
-        { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.jpg" },
+        { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
         { property: "article:published_time", content: loaderData.post.date },
         { property: "article:section", content: loaderData.post.category },
       ],
@@ -247,7 +247,7 @@ function BlogPostPage() {
 
         {heroImg ? (
           <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
-            <img src={heroImg} alt={post.title} width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-96" />
+            <img src={heroImg} alt={`תמונה נלווית למאמר: ${post.title}`} width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
           </div>
         ) : null}
 

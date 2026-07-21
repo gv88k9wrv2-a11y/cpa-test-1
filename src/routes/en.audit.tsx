@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileSearch } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
-import heroImg from "../assets/service-audit.jpg";
+import heroImg from "../assets/service-audit.webp";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/audit")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Magnifying glass over financial statements"
       icon={FileSearch}
       eyebrow="Audit & Assurance"
       title="Statutory audits, IFRS reporting and due diligence"
