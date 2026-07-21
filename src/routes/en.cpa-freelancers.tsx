@@ -33,7 +33,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Freelancer working in a modern home office"
       icon={Briefcase}
       eyebrow="Freelancers, Consultants & Single-Member Companies"
       title="CPA for freelancers, elite consultants and boutique agencies"

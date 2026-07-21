@@ -33,7 +33,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Tax planning documents on an executive desk"
       icon={FileSpreadsheet}
       eyebrow="Complex Tax, Crypto & Voluntary Disclosure"
       title="Complex tax disputes, crypto assets and Voluntary Disclosure"

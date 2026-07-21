@@ -36,7 +36,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Modern startup office in Herzliya Pituach"
       icon={Rocket}
       eyebrow="Startups & Technology Ventures"
       title="CPA for Israeli startups — from incorporation to Exit"

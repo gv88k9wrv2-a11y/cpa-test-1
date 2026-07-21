@@ -35,7 +35,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Office tower with international company flags"
       icon={Globe2}
       eyebrow="Foreign Companies in Israel"
       title="Full local support for international companies entering Israel"

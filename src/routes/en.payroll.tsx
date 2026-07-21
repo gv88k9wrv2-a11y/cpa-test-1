@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/payroll")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Israeli payslips and salary calculations on a desk"
       icon={ReceiptText}
       eyebrow="Payroll & ESOP"
       title="Israeli payroll, equity compensation and employer compliance"

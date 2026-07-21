@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="CPA office building in Herzliya Pituach"
       icon={MapPin}
       eyebrow="Herzliya Pituach"
       title="Boutique CPA firm in the heart of Herzliya Pituach"

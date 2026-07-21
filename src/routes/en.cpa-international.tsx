@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/cpa-international")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="World map illustrating international tax connections"
       icon={Plane}
       eyebrow="International Tax"
       title="Relocation, olim and cross-border tax planning"

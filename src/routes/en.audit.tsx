@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/audit")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Magnifying glass over financial statements"
       icon={FileSearch}
       eyebrow="Audit & Assurance"
       title="Statutory audits, IFRS reporting and due diligence"

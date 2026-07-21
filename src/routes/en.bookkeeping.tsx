@@ -31,7 +31,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Nimrodi & Co. — service illustration"
+      heroImageAlt="Bookkeeping workstation with financial dashboard screens"
       icon={Calculator}
       eyebrow="Bookkeeping"
       title="Modern digital bookkeeping for companies in Israel"
