@@ -57,7 +57,7 @@ function ContactPage() {
       <section className="border-b border-border/60">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-            <img src={heroImg} alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳" width={1024} height={1024} loading="lazy" className="h-64 w-full object-cover sm:h-80" />
+            <img src={heroImg} alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח" width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
           </div>
         </div>
       </section>
