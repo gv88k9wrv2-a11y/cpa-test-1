@@ -5,9 +5,11 @@ import {
   Building2,
   CheckCircle2,
   Globe2,
+  Handshake,
   MessageCircle,
   Phone,
   Sparkles,
+  Star,
   TrendingUp,
   Users,
 } from "lucide-react";
@@ -21,6 +23,14 @@ import { ClientLogosStrip, ExecutiveTestimonials } from "../components/social-pr
 import heroImage from "../assets/hero-office.webp";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const GOOGLE_REVIEWS_URL = "https://maps.app.goo.gl/jxWz9287qp3QRVFg8";
+
+const HIGHLIGHTS = [
+  { icon: Award, num: "25+", label: "Years of experience" },
+  { icon: Star, num: "5.0", label: "Google rating", href: GOOGLE_REVIEWS_URL },
+  { icon: Users, num: "80+", label: "Client reviews", href: GOOGLE_REVIEWS_URL },
+  { icon: Handshake, num: "100%", label: "Personal attention and transparency" },
+];
 
 const FAQS = [
   {
@@ -120,17 +130,29 @@ function HomeEn() {
             </div>
 
             <div className="mt-14 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
-              {[
-                { n: "25+", l: "Years of experience" },
-                { n: "300+", l: "Active clients" },
-                { n: "$500M+", l: "Raised by clients" },
-                { n: "40+", l: "Countries" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="font-display text-3xl font-bold text-gold sm:text-4xl">{s.n}</div>
-                  <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.l}</div>
-                </div>
-              ))}
+              {HIGHLIGHTS.map(({ icon: Icon, num, label, href }) => {
+                const content = (
+                  <>
+                    <Icon className="mb-2 h-5 w-5 text-gold" aria-hidden />
+                    <div className="font-display text-3xl font-bold text-gold sm:text-4xl">{num}</div>
+                    <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{label}</div>
+                  </>
+                );
+                return href ? (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener"
+                    className="group block transition hover:opacity-90"
+                    aria-label={`${label} – read verified Google reviews`}
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div key={label}>{content}</div>
+                );
+              })}
             </div>
           </div>
         </section>

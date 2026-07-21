@@ -123,10 +123,12 @@ const SERVICES = [
   },
 ];
 
+const GOOGLE_REVIEWS_URL = "https://maps.app.goo.gl/jxWz9287qp3QRVFg8";
+
 const HIGHLIGHTS = [
   { icon: Award, num: "25+", label: "שנות ניסיון" },
-  { icon: Star, num: "5.0", label: "דירוג בגוגל" },
-  { icon: Users, num: "80+", label: "המלצות לקוחות" },
+  { icon: Star, num: "5.0", label: "דירוג בגוגל", href: GOOGLE_REVIEWS_URL },
+  { icon: Users, num: "80+", label: "המלצות לקוחות", href: GOOGLE_REVIEWS_URL },
   { icon: Handshake, num: "100%", label: "יחס אישי ושקיפות" },
 ];
 
@@ -186,15 +188,31 @@ function HomePage() {
             </div>
 
             <dl className="mt-12 grid grid-cols-2 gap-6 border-t border-primary-foreground/20 pt-8 sm:grid-cols-4">
-              {HIGHLIGHTS.map(({ icon: Icon, num, label }) => (
-                <div key={label}>
-                  <Icon className="mb-2 h-5 w-5 text-gold" aria-hidden />
-                  <dt className="font-display text-2xl font-bold text-primary-foreground sm:text-3xl">
-                    {num}
-                  </dt>
-                  <dd className="text-xs text-primary-foreground/70 sm:text-sm">{label}</dd>
-                </div>
-              ))}
+              {HIGHLIGHTS.map(({ icon: Icon, num, label, href }) => {
+                const content = (
+                  <>
+                    <Icon className="mb-2 h-5 w-5 text-gold" aria-hidden />
+                    <dt className="font-display text-2xl font-bold text-primary-foreground sm:text-3xl">
+                      {num}
+                    </dt>
+                    <dd className="text-xs text-primary-foreground/70 sm:text-sm">{label}</dd>
+                  </>
+                );
+                return href ? (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener"
+                    className="group block transition hover:opacity-90"
+                    aria-label={`${label} – צפו בביקורות בגוגל`}
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div key={label}>{content}</div>
+                );
+              })}
             </dl>
           </div>
         </div>
