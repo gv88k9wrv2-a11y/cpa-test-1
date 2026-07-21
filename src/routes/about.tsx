@@ -101,11 +101,12 @@ function AboutPage() {
             <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
               <img
                 src={aboutImage}
-                alt="פתרונות חשבונאיים מקצועיים – נמרודי ושות׳"
+                alt="פתרונות חשבונאיים ופיננסיים מקצועיים במשרד רואי החשבון נמרודי ושות׳"
                 width={1200}
                 height={900}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                decoding="async"
+                className="h-auto w-full object-cover"
               />
             </div>
             <div className="mt-6 rounded-xl border border-gold/40 bg-gold/10 p-6">
