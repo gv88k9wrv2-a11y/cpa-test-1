@@ -39,8 +39,8 @@ export const Route = createFileRoute("/en/payroll")({
       highlights={[
         "Monthly Israeli payslips (tlush)",
         "Bituach Leumi & income tax filings",
-        "Section 102 equity plans (capital / income track)",
-        "Form 106, Form 161 (severance)",
+        "Section 102 (Equity & ESOP Incentive Plans) — capital / income track",
+        "Form 106 (Annual Tax Statement), Form 161 (severance)",
         "Pension & study fund compliance",
         "Payroll for foreign companies (EOR alternative)",
       ]}
