@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
+import { GovPortalLinks } from "../components/gov-portal-links";
 
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 
@@ -111,6 +112,17 @@ function ServicesEn() {
             </div>
           </div>
         </section>
+      <GovPortalLinks
+        lang="en"
+        title="Official Israeli Regulatory & Tax Authorities"
+        links={[
+            { label: "Israel Tax Authority – Official Portal", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+            { label: "VAT & Customs – Digital Services", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+            { label: "Israel Innovation Authority – Grants & Programs", href: "https://innovationisrael.org.il/en/" },
+            { label: "National Insurance Institute (Bituach Leumi)", href: "https://www.btl.gov.il" },
+        ]}
+      />
+
       </main>
       <SiteFooterEn />
       <FloatingWhatsAppEn />

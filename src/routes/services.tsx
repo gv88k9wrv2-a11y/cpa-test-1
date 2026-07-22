@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
+import { GovPortalLinks } from "../components/gov-portal-links";
 
 const LANDING_PAGES: {
   icon: LucideIcon;
@@ -201,6 +202,17 @@ function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <GovPortalLinks
+        lang="he"
+        title="פורטלי השירות המרכזיים של המדינה"
+        links={[
+            { label: "רשות המסים – אזור אישי ומערכות דיווח", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+            { label: "אגף מע\"מ ומכס – שירותים דיגיטליים", href: "https://www.gov.il/he/departments/israel_tax_authority/govil-landing-page/vat" },
+            { label: "רשות החדשנות – מסלולי תמיכה ומענקים", href: "https://innovationisrael.org.il" },
+            { label: "המוסד לביטוח לאומי", href: "https://www.btl.gov.il" },
+        ]}
+      />
 
       </main>
 

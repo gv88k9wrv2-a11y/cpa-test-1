@@ -17,6 +17,7 @@ import {
   Users,
 } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
+import { GovPortalLinks } from "../components/gov-portal-links";
 import { ProcessSection, TestimonialsSection, WhyUsSection } from "../components/home-sections";
 import { ClientLogosStrip, ExecutiveTestimonials } from "../components/social-proof";
 import heroImage from "../assets/hero-office.webp";
@@ -417,6 +418,17 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <GovPortalLinks
+        lang="he"
+        title="מערכות דיווח ופורטלים ממשלתיים"
+        links={[
+            { label: "רשות המסים – אזור אישי ומערכות דיווח", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+            { label: "אגף מכס ומע\"מ – דיווחים ושירותים", href: "https://www.gov.il/he/departments/israel_tax_authority/govil-landing-page/vat" },
+            { label: "המוסד לביטוח לאומי – הפורטל הממשלתי", href: "https://www.btl.gov.il" },
+            { label: "רשם החברות והתאגידים אונליין", href: "https://www.gov.il/he/departments/corporations_authority" },
+        ]}
+      />
 
       </main>
 
