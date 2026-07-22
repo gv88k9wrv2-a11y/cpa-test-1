@@ -24,7 +24,7 @@ const GROUPS = [
     title: "By Client Type",
     items: [
       { to: "/en/cpa-startups", label: "Startups & Tech", icon: Building2, desc: "Fundraising, ESOP, Israeli-Delaware Flip, Preferred Tech Enterprise." },
-      { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", icon: Briefcase, desc: "Setup, ongoing filings, annual return and capital declaration." },
+      { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", icon: Briefcase, desc: "Setup, ongoing filings, annual return and Capital Declaration (Asset & Net Worth Report)." },
       { to: "/en/cpa-foreign-companies", label: "Foreign Companies", icon: Globe2, desc: "Subsidiary, branch, KYC, Transfer Pricing and ongoing compliance." },
       { to: "/en/cpa-herzliya", label: "Herzliya Pituach", icon: MapPin, desc: "Local boutique firm at the heart of Israel's tech corridor." },
     ],
