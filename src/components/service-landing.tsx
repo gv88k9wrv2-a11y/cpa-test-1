@@ -11,6 +11,7 @@ import {
 } from "./site-chrome";
 import { LeadForm } from "./lead-form";
 import { ScrollToTop } from "./scroll-to-top";
+import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 
 export type ServiceFAQ = { q: string; a: string };
 
