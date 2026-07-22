@@ -181,10 +181,8 @@ export const Route = createFileRoute("/bookkeeping")({
       govPortals={{
         title: "מערכות תשלום ודיווחי מע\"מ ומקדמות",
         links: [
-          { label: "מערכת דיווח ותשלום מע\"מ תקופתי מקוונת", href: "https://www.gov.il/he/service/vat-report-and-payment" },
-          { label: "דיווח חשבוניות ישראל (חוק צמצום המזומן)", href: "https://www.gov.il/he/departments/guides/israel-invoices" },
-          { label: "תשלום מקדמות מס הכנסה אונליין", href: "https://www.gov.il/he/service/income-tax-monthly-reporting" },
-          
+          { label: "רשות המסים – מע\"מ, חשבוניות ישראל ומקדמות", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+          { label: "המוסד לביטוח לאומי – פורטל מעסיקים ודיווחים", href: "https://www.btl.gov.il" },
         ],
       }}
       faqs={FAQS}

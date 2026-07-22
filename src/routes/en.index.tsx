@@ -274,11 +274,10 @@ function HomeEn() {
         lang="en"
         title="Official Israeli Regulatory & Tax Authorities"
         links={[
-            { label: "Israel Tax Authority – Official Portal", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-            { label: "Value Added Tax (VAT) Services & Regulations", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-            { label: "Israel Innovation Authority – R&D Grants & Support", href: "https://innovationisrael.org.il/en/" },
-            { label: "Corporations Authority & Registrar of Companies", href: "https://www.gov.il/en/departments/corporations_authority" },
-            { label: "Ministry of Economy – Foreign Trade Administration", href: "https://www.gov.il/en/departments/foreign_trade_administration" },
+            { label: "Israel Tax Authority – Corporate, VAT & Filings", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+            { label: "National Insurance Institute (Bituach Leumi)", href: "https://www.btl.gov.il" },
+            { label: "Israel Innovation Authority – R&D Grants", href: "https://innovationisrael.org.il/en/" },
+            { label: "Ministry of Justice – Corporations Registrar", href: "https://www.gov.il/en/departments/ministry_of_justice" },
         ]}
       />
 

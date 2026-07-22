@@ -227,10 +227,9 @@ export const Route = createFileRoute("/cpa-startups")({
       govPortals={{
         title: "רשויות, מענקים ומסלולי הטבות להייטק",
         links: [
-          { label: "רשות החדשנות – מענקים ומסלולים (המדען הראשי)", href: "https://innovationisrael.org.il/route_cat/grants_and_programs/" },
-          { label: "דיווח אופציות לעובדים (סעיף 102) – רשות המסים", href: "https://www.gov.il/he/departments/guides/tax-incentives-tech" },
-          { label: "החוק לעידוד השקעות הון – הטבות מס ומענקים", href: "https://www.gov.il/he/departments/units/capital_investment_law" },
-          { label: "החזרי מע\"מ ותשומות לחברות הזנק", href: "https://www.gov.il/he/service/vat-refund-claim" },
+          { label: "רשות החדשנות – מענקים ומסלולים (המדען הראשי)", href: "https://innovationisrael.org.il" },
+          { label: "דיווח אופציות לעובדים (סעיף 102) – רשות המסים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}

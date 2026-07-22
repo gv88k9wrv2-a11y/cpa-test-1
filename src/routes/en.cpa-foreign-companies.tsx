@@ -139,10 +139,9 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
       govPortals={{
         title: "Foreign Corporate Registration & Israeli Tax Compliance",
         links: [
-          { label: "Registration of a Foreign Company / Israeli Branch", href: "https://www.gov.il/en/service/foreign_company_registration" },
-          { label: "Israel International Taxation Unit & Treaties", href: "https://www.gov.il/en/departments/units/international_taxation_unit" },
-          { label: "Israel Tax Authority – Corporate & VAT Guides", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-          { label: "Foreign Investment & Industrial Cooperation Authority", href: "https://www.gov.il/en/departments/investment_authority" },
+          { label: "Registration of a Foreign Company / Israeli Branch", href: "https://www.gov.il/en/departments/ministry_of_justice" },
+          { label: "Israel International Taxation Unit & Treaties", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}
