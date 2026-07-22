@@ -14,7 +14,7 @@ const GROUPS = [
     items: [
       { to: "/en/fractional-cfo", label: "Fractional CFO", icon: LineChart, desc: "Outsourced senior CFO — Burn, Runway, VC-ready models, Board and continuous DD readiness." },
       { to: "/en/bookkeeping", label: "Bookkeeping", icon: Calculator, desc: "Clean books, monthly closes and management reporting on modern cloud platforms." },
-      { to: "/en/payroll", label: "Payroll & ESOP", icon: ReceiptText, desc: "Israeli payslips, Section 102 equity, Form 106, Form 161 and pension compliance." },
+      { to: "/en/payroll", label: "Payroll & ESOP", icon: ReceiptText, desc: "Israeli payslips, Section 102 (Equity & ESOP Incentive Plans), Form 106 (Annual Tax Statement), Form 161 and pension compliance." },
       { to: "/en/audit", label: "Audit & Assurance", icon: FileSearch, desc: "Statutory audits under Israeli GAAP and IFRS; M&A due diligence." },
       { to: "/en/tax-consulting", label: "Tax Advisory", icon: FileSpreadsheet, desc: "Tax planning, Pre-Rulings, objections and appeals with the ITA." },
     ],
