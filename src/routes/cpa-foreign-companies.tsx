@@ -176,10 +176,9 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
       govPortals={{
         title: "רישום, מע\"מ ומיסוי חברות זרות בישראל",
         links: [
-          { label: "רשם החברות – רישום חברה זרה/סניף בישראל", href: "https://www.gov.il/he/service/foreign_company_registration" },
-          { label: "רישום חברה זרה במע\"מ ומס הכנסה", href: "https://www.gov.il/he/service/business_registration_tax_authority" },
-          { label: "מיסוי תאגידים בינלאומיים ומחירי העברה (TP)", href: "https://www.gov.il/he/departments/units/international_taxation_unit" },
-          { label: "מנהל סחר חוץ והשקעות זרות – משרד הכלכלה", href: "https://www.gov.il/he/departments/foreign_trade_administration" },
+          { label: "רשם החברות – רישום חברה זרה/סניף בישראל", href: "https://www.gov.il/he/departments/ministry_of_justice" },
+          { label: "רישום חברה זרה במע\"מ ומס הכנסה", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+          { label: "מיסוי תאגידים בינלאומיים ומחירי העברה (TP)", href: "https://www.gov.il/he/departments/israel_tax_authority" },
         ],
       }}
       faqs={FAQS}

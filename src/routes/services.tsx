@@ -208,7 +208,7 @@ function ServicesPage() {
         title="פורטלי השירות המרכזיים של המדינה"
         links={[
             { label: "רשות המסים – אזור אישי ומערכות דיווח", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-            { label: "אגף מע\"מ ומכס – שירותים דיגיטליים", href: "https://www.gov.il/he/departments/israel_tax_authority/govil-landing-page/vat" },
+            { label: "אגף מע\"מ ומכס – שירותים דיגיטליים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
             { label: "רשות החדשנות – מסלולי תמיכה ומענקים", href: "https://innovationisrael.org.il" },
             { label: "המוסד לביטוח לאומי", href: "https://www.btl.gov.il" },
         ]}

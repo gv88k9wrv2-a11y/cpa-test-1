@@ -277,8 +277,7 @@ function HomeEn() {
             { label: "Israel Tax Authority – Official Portal", href: "https://www.gov.il/en/departments/israel_tax_authority" },
             { label: "Value Added Tax (VAT) Services & Regulations", href: "https://www.gov.il/en/departments/israel_tax_authority" },
             { label: "Israel Innovation Authority – R&D Grants & Support", href: "https://innovationisrael.org.il/en/" },
-            { label: "Corporations Authority & Registrar of Companies", href: "https://www.gov.il/en/departments/corporations_authority" },
-            { label: "Ministry of Economy – Foreign Trade Administration", href: "https://www.gov.il/en/departments/foreign_trade_administration" },
+            { label: "Corporations Authority & Registrar of Companies", href: "https://www.gov.il/en/departments/ministry_of_justice" },
         ]}
       />
 

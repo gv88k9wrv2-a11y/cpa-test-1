@@ -424,9 +424,9 @@ function HomePage() {
         title="מערכות דיווח ופורטלים ממשלתיים"
         links={[
             { label: "רשות המסים – אזור אישי ומערכות דיווח", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-            { label: "אגף מכס ומע\"מ – דיווחים ושירותים", href: "https://www.gov.il/he/departments/israel_tax_authority/govil-landing-page/vat" },
+            { label: "אגף מכס ומע\"מ – דיווחים ושירותים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
             { label: "המוסד לביטוח לאומי – הפורטל הממשלתי", href: "https://www.btl.gov.il" },
-            { label: "רשם החברות והתאגידים אונליין", href: "https://www.gov.il/he/departments/corporations_authority" },
+            { label: "רשם החברות והתאגידים אונליין", href: "https://www.gov.il/he/departments/ministry_of_justice" },
         ]}
       />
 
