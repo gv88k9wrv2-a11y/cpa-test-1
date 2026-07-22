@@ -19,6 +19,7 @@ import {
   SiteHeaderEn,
   WHATSAPP_URL_EN,
 } from "../components/site-chrome-en";
+import { GovPortalLinks } from "../components/gov-portal-links";
 import { ClientLogosStrip, ExecutiveTestimonials } from "../components/social-proof";
 import heroImage from "../assets/hero-office.webp";
 
@@ -269,6 +270,18 @@ function HomeEn() {
             </div>
           </div>
         </section>
+      <GovPortalLinks
+        lang="en"
+        title="Official Israeli Regulatory & Tax Authorities"
+        links={[
+            { label: "Israel Tax Authority – Official Portal", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+            { label: "Value Added Tax (VAT) Services & Regulations", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+            { label: "Israel Innovation Authority – R&D Grants & Support", href: "https://innovationisrael.org.il/en/" },
+            { label: "Corporations Authority & Registrar of Companies", href: "https://www.gov.il/en/departments/corporations_authority" },
+            { label: "Ministry of Economy – Foreign Trade Administration", href: "https://www.gov.il/en/departments/foreign_trade_administration" },
+        ]}
+      />
+
       </main>
       <SiteFooterEn />
       <FloatingWhatsAppEn />
