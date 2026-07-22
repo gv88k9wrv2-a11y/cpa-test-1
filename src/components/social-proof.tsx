@@ -8,8 +8,7 @@ const COPY = {
     credTitle: "משרד ותיק עם רקורד אמיתי",
     credSub: "המספרים והעובדות מדברים בעד עצמם – ללא הבטחות שיווקיות.",
     facts: [
-      { icon: CalendarDays, label: "פעילים משנת 2000" },
-      { icon: Award, label: "מעל 25 שנות ניסיון מקצועי" },
+      { icon: CalendarDays, label: "פעילים משנת 2000 – מעל 25 שנות ניסיון" },
       { icon: UserCheck, label: "בהובלת רו״ח שלמה נמרודי" },
       { icon: Globe2, label: "ליווי חברות, סטארטאפים ופעילות בינלאומית" },
     ],
