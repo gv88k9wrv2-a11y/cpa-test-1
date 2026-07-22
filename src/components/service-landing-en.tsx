@@ -11,6 +11,7 @@ import {
 } from "./site-chrome-en";
 import { LeadForm } from "./lead-form";
 import { ScrollToTop } from "./scroll-to-top";
+import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -25,6 +26,7 @@ export type ServiceLandingEnProps = {
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
+  govPortals?: { title: string; links: GovPortalLink[] };
 };
 
 export function ServiceLandingEn({
@@ -38,6 +40,7 @@ export function ServiceLandingEn({
   icon: Icon,
   heroImage,
   heroImageAlt,
+  govPortals,
 }: ServiceLandingEnProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
@@ -148,6 +151,10 @@ export function ServiceLandingEn({
         </section>
 
         <RelatedServicesNavEn currentPath={pathname} />
+
+        {govPortals ? (
+          <GovPortalLinks title={govPortals.title} links={govPortals.links} lang="en" />
+        ) : null}
 
         <section className="py-16">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">

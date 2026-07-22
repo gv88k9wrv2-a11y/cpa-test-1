@@ -26,6 +26,7 @@ export type ServiceLandingProps = {
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
+  govPortals?: { title: string; links: GovPortalLink[] };
 };
 
 export function ServiceLanding({
@@ -39,6 +40,7 @@ export function ServiceLanding({
   icon: Icon,
   heroImage,
   heroImageAlt,
+  govPortals,
 }: ServiceLandingProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
@@ -168,6 +170,11 @@ export function ServiceLanding({
 
       {/* Related services */}
       <RelatedServicesNav currentPath={pathname} />
+
+      {/* Government portals */}
+      {govPortals ? (
+        <GovPortalLinks title={govPortals.title} links={govPortals.links} lang="he" />
+      ) : null}
 
       {/* CTA */}
       <section className="py-16">
