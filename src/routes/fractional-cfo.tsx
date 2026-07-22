@@ -45,7 +45,7 @@ export const Route = createFileRoute("/fractional-cfo")({
       {
         name: "description",
         content:
-          "שירותי Fractional CFO – ניהול כספים אסטרטגי, Burn Rate, Runway, מודלים פיננסיים למשקיעים, יחסי בורד, הכנה ל-Due Diligence וליווי גיוסי הון. משרד נמרודי ושות׳, הרצליה פיתוח.",
+          "שירותי Fractional CFO – ניהול כספים אסטרטגי, Burn Rate, Runway, מודלים פיננסיים, הכנה ל-Due Diligence וליווי גיוסי הון. תאמו פגישה.",
       },
       { property: "og:title", content: "Fractional CFO – נמרודי ושות׳" },
       {
