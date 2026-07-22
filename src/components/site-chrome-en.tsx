@@ -72,7 +72,7 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
     items: [
       { to: "/en/fractional-cfo", label: "Fractional CFO", desc: "Burn · Runway · Board · VC prep", icon: LineChart },
       { to: "/en/bookkeeping", label: "Bookkeeping", desc: "Cloud accounting · Monthly close · MIS", icon: Calculator },
-      { to: "/en/payroll", label: "Payroll", desc: "Section 102, ESOP, form 106", icon: ReceiptText },
+      { to: "/en/payroll", label: "Payroll", desc: "Section 102 (ESOP), Form 106 (Annual Tax Statement)", icon: ReceiptText },
       { to: "/en/audit", label: "Audit & Assurance", desc: "Israeli GAAP · IFRS", icon: FileSearch },
       { to: "/en/tax-consulting", label: "Tax Advisory", desc: "Planning, Pre-Ruling, appeals", icon: FileSpreadsheet },
     ],
@@ -82,7 +82,7 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
     label: "By Client Type",
     items: [
       { to: "/en/cpa-startups", label: "Startups & Tech", desc: "Fundraising, ESOP, Flip", icon: Building2 },
-      { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", desc: "Setup, filings, capital declaration", icon: Briefcase },
+      { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", desc: "Setup, filings, Capital Declaration (Asset & Net Worth Report)", icon: Briefcase },
       { to: "/en/cpa-foreign-companies", label: "Foreign Companies in Israel", desc: "Subsidiary, branch, Transfer Pricing", icon: Globe2 },
       { to: "/en/cpa-herzliya", label: "Businesses in Herzliya", desc: "Boutique firm in Herzliya Pituach", icon: MapPin },
     ],

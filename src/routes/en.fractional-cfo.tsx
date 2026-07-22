@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "What does a Data Room and Ongoing DD include?",
-    a: "A professional Data Room includes: audited financial statements for two prior years, fully-diluted Cap Table on Carta/Pulley, founders' agreements with vesting, approved Section 102 plan, key customer contracts, key employee agreements, Transfer Pricing policy, tax and VAT clearances, insurance policies and authority correspondence. Ongoing DD means the room is always current and ready — so when an offer arrives, you enter negotiations in days, not months.",
+    a: "A professional Data Room includes: audited financial statements for two prior years, fully-diluted Cap Table on Carta/Pulley, founders' agreements with vesting, approved Section 102 (Equity & ESOP Incentive Plans) plan, key customer contracts, key employee agreements, Transfer Pricing policy, tax and VAT clearances, insurance policies and authority correspondence. Ongoing DD means the room is always current and ready — so when an offer arrives, you enter negotiations in days, not months.",
   },
   {
     q: "Which KPIs do you track for the Board?",

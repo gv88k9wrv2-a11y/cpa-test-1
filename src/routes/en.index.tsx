@@ -43,7 +43,7 @@ const FAQS = [
   },
   {
     q: "Do you work with freelancers and self-employed clients starting out?",
-    a: "Absolutely. We support freelancers, independent professionals, developers and consultants — from opening files with the authorities, through ongoing reporting to annual returns, capital declarations and personal tax planning.",
+    a: "Absolutely. We support freelancers, independent professionals, developers and consultants — from opening files with the authorities, through ongoing reporting to annual returns, Capital Declarations (Asset & Net Worth Reports) and personal tax planning.",
   },
   {
     q: "How much does a CPA service cost?",
@@ -113,7 +113,7 @@ function HomeEn() {
               25+ years serving Israeli & international clients
             </div>
             <h1 className="mt-5 max-w-3xl font-display text-4xl font-bold leading-tight text-primary sm:text-6xl">
-              Boutique CPA firm in Herzliya Pituach
+              Boutique CPA Firm Specializing in Startups, High-Tech & Cross-Border Taxation
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Personal attention, senior-partner involvement and deep expertise in Israeli taxation, high-tech accounting, cross-border structures and fundraising — from Seed to Exit.
@@ -169,7 +169,7 @@ function HomeEn() {
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
                 { to: "/en/cpa-startups", icon: Building2, title: "Startups & Tech", desc: "Fundraising, ESOP (section 102), Israeli-Delaware Flip, preferred tech enterprise status." },
-                { to: "/en/cpa-freelancers", icon: Briefcase, title: "Freelancers & Self-Employed", desc: "File openings, VAT reporting, annual returns, capital declarations." },
+                { to: "/en/cpa-freelancers", icon: Briefcase, title: "Freelancers & Self-Employed", desc: "File openings, VAT reporting, annual returns, Capital Declarations (Asset & Net Worth Report)." },
                 { to: "/en/cpa-foreign-companies", icon: Globe2, title: "Foreign Companies", desc: "Subsidiary vs. branch, banking, Transfer Pricing, ongoing compliance." },
                 { to: "/en/tax-consulting", icon: Award, title: "Tax Advisory & Special Reports", desc: "Specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, facilitating the repatriation of crypto funds into Israeli banks, and filing tailored compliance reports with the Tax Authority. Plus Pre-Rulings, appeals and objections.", badge: "Crypto & Web3 Expert" },
                 { to: "/en/audit", icon: TrendingUp, title: "Audit & Assurance", desc: "Israeli GAAP & IFRS, statutory audits, due diligence." },

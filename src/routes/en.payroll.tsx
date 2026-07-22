@@ -6,7 +6,7 @@ import heroImg from "../assets/service-payroll.webp";
 const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
 const FAQS = [
   { q: "Can you run payroll for a foreign company with employees in Israel?", a: "Yes. We register the entity as an Israeli employer, set up payroll, National Insurance (Bituach Leumi), income tax and pension arrangements, and produce compliant Israeli payslips (tlush)." },
-  { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate Tax Authority approvals, produce Form 106, and support employees through exercise and sale." },
+  { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate Tax Authority approvals, produce Form 106 (Annual Tax Statement), and support employees through exercise and sale under Section 102 (Equity & ESOP Incentive Plans)." },
   { q: "What about severance (Form 161) and terminations?", a: "We prepare Form 161, coordinate with pension providers, calculate tax-optimal severance splits and support the departing employee through the process." },
 ];
 
@@ -39,8 +39,8 @@ export const Route = createFileRoute("/en/payroll")({
       highlights={[
         "Monthly Israeli payslips (tlush)",
         "Bituach Leumi & income tax filings",
-        "Section 102 equity plans (capital / income track)",
-        "Form 106, Form 161 (severance)",
+        "Section 102 (Equity & ESOP Incentive Plans) — capital / income track",
+        "Form 106 (Annual Tax Statement), Form 161 (severance)",
         "Pension & study fund compliance",
         "Payroll for foreign companies (EOR alternative)",
       ]}
