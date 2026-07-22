@@ -185,9 +185,9 @@ export const Route = createFileRoute("/cpa-international")({
         title: "מיסוי בינלאומי, מע\"מ יבוא/יצוא ואמנות מס",
         links: [
           { label: "היחידה למיסוי בינלאומי ברשות המסים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "מע\"מ אפס על יצוא שירותים ונכסים בלתי מוחשיים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+
           { label: "מדריך זכויות והטבות לתושבים חוזרים ועולים", href: "https://www.gov.il/he/departments/ministry_of_aliyah_and_integration" },
-          { label: "רשימת האמנות למניעת כפל מס של ישראל", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}

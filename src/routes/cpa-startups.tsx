@@ -229,8 +229,7 @@ export const Route = createFileRoute("/cpa-startups")({
         links: [
           { label: "רשות החדשנות – מענקים ומסלולים (המדען הראשי)", href: "https://innovationisrael.org.il" },
           { label: "דיווח אופציות לעובדים (סעיף 102) – רשות המסים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "החוק לעידוד השקעות הון – הטבות מס ומענקים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "החזרי מע\"מ ותשומות לחברות הזנק", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}

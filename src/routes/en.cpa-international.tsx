@@ -67,7 +67,7 @@ export const Route = createFileRoute("/en/cpa-international")({
         links: [
           { label: "Tax Benefits for Returning Residents & New Immigrants (Olim)", href: "https://www.gov.il/en/departments/ministry_of_aliyah_and_integration" },
           { label: "Double Taxation Treaties of Israel", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-          { label: "Israel Tax Authority – International Taxation Portal", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}

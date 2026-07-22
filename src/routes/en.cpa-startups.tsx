@@ -162,7 +162,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         links: [
           { label: "Israel Innovation Authority – Incentive Programs & Grants", href: "https://innovationisrael.org.il/en/" },
           { label: "Capital Investment Encouragement Law (Tax Relief)", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-          { label: "Employee Options (Section 102) – Tax Authority", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}

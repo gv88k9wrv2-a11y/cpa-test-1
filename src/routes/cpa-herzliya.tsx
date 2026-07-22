@@ -158,7 +158,7 @@ export const Route = createFileRoute("/cpa-herzliya")({
           { label: "אגף רישוי עסקים וגבייה – עיריית הרצליה", href: "https://www.herzliya.muni.il" },
           { label: "הסוכנות לעסקים קטנים ובינוניים", href: "https://www.sba.org.il" },
           { label: "רשות המסים – שירותים דיגיטליים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "המוסד לביטוח לאומי", href: "https://www.btl.gov.il" },
+
         ],
       }}
       faqs={FAQS}

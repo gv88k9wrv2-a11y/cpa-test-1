@@ -209,9 +209,7 @@ export const Route = createFileRoute("/tax-consulting")({
         title: "מאגרי מידע, מע\"מ, פסיקה וטפסים",
         links: [
           { label: "מאגר החלטות מיסוי (Pre-Rulings) רשמי", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "מדריך מע\"מ, פטורים ועסקאות מקרקעין", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "מערכת איתור טפסים ואישורי ניכוי במקור", href: "https://www.gov.il/he/departments/israel_tax_authority" },
-          { label: "אמנות למניעת כפל מס – משרד האוצר", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+
         ],
       }}
       faqs={FAQS}
