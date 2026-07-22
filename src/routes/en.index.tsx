@@ -43,7 +43,7 @@ const FAQS = [
   },
   {
     q: "Do you work with freelancers and self-employed clients starting out?",
-    a: "Absolutely. We support freelancers, independent professionals, developers and consultants — from opening files with the authorities, through ongoing reporting to annual returns, capital declarations and personal tax planning.",
+    a: "Absolutely. We support freelancers, independent professionals, developers and consultants — from opening files with the authorities, through ongoing reporting to annual returns, Capital Declarations (Asset & Net Worth Reports) and personal tax planning.",
   },
   {
     q: "How much does a CPA service cost?",
