@@ -113,7 +113,7 @@ function HomeEn() {
               25+ years serving Israeli & international clients
             </div>
             <h1 className="mt-5 max-w-3xl font-display text-4xl font-bold leading-tight text-primary sm:text-6xl">
-              Boutique CPA firm in Herzliya Pituach
+              Boutique CPA Firm Specializing in Startups, High-Tech & Cross-Border Taxation
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
               Personal attention, senior-partner involvement and deep expertise in Israeli taxation, high-tech accounting, cross-border structures and fundraising — from Seed to Exit.
