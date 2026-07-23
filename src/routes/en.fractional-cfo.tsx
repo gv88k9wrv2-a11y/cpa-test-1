@@ -3,7 +3,7 @@ import { LineChart } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-cfo.webp";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 
 const FAQS = [
   {

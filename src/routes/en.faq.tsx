@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 
 const FAQS = [
   { cat: "General", q: "Where is your office and which regions do you serve?", a: "Our office is located in Herzliya Pituach. We serve clients across Israel and internationally via video." },

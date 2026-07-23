@@ -3,7 +3,7 @@ import { FileSpreadsheet } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-tax.webp";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "What is a Pre-Ruling and when should we get one?", a: "A Pre-Ruling is a binding written position from the Israel Tax Authority on a specific transaction (M&A, reorganization, ESOP structure, residency, crypto activity). We recommend one whenever the tax exposure is material and precedent is unclear." },
   { q: "Do you handle tax disputes, audits and appeals?", a: "Yes — from responding to ITA information requests, through the assessment process (שומה), objections (השגה), settlement negotiations and appeals to the District Court." },
