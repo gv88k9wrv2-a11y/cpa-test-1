@@ -131,6 +131,39 @@ const WEBSITE_JSONLD = {
   publisher: { "@type": "Organization", name: "נמרודי ושות׳ – רואי חשבון" },
 };
 
+const DEFAULT_ORIGIN = "https://cpa-test-1.lovable.app";
+const ACCOUNTING_SERVICE_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  name: "נמרודי ושות' - משרד רואי חשבון",
+  image: `${DEFAULT_ORIGIN}/og-image.jpg`,
+  "@id": `${DEFAULT_ORIGIN}/#website`,
+  url: DEFAULT_ORIGIN,
+  telephone: "+972-9-9582211",
+  email: "office@nimrodi.co.il",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "גלגלי הפלדה 16",
+    addressLocality: "הרצליה פיתוח",
+    addressCountry: "IL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 32.1624,
+    longitude: 34.8085,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+    opens: "08:30",
+    closes: "17:00",
+  },
+  priceRange: "Premium Boutique Advisory",
+  description:
+    "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים בביקורת דוחות כספיים, תכנוני מס מתקדמים, ליווי פיננסי מעמיק ושירותי CFO חיצוניים לסטארטאפים, פרילנסרים, חברות הייטק ובעלי התמחות מיוחדת במתן מעטפת פיננסית וחשבונאית מלאה לחברות זרות בישראל.",
+};
+
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
