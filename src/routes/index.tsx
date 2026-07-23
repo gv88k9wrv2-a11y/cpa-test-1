@@ -244,26 +244,35 @@ function HomePage() {
           </div>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map(({ icon: Icon, title, desc, badge }) => (
-              <article
-                key={title}
-                className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-gold/60 hover:shadow-lg"
-              >
-                <div className="mb-4 flex items-center justify-between">
-                  <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                    <Icon className="h-5 w-5" aria-hidden />
+            {SERVICES.map((s) => {
+              const Icon = s.icon;
+              const badge = "badge" in s ? s.badge : undefined;
+              return (
+                <Link
+                  key={s.title}
+                  to={s.to}
+                  className="group relative block overflow-hidden rounded-xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-gold/60 hover:shadow-lg"
+                >
+                  <div className="mb-4 flex items-center justify-between">
+                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                      <Icon className="h-5 w-5" aria-hidden />
+                    </div>
+                    {badge && (
+                      <span className="inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">
+                        ✦ {badge}
+                      </span>
+                    )}
                   </div>
-                  {badge && (
-                    <span className="inline-flex items-center gap-1 rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">
-                      ✦ {badge}
-                    </span>
-                  )}
-                </div>
-                <h3 className="font-display text-xl font-semibold text-primary">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 origin-right scale-x-0 bg-gold transition group-hover:scale-x-100" />
-              </article>
-            ))}
+                  <h3 className="font-display text-xl font-semibold text-primary">{s.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-gold">
+                    למידע נוסף ←
+                  </span>
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 origin-right scale-x-0 bg-gold transition group-hover:scale-x-100" />
+                </Link>
+              );
+            })}
+
           </div>
 
           <div className="mt-10 text-center">
