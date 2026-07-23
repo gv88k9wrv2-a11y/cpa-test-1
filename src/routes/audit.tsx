@@ -65,15 +65,15 @@ export const Route = createFileRoute("/audit")({
         content: "ביקורת מקצועית לחברות, עמותות ושותפויות – Israeli GAAP ו-IFRS.",
       },
       { property: "og:url", content: "/audit" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
     ],
     links: [
-      { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/audit" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/audit" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/en/audit" }
+      { rel: "canonical", href: "https://cpa-test-1.lovable.app/audit" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/audit" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/audit" }
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },

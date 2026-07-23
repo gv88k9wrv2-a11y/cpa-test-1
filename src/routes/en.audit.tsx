@@ -3,7 +3,7 @@ import { FileSearch } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-audit.webp";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "Do you audit under IFRS and US GAAP?", a: "Yes. Our engagements cover Israeli GAAP, IFRS and — via our international correspondents — US GAAP conversions for parent-company consolidation." },
   { q: "How long does a statutory audit take?", a: "For a typical small-medium company, 4–8 weeks depending on preparedness of the books. We provide a preparation checklist to shorten the timeline significantly." },

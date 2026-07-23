@@ -57,15 +57,15 @@ export const Route = createFileRoute("/cpa-herzliya")({
         content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. ליווי חברות, סטארטאפים ועצמאים באזור השרון.",
       },
       { property: "og:url", content: "/cpa-herzliya" },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
     ],
     links: [
-      { rel: "canonical", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/cpa-herzliya" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/cpa-herzliya" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/en/cpa-herzliya" }
+      { rel: "canonical", href: "https://cpa-test-1.lovable.app/cpa-herzliya" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/cpa-herzliya" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/cpa-herzliya" }
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },

@@ -3,7 +3,7 @@ import { Rocket } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-startups.webp";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "When does a startup need a CPA?", a: "Before incorporation. Choosing the right structure (Israeli Ltd / Delaware C-Corp / dual-entity), founders' equity, vesting mechanics and 83(b) elections all affect the eventual tax outcome and fundraising trajectory." },
   { q: "Do you support fundraising rounds?", a: "Yes — from Pre-Seed to Series C and beyond. We prepare the data room, build the financial model, coordinate with counsel on SAFEs / CLAs / priced rounds, and structure the round for tax efficiency." },

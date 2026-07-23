@@ -91,7 +91,7 @@ const ORG_JSONLD = {
   description:
     "משרד רואי חשבון בוטיק בהרצליה פיתוח. למעלה מ־25 שנות ניסיון בליווי חברות, סטארטאפים, עצמאים ופרילנסרים – ביקורת, דיווח, ייעוץ מס וגיוסי הון.",
   url: "https://www.nimrodi.co.il",
-  image: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp",
+  image: "https://cpa-test-1.lovable.app/og-image.webp",
   telephone: "+972-9-9582211",
   email: "office@nimrodi.co.il",
   areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
@@ -149,8 +149,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון." },
       { property: "og:description", content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון." },
       { name: "twitter:description", content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון." },
-      { property: "og:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
-      { name: "twitter:image", content: "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app/og-image.webp" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

@@ -3,7 +3,7 @@ import { Plane } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-international.webp";
 
-const BASE = "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app";
+const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
   { q: "What tax benefits do new immigrants (olim chadashim) receive?", a: "New immigrants and senior returning residents enjoy a 10-year exemption on foreign-source income and capital gains, plus an exemption from reporting foreign assets. Timing and planning of relocation are critical to maximize the benefit." },
   { q: "Can I sever Israeli tax residency by relocating?", a: "Yes, but severance requires more than moving abroad. The ITA looks at 'center of life' (family, home, work, social ties). We plan and document the severance to withstand challenge — and address the exit tax exposure." },
