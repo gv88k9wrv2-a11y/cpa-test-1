@@ -371,7 +371,7 @@ function HomePage() {
         </div>
       </section>
 
-      <TestimonialsSection />
+      
       <ExecutiveTestimonials lang="he" />
 
 
