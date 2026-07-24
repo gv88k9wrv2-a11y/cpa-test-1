@@ -79,7 +79,7 @@ function TeamPage() {
       </section>
 
       <section className="py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:max-w-md">
           {TEAM.map((p) => (
             <article
               key={p.name}
