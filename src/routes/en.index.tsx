@@ -30,7 +30,7 @@ const HIGHLIGHTS = [
   { icon: Award, num: "25+", label: "Years of experience" },
   { icon: Star, num: "5.0", label: "Google rating", href: GOOGLE_REVIEWS_URL },
   { icon: Users, num: "80+", label: "Client reviews", href: GOOGLE_REVIEWS_URL },
-  { icon: Handshake, num: "100%", label: "Personal attention and transparency" },
+  { icon: Handshake, num: "✦", label: "Direct, Personal Service" },
 ];
 
 const FAQS = [
