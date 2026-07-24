@@ -1,36 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarDays, Clock } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
+import { BLOG_POSTS } from "../data/blog-posts";
 
-export const POSTS = [
-  {
-    slug: "tax-planning-2026" as const,
-    title: "תכנון מס לסוף שנת 2026 – מה חשוב לדעת עכשיו",
-    excerpt:
-      "המדריך המלא לתכנון מס לפני סוף השנה: הפקדות פנסיוניות, קרנות השתלמות, הכרה בהוצאות והקדמת הכנסות – כל מה שיכול לחסוך לכם עשרות אלפי שקלים.",
-    date: "2026-11-15",
-    readMin: 7,
-    category: "מיסוי",
-  },
-  {
-    slug: "startup-equity-102" as const,
-    title: "אופציות לעובדים בסטארטאפ – מסלול 102 שווי הוני",
-    excerpt:
-      "איך להעניק אופציות לעובדים בצורה שממקסמת הטבות מס גם למעסיק וגם לעובד. מסלול 102 שווי הוני, אישור נאמן, ומלכודות שכדאי להימנע מהן.",
-    date: "2026-09-20",
-    readMin: 9,
-    category: "סטארטאפים",
-  },
-  {
-    slug: "crypto-reporting" as const,
-    title: "דיווח על מטבעות קריפטו לרשות המסים – מדריך מעשי",
-    excerpt:
-      "כל מה שצריך לדעת על דיווח רווחי קריפטו: מתי חייבים לדווח, איך מחשבים רווח הון, הליך גילוי מרצון, ומה עושים עם ארנקים שאבדו.",
-    date: "2026-07-04",
-    readMin: 6,
-    category: "מיסוי בינלאומי",
-  },
-];
+export const POSTS = BLOG_POSTS;
 
 export const Route = createFileRoute("/blog")({
   head: () => ({
@@ -39,12 +12,12 @@ export const Route = createFileRoute("/blog")({
       {
         name: "description",
         content:
-          "מאמרים מקצועיים על מיסוי, ליווי סטארטאפים, קריפטו, גיוסי הון, ורגולציה – בשפה נגישה ומעודכנת.",
+          "מאמרים מקצועיים על מיסוי בינלאומי, סטארטאפים, קריפטו, נדל״ן וחברות זרות בישראל – בשפה נגישה ומעודכנת. פנו אלינו לייעוץ.",
       },
       { property: "og:title", content: "בלוג – נמרודי ושות׳" },
       {
         property: "og:description",
-        content: "עדכונים ומאמרים על מיסוי, חשבונאות וגיוסי הון.",
+        content: "עדכונים ומאמרים מקצועיים על מיסוי, חשבונאות וגיוסי הון.",
       },
       { property: "og:url", content: "/blog" },
       { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
@@ -58,6 +31,10 @@ export const Route = createFileRoute("/blog")({
 });
 
 function BlogIndex() {
+  const posts = [...POSTS].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
+
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
@@ -72,18 +49,19 @@ function BlogIndex() {
             תובנות שממנפות עסקים
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            מדריכים, טיפים ועדכונים מהעולם החשבונאי והמיסויי – מבוסס ניסיון ממשי בשטח.
+            מדריכים, טיפים ועדכונים מעולם החשבונאות והמיסוי – מבוסס ניסיון ממשי בשטח.
           </p>
         </div>
       </section>
 
       <section className="py-16">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-3">
-          {POSTS.map((p) => (
+          {posts.map((p) => (
             <Link
               key={p.slug}
               to="/blog/$slug"
               params={{ slug: p.slug }}
+              aria-label={`קרא את המאמר: ${p.title}`}
               className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-gold/60 hover:shadow-lg"
             >
               <div className="mb-3 inline-flex w-fit items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold">
@@ -109,6 +87,9 @@ function BlogIndex() {
                   {p.readMin} דק׳ קריאה
                 </span>
               </div>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold group-hover:underline">
+                קרא את המאמר ←
+              </span>
             </Link>
           ))}
         </div>
