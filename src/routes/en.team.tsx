@@ -26,7 +26,7 @@ export const Route = createFileRoute("/en/team")({
 });
 
 const TEAM = [
-  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "25+ years in Israeli and international taxation. Big-Four alumnus. Trusted advisor to founders, executives and global families." },
+  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "Certified Public Accountant. Member of the Institute of CPAs in Israel. Extensive experience as a Controller and CFO for private and public companies. Extensive experience in consulting and accompanying foreign companies operating in Israel. Expert in Israeli and international taxation, handling complex tax issues for companies and individuals. Full guidance of IPO processes on the Tel Aviv Stock Exchange and comprehensive assistance to startups in fundraising." },
 ];
 
 function TeamEn() {
@@ -42,7 +42,7 @@ function TeamEn() {
             </div>
             <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">Our partners and senior team</h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              Every engagement is led by a senior partner. Continuity, depth and personal attention — that's the boutique promise.
+              Our professional team provides private clients, corporations, and startups with comprehensive accounting expertise and advanced, high-level tax solutions.
             </p>
           </div>
         </section>

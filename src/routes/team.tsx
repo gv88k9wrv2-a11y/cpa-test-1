@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Award, GraduationCap, Linkedin, Mail } from "lucide-react";
+import { Award, GraduationCap, Mail } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 import teamPhoto from "../assets/team-photo.webp";
 
@@ -7,8 +7,8 @@ const TEAM = [
   {
     name: "רו״ח שלמה נמרודי",
     role: "שותף מייסד",
-    bio: "מעל 25 שנות ניסיון בחשבונאות, מיסוי ישראלי ובינלאומי וניהול פיננסי. בוגר משרד מהביג-פור. יועץ נאמן ליזמים, בעלי חברות ומשפחות עסקיות עם פעילות חוצת גבולות.",
-    credentials: ["רו״ח מוסמך", "מיסוי ישראלי ובינלאומי", "25+ שנות ניסיון"],
+    bio: "רואה חשבון מוסמך. חבר לשכת רואי החשבון. ניסיון עשיר כחשב וכמנהל כספים בחברות פרטיות וציבוריות. ניסיון רב שנים בייעוץ וליווי לחברות זרות שפועלות בישראל. מומחה במיסוי ישראלי ובינלאומי, ובטיפול בסוגיות מס מורכבות עבור חברות ויחידים. ליווי מלא של תהליכי הנפקה בבורסה בישראל וסיוע מקיף לסטארטאפים בגיוס הון.",
+    credentials: ["רו״ח מוסמך", "חבר לשכת רואי החשבון", "מיסוי ישראלי ובינלאומי"],
   },
 ];
 
@@ -56,8 +56,7 @@ function TeamPage() {
             אנשים שאתם רוצים לצידכם
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            צוות מקצועי, זמין ומחויב – עם ניסיון של עשרות שנים בליווי חברות, סטארטאפים
-            ועצמאים.
+            הצוות המקצועי שלנו מלווה לקוחות פרטיים, חברות וסטארטאפים במתן מעטפת חשבונאית ופתרונות מס מתקדמים ברמה הגבוהה ביותר.
           </p>
         </div>
       </section>
@@ -110,13 +109,6 @@ function TeamPage() {
                   className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold"
                 >
                   <Mail className="h-4 w-4" aria-hidden />
-                </a>
-                <a
-                  href="#"
-                  aria-label="LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold"
-                >
-                  <Linkedin className="h-4 w-4" aria-hidden />
                 </a>
               </div>
             </article>

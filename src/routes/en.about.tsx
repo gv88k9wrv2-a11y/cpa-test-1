@@ -8,9 +8,9 @@ export const Route = createFileRoute("/en/about")({
   head: () => ({
     meta: [
       { title: "About Nimrodi & Co. — Boutique CPA in Herzliya Pituach" },
-      { name: "description", content: "About Nimrodi & Co. CPA — 25+ years serving Israeli and international clients from Herzliya Pituach with Big-Four expertise and boutique-firm attention." },
+      { name: "description", content: "About Nimrodi & Co. CPA — 25+ years serving Israeli and international clients from Herzliya Pituach with senior expertise and boutique-firm attention." },
       { property: "og:title", content: "About Nimrodi & Co." },
-      { property: "og:description", content: "A boutique CPA firm delivering senior-partner attention and Big-Four depth." },
+      { property: "og:description", content: "A boutique CPA firm delivering senior-partner attention and deep professional expertise." },
       { property: "og:url", content: `${BASE}/en/about` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -39,7 +39,7 @@ function AboutEn() {
               A boutique CPA firm with big-firm depth
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Nimrodi & Co. was founded on a simple idea: give clients the depth and rigor of a Big-Four firm — with the accessibility, partner attention and continuity of a boutique. For 25+ years we've been trusted advisors to founders, executives, families and international companies operating in Israel.
+              Nimrodi & Co. was founded on a simple idea: give clients the depth and rigor of a senior professional firm — with the accessibility, partner attention and continuity of a boutique. For 25+ years we've been trusted advisors to founders, executives, families and international companies operating in Israel.
             </p>
           </div>
         </section>
@@ -49,7 +49,7 @@ function AboutEn() {
             <article>
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our story</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Founded by Shlomo Nimrodi, CPA — a graduate of one of Israel's leading Big-Four firms — the practice grew by word of mouth: entrepreneurs, executives and families who wanted a real advisor rather than a form-filler. Today we serve hundreds of active clients across tech, professional services, real estate and family offices, both in Israel and abroad.
+                Founded by Shlomo Nimrodi, CPA, the practice grew by word of mouth: entrepreneurs, executives and families who wanted a real advisor rather than a form-filler. Today we serve hundreds of active clients across tech, professional services, real estate and family offices, both in Israel and abroad.
               </p>
             </article>
 
