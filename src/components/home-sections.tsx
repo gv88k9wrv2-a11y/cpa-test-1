@@ -4,7 +4,6 @@ import {
   FileSearch2,
   HandCoins,
   MessageSquareHeart,
-  Quote,
   Rocket,
   ShieldCheck,
   Sparkles,
