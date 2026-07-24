@@ -266,7 +266,7 @@ function HomePage() {
                   <h3 className="font-display text-xl font-semibold text-primary">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
                   <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-gold">
-                    למידע נוסף ←
+                    {s.title} ←
                   </span>
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1 origin-right scale-x-0 bg-gold transition group-hover:scale-x-100" />
                 </Link>
