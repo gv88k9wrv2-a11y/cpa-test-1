@@ -12,7 +12,7 @@ const FAQS = [
   { q: "What is the Preferred Technological Enterprise regime?", a: "Companies meeting R&D and revenue thresholds under the Capital Investments Encouragement Law enjoy corporate tax of 12% (or 6% for a Special Preferred Technological Enterprise), vs. the standard 23%. We check eligibility, file with the ITA and defend on audit." },
   { q: "What is a 409A Valuation and why does it matter?", a: "If your company is a Delaware C-Corp or planning a US round, you need a fair-market-value assessment of the common stock under IRC §409A — required on every option grant, after every material event, and at least every 12 months. Wrong valuation exposes employees and the company to a 20% IRS penalty plus interest." },
   { q: "How should we build the Cap Table for investors?", a: "Investors scrutinize the cap table. We build it in Carta, Pulley or Ledgy, keep it fully diluted (including SAFEs, CLAs and Option Pool), and run dilution simulations of future rounds so founders understand the impact before signing." },
-  { q: "What is a Secondary Transaction and what are the tax risks?", a: "A Secondary is a sale of founder or employee shares to an existing or new investor — an opportunity for early liquidity. The main risk is misclassification: a Section 102 capital-gains gain (25%) can be reclassified as employment income (up to 50%) without proper structuring. We advise on route, escrow, clawback and Pre-Rulings." },
+  { q: "What is a Secondary Transaction and what are the tax risks?", a: "A Secondary is a sale of founder or employee shares to an existing or new investor — an opportunity for early liquidity. The main risk is misclassification, which can materially affect the effective tax rate; proper structuring and, where relevant, an advance tax ruling can help mitigate this." },
 ];
 
 export const Route = createFileRoute("/en/cpa-startups")({
@@ -82,9 +82,9 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Section 102 ESOP & 409A Valuations",
-          body: "Equity is the strongest talent-retention tool a startup has. We prepare and file the Section 102 plan, appoint the trustee, and produce the accounting and valuations required for both Israeli and US reporting:",
+          body: "Equity is a key talent-retention tool for startups. We provide tax and compliance support for employee equity compensation and option plans, including the assessment of relevant Section 102 routes subject to the applicable conditions and circumstances, and produce the accounting and valuations required for Israeli and US reporting:",
           bullets: [
-            "Section 102 capital gains track — 25% tax with trustee",
+            "Assessment of relevant Section 102 routes based on facts and circumstances",
             "409A valuation for common stock (Delaware / US operations)",
             "Option accounting under IFRS 2 (Israel) and ASC 718 (US)",
             "Employee support at exercise and sale — tax optimization",
@@ -104,9 +104,9 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Secondary Transactions for founders & employees",
-          body: "A Secondary — sale of founder or employee shares to an existing or new investor — is a valuable early-liquidity opportunity but carries significant tax risk. Misclassification can convert a 25% capital gain into employment income taxed at up to 50%. We advise founders and employees on the full strategy:",
+          body: "A Secondary — sale of founder or employee shares to an existing or new investor — is a valuable early-liquidity opportunity but carries significant tax risk. Misclassification can materially affect the effective tax rate. We advise founders and employees on the full strategy:",
           bullets: [
-            "Confirmation of Section 102 capital-gains routing pre-transaction",
+            "Assessment of the relevant Section 102 route pre-transaction",
             "Transaction structure: Direct Sale, Tender Offer, trustee-led aggregation",
             "Escrow, holdback and Clawback provisions — accounting and tax treatment",
             "Pre-Ruling with the ITA for material transactions",

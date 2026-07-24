@@ -5,10 +5,9 @@ import heroImg from "../assets/service-tax.webp";
 
 const BASE = "https://cpa-test-1.lovable.app";
 const FAQS = [
-  { q: "What is a Pre-Ruling and when should we get one?", a: "A Pre-Ruling is a binding written position from the Israel Tax Authority on a specific transaction (M&A, reorganization, ESOP structure, residency, crypto activity). We recommend one whenever the tax exposure is material and precedent is unclear." },
-  { q: "Do you handle tax disputes, audits and appeals?", a: "Yes — from responding to ITA information requests, through the assessment process (שומה), objections (השגה), settlement negotiations and appeals to the District Court." },
-  { q: "Can you handle crypto tax compliance?", a: "Yes. We provide crypto tax services — Bitcoin, DeFi, NFT, staking. We produce certified blockchain P&L reports, obtain Pre-Rulings, and manage AML/KYC to move capital into the Israeli banking system in strict alignment with Bank of Israel policy." },
-  { q: "What is Voluntary Disclosure (גילוי מרצון)?", a: "A structured ITA process to legalize previously undeclared foreign accounts, assets or income — paying the tax with limited interest and receiving criminal immunity. With FATCA and CRS in force, exposure is nearly automatic; acting proactively is essential." },
+  { q: "What is a Pre-Ruling and when should we get one?", a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear." },
+  { q: "Can you handle crypto tax compliance?", a: "Yes — tax, documentation and compliance support relating to crypto-derived funds and their presentation to financial institutions, subject to the institution's requirements and applicable law." },
+  { q: "What is Voluntary Disclosure (גילוי מרצון)?", a: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations may vary depending on status, residence, citizenship, account location and applicable rules." },
   { q: "Can you plan a corporate reorganization tax-efficiently?", a: "Yes — we plan and execute tax-deferred reorganizations under Sections 103–105, including mergers, spin-offs and asset transfers between related entities." },
 ];
 
