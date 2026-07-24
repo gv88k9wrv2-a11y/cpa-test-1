@@ -125,7 +125,7 @@ function ServicesPage() {
                       </div>
                       <h3 className="mt-4 font-display text-xl font-bold text-primary">{s.label}</h3>
                       <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
-                      <span className="mt-4 inline-flex text-xs font-semibold text-gold">למידע נוסף ←</span>
+                      <span className="mt-4 inline-flex text-xs font-semibold text-gold">{s.label} ←</span>
                     </Link>
                   ))}
                 </div>
