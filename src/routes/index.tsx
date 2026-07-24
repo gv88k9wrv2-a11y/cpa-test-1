@@ -354,15 +354,15 @@ function HomePage() {
                 </div>
                 <div className="border-t border-primary-foreground/10 p-6">
                   <Star className="mb-3 h-6 w-6 text-gold" aria-hidden />
-                  <div className="font-display text-3xl font-bold">5.0★</div>
+                  <div className="font-display text-2xl font-bold">Google</div>
                   <div className="text-sm text-primary-foreground/70">
                     <a
-                      href="https://maps.app.goo.gl/jxWz9287qp3QRVFg8"
+                      href={GOOGLE_REVIEWS_URL}
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                       className="hover:text-gold"
                     >
-                      ביקורות ב־Google
+                      צפו בביקורות שלנו ב-Google Maps
                     </a>
                   </div>
                 </div>
