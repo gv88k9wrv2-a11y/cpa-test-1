@@ -26,7 +26,7 @@ export const Route = createFileRoute("/en/team")({
 });
 
 const TEAM = [
-  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "25+ years in Israeli and international taxation. Big-Four alumnus. Trusted advisor to founders, executives and global families." },
+  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "Certified Public Accountant. Member of the Institute of CPAs in Israel. Extensive experience as a Controller and CFO for private and public companies. Extensive experience in consulting and accompanying foreign companies operating in Israel. Expert in Israeli and international taxation, handling complex tax issues for companies and individuals. Full guidance of IPO processes on the Tel Aviv Stock Exchange and comprehensive assistance to startups in fundraising." },
 ];
 
 function TeamEn() {
