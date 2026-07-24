@@ -57,13 +57,13 @@ function AccessibilityEn() {
                 2. Website Accessibility (Digital Accessibility)
               </h2>
               <p>
-                This website was made accessible in accordance with Israeli Standard 5568 for internet content accessibility at Level AA, and with the W3C WCAG 2.1 guidelines.
+                This website is designed to align with Israeli Standard 5568 for internet content accessibility at Level AA and with the W3C WCAG 2.1 guidelines. We continue to review and improve the site over time.
               </p>
               <ul className="list-disc space-y-2 ps-6">
-                <li><strong>Keyboard navigation:</strong> Full support for keyboard navigation (Tab, Shift+Tab, Enter).</li>
-                <li><strong>Screen reader compatibility:</strong> The site is built with semantic structure and ARIA attributes suitable for assistive technologies.</li>
+                <li><strong>Keyboard navigation:</strong> Support for keyboard navigation (Tab, Shift+Tab, Enter).</li>
+                <li><strong>Screen reader support:</strong> The site is built with semantic structure and ARIA attributes intended to work with assistive technologies.</li>
                 <li><strong>Design and text:</strong> Standard color contrast, ability to enlarge text without breaking site structure, and alternative text (Alt) for images and visual components.</li>
-                <li><strong>Responsiveness:</strong> Fully adapted for browsing on a variety of screens, mobile devices, and tablets.</li>
+                <li><strong>Responsiveness:</strong> Adapted for browsing on a variety of screens, mobile devices, and tablets.</li>
               </ul>
             </div>
 

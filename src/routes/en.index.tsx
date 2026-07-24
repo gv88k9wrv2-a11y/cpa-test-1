@@ -30,7 +30,7 @@ const HIGHLIGHTS = [
   { icon: Award, num: "25+", label: "Years of experience" },
   { icon: Star, num: "5.0", label: "Google rating", href: GOOGLE_REVIEWS_URL },
   { icon: Users, num: "80+", label: "Client reviews", href: GOOGLE_REVIEWS_URL },
-  { icon: Handshake, num: "100%", label: "Personal attention and transparency" },
+  { icon: Handshake, num: "✦", label: "Direct, Personal Service" },
 ];
 
 const FAQS = [
@@ -189,7 +189,7 @@ function HomeEn() {
                   </div>
                   <h3 className="mt-4 font-display text-xl font-bold text-primary">{s.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
-                  <span className="mt-4 inline-flex text-xs font-semibold text-gold">Learn more →</span>
+                  <span className="mt-4 inline-flex text-xs font-semibold text-gold">{s.title} →</span>
                 </Link>
               ))}
             </div>
