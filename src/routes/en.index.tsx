@@ -206,7 +206,7 @@ function HomeEn() {
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
             <div className="text-center">
               <div className="text-xs font-semibold uppercase tracking-widest text-gold">Why Nimrodi & Co.</div>
-              <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">A boutique firm, Big-Four expertise</h2>
+              <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">A boutique firm with senior expertise</h2>
             </div>
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
