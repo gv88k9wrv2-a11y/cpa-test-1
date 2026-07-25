@@ -35,7 +35,7 @@ export const Route = createFileRoute("/en/audit")({
       icon={FileSearch}
       eyebrow="Audit & Assurance"
       title="Statutory audits, IFRS reporting and due diligence"
-      intro="Every Israeli company is required to file audited annual financial statements. We deliver rigorous, risk-based audits that satisfy the Registrar, the Tax Authority, banks and investors — while giving management genuinely useful insights."
+      intro="Audit and financial reporting requirements vary depending on the type of entity, its characteristics, and the applicable legal and regulatory requirements. We assist companies in assessing the reporting and audit requirements relevant to their circumstances, and deliver rigorous, risk-based audits — while giving management genuinely useful insights."
       highlights={[
         "Statutory annual audits (Israeli GAAP)",
         "IFRS reporting for regulated entities",
