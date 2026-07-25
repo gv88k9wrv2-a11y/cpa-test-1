@@ -54,7 +54,7 @@ const COPY = {
     sending: "Preparing your inquiry…",
     whatsapp: "Prefer WhatsApp? Chat with us instantly",
     privacy:
-      "Your inquiry is confidential and never shared. We respond within one business day.",
+      "Your inquiry is confidential and never shared. We aim to respond as soon as possible, typically within one business day.",
     required: "*",
     successTitle: "Your inquiry is ready to send",
     successText:
