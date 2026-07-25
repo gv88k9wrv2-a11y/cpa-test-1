@@ -53,7 +53,7 @@ const FAQS = [
   },
   {
     q: "Do you handle foreign income, crypto and relocation?",
-    a: "Yes. We hold specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, facilitating the repatriation of crypto funds into Israeli banks, and filing tailored compliance reports with the Tax Authority. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
+    a: "Yes. We hold specialized expertise in cryptocurrency and digital asset taxation. Transactions involving virtual currencies may give rise to tax and reporting obligations depending on the nature of the activity, the facts of the transactions, the taxpayer's circumstances, and applicable law. We navigate complex Web3 transactions and assist with preparing documentation and information regarding the source and history of funds for consideration by relevant financial institutions, subject to the bank's policies, compliance procedures, and final decision. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
   },
 ];
 
