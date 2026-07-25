@@ -65,10 +65,10 @@ export const Route = createFileRoute("/payroll")({
         content: "שירות שכר מלא: תלושים, 102, 106, אופציות 102 ופרישה. משרד רואי חשבון בהרצליה.",
       },
       { property: "og:url", content: "/payroll" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://cpa-test-1.lovable.app/payroll" },

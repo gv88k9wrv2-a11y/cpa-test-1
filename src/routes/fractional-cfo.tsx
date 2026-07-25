@@ -54,10 +54,10 @@ export const Route = createFileRoute("/fractional-cfo")({
           "סמנכ״ל כספים בכיר במיקור חוץ – ניהול תזרים, מודלים, ובורד לסטארטאפים ולחברות זרות בישראל.",
       },
       { property: "og:url", content: "/fractional-cfo" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "/fractional-cfo" },
