@@ -163,7 +163,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Fixed monthly Retainer — predictable, transparent pricing",
             "Project-based: model build, Data Room prep, funding round support",
             "Interim CFO — bridging between outgoing and incoming CFO",
-            "Saves 60–75% vs. a full-time CFO in Israel",
+            "Access senior-level financial leadership in a flexible structure tailored to the company's needs",
             "Access to an entire team: bookkeeping, payroll, audit and tax",
             "Smooth handover to a full-time CFO when the time comes",
           ],
