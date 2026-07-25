@@ -76,10 +76,10 @@ export const Route = createFileRoute("/services")({
           "ליווי חשבונאי מקיף לחברות, סטארטאפים ועצמאים – ייעוץ מס, גיוסי הון, ניהול כספים ועוד.",
       },
       { property: "og:url", content: "https://cpa-test-1.lovable.app/services" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.webp" },
+      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://cpa-test-1.lovable.app/services" },

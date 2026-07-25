@@ -10,10 +10,10 @@ export const Route = createFileRoute("/en/accessibility")({
       { name: "description", content: "Accessibility statement for the Nimrodi & Co. website — WCAG 2.1 AA compliance, physical office accessibility details, and contact information." },
       { property: "og:title", content: "Accessibility Statement — Nimrodi & Co. CPA" },
       { property: "og:url", content: `${BASE}/en/accessibility` },
-      { property: "og:image", content: `${BASE}/og-image.webp` },
+      { property: "og:image", content: `${BASE}/og-image.jpg` },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: `${BASE}/og-image.webp` },
+      { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
     links: [
       { rel: "canonical", href: `${BASE}/en/accessibility` },
