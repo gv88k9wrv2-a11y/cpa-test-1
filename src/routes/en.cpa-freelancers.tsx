@@ -75,7 +75,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           body: "Most freelancers miss credits and refunds they're entitled to. We map every applicable item and file amended returns up to six years back where relevant:",
           bullets: [
             "Tax credit points (parents, children, academic degree, periphery residence)",
-            "Full recognition of vehicle, phone, home-office and internet expenses",
+            "Assessment of vehicle, phone, home-office and internet expenses under applicable rules",
             "Pension and Keren Hishtalmut contributions to the annual ceilings",
             "Retroactive refund claims (up to 6 years back)",
             "Correct withholding coordination between salaried and self-employed income",
