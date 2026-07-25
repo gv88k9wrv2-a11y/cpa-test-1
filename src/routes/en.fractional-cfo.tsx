@@ -8,7 +8,7 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   {
     q: "What is a Fractional CFO and who is it for?",
-    a: "A Fractional CFO is a senior Chief Financial Officer engaged on a part-time basis (one day per week, several days per month) instead of the cost of a full-time hire. It is the right model for Seed–Series B startups, foreign companies operating in Israel that need a senior local finance presence, and growth-stage businesses that do not yet justify a full-time CFO. You get the experience of hundreds of funding rounds and board meetings — at a fraction of the cost.",
+    a: "A Fractional CFO is a senior Chief Financial Officer engaged on a part-time basis (one day per week, several days per month) instead of the cost of a full-time hire. It is the right model for Seed–Series B startups, foreign companies operating in Israel that need a senior local finance presence, and growth-stage businesses that do not yet justify a full-time CFO. You get experience supporting companies with fundraising processes, financial reporting, and strategic finance matters — in a flexible structure tailored to the company's needs.",
   },
   {
     q: "How is a Fractional CFO different from a bookkeeper?",
