@@ -47,7 +47,10 @@ const MAIN_LINKS = [
   { to: "/blog", label: "בלוג" },
   { to: "/faq", label: "שאלות ותשובות" },
   { to: "/contact", label: "צור קשר" },
+  { to: "/accessibility", label: "הצהרת נגישות" },
+  { to: "/privacy-policy", label: "מדיניות פרטיות ושימוש באתר" },
 ] as const;
+
 
 type ServiceRoute =
   | "/bookkeeping"
