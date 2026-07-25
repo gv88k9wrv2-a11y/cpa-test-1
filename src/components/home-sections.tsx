@@ -84,7 +84,7 @@ export function WhyUsSection() {
             למה נמרודי ושות׳
           </div>
           <h2 className="mt-3 font-display text-3xl font-bold text-primary sm:text-4xl">
-            שישה יתרונות שהופכים אותנו למשרד שנשארים אתו
+            שישה יתרונות שבזכותם לקוחות בוחרים להישאר איתנו לאורך זמן
           </h2>
           <p className="mt-4 text-muted-foreground">
             לקוחות בוחרים בנו בזכות שילוב של מקצועיות, זמינות וליווי אישי לאורך זמן.
