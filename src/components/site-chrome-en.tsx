@@ -45,7 +45,10 @@ const MAIN_LINKS = [
   { to: "/en/team", label: "Team" },
   { to: "/en/faq", label: "FAQ" },
   { to: "/en/contact", label: "Contact" },
+  { to: "/en/accessibility", label: "Accessibility" },
+  { to: "/en/privacy-policy", label: "Privacy Policy & Terms of Use" },
 ] as const;
+
 
 type ServiceRoute =
   | "/en/bookkeeping"
@@ -283,8 +286,6 @@ export function SiteFooterEn() {
             {MAIN_LINKS.map((l) => (
               <li key={l.to}><Link to={l.to} className="hover:text-gold">{l.label}</Link></li>
             ))}
-            <li><Link to="/en/accessibility" className="hover:text-gold">Accessibility</Link></li>
-            <li><Link to="/en/privacy-policy" className="hover:text-gold">Privacy Policy</Link></li>
             <li><Link to="/" className="hover:text-gold">עברית / Hebrew</Link></li>
           </ul>
         </div>

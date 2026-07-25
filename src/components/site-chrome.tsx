@@ -47,7 +47,10 @@ const MAIN_LINKS = [
   { to: "/blog", label: "בלוג" },
   { to: "/faq", label: "שאלות ותשובות" },
   { to: "/contact", label: "צור קשר" },
+  { to: "/accessibility", label: "הצהרת נגישות" },
+  { to: "/privacy-policy", label: "מדיניות פרטיות ושימוש באתר" },
 ] as const;
+
 
 type ServiceRoute =
   | "/bookkeeping"
@@ -421,8 +424,7 @@ export function SiteFooter() {
                 <Link to={l.to} className="hover:text-gold">{l.label}</Link>
               </li>
             ))}
-            <li><Link to="/accessibility" className="hover:text-gold">הצהרת נגישות</Link></li>
-            <li><Link to="/privacy-policy" className="hover:text-gold">מדיניות פרטיות</Link></li>
+
           </ul>
         </div>
 
