@@ -83,7 +83,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
         },
         {
           title: "Global freelancers — Israeli self-employed with foreign clients",
-          body: "If you're a developer, designer, consultant or marketer working directly with clients in the US, Europe or Asia, your tax structure needs specialist handling. We support hundreds of global freelancers and know every nuance:",
+          body: "If you're a developer, designer, consultant or marketer working directly with clients in the US, Europe or Asia, your tax structure needs specialist handling. We advise freelancers and independent professionals working with international clients and cross-border income, and know every nuance:",
           bullets: [
             "English invoices with 0% VAT under Section 30(a)(5)",
             "Receiving payments via PayPal, Wise, Stripe, Payoneer and wire",
