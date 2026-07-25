@@ -75,7 +75,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           body: "Most freelancers miss credits and refunds they're entitled to. We map every applicable item and file amended returns up to six years back where relevant:",
           bullets: [
             "Tax credit points (parents, children, academic degree, periphery residence)",
-            "Full recognition of vehicle, phone, home-office and internet expenses",
+            "Assessment of vehicle, phone, home-office and internet expenses under applicable rules",
             "Pension and Keren Hishtalmut contributions to the annual ceilings",
             "Retroactive refund claims (up to 6 years back)",
             "Correct withholding coordination between salaried and self-employed income",
@@ -83,7 +83,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
         },
         {
           title: "Global freelancers — Israeli self-employed with foreign clients",
-          body: "If you're a developer, designer, consultant or marketer working directly with clients in the US, Europe or Asia, your tax structure needs specialist handling. We support hundreds of global freelancers and know every nuance:",
+          body: "If you're a developer, designer, consultant or marketer working directly with clients in the US, Europe or Asia, your tax structure needs specialist handling. We advise freelancers and independent professionals working with international clients and cross-border income, and know every nuance:",
           bullets: [
             "English invoices with 0% VAT under Section 30(a)(5)",
             "Receiving payments via PayPal, Wise, Stripe, Payoneer and wire",

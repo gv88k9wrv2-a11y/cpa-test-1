@@ -53,20 +53,20 @@ const FAQS = [
   },
   {
     q: "Do you handle foreign income, crypto and relocation?",
-    a: "Yes. We hold specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, facilitating the repatriation of crypto funds into Israeli banks, and filing tailored compliance reports with the Tax Authority. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
+    a: "Yes. We hold specialized expertise in cryptocurrency and digital asset taxation. Transactions involving virtual currencies may give rise to tax and reporting obligations depending on the nature of the activity, the facts of the transactions, the taxpayer's circumstances, and applicable law. We navigate complex Web3 transactions and assist with preparing documentation and information regarding the source and history of funds for consideration by relevant financial institutions, subject to the bank's policies, compliance procedures, and final decision. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
   },
 ];
 
 export const Route = createFileRoute("/en/")({
   head: () => ({
     meta: [
-      { title: "Nimrodi & Co. CPA – Leading CPA Firm in Herzliya Pituach for Startups & Foreign Companies" },
+      { title: "Nimrodi & Co. CPA – CPA Firm in Herzliya Pituach for Startups & Foreign Companies" },
       {
         name: "description",
         content:
           "Boutique CPA firm in Herzliya Pituach for startups, foreign companies, fractional CFO and crypto tax compliance. Book a free consultation.",
       },
-      { property: "og:title", content: "Nimrodi & Co. CPA – Leading CPA Firm in Herzliya Pituach for Startups & Foreign Companies" },
+      { property: "og:title", content: "Nimrodi & Co. CPA – CPA Firm in Herzliya Pituach for Startups & Foreign Companies" },
       { property: "og:description", content: "Premium boutique CPA firm in Herzliya Pituach. Specializing in high-growth startup engineering, international tax compliance, fractional CFO services, and complex crypto taxation." },
       { property: "og:url", content: `${BASE}/en` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
@@ -173,7 +173,7 @@ function HomeEn() {
                 { to: "/en/cpa-startups", icon: Building2, title: "Startups & Tech", desc: "Fundraising, ESOP (section 102), Israeli-Delaware Flip, preferred tech enterprise status." },
                 { to: "/en/cpa-freelancers", icon: Briefcase, title: "Freelancers & Self-Employed", desc: "File openings, VAT reporting, annual returns, Capital Declarations (Asset & Net Worth Report)." },
                 { to: "/en/cpa-foreign-companies", icon: Globe2, title: "Foreign Companies", desc: "Subsidiary vs. branch, banking, Transfer Pricing, ongoing compliance." },
-                { to: "/en/tax-consulting", icon: Award, title: "Tax Advisory & Special Reports", desc: "Specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, facilitating the repatriation of crypto funds into Israeli banks, and filing tailored compliance reports with the Tax Authority. Plus Pre-Rulings, appeals and objections.", badge: "Crypto & Web3 Expert" },
+                { to: "/en/tax-consulting", icon: Award, title: "Tax Advisory & Special Reports", desc: "Specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, assisting with documentation regarding source and history of funds for consideration by relevant financial institutions, and filing tailored compliance reports with the Tax Authority. Plus Pre-Rulings, appeals and objections.", badge: "Crypto & Web3 Expert" },
                 { to: "/en/audit", icon: TrendingUp, title: "Audit & Assurance", desc: "Israeli GAAP & IFRS, statutory audits, due diligence." },
                 { to: "/en/cpa-international", icon: Users, title: "International Tax", desc: "Relocation, returning residents, olim benefits, treaties." },
               ].map((s) => (

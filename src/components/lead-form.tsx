@@ -11,7 +11,7 @@ const COPY = {
     eyebrow: "פגישת ייעוץ דיסקרטית",
     title: "בואו נדבר בארבע עיניים",
     subtitle:
-      "מלאו פרטים והפנייה תגיע ישירות לשותף בכיר. אנו מחויבים לסודיות מלאה.",
+      "מלאו פרטים והפנייה תגיע ישירות לשותף בכיר. אנו מטפלים במידע של לקוחות תוך שמירה קפדנית על סודיות ושיקול דעת מקצועי, בכפוף לדין החל ולחובות המקצועיות.",
     name: "שם מלא",
     company: "שם החברה / הסטארט-אפ",
     email: "כתובת אימייל",
@@ -41,7 +41,7 @@ const COPY = {
     eyebrow: "Discrete Consultation",
     title: "Let's have a confidential conversation",
     subtitle:
-      "Send us a note and a senior partner will reach out personally. Full discretion guaranteed.",
+      "Send us a note and a senior partner will reach out personally. We handle client information with strict confidentiality and professional discretion, subject to applicable law and professional obligations.",
     name: "Full Name",
     company: "Company / Startup Name",
     email: "Business Email Address",

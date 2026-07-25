@@ -8,7 +8,7 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   {
     q: "What is a Fractional CFO and who is it for?",
-    a: "A Fractional CFO is a senior Chief Financial Officer engaged on a part-time basis (one day per week, several days per month) instead of the cost of a full-time hire. It is the right model for Seed–Series B startups, foreign companies operating in Israel that need a senior local finance presence, and growth-stage businesses that do not yet justify a full-time CFO. You get the experience of hundreds of funding rounds and board meetings — at a fraction of the cost.",
+    a: "A Fractional CFO is a senior Chief Financial Officer engaged on a part-time basis (one day per week, several days per month) instead of the cost of a full-time hire. It is the right model for Seed–Series B startups, foreign companies operating in Israel that need a senior local finance presence, and growth-stage businesses that do not yet justify a full-time CFO. You get experience supporting companies with fundraising processes, financial reporting, and strategic finance matters — in a flexible structure tailored to the company's needs.",
   },
   {
     q: "How is a Fractional CFO different from a bookkeeper?",
@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     q: "How much does a Fractional CFO cost?",
-    a: "Pricing is flexible and scope-dependent: fixed monthly Retainer (one day per week / two days per month), project-based (fundraise prep, DD readiness, model build), or a mix. Key advantage — you only pay for the senior layer, while the professional team beneath (bookkeeping, payroll, audit) operates at standard cost. Saves 60–75% versus a full-time CFO in Israel.",
+    a: "Pricing is flexible and scope-dependent: fixed monthly Retainer (one day per week / two days per month), project-based (fundraise prep, DD readiness, model build), or a mix. Key advantage — you only pay for the senior layer, while the professional team beneath (bookkeeping, payroll, audit) operates at standard cost. Access senior-level financial leadership and support in a flexible structure tailored to the company's needs.",
   },
   {
     q: "When should a company move to a full-time CFO?",
@@ -163,7 +163,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Fixed monthly Retainer — predictable, transparent pricing",
             "Project-based: model build, Data Room prep, funding round support",
             "Interim CFO — bridging between outgoing and incoming CFO",
-            "Saves 60–75% vs. a full-time CFO in Israel",
+            "Access senior-level financial leadership in a flexible structure tailored to the company's needs",
             "Access to an entire team: bookkeeping, payroll, audit and tax",
             "Smooth handover to a full-time CFO when the time comes",
           ],
