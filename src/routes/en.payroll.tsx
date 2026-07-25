@@ -58,7 +58,7 @@ export const Route = createFileRoute("/en/payroll")({
         },
         {
           title: "Section 102 ESOP plans",
-          body: "We help startups design and operate Section 102 stock option plans in the capital gains track (25% preferential tax) — including trustee coordination, Tax Authority filings, exercise mechanics and employee guidance at sale/exit events.",
+          body: "We support startups in designing and operating Section 102 employee equity plans, including trustee coordination, Tax Authority filings, exercise mechanics and employee guidance at sale/exit events. Under certain routes and subject to the applicable conditions, capital-gains tax treatment may apply. The actual tax treatment depends on the relevant allocation route, plan terms, trustee requirements, holding periods and the circumstances of the realization.",
         },
         {
           title: "Termination & severance",
