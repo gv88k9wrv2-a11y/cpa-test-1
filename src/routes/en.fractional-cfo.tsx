@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     q: "How much does a Fractional CFO cost?",
-    a: "Pricing is flexible and scope-dependent: fixed monthly Retainer (one day per week / two days per month), project-based (fundraise prep, DD readiness, model build), or a mix. Key advantage — you only pay for the senior layer, while the professional team beneath (bookkeeping, payroll, audit) operates at standard cost. Saves 60–75% versus a full-time CFO in Israel.",
+    a: "Pricing is flexible and scope-dependent: fixed monthly Retainer (one day per week / two days per month), project-based (fundraise prep, DD readiness, model build), or a mix. Key advantage — you only pay for the senior layer, while the professional team beneath (bookkeeping, payroll, audit) operates at standard cost. Access senior-level financial leadership and support in a flexible structure tailored to the company's needs.",
   },
   {
     q: "When should a company move to a full-time CFO?",
