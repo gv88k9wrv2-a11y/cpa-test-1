@@ -100,15 +100,15 @@ export const Route = createFileRoute("/faq")({
           "מדריך תשובות מקיף על שירותי רואה חשבון, מיסוי, גיוסי הון וליווי עצמאים.",
       },
       { property: "og:url", content: "/faq" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/faq" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/faq" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/faq" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/faq" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/faq" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/faq" }
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(FAQ_JSONLD) },

@@ -7,7 +7,7 @@ import {
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
 import { GovPortalLinks } from "../components/gov-portal-links";
 
-const BASE = "https://cpa-test-1.lovable.app";
+const BASE = "https://www.nimrodi.co.il";
 
 const GROUPS = [
   {

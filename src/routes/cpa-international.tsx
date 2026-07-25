@@ -66,15 +66,15 @@ export const Route = createFileRoute("/cpa-international")({
           "ליווי מקצועי בתכנוני מס בינלאומיים – רילוקיישן, עולים, תושבים חוזרים, ניתוק תושבות ופעילות עסקית בין-מדינתית.",
       },
       { property: "og:url", content: "/cpa-international" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/cpa-international" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/cpa-international" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/cpa-international" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-international" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/cpa-international" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-international" }
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },

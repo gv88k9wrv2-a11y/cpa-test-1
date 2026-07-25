@@ -12,15 +12,15 @@ export const Route = createFileRoute("/accessibility")({
       },
       { property: "og:title", content: "הצהרת נגישות – נמרודי ושות׳" },
       { property: "og:url", content: "/accessibility" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/accessibility" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/accessibility" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/accessibility" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/accessibility" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/accessibility" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/accessibility" }
     ],
   }),
   component: AccessibilityPage,

@@ -15,9 +15,9 @@ export const Route = createFileRoute("/privacy-policy")({
       { property: "og:description", content: "מחויבות לסודיות מלאה של פונים ולקוחות בהתאם לתיקון 13." },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/privacy-policy" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/privacy-policy" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/privacy-policy" },
+      { rel: "canonical", href: "https://www.nimrodi.co.il/privacy-policy" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/privacy-policy" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/privacy-policy" },
     ],
   }),
   component: PrivacyPage,

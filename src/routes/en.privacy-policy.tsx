@@ -18,9 +18,9 @@ export const Route = createFileRoute("/en/privacy-policy")({
       },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/en/privacy-policy" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/privacy-policy" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/privacy-policy" },
+      { rel: "canonical", href: "https://www.nimrodi.co.il/en/privacy-policy" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/privacy-policy" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/privacy-policy" },
     ],
   }),
   component: PrivacyPageEn,

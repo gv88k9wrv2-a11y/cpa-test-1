@@ -65,15 +65,15 @@ export const Route = createFileRoute("/payroll")({
         content: "שירות שכר מלא: תלושים, 102, 106, אופציות 102 ופרישה. משרד רואי חשבון בהרצליה.",
       },
       { property: "og:url", content: "/payroll" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/payroll" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/payroll" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/payroll" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/payroll" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/payroll" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/payroll" }
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },

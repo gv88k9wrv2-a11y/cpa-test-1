@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://cpa-test-1.lovable.app/sitemap.xml
+Sitemap: https://www.nimrodi.co.il/sitemap.xml

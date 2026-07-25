@@ -28,16 +28,16 @@ export const Route = createFileRoute("/about")({
           "מעל 25 שנות ניסיון בליווי חברות טכנולוגיה, סטארטאפים, עצמאים ופרילנסרים בהרצליה והסביבה.",
       },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:type", content: "article" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/about" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/about" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/about" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/about" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/about" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/about" }
     ],
   }),
   component: AboutPage,
