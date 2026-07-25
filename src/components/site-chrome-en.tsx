@@ -45,7 +45,10 @@ const MAIN_LINKS = [
   { to: "/en/team", label: "Team" },
   { to: "/en/faq", label: "FAQ" },
   { to: "/en/contact", label: "Contact" },
+  { to: "/en/accessibility", label: "Accessibility" },
+  { to: "/en/privacy-policy", label: "Privacy Policy & Terms of Use" },
 ] as const;
+
 
 type ServiceRoute =
   | "/en/bookkeeping"
