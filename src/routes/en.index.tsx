@@ -60,7 +60,7 @@ const FAQS = [
 export const Route = createFileRoute("/en/")({
   head: () => ({
     meta: [
-      { title: "Nimrodi & Co. CPA – Leading CPA Firm in Herzliya Pituach for Startups & Foreign Companies" },
+      { title: "Nimrodi & Co. CPA – CPA Firm in Herzliya Pituach for Startups & Foreign Companies" },
       {
         name: "description",
         content:
