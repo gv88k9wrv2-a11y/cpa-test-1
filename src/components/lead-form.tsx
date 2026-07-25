@@ -41,7 +41,7 @@ const COPY = {
     eyebrow: "Discrete Consultation",
     title: "Let's have a confidential conversation",
     subtitle:
-      "Send us a note and a senior partner will reach out personally. Full discretion guaranteed.",
+      "Send us a note and a senior partner will reach out personally. We handle client information with strict confidentiality and professional discretion, subject to applicable law and professional obligations.",
     name: "Full Name",
     company: "Company / Startup Name",
     email: "Business Email Address",
