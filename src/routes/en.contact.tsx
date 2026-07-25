@@ -4,7 +4,7 @@ import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";
 
-const BASE = "https://cpa-test-1.lovable.app";
+const BASE = "https://www.nimrodi.co.il";
 
 export const Route = createFileRoute("/en/contact")({
   head: () => ({

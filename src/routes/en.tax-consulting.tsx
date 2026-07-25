@@ -3,7 +3,7 @@ import { FileSpreadsheet } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-tax.webp";
 
-const BASE = "https://cpa-test-1.lovable.app";
+const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "What is a Pre-Ruling and when should we get one?", a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear." },
   { q: "Can you handle crypto tax compliance?", a: "Yes — tax, documentation and compliance support relating to crypto-derived funds and their presentation to financial institutions, subject to the institution's requirements and applicable law." },

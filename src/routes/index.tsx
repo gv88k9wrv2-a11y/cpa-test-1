@@ -61,16 +61,16 @@ export const Route = createFileRoute("/")({
           "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון.",
       },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en" },
-      { rel: "alternate", hrefLang: "x-default", href: "https://cpa-test-1.lovable.app/" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/" }
     ],
     scripts: [
       {

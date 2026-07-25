@@ -54,15 +54,15 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
           "משרד רואי חשבון בעל ניסיון עשיר בליווי חברות בינלאומיות בישראל – הקמה, ניהול, מיסוי ורגולציה.",
       },
       { property: "og:url", content: "/cpa-foreign-companies" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/cpa-foreign-companies" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/cpa-foreign-companies" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/cpa-foreign-companies" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-foreign-companies" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/cpa-foreign-companies" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-foreign-companies" }
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },

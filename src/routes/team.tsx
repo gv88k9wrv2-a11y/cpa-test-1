@@ -27,15 +27,15 @@ export const Route = createFileRoute("/team")({
         content: "רואי חשבון, מנהלי חשבונות ומומחי מס בוטיק בהרצליה פיתוח.",
       },
       { property: "og:url", content: "/team" },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://cpa-test-1.lovable.app/team" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://cpa-test-1.lovable.app/team" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://cpa-test-1.lovable.app/en/team" }
+      { rel: "canonical", href: "https://www.nimrodi.co.il/team" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/team" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/team" }
     ],
   }),
   component: TeamPage,

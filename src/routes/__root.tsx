@@ -91,7 +91,7 @@ const ORG_JSONLD = {
   description:
     "משרד רואי חשבון בוטיק בהרצליה פיתוח. למעלה מ־25 שנות ניסיון בליווי חברות, סטארטאפים, עצמאים ופרילנסרים – ביקורת, דיווח, ייעוץ מס וגיוסי הון.",
   url: "https://www.nimrodi.co.il",
-  image: "https://cpa-test-1.lovable.app/og-image.jpg",
+  image: "https://www.nimrodi.co.il/og-image.jpg",
   telephone: "+972-9-9582211",
   email: "office@nimrodi.co.il",
   areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
@@ -131,7 +131,7 @@ const WEBSITE_JSONLD = {
   publisher: { "@type": "Organization", name: "נמרודי ושות׳ – רואי חשבון" },
 };
 
-const DEFAULT_ORIGIN = "https://cpa-test-1.lovable.app";
+const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
 const ACCOUNTING_SERVICE_JSONLD = {
   "@context": "https://schema.org",
   "@type": "AccountingService",
@@ -182,8 +182,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון." },
       { property: "og:description", content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון." },
       { name: "twitter:description", content: "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון." },
-      { property: "og:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
-      { name: "twitter:image", content: "https://cpa-test-1.lovable.app/og-image.jpg" },
+      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
