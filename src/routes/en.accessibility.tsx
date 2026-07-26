@@ -90,7 +90,7 @@ function AccessibilityEn() {
                 We continue our efforts to improve the accessibility of the website and the office service. If you encountered an inaccessible element, experienced difficulty browsing the site, or would like to request special accessibility arrangements before a meeting at our office, we will be happy to assist:
               </p>
               <div className="rounded-lg border border-border/60 bg-secondary/30 p-6 space-y-3">
-                <p><strong>Accessibility Coordinator:</strong> Nimrodi & Co. Accessibility Team</p>
+                <p><strong>Accessibility Coordinator:</strong> Shlomo Nimrodi, CPA Accessibility Team</p>
                 <p>
                   <strong>Phone:</strong>{" "}
                   <a href="tel:+97299582211" className="text-primary hover:text-gold hover:underline">
