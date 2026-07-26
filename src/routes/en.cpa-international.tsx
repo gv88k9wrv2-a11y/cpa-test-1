@@ -5,7 +5,7 @@ import heroImg from "../assets/service-international.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "What tax benefits do new immigrants (olim chadashim) receive?", a: "New immigrants and senior returning residents enjoy a 10-year exemption on foreign-source income and capital gains, plus an exemption from reporting foreign assets. Timing and planning of relocation are critical to maximize the benefit." },
+  { q: "What tax benefits do new immigrants (olim chadashim) receive?", a: "Eligible new residents and returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income, subject to the applicable law, eligibility conditions, and the specific circumstances. Timing and planning of relocation can be critical to maximize the benefit." },
   { q: "Can I sever Israeli tax residency by relocating?", a: "Yes, but severance requires more than moving abroad. The ITA looks at 'center of life' (family, home, work, social ties). We plan and document the severance to withstand challenge — and address the exit tax exposure." },
   { q: "How does the US-Israel tax treaty work in practice?", a: "The treaty allocates taxing rights, provides tie-breaker rules for residency, and grants foreign tax credits. Practical planning — timing of income recognition, ESOP exercise, pension distributions — often makes a large after-tax difference." },
 ];
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       sections={[
         {
           title: "New immigrants & returning residents",
-          body: "Israel grants generous 10-year exemptions to new immigrants and senior returning residents on foreign-source income and gains. But the benefit is fragile — poor planning around exercise of pre-aliyah equity, US pension distributions or trusts can waste it. We plan timing and structure years in advance.",
+          body: "Eligible new residents and senior returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income and gains, subject to the applicable law, eligibility conditions and the specific circumstances. The benefit is fragile — poor planning around exercise of pre-aliyah equity, US pension distributions or trusts can erode it. We plan timing and structure years in advance.",
         },
         {
           title: "Relocation & residency severance",

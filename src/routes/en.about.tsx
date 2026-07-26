@@ -58,7 +58,7 @@ function AboutEn() {
               <ul className="mt-5 space-y-3">
                 {[
                   "Senior-partner attention. You always talk to the person actually doing the work.",
-                  "Long-term relationships. Most of our clients have been with us for a decade or more.",
+                  "Long-term relationships. Many client relationships develop over the long term.",
                   "Modern stack. We work on cloud accounting platforms so you have real-time visibility.",
                   "Cross-border fluency. Israeli tax deeply understood, coordinated with US, UK and EU advisors.",
                   "Transparent pricing. Fixed-scope engagements wherever possible — no billing surprises.",

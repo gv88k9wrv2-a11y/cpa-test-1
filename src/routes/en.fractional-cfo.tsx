@@ -111,7 +111,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Runway simulation across revenue, funding and event scenarios",
             "Cash Trigger Points — when a decision becomes mandatory",
             "Deferred Revenue and credit facility monitoring",
-            "Fundraise timing: always start with 9–12 months of Runway",
+            "Fundraise timing: a commonly used planning guideline is to begin fundraising while sufficient runway remains, often around 9–12 months depending on the company's circumstances",
             "Real-time dashboards for management and the Board",
           ],
         },
@@ -144,12 +144,12 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         {
           title: "Continuous Due Diligence & M&A readiness",
           body:
-            "Acquisition and funding opportunities arrive without warning. A ready company enters negotiations in days; an unready company loses multi-million-dollar deals. We manage the Data Room as an ongoing process, not an emergency project:",
+            "Acquisition and funding opportunities arrive without warning. A ready company enters negotiations in days. Insufficient financial preparation can create unnecessary friction during important strategic and commercial processes. We manage the Data Room as an ongoing process, not an emergency project:",
           bullets: [
             "Data Room on DocSend / Digify / Google Drive with standard VC folder structure",
             "Quarterly refresh of all financial and legal documents",
             "Clean fully-diluted Cap Table — SAFEs, CLAs and Option Pool included",
-            "Clean tax history — no open assessments or arrears",
+            "Organized tax records and visibility into outstanding tax matters",
             "Quality of Earnings (QoE) ahead of material transactions",
             "End-to-end DD process management with buyers and investors",
             "Coordination with counsel (Israel + abroad), auditors and appraisers",
