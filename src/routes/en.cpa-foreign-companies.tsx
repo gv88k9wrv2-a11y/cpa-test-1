@@ -96,7 +96,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         },
         {
           title: "Cross-Border IP Tax Structuring",
-          body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We plan and execute optimal IP structures in Israel and abroad, in full compliance with OECD BEPS and the Israeli Income Tax Ordinance:",
+          body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We plan and execute optimal IP structures in Israel and abroad, addressing the OECD BEPS rules relevant to the structure and activity and the Israeli Income Tax Ordinance:",
           bullets: [
             "IP location strategy: Israel (Preferred Tech 6–12%), Ireland, Luxembourg, Singapore",
             "Intra-group technology transfers under Section 85A at arm's length",

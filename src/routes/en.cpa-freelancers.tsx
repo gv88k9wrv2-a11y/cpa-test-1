@@ -37,7 +37,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
       icon={Briefcase}
       eyebrow="Freelancers, Consultants & Single-Member Companies"
       title="CPA for freelancers, elite consultants and boutique agencies"
-      intro="Premium accounting for elite high-tech consultants, independent contractors and boutique agencies. Streamlined, fully digital tax registration; comprehensive annual returns and capital declarations; and strategic planning for the crossover from sole proprietor (עוסק מורשה) to incorporated company (חברה בע״מ) — with full protection against Pocket Company (חברת ארנק) reclassification."
+      intro="Premium accounting for elite high-tech consultants, independent contractors and boutique agencies. Streamlined, fully digital tax registration; comprehensive annual returns and capital declarations; and strategic planning for the crossover from sole proprietor (עוסק מורשה) to incorporated company (חברה בע״מ) — with structured planning and documentation designed to help address Pocket Company (חברת ארנק) classification considerations."
       highlights={[
         "Full digital registration with VAT, ITA and Bituach Leumi",
         "Osek patur / osek murshe fit assessment",
@@ -114,7 +114,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
             "Avoid single-client dominance (70%+ of revenue is a clear red flag)",
             "Hiring employees or subcontractors — strengthens business classification",
             "Separation of owner's draws from salary; documentation of owner's role",
-            "Pre-Ruling in borderline cases — full protection against future assessment",
+            "Pre-Ruling in borderline cases — careful preparation designed to help reduce uncertainty in future tax discussions",
             "Controlling-shareholder distribution policy compliant with Section 3(J1)",
           ],
         },

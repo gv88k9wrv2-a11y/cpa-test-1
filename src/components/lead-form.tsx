@@ -22,7 +22,7 @@ const COPY = {
     submit: "שליחת פנייה במייל",
     sending: "מכין את הפנייה…",
     whatsapp: "מעדיפים וואטסאפ? שליחה מיידית בצ׳אט",
-    privacy: "פנייתכם חסויה ולא תועבר לצד ג׳. אנו משתדלים להשיב בהקדם האפשרי, בדרך כלל בתוך יום עסקים.",
+    privacy: "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. אנו משתדלים להשיב בהקדם האפשרי, בדרך כלל בתוך יום עסקים.",
     required: "*",
     successTitle: "פנייתך מוכנה לשליחה",
     successText:
@@ -54,7 +54,7 @@ const COPY = {
     sending: "Preparing your inquiry…",
     whatsapp: "Prefer WhatsApp? Chat with us instantly",
     privacy:
-      "Your inquiry is confidential and never shared. We aim to respond as soon as possible, typically within one business day.",
+      "We treat inquiries confidentially and handle submitted information in accordance with our privacy policy. We aim to respond as soon as possible, typically within one business day.",
     required: "*",
     successTitle: "Your inquiry is ready to send",
     successText:

@@ -85,7 +85,7 @@ function PrivacyPageEn() {
             <p className="mt-3">
               This data is used solely to respond to your inquiry and coordinate a consultation. It
               is not processed for unrelated purposes and is never sold, rented, or transferred to
-              any third party.
+              the applicable privacy policy and applicable law.
             </p>
           </section>
 
