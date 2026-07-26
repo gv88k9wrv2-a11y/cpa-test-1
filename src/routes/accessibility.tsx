@@ -92,7 +92,7 @@ function AccessibilityPage() {
                 אנו ממשיכים במאמצים לשפר את נגישות האתר והשירות במשרד. אם נתקלתם ברכיב לא נגיש, בקושי בגלישה באתר, או אם ברצונכם לבקש התאמת נגישות מיוחדת לקראת פגישה במשרדינו, נשמח לעמוד לרשותכם:
               </p>
               <div className="rounded-lg border border-border/60 bg-secondary/30 p-6 space-y-3">
-                <p><strong>רכז/ת נגישות המשרד:</strong> צוות שלמה נמרודי – רואה חשבון</p>
+                <p><strong>רכז/ת נגישות המשרד:</strong> שלמה נמרודי – רואה חשבון</p>
                 <p>
                   <strong>טלפון:</strong>{" "}
                   <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
