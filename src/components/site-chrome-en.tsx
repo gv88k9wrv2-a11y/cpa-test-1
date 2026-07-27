@@ -34,6 +34,7 @@ const MAPS_URL =
 /** Map current English path → Hebrew equivalent. */
 function toHebrewPath(pathname: string): string {
   if (!pathname || pathname === "/en" || pathname === "/en/") return "/";
+  if (pathname.startsWith("/en/blog")) return "/blog";
   if (pathname.startsWith("/en/")) return pathname.slice(3);
   return pathname;
 }

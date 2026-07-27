@@ -53,7 +53,7 @@ const FAQS = [
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
-      { title: "ביקורת דוחות כספיים לחברות | Israeli GAAP · IFRS | נמרודי ושות׳" },
+      { title: "ביקורת דוחות כספיים לחברות | IFRS · Israeli GAAP" },
       {
         name: "description",
         content:
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/audit")({
       { property: "og:url", content: "/audit" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [

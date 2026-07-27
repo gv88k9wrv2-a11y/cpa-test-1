@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: "האם השירות מתאים לעצמאי / עוסק פטור?",
-    a: "בהחלט. לעוסק פטור השירות פשוט יותר – אין דיווח מע״מ שוטף, אבל יש דיווח שנתי (טופס 1301 ו-856), הכנת דוח שנתי, וניהול הוצאות מוכרות. אנחנו מלווים גם את המעבר הבלתי נמנע לעוסק מורשה כשההכנסות עוברות את התקרה (כ-120,000 ₪ ב-2026).",
+    a: "בהחלט. לעוסק פטור השירות פשוט יותר – אין דיווח מע״מ שוטף, אבל יש דיווח שנתי (טופס 1301 ו-856), הכנת דוח שנתי, וניהול הוצאות מוכרות. אנחנו מלווים גם את המעבר הבלתי נמנע לעוסק מורשה כשההכנסות עוברות את התקרה הקבועה בחוק לאותה שנת מס.",
   },
   {
     q: "אני עובד עם חברת הנהלת חשבונות אחרת ולא מרוצה – איך עוברים?",
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/bookkeeping")({
       { property: "og:url", content: "/bookkeeping" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [

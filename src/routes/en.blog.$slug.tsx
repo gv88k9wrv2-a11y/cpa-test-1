@@ -37,7 +37,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
         { property: "og:url", content: url },
         { property: "og:image", content: `${ORIGIN}/og-image.jpg` },
         { property: "og:image:width", content: "1200" },
-        { property: "og:image:height", content: "630" },
+        { property: "og:image:height", content: "640" },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: `${ORIGIN}/og-image.jpg` },
         { property: "article:published_time", content: post.date },

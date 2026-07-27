@@ -48,13 +48,13 @@ const FAQS = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "נמרודי ושות׳ – משרד רואי חשבון בהרצליה פיתוח לסטארטאפים וחברות זרות" },
+      { title: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
       {
         name: "description",
         content:
           "משרד רואי חשבון בוטיק בהרצליה פיתוח. מתמחים במיסוי סטארטאפים, חברות זרות, ניהול כספים CFO, ציות מס קריפטו מורכב וגילוי מרצון.",
       },
-      { property: "og:title", content: "נמרודי ושות׳ – משרד רואי חשבון בהרצליה פיתוח לסטארטאפים וחברות זרות" },
+      { property: "og:title", content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
       {
         property: "og:description",
         content:
@@ -63,7 +63,7 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [

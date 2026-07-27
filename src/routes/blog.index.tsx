@@ -22,7 +22,7 @@ export const Route = createFileRoute("/blog/")({
       { property: "og:url", content: "/blog" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [{ rel: "canonical", href: "/blog" }],

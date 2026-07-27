@@ -42,7 +42,7 @@ const FAQS = [
   },
   {
     q: "מה זה מס יסף ומי חייב בו?",
-    a: "מס יסף הוא תוספת מס של 3% על הכנסות מעל הסף הקבוע בחוק לאותה שנת מס – חל על כל סוגי ההכנסה: משכורת, עסק, דיבידנד, ריבית, רווחי הון ושכר דירה. זהו רכיב חשוב בכל תכנון מס לבעלי הכנסות גבוהות. יש דרכים חוקיות לפריסה בין שנים או בין בני זוג שמפחיתות את החבות.",
+    a: "מס יסף הוא תוספת מס של 5% על הכנסות מעל הסף הקבוע בחוק לאותה שנת מס – חל על כל סוגי ההכנסה: משכורת, עסק, דיבידנד, ריבית, רווחי הון ושכר דירה. זהו רכיב חשוב בכל תכנון מס לבעלי הכנסות גבוהות. יש דרכים חוקיות לפריסה בין שנים או בין בני זוג שמפחיתות את החבות.",
   },
   {
     q: "אתם מלווים בעבירות מס וכופר?",
@@ -64,7 +64,7 @@ export const Route = createFileRoute("/tax-consulting")({
       { property: "og:url", content: "/tax-consulting" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [

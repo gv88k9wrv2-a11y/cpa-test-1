@@ -30,7 +30,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:url", content: "/about" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:type", content: "article" },
     ],

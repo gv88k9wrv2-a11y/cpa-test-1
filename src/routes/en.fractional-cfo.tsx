@@ -43,7 +43,7 @@ const FAQS = [
 export const Route = createFileRoute("/en/fractional-cfo")({
   head: () => ({
     meta: [
-      { title: "Fractional CFO Services in Israel | Burn, Runway, Fundraising | Nimrodi & Co." },
+      { title: "Fractional CFO Services in Israel | Nimrodi & Co." },
       {
         name: "description",
         content:

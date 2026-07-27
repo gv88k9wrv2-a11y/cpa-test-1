@@ -48,6 +48,7 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/blog/us-israel-tax-considerations", changefreq: "monthly", priority: "0.7" },
           { path: "/about", en: "/en/about", changefreq: "monthly", priority: "0.7" },
           { path: "/contact", en: "/en/contact", changefreq: "yearly", priority: "0.6" },
+          { path: "/privacy-policy", en: "/en/privacy-policy", changefreq: "yearly", priority: "0.3" },
           { path: "/accessibility", en: "/en/accessibility", changefreq: "yearly", priority: "0.3" },
         ];
 
