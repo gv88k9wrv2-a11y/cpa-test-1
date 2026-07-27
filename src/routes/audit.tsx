@@ -53,7 +53,7 @@ const FAQS = [
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
-      { title: "ביקורת דוחות כספיים לחברות | Israeli GAAP · IFRS | נמרודי ושות׳" },
+      { title: "ביקורת דוחות כספיים לחברות | IFRS · Israeli GAAP" },
       {
         name: "description",
         content:

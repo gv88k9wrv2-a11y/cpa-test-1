@@ -13,7 +13,7 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-international")({
   head: () => ({
     meta: [
-      { title: "International Tax — Relocation, Olim & Returning Residents | Nimrodi & Co." },
+      { title: "International Tax & Relocation for Olim | Nimrodi & Co." },
       { name: "description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
       { property: "og:title", content: "International Tax — Nimrodi & Co." },
       { property: "og:description", content: "Cross-border tax planning for relocation, olim and returning residents." },
