@@ -184,10 +184,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         type: "application/ld+json",
         children: JSON.stringify(WEBSITE_JSONLD),
       },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(ACCOUNTING_SERVICE_JSONLD),
-      },
+
+
 
       ...(GA_ENABLED
 
