@@ -83,15 +83,18 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
+
 const ORG_JSONLD = {
   "@context": "https://schema.org",
   "@type": "AccountingService",
+  "@id": `${DEFAULT_ORIGIN}/#website`,
   name: "נמרודי ושות׳ – רואי חשבון",
   alternateName: "Shlomo Nimrodi & Co. CPA",
   description:
     "משרד רואי חשבון בוטיק בהרצליה פיתוח. למעלה מ־25 שנות ניסיון בליווי חברות, סטארטאפים, עצמאים ופרילנסרים – ביקורת, דיווח, ייעוץ מס וגיוסי הון.",
-  url: "https://www.nimrodi.co.il",
-  image: "https://www.nimrodi.co.il/og-image.jpg",
+  url: DEFAULT_ORIGIN,
+  image: `${DEFAULT_ORIGIN}/og-image.jpg`,
   telephone: "+972-9-9582211",
   email: "office@nimrodi.co.il",
   areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
@@ -100,6 +103,11 @@ const ORG_JSONLD = {
     streetAddress: "גלגלי הפלדה 16",
     addressLocality: "הרצליה פיתוח",
     addressCountry: "IL",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 32.1624,
+    longitude: 34.8085,
   },
   founder: { "@type": "Person", name: "שלמה נמרודי" },
   priceRange: "$$",
@@ -121,6 +129,7 @@ const ORG_JSONLD = {
   ],
   sameAs: ["https://maps.app.goo.gl/jxWz9287qp3QRVFg8"],
 };
+
 
 const WEBSITE_JSONLD = {
   "@context": "https://schema.org",
