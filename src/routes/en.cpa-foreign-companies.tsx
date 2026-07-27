@@ -9,7 +9,7 @@ const FAQS = [
   { q: "How long does it take to set up an Israeli subsidiary?", a: "Registration takes 3–5 business days. Bank account opening for a foreign-owned entity typically takes 4–8 weeks due to KYC. We manage the entire process end-to-end." },
   { q: "Do you handle Israeli banking regulation?", a: "Yes. Bringing funds into Israel, FX conversion and account opening for foreign entities involve AML/KYC requirements and applicable Bank of Israel rules. We represent clients with the banks and prepare the supporting documentation." },
   { q: "What is Transfer Pricing and why does it matter?", a: "Transfer Pricing is the pricing of intra-group transactions between the foreign parent and Israeli subsidiary. Israeli law (Section 85A) requires arm's length pricing. A professional TP study is mandatory above a threshold and protects against future ITA assessments." },
-  { q: "What is Permanent Establishment (PE) risk?", a: "If the foreign parent has meaningful presence in Israel — an office, a fixed employee closing deals, a central warehouse — it may be deemed to operate in Israel and become subject to Israeli corporate tax on that activity. Proper structuring (EOR, local Service Company) avoids unintended PE." },
+  { q: "What is Permanent Establishment (PE) risk?", a: "If the foreign parent has meaningful presence in Israel — an office, a fixed employee closing deals, a central warehouse — it may be deemed to operate in Israel and become subject to Israeli corporate tax on that activity. Proper structuring (EOR, local Service Company where appropriate) helps reduce unintended PE risk." },
   { q: "Can we pay Israeli developers without opening a branch?", a: "Yes — three options: (1) EOR (Employer of Record) — fast but expensive; (2) independent contractor — simple but limited by misclassification risk; (3) an Israeli subsidiary — higher setup cost but cheapest long-term and full control. We model the crossover point." },
   { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "An Israeli subsidiary of a foreign group can access the full toolkit: Preferred Technological Enterprise (6–12% corporate tax), IIA grants, immediate R&D expensing, tax treaties with 60+ countries. Correct Transfer Pricing is essential to preserve these benefits." },
 ];
@@ -84,7 +84,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         },
         {
           title: "Transfer Pricing & BEPS compliance",
-          body: "For companies with material intra-group transactions we prepare Transfer Pricing studies compliant with OECD guidelines and Section 85A of the Israeli Income Tax Ordinance. Robust documentation protects against ITA assessments and gives certainty to the group:",
+          body: "For companies with material intra-group transactions we prepare Transfer Pricing studies compliant with OECD guidelines and Section 85A of the Israeli Income Tax Ordinance. Robust documentation supports the company's position in discussions with the ITA:",
           bullets: [
             "Full benchmark study of comparable market transactions",
             "Selection of the optimal method (CUP, Cost Plus, TNMM)",

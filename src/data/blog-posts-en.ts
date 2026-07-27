@@ -138,7 +138,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Conclusion",
         p: [
-          "Foreign companies operating in Israel today face a complex regulatory environment. Professional planning in advance — before activity commences — helps avoid subsequent disputes with the Israel Tax Authority and enables a tax-efficient structure.",
+          "Foreign companies operating in Israel today face a complex regulatory environment. Professional planning in advance — before activity commences — helps identify potential issues early and assess tax-efficient structures.",
           "Nimrodi & Co. CPAs advises foreign companies on entering the Israeli market, including setting up the corporate structure, transfer pricing advisory, and ongoing reporting to the Israel Tax Authority.",
         ],
       },
@@ -201,7 +201,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Conclusion",
         p: [
-          "Relocation is a complex personal and financial move that requires advance tax preparation. Proper planning in the year preceding the move can save meaningful tax payments, avoid double taxation, and ensure orderly reporting to the tax authorities in Israel and the destination country.",
+          "Relocation is a complex personal and financial move that requires advance tax preparation. Proper planning in the year preceding the move can help assess tax exposure, reduce double-taxation risk, and support orderly reporting to the tax authorities in Israel and the destination country.",
           "Nimrodi & Co. CPAs advises Israelis before, during, and after relocation — including residency analysis, exit tax, tax treaties, and continued Israeli reporting. Contact us for an initial consultation.",
         ],
       },
