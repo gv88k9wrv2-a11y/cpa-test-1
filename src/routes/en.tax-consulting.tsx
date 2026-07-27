@@ -36,7 +36,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
       icon={FileSpreadsheet}
       eyebrow="Complex Tax, Crypto & Voluntary Disclosure"
       title="Complex tax disputes, crypto assets and Voluntary Disclosure"
-      intro="Sound tax planning saves years of pain. We advise entrepreneurs, companies and international investors on complex Israeli and cross-border tax matters — structuring transactions, obtaining Pre-Rulings, defending audits, managing crypto compliance, and running Voluntary Disclosure programs — with the same partners you speak to on day one."
+      intro="Sound tax planning helps reduce risk and uncertainty. We advise entrepreneurs, companies and international investors on complex Israeli and cross-border tax matters — structuring transactions, preparing Pre-Ruling applications, defending audits, managing crypto compliance, and supporting Voluntary Disclosure processes — with the same partners you speak to on day one."
       highlights={[
         "Corporate & personal tax planning",
         "Pre-Rulings (החלטות מיסוי) from the Israel Tax Authority",
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
       sections={[
         {
           title: "Planning that anticipates the Exit",
-          body: "Effective tax planning happens before transactions close, not after. We work with founders, executives and boards to model the tax implications of fundraising, M&A, secondaries, spin-offs and Exit — and choose the structure that maximizes after-tax outcome.",
+          body: "Effective tax planning happens before transactions close, not after. We work with founders, executives and boards to model the tax implications of fundraising, M&A, secondaries, spin-offs and Exit — and evaluate structures with attention to after-tax implications.",
         },
         {
           title: "Pre-Rulings (החלטות מיסוי)",
@@ -90,14 +90,14 @@ export const Route = createFileRoute("/en/tax-consulting")({
           bullets: [
             "Professional dissection of the assessment and identification of attack points",
             "Evidence file: source documents, expert opinions, supporting case law",
-            "Negotiation with the ITA — settlements that save interest and penalties",
+            "Negotiation with the ITA — presenting arguments and assessing settlement options",
             "Appeal to the District Court, Civil Tax Division",
             "Joint representation with leading tax-law counsel",
           ],
         },
         {
           title: "Objections, settlements and criminal-tax matters",
-          body: "If the ITA challenges a position, we represent the client through every stage: initial response, assessment (שומה), objection (השגה), settlement negotiations and — where needed — District Court appeal. In criminal-tax matters we build the accounting defense file jointly with tax-law counsel, including kofer (settlement in lieu of prosecution) applications.",
+          body: "If the ITA challenges a position, we represent the client through every stage: initial response, assessment (שומה), objection (השגה), settlement discussions and — where needed — District Court appeal. In criminal-tax matters we build the accounting defense file jointly with tax-law counsel, including kofer applications where relevant.",
         },
       ]}
       faqs={FAQS}

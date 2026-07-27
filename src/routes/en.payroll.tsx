@@ -6,7 +6,7 @@ import heroImg from "../assets/service-payroll.webp";
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "Can you run payroll for a foreign company with employees in Israel?", a: "Yes. We register the entity as an Israeli employer, set up payroll, National Insurance (Bituach Leumi), income tax and pension arrangements, and produce compliant Israeli payslips (tlush)." },
-  { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate Tax Authority approvals, produce Form 106 (Annual Tax Statement), and support employees through exercise and sale under Section 102 (Equity & ESOP Incentive Plans)." },
+  { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate filings and approval processes with the Tax Authority, produce Form 106 (Annual Tax Statement), and support employees through exercise and sale under Section 102 (Equity & ESOP Incentive Plans)." },
   { q: "What about severance (Form 161) and terminations?", a: "We prepare Form 161, coordinate with pension providers, calculate tax-optimal severance splits and support the departing employee through the process." },
 ];
 

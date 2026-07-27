@@ -7,9 +7,9 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "When does a startup need a CPA?", a: "Before incorporation. Choosing the right structure (Israeli Ltd / Delaware C-Corp / dual-entity), founders' equity, vesting mechanics and 83(b) elections all affect the eventual tax outcome and fundraising trajectory." },
   { q: "Do you support fundraising rounds?", a: "Yes — from Pre-Seed to Series C and beyond. We prepare the data room, build the financial model, coordinate with counsel on SAFEs / CLAs / priced rounds, and structure the round for tax efficiency." },
-  { q: "Can you handle an Israel–Delaware Flip?", a: "Yes — this is a core practice. We manage the Israeli side end-to-end: Pre-Ruling with the ITA for tax-deferred share exchange, coordination with US counsel, and post-flip Transfer Pricing between the Delaware C-Corp parent and the Israeli R&D subsidiary." },
+  { q: "Can you handle an Israel–Delaware Flip?", a: "Yes — this is a core practice. We support the Israeli side end-to-end: preparing the Pre-Ruling application with the ITA for tax-deferred share exchange, coordination with US counsel, and post-flip Transfer Pricing between the Delaware C-Corp parent and the Israeli R&D subsidiary." },
   { q: "What is Section 102 (Equity & ESOP Incentive Plans) and how does it work?", a: "Tax and compliance support for employee equity compensation and option plans, including the assessment of relevant Section 102 routes, subject to the applicable conditions and circumstances. We prepare and file the plan, work with the trustee, and support employees at exercise and sale." },
-  { q: "What is the Preferred Technological Enterprise regime?", a: "Companies meeting R&D and revenue thresholds under the Capital Investments Encouragement Law enjoy corporate tax of 12% (or 6% for a Special Preferred Technological Enterprise), vs. the standard 23%. We check eligibility, file with the ITA and defend on audit." },
+  { q: "What is the Preferred Technological Enterprise regime?", a: "Companies meeting R&D and revenue thresholds under the Capital Investments Encouragement Law may qualify for reduced corporate tax rates. We check eligibility, prepare filings with the ITA and support the position on audit." },
   { q: "What is a 409A Valuation and why does it matter?", a: "If your company is a Delaware C-Corp or planning a US round, you need a fair-market-value assessment of the common stock under IRC §409A — required on every option grant, after every material event, and at least every 12 months. Wrong valuation exposes employees and the company to a 20% IRS penalty plus interest." },
   { q: "How should we build the Cap Table for investors?", a: "Investors scrutinize the cap table. We build it in Carta, Pulley or Ledgy, keep it fully diluted (including SAFEs, CLAs and Option Pool), and run dilution simulations of future rounds so founders understand the impact before signing." },
   { q: "What is a Secondary Transaction and what are the tax risks?", a: "A Secondary is a sale of founder or employee shares to an existing or new investor — an opportunity for early liquidity. The main risk is misclassification, which can materially affect the effective tax rate; proper structuring and, where relevant, an advance tax ruling can help mitigate this." },
@@ -78,7 +78,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Israel–Delaware Corporate Flip",
-          body: "Most Israeli startups eventually flip to a Delaware C-Corp parent to satisfy US investors. We manage the Israeli side end-to-end: Pre-Ruling with the ITA for tax-deferred share exchange, coordination with US and Israeli counsel, and post-flip Transfer Pricing between the Delaware parent and the Israeli R&D subsidiary — with a clean audit trail to the New Angels Law and Preferred Enterprise regimes.",
+          body: "Many Israeli startups consider a Delaware C-Corp parent when preparing for US investment. We support the Israeli side end-to-end: preparing the Pre-Ruling application with the ITA for tax-deferred share exchange, coordination with US and Israeli counsel, and post-flip Transfer Pricing between the Delaware parent and the Israeli R&D subsidiary.",
         },
         {
           title: "Section 102 ESOP & 409A Valuations",
@@ -93,7 +93,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Preferred Technological Enterprise & Israeli tax incentives",
-          body: "The Capital Investments Encouragement Law grants qualifying tech companies significantly reduced corporate tax. We assess eligibility, prepare and file the application, and defend the position on ITA audit:",
+          body: "The Capital Investments Encouragement Law may grant qualifying tech companies reduced corporate tax rates. We assess eligibility, prepare and file the application, and support the position on ITA audit:",
           bullets: [
             "Preferred Technological Enterprise — 12% corporate tax",
             "Special Preferred Technological Enterprise — 6% corporate tax",
@@ -109,7 +109,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
             "Assessment of the relevant Section 102 route pre-transaction",
             "Transaction structure: Direct Sale, Tender Offer, trustee-led aggregation",
             "Escrow, holdback and Clawback provisions — accounting and tax treatment",
-            "Pre-Ruling with the ITA for material transactions",
+            "Pre-Ruling application with the ITA for material transactions",
             "Employee reporting (Form 106 – Annual Tax Statement) and trustee coordination",
             "Founder-level planning: tax spreading, returning-resident relief, spousal split",
           ],
