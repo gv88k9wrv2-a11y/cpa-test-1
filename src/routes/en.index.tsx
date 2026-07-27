@@ -71,7 +71,7 @@ export const Route = createFileRoute("/en/")({
       { property: "og:url", content: `${BASE}/en` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
+      { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
     links: [
