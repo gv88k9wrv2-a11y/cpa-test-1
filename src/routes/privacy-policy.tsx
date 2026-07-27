@@ -27,7 +27,7 @@ function PrivacyPage() {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-4 py-16 sm:px-6" dir="rtl">
+      <main id="main-content" className="mx-auto max-w-3xl px-4 py-16 sm:px-6" dir="rtl">
         <header className="border-b border-border/60 pb-6">
           <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
             מדיניות פרטיות ותנאי שימוש
@@ -77,8 +77,7 @@ function PrivacyPage() {
               למסור פרטים אלו.
             </p>
             <p className="mt-3">
-              המידע משמש אך ורק ליצירת קשר חוזר, מענה לפנייתכם ותיאום פגישת ייעוץ. הפרטים אינם
-              מטופלים בהתאם למדיניות הפרטיות הרלוונטית ולהוראות הדין החלות.
+              המידע משמש אך ורק ליצירת קשר חוזר, מענה לפנייתכם ותיאום פגישת ייעוץ. הפרטים מטופלים אך ורק בהתאם למדיניות פרטיות זו ולהוראות הדין החלות, ואינם נמכרים, מושכרים או מועברים לצדדים שלישיים, אלא במידה הנדרשת על פי דין.
             </p>
           </section>
 
@@ -136,7 +135,7 @@ function PrivacyPage() {
               כתובת: גלגלי הפלדה 16, הרצליה פיתוח
               <br />
               טלפון:{" "}
-              <a href="tel:+97299582211" className="text-gold underline">
+              <a href="tel:099582211" className="text-gold underline">
                 09-9582211
               </a>
               <br />

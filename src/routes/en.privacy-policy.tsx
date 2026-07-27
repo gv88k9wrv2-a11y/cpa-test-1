@@ -8,7 +8,7 @@ export const Route = createFileRoute("/en/privacy-policy")({
       {
         name: "description",
         content:
-          "Privacy policy and terms of use for Nimrodi & Co. CPA. Full professional confidentiality, compliance with Amendment 13 to the Israeli Privacy Law, and data security.",
+          "Privacy policy and terms of use for Nimrodi & Co. CPA, Herzliya: full professional confidentiality, Amendment 13 compliance, and client data security explained.",
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
@@ -30,7 +30,7 @@ function PrivacyPageEn() {
   return (
     <>
       <SiteHeaderEn />
-      <main className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+      <main id="main-content" className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <header className="border-b border-border/60 pb-6">
           <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
             Privacy Policy &amp; Terms of Use
@@ -83,9 +83,7 @@ function PrivacyPageEn() {
               information.
             </p>
             <p className="mt-3">
-              This data is used solely to respond to your inquiry and coordinate a consultation. It
-              is not processed for unrelated purposes and is never sold, rented, or transferred to
-              the applicable privacy policy and applicable law.
+              This data is used solely to respond to your inquiry and coordinate a consultation. It is not processed for unrelated purposes, and is never sold, rented, or transferred to third parties, except as required by applicable law.
             </p>
           </section>
 

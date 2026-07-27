@@ -8,6 +8,8 @@ import {
 } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
 
+const ORIGIN = "https://www.nimrodi.co.il";
+
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
     const post = BLOG_POSTS_BY_SLUG[params.slug];
@@ -31,7 +33,7 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:title", content: post.title },
         { property: "og:description", content: post.excerpt.slice(0, 160) },
         { property: "og:type", content: "article" },
-        { property: "og:url", content: `/blog/${params.slug}` },
+        { property: "og:url", content: `${ORIGIN}/blog/${params.slug}` },
         { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "640" },
@@ -39,7 +41,7 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],
-      links: [{ rel: "canonical", href: `/blog/${params.slug}` }],
+      links: [{ rel: "canonical", href: `${ORIGIN}/blog/${params.slug}` }],
       scripts: [
         {
           type: "application/ld+json",
