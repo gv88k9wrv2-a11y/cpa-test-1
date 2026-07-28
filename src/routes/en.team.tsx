@@ -9,7 +9,7 @@ export const Route = createFileRoute("/en/team")({
   head: () => ({
     meta: [
       { title: "Our Team — Nimrodi & Co. CPA" },
-      { name: "description", content: "Meet the partners and senior team at Nimrodi & Co., a boutique CPA firm in Herzliya Pituach." },
+      { name: "description", content: "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients." },
       { property: "og:title", content: "Our Team — Nimrodi & Co." },
       { property: "og:description", content: "Senior partners with decades of experience across tax, audit and cross-border structures." },
       { property: "og:url", content: `${BASE}/en/team` },
