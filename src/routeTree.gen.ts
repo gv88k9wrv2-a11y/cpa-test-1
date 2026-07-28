@@ -13,6 +13,7 @@ import { Route as TeamRouteImport } from './routes/team'
 import { Route as TaxConsultingRouteImport } from './routes/tax-consulting'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as RelocationTaxAdviceRouteImport } from './routes/relocation-tax-advice'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PayrollRouteImport } from './routes/payroll'
 import { Route as FractionalCfoRouteImport } from './routes/fractional-cfo'
@@ -70,6 +71,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const ServicesRoute = ServicesRouteImport.update({
   id: '/services',
   path: '/services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RelocationTaxAdviceRoute = RelocationTaxAdviceRouteImport.update({
+  id: '/relocation-tax-advice',
+  path: '/relocation-tax-advice',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
@@ -280,6 +286,7 @@ export interface FileRoutesByFullPath {
   '/fractional-cfo': typeof FractionalCfoRoute
   '/payroll': typeof PayrollRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/relocation-tax-advice': typeof RelocationTaxAdviceRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tax-consulting': typeof TaxConsultingRoute
@@ -323,6 +330,7 @@ export interface FileRoutesByTo {
   '/fractional-cfo': typeof FractionalCfoRoute
   '/payroll': typeof PayrollRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/relocation-tax-advice': typeof RelocationTaxAdviceRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tax-consulting': typeof TaxConsultingRoute
@@ -368,6 +376,7 @@ export interface FileRoutesById {
   '/fractional-cfo': typeof FractionalCfoRoute
   '/payroll': typeof PayrollRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
+  '/relocation-tax-advice': typeof RelocationTaxAdviceRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tax-consulting': typeof TaxConsultingRoute
@@ -414,6 +423,7 @@ export interface FileRouteTypes {
     | '/fractional-cfo'
     | '/payroll'
     | '/privacy-policy'
+    | '/relocation-tax-advice'
     | '/services'
     | '/sitemap.xml'
     | '/tax-consulting'
@@ -457,6 +467,7 @@ export interface FileRouteTypes {
     | '/fractional-cfo'
     | '/payroll'
     | '/privacy-policy'
+    | '/relocation-tax-advice'
     | '/services'
     | '/sitemap.xml'
     | '/tax-consulting'
@@ -501,6 +512,7 @@ export interface FileRouteTypes {
     | '/fractional-cfo'
     | '/payroll'
     | '/privacy-policy'
+    | '/relocation-tax-advice'
     | '/services'
     | '/sitemap.xml'
     | '/tax-consulting'
@@ -546,6 +558,7 @@ export interface RootRouteChildren {
   FractionalCfoRoute: typeof FractionalCfoRoute
   PayrollRoute: typeof PayrollRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  RelocationTaxAdviceRoute: typeof RelocationTaxAdviceRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TaxConsultingRoute: typeof TaxConsultingRoute
@@ -582,6 +595,13 @@ declare module '@tanstack/react-router' {
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/relocation-tax-advice': {
+      id: '/relocation-tax-advice'
+      path: '/relocation-tax-advice'
+      fullPath: '/relocation-tax-advice'
+      preLoaderRoute: typeof RelocationTaxAdviceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy-policy': {
@@ -918,6 +938,7 @@ const rootRouteChildren: RootRouteChildren = {
   FractionalCfoRoute: FractionalCfoRoute,
   PayrollRoute: PayrollRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
+  RelocationTaxAdviceRoute: RelocationTaxAdviceRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TaxConsultingRoute: TaxConsultingRoute,
