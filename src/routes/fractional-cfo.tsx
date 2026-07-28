@@ -53,16 +53,16 @@ export const Route = createFileRoute("/fractional-cfo")({
         content:
           "סמנכ״ל כספים בכיר במיקור חוץ – ניהול תזרים, מודלים, ובורד לסטארטאפים ולחברות זרות בישראל.",
       },
-      { property: "og:url", content: "/fractional-cfo" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/fractional-cfo" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "/fractional-cfo" },
-      { rel: "alternate", hrefLang: "he-IL", href: "/fractional-cfo" },
-      { rel: "alternate", hrefLang: "en-US", href: "/en/fractional-cfo" },
+      { rel: "canonical", href: "https://www.nimrodi.co.il/fractional-cfo" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/fractional-cfo" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/fractional-cfo" },
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },
