@@ -22,7 +22,7 @@ export const Route = createFileRoute("/en/faq")({
   head: () => ({
     meta: [
       { title: "FAQ — Nimrodi & Co. CPA" },
-      { name: "description", content: "Answers to the most common questions about our services, pricing, working process and Israeli taxation." },
+      { name: "description", content: "Answers to common questions on our CPA services, working process, pricing and Israeli taxation for companies, startups, freelancers and foreign clients." },
       { property: "og:title", content: "FAQ — Nimrodi & Co." },
       { property: "og:description", content: "Everything you wanted to ask before starting to work with a CPA." },
       { property: "og:url", content: `${BASE}/en/faq` },
