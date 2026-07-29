@@ -92,15 +92,19 @@ function PrivacyPageEn() {
               4. Data Security, Infrastructure Providers &amp; Cookies
             </h2>
             <p className="mt-3">
-              The site operates over an encrypted, secure connection (HTTPS). The site may collect
-              standard technical information (e.g., IP address, browser type, and functional /
-              analytics cookies) for security and to improve the browsing experience.
+              The site is secured using HTTPS encryption. The site may collect standard technical
+              information (e.g., IP address, browser type, and functional / analytics cookies) for
+              security and to improve the browsing experience.
             </p>
             <p className="mt-3">
-              Technical processing may involve trusted cloud computing and hosting infrastructure
-              providers bound by strict security and confidentiality obligations. The site is
-              intended for a general business and professional audience and does not knowingly
+              Technical processing may involve trusted cloud infrastructure, hosting and technology
+              service providers bound by strict security and confidentiality obligations. The site
+              is intended for a general business and professional audience and does not knowingly
               collect information from minors.
+            </p>
+            <p className="mt-3">
+              Information may also be processed or stored outside Israel by trusted service providers
+              that implement appropriate security and confidentiality measures.
             </p>
           </section>
 
@@ -111,11 +115,10 @@ function PrivacyPageEn() {
             <p className="mt-3">
               Data is retained only for the period required to handle your inquiry or as required by
               applicable record-keeping obligations under law. You have the right to inspect,
-              correct, or request deletion of personal information the Firm holds about you through
-              the site.
+              correct, or request deletion of personal information held by the Firm.
             </p>
             <p className="mt-3">
-              To exercise these rights, please contact:{" "}
+              For privacy-related questions or to exercise your privacy rights, please contact:{" "}
               <a href="mailto:office@nimrodi.co.il" className="text-gold underline">
                 office@nimrodi.co.il
               </a>
@@ -141,8 +144,19 @@ function PrivacyPageEn() {
             </p>
           </section>
 
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">
+              7. Privacy Policy Updates
+            </h2>
+            <p className="mt-3">
+              We may update this Privacy Policy from time to time to reflect legal, operational, or
+              service changes. The updated version will be published on this website and will become
+              effective upon publication.
+            </p>
+          </section>
+
           <section className="rounded-2xl border border-gold/40 bg-gold/5 p-6">
-            <h2 className="font-display text-2xl font-bold text-primary">7. Office Contact</h2>
+            <h2 className="font-display text-2xl font-bold text-primary">8. Office Contact</h2>
             <address className="mt-3 not-italic leading-8">
               <strong>Nimrodi &amp; Co. CPA</strong>
               <br />
