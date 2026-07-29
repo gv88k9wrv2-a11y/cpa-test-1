@@ -84,9 +84,7 @@ function TeamPage() {
               key={p.name}
               className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
             >
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary" aria-hidden />
-
-              <h2 className="mt-5 font-display text-xl font-semibold text-primary">
+              <h2 className="font-display text-xl font-semibold text-primary">
                 {p.name}
               </h2>
               <div className="mt-1 text-sm font-medium text-gold">{p.role}</div>
