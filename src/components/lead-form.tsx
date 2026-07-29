@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "lucide-react";
 
 type Lang = "he" | "en";
@@ -325,6 +326,25 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
                 {t.whatsapp}
               </a>
               <p className="text-xs text-muted-foreground">{t.privacy}</p>
+              <p className="text-xs text-muted-foreground">
+                {lang === "he" ? (
+                  <>
+                    בשליחת הטופס אתם מאשרים כי קראתם את{" "}
+                    <Link to="/privacy-policy" className="text-gold underline">
+                      מדיניות הפרטיות
+                    </Link>
+                    .
+                  </>
+                ) : (
+                  <>
+                    By submitting this form, you acknowledge that you have read the{" "}
+                    <Link to="/en/privacy-policy" className="text-gold underline">
+                      Privacy Policy
+                    </Link>
+                    .
+                  </>
+                )}
+              </p>
             </div>
             <Send className="hidden" aria-hidden />
           </form>
