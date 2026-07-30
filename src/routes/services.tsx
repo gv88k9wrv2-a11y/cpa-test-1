@@ -39,7 +39,7 @@ const GROUPS: ServiceGroup[] = [
       { to: "/fractional-cfo", label: "Fractional CFO – ניהול כספים אסטרטגי", icon: ChartLine, desc: "סמנכ״ל כספים במיקור חוץ – Burn, Runway, מודלים למשקיעים, יחסי בורד ו-DD." },
       { to: "/bookkeeping", label: "הנהלת חשבונות", icon: Calculator, desc: "ניהול חשבונות מקוון, סגירות חודשיות ודוחות ניהוליים על פלטפורמות ענן מודרניות." },
       { to: "/payroll", label: "שכר ואופציות (ESOP)", icon: ReceiptText, desc: "תלושי שכר, סעיף 102 (תוכניות אופציות ESOP), טופס 106, טופס 161 וציות פנסיוני." },
-      { to: "/audit", label: "ביקורת חשבונאית", icon: FileSearch, desc: "ביקורת דוחות כספיים לפי כללי חשבונאות מקובלים בישראל ו-IFRS; בדיקות נאותות למיזוגים ורכישות." },
+      { to: "/audit", label: "ביקורת חשבונאית", icon: FileSearch, desc: "ביקורת דוחות כספיים בהתאם לכללי החשבונאות המקובלים בישראל ולתקני IFRS, וכן בדיקות נאותות בעסקאות מיזוג ורכישה." },
       { to: "/tax-consulting", label: "ייעוץ מס", icon: FileSpreadsheet, desc: "תכנוני מס, החלטות מיסוי (Pre-Ruling), השגות וערעורים מול רשות המסים." },
     ],
   },
@@ -55,7 +55,7 @@ const GROUPS: ServiceGroup[] = [
   {
     title: "מיסוי בינלאומי",
     items: [
-      { to: "/cpa-international", label: "רילוקיישן ותושבים חוזרים", icon: Plane, desc: "תושבות, הטבות עולים, אמנות מס ותכנון חוצה גבולות." },
+      { to: "/cpa-international", label: "רילוקיישן ותושבים חוזרים", icon: Plane, desc: "סוגיות תושבות, הטבות לעולים, אמנות מס ותכנון מס בין־לאומי." },
     ],
   },
 ];
@@ -103,7 +103,7 @@ function ServicesPage() {
               משרד רואי חשבון בוטיק – שירות מקצה לקצה
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              מפתיחת תיק ועד ביקורת שנתית ותכנון חוצה גבולות – כל מה שעסק מודרני, סטארטאפ או בעל מקצוע צריך, תחת קורת גג אחת.
+              מפתיחת תיקים ברשויות ועד ביקורת שנתית ותכנון מס בין־לאומי – כל מה שעסק מודרני, סטארטאפ או בעל מקצוע צריך, תחת קורת גג אחת.
             </p>
           </div>
         </section>
@@ -141,7 +141,7 @@ function ServicesPage() {
               לא בטוחים איזה שירות מתאים לכם?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-              נשמח לפגישת ייעוץ ראשונית ללא התחייבות – נבין את המצב, נאבחן ונציע פתרון מותאם.
+              נשמח לקיים פגישת היכרות ראשונית ללא התחייבות, להכיר את הצרכים ולבחון את דרך הפעולה המתאימה.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
