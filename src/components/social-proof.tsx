@@ -10,7 +10,7 @@ const COPY = {
     facts: [
       { icon: CalendarDays, label: "פעילים משנת 2000 – מעל 25 שנות ניסיון" },
       { icon: UserCheck, label: "בהובלת רו״ח שלמה נמרודי" },
-      { icon: Globe2, label: "ליווי חברות, סטארטאפים ופעילות בינלאומית" },
+      { icon: Globe2, label: "ליווי חברות, סטארטאפים ופעילות בין־לאומית" },
     ],
     reviewsEyebrow: "חוות דעת לקוחות",
     reviewsTitle: "מה לקוחות שלנו אומרים",

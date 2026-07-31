@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "What does a Data Room and Ongoing DD include?",
-    a: "A professional Data Room includes: audited financial statements for two prior years, fully-diluted Cap Table on Carta/Pulley, founders' agreements with vesting, approved Section 102 (Equity & ESOP Incentive Plans) plan, key customer contracts, key employee agreements, Transfer Pricing policy, tax and VAT clearances, insurance policies and authority correspondence. Ongoing DD means the room is always current and ready — so when an offer arrives, you enter negotiations in days, not months.",
+    a: "A professional Data Room includes: audited financial statements for two prior years, fully-diluted Cap Table on Carta/Pulley, founders' agreements with vesting, approved Section 102 (Equity & ESOP Incentive Plans) plan, key customer contracts, key employee agreements, Transfer Pricing policy, tax and VAT clearances, insurance policies and authority correspondence. Ongoing due-diligence readiness helps keep the Data Room current, so the company can respond more efficiently when an offer or information request arrives.",
   },
   {
     q: "Which KPIs do you track for the Board?",
@@ -73,7 +73,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       icon={LineChart}
       eyebrow="Financial Management & CFO"
       title="Fractional CFO — strategic corporate finance for growth-stage companies"
-      intro="Senior outsourced Chief Financial Officer leadership — at a fraction of the cost of a full-time hire. We support Israeli startups, foreign corporations operating in Israel and scaling businesses across budgeting and cash management, investor-grade financial models, Board relations, VC representation and continuous readiness for institutional Due Diligence."
+      intro="Senior outsourced CFO support without the commitment of a full-time hire. We support Israeli startups, foreign corporations operating in Israel and scaling businesses across budgeting and cash management, investor-grade financial models, Board relations, VC representation and continuous readiness for institutional Due Diligence."
       highlights={[
         "Annual budgeting and rigorous cash flow management",
         "Burn Rate & Runway — calculation, monitoring and scenarios",
@@ -131,7 +131,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         {
           title: "Financial model for fundraising",
           body:
-            "Serious investors look first for a model that speaks their language: clear assumptions, modular revenue engines, and sensitivities they can play with. Our models are built to leading VC standards and pass DD without surprises:",
+            "Serious investors look first for a model that speaks their language: clear assumptions, modular revenue engines, and sensitivities they can play with. Our models are built with the information and structure commonly expected in venture-capital due diligence:",
           bullets: [
             "Revenue engines: SaaS ARR, Transactional Revenue, Marketplace GMV",
             "Cohort Analysis and data-driven Retention Curves",

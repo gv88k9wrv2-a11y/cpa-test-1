@@ -85,7 +85,7 @@ export function ServiceLandingEn({
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95"
               >
                 <MessageCircle className="h-5 w-5" aria-hidden />
-                WhatsApp consultation
+                Contact us on WhatsApp
               </a>
               <a
                 href="tel:+97299582211"

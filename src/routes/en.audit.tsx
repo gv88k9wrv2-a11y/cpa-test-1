@@ -5,9 +5,9 @@ import heroImg from "../assets/service-audit.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Do you audit under IFRS and US GAAP?", a: "Yes. Our engagements cover Israeli GAAP, IFRS and — via our international correspondents — US GAAP conversions for parent-company consolidation." },
-  { q: "How long does a statutory audit take?", a: "For a typical small-medium company, 4–8 weeks depending on preparedness of the books. We provide a preparation checklist to shorten the timeline significantly." },
-  { q: "Can you support due diligence for M&A / fundraising?", a: "Yes — we run buy-side or sell-side DD, prepare data rooms, quality-of-earnings analyses and normalized EBITDA schedules." },
+  { q: "Do you audit under IFRS and US GAAP?", a: "The applicable reporting framework depends on the entity and the engagement. We provide services relating to Israeli reporting requirements and IFRS and may coordinate with additional advisers where another reporting framework is required." },
+  { q: "How long does a statutory audit take?", a: "The timetable depends on the entity’s size, reporting framework, complexity, record quality and readiness. A preparation checklist can help organize the information required for the audit." },
+  { q: "Can you support due diligence for M&A / fundraising?", a: "We provide accounting and tax support for buy-side and sell-side due-diligence processes, including financial-data review, data-room preparation and analyses agreed as part of the engagement." },
 ];
 
 export const Route = createFileRoute("/en/audit")({

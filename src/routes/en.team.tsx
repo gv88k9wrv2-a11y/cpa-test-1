@@ -26,7 +26,7 @@ export const Route = createFileRoute("/en/team")({
 });
 
 const TEAM = [
-  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "Certified Public Accountant. Member of the Institute of CPAs in Israel. Extensive experience as a Controller and CFO for private and public companies. Extensive experience in consulting and accompanying foreign companies operating in Israel. Expert in Israeli and international taxation, handling complex tax issues for companies and individuals. Full guidance of IPO processes on the Tel Aviv Stock Exchange and comprehensive assistance to startups in fundraising." },
+  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "Certified Public Accountant and a member of the Institute of Certified Public Accountants in Israel. Professional experience includes controller and CFO roles in private and public companies, work with foreign companies operating in Israel and services relating to Israeli and international taxation. Previous experience also includes financial participation in capital-raising and public-company processes." },
 ];
 
 function TeamEn() {

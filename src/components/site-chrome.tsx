@@ -138,7 +138,7 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
     ],
   },
   {
-    label: "מס בינלאומי",
+    label: "מס בין־לאומי",
     items: [
       {
         to: "/cpa-international",

@@ -7,11 +7,11 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "When does a startup need a CPA?", a: "Before incorporation. Choosing the right structure (Israeli Ltd / Delaware C-Corp / dual-entity), founders' equity, vesting mechanics and 83(b) elections all affect the eventual tax outcome and fundraising trajectory." },
   { q: "Do you support fundraising rounds?", a: "Yes — from Pre-Seed to Series C and beyond. We prepare the data room, build the financial model, coordinate with counsel on SAFEs / CLAs / priced rounds, and structure the round for tax efficiency." },
-  { q: "Can you handle an Israel–Delaware Flip?", a: "Yes — this is a core practice. We support the Israeli side end-to-end: preparing the Pre-Ruling application with the ITA for tax-deferred share exchange, coordination with US counsel, and post-flip Transfer Pricing between the Delaware C-Corp parent and the Israeli R&D subsidiary." },
+  { q: "Can you handle an Israel–Delaware Flip?", a: "We can assist with the Israeli accounting and tax aspects of a proposed Israel–Delaware restructuring, including assessing the need for an advance tax-ruling application, coordinating with legal and U.S. advisers and reviewing post-transaction transfer-pricing requirements." },
   { q: "What is Section 102 (Equity & ESOP Incentive Plans) and how does it work?", a: "Tax and compliance support for employee equity compensation and option plans, including the assessment of relevant Section 102 routes, subject to the applicable conditions and circumstances. We prepare and file the plan, work with the trustee, and support employees at exercise and sale." },
   { q: "What is the Preferred Technological Enterprise regime?", a: "Companies meeting R&D and revenue thresholds under the Capital Investments Encouragement Law may qualify for reduced corporate tax rates. We check eligibility, prepare filings with the ITA and support the position on audit." },
   { q: "What is a 409A Valuation and why does it matter?", a: "If your company is a Delaware C-Corp or planning a US round, you need a fair-market-value assessment of the common stock under IRC §409A — required on every option grant, after every material event, and at least every 12 months. Wrong valuation exposes employees and the company to a 20% IRS penalty plus interest." },
-  { q: "How should we build the Cap Table for investors?", a: "Investors scrutinize the cap table. We build it in Carta, Pulley or Ledgy, keep it fully diluted (including SAFEs, CLAs and Option Pool), and run dilution simulations of future rounds so founders understand the impact before signing." },
+  { q: "How should we build the Cap Table for investors?", a: "A clear capitalization table can help founders and investors understand ownership and dilution. Depending on the scope of the engagement, we can assist with capitalization-table data, option-pool information and dilution scenarios using the company’s selected platform." },
   { q: "What is a Secondary Transaction and what are the tax risks?", a: "A Secondary is a sale of founder or employee shares to an existing or new investor — an opportunity for early liquidity. The main risk is misclassification, which can materially affect the effective tax rate; proper structuring and, where relevant, an advance tax ruling can help mitigate this." },
 ];
 
@@ -39,22 +39,22 @@ export const Route = createFileRoute("/en/cpa-startups")({
       heroImageAlt="Modern startup office in Herzliya Pituach"
       icon={Rocket}
       eyebrow="Startups & Technology Ventures"
-      title="CPA for Israeli startups — from incorporation to Exit"
-      intro="We speak startup fluently. Nimrodi & Co. supports Israeli technology ventures at every stage — Pre-Seed to Series C, Israel–Delaware Flips, Section 102 ESOPs, 409A valuations, Preferred Technological Enterprise status, IIA grants and Exit / M&A readiness."
+      title="CPA Services for Startups in Israel"
+      intro="Nimrodi & Co. provides accounting, tax and financial support to startups at different stages, from company formation and ongoing reporting to fundraising, international activity and due-diligence preparation."
       highlights={[
         "Fundraising support: SAFE, CLA, priced rounds (Seed → Series C)",
         "Section 102 ESOP — capital gains track with trustee",
         "409A valuations and dual IFRS 2 / ASC 718 option accounting",
         "Israel–Delaware Flip and cross-border reorganizations",
-        "Preferred Technological Enterprise (6%–12% corporate tax)",
+        "Assessment of eligibility for Preferred Technological Enterprise tax benefits",
         "IIA / Israel Innovation Authority grants and financial audits",
         "Secondary transactions — founder and employee liquidity",
-        "Full Cap Table on Carta / Pulley / Ledgy",
+        "Capitalization-table support using the company’s selected platform",
         "M&A Due Diligence and Quality of Earnings pre-Exit",
       ]}
       sections={[
         {
-          title: "What we cover, end-to-end",
+          title: "Accounting, Tax and Financial Services",
           body: "Everything you need so you can focus on product and customers:",
           bullets: [
             "Incorporation, structure and founders' agreements",
@@ -98,13 +98,13 @@ export const Route = createFileRoute("/en/cpa-startups")({
             "Preferred Technological Enterprise — 12% corporate tax",
             "Special Preferred Technological Enterprise — 6% corporate tax",
             "New Angels Law — enhanced R&D expense recognition for investors",
-            "IIA grants — 20–50% of approved R&D expenditure",
+            "Financial support for IIA grant applications and related reporting",
             "Immediate R&D expensing and dividend exemption in defined cases",
           ],
         },
         {
           title: "Secondary Transactions for founders & employees",
-          body: "A Secondary — sale of founder or employee shares to an existing or new investor — is a valuable early-liquidity opportunity but carries significant tax risk. Misclassification can materially affect the effective tax rate. We advise founders and employees on the full strategy:",
+          body: "A Secondary — sale of founder or employee shares to an existing or new investor — is a valuable early-liquidity opportunity but carries significant tax risk. Misclassification can materially affect the effective tax rate. We assist founders and employees in reviewing the accounting and tax considerations relevant to the proposed transaction:",
           bullets: [
             "Assessment of the relevant Section 102 route pre-transaction",
             "Transaction structure: Direct Sale, Tender Offer, trustee-led aggregation",

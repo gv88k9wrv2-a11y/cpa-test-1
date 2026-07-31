@@ -7,7 +7,7 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "Where is the office located?", a: "In the Herzliya Pituach business district — walking distance from the main tech campuses (Microsoft, Apple, Meta and Israel's leading startups)." },
   { q: "Do you serve clients outside Herzliya?", a: "Yes — we serve clients across Israel and abroad. But being local in Herzliya Pituach gives us deep familiarity with the tech, biotech and finance ecosystem here." },
-  { q: "Can we meet in person?", a: "Absolutely. In-person meetings at our Herzliya Pituach office are always welcome, alongside video calls for flexibility." },
+  { q: "Can we meet in person?", a: "In-person meetings can be arranged at our Herzliya Pituach office, subject to availability. Video calls are also available." },
 ];
 
 export const Route = createFileRoute("/en/cpa-herzliya")({

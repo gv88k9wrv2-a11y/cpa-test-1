@@ -5,9 +5,9 @@ import heroImg from "../assets/service-bookkeeping.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Which accounting software do you support?", a: "We work across all leading Israeli and international cloud accounting platforms — from lightweight tools for freelancers to ERP systems for mid-market and multinational groups. We choose the right platform per client and manage the full setup, chart of accounts and integrations." },
-  { q: "Can you take over from an existing bookkeeper?", a: "Yes. We handle a clean migration: opening balances, historical reconciliations, VAT alignment and full handover from the previous provider — usually within 2–4 weeks." },
-  { q: "Do you handle VAT and withholding tax reporting?", a: "Full monthly / bi-monthly VAT (Form 874), withholding tax on service providers (Form 856), employer reports and year-end reconciliations." },
+  { q: "Which accounting software do you support?", a: "We work with a range of Israeli and international accounting platforms. The appropriate system and setup depend on the client’s activity, reporting needs, existing systems and the agreed scope of service." },
+  { q: "Can you take over from an existing bookkeeper?", a: "Yes. We can assist with the transition from an existing provider, including the review of opening balances, historical reconciliations and available records. The timetable depends on the quality and completeness of the information received." },
+  { q: "Do you handle VAT and withholding tax reporting?", a: "Preparation of periodic VAT, withholding-tax and employer reports, together with year-end reconciliations, according to the reporting obligations and the scope of the engagement." },
 ];
 
 export const Route = createFileRoute("/en/bookkeeping")({
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
       icon={Calculator}
       eyebrow="Bookkeeping"
       title="Modern digital bookkeeping for companies in Israel"
-      intro="Clean, timely books are the foundation of every financial decision. We run full-cycle bookkeeping on modern cloud platforms, with clear monthly reporting to management and investors."
+      intro="Digital bookkeeping services for companies and self-employed businesses, using systems selected according to the nature of the activity and the scope of the engagement. Services may include document capture, reconciliations, periodic reporting and management information."
       highlights={[
         "Full-cycle monthly bookkeeping",
         "VAT filings (Form 874) and withholding tax",
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
       ]}
       sections={[
         {
-          title: "What we do end-to-end",
+          title: "Bookkeeping Services",
           body: "We handle every touchpoint between transactions and financial statements:",
           bullets: [
             "Vendor invoice capture, approvals and payments",
@@ -59,7 +59,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
         },
         {
           title: "Cloud stack & automation",
-          body: "We work exclusively on modern cloud platforms so you and your investors have real-time visibility. A typical stack combines cloud accounting, digital AP and payments, automated receipt capture, and layered management reporting and BI — tailored to each client.",
+          body: "We use digital accounting platforms selected according to the client’s needs and the scope of the engagement. Available services may include document capture, accounts-payable workflows, reconciliations and management reporting.",
         },
         {
           title: "Reporting cadence",

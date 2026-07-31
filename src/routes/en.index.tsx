@@ -49,7 +49,7 @@ const FAQS = [
   },
   {
     q: "How much does a CPA service cost?",
-    a: "Fees depend on activity volume, number of transactions and required services. We invite you to a free introductory meeting where we present transparent, tailored pricing.",
+    a: "Fees depend on activity volume, number of transactions and required services. We invite you to an introductory discussion, after which the proposed scope and pricing can be explained in advance.",
   },
   {
     q: "Do you handle foreign income, crypto and relocation?",
@@ -259,7 +259,7 @@ function HomeEn() {
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Let's talk about your business</h2>
-            <p className="mt-3 text-primary-foreground/80">Free introductory consultation — no obligations.</p>
+            <p className="mt-3 text-primary-foreground/80">Introductory consultation, with scope and terms explained in advance.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95">
                 <MessageCircle className="h-5 w-5" aria-hidden />

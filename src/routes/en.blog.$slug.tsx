@@ -165,7 +165,7 @@ function BlogPostPageEn() {
             Want to discuss your specific situation?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-            Initial consultation at no cost — we will understand your needs and propose a tailored approach.
+            Contact us for an introductory discussion about your needs.
           </p>
           <a
             href={WHATSAPP_URL_EN}

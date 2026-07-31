@@ -78,7 +78,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           body: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations (FBAR, FATCA, CRS) may vary depending on the taxpayer's status, residence, citizenship, account location and the applicable reporting rules:",
           bullets: [
             "Review of available routes for regularization at the time of engagement",
-            "Full asset schedule, activity mapping and historic income reconstruction",
+            "Asset and activity mapping based on the information and records available",
             "FATCA (US accounts), FBAR and Form 8938 reporting considerations",
             "CRS — automatic exchange of information between tax authorities",
             "Support with undeclared foreign inheritances and complex estates",
@@ -89,15 +89,15 @@ export const Route = createFileRoute("/en/tax-consulting")({
           body: "For material assessments — cross-border issues, Pocket Company, Section 3(J1), Transfer Pricing, Preferred Enterprise or crypto taxation — you need advisors who know current case law and ITA practice. We lead complex matters from objection through District Court appeal:",
           bullets: [
             "Professional dissection of the assessment and identification of attack points",
-            "Evidence file: source documents, expert opinions, supporting case law",
+            "Supporting file based on available source documents, professional opinions and relevant legal materials",
             "Negotiation with the ITA — presenting arguments and assessing settlement options",
             "Appeal to the District Court, Civil Tax Division",
-            "Joint representation with leading tax-law counsel",
+            "Coordination with tax-law counsel where legal representation is required",
           ],
         },
         {
           title: "Objections, settlements and criminal-tax matters",
-          body: "If the ITA challenges a position, we represent the client through every stage: initial response, assessment (שומה), objection (השגה), settlement discussions and — where needed — District Court appeal. In criminal-tax matters we build the accounting defense file jointly with tax-law counsel, including kofer applications where relevant.",
+          body: "If the Israel Tax Authority challenges a position, we may assist with the accounting and tax aspects of the response, assessment, objection and settlement discussions. Court proceedings and criminal-tax matters require coordination with qualified legal counsel.",
         },
       ]}
       faqs={FAQS}

@@ -17,7 +17,7 @@ export type BlogPostEn = {
 export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     slug: "israeli-subsidiary-vs-branch",
-    title: "Israeli Subsidiary vs. Israeli Branch for Foreign Entities: Which Structure is Optimal?",
+    title: "Israeli Subsidiary or Branch: Key Considerations for Foreign Entities",
     excerpt:
       "Choosing between an Israeli subsidiary and a branch of a foreign company affects tax, legal liability, and operations. A professional review of the key considerations.",
     date: "2026-03-19",
@@ -53,7 +53,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         p: [
           "A branch is not a separate legal entity — it represents the foreign company's activity in Israel, registered as a foreign corporation with the Israeli Companies Registrar.",
           "Advantages: no withholding tax on the transfer of profits back to the head office (there is no legal 'dividend'), some operational simplicity, and, in certain cases, easier setup or wind-down of activity.",
-          "Disadvantages: the foreign company is fully exposed to Israeli claims, special reporting is required on the income attributed to the branch, and transfer pricing between the branch and head office is scrutinized closely by the Israel Tax Authority.",
+          "Disadvantages: the foreign company may be directly exposed to liabilities associated with the Israeli branch, special reporting is required on the income attributed to the branch, and transfer pricing between the branch and head office is scrutinized closely by the Israel Tax Authority.",
         ],
       },
       {
@@ -146,7 +146,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   },
   {
     slug: "relocation-tax-residency",
-    title: "Relocation from Israel: At What Point Does Tax Residency Terminate?",
+    title: "Relocation from Israel: When Can Israeli Tax Residency End?",
     excerpt:
       "Moving abroad does not automatically sever Israeli tax residency. A review of the residency tests, the implications of relocation, and the 'exit tax' issue.",
     date: "2026-03-05",
@@ -194,7 +194,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Common mistakes in relocation planning",
         p: [
           "An incorrect assumption that changing a passport or receiving a particular visa automatically severs Israeli residency.",
-          "Not filing an Israeli annual return in the years following relocation, on the assumption that no liability remains — while a return must be filed until full termination of residency, and sometimes thereafter.",
+          "Not filing an Israeli annual return in the years following relocation, on the assumption that no liability remains — while Israeli filing obligations may continue during and after the relocation period, depending on the individual’s circumstances, income and applicable reporting requirements.",
           "Ignoring the exit tax and the need to document Israeli and foreign asset values as of the relocation date.",
         ],
       },
