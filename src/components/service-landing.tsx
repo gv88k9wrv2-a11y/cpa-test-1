@@ -36,7 +36,7 @@ export function ServiceLanding({
   highlights,
   sections,
   faqs,
-  ctaHeadline = "מוכנים להתקדם? נשמח לפגישת ייעוץ ראשונית ללא התחייבות.",
+  ctaHeadline = "מוכנים להתקדם? נשמח לקיים פגישת היכרות ראשונית ולבחון את הצרכים ואת היקף השירות.",
   icon: Icon,
   heroImage,
   heroImageAlt,

@@ -47,7 +47,7 @@ export const Route = createFileRoute("/en/payroll")({
       sections={[
         {
           title: "Payroll for Israeli & foreign employers",
-          body: "Whether you are an Israeli company hiring locally or a foreign company setting up first employees in Israel, we register the entity, arrange pension/insurance providers and run monthly payroll end-to-end.",
+          body: "We support Israeli and foreign companies with payroll setup and ongoing payroll administration in Israel, including coordination of registrations and employee information according to the scope of the engagement.",
           bullets: [
             "Registration with Tax Authority, Bituach Leumi and pension funds",
             "Monthly gross-to-net calculations and payslips",

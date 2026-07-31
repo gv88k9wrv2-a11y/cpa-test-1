@@ -39,7 +39,7 @@ function AboutEn() {
               A boutique CPA firm with big-firm depth
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Nimrodi & Co. was founded on a simple idea: give clients the depth and rigor of a senior professional firm — with the accessibility, partner attention and continuity of a boutique. For 25+ years we've been trusted advisors to founders, executives, families and international companies operating in Israel.
+              Nimrodi & Co. was founded on a simple idea: give clients the depth and rigor of a senior professional firm — with the accessibility, partner attention and continuity of a boutique. The firm has operated since 2000 and provides accounting, tax and financial services to companies, founders, individuals and international businesses operating in Israel.
             </p>
           </div>
         </section>
@@ -57,9 +57,9 @@ function AboutEn() {
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our approach</h2>
               <ul className="mt-5 space-y-3">
                 {[
-                  "Senior-partner attention. You always talk to the person actually doing the work.",
+                  "Senior-partner attention. You work directly with the senior professional responsible for your engagement.",
                   "Long-term relationships. Many client relationships develop over the long term.",
-                  "Modern stack. We work on cloud accounting platforms so you have real-time visibility.",
+                  "Digital working methods. We use accounting platforms selected according to the client’s needs and the agreed scope of access.",
                   "Cross-border fluency. Israeli tax deeply understood, coordinated with US, UK and EU advisors.",
                   "Transparent pricing. Fixed-scope engagements wherever possible — no billing surprises.",
                 ].map((v) => (
@@ -83,7 +83,7 @@ function AboutEn() {
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Let's talk</h2>
-            <p className="mt-3 text-primary-foreground/80">Free introductory consultation — no obligation.</p>
+            <p className="mt-3 text-primary-foreground/80">Introductory consultation, with scope and terms explained in advance.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground">
                 <MessageCircle className="h-5 w-5" aria-hidden />

@@ -7,7 +7,7 @@ export const Route = createFileRoute("/en/accessibility")({
   head: () => ({
     meta: [
       { title: "Accessibility Statement — Nimrodi & Co. CPA" },
-      { name: "description", content: "Accessibility statement for the Nimrodi & Co. website — WCAG 2.1 AA compliance, physical office accessibility details, and contact information." },
+      { name: "description", content: "Accessibility information for the Nimrodi & Co. website, including implemented adjustments, contact details and the firm’s ongoing accessibility efforts." },
       { property: "og:title", content: "Accessibility Statement — Nimrodi & Co. CPA" },
       { property: "og:url", content: `${BASE}/en/accessibility` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
@@ -61,8 +61,8 @@ function AccessibilityEn() {
               </p>
               <ul className="list-disc space-y-2 ps-6">
                 <li><strong>Keyboard navigation:</strong> Support for keyboard navigation (Tab, Shift+Tab, Enter).</li>
-                <li><strong>Screen reader support:</strong> The site is built with semantic structure and ARIA attributes intended to work with assistive technologies.</li>
-                <li><strong>Design and text:</strong> Standard color contrast, ability to enlarge text without breaking site structure, and alternative text (Alt) for images and visual components.</li>
+                <li><strong>Screen reader support:</strong> The site uses semantic structure and ARIA attributes to support compatibility with assistive technologies.</li>
+                <li><strong>Design and text:</strong> Color contrast designed to support readability, ability to enlarge text without breaking site structure, and alternative text (Alt) for images and visual components.</li>
                 <li><strong>Responsiveness:</strong> Adapted for browsing on a variety of screens, mobile devices, and tablets.</li>
               </ul>
             </div>
@@ -111,7 +111,7 @@ function AccessibilityEn() {
                 </p>
               </div>
               <p>
-                Every inquiry is handled seriously and as quickly as possible in order to provide the best response.
+                Accessibility inquiries are reviewed and handled according to their nature and the information provided.
               </p>
             </div>
 

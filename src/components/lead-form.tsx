@@ -12,7 +12,7 @@ const COPY = {
     eyebrow: "פגישת ייעוץ דיסקרטית",
     title: "בואו נדבר בארבע עיניים",
     subtitle:
-      "מלאו פרטים והפנייה תגיע ישירות לשותף בכיר. אנו מטפלים במידע של לקוחות תוך שמירה קפדנית על סודיות ושיקול דעת מקצועי, בכפוף לדין החל ולחובות המקצועיות.",
+      "מלאו את הפרטים כדי להכין פנייה בדוא״ל למשרד. הפניות מטופלות בהתאם לנהלי המשרד ולמדיניות הפרטיות.",
     name: "שם מלא",
     company: "שם החברה / הסטארט-אפ",
     email: "כתובת אימייל",
@@ -22,8 +22,8 @@ const COPY = {
     messagePh: "ספרו לנו בקצרה על הצורך – מס, ביקורת, CFO, בינלאומי וכו׳.",
     submit: "שליחת פנייה במייל",
     sending: "מכין את הפנייה…",
-    whatsapp: "מעדיפים וואטסאפ? שליחה מיידית בצ׳אט",
-    privacy: "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. אנו משתדלים להשיב בהקדם האפשרי, בדרך כלל בתוך יום עסקים.",
+    whatsapp: "מעדיפים WhatsApp? פתחו הודעה מוכנה בצ׳אט",
+    privacy: "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. אנו משתדלים להשיב בהקדם האפשרי.",
     required: "*",
     successTitle: "פנייתך מוכנה לשליחה",
     successText:
@@ -42,7 +42,7 @@ const COPY = {
     eyebrow: "Discrete Consultation",
     title: "Let's have a confidential conversation",
     subtitle:
-      "Send us a note and a senior partner will reach out personally. We handle client information with strict confidentiality and professional discretion, subject to applicable law and professional obligations.",
+      "Complete the details to prepare an email inquiry to the office. Inquiries are handled in accordance with the firm’s procedures and privacy policy.",
     name: "Full Name",
     company: "Company / Startup Name",
     email: "Business Email Address",

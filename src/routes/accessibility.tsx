@@ -8,7 +8,7 @@ export const Route = createFileRoute("/accessibility")({
       {
         name: "description",
         content:
-          "הצהרת נגישות אתר נמרודי ושות׳ – רואי חשבון בהרצליה. עמידה בתקן WCAG 2.1 רמה AA ובתקנות שוויון זכויות לאנשים עם מוגבלות.",
+          "מידע על נגישות אתר נמרודי ושות׳, לרבות התאמות שבוצעו, דרכי יצירת קשר והמשך הפעילות לשיפור הנגישות.",
       },
       { property: "og:title", content: "הצהרת נגישות – נמרודי ושות׳" },
       { property: "og:url", content: "/accessibility" },

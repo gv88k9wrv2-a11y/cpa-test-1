@@ -10,9 +10,9 @@ export const Route = createFileRoute("/en/contact")({
   head: () => ({
     meta: [
       { title: "Contact Nimrodi & Co. CPA | Herzliya Pituach, Israel" },
-      { name: "description", content: "Contact Nimrodi & Co. — boutique CPA firm in Herzliya Pituach. Free introductory consultation for companies, startups and individuals." },
+      { name: "description", content: "Contact Nimrodi & Co., a boutique CPA firm in Herzliya Pituach, for an introductory discussion about services for companies, startups and individuals." },
       { property: "og:title", content: "Contact Nimrodi & Co." },
-      { property: "og:description", content: "Free introductory consultation with our senior team." },
+      { property: "og:description", content: "Introductory discussion with a senior member of our team." },
       { property: "og:url", content: `${BASE}/en/contact` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -35,7 +35,7 @@ function ContactEn() {
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
             <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">Get in touch</h1>
             <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-              Free introductory consultation. We usually respond within a business day.
+              Contact us for an introductory discussion. We aim to respond as soon as reasonably possible.
             </p>
           </div>
         </section>

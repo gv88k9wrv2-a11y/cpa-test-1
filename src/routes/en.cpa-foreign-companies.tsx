@@ -109,7 +109,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         },
         {
           title: "Israeli tax incentives for multinationals",
-          body: "Foreign-owned Israeli subsidiaries can access the full range of Israeli tax incentives, dramatically reducing the group's effective tax rate — provided the Transfer Pricing story is coherent:",
+          body: "Foreign-owned Israeli subsidiaries may be eligible for Israeli tax incentives and IIA support, subject to the applicable program, eligibility conditions, required approvals and the law in effect at the relevant time:",
           bullets: [
             "Preferred Technological Enterprise — 6% corporate tax (12% standard track)",
             "Dividend exemption from a Preferred Enterprise in defined cases",

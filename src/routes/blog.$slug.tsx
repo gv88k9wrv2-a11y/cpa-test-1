@@ -168,7 +168,7 @@ function BlogPostPage() {
             רוצים לשוחח על המצב הספציפי שלכם?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-            פגישת ייעוץ ראשונית ללא עלות – נבין את הצרכים ונציע פתרון מותאם.
+            אפשר ליצור קשר לצורך שיחת היכרות ראשונית ובחינת הצרכים.
           </p>
           <a
             href={WHATSAPP_URL}

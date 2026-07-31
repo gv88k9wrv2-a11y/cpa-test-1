@@ -412,8 +412,7 @@ function HomePage() {
               נשמח להכיר ולראות איך נוכל לעזור לעסק שלכם
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80">
-              פגישת ייעוץ ראשונה – ללא עלות וללא התחייבות. נבין את הצרכים, נציג פתרונות
-              ותמחור שקוף, ותקבלו החלטה רגועה.
+              אפשר לקבוע שיחת היכרות ראשונית, להציג את הצרכים ולבחון את השירות המתאים.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
