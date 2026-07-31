@@ -91,7 +91,7 @@ export const Route = createFileRoute("/cpa-startups")({
       highlights={[
         "ליווי בגיוסי הון: SAFE, Convertible, Priced Rounds",
         "תוכניות אופציות לעובדים (102 הוני / הכנסה)",
-        "Israeli-Delaware Flip ופעילות בינלאומית",
+        "Israeli-Delaware Flip ופעילות בין־לאומית",
         "דוחות ניהוליים למשקיעים ולבורד",
         "בחינת זכאות להטבות במסלול מפעל טכנולוגי מועדף",
         "היערכות חשבונאית ופיננסית לתהליכי בדיקת נאותות",
@@ -119,7 +119,7 @@ export const Route = createFileRoute("/cpa-startups")({
             "Pre-Seed: הקמת ישות, בחירת מבנה, הסכמי מייסדים, Vesting ו-83(b)",
             "Seed: פתיחת ספרים, ניהול מזומן, מודל תזרים, ראשית 102 לעובדים",
             "Series A: דוחות כספיים לפי IFRS/US-GAAP, בקרה תקציבית, Board reporting",
-            "Growth: תמחור פנימי (Transfer Pricing), הרחבה בינלאומית, מפעל מועדף",
+            "Growth: תמחור פנימי (Transfer Pricing), הרחבה בין־לאומית, מפעל מועדף",
             "Exit / IPO: Data Room מלא, ליווי DD, מיסוי מייסדים ואופציות",
           ],
         },
@@ -134,8 +134,8 @@ export const Route = createFileRoute("/cpa-startups")({
           ],
         },
         {
-          title: "פעילות בינלאומית ו-Flip",
-          body: "רוב הסטארטאפים הישראליים בסופו של דבר מגיעים לפעילות בארה״ב או באירופה. אנחנו מלווים תהליכי Israeli-Delaware Flip, הקמת חברות בנות ומבנים בינלאומיים, כולל שיקולי Transfer Pricing ואמנות מס.",
+          title: "פעילות בין־לאומית ו-Flip",
+          body: "רוב הסטארטאפים הישראליים בסופו של דבר מגיעים לפעילות בארה״ב או באירופה. אנחנו מלווים תהליכי Israeli-Delaware Flip, הקמת חברות בנות ומבנים בין־לאומיים, כולל שיקולי Transfer Pricing ואמנות מס.",
           bullets: [
             "ליווי Flip משפטי-חשבונאי מלא לדלאוור",
             "הקמת חברות בנות בארה״ב, אירופה, סינגפור",
@@ -210,7 +210,7 @@ export const Route = createFileRoute("/cpa-startups")({
           title: "Fractional CFO – ניהול כספים בכיר לסטארטאפ",
           body: (
             <>
-              רוב הסטארטאפים בשלבי Seed–Series B עדיין לא מצדיקים CFO משרה מלאה, אבל דווקא אז ההחלטות הפיננסיות קריטיות – Runway, תמחור, גיוסים ובורד. אנחנו נכנסים כ-<Link to="/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO</Link> ומספקים את כל שכבת הניהול הפיננסי הבכירה שנדרשת. חברות עם פעילות מעבר לים ישלימו את התמונה עם <Link to="/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ייעוץ מיסוי בינלאומי</Link>, וחברות זרות בישראל יעדיפו לרוב את המסלול של <Link to="/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי חברות בת בישראל</Link>.
+              רוב הסטארטאפים בשלבי Seed–Series B עדיין לא מצדיקים CFO משרה מלאה, אבל דווקא אז ההחלטות הפיננסיות קריטיות – Runway, תמחור, גיוסים ובורד. אנחנו נכנסים כ-<Link to="/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO</Link> ומספקים את כל שכבת הניהול הפיננסי הבכירה שנדרשת. חברות עם פעילות מעבר לים ישלימו את התמונה עם <Link to="/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ייעוץ מיסוי בין־לאומי</Link>, וחברות זרות בישראל יעדיפו לרוב את המסלול של <Link to="/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי חברות בת בישראל</Link>.
             </>
           ),
           bullets: [
