@@ -11,7 +11,7 @@ const FAQS = [
   { q: "What is Transfer Pricing and why does it matter?", a: "Transfer Pricing is the pricing of intra-group transactions between the foreign parent and Israeli subsidiary. Israeli law (Section 85A) requires arm's length pricing. A professional TP study is required above certain thresholds and helps document the company's position for discussions with the ITA." },
   { q: "What is Permanent Establishment (PE) risk?", a: "If the foreign parent has meaningful presence in Israel — an office, a fixed employee closing deals, a central warehouse — it may be deemed to operate in Israel and become subject to Israeli corporate tax on that activity. Proper structuring (EOR, local Service Company where appropriate) helps reduce unintended PE risk." },
   { q: "Can we pay Israeli developers without opening a branch?", a: "Yes — three options: (1) EOR (Employer of Record) — fast but expensive; (2) independent contractor — simple but limited by misclassification risk; (3) an Israeli subsidiary — higher setup cost but cheapest long-term and full control. We model the crossover point." },
-  { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "An Israeli subsidiary of a foreign group can access the full toolkit: Preferred Technological Enterprise (6–12% corporate tax), IIA grants, immediate R&D expensing, tax treaties with 60+ countries. Correct Transfer Pricing is essential to preserve these benefits." },
+  { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "An Israeli subsidiary of a foreign group can access the full toolkit: Assessment of eligibility for Preferred Technological Enterprise tax benefits, IIA grants, immediate R&D expensing, tax treaties with 60+ countries. Correct Transfer Pricing is essential to preserve these benefits." },
 ];
 
 export const Route = createFileRoute("/en/cpa-foreign-companies")({
@@ -38,17 +38,17 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
       heroImageAlt="Office tower with international company flags"
       icon={Globe2}
       eyebrow="Foreign Companies in Israel"
-      title="Full local support for international companies entering Israel"
-      intro="A foreign company entering the Israeli market needs a local partner who understands the regulation, language, banking system and tax authorities. We support international tech companies, global startups, foreign funds and multinationals through every stage of market entry — from entity setup to ongoing global compliance."
+      title="Accounting, tax and financial support for international companies operating in Israel"
+      intro="Foreign companies operating in Israel may require accounting, tax, payroll and financial-reporting support. We assist with the Israeli accounting and tax aspects of the proposed structure and ongoing activity, with additional qualified advisers involved where required."
       highlights={[
         "Israeli subsidiary (Ltd) or branch setup",
-        "Bank account opening and full KYC support",
-        "Global Payroll & Israeli labor-law compliance",
+        "Preparation of accounting and tax information for bank and KYC processes, subject to the bank’s requirements and review",
+        "Israeli payroll administration and coordination with qualified employment-law advisers where required",
         "Transfer Pricing (Section 85A) — Local File, Master File, CbCR",
         "US GAAP & IFRS reporting to the parent company",
         "Cross-border IP structuring under OECD BEPS",
         "Ongoing filings with ITA, VAT and the Registrar",
-        "Preferred Technological Enterprise (6–12% corporate tax)",
+        "Assessment of eligibility for Preferred Technological Enterprise tax benefits",
       ]}
       sections={[
         {
@@ -56,12 +56,12 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           body: "The structural decision comes first. We analyze the options — Israeli subsidiary, branch, or EOR — considering planned scale, home country, treaty network, IP roadmap and future funding.",
         },
         {
-          title: "End-to-end setup process",
-          body: "Once the decision is made we handle everything:",
+          title: "Accounting and tax support for the setup process",
+          body: "Once the proposed structure has been selected, we can assist with the accounting, tax and reporting aspects:",
           bullets: [
-            "Company registration with the Registrar (2–3 business days)",
+            "Preparation of accounting and tax information required for the registration process, with legal registration handled by qualified legal counsel",
             "Registration with VAT, ITA and Bituach Leumi",
-            "Bank account opening with full KYC representation",
+            "Support in preparing information for bank-account and KYC review, subject to the bank’s requirements and discretion",
             "Employer registration and payroll setup",
             "Accounting system tailoring for the entity's needs",
           ],
@@ -86,17 +86,17 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           title: "Transfer Pricing & BEPS compliance",
           body: "For companies with material intra-group transactions we prepare Transfer Pricing studies compliant with OECD guidelines and Section 85A of the Israeli Income Tax Ordinance. Robust documentation supports the company's position in discussions with the ITA:",
           bullets: [
-            "Full benchmark study of comparable market transactions",
-            "Selection of the optimal method (CUP, Cost Plus, TNMM)",
+            "Benchmarking and comparable-data review according to the agreed transfer-pricing scope",
+            "Review of the appropriate method based on the activity, available data and applicable transfer-pricing rules",
             "Functional analysis — functions, assets and risks",
             "Local File and Master File under BEPS Action 13",
             "Country-by-Country Reporting (CbCR) coordination",
-            "Annual updates and defense before the ITA",
+            "Periodic updates and accounting and tax support in discussions with the Israel Tax Authority",
           ],
         },
         {
           title: "Cross-Border IP Tax Structuring",
-          body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We plan and execute optimal IP structures in Israel and abroad, addressing the OECD BEPS rules relevant to the structure and activity and the Israeli Income Tax Ordinance:",
+          body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We assist in reviewing the accounting and tax aspects of proposed IP structures in Israel and abroad, with qualified legal and other professional advisers involved where required:",
           bullets: [
             "IP location strategy: Israel (Preferred Tech 6–12%), Ireland, Luxembourg, Singapore",
             "Intra-group technology transfers under Section 85A at arm's length",
@@ -114,7 +114,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
             "Preferred Technological Enterprise — 6% corporate tax (12% standard track)",
             "Dividend exemption from a Preferred Enterprise in defined cases",
             "Immediate expensing of R&D in the year incurred",
-            "IIA grants — 20–50% of approved R&D expenditure",
+            "Financial support for IIA grant applications and related reporting, subject to the applicable program, eligibility criteria and required approvals",
             "Tax treaties with 60+ countries — bilateral relief from double taxation",
           ],
         },

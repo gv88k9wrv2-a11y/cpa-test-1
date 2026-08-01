@@ -47,7 +47,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       {
         name: "description",
         content:
-          "Fractional CFO services: strategic finance, Burn Rate and Runway, investor-grade models, Board relations and M&A readiness. Book a consultation.",
+          "Outsourced financial management, including budgets, cash flow, financial models, board information and transaction preparation. Contact us.",
       },
       { property: "og:title", content: "Fractional CFO — Nimrodi & Co." },
       {

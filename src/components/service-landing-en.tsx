@@ -36,7 +36,7 @@ export function ServiceLandingEn({
   highlights,
   sections,
   faqs,
-  ctaHeadline = "Ready to move forward? Book a free introductory consultation.",
+  ctaHeadline = "Ready to discuss your needs? Contact us for an introductory discussion about the proposed scope of service.",
   icon: Icon,
   heroImage,
   heroImageAlt,
