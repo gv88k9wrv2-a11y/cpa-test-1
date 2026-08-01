@@ -40,7 +40,7 @@ const GROUPS: ServiceGroup[] = [
       { to: "/bookkeeping", label: "הנהלת חשבונות", icon: Calculator, desc: "ניהול חשבונות מקוון, סגירות חודשיות ודוחות ניהוליים על פלטפורמות ענן מודרניות." },
       { to: "/payroll", label: "שכר ואופציות (ESOP)", icon: ReceiptText, desc: "תלושי שכר, סעיף 102 (תוכניות אופציות ESOP), טופס 106, טופס 161 וציות פנסיוני." },
       { to: "/audit", label: "ביקורת חשבונאית", icon: FileSearch, desc: "ביקורת דוחות כספיים בהתאם לכללי החשבונאות המקובלים בישראל ולתקני IFRS, וכן בדיקות נאותות בעסקאות מיזוג ורכישה." },
-      { to: "/tax-consulting", label: "ייעוץ מס", icon: FileSpreadsheet, desc: "תכנוני מס, החלטות מיסוי (Pre-Ruling), השגות וערעורים מול רשות המסים." },
+      { to: "/tax-consulting", label: "ייעוץ מס", icon: FileSpreadsheet, desc: "בחינת סוגיות מס, הכנת בקשות להחלטות מיסוי במקרים המתאימים וליווי חשבונאי ומיסויי בהליכי שומה והשגה." },
     ],
   },
   {
@@ -141,7 +141,7 @@ function ServicesPage() {
               לא בטוחים איזה שירות מתאים לכם?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-              נשמח לקיים פגישת היכרות ראשונית ללא התחייבות, להכיר את הצרכים ולבחון את דרך הפעולה המתאימה.
+              נשמח לקיים שיחת היכרות, להבין את הצרכים ולבחון את היקף השירות המתאים.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a

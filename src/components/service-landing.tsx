@@ -23,6 +23,8 @@ export type ServiceLandingProps = {
   sections: { title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
+  ctaText?: string;
+
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
@@ -37,6 +39,8 @@ export function ServiceLanding({
   sections,
   faqs,
   ctaHeadline = "מוכנים להתקדם? נשמח לקיים פגישת היכרות ראשונית ולבחון את הצרכים ואת היקף השירות.",
+  ctaText,
+
   icon: Icon,
   heroImage,
   heroImageAlt,
@@ -182,6 +186,8 @@ export function ServiceLanding({
           <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
             {ctaHeadline}
           </h2>
+          {ctaText ? <p className="mt-4 text-muted-foreground">{ctaText}</p> : null}
+
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a
               href={WHATSAPP_URL}

@@ -23,6 +23,7 @@ export type ServiceLandingEnProps = {
   sections: { title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
+  ctaText?: string;
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
@@ -36,7 +37,8 @@ export function ServiceLandingEn({
   highlights,
   sections,
   faqs,
-  ctaHeadline = "Ready to move forward? Book a free introductory consultation.",
+  ctaHeadline = "Ready to discuss your needs? Contact us for an introductory discussion about the proposed scope of service.",
+  ctaText,
   icon: Icon,
   heroImage,
   heroImageAlt,
@@ -159,6 +161,7 @@ export function ServiceLandingEn({
         <section className="py-16">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">{ctaHeadline}</h2>
+            {ctaText ? <p className="mt-4 text-muted-foreground">{ctaText}</p> : null}
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95">
                 <MessageCircle className="h-5 w-5" aria-hidden />

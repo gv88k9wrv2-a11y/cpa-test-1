@@ -7,7 +7,7 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "When should I register as osek patur vs. osek murshe?", a: "Osek patur (VAT-exempt dealer) is available under an annual revenue threshold updated yearly by the ITA. Above the threshold — or if your clients need VAT invoices — you must register as osek murshe. We assess the right fit at setup." },
   { q: "Sole proprietor or private company — what's better?", a: "It depends on income, expenses, savings and family situation. We run a personal simulation comparing after-tax cash — the relative advantages of incorporation depend on the income level, expenses, retained earnings, personal circumstances and the applicable tax rules, but always subject to Pocket Company (חברת ארנק) risk analysis." },
-  { q: "What is a Capital Declaration (Asset & Net Worth Report / הצהרת הון)?", a: "The ITA periodically requires self-employed individuals to file a personal statement of assets and liabilities. Differences between statements are treated as taxable income unless explained. We prepare and defend it." },
+  { q: "What is a Capital Declaration (Asset & Net Worth Report / הצהרת הון)?", a: "The ITA may require self-employed individuals to file a statement of assets and liabilities. Material differences may require supporting explanations. We assist with preparing the declaration and supporting information based on the records provided." },
   { q: "I work with clients abroad — how do I invoice?", a: "Services supplied to a foreign resident may qualify for zero-rate VAT under Section 30(a)(5), subject to the statutory conditions and the circumstances of the service. Invoices in English, currency conversion at the correct rate, and W-8BEN handling for US clients are all part of the setup we manage." },
   { q: "What is a Pocket Company (חברת ארנק) and how do I avoid the trap?", a: "Section 62A of the Israeli Income Tax Ordinance targets one-person companies used to shelter what is effectively employment income. Classification as a Pocket Company eliminates the corporate tax benefit and applies effective tax of ~48%. We structure incorporation to prove genuine business substance — multiple clients, business risk, real investment." },
 ];
@@ -71,8 +71,8 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           body: "We prepare your annual personal return, optimize deductions (pension, study fund, life insurance, home-office expenses, professional education), prepare the capital declaration (הצהרת הון) when the ITA requires it, and plan the coming year — including whether it's time to incorporate.",
         },
         {
-          title: "Maximizing refunds and credits",
-          body: "Most freelancers miss credits and refunds they're entitled to. We map every applicable item and file amended returns up to six years back where relevant:",
+          title: "Reviewing Potential Refunds and Tax Credits",
+          body: "Eligibility for tax refunds and credits depends on the available records, relevant tax years and applicable law. Where appropriate, we review potential credits, deductions and prior-year reporting:",
           bullets: [
             "Tax credit points (parents, children, academic degree, periphery residence)",
             "Assessment of vehicle, phone, home-office and internet expenses under applicable rules",
@@ -95,8 +95,8 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           ],
         },
         {
-          title: "Passive income — rental, crypto, securities",
-          body: "Most freelancers also build a personal investment portfolio. We fold all passive income into a single, tax-efficient annual return:",
+          title: "Digital Assets, Rental Income and Investments",
+          body: "Self-employed individuals may also have income from digital assets, rental properties or investments. These sources may create additional Israeli and foreign reporting obligations and should be reviewed separately according to the facts and applicable law:",
           bullets: [
             "Residential rental — 10% flat track vs. marginal-rate track with expenses",
             "Capital gains on Israeli and foreign securities — 25% + foreign tax credit",

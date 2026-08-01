@@ -5,16 +5,16 @@ import heroImg from "../assets/service-payroll.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Can you run payroll for a foreign company with employees in Israel?", a: "Yes. We register the entity as an Israeli employer, set up payroll, National Insurance (Bituach Leumi), income tax and pension arrangements, and produce compliant Israeli payslips (tlush)." },
+  { q: "Can you run payroll for a foreign company with employees in Israel?", a: "We can assist with payroll setup and ongoing administration, including employer information required for National Insurance and income-tax reporting. Legal registration and pension or insurance advice require the appropriate qualified advisers." },
   { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate filings and approval processes with the Tax Authority, produce Form 106 (Annual Tax Statement), and support employees through exercise and sale under Section 102 (Equity & ESOP Incentive Plans)." },
-  { q: "What about severance (Form 161) and terminations?", a: "We prepare Form 161, coordinate with pension providers, calculate tax-optimal severance splits and support the departing employee through the process." },
+  { q: "What about severance (Form 161) and terminations?", a: "We prepare payroll information for Form 161, coordinate available pension information and assist with reviewing tax considerations relating to severance, subject to the employee’s circumstances and applicable law." },
 ];
 
 export const Route = createFileRoute("/en/payroll")({
   head: () => ({
     meta: [
       { title: "Israeli Payroll Services | Section 102 ESOP | Nimrodi & Co." },
-      { name: "description", content: "Full Israeli payroll: monthly payslips (tlush), Bituach Leumi, income tax, Section 102 ESOP, Form 106, Form 161 and pension compliance." },
+      { name: "description", content: "Israeli payroll setup and ongoing administration, including payslips, employer reporting, Section 102 information and Forms 106 and 161. Contact us." },
       { property: "og:title", content: "Payroll & ESOP Services — Nimrodi & Co." },
       { property: "og:description", content: "Israeli payroll and equity compensation done right." },
       { property: "og:url", content: `${BASE}/en/payroll` },

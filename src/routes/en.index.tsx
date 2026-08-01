@@ -28,7 +28,7 @@ const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/search/?api=1&query=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99+%D7%95%D7%A9%D7%95%D7%AA+%D7%A8%D7%95%D7%90%D7%99+%D7%97%D7%A9%D7%91%D7%95%D7%9F+%D7%92%D7%9C%D7%92%D7%9C%D7%99+%D7%94%D7%A4%D7%9C%D7%93%D7%94+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94";
 
 const HIGHLIGHTS = [
-  { icon: Award, num: "25+", label: "Years of experience" },
+  { icon: Award, num: "Since 2000", label: "Firm established" },
   { icon: Star, num: "★", label: "Google Maps reviews", href: GOOGLE_REVIEWS_URL },
   { icon: Users, num: "✓", label: "Public client reviews", href: GOOGLE_REVIEWS_URL },
   { icon: Handshake, num: "✦", label: "Direct, Personal Service" },
@@ -67,7 +67,7 @@ export const Route = createFileRoute("/en/")({
           "Boutique CPA firm in Herzliya Pituach for startups, foreign companies, fractional CFO and crypto tax compliance. Book an initial consultation.",
       },
       { property: "og:title", content: "Nimrodi & Co. CPA – Herzliya Firm for Startups & Foreign Cos" },
-      { property: "og:description", content: "Premium boutique CPA firm in Herzliya Pituach. Specializing in high-growth startup engineering, international tax compliance, fractional CFO services, and complex crypto taxation." },
+      { property: "og:description", content: "Boutique CPA firm in Herzliya Pituach providing accounting, tax, outsourced financial-management, digital-asset reporting and rental-income tax services." },
       { property: "og:url", content: `${BASE}/en` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { property: "og:image:width", content: "1200" },
@@ -112,7 +112,7 @@ function HomeEn() {
           <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">
               <Sparkles className="h-3.5 w-3.5" aria-hidden />
-              25+ years serving Israeli & international clients
+              Operating since 2000 and serving Israeli and international clients
             </div>
             <h1 className="mt-5 max-w-3xl font-display text-4xl font-bold leading-tight text-primary sm:text-6xl">
               Boutique CPA Firm Specializing in Startups, High-Tech & Cross-Border Taxation
@@ -123,7 +123,7 @@ function HomeEn() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95">
                 <MessageCircle className="h-5 w-5" aria-hidden />
-                Free consultation
+                Introductory discussion
               </a>
               <a href="tel:+97299582211" className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/90">
                 <Phone className="h-4 w-4" aria-hidden />
@@ -170,7 +170,7 @@ function HomeEn() {
             </div>
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
-                { to: "/en/cpa-startups", icon: Building2, title: "Startups & Tech", desc: "Fundraising, ESOP (section 102), Israeli-Delaware Flip, preferred tech enterprise status." },
+                { to: "/en/cpa-startups", icon: Building2, title: "Startups & Tech", desc: "Accounting support for fundraising, Section 102 equity matters, proposed Israeli-Delaware restructurings and assessment of tax-benefit eligibility." },
                 { to: "/en/cpa-freelancers", icon: Briefcase, title: "Freelancers & Self-Employed", desc: "File openings, VAT reporting, annual returns, Capital Declarations (Asset & Net Worth Report)." },
                 { to: "/en/cpa-foreign-companies", icon: Globe2, title: "Foreign Companies", desc: "Subsidiary vs. branch, banking, Transfer Pricing, ongoing compliance." },
                 { to: "/en/tax-consulting", icon: Award, title: "Tax Advisory & Special Reports", desc: "Specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, assisting with documentation regarding source and history of funds for consideration by relevant financial institutions, and filing tailored compliance reports with the Tax Authority. Plus Pre-Rulings, appeals and objections.", badge: "Crypto & Web3 Expert" },
@@ -214,7 +214,7 @@ function HomeEn() {
                 { t: "Senior partner attention", d: "Direct access to the partner in charge — not a rotating junior team." },
                 { t: "Cross-border expertise", d: "Israeli-US Flips, transfer pricing, treaties, dual filings." },
                 { t: "Tech industry native", d: "Fluent across modern cloud accounting stacks — and we speak startup." },
-                { t: "Regulatory depth", d: "Tax Authority pre-rulings, IIA grants, preferred enterprise status." },
+                { t: "Regulatory depth", d: "Review and preparation of advance tax-ruling applications, financial support for IIA grant applications and assessment of tax-benefit eligibility." },
                 { t: "Fundraising support", d: "Data rooms, financial modeling, DD ready — from Seed to Series C." },
                 { t: "Bilingual practice", d: "Full service in Hebrew and English, working across time zones." },
               ].map((f) => (

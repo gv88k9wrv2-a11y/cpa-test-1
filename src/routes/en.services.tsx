@@ -100,7 +100,7 @@ function ServicesEn() {
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Not sure which service fits?</h2>
-            <p className="mt-3 text-primary-foreground/80">Book a free intro call — we'll map your needs and quote transparently.</p>
+            <p className="mt-3 text-primary-foreground/80">Contact us for an introductory discussion about your needs and the proposed scope of service.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground">
                 <MessageCircle className="h-5 w-5" aria-hidden />

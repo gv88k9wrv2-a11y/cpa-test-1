@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Award, GraduationCap, Mail } from "lucide-react";
+import { Award, Building2, Calculator, GraduationCap, Mail, UserCheck } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 import teamPhoto from "../assets/team-photo.webp";
 
@@ -11,6 +11,62 @@ const TEAM = [
     credentials: ["רו״ח מוסמך", "חבר לשכת רואי החשבון", "מיסוי ישראלי ובין־לאומי"],
   },
 ];
+
+const DEPARTMENTS = [
+  {
+    icon: Building2,
+    name: "חברות, סטארטאפים וביקורת",
+    role: "חשבונאות, ביקורת, חברות זרות וניהול כספים במיקור חוץ",
+    bio: "המחלקה מלווה חברות פרטיות, חברות טכנולוגיה, סטארטאפים וחברות זרות הפועלות בישראל. השירות כולל ביקורת דוחות כספיים, דיווח ותקינה חשבונאית, ניהול כספים במיקור חוץ, תקציבים ותחזיות, ניהול תזרים, דיווח ניהולי והיערכות חשבונאית ופיננסית לתהליכי גיוס הון ובדיקת נאותות.",
+    credentials: [
+      "ביקורת דוחות כספיים",
+      "דיווח ותקינה חשבונאית",
+      "חברות וסטארטאפים",
+      "חברות זרות בישראל",
+      "בחינת פעילות באמצעות חברה בת או סניף",
+      "ניהול כספים במיקור חוץ",
+      "תקציבים, תחזיות ותזרים",
+      "מידע להנהלה ולדירקטוריון",
+      "היערכות חשבונאית לגיוסי הון ולבדיקת נאותות",
+    ],
+  },
+  {
+    icon: UserCheck,
+    name: "יחידים, עצמאים ומיסוי",
+    role: "דוחות שנתיים, הצהרות הון וייעוץ מס",
+    bio: "המחלקה מלווה יחידים, עצמאים ובעלי מקצועות חופשיים בדיווחים ובהתנהלות מול רשויות המס. השירות כולל פתיחת תיקים, דיווחים תקופתיים, דוחות שנתיים, הצהרות הון, מיסוי הכנסות מישראל ומחו״ל, דיווח ומיסוי נכסים דיגיטליים ומיסוי ודיווח על הכנסות משכר דירה בישראל ובחו״ל.",
+    credentials: [
+      "פתיחת תיקים ודיווחים תקופתיים",
+      "דוחות שנתיים והצהרות הון",
+      "מיסוי יחידים ועצמאים",
+      "הכנסות מישראל ומחו״ל",
+      "דיווח ומיסוי נכסים דיגיטליים",
+      "ארגון נתוני עסקאות בנכסים דיגיטליים",
+      "מיסוי הכנסות משכר דירה בישראל",
+      "דיווח על שכר דירה מחו״ל",
+      "בחינת מס זר וזיכוי מס זר",
+      "מיסוי בין־לאומי ובחינת תושבות",
+    ],
+  },
+  {
+    icon: Calculator,
+    name: "הנהלת חשבונות ושכר",
+    role: "דיווחים שוטפים, התאמות ועיבוד שכר",
+    bio: "המחלקה מעניקה שירותי הנהלת חשבונות ושכר לחברות ולעצמאים, בהתאם לאופי הפעילות ולהיקף ההתקשרות. השירות כולל קליטת מסמכים, התאמות, דיווחים תקופתיים, עיבוד נתוני שכר והפקת מידע חשבונאי וניהולי.",
+    credentials: [
+      "הנהלת חשבונות שוטפת",
+      "קליטת מסמכים",
+      "התאמות בנקים וכרטיסי אשראי",
+      "דיווחי מע״מ ומקדמות",
+      "דוחות תקופתיים",
+      "חישובי שכר",
+      "דיווחי מעסיקים",
+      "מידע חשבונאי וניהולי",
+      "הכנת מידע למחלקת ניהול הכספים",
+    ],
+  },
+];
+
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -111,6 +167,37 @@ function TeamPage() {
             </article>
           ))}
         </div>
+
+        <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+          <h2 className="text-center font-display text-3xl font-bold text-primary">
+            המחלקות המקצועיות במשרד
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
+            מחלקות המשרד פועלות בשיתוף פעולה כדי לספק מענה חשבונאי, מיסויי, פיננסי ותפעולי בהתאם לאופי הפעילות ולהיקף השירות הנדרש.
+          </p>
+          <div className="mt-10 grid gap-8 md:grid-cols-3">
+            {DEPARTMENTS.map((d) => (
+              <article
+                key={d.name}
+                className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
+              >
+                <d.icon className="h-8 w-8 text-gold" aria-hidden />
+                <h3 className="mt-4 font-display text-xl font-semibold text-primary">{d.name}</h3>
+                <div className="mt-1 text-sm font-medium text-gold">{d.role}</div>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
+                <ul className="mt-5 space-y-2 border-t border-border pt-4">
+                  {d.credentials.map((c) => (
+                    <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
+                      <GraduationCap className="h-3.5 w-3.5 text-gold" aria-hidden />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+
 
         <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-secondary/40 p-8 text-center">
           <Award className="mx-auto mb-4 h-10 w-10 text-gold" aria-hidden />
