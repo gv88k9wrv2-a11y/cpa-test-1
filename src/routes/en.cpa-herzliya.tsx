@@ -41,26 +41,57 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
       heroImage={heroImg}
       heroImageAlt="CPA office building in Herzliya Pituach"
       icon={MapPin}
-      eyebrow="Herzliya Pituach"
-      title="Boutique CPA firm in the heart of Herzliya Pituach"
-      intro="Our office is located in Herzliya Pituach, at the center of Herzliya Pituach business and technology district. We serve local tech companies, startups, foreign R&D centers, professionals and successful families in the Sharon region."
+      eyebrow="CPA in Herzliya Pituach"
+      title="Accounting, Tax and Financial Services in Herzliya Pituach"
+      intro="Nimrodi &amp; Co. provides accounting, audit, tax and financial services to companies, startups, foreign companies, self-employed businesses and individuals. The office is located in Herzliya Pituach, with in-person and video meetings available according to the client’s needs and the scope of the engagement."
       highlights={[
-        "Located in Herzliya Pituach business district",
-        "Deep familiarity with local tech ecosystem",
+        "Accounting and audit services for companies",
+        "Accounting and financial support for startups",
+        "Services for foreign companies operating in Israel",
+        "Outsourced financial management",
+        "Tax services for individuals and self-employed businesses",
+        "Digital-asset tax reporting",
+        "Rental-income tax reporting",
+        "Bookkeeping and payroll",
         "In-person and video meetings",
-        "Partners with 25+ years of experience",
-        "Bilingual practice (Hebrew and English)",
       ]}
+      ctaHeadline="Looking for the service relevant to your needs?"
+      ctaText="Contact the firm to describe your needs and receive information about the proposed scope and engagement terms."
       sections={[
         {
-          title: "Why local matters",
-          body: "Herzliya Pituach is home to Microsoft, Apple, Meta and many of Israel's most important startups and VC funds. Being physically here means we know the ecosystem, work with local counsel and can meet you and your team in person on short notice.",
+          title: "Professional Services for Companies and Startups",
+          body: "The firm provides accounting and financial services to companies and startups according to their stage of activity, structure and reporting requirements. Services may include financial-statement audits, financial reporting, accounting matters, tax advisory services, bookkeeping, payroll and information for management and boards.",
         },
         {
-          title: "Who we serve locally",
-          body: "Tech companies (Israeli and foreign R&D centers), startups from seed to growth, professional services firms, private clients and family offices, and freelancers and independent professionals in the Sharon region.",
+          title: "Outsourced Financial Management",
+          body: "Companies requiring ongoing financial support may receive outsourced financial-management services according to management needs and the engagement scope. Services may include budgets, forecasts, cash-flow monitoring, management reports and financial preparation for fundraising and due-diligence processes.",
+        },
+        {
+          title: "Services for Foreign Companies Operating in Israel",
+          body: "The firm assists foreign companies with reviewing the accounting and tax aspects of activity in Israel. The relevant structure and reporting obligations depend on the activity, duration, employment arrangements, local agreements and applicable law.",
+        },
+        {
+          title: "Services for Individuals and Self-Employed Businesses",
+          body: "The firm provides tax-reporting and advisory services to individuals, self-employed businesses and professionals. Services are adapted to the person’s income, expenses, assets, Israeli or foreign activity and applicable reporting obligations.",
+        },
+        {
+          title: "Digital-Asset Tax Reporting",
+          body: "Services may include reviewing the nature of digital-asset activity, collecting and organizing transaction data, calculating gains and losses based on the records provided, preparing information for Israeli tax returns and reviewing reporting obligations. Where relevant, the firm may also assist with source-of-funds and activity documentation.",
+        },
+        {
+          title: "Rental-Income Tax Reporting",
+          body: "Services may include reviewing tax and reporting obligations relating to rental income from property in Israel and abroad. The treatment depends on the type of property, income, expenses, rental period, taxpayer status and applicable law.",
+        },
+        {
+          title: "Bookkeeping and Payroll",
+          body: "Bookkeeping and payroll services are provided according to the type of activity and engagement scope. Services may include document processing, reconciliations, periodic reports, payroll-data processing, employer reports and accounting and management information.",
+        },
+        {
+          title: "Meetings and Services from Herzliya Pituach",
+          body: "In-person meetings can be arranged at the Herzliya Pituach office, subject to availability. Services are also available through video meetings and agreed information-transfer methods. Services are not limited to clients located in Herzliya.",
         },
       ]}
+
       faqs={FAQS}
     />
   ),
