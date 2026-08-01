@@ -121,7 +121,35 @@ function TeamEn() {
               </article>
             ))}
           </div>
+
+          <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+            <h2 className="text-center font-display text-3xl font-bold text-primary">
+              Our Professional Teams
+            </h2>
+            <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
+              The firm&rsquo;s teams work together to provide accounting, tax, financial and operational support according to each client&rsquo;s activity and the agreed scope of service.
+            </p>
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {DEPARTMENTS.map((d) => (
+                <article key={d.name} className="flex flex-col rounded-xl border border-border bg-card p-6">
+                  <d.icon className="h-8 w-8 text-gold" aria-hidden />
+                  <h3 className="mt-4 font-display text-xl font-bold text-primary">{d.name}</h3>
+                  <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold">{d.role}</div>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
+                  <ul className="mt-5 space-y-2 border-t border-border pt-4">
+                    {d.credentials.map((c) => (
+                      <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
+                        <GraduationCap className="h-3.5 w-3.5 text-gold" aria-hidden />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </div>
         </section>
+
       </main>
       <SiteFooterEn />
       <FloatingWhatsAppEn />
