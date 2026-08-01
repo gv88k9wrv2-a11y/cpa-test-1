@@ -39,6 +39,8 @@ export function ServiceLanding({
   sections,
   faqs,
   ctaHeadline = "מוכנים להתקדם? נשמח לקיים פגישת היכרות ראשונית ולבחון את הצרכים ואת היקף השירות.",
+  ctaText,
+
   icon: Icon,
   heroImage,
   heroImageAlt,
