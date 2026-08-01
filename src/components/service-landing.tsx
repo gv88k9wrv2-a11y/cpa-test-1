@@ -23,6 +23,8 @@ export type ServiceLandingProps = {
   sections: { title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
+  ctaText?: string;
+
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
