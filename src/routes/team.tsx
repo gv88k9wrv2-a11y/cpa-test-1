@@ -112,6 +112,37 @@ function TeamPage() {
           ))}
         </div>
 
+        <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+          <h2 className="text-center font-display text-3xl font-bold text-primary">
+            המחלקות המקצועיות במשרד
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
+            מחלקות המשרד פועלות בשיתוף פעולה כדי לספק מענה חשבונאי, מיסויי, פיננסי ותפעולי בהתאם לאופי הפעילות ולהיקף השירות הנדרש.
+          </p>
+          <div className="mt-10 grid gap-8 md:grid-cols-3">
+            {DEPARTMENTS.map((d) => (
+              <article
+                key={d.name}
+                className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
+              >
+                <d.icon className="h-8 w-8 text-gold" aria-hidden />
+                <h3 className="mt-4 font-display text-xl font-semibold text-primary">{d.name}</h3>
+                <div className="mt-1 text-sm font-medium text-gold">{d.role}</div>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
+                <ul className="mt-5 space-y-2 border-t border-border pt-4">
+                  {d.credentials.map((c) => (
+                    <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
+                      <GraduationCap className="h-3.5 w-3.5 text-gold" aria-hidden />
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+
+
         <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-secondary/40 p-8 text-center">
           <Award className="mx-auto mb-4 h-10 w-10 text-gold" aria-hidden />
           <h2 className="font-display text-2xl font-bold text-primary">
