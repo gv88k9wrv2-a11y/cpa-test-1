@@ -5,10 +5,18 @@ import heroImg from "../assets/service-startups.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Where is the office located?", a: "In the Herzliya Pituach business district — walking distance from the main tech campuses (Microsoft, Apple, Meta and Israel's leading startups)." },
-  { q: "Do you serve clients outside Herzliya?", a: "Yes — we serve clients across Israel and abroad. But being local in Herzliya Pituach gives us deep familiarity with the tech, biotech and finance ecosystem here." },
-  { q: "Can we meet in person?", a: "In-person meetings can be arranged at our Herzliya Pituach office, subject to availability. Video calls are also available." },
+  { q: "Where is the office located?", a: "The office is located in Herzliya Pituach. Meetings at the office can be arranged subject to availability, and video meetings are also available." },
+  { q: "Are the services only for clients in Herzliya?", a: "No. The firm serves clients in Herzliya and other areas in Israel, as well as foreign companies operating in Israel. The working arrangement is determined according to the client's needs and the scope of the engagement." },
+  { q: "Which services are available to companies and startups?", a: "Services may include financial-statement audits, financial reporting, tax advisory services, bookkeeping, payroll, outsourced financial management, budgets, forecasts, cash flow and accounting and financial preparation for fundraising and due-diligence processes." },
+  { q: "Does the firm support foreign companies operating in Israel?", a: "Yes. The firm assists with reviewing the accounting and tax aspects of activity in Israel, including activity through a subsidiary or branch, tax-file registration, ongoing reporting, bookkeeping, payroll and coordination with legal or other professional advisers where required." },
+  { q: "Does the firm handle digital-asset tax reporting?", a: "Yes. Services may include reviewing the nature of the activity, collecting and organizing transaction data, calculating results based on the records provided, preparing information for the annual return and reviewing reporting obligations. Each case is reviewed according to the facts and applicable law." },
+  { q: "Does the firm handle rental-income taxation?", a: "Yes. Rental income from property in Israel and abroad may be reviewed, including the applicable tax routes, expenses, foreign tax paid, foreign tax credits and reporting obligations, depending on the type of property and the circumstances." },
+  { q: "Are bookkeeping and payroll services available?", a: "Yes. Depending on the scope of the engagement, services may include document processing, reconciliations, periodic reports, payroll-data processing, employer reports and accounting and management information." },
+  { q: "Are outsourced financial-management services available?", a: "Yes. Services may include budgets and forecasts, cash flow, management reports, information for management and board meetings and support for financial processes. The content and frequency are determined according to the company's needs and the scope of the engagement." },
+  { q: "How are fees determined?", a: "Fees are determined according to the type of service, scope of activity, complexity, reporting frequency and the amount of information required. Following an introductory discussion, the scope of service and engagement terms can be presented." },
+  { q: "Can meetings be held at the office?", a: "Yes. Meetings can be arranged at the Herzliya Pituach office subject to availability. Video meetings are also available." },
 ];
+
 
 export const Route = createFileRoute("/en/cpa-herzliya")({
   head: () => ({
