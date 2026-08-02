@@ -53,7 +53,7 @@ const COPY = {
       "Tell us briefly about your need – tax, audit, fractional CFO, cross-border, etc.",
     submit: "Send inquiry by email",
     sending: "Preparing your inquiry…",
-    whatsapp: "Prefer WhatsApp? Chat with us instantly",
+    whatsapp: "Prefer WhatsApp? Chat with us directly",
     privacy:
       "We treat inquiries confidentially and handle submitted information in accordance with our privacy policy. We aim to respond as soon as possible, typically within one business day.",
     required: "*",

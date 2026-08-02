@@ -124,7 +124,7 @@ function TeamEn() {
 
           <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
             <h2 className="text-center font-display text-3xl font-bold text-primary">
-              Our Professional Teams
+              Professional Service Areas
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
               The firm&rsquo;s teams work together to provide accounting, tax, financial and operational support according to each client&rsquo;s activity and the agreed scope of service.

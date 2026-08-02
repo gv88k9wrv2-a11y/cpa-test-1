@@ -34,7 +34,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
       heroImageAlt="Bookkeeping workstation with financial dashboard screens"
       icon={Calculator}
       eyebrow="Bookkeeping"
-      title="Modern digital bookkeeping for companies in Israel"
+      title="Digital Bookkeeping for Companies and Self-Employed Businesses"
       intro="Digital bookkeeping services for companies and self-employed businesses, using systems selected according to the nature of the activity and the scope of the engagement. Services may include document capture, reconciliations, periodic reporting and management information."
       highlights={[
         "Full-cycle monthly bookkeeping",

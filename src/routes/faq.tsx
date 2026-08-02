@@ -129,7 +129,7 @@ function FaqPage() {
             שאלות ותשובות
           </div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            כל מה שרציתם לדעת – ותשובה שלנו
+            שאלות נפוצות ותשובות מקצועיות
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
             שאלות נפוצות מלקוחות פרטיים ועסקיים על שירותי משרד רואי החשבון.
