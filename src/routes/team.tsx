@@ -71,7 +71,7 @@ const DEPARTMENTS = [
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
-      { title: "הצוות שלנו | נמרודי ושות׳ – רואי חשבון בהרצליה" },
+      { title: "השותף המייסד | נמרודי ושות׳ – רואי חשבון בהרצליה" },
       {
         name: "description",
         content:
@@ -106,13 +106,13 @@ function TeamPage() {
       <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
           <div className="text-sm font-semibold uppercase tracking-widest text-gold">
-            הצוות שלנו
+            השותף המייסד
           </div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            אנשים שאתם רוצים לצידכם
+            רו״ח שלמה נמרודי
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            הצוות המקצועי שלנו מלווה לקוחות פרטיים, חברות וסטארטאפים במתן מעטפת חשבונאית ופתרונות מס מתקדמים ברמה הגבוהה ביותר.
+            רו״ח שלמה נמרודי מלווה חברות, עצמאים ויחידים בנושאי חשבונאות, מס וניהול כספים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.
           </p>
         </div>
       </section>
