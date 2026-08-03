@@ -74,7 +74,7 @@ Deterministic replacement run. Context-lock protocol enforced: 60 Unicode charac
 | 68 | `src/components/service-landing.tsx` | NOT APPLIED — EXACT SOURCE TEXT NOT FOUND | `cea3c28c59134ec0` |
 | 69 | `src/components/lead-form.tsx` | NOT APPLIED — EXACT SOURCE TEXT NOT FOUND | `9480f8ec2830c89b` |
 | 70 | `src/components/lead-form.tsx` | NOT APPLIED — EXACT SOURCE TEXT NOT FOUND | `dfe0de4891f5dfab` |
-| 71 | `src/routes/blog.index.tsx` | APPLIED | `c9e1005bdbe5919c` |
+| 71 | `src/routes/blog.index.tsx` | REVERTED — PROTECTED METADATA SPAN | `c9e1005bdbe5919c` |
 | 72 | `src/routes/en.blog.index.tsx` | NOT APPLIED — EXACT SOURCE TEXT NOT FOUND | `a1200c88ad123461` |
 | 73 | `src/routes/faq.tsx` | NOT APPLIED — MULTIPLE AMBIGUOUS OCCURRENCES | `437b589b8708d184` |
 | 74 | `src/routes/en.faq.tsx` | NOT APPLIED — EXACT SOURCE TEXT NOT FOUND | `d27cf9aa010ab903` |
@@ -796,7 +796,7 @@ Deterministic replacement run. Context-lock protocol enforced: 60 Unicode charac
 - IMMUTABLE AFTER CONTEXT: (n/a)
 - Anchors verified unchanged after edit: n/a (no edit written)
 
-### Correction 71 — APPLIED
+### Correction 71 — REVERTED — PROTECTED METADATA SPAN (only occurrence was inside a meta description; rule 13 forbids metadata changes)
 - File: `src/routes/blog.index.tsx`
 - Context Lock ID: `c9e1005bdbe5919c`
 - OLD: `מאמרים מקצועיים`
