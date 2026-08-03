@@ -886,3 +886,12 @@ const PHONE_DISPLAY `
 const PHONE_TEL = "tel:+97299582211";
 const PHONE_DISPL`
 - Anchors verified unchanged after edit: YES
+
+## Note on already-conforming spans
+
+The following corrections were reported NOT APPLIED because OLD was not present, and the file already contains the exact NEW text verbatim (approved wording applied in an earlier authorised pass), so no change was required:
+
+1, 2, 4, 5, 6, 7, 8, 9, 12, 14, 15, 19, 20, 21, 22, 23, 24, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 51, 52, 53, 54, 55, 56, 57, 59, 60, 61, 63, 64, 65, 66, 67, 68, 71, 77, 78
+
+
+No copy was authored, paraphrased or independently modified by Lovable. Every text change maps exactly to a numbered replacement supplied by the user.
