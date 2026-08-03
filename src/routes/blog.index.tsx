@@ -17,7 +17,7 @@ export const Route = createFileRoute("/blog/")({
       { property: "og:title", content: "בלוג – נמרודי ושות׳" },
       {
         property: "og:description",
-        content: "עדכונים ומאמרים מקצועיים על מיסוי, חשבונאות וגיוסי הון.",
+        content: "עדכונים ומאמרים ותובנות מקצועיות על מיסוי, חשבונאות וגיוסי הון.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/blog" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
