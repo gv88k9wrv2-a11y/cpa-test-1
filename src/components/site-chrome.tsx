@@ -20,7 +20,7 @@ import { SocialIcons } from "./social-proof";
 
 const WHATSAPP_URL =
   "https://wa.me/972546688681?text=" +
-  encodeURIComponent("פנייה מהאתר - נמרודי ושות");
+  encodeURIComponent("פנייה מהאתר – נמרודי ושות׳");
 
 const PHONE_TEL = "tel:099582211";
 const PHONE_DISPLAY = "09-9582211";

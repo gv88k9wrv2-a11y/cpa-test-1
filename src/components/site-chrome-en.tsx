@@ -20,7 +20,7 @@ import { SocialIcons } from "./social-proof";
 
 export const WHATSAPP_URL_EN =
   "https://wa.me/972546688681?text=" +
-  encodeURIComponent("Inquiry from website - Nimrodi and Co");
+  encodeURIComponent("Website inquiry – Nimrodi & Co.");
 
 const PHONE_TEL = "tel:+97299582211";
 const PHONE_DISPLAY_EN = "+972-9-9582211";
