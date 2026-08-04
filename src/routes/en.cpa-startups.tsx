@@ -42,27 +42,27 @@ export const Route = createFileRoute("/en/cpa-startups")({
       title="CPA Services for Startups in Israel"
       intro="Nimrodi & Co. provides accounting, tax and financial support to startups at different stages, from company formation and ongoing reporting to fundraising, international activity and due-diligence preparation."
       highlights={[
-        "Fundraising support: SAFE, CLA, priced rounds (Seed → Series C)",
-        "Section 102 ESOP — capital gains track with trustee",
-        "409A valuations and dual IFRS 2 / ASC 718 option accounting",
+        "Accounting, tax and financial support for SAFEs, convertible instruments and priced funding rounds",
+        "Assessment of Section 102 routes and trustee requirements for employee equity plans",
+        "Accounting support for share-based payments and coordination of 409A valuation information where relevant",
         "Israel–Delaware Flip and cross-border reorganizations",
         "Assessment of eligibility for Preferred Technological Enterprise tax benefits",
         "IIA / Israel Innovation Authority grants and financial audits",
         "Secondary transactions — founder and employee liquidity",
         "Capitalization-table support using the company’s selected platform",
-        "M&A Due Diligence and Quality of Earnings pre-Exit",
+        "Financial due-diligence and earnings-quality analysis for proposed investment or transaction processes",
       ]}
       sections={[
         {
           title: "Accounting, Tax and Financial Services",
-          body: "Everything you need so you can focus on product and customers:",
+          body: "Accounting, tax and financial support can be tailored to the startup’s stage, activity and agreed scope:",
           bullets: [
-            "Incorporation, structure and founders' agreements",
+            "Accounting and tax input for company formation and structure, coordinated with the startup’s legal advisers",
             "Digital bookkeeping on modern cloud accounting platforms",
-            "IFRS / US-GAAP annual financial statements",
+            "Financial-reporting support under the framework applicable to the startup, including IFRS or US GAAP where relevant",
             "Corporate and founder tax planning",
             "IIA grants, R&D incentives and Chief Scientist programs",
-            "Data room prep, DD support and round closing",
+            "Preparation and organization of financial information for due diligence and fundraising processes",
           ],
         },
         {
@@ -78,17 +78,17 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Israel–Delaware Corporate Flip",
-          body: "Many Israeli startups consider a Delaware C-Corp parent when preparing for US investment. We support the Israeli side end-to-end: preparing the Pre-Ruling application with the ITA for tax-deferred share exchange, coordination with US and Israeli counsel, and post-flip Transfer Pricing between the Delaware parent and the Israeli R&D subsidiary.",
+          body: "An Israeli startup may consider an Israel–Delaware Flip in connection with US investment or a change in its group structure. The process can involve Israeli and US tax, accounting and legal considerations. Within the agreed scope, the firm can assist with the Israeli accounting and tax analysis, preparation of information for a tax ruling request, and coordination with the company’s legal and US tax advisers. The suitability and implementation of the structure depend on the company, its shareholders, planned activity and applicable law.",
         },
         {
           title: "Section 102 ESOP & 409A Valuations",
-          body: "Equity is a key talent-retention tool for startups. We provide tax and compliance support for employee equity compensation and option plans, including the assessment of relevant Section 102 routes subject to the applicable conditions and circumstances, and produce the accounting and valuations required for Israeli and US reporting:",
+          body: "Employee equity arrangements may involve Israeli tax, financial-reporting, valuation and legal considerations. The appropriate Section 102 route, accounting treatment and potential need for a 409A valuation depend on the recipient, the instrument, the plan terms, the company’s reporting framework and the circumstances of the grant. Within the agreed scope, the firm can assist with the Israeli accounting and tax analysis, organize the relevant information and coordinate with the company’s legal advisers, trustee, valuation professionals and US advisers where required:",
           bullets: [
             "Assessment of relevant Section 102 routes based on facts and circumstances",
-            "409A valuation for common stock (Delaware / US operations)",
-            "Option accounting under IFRS 2 (Israel) and ASC 718 (US)",
-            "Employee support at exercise and sale — tax optimization",
-            "Coordination with the Israeli trustee and US transfer agent",
+            "Coordination of information for a 409A valuation where required, with qualified valuation professionals",
+            "Share-based-payment accounting under the reporting framework applicable to the company, including IFRS 2 or ASC 718 where relevant",
+            "Review of tax and reporting considerations for employees at exercise or sale, based on the applicable plan and circumstances",
+            "Coordination of relevant information with the trustee, plan administrator and other professional advisers where required",
           ],
         },
         {

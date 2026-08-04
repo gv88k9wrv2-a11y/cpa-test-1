@@ -41,7 +41,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
       title="Accounting, tax and financial support for international companies operating in Israel"
       intro="Foreign companies operating in Israel may require accounting, tax, payroll and financial-reporting support. We assist with the Israeli accounting and tax aspects of the proposed structure and ongoing activity, with additional qualified advisers involved where required."
       highlights={[
-        "Israeli subsidiary (Ltd) or branch setup",
+        "Review of Israeli subsidiary or branch structures and support with registration preparation",
         "Preparation of accounting and tax information for bank and KYC processes, subject to the bank’s requirements and review",
         "Israeli payroll administration and coordination with qualified employment-law advisers where required",
         "Transfer Pricing (Section 85A) — Local File, Master File, CbCR",
@@ -99,23 +99,23 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We assist in reviewing the accounting and tax aspects of proposed IP structures in Israel and abroad, with qualified legal and other professional advisers involved where required:",
           bullets: [
             "IP location strategy: Israel (Preferred Tech 6–12%), Ireland, Luxembourg, Singapore",
-            "Intra-group technology transfers under Section 85A at arm's length",
-            "BEPS compliance: Substance, DEMPE, Master File / Local File / CbCR",
-            "Cost-Sharing Agreements (CSA) between Israeli parent and foreign subsidiaries",
-            "Patent and trademark strategy, royalty models and License Agreements",
-            "Pre-Rulings from the ITA on IP transactions and full documentation",
-            "Optimization of withholding tax on royalties under tax treaties",
+            "Transfer-pricing analysis and documentation for intra-group technology, intellectual-property and service transactions",
+            "Assessment of BEPS-related substance, DEMPE functions and transfer-pricing documentation requirements where applicable",
+            "Financial and transfer-pricing analysis of intra-group cost-sharing arrangements, with legal documentation coordinated separately",
+            "Financial and tax analysis of royalty models, with coordination of intellectual-property agreements with legal counsel",
+            "Support with tax ruling requests and related documentation for cross-border intellectual-property transactions",
+            "Review of royalty withholding-tax treatment and potential treaty relief under the applicable rules",
           ],
         },
         {
           title: "Israeli tax incentives for multinationals",
           body: "Foreign-owned Israeli subsidiaries may be eligible for Israeli tax incentives and IIA support, subject to the applicable program, eligibility conditions, required approvals and the law in effect at the relevant time:",
           bullets: [
-            "Preferred Technological Enterprise — 6% corporate tax (12% standard track)",
-            "Dividend exemption from a Preferred Enterprise in defined cases",
-            "Immediate expensing of R&D in the year incurred",
+            "Assessment of potential eligibility for Preferred Technological Enterprise tax benefits under the applicable rules",
+            "Review of dividend taxation and potential relief under the applicable incentive regime and tax rules",
+            "Review of the accounting and tax treatment of research and development costs under the applicable rules",
             "Financial support for IIA grant applications and related reporting, subject to the applicable program, eligibility criteria and required approvals",
-            "Tax treaties with 60+ countries — bilateral relief from double taxation",
+            "Analysis of treaty eligibility, taxing rights and foreign-tax-credit considerations",
           ],
         },
         {
@@ -126,12 +126,12 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
             </>
           ),
           bullets: [
-            "Local Country Controller / Country CFO for HQ in Israel",
-            "Monthly and quarterly reporting to HQ in the required format and currency",
-            "Local budget control aligned with the Group plan",
-            "Israeli banking, insurance and regulatory relationship management",
-            "Support for statutory audits and Group internal audit",
-            "Readiness for M&A, Carve-Out or Wind-Down",
+            "Local controller and fractional CFO support for the company’s Israeli operations",
+            "Periodic financial reporting to overseas headquarters in the agreed format and reporting currency",
+            "Local budgeting, monitoring and variance analysis based on the agreed group-reporting framework",
+            "Coordination of financial information for Israeli banking, insurance and regulatory processes within the agreed scope",
+            "Preparation and coordination of financial information for statutory and group-audit processes, subject to applicable independence requirements",
+            "Financial preparation and information support for M&A, carve-out or wind-down processes within the agreed scope",
           ],
         },
       ]}
@@ -145,7 +145,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         ],
       }}
       faqs={FAQS}
-      ctaHeadline="Considering market entry to Israel? Let's schedule an intro call."
+      ctaHeadline="Planning to operate in Israel? Contact us to discuss the proposed activity and service scope."
     />
   ),
 });
