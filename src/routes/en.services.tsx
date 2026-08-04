@@ -26,7 +26,7 @@ const GROUPS = [
     items: [
       { to: "/en/cpa-startups", label: "Startups & Tech", icon: Building2, desc: "Fundraising, ESOP, Israeli-Delaware Flip, Preferred Tech Enterprise." },
       { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", icon: Briefcase, desc: "Setup, ongoing filings, annual return and Capital Declaration (Asset & Net Worth Report)." },
-      { to: "/en/cpa-foreign-companies", label: "Foreign Companies", icon: Globe2, desc: "Subsidiary, branch, KYC, Transfer Pricing and ongoing compliance." },
+      { to: "/en/cpa-foreign-companies", label: "Foreign Companies", icon: Globe2, desc: "Subsidiary or branch planning, KYC documentation, transfer pricing and applicable Israeli reporting." },
       { to: "/en/cpa-herzliya", label: "Herzliya Pituach", icon: MapPin, desc: "Local boutique firm at the heart of Israel's tech corridor." },
     ],
   },
@@ -42,9 +42,9 @@ export const Route = createFileRoute("/en/services")({
   head: () => ({
     meta: [
       { title: "Services — Nimrodi & Co. CPA | Herzliya Pituach" },
-      { name: "description", content: "The full range of services from Nimrodi & Co. — audit, tax advisory, bookkeeping, payroll, ESOP, international structures and startup fundraising." },
+      { name: "description", content: "Accounting, tax and financial services in Israel for companies and startups, including audit, payroll, bookkeeping and CFO support. Explore our services." },
       { property: "og:title", content: "Services — Nimrodi & Co." },
-      { property: "og:description", content: "Comprehensive accounting, tax and financial services for companies, startups and individuals in Israel." },
+      { property: "og:description", content: "Accounting, tax and financial services for companies and startups in Israel, including audit, bookkeeping, payroll and CFO support. Explore our services." },
       { property: "og:url", content: `${BASE}/en/services` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
