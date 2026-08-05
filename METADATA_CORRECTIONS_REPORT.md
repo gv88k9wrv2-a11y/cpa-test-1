@@ -5,7 +5,8 @@ Metadata pass executed after all visible-copy tasks (R001–R048) passed validat
 ## Scope and recalculated counts
 
 - Static `description` / `og:description` / `twitter:description` values found in `src/routes/`: **77**
-- Values outside 150–160 characters before this pass: **61**
+- Values outside 150–160 characters before this pass: **59**
+- Additional values rewritten to resolve duplication or banned wording: **2**
 - Values changed in this pass: **61**
 - Values already compliant and left unchanged: **16**
 - Values blocked: **0**
