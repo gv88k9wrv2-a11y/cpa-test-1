@@ -44,10 +44,10 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         "Review of Israeli subsidiary or branch structures and support with registration preparation",
         "Preparation of accounting and tax information for bank and KYC processes, subject to the bank’s requirements and review",
         "Israeli payroll administration and coordination with qualified employment-law advisers where required",
-        "Transfer Pricing (Section 85A) — Local File, Master File, CbCR",
-        "US GAAP & IFRS reporting to the parent company",
-        "Cross-border IP structuring under OECD BEPS",
-        "Ongoing filings with ITA, VAT and the Registrar",
+        "Transfer-pricing analysis and documentation requirements based on the group’s circumstances",
+        "Group-reporting support under the framework applicable to the parent company",
+        "Accounting and tax analysis for proposed cross-border intellectual-property structures",
+        "Preparation of applicable Israeli tax and corporate reporting information within the agreed scope",
         "Assessment of eligibility for Preferred Technological Enterprise tax benefits",
       ]}
       sections={[
@@ -98,7 +98,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           title: "Cross-Border IP Tax Structuring",
           body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We assist in reviewing the accounting and tax aspects of proposed IP structures in Israel and abroad, with qualified legal and other professional advisers involved where required:",
           bullets: [
-            "IP location strategy: Israel (Preferred Tech 6–12%), Ireland, Luxembourg, Singapore",
+            "Review of accounting and tax considerations for proposed intellectual-property locations, with local advisers involved where required",
             "Transfer-pricing analysis and documentation for intra-group technology, intellectual-property and service transactions",
             "Assessment of BEPS-related substance, DEMPE functions and transfer-pricing documentation requirements where applicable",
             "Financial and transfer-pricing analysis of intra-group cost-sharing arrangements, with legal documentation coordinated separately",

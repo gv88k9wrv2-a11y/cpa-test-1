@@ -51,7 +51,7 @@ export const Route = createFileRoute("/en/cpa-international")({
         },
         {
           title: "Relocation & residency severance",
-          body: "Leaving Israel? Center of life, physical presence, family, home, work and social ties all matter. We help plan and document the severance, address exit tax (Section 100A), coordinate with the destination country's advisor, and manage ongoing Israeli exposure post-relocation.",
+          body: "Leaving Israel? Center of life, physical presence, family, home, work and social ties all matter. We help plan and document the severance, address exit tax (Section 100A), coordinate with the destination country's advisor, and review ongoing Israeli tax and reporting considerations after relocation.",
         },
         {
           title: "Treaty planning & cross-border",

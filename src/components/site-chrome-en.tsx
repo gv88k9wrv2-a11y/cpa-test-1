@@ -79,14 +79,14 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
       { to: "/en/bookkeeping", label: "Bookkeeping", desc: "Cloud accounting · Monthly close · MIS", icon: Calculator },
       { to: "/en/payroll", label: "Payroll", desc: "Section 102 (ESOP), Form 106 (Annual Tax Statement)", icon: ReceiptText },
       { to: "/en/audit", label: "Audit & Assurance", desc: "Israeli GAAP · IFRS", icon: FileSearch },
-      { to: "/en/tax-consulting", label: "Tax Advisory", desc: "Planning, Pre-Ruling, appeals", icon: FileSpreadsheet },
+      { to: "/en/tax-consulting", label: "Tax Advisory", desc: "Tax planning, tax rulings and objections", icon: FileSpreadsheet },
     ],
   },
 
   {
     label: "By Client Type",
     items: [
-      { to: "/en/cpa-startups", label: "Startups & Tech", desc: "Fundraising, ESOP, Flip", icon: Building2 },
+      { to: "/en/cpa-startups", label: "Startups & Tech", desc: "Fundraising · Employee equity · Israel–Delaware Flip", icon: Building2 },
       { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", desc: "Setup, filings, Capital Declaration (Asset & Net Worth Report)", icon: Briefcase },
       { to: "/en/cpa-foreign-companies", label: "Foreign Companies in Israel", desc: "Subsidiary, branch, Transfer Pricing", icon: Globe2 },
       { to: "/en/cpa-herzliya", label: "Businesses in Herzliya", desc: "Boutique firm in Herzliya Pituach", icon: MapPin },
@@ -159,7 +159,7 @@ export function SiteHeaderEn() {
                     </div>
                   ))}
                   <div className="col-span-3 flex items-center justify-between border-t border-border pt-4">
-                    <span className="text-xs text-muted-foreground">All services under one roof</span>
+                    <span className="text-xs text-muted-foreground">Explore our service areas</span>
                     <Link to="/en/services" className="text-xs font-semibold text-primary hover:text-gold">
                       All services →
                     </Link>
@@ -195,7 +195,7 @@ export function SiteHeaderEn() {
               className="hidden items-center gap-1.5 rounded-md bg-gold px-3 py-2 text-sm font-semibold text-gold-foreground shadow-sm transition hover:brightness-95 sm:inline-flex"
             >
               <MessageCircle className="h-4 w-4" aria-hidden />
-              Free consult
+              Contact us
             </a>
             <MobileMenuEn heHref={heHref} />
           </div>

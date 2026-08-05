@@ -17,14 +17,14 @@ const GROUPS = [
       { to: "/en/bookkeeping", label: "Bookkeeping", icon: Calculator, desc: "Clean books, monthly closes and management reporting on modern cloud platforms." },
       { to: "/en/payroll", label: "Payroll & ESOP", icon: ReceiptText, desc: "Israeli payslips, Section 102 (Equity & ESOP Incentive Plans), Form 106 (Annual Tax Statement), Form 161 and pension compliance." },
       { to: "/en/audit", label: "Audit & Assurance", icon: FileSearch, desc: "Statutory audits under Israeli GAAP and IFRS; M&A due diligence." },
-      { to: "/en/tax-consulting", label: "Tax Advisory", icon: FileSpreadsheet, desc: "Tax planning, Pre-Rulings, objections and appeals with the ITA." },
+      { to: "/en/tax-consulting", label: "Tax Advisory", icon: FileSpreadsheet, desc: "Tax planning, tax ruling requests and support during assessments and objections." },
     ],
   },
 
   {
     title: "By Client Type",
     items: [
-      { to: "/en/cpa-startups", label: "Startups & Tech", icon: Building2, desc: "Fundraising, ESOP, Israeli-Delaware Flip, Preferred Tech Enterprise." },
+      { to: "/en/cpa-startups", label: "Startups & Tech", icon: Building2, desc: "Fundraising, employee equity plans, Israel–Delaware Flip and Preferred Technological Enterprise matters." },
       { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", icon: Briefcase, desc: "Setup, ongoing filings, annual return and Capital Declaration (Asset & Net Worth Report)." },
       { to: "/en/cpa-foreign-companies", label: "Foreign Companies", icon: Globe2, desc: "Subsidiary or branch planning, KYC documentation, transfer pricing and applicable Israeli reporting." },
       { to: "/en/cpa-herzliya", label: "Herzliya Pituach", icon: MapPin, desc: "Local boutique firm at the heart of Israel's tech corridor." },
@@ -67,10 +67,10 @@ function ServicesEn() {
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">Our services</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-              A full-service boutique CPA firm
+              Accounting, tax and financial services for businesses in Israel
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              From day-one setup through year-end audits and cross-border planning — everything a modern business or professional needs, under one roof.
+              Support may include business setup, bookkeeping, payroll, financial reporting, audit, tax advisory and cross-border matters, based on the client’s needs and the agreed scope.
             </p>
           </div>
         </section>
