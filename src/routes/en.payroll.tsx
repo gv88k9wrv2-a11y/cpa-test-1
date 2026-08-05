@@ -14,9 +14,9 @@ export const Route = createFileRoute("/en/payroll")({
   head: () => ({
     meta: [
       { title: "Israeli Payroll Services | Section 102 ESOP | Nimrodi & Co." },
-      { name: "description", content: "Israeli payroll setup and ongoing administration, including payslips, employer reporting, Section 102 information and Forms 106 and 161. Contact us." },
+      { name: "description", content: "Payroll services in Israel: payslips, employer reporting, Section 102 equity information and annual forms for companies and startups. Contact our team today." },
       { property: "og:title", content: "Payroll & ESOP Services — Nimrodi & Co." },
-      { property: "og:description", content: "Israeli payroll and equity compensation done right." },
+      { property: "og:description", content: "Israeli payroll administration and equity-plan reporting for companies and startups, including payslips, employer filings and annual forms. Talk to us now." },
       { property: "og:url", content: `${BASE}/en/payroll` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

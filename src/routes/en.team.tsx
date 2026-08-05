@@ -11,7 +11,7 @@ export const Route = createFileRoute("/en/team")({
       { title: "Our Team — Nimrodi & Co. CPA" },
       { name: "description", content: "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients." },
       { property: "og:title", content: "Our Team — Nimrodi & Co." },
-      { property: "og:description", content: "Senior partners with decades of experience across tax, audit and cross-border structures." },
+      { property: "og:description", content: "Meet the team at Nimrodi & Co. CPA in Herzliya Pituach, working with companies, startups, foreign businesses and individuals in Israel. Read more about us." },
       { property: "og:url", content: `${BASE}/en/team` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

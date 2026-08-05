@@ -15,9 +15,9 @@ export const Route = createFileRoute("/en/tax-consulting")({
   head: () => ({
     meta: [
       { title: "Complex Tax, Crypto & Voluntary Disclosure | Nimrodi" },
-      { name: "description", content: "Israeli tax advisory: tax ruling requests, crypto compliance, Voluntary Disclosure, reorganizations, audits and appeals for companies and investors. Book a call." },
+      { name: "description", content: "Israeli tax advisory: tax ruling requests, digital-asset reporting, voluntary disclosure and support during assessments and objections. Book a call today." },
       { property: "og:title", content: "Tax Advisory, Crypto & Voluntary Disclosure — Nimrodi & Co." },
-      { property: "og:description", content: "Tax planning, tax ruling requests, crypto compliance and Voluntary Disclosure from a Herzliya boutique CPA firm." },
+      { property: "og:description", content: "Tax planning, tax ruling requests, cryptocurrency reporting and voluntary disclosure support from a boutique CPA firm in Herzliya Pituach. Book a call now." },
       { property: "og:url", content: `${BASE}/en/tax-consulting` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

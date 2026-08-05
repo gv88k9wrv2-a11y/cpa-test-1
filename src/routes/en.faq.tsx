@@ -24,7 +24,7 @@ export const Route = createFileRoute("/en/faq")({
       { title: "FAQ — Nimrodi & Co. CPA" },
       { name: "description", content: "Answers to common questions on our CPA services, working process, pricing and Israeli taxation for companies, startups, freelancers and foreign clients." },
       { property: "og:title", content: "FAQ — Nimrodi & Co." },
-      { property: "og:description", content: "Everything you wanted to ask before starting to work with a CPA." },
+      { property: "og:description", content: "Common questions about working with an Israeli CPA firm: services, process, engagement scope, fees and reporting for companies and individuals. Read more." },
       { property: "og:url", content: `${BASE}/en/faq` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

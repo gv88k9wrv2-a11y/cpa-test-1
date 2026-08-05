@@ -16,7 +16,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       { title: "International Tax & Relocation for Olim | Nimrodi & Co." },
       { name: "description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
       { property: "og:title", content: "International Tax — Nimrodi & Co." },
-      { property: "og:description", content: "Cross-border tax planning for relocation, olim and returning residents." },
+      { property: "og:description", content: "Israeli international tax support for relocation, new immigrants and returning residents, including residency review and cross-border reporting. Contact us." },
       { property: "og:url", content: `${BASE}/en/cpa-international` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

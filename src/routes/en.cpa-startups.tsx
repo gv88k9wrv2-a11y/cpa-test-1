@@ -19,9 +19,9 @@ export const Route = createFileRoute("/en/cpa-startups")({
   head: () => ({
     meta: [
       { title: "CPA for Startups Israel | Section 102 & Delaware Flip" },
-      { name: "description", content: "Boutique CPA for Israeli startups: Pre-Seed to Series C, SAFE/CLA, Section 102 ESOP, 409A, Delaware Flip, IIA grants and IFRS. Book a consultation." },
+      { name: "description", content: "CPA for Israeli startups: bookkeeping, payroll, employee equity plans, financial reporting, audit support and fundraising information. Book a consultation." },
       { property: "og:title", content: "CPA for Startups — Nimrodi & Co." },
-      { property: "og:description", content: "Accounting, tax and CFO services for Israeli startups from Pre-Seed to Exit." },
+      { property: "og:description", content: "Accounting, tax and CFO support for Israeli startups, from early stage through growth rounds, including reporting and investor information. Talk to us today." },
       { property: "og:url", content: `${BASE}/en/cpa-startups` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
