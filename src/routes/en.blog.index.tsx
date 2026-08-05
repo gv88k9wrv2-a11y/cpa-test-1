@@ -17,7 +17,7 @@ export const Route = createFileRoute("/en/blog/")({
       { property: "og:title", content: "Blog — Nimrodi & Co. CPAs" },
       {
         property: "og:description",
-        content: "Professional insight on international taxation, relocation, and foreign companies in Israel.",
+        content: "Articles and updates from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and digital assets. Read the blog.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: CANONICAL },

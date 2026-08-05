@@ -45,13 +45,13 @@ export const Route = createFileRoute("/fractional-cfo")({
       {
         name: "description",
         content:
-          "שירותי Fractional CFO – ניהול כספים אסטרטגי, Burn Rate, Runway, מודלים פיננסיים, הכנה ל-Due Diligence וליווי גיוסי הון. תאמו פגישה.",
+          "שירותי Fractional CFO לחברות ולסטארטאפים: תקציב, ניהול תזרים, מודלים פיננסיים, דיווח להנהלה ולדירקטוריון והיערכות לעסקאות. תאמו שיחה על היקף הליווי.",
       },
       { property: "og:title", content: "Fractional CFO – נמרודי ושות׳" },
       {
         property: "og:description",
         content:
-          "סמנכ״ל כספים בכיר במיקור חוץ – ניהול תזרים, מודלים, ובורד לסטארטאפים ולחברות זרות בישראל.",
+          "ניהול כספים במיקור חוץ לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס. דברו איתנו על הצרכים שלכם. נשמח לסייע.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/fractional-cfo" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },

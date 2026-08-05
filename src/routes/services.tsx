@@ -73,7 +73,7 @@ export const Route = createFileRoute("/services")({
       {
         property: "og:description",
         content:
-          "ליווי חשבונאי מקיף לחברות, סטארטאפים ועצמאים – ייעוץ מס, גיוסי הון, ניהול כספים ועוד.",
+          "שירותי חשבונאות, שכר, ביקורת, ייעוץ מס וניהול כספים לחברות, לסטארטאפים ולעצמאים, בהתאם לצורך ולהיקף המוסכם. עיינו בתחומי השירות של המשרד שלנו. נשמח לסייע.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/services" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },

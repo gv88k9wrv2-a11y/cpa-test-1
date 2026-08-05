@@ -64,7 +64,7 @@ export const Route = createFileRoute("/en/")({
       {
         name: "description",
         content:
-          "Boutique CPA firm in Herzliya Pituach for startups, foreign companies, fractional CFO and crypto tax compliance. Book an initial consultation.",
+          "Boutique CPA firm in Herzliya Pituach supporting startups, foreign companies, freelancers and individuals with accounting, tax and reporting. Get in touch.",
       },
       { property: "og:title", content: "Nimrodi & Co. CPA – Herzliya Firm for Startups & Foreign Cos" },
       { property: "og:description", content: "Boutique CPA firm in Herzliya Pituach providing accounting, tax, outsourced financial-management, digital-asset reporting and rental-income tax services." },
