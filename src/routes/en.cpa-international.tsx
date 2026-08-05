@@ -35,7 +35,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       icon={Plane}
       eyebrow="International Tax"
       title="Relocation, olim and cross-border tax planning"
-      intro="Moving to or from Israel — as an oleh, returning resident, expat or global executive — is one of the highest-impact tax events of a lifetime. We plan the move end-to-end, coordinate with foreign counsel, and file across jurisdictions."
+      intro="Moving to or from Israel may involve significant residency, reporting, asset and cross-border tax considerations. The firm can assist with the Israeli tax analysis, preparation of relevant information and coordination with qualified advisers in other jurisdictions. The scope and required filings depend on the individual’s circumstances and the applicable rules."
       highlights={[
         "New immigrant (oleh chadash) 10-year benefits",
         "Senior returning resident status",

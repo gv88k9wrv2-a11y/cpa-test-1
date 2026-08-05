@@ -8,15 +8,15 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   {
     q: "What is a Fractional CFO and who is it for?",
-    a: "A Fractional CFO is a senior Chief Financial Officer engaged on a part-time basis (one day per week, several days per month) instead of the cost of a full-time hire. It is the right model for Seed–Series B startups, foreign companies operating in Israel that need a senior local finance presence, and growth-stage businesses that do not yet justify a full-time CFO. You get experience supporting companies with fundraising processes, financial reporting, and strategic finance matters — in a flexible structure tailored to the company's needs.",
+    a: "A fractional CFO provides senior financial-management support on a part-time or flexible basis. The appropriate level of involvement depends on the company’s stage, reporting needs, internal resources and planned transactions. The engagement scope, responsibilities, reporting frequency and points of contact are agreed in advance.",
   },
   {
     q: "How is a Fractional CFO different from a bookkeeper?",
-    a: "Bookkeeping is the historical record of what already happened. A Fractional CFO looks forward: builds the financial model, manages cash and Runway, prepares investor decks, sits in the boardroom, runs the Data Room and represents the company in front of VCs. The two functions are complementary — we deliver both under one roof with a clean information handoff between them.",
+    a: "Bookkeeping records and organizes financial transactions. Fractional CFO support may include budgeting, cash-flow planning, management reporting, financial models, board information and transaction preparation. The division of responsibilities between bookkeeping, management and CFO support is defined according to the company’s needs and the agreed scope.",
   },
   {
     q: "How are Burn Rate and Runway calculated, and why does it matter?",
-    a: "Burn Rate (gross/net) is monthly cash consumption. Runway is the number of months until cash runs out — basic formula: Cash Balance ÷ Net Burn. In practice the CFO builds scenarios (Base/Bull/Bear), factors in Deferred Revenue, debt facilities and credit lines, and identifies the Trigger Points that force a decision: cut, raise, or accelerate. Rule of thumb — start fundraising while at least 9–12 months of Runway remain.",
+    a: "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, operating payments, financing arrangements and assumptions. The calculation and scenarios should be updated when material information changes. Fundraising timing is a management decision that depends on the company’s plans, market conditions and available financing alternatives.",
   },
   {
     q: "Do you actually attend investor pitches?",
@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "What does a Data Room and Ongoing DD include?",
-    a: "A professional Data Room includes: audited financial statements for two prior years, fully-diluted Cap Table on Carta/Pulley, founders' agreements with vesting, approved Section 102 (Equity & ESOP Incentive Plans) plan, key customer contracts, key employee agreements, Transfer Pricing policy, tax and VAT clearances, insurance policies and authority correspondence. Ongoing due-diligence readiness helps keep the Data Room current, so the company can respond more efficiently when an offer or information request arrives.",
+    a: "A Data Room may include financial, tax, corporate, commercial, employment and intellectual-property information requested for a financing or transaction process. The required folders and documents depend on the purpose of the review, the parties’ requests and the information available from the company and its advisers. The firm can assist with organizing available financial and tax information and coordinating related requests within the agreed scope.",
   },
   {
     q: "Which KPIs do you track for the Board?",
@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     q: "How much does a Fractional CFO cost?",
-    a: "Pricing is flexible and scope-dependent: fixed monthly Retainer (one day per week / two days per month), project-based (fundraise prep, DD readiness, model build), or a mix. Key advantage — you only pay for the senior layer, while the professional team beneath (bookkeeping, payroll, audit) operates at standard cost. Access senior-level financial leadership and support in a flexible structure tailored to the company's needs.",
+    a: "Fees and engagement terms depend on the agreed responsibilities, expected level of involvement, reporting frequency and project requirements. The scope, points of contact and pricing structure are defined in advance and may be updated if the agreed work changes.",
   },
   {
     q: "When should a company move to a full-time CFO?",
@@ -73,7 +73,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       icon={LineChart}
       eyebrow="Financial Management & CFO"
       title="Fractional CFO — strategic corporate finance for growth-stage companies"
-      intro="Senior outsourced CFO support without the commitment of a full-time hire. We support Israeli startups, foreign corporations operating in Israel and scaling businesses across budgeting and cash management, investor-grade financial models, Board relations, VC representation and continuous readiness for institutional Due Diligence."
+      intro="Senior fractional CFO support for startups, foreign companies operating in Israel and growing businesses. The engagement may include budgeting, cash-flow planning, financial models, management and board reporting, investor information and transaction preparation, according to the company’s needs and the agreed scope."
       highlights={[
         "Annual budgeting and rigorous cash flow management",
         "Burn Rate & Runway — calculation, monitoring and scenarios",

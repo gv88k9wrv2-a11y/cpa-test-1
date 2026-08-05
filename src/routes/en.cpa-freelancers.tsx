@@ -37,7 +37,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
       icon={Briefcase}
       eyebrow="Freelancers, Consultants & Single-Member Companies"
       title="CPA services for freelancers, consultants and independent businesses in Israel"
-      intro="Premium accounting for elite high-tech consultants, independent contractors and boutique agencies. Streamlined, fully digital tax registration; comprehensive annual returns and capital declarations; and strategic planning for the crossover from sole proprietor (עוסק מורשה) to incorporated company (חברה בע״מ) — with structured planning and documentation designed to help address Pocket Company (חברת ארנק) classification considerations."
+      intro="Accounting and tax support for freelancers, independent contractors and boutique businesses in Israel. Services may include registration, ongoing reporting, annual returns, capital declarations and analysis of operating as a sole proprietor or company, according to the client’s circumstances and the agreed scope."
       highlights={[
         "Full digital registration with VAT, ITA and Bituach Leumi",
         "Osek patur / osek murshe fit assessment",
