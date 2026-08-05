@@ -40,8 +40,8 @@ const FAQS = [
     a: "Our office is located in Herzliya Pituach business district. We serve clients in Herzliya, Ramat HaSharon, Ra'anana, Tel Aviv and beyond — as well as remote clients around the world via Zoom and digital collaboration tools.",
   },
   {
-    q: "What does full accounting support for a company or startup include?",
-    a: "End-to-end support: bookkeeping, payroll, annual and financial statements, tax advisory, CFO services, fundraising support and pre-IPO readiness — all under one roof.",
+    q: "Which accounting services can a company or startup receive?",
+    a: "The engagement may include bookkeeping, payroll, financial reporting, annual tax filings, audit support, tax advisory and outsourced CFO services. The services, reporting frequency and responsibilities are defined according to the company’s activity, reporting needs and agreed scope.",
   },
   {
     q: "Do you work with freelancers and self-employed clients starting out?",
@@ -64,7 +64,7 @@ export const Route = createFileRoute("/en/")({
       {
         name: "description",
         content:
-          "Boutique CPA firm in Herzliya Pituach for startups, foreign companies, fractional CFO and crypto tax compliance. Book an initial consultation.",
+          "Boutique CPA firm in Herzliya Pituach supporting startups, foreign companies, freelancers and individuals with accounting, tax and reporting. Get in touch.",
       },
       { property: "og:title", content: "Nimrodi & Co. CPA – Herzliya Firm for Startups & Foreign Cos" },
       { property: "og:description", content: "Boutique CPA firm in Herzliya Pituach providing accounting, tax, outsourced financial-management, digital-asset reporting and rental-income tax services." },

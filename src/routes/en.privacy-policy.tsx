@@ -14,7 +14,7 @@ export const Route = createFileRoute("/en/privacy-policy")({
       { property: "og:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
       {
         property: "og:description",
-        content: "Full confidentiality for prospective clients and inquiries, aligned with Amendment 13.",
+        content: "How Nimrodi & Co. CPA collects, uses, stores and protects personal information from clients and website visitors under Israeli law. Read the full policy.",
       },
     ],
     links: [

@@ -60,7 +60,7 @@ export const Route = createFileRoute("/tax-consulting")({
           "ייעוץ מס אסטרטגי לחברות, סטארטאפים, בעלי שליטה ויחידים בישראל: תכנון מס לפני עסקאות, חוות דעת בכתב, החלטות מיסוי וייצוג בהשגות מול רשויות המס בהרצליה.",
       },
       { property: "og:title", content: "ייעוץ מס | נמרודי ושות׳" },
-      { property: "og:description", content: "ייעוץ מס אסטרטגי, חוות דעת מקצועיות וליווי מול רשות המסים." },
+      { property: "og:description", content: "ייעוץ מס לחברות, יזמים ומשקיעים: תכנון מס, בקשות להחלטות מיסוי, מיסוי נכסים דיגיטליים, גילוי מרצון וליווי בהליכי שומה והשגה. נשמח לשוחח על המקרה שלכם." },
       { property: "og:url", content: "https://www.nimrodi.co.il/tax-consulting" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

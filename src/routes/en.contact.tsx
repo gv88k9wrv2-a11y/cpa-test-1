@@ -12,7 +12,7 @@ export const Route = createFileRoute("/en/contact")({
       { title: "Contact Nimrodi & Co. CPA | Herzliya Pituach, Israel" },
       { name: "description", content: "Contact Nimrodi & Co., a boutique CPA firm in Herzliya Pituach, for an introductory discussion about services for companies, startups and individuals." },
       { property: "og:title", content: "Contact Nimrodi & Co." },
-      { property: "og:description", content: "Introductory discussion with a senior member of our team." },
+      { property: "og:description", content: "Contact Nimrodi & Co. CPA in Herzliya Pituach to discuss accounting, tax, payroll or reporting needs for your company or business in Israel. Get in touch." },
       { property: "og:url", content: `${BASE}/en/contact` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

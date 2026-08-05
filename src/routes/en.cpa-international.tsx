@@ -16,7 +16,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       { title: "International Tax & Relocation for Olim | Nimrodi & Co." },
       { name: "description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
       { property: "og:title", content: "International Tax — Nimrodi & Co." },
-      { property: "og:description", content: "Cross-border tax planning for relocation, olim and returning residents." },
+      { property: "og:description", content: "Israeli international tax support for relocation, new immigrants and returning residents, including residency review and cross-border reporting. Contact us." },
       { property: "og:url", content: `${BASE}/en/cpa-international` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       icon={Plane}
       eyebrow="International Tax"
       title="Relocation, olim and cross-border tax planning"
-      intro="Moving to or from Israel — as an oleh, returning resident, expat or global executive — is one of the highest-impact tax events of a lifetime. We plan the move end-to-end, coordinate with foreign counsel, and file across jurisdictions."
+      intro="Moving to or from Israel may involve significant residency, reporting, asset and cross-border tax considerations. The firm can assist with the Israeli tax analysis, preparation of relevant information and coordination with qualified advisers in other jurisdictions. The scope and required filings depend on the individual’s circumstances and the applicable rules."
       highlights={[
         "New immigrant (oleh chadash) 10-year benefits",
         "Senior returning resident status",
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/en/cpa-international")({
         },
         {
           title: "Relocation & residency severance",
-          body: "Leaving Israel? Center of life, physical presence, family, home, work and social ties all matter. We help plan and document the severance, address exit tax (Section 100A), coordinate with the destination country's advisor, and manage ongoing Israeli exposure post-relocation.",
+          body: "Leaving Israel? Center of life, physical presence, family, home, work and social ties all matter. We help plan and document the severance, address exit tax (Section 100A), coordinate with the destination country's advisor, and review ongoing Israeli tax and reporting considerations after relocation.",
         },
         {
           title: "Treaty planning & cross-border",

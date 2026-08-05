@@ -5,7 +5,7 @@ import heroImg from "../assets/service-tax.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "What is a Pre-Ruling and when should we get one?", a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear." },
+  { q: "What is an advance tax ruling and when should we consider one?", a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear." },
   { q: "Can you handle crypto tax compliance?", a: "Yes — tax, documentation and compliance support relating to crypto-derived funds and their presentation to financial institutions, subject to the institution's requirements and applicable law." },
   { q: "What is Voluntary Disclosure (גילוי מרצון)?", a: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations may vary depending on status, residence, citizenship, account location and applicable rules." },
   { q: "Can you plan a corporate reorganization tax-efficiently?", a: "Yes — we plan and execute tax-deferred reorganizations under Sections 103–105, including mergers, spin-offs and asset transfers between related entities." },
@@ -15,9 +15,9 @@ export const Route = createFileRoute("/en/tax-consulting")({
   head: () => ({
     meta: [
       { title: "Complex Tax, Crypto & Voluntary Disclosure | Nimrodi" },
-      { name: "description", content: "Israeli tax advisory: Pre-Rulings, crypto compliance, Voluntary Disclosure, reorganizations, audits and appeals for companies and investors. Book a call." },
+      { name: "description", content: "Israeli tax advisory: tax ruling requests, digital-asset reporting, voluntary disclosure and support during assessments and objections. Book a call today." },
       { property: "og:title", content: "Tax Advisory, Crypto & Voluntary Disclosure — Nimrodi & Co." },
-      { property: "og:description", content: "Tax planning, Pre-Rulings, crypto compliance and Voluntary Disclosure from a Herzliya boutique CPA firm." },
+      { property: "og:description", content: "Tax planning, tax ruling requests, cryptocurrency reporting and voluntary disclosure support from a boutique CPA firm in Herzliya Pituach. Book a call now." },
       { property: "og:url", content: `${BASE}/en/tax-consulting` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -36,10 +36,10 @@ export const Route = createFileRoute("/en/tax-consulting")({
       icon={FileSpreadsheet}
       eyebrow="Complex Tax, Crypto & Voluntary Disclosure"
       title="Complex tax disputes, crypto assets and Voluntary Disclosure"
-      intro="Sound tax planning helps reduce risk and uncertainty. We advise entrepreneurs, companies and international investors on complex Israeli and cross-border tax matters — structuring transactions, preparing Pre-Ruling applications, defending audits, managing crypto compliance, and supporting Voluntary Disclosure processes — with the same partners you speak to on day one."
+      intro="Sound tax planning helps reduce risk and uncertainty. We advise entrepreneurs, companies and international investors on complex Israeli and cross-border tax matters — structuring transactions, preparing tax ruling requests, supporting clients during tax assessments and information requests, assisting with cryptocurrency tax and reporting matters, and supporting Voluntary Disclosure processes — with the same partners you speak to on day one."
       highlights={[
         "Corporate & personal tax planning",
-        "Pre-Rulings (החלטות מיסוי) from the Israel Tax Authority",
+        "Tax ruling requests from the Israel Tax Authority",
         "Reorganizations under Sections 103–105",
         "Objections (השגה) and District Court appeals",
         "Crypto tax compliance — Bitcoin, DeFi, NFT, staking",
@@ -54,7 +54,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           body: "Effective tax planning happens before transactions close, not after. We work with founders, executives and boards to model the tax implications of fundraising, M&A, secondaries, spin-offs and Exit — and evaluate structures with attention to after-tax implications.",
         },
         {
-          title: "Pre-Rulings (החלטות מיסוי)",
+          title: "Tax ruling requests",
           body: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials.",
         },
         {

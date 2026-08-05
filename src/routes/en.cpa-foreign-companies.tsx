@@ -6,21 +6,21 @@ import heroImg from "../assets/service-foreign.webp";
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "Subsidiary or branch — which is better?", a: "Each has trade-offs. An Israeli subsidiary (Ltd) is a separate legal entity with limited liability and 23% corporate tax. A branch extends the foreign parent — simpler to set up but exposes the parent to Israeli tax and liability. The choice depends on scale, home-country tax treaties and roadmap." },
-  { q: "How long does it take to set up an Israeli subsidiary?", a: "Registration takes 3–5 business days. Bank account opening for a foreign-owned entity typically takes 4–8 weeks due to KYC. We manage the entire process end-to-end." },
-  { q: "Do you handle Israeli banking regulation?", a: "Yes. Bringing funds into Israel, FX conversion and account opening for foreign entities involve AML/KYC requirements and applicable Bank of Israel rules. We represent clients with the banks and prepare the supporting documentation." },
-  { q: "What is Transfer Pricing and why does it matter?", a: "Transfer Pricing is the pricing of intra-group transactions between the foreign parent and Israeli subsidiary. Israeli law (Section 85A) requires arm's length pricing. A professional TP study is required above certain thresholds and helps document the company's position for discussions with the ITA." },
+  { q: "How long does it take to set up an Israeli subsidiary?", a: "The timetable depends on the proposed structure, the completeness of the documents, identification requirements and the processing times of the relevant authorities. Bank-account onboarding for a foreign-owned entity depends on the ownership structure, KYC information, source-of-funds documentation and the bank’s review. The firm can assist with the Israeli accounting and tax information and coordinate with legal and banking professionals within the agreed scope." },
+  { q: "Do you handle Israeli banking regulation?", a: "Bank-account onboarding, incoming funds and foreign-currency activity may require accounting, tax, ownership and source-of-funds information under the bank’s procedures and applicable rules. The firm can assist with preparing the relevant accounting and tax information. Account approval, KYC requirements and banking decisions remain subject to the bank’s review and discretion." },
+  { q: "What is Transfer Pricing and why does it matter?", a: "Transfer pricing concerns the pricing and terms of transactions between related parties. The applicable analysis, documentation and filing requirements depend on the entities, transactions, functions, assets, risks and rules in effect for the relevant period. The firm can assist with the Israeli transfer-pricing analysis and documentation within the agreed scope." },
   { q: "What is Permanent Establishment (PE) risk?", a: "If the foreign parent has meaningful presence in Israel — an office, a fixed employee closing deals, a central warehouse — it may be deemed to operate in Israel and become subject to Israeli corporate tax on that activity. Proper structuring (EOR, local Service Company where appropriate) helps reduce unintended PE risk." },
   { q: "Can we pay Israeli developers without opening a branch?", a: "Yes — three options: (1) EOR (Employer of Record) — fast but expensive; (2) independent contractor — simple but limited by misclassification risk; (3) an Israeli subsidiary — higher setup cost but cheapest long-term and full control. We model the crossover point." },
-  { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "An Israeli subsidiary of a foreign group can access the full toolkit: Assessment of eligibility for Preferred Technological Enterprise tax benefits, IIA grants, immediate R&D expensing, tax treaties with 60+ countries. Correct Transfer Pricing is essential to preserve these benefits." },
+  { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "A foreign-owned Israeli company may be eligible for tax-incentive programs or Israel Innovation Authority support, depending on its activity, ownership, program conditions, required approvals and the law in effect at the relevant time. The firm can assist with assessing potential eligibility and preparing the relevant financial and tax information within the agreed scope." },
 ];
 
 export const Route = createFileRoute("/en/cpa-foreign-companies")({
   head: () => ({
     meta: [
       { title: "Foreign Companies in Israel | Subsidiary & Branch | Nimrodi" },
-      { name: "description", content: "Israeli CPA for foreign companies: subsidiary or branch setup, banking KYC, payroll, Transfer Pricing and cross-border IP. Book a consultation." },
+      { name: "description", content: "Israeli CPA for foreign companies: subsidiary or branch considerations, payroll, transfer-pricing analysis and Israeli reporting information. Get in touch." },
       { property: "og:title", content: "Foreign Companies in Israel — Nimrodi & Co." },
-      { property: "og:description", content: "Comprehensive onboarding for international companies entering the Israeli market — entity, payroll, TP and IP." },
+      { property: "og:description", content: "Accounting and tax support for international companies operating in Israel: entity setup information, payroll, transfer pricing and reporting. Contact us." },
       { property: "og:url", content: `${BASE}/en/cpa-foreign-companies` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -44,10 +44,10 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         "Review of Israeli subsidiary or branch structures and support with registration preparation",
         "Preparation of accounting and tax information for bank and KYC processes, subject to the bank’s requirements and review",
         "Israeli payroll administration and coordination with qualified employment-law advisers where required",
-        "Transfer Pricing (Section 85A) — Local File, Master File, CbCR",
-        "US GAAP & IFRS reporting to the parent company",
-        "Cross-border IP structuring under OECD BEPS",
-        "Ongoing filings with ITA, VAT and the Registrar",
+        "Transfer-pricing analysis and documentation requirements based on the group’s circumstances",
+        "Group-reporting support under the framework applicable to the parent company",
+        "Accounting and tax analysis for proposed cross-border intellectual-property structures",
+        "Preparation of applicable Israeli tax and corporate reporting information within the agreed scope",
         "Assessment of eligibility for Preferred Technological Enterprise tax benefits",
       ]}
       sections={[
@@ -98,7 +98,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           title: "Cross-Border IP Tax Structuring",
           body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We assist in reviewing the accounting and tax aspects of proposed IP structures in Israel and abroad, with qualified legal and other professional advisers involved where required:",
           bullets: [
-            "IP location strategy: Israel (Preferred Tech 6–12%), Ireland, Luxembourg, Singapore",
+            "Review of accounting and tax considerations for proposed intellectual-property locations, with local advisers involved where required",
             "Transfer-pricing analysis and documentation for intra-group technology, intellectual-property and service transactions",
             "Assessment of BEPS-related substance, DEMPE functions and transfer-pricing documentation requirements where applicable",
             "Financial and transfer-pricing analysis of intra-group cost-sharing arrangements, with legal documentation coordinated separately",

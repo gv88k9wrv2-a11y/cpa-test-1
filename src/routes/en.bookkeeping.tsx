@@ -14,9 +14,9 @@ export const Route = createFileRoute("/en/bookkeeping")({
   head: () => ({
     meta: [
       { title: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
-      { name: "description", content: "Professional cloud bookkeeping in Israel. Monthly VAT, withholding tax, management reports and clean books ready for audit. Talk to us." },
+      { name: "description", content: "Bookkeeping services in Israel for companies and startups: transaction recording, periodic VAT and withholding reporting and management reports. Talk to us." },
       { property: "og:title", content: "Bookkeeping — Nimrodi & Co. CPA" },
-      { property: "og:description", content: "Modern digital bookkeeping and monthly reporting for companies and startups in Israel." },
+      { property: "og:description", content: "Cloud bookkeeping and periodic reporting for companies and startups in Israel, including VAT, withholding and management reports. Talk to our team today." },
       { property: "og:url", content: `${BASE}/en/bookkeeping` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
