@@ -38,7 +38,7 @@ const GROUPS: ServiceGroup[] = [
     items: [
       { to: "/fractional-cfo", label: "Fractional CFO – ניהול כספים אסטרטגי", icon: ChartLine, desc: "סמנכ״ל כספים במיקור חוץ – Burn, Runway, מודלים למשקיעים, יחסי בורד ו-DD." },
       { to: "/bookkeeping", label: "הנהלת חשבונות", icon: Calculator, desc: "ניהול חשבונות מקוון, סגירות חודשיות ודוחות ניהוליים על פלטפורמות ענן מודרניות." },
-      { to: "/payroll", label: "שכר ואופציות (ESOP)", icon: ReceiptText, desc: "תלושי שכר, סעיף 102 (תוכניות אופציות ESOP), טופס 106, טופס 161 וציות פנסיוני." },
+      { to: "/payroll", label: "שכר ואופציות (ESOP)", icon: ReceiptText, desc: "תלושי שכר, סעיף 102 (תוכניות אופציות ESOP), טופס 106, טופס 161 ומידע ותיאום בנושאי הפקדות פנסיוניות." },
       { to: "/audit", label: "ביקורת חשבונאית", icon: FileSearch, desc: "ביקורת דוחות כספיים בהתאם לכללי החשבונאות המקובלים בישראל ולתקני IFRS, וכן בדיקות נאותות בעסקאות מיזוג ורכישה." },
       { to: "/tax-consulting", label: "ייעוץ מס", icon: FileSpreadsheet, desc: "בחינת סוגיות מס, הכנת בקשות להחלטות מיסוי במקרים המתאימים וליווי חשבונאי ומיסויי בהליכי שומה והשגה." },
     ],
@@ -48,7 +48,7 @@ const GROUPS: ServiceGroup[] = [
     items: [
       { to: "/cpa-startups", label: "סטארטאפים וחברות טכנולוגיה", icon: Rocket, desc: "גיוסי הון, אופציות 102, מבנה Delaware-Israel Flip ומעמד מפעל טכנולוגי מועדף." },
       { to: "/cpa-freelancers", label: "עצמאים ופרילנסרים", icon: Briefcase, desc: "פתיחת תיק, ניהול שוטף, דוח שנתי והצהרת הון." },
-      { to: "/cpa-foreign-companies", label: "חברות זרות בישראל", icon: Globe2, desc: "חברה בת או סניף, KYC, Transfer Pricing וציות שוטף." },
+      { to: "/cpa-foreign-companies", label: "חברות זרות בישראל", icon: Globe2, desc: "חברה בת או סניף, KYC, Transfer Pricing ודיווחים שוטפים לפי הדרישות החלות." },
       { to: "/cpa-herzliya", label: "רואה חשבון בהרצליה פיתוח", icon: MapPin, desc: "משרד בוטיק מקומי בלב מסדרון ההייטק של ישראל." },
     ],
   },
