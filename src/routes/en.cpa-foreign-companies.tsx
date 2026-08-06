@@ -67,10 +67,10 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
         {
-          title: "Global Payroll & Israeli labor law",
+          title: "Global payroll coordination for Israeli operations",
           body: "Employing in Israel means compliance with a dense set of local labor obligations — every one of which we manage as your local finance function:",
           bullets: [
-            "Monthly payslips compliant with Israeli labor law",
+            "Monthly payroll calculations and payslips based on employer-approved information and applicable reporting requirements",
             "Pension, severance and study fund contributions",
             "Reporting to Bituach Leumi and income tax withholding",
             "Executive compensation, options (Section 102 – Equity & ESOP Incentive Plans) and equity awards",
