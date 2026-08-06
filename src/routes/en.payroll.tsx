@@ -34,14 +34,14 @@ export const Route = createFileRoute("/en/payroll")({
       heroImageAlt="Israeli payslips and salary calculations on a desk"
       icon={ReceiptText}
       eyebrow="Payroll & ESOP"
-      title="Israeli payroll, equity compensation and employer compliance"
+      title="Israeli payroll, employer reporting and equity-compensation support"
       intro="Israeli payroll is complex — mandatory pension, study fund, National Insurance, disability, health tax, severance, expat regimes and equity plans. We handle it all so you can focus on your team."
       highlights={[
         "Monthly Israeli payslips (tlush)",
         "Bituach Leumi & income tax filings",
         "Section 102 (Equity & ESOP Incentive Plans) — capital / income track",
         "Form 106 (Annual Tax Statement), Form 161 (severance)",
-        "Pension & study fund compliance",
+        "Payroll information and coordination for pension and study-fund contributions",
         "Payroll for foreign companies (EOR alternative)",
       ]}
       sections={[

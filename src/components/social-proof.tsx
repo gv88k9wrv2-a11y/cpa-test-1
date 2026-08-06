@@ -4,7 +4,7 @@ type Lang = "he" | "en";
 
 const COPY = {
   he: {
-    credEyebrow: "אמינות מוכחת",
+    credEyebrow: "ניסיון מקצועי ושירות אישי",
     credTitle: "משרד ותיק עם רקורד אמיתי",
     credSub: "המספרים והעובדות מדברים בעד עצמם – ללא הבטחות שיווקיות.",
     facts: [
