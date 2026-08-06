@@ -205,7 +205,7 @@ function TeamPage() {
             מחפשים להצטרף לצוות?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
-            אנחנו תמיד מחפשים רואי חשבון, סטודנטים ומנהלי חשבונות מוכשרים להצטרף
+            המשרד בוחן מעת לעת מועמדים – רואי חשבון, סטודנטים ומנהלי חשבונות – להצטרפות
             למשרד. שלחו קו״ח ל־<a href="mailto:office@nimrodi.co.il" className="font-semibold text-primary hover:text-gold">office@nimrodi.co.il</a>.
           </p>
         </div>
