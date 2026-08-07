@@ -7,6 +7,7 @@ import {
   WHATSAPP_URL_EN,
 } from "../components/site-chrome-en";
 import { BLOG_POSTS_EN, BLOG_POSTS_EN_BY_SLUG, type BlogPostEn } from "../data/blog-posts-en";
+import { toMetaDescription } from "../lib/meta";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
