@@ -37,17 +37,17 @@ export const Route = createFileRoute("/en/bookkeeping")({
       title="Digital Bookkeeping for Companies and Self-Employed Businesses"
       intro="Digital bookkeeping services for companies and self-employed businesses, using systems selected according to the nature of the activity and the scope of the engagement. Services may include document capture, reconciliations, periodic reporting and management information."
       highlights={[
-        "Full-cycle monthly bookkeeping",
-        "VAT filings (Form 874) and withholding tax",
+        "Monthly bookkeeping services according to the agreed scope",
+        "Preparation of VAT and withholding-tax reporting information according to the applicable requirements",
         "Bank & credit card reconciliations",
         "Management dashboards and KPIs",
-        "Audit-ready trial balance",
+        "Trial-balance preparation and supporting reconciliations for the agreed reporting process",
         "Multi-currency and multi-entity",
       ]}
       sections={[
         {
           title: "Bookkeeping Services",
-          body: "We handle every touchpoint between transactions and financial statements:",
+          body: "Services may cover the following accounting processes, according to the engagement:",
           bullets: [
             "Vendor invoice capture, approvals and payments",
             "Customer invoicing, collections tracking and A/R",
@@ -63,11 +63,11 @@ export const Route = createFileRoute("/en/bookkeeping")({
         },
         {
           title: "Reporting cadence",
-          body: "Monthly management pack including P&L vs. budget, cash flow, A/R aging and KPIs relevant to your business. Quarterly investor updates and annual statements aligned with your auditors.",
+          body: "Periodic management reporting may include profit-and-loss information, budget comparisons, cash-flow information, receivables aging and agreed KPIs, based on the available records and engagement scope. The content, frequency and coordination with auditors are agreed separately.",
         },
       ]}
       faqs={FAQS}
-      ctaHeadline="Want cleaner, faster books? Let's talk."
+      ctaHeadline="Discuss your bookkeeping and reporting needs with us."
     />
   ),
 });

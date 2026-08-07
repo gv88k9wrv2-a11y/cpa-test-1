@@ -5,12 +5,12 @@ import heroImg from "../assets/service-foreign.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Subsidiary or branch — which is better?", a: "Each has trade-offs. An Israeli subsidiary (Ltd) is a separate legal entity with limited liability and 23% corporate tax. A branch extends the foreign parent — simpler to set up but exposes the parent to Israeli tax and liability. The choice depends on scale, home-country tax treaties and roadmap." },
+  { q: "Subsidiary or branch — which is better?", a: "A subsidiary and a branch differ in legal status, accounting, tax, employment and reporting. The appropriate structure depends on the planned activity, scale, funding, liability considerations, treaty position and group plans. The firm can assist with the Israeli accounting and tax analysis, while legal aspects should be reviewed with qualified counsel." },
   { q: "How long does it take to set up an Israeli subsidiary?", a: "The timetable depends on the proposed structure, the completeness of the documents, identification requirements and the processing times of the relevant authorities. Bank-account onboarding for a foreign-owned entity depends on the ownership structure, KYC information, source-of-funds documentation and the bank’s review. The firm can assist with the Israeli accounting and tax information and coordinate with legal and banking professionals within the agreed scope." },
   { q: "Do you handle Israeli banking regulation?", a: "Bank-account onboarding, incoming funds and foreign-currency activity may require accounting, tax, ownership and source-of-funds information under the bank’s procedures and applicable rules. The firm can assist with preparing the relevant accounting and tax information. Account approval, KYC requirements and banking decisions remain subject to the bank’s review and discretion." },
   { q: "What is Transfer Pricing and why does it matter?", a: "Transfer pricing concerns the pricing and terms of transactions between related parties. The applicable analysis, documentation and filing requirements depend on the entities, transactions, functions, assets, risks and rules in effect for the relevant period. The firm can assist with the Israeli transfer-pricing analysis and documentation within the agreed scope." },
-  { q: "What is Permanent Establishment (PE) risk?", a: "If the foreign parent has meaningful presence in Israel — an office, a fixed employee closing deals, a central warehouse — it may be deemed to operate in Israel and become subject to Israeli corporate tax on that activity. Proper structuring (EOR, local Service Company where appropriate) helps reduce unintended PE risk." },
-  { q: "Can we pay Israeli developers without opening a branch?", a: "Yes — three options: (1) EOR (Employer of Record) — fast but expensive; (2) independent contractor — simple but limited by misclassification risk; (3) an Israeli subsidiary — higher setup cost but cheapest long-term and full control. We model the crossover point." },
+  { q: "What is Permanent Establishment (PE) risk?", a: "Permanent-establishment risk depends on the facts, the relevant tax treaty and applicable law, including the nature, duration and authority of the activity in Israel. The position should be reviewed with qualified Israeli and foreign tax and legal advisers. The firm can assist with the Israeli accounting and tax information within the agreed scope." },
+  { q: "Can we pay Israeli developers without opening a branch?", a: "Possible arrangements may include an Employer of Record, engagement with an independent contractor or employment through an Israeli entity. The appropriate arrangement depends on the working relationship, duration and scale of activity, control, classification risk, cost and legal requirements. Each option should be reviewed with qualified employment-law and tax advisers." },
   { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "A foreign-owned Israeli company may be eligible for tax-incentive programs or Israel Innovation Authority support, depending on its activity, ownership, program conditions, required approvals and the law in effect at the relevant time. The firm can assist with assessing potential eligibility and preparing the relevant financial and tax information within the agreed scope." },
 ];
 
@@ -52,8 +52,8 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
       ]}
       sections={[
         {
-          title: "Choosing the right structure",
-          body: "The structural decision comes first. We analyze the options — Israeli subsidiary, branch, or EOR — considering planned scale, home country, treaty network, IP roadmap and future funding.",
+          title: "Reviewing possible operating structures",
+          body: "Possible operating structures may include an Israeli subsidiary, branch, Employer of Record or another arrangement. The accounting and tax review depends on the planned activity, scale, treaty position, intellectual-property arrangements, employment model and future plans. Legal aspects are reviewed separately with qualified counsel.",
         },
         {
           title: "Accounting and tax support for the setup process",
@@ -68,7 +68,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         },
         {
           title: "Global payroll coordination for Israeli operations",
-          body: "Employing in Israel means compliance with a dense set of local labor obligations — every one of which we manage as your local finance function:",
+          body: "Employing personnel in Israel may involve payroll, tax, pension, insurance and employment-law requirements. The agreed service may include the following payroll and reporting activities, while legal, pension and insurance advice is coordinated separately:",
           bullets: [
             "Monthly payroll calculations and payslips based on employer-approved information and applicable reporting requirements",
             "Pension, severance and study fund contributions",
@@ -80,11 +80,11 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         },
         {
           title: "Ongoing management & parent reporting",
-          body: "After setup we operate as your local finance team — day-to-day bookkeeping, VAT and tax filings, monthly payroll, quarterly reporting packs to the parent, and annual audited financial statements aligned to the group's US GAAP or IFRS reporting standard.",
+          body: "After setup, the agreed services may include bookkeeping, payroll coordination, tax reporting and group-reporting information. Responsibilities for financial statements, management decisions and external audit are defined separately and remain subject to applicable independence requirements.",
         },
         {
           title: "Transfer Pricing & BEPS compliance",
-          body: "For companies with material intra-group transactions we prepare Transfer Pricing studies compliant with OECD guidelines and Section 85A of the Israeli Income Tax Ordinance. Robust documentation supports the company's position in discussions with the ITA:",
+          body: "For companies with material intra-group transactions, the firm may assist with transfer-pricing analysis and documentation according to the entities, transactions, functions, assets, risks, available information and requirements applicable to the relevant period:",
           bullets: [
             "Benchmarking and comparable-data review according to the agreed transfer-pricing scope",
             "Review of the appropriate method based on the activity, available data and applicable transfer-pricing rules",

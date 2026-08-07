@@ -49,8 +49,7 @@ function ContactPage() {
             בואו נדבר
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            ניתן ליצור קשר בטלפון, בוואטסאפ, במייל או במילוי הטופס למטה – ונחזור אליכם
-            בהקדם.
+            השאירו פרטים וניצור עמכם קשר בהקדם האפשרי.
           </p>
         </div>
       </section>

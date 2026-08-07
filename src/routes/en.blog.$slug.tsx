@@ -7,6 +7,7 @@ import {
   WHATSAPP_URL_EN,
 } from "../components/site-chrome-en";
 import { BLOG_POSTS_EN, BLOG_POSTS_EN_BY_SLUG, type BlogPostEn } from "../data/blog-posts-en";
+import { toMetaDescription } from "../lib/meta";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
@@ -30,9 +31,9 @@ export const Route = createFileRoute("/en/blog/$slug")({
     return {
       meta: [
         { title: `${post.title} | Nimrodi & Co. Blog` },
-        { name: "description", content: post.excerpt.slice(0, 160) },
+        { name: "description", content: toMetaDescription(post.excerpt) },
         { property: "og:title", content: post.title },
-        { property: "og:description", content: post.excerpt.slice(0, 160) },
+        { property: "og:description", content: toMetaDescription(post.excerpt) },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { property: "og:image", content: `${ORIGIN}/og-image.jpg` },

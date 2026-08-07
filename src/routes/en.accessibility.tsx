@@ -2,13 +2,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 
 const BASE = "https://www.nimrodi.co.il";
+const UPDATED_EN = "August 2026";
+const DESCRIPTION =
+  "Accessibility statement of Nimrodi & Co. CPA: website accessibility principles, physical access details for the Herzliya Pituach office and how to request help.";
 
 export const Route = createFileRoute("/en/accessibility")({
   head: () => ({
     meta: [
       { title: "Accessibility Statement — Nimrodi & Co. CPA" },
-      { name: "description", content: "Accessibility information for the Nimrodi & Co. website, including implemented adjustments, contact details and the firm’s ongoing accessibility efforts." },
+      { name: "description", content: DESCRIPTION },
       { property: "og:title", content: "Accessibility Statement — Nimrodi & Co. CPA" },
+      { property: "og:description", content: DESCRIPTION },
       { property: "og:url", content: `${BASE}/en/accessibility` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { property: "og:image:width", content: "1200" },
@@ -35,88 +39,86 @@ function AccessibilityEn() {
             <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
               Accessibility Statement
             </h1>
-            <p className="mt-4 text-muted-foreground">
-              Last updated: July 2026
-            </p>
+            <p className="mt-4 text-muted-foreground">Last updated: {UPDATED_EN}</p>
           </div>
         </section>
 
         <section className="py-16">
-          <div className="mx-auto max-w-3xl space-y-8 px-4 text-muted-foreground leading-relaxed sm:px-6">
+          <div className="mx-auto max-w-3xl space-y-8 px-4 leading-relaxed text-muted-foreground sm:px-6">
+            <p>
+              Nimrodi &amp; Co. Certified Public Accountants is committed to providing equitable and
+              accessible service and continues to improve the accessibility of its website and
+              services.
+            </p>
+
             <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">
-                1. Commitment to Accessibility
-              </h2>
+              <h2 className="font-display text-2xl font-bold text-primary">Website accessibility</h2>
               <p>
-                Nimrodi & Co. Certified Public Accountants regards accessibility as a core moral and professional value. The firm is committed to making its website and services accessible to the general public, including people with disabilities, in accordance with the Israeli Equal Rights for Persons with Disabilities Law, 5758-1998, and the Service Accessibility Regulations.
+                The website was built with commonly accepted accessibility principles in mind,
+                including semantic structure, keyboard navigation, alternative text for images,
+                color contrast and support for assistive technologies. We continue to review and
+                improve the website. This statement does not claim that a complete manual audit was
+                performed or that the website fully conforms to a particular standard unless such
+                testing was actually completed and documented.
               </p>
             </div>
 
             <div className="space-y-4">
               <h2 className="font-display text-2xl font-bold text-primary">
-                2. Website Accessibility (Digital Accessibility)
+                Physical access and arrival information
               </h2>
               <p>
-                This website is designed to align with Israeli Standard 5568 for internet content accessibility at Level AA and with the W3C WCAG 2.1 guidelines. We continue to review and improve the site over time.
+                The office is located at 16 Galgalei HaPlada Street, Herzliya Pituach. Parking in
+                the area is available on public streets or in nearby public parking facilities,
+                subject to availability and the applicable conditions. These parking spaces are not
+                private spaces belonging to the firm or the building, and availability is not
+                controlled or guaranteed by the firm. There is no approved continuous accessible
+                route from the street, parking area or building entrance to the office, and the
+                building does not have approved accessible restrooms. If an accessibility
+                accommodation is required to receive service, please contact us in advance so that
+                we can consider coordination or an accessible alternative based on the need and
+                available options.
               </p>
-              <ul className="list-disc space-y-2 ps-6">
-                <li><strong>Keyboard navigation:</strong> Support for keyboard navigation (Tab, Shift+Tab, Enter).</li>
-                <li><strong>Screen reader support:</strong> The site uses semantic structure and ARIA attributes to support compatibility with assistive technologies.</li>
-                <li><strong>Design and text:</strong> Color contrast designed to support readability, ability to enlarge text without breaking site structure, and alternative text (Alt) for images and visual components.</li>
-                <li><strong>Responsiveness:</strong> Adapted for browsing on a variety of screens, mobile devices, and tablets.</li>
-              </ul>
             </div>
 
             <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">
-                3. Physical Office Accessibility Arrangements
-              </h2>
-              <p>
-                The office is located at 16 Galgalei HaPlada Street, Herzliya Pituach. Below is a detailed list of accessibility arrangements in the building:
-              </p>
-              <ul className="list-disc space-y-2 ps-6">
-                <li><strong>Disabled parking:</strong> Designated disabled parking spaces are available in the building parking lot and nearby.</li>
-                <li><strong>Building and office access:</strong> An accessible route runs continuously from parking through the building entrance and lobby, up to the firm offices via accessible elevators.</li>
-                <li><strong>Accessible restrooms:</strong> Accessible and approved disabled restrooms are available in the building.</li>
-                <li><strong>Service animals:</strong> Guide dogs and service animals are welcome.</li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">
-                4. Accessibility Coordinator, Inquiries, and Suggestions for Improvement
-              </h2>
-              <p>
-                We continue our efforts to improve the accessibility of the website and the office service. If you encountered an inaccessible element, experienced difficulty browsing the site, or would like to request special accessibility arrangements before a meeting at our office, we will be happy to assist:
-              </p>
-              <div className="rounded-lg border border-border/60 bg-secondary/30 p-6 space-y-3">
-                <p><strong>Office Accessibility Coordinator:</strong> Shlomo Nimrodi – Certified Public Accountant</p>
+              <h2 className="font-display text-2xl font-bold text-primary">Accessibility contact</h2>
+              <div className="space-y-3 rounded-lg border border-border/60 bg-secondary/30 p-6">
                 <p>
-                  <strong>Phone:</strong>{" "}
-                  <a href="tel:+97299582211" className="text-primary hover:text-gold hover:underline">
-                    +972-9-9582211
+                  <strong>Telephone:</strong>{" "}
+                  <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
+                    09-9582211
                   </a>
                 </p>
                 <p>
                   <strong>WhatsApp:</strong>{" "}
-                  <a href="https://wa.me/972546688681" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-gold hover:underline">
-                    +972-54-668-8681
+                  <a
+                    href="https://wa.me/972546688681"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-gold hover:underline"
+                  >
+                    054-6688681
                   </a>
                 </p>
                 <p>
                   <strong>Email:</strong>{" "}
-                  <a href="mailto:office@nimrodi.co.il" className="text-primary hover:text-gold hover:underline">
+                  <a
+                    href="mailto:office@nimrodi.co.il"
+                    className="text-primary hover:text-gold hover:underline"
+                  >
                     office@nimrodi.co.il
                   </a>
                 </p>
               </div>
               <p>
-                Accessibility inquiries are reviewed and handled according to their nature and the information provided.
+                Please state the preferred contact method and the accommodation required. Each
+                request will be reviewed according to the circumstances and available options.
               </p>
             </div>
 
             <p className="pt-4 text-sm text-muted-foreground/80">
-              This statement was last updated in July 2026.
+              This statement was last updated in {UPDATED_EN}.
             </p>
           </div>
         </section>

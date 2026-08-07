@@ -228,7 +228,7 @@ export function SiteHeader() {
                 ))}
                 <div className="col-span-3 flex items-center justify-between border-t border-border pt-4">
                   <span className="text-xs text-muted-foreground">
-                    כל השירותים תחת קורת גג אחת
+                    מגוון השירותים של המשרד
                   </span>
                   <Link
                     to="/services"

@@ -51,11 +51,11 @@ export const Route = createFileRoute("/en/audit")({
         },
         {
           title: "IFRS conversion",
-          body: "For subsidiaries of foreign parents that report in IFRS or US GAAP, we prepare conversion packs, group reporting schedules and coordinate with the group auditor on interim and year-end deliverables.",
+          body: "For subsidiaries of foreign parents reporting under IFRS, US GAAP or another group framework, the agreed service may include assistance with reporting information, conversion adjustments and group schedules, in coordination with management and the relevant auditors.",
         },
         {
           title: "Due diligence",
-          body: "M&A DD engagements: data room, historical financial analysis, quality of earnings, working capital normalization, tax exposure review and closing mechanism support.",
+          body: "Financial due-diligence procedures are determined by the purpose of the transaction, the available information and the agreed scope. They may include historical financial analysis, revenue and profitability review, working-capital considerations, tax matters and organization of transaction information. The work does not guarantee identification of every risk or missing item.",
         },
       ]}
       faqs={FAQS}
