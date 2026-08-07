@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 
+const UPDATED_HE = "אוגוסט 2026";
+
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
     meta: [
@@ -8,10 +10,15 @@ export const Route = createFileRoute("/accessibility")({
       {
         name: "description",
         content:
-          "הצהרת נגישות של אתר נמרודי ושות׳ רואי חשבון: ההתאמות שבוצעו באתר, רמת הנגישות, מגבלות ידועות ודרכי פנייה לרכז הנגישות. קראו את ההצהרה המלאה כאן. נשמח לסייע.",
+          "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: עקרונות הנגישות באתר, מידע על הגעה ונגישות פיזית במשרד בהרצליה פיתוח ודרכי פנייה לתיאום התאמה. נשמח לסייע.",
       },
       { property: "og:title", content: "הצהרת נגישות – נמרודי ושות׳" },
-      { property: "og:url", content: "/accessibility" },
+      {
+        property: "og:description",
+        content:
+          "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: עקרונות הנגישות באתר, מידע על הגעה ונגישות פיזית במשרד בהרצליה פיתוח ודרכי פנייה לתיאום התאמה. נשמח לסייע.",
+      },
+      { property: "og:url", content: "https://www.nimrodi.co.il/accessibility" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
@@ -20,7 +27,7 @@ export const Route = createFileRoute("/accessibility")({
     links: [
       { rel: "canonical", href: "https://www.nimrodi.co.il/accessibility" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/accessibility" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/accessibility" }
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/accessibility" },
     ],
   }),
   component: AccessibilityPage,
@@ -37,62 +44,44 @@ function AccessibilityPage() {
             <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
               הצהרת נגישות
             </h1>
-            <p className="mt-4 text-muted-foreground">
-              עודכן לאחרונה: יולי 2026
-            </p>
+            <p className="mt-4 text-muted-foreground">עודכן לאחרונה: {UPDATED_HE}</p>
           </div>
         </section>
 
         <section className="py-16">
-          <div className="mx-auto max-w-3xl space-y-8 px-4 text-muted-foreground leading-relaxed sm:px-6">
+          <div className="mx-auto max-w-3xl space-y-8 px-4 leading-relaxed text-muted-foreground sm:px-6">
+            <p>
+              נמרודי ושות׳ רואי חשבון מייחסת חשיבות למתן שירות שוויוני ונגיש ופועלת לשיפור נגישות
+              האתר והשירותים הניתנים על ידה.
+            </p>
+
             <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">
-                1. מחויבות לנגישות
-              </h2>
+              <h2 className="font-display text-2xl font-bold text-primary">נגישות אתר האינטרנט</h2>
               <p>
-                משרד רואי החשבון נמרודי ושות׳ רואה בנגישות ערך מרכזי, מוסרי ומקצועי. המשרד פועל להנגשת אתר האינטרנט ושירותיו לכלל הציבור, לרבות אנשים עם מוגבלות, בהתאם לחוק שוויון זכויות לאנשים עם מוגבלות, התשנ״ח-1998 ותקנות הנגישות לשירות.
+                האתר נבנה תוך התייחסות לעקרונות נגישות מקובלים, ובהם מבנה סמנטי, ניווט באמצעות
+                מקלדת, טקסט חלופי לתמונות, ניגודיות ותמיכה בטכנולוגיות מסייעות. אנו ממשיכים לבדוק
+                ולשפר את האתר. אין בהצהרה זו טענה כי בוצעה בדיקה ידנית מלאה או כי האתר עומד באופן
+                מלא בתקן מסוים, אלא אם בדיקה כזאת בוצעה ותועדה בפועל.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h2 className="font-display text-2xl font-bold text-primary">הגעה ונגישות פיזית</h2>
+              <p>
+                המשרד ממוקם ברחוב גלגלי הפלדה 16, הרצליה פיתוח. החניה באזור היא ברחוב או בחניונים
+                ציבוריים סמוכים, בכפוף לזמינות ולתנאי המקום. החניות אינן חניות פרטיות של המשרד או של
+                הבניין, זמינותן אינה בשליטת המשרד ואינה מובטחת. לא קיים מסלול נגיש מאושר ורציף
+                מהרחוב, מהחניה או מכניסת הבניין עד למשרד, ואין בבניין שירותי נכים מאושרים. אם נדרשת
+                התאמת נגישות לצורך קבלת שירות, אנא צרו קשר מראש כדי שנוכל לבחון תיאום או חלופה נגישה
+                בהתאם לצורך ולאפשרויות.
               </p>
             </div>
 
             <div className="space-y-4">
               <h2 className="font-display text-2xl font-bold text-primary">
-                2. נגישות אתר האינטרנט (נגישות דיגיטלית)
+                יצירת קשר בנושא נגישות
               </h2>
-              <p>
-                האתר עוצב לעמוד בכיוון התקן הישראלי (ת״י 5568) לנגישות תכנים באינטרנט ברמת AA ובהנחיות WCAG 2.1 של W3C. אנו ממשיכים לבחון ולשפר את האתר לאורך זמן.
-              </p>
-              <ul className="list-inside list-disc space-y-2 pr-4">
-                <li><strong>ניווט מקלדת:</strong> תמיכה בניווט באמצעות המקלדת (Tab, Shift+Tab, Enter).</li>
-                <li><strong>התאמה לקוראי מסך:</strong> האתר נבנה עם מבנה סמנטי ומאפייני ARIA שנועדו לפעול עם טכנולוגיות מסייעות.</li>
-                <li><strong>עיצוב וטקסט:</strong> ניגודיות צבעים תקנית, אפשרות להגדלת טקסטים ללא פגיעה במבנה האתר, וטקסט חלופי (Alt) לתמונות ורכיבים ויזואליים.</li>
-                <li><strong>רספונסיביות:</strong> התאמה לגלישה במגוון מסכים, מובייל וטאבלטים.</li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">
-                3. הסדרי נגישות פיזיים במשרד
-              </h2>
-              <p>
-                המשרד ממוקם ברחוב גלגלי הפלדה 16, הרצליה פיתוח. להלן פירוט הסדרי הנגישות במבנה:
-              </p>
-              <ul className="list-inside list-disc space-y-2 pr-4">
-                <li><strong>חניית נכים:</strong> קיימות חניות נכים מסומנות בחניון הבניין ובקרבתו.</li>
-                <li><strong>גישה לבניין ולמשרדים:</strong> רצף גישה נגיש מהחניה, דרך כניסת הבניין והלובי, ועד למשרדי הפירמה דרך מעליות מונגשות.</li>
-                <li><strong>שירותים נגישים:</strong> במבנה קיימים שירותי נכים מונגשים ומאושרים.</li>
-                <li><strong>חיות שירות:</strong> מותרת הכניסה לכלבי נחייה וחיות שירות.</li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">
-                4. רכז נגישות, פניות והצעות לשיפור
-              </h2>
-              <p>
-                אנו ממשיכים במאמצים לשפר את נגישות האתר והשירות במשרד. אם נתקלתם ברכיב לא נגיש, בקושי בגלישה באתר, או אם ברצונכם לבקש התאמת נגישות מיוחדת לקראת פגישה במשרדינו, נשמח לעמוד לרשותכם:
-              </p>
-              <div className="rounded-lg border border-border/60 bg-secondary/30 p-6 space-y-3">
-                <p><strong>רכז/ת נגישות המשרד:</strong> שלמה נמרודי – רואה חשבון</p>
+              <div className="space-y-3 rounded-lg border border-border/60 bg-secondary/30 p-6">
                 <p>
                   <strong>טלפון:</strong>{" "}
                   <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
@@ -101,24 +90,33 @@ function AccessibilityPage() {
                 </p>
                 <p>
                   <strong>וואטסאפ:</strong>{" "}
-                  <a href="https://wa.me/972546688681" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-gold hover:underline">
+                  <a
+                    href="https://wa.me/972546688681"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-gold hover:underline"
+                  >
                     054-6688681
                   </a>
                 </p>
                 <p>
                   <strong>דוא״ל:</strong>{" "}
-                  <a href="mailto:office@nimrodi.co.il" className="text-primary hover:text-gold hover:underline">
+                  <a
+                    href="mailto:office@nimrodi.co.il"
+                    className="text-primary hover:text-gold hover:underline"
+                  >
                     office@nimrodi.co.il
                   </a>
                 </p>
               </div>
               <p>
-                פניות בנושא נגישות ייבחנו ויטופלו בהתאם לפרטי הפנייה ולאפשרויות ההתאמה.
+                בפנייה יש לציין את אופן יצירת הקשר המועדף ואת ההתאמה הנדרשת. הפנייה תיבחן בהתאם
+                לנסיבות ולאפשרויות ההתאמה.
               </p>
             </div>
 
             <p className="pt-4 text-sm text-muted-foreground/80">
-              הצהרה זו עודכנה לאחרונה בחודש יולי 2026.
+              הצהרה זו עודכנה לאחרונה בחודש {UPDATED_HE}.
             </p>
           </div>
         </section>
