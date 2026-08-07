@@ -22,7 +22,7 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-background px-4" dir="rtl">
       <div className="max-w-md text-center">
         <p className="text-sm font-semibold uppercase tracking-widest text-gold">404</p>
-        <h1 className="mt-3 font-display text-4xl font-bold text-primary">עמוד זה אינו קיים</h1>
+        <h1 className="mt-3 font-display text-4xl font-bold text-primary">לא מצאנו את העמוד המבוקש</h1>
         <p className="mt-3 text-sm text-muted-foreground">
           ייתכן שהקישור השתנה או שהעמוד הוסר. אפשר לחזור לדף הבית או לעבור לאחד משירותי הליבה שלנו.
         </p>

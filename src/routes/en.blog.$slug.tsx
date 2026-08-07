@@ -30,9 +30,9 @@ export const Route = createFileRoute("/en/blog/$slug")({
     return {
       meta: [
         { title: `${post.title} | Nimrodi & Co. Blog` },
-        { name: "description", content: post.excerpt.slice(0, 160) },
+        { name: "description", content: toMetaDescription(post.excerpt) },
         { property: "og:title", content: post.title },
-        { property: "og:description", content: post.excerpt.slice(0, 160) },
+        { property: "og:description", content: toMetaDescription(post.excerpt) },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { property: "og:image", content: `${ORIGIN}/og-image.jpg` },
