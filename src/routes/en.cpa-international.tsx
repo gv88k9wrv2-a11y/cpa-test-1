@@ -6,8 +6,8 @@ import heroImg from "../assets/service-international.webp";
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "What tax benefits do new immigrants (olim chadashim) receive?", a: "Eligible new residents and returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income, subject to the applicable law, eligibility conditions, and the specific circumstances. Timing and planning of relocation can be critical to maximize the benefit." },
-  { q: "Can I sever Israeli tax residency by relocating?", a: "Yes, but severance requires more than moving abroad. The ITA looks at 'center of life' (family, home, work, social ties). We plan and document the severance to withstand challenge — and address the exit tax exposure." },
-  { q: "How does the US-Israel tax treaty work in practice?", a: "The treaty allocates taxing rights, provides tie-breaker rules for residency, and grants foreign tax credits. Practical planning — timing of income recognition, ESOP exercise, pension distributions — often makes a large after-tax difference." },
+  { q: "Can I sever Israeli tax residency by relocating?", a: "Relocation does not by itself determine whether Israeli tax residency has ended. The position depends on the statutory tests, the individual’s factual circumstances, applicable presumptions, treaty provisions and supporting documentation. Within the agreed scope, we can assist with the Israeli tax analysis and organization of relevant information, without guaranteeing the position that a tax authority may adopt." },
+  { q: "How does the US-Israel tax treaty work in practice?", a: "The treaty allocates taxing rights, provides tie-breaker rules for residency, and grants foreign tax credits. The timing and treatment of income, equity compensation and pension distributions may have different consequences under Israeli and foreign law. Each matter should be reviewed according to the relevant treaty, the applicable domestic rules and the individual’s circumstances." },
 ];
 
 export const Route = createFileRoute("/en/cpa-international")({

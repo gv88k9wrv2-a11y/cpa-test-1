@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
+import { FirmContactBlock } from "../components/firm-contact-block";
 
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
@@ -159,6 +160,7 @@ function PrivacyPage() {
             </address>
           </section>
         </article>
+        <FirmContactBlock lang="he" />
       </main>
       <SiteFooter />
       <FloatingWhatsApp />

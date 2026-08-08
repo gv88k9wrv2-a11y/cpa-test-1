@@ -39,14 +39,14 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
       title="CPA services for freelancers, consultants and independent businesses in Israel"
       intro="Accounting and tax support for freelancers, independent contractors and boutique businesses in Israel. Services may include registration, ongoing reporting, annual returns, capital declarations and analysis of operating as a sole proprietor or company, according to the client’s circumstances and the agreed scope."
       highlights={[
-        "Full digital registration with VAT, ITA and Bituach Leumi",
+        "Assistance with registration information and filings for VAT, the Israel Tax Authority and Bituach Leumi, according to the agreed scope",
         "Osek patur / osek murshe fit assessment",
         "Monthly / bi-monthly VAT and withholding filings",
         "Annual personal tax return and review of deductions based on the available records and applicable rules",
         "Capital declaration (הצהרת הון) preparation and defense",
         "Sole proprietor → private company crossover simulation",
         "Pocket Company (חברת ארנק) risk mitigation",
-        "Global freelancers — foreign clients, 0% VAT (Section 30(a)(5))",
+        "Foreign-client income — review of the applicable VAT treatment and reporting requirements",
         "Passive income: rental, crypto, foreign securities",
       ]}
       sections={[
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           body: "When you go independent there's a required sequence of actions with the tax authorities. The engagement may include assistance with the following registration and reporting steps:",
           bullets: [
             "Status selection: osek patur / osek murshe / private company",
-            "VAT file opening within 21 days of first invoice",
+            "Review of the required VAT-registration timing according to the planned activity and applicable requirements",
             "ITA file + Form 5329 and advance-payment instruction",
             "Bituach Leumi file + declared expected income",
             "Pension fund and Keren Hishtalmut for self-employed setup",
@@ -77,19 +77,19 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
             "Tax credit points (parents, children, academic degree, periphery residence)",
             "Assessment of vehicle, phone, home-office and internet expenses under applicable rules",
             "Pension and Keren Hishtalmut contributions to the annual ceilings",
-            "Retroactive refund claims (up to 6 years back)",
+            "Review of possible prior-year refund claims, subject to the applicable limitation period, available records and relevant tax year",
             "Correct withholding coordination between salaried and self-employed income",
           ],
         },
         {
           title: "Global freelancers — Israeli self-employed with foreign clients",
-          body: "If you're a developer, designer, consultant or marketer working directly with clients in the US, Europe or Asia, your tax structure needs specialist handling. We advise freelancers and independent professionals working with international clients and cross-border income, and know every nuance:",
+          body: "If you work directly with clients outside Israel, the accounting and tax treatment may depend on the services, customer location, contractual terms, payment method and applicable law. We assist freelancers and independent professionals with the Israeli accounting and tax aspects of foreign-client income:",
           bullets: [
             "English invoices with 0% VAT under Section 30(a)(5)",
             "Receiving payments via PayPal, Wise, Stripe, Payoneer and wire",
             "Correct FX rate on income and payment dates",
             "Digital-invoicing support based on the applicable Israel Tax Authority requirements",
-            "W-8BEN handling with US clients to avoid withholding",
+            "Coordination of information for US withholding forms where relevant, with US tax treatment confirmed by a qualified US adviser",
             "Capital declaration with foreign assets (bank, PayPal, crypto)",
             "Foreign tax credit coordination under treaty",
           ],
@@ -98,10 +98,10 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           title: "Digital Assets, Rental Income and Investments",
           body: "Self-employed individuals may also have income from digital assets, rental properties or investments. These sources may create additional Israeli and foreign reporting obligations and should be reviewed separately according to the facts and applicable law:",
           bullets: [
-            "Residential rental — 10% flat track vs. marginal-rate track with expenses",
-            "Capital gains on Israeli and foreign securities — 25% + foreign tax credit",
-            "Crypto (Bitcoin, Ethereum, altcoins) — 25% capital gains on real gain",
-            "Dividends from Israeli (25%) and foreign companies (per treaty)",
+            "Residential rental income — review of the available tax and reporting alternatives under the rules applicable to the relevant period",
+            "Israeli and foreign securities — review of capital-gains reporting, withholding and possible foreign-tax-credit treatment",
+            "Digital assets — review of the activity classification, transaction data, calculation method and reporting obligations",
+            "Israeli and foreign dividends — review of withholding, reporting and possible treaty or foreign-tax-credit considerations",
             "Airbnb / short-term rental — business vs. passive classification",
           ],
         },
@@ -111,7 +111,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           bullets: [
             "Economic crossover simulation — sole proprietor vs. company",
             "Genuine business substance: multiple clients, business risk, investment",
-            "Avoid single-client dominance (70%+ of revenue is a clear red flag)",
+            "Review of client concentration and the factual characteristics of the working relationship where employee-like or pocket-company classification may be relevant",
             "Hiring employees or subcontractors — strengthens business classification",
             "Separation of owner's draws from salary; documentation of owner's role",
             "Support with tax ruling requests in relevant cases, based on the available information and agreed scope",

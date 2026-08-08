@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
+import { FirmContactBlock } from "../components/firm-contact-block";
 
 const UPDATED_HE = "אוגוסט 2026";
 
@@ -120,6 +121,7 @@ function AccessibilityPage() {
             </p>
           </div>
         </section>
+        <FirmContactBlock lang="he" />
       </main>
 
       <SiteFooter />
