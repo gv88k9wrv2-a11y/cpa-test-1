@@ -94,7 +94,7 @@ export function ServiceLanding({
               className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95"
             >
               <MessageCircle className="h-5 w-5" aria-hidden />
-              ייעוץ ראשוני בוואטסאפ
+              פנייה ראשונית בוואטסאפ
             </a>
             <a
               href="tel:099582211"

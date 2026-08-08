@@ -85,7 +85,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           title: "Global freelancers — Israeli self-employed with foreign clients",
           body: "If you work directly with clients outside Israel, the accounting and tax treatment may depend on the services, customer location, contractual terms, payment method and applicable law. We assist freelancers and independent professionals with the Israeli accounting and tax aspects of foreign-client income:",
           bullets: [
-            "English invoices with 0% VAT under Section 30(a)(5)",
+            "Review of the VAT treatment and invoicing requirements for services supplied to foreign customers, subject to the statutory conditions and the circumstances of the service",
             "Receiving payments via PayPal, Wise, Stripe, Payoneer and wire",
             "Correct FX rate on income and payment dates",
             "Digital-invoicing support based on the applicable Israel Tax Authority requirements",
