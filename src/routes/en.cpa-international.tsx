@@ -47,7 +47,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       sections={[
         {
           title: "New immigrants & returning residents",
-          body: "Eligible new residents and senior returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income and gains, subject to the applicable law, eligibility conditions and the specific circumstances. The benefit is fragile — poor planning around exercise of pre-aliyah equity, US pension distributions or trusts can erode it. We plan timing and structure years in advance.",
+          body: "Eligible new residents and senior returning residents may qualify for certain tax benefits relating to specified foreign-source income and gains, subject to the applicable law, eligibility conditions and individual circumstances. Equity compensation, pensions, trusts and transactions before or after relocation should be reviewed with qualified advisers in the relevant jurisdictions.",
         },
         {
           title: "Relocation & residency severance",

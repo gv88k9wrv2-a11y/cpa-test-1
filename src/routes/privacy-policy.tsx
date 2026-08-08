@@ -33,7 +33,7 @@ function PrivacyPage() {
           <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
             מדיניות פרטיות ותנאי שימוש
           </h1>
-          <p className="mt-3 text-sm text-muted-foreground">עודכן לאחרונה: יולי 2026</p>
+          <p className="mt-3 text-sm text-muted-foreground">עודכן לאחרונה: אוגוסט 2026</p>
         </header>
 
         <article className="mt-10 space-y-10 text-foreground leading-relaxed">
