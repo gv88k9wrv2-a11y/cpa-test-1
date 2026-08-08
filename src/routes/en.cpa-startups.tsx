@@ -67,7 +67,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Stage-by-stage support",
-          body: "Every stage has its own priorities. We meet you where you are:",
+          body: "The relevant accounting and financial priorities vary according to the company’s stage, reporting obligations, internal resources and planned transactions:",
           bullets: [
             "Pre-Seed: entity setup, structure, vesting, 83(b) elections",
             "Seed: books, cash management, financial model, Section 102 foundation",
@@ -93,7 +93,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Preferred Technological Enterprise & Israeli tax incentives",
-          body: "The Capital Investments Encouragement Law may grant qualifying tech companies reduced corporate tax rates. We assess eligibility, prepare and file the application, and support the position on ITA audit:",
+          body: "Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law. Within the agreed scope, the firm can assist with an initial eligibility review, preparation of accounting and tax information, and relevant filings. Eligibility, the applicable rate and acceptance of the company’s position remain subject to the law, the facts and the decisions of the relevant authorities:",
           bullets: [
             "Assessment of potential eligibility for Preferred Technological Enterprise tax benefits",
             "Assessment of potential eligibility for Special Preferred Technological Enterprise tax benefits",
@@ -116,7 +116,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Funding structures: SAFE, CLA and conversions",
-          body: "SAFE (Simple Agreement for Future Equity) and CLA (Convertible Loan Agreement) are the dominant early-stage funding instruments. Each has trade-offs, risks and accounting complexity. We structure the documents and accounting so nothing surprises you at the next round:",
+          body: "SAFE and convertible-loan arrangements may create accounting, tax, valuation and legal issues that depend on their terms and the company’s reporting framework. Legal documents should be prepared and approved by the company’s legal advisers. Within the agreed scope, the firm can assist with the accounting and Israeli tax analysis and with organizing information for the company and its advisers:",
           bullets: [
             "SAFE terms: Valuation Cap, Discount, MFN, Pro-Rata",
             "CLA with interest, maturity and automatic/optional conversion",

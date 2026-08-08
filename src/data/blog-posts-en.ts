@@ -76,7 +76,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Conclusion",
         p: [
           "There is no single correct answer for every foreign company. The decision depends on a combination of tax considerations, legal risk, hiring plans, and long-term strategic objectives in Israel. In many cases, technology companies prefer a subsidiary, while a branch may be suitable for more limited activity.",
-          "Nimrodi & Co. CPAs advises foreign companies on selecting an entry structure into Israel, incorporating the entity, and managing ongoing interaction with the authorities. Contact us for an initial tailored consultation.",
+          "Nimrodi & Co. CPAs can assist with the Israeli accounting and tax analysis of possible operating structures and with the preparation of information for registrations and ongoing reporting. Entity formation and legal structuring should be reviewed and implemented with qualified legal advisers. Contact us to discuss the activity and the possible engagement scope.",
         ],
       },
     ],
@@ -138,7 +138,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Conclusion",
         p: [
-          "Foreign companies operating in Israel today face a complex regulatory environment. Professional planning in advance — before activity commences — helps identify potential issues early and assess tax-efficient structures.",
+          "Foreign companies operating in Israel today face a complex regulatory environment. A review before activity commences may help identify accounting, tax, reporting and permanent-establishment issues and compare possible operating structures. The appropriate treatment depends on the facts, applicable law and relevant treaty.",
           "Nimrodi & Co. CPAs advises foreign companies on entering the Israeli market, including setting up the corporate structure, transfer pricing advisory, and ongoing reporting to the Israel Tax Authority.",
         ],
       },

@@ -90,7 +90,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           title: "Strategic Corporate Finance",
           body: (
             <>
-              We turn finance from a cost center into a growth engine. Disciplined budgeting, continuous variance tracking, and early detection of drift — with clear recommended actions for management and the board. This service pairs naturally with our <Link to="/en/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">startup CPA practice</Link>, <Link to="/en/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">foreign-company support in Israel</Link>, and <Link to="/en/audit" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">statutory audit and assurance</Link>.
+              Fractional CFO support may help management organize budgeting, cash-flow planning, variance analysis and financial information for decision-making. The scope, frequency, assumptions and responsibilities are agreed with management in advance. This service pairs naturally with our <Link to="/en/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">startup CPA practice</Link>, <Link to="/en/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">foreign-company support in Israel</Link>, and <Link to="/en/audit" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">statutory audit and assurance</Link>.
             </>
           ),
           bullets: [
@@ -105,7 +105,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         {
           title: "Burn Rate & Runway — the company's lifeline",
           body:
-            "Every startup lives and dies by its Runway. We manage Burn and Runway calculations like clockwork — and identify the moment to start the next raise, cut costs, or shift strategy while there is still room to maneuver:",
+            "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, planned expenditure, financing arrangements and management assumptions. We can assist with calculations and scenarios, while fundraising, cost and strategy decisions remain the responsibility of management:",
           bullets: [
             "Gross Burn vs Net Burn — precise monthly calculation",
             "Runway simulation across revenue, funding and event scenarios",
@@ -118,7 +118,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         {
           title: "Investor Relations & Board readiness",
           body:
-            "A professional board meeting builds trust — an unprepared meeting erodes it. We build the materials package, prep founders for Q&A, and often sit in the meeting itself to support the financial presentation and reinforce financial credibility:",
+            "Clear and consistent financial information can support board discussions. Depending on the agreed scope, services may include preparation of financial materials, review of assumptions, discussion preparation and participation in board or committee meetings. Management remains responsible for the information presented and the decisions made:",
           bullets: [
             "Monthly / quarterly Board Deck — consistent, professional structure",
             "Cross-sector KPI Dashboard: SaaS, E-Commerce, Marketplace",
@@ -131,7 +131,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         {
           title: "Financial model for fundraising",
           body:
-            "Serious investors look first for a model that speaks their language: clear assumptions, modular revenue engines, and sensitivities they can play with. Our models are built with the information and structure commonly expected in venture-capital due diligence:",
+            "A financial model can help present management’s assumptions, revenue drivers, expenditure plans, cash requirements and sensitivity scenarios. Models are prepared from information and assumptions supplied or approved by management and do not predict or guarantee actual performance:",
           bullets: [
             "Revenue engines: SaaS ARR, Transactional Revenue, Marketplace GMV",
             "Cohort Analysis and data-driven Retention Curves",

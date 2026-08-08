@@ -100,7 +100,7 @@ function ServicesPage() {
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">תחומי ההתמחות שלנו</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-              משרד רואי חשבון בוטיק – שירות מקצה לקצה
+              משרד רואי חשבון בוטיק – מגוון שירותי חשבונאות, מס וניהול כספים
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
               מפתיחת תיקים ברשויות ועד ביקורת שנתית וליווי מס בין־לאומי – מגוון שירותים חשבונאיים ומיסויים לעסקים, סטארטאפים ובעלי מקצוע, בהתאם להיקף ההתקשרות.
