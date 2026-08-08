@@ -111,7 +111,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Runway simulation across revenue, funding and event scenarios",
             "Cash-planning indicators for management review and decision-making",
             "Deferred Revenue and credit facility monitoring",
-            "Fundraise timing: a commonly used planning guideline is to begin fundraising while sufficient runway remains, often around 9–12 months depending on the company's circumstances",
+            "Fundraising timing is a management decision based on the company’s plans, market conditions, financing alternatives and available runway",
             "Periodic dashboards for management and the Board, where included in the engagement and supported by the available systems and data",
           ],
         },
@@ -122,7 +122,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           bullets: [
             "Monthly / quarterly Board Deck — consistent, professional structure",
             "Cross-sector KPI Dashboard: SaaS, E-Commerce, Marketplace",
-            "3–5 year Financial Model in files a VC knows how to review",
+            "Financial model and scenarios for the agreed planning period, presented in a format suitable for management and adviser review",
             "Periodic investor-update information prepared according to the agreed reporting scope",
             "Founder coaching before VC meetings",
             "Preparation of financial information and participation in board or committee meetings where agreed",

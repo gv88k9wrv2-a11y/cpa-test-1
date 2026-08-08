@@ -196,9 +196,9 @@ export const Route = createFileRoute("/cpa-startups")({
         {
           title: "מבני גיוס: SAFE, CLA והמרות",
           body:
-            "SAFE (Simple Agreement for Future Equity) ו-CLA (Convertible Loan Agreement) הם כלי הגיוס הדומיננטיים בשלבים המוקדמים. לכל אחד יתרונות, סיכונים ומורכבויות חשבונאיות שונות. אנחנו בונים את המסמכים והחשבונאות כך שלא ייצרו הפתעות בסבב הבא:",
+            "הסכמי SAFE והלוואות המירות עשויים ליצור היבטים חשבונאיים, מיסויים, הערכתיים ומשפטיים התלויים בתנאי ההסכם ובמסגרת הדיווח של החברה. המסמכים המשפטיים נערכים ומאושרים בידי יועציה המשפטיים של החברה. בהתאם להיקף ההתקשרות, ניתן לסייע בניתוח החשבונאי והמיסויי בישראל ובארגון מידע לחברה וליועציה:",
           bullets: [
-            "עיצוב תנאי SAFE: Valuation Cap, Discount, MFN, Pro-Rata",
+            "ניתוח חשבונאי ומיסויי של תנאי SAFE, לרבות Valuation Cap, Discount, MFN ו-Pro-Rata, בתיאום עם היועצים המשפטיים",
             "CLA עם ריבית, מועד פירעון ומנגנון המרה אוטומטי/אופציונלי",
             "טיפול חשבונאי לפי IFRS 9 / ASC 480 – התחייבות מול הון",
             "תרחישי המרה בסבב הבא – השפעה על Cap Table בדילול מלא",
@@ -210,7 +210,7 @@ export const Route = createFileRoute("/cpa-startups")({
           title: "Fractional CFO – ניהול כספים בכיר לסטארטאפ",
           body: (
             <>
-              רוב הסטארטאפים בשלבי Seed–Series B עדיין לא מצדיקים CFO משרה מלאה, אבל דווקא אז ההחלטות הפיננסיות קריטיות – Runway, תמחור, גיוסים ובורד. אנחנו נכנסים כ-<Link to="/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO</Link> ומספקים תמיכה פיננסית בכירה בהתאם לצורכי החברה ולהיקף ההתקשרות. חברות עם פעילות מעבר לים ישלימו את התמונה עם <Link to="/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ייעוץ מיסוי בין־לאומי</Link>, וחברות זרות בישראל יעדיפו לרוב את המסלול של <Link to="/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי חברות בת בישראל</Link>.
+              חברות בשלבי צמיחה עשויות להידרש לתמיכה פיננסית בכירה עוד לפני מינוי CFO במשרה מלאה. בהתאם לצורכי החברה ולהיקף ההתקשרות, ניתן לשלב שירותי <Link to="/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO</Link>. חברות עם פעילות בין־לאומית יכולות לבחון גם <Link to="/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">שירותי מיסוי בין־לאומי</Link>, וחברות זרות הפועלות בישראל יכולות לבחון <Link to="/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">שירותים לחברות זרות בישראל</Link>, בהתאם לפעילות ולהיקף ההתקשרות.
             </>
           ),
           bullets: [

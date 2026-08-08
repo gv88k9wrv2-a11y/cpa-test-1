@@ -15,7 +15,7 @@ const COPY = {
     reviewsEyebrow: "חוות דעת לקוחות",
     reviewsTitle: "מה לקוחות שלנו אומרים",
     reviewsSub:
-      "אנו מאמינים בשקיפות מלאה. במקום ציטוטים באתר, אנחנו מפנים אתכם ישירות למקורות הציבוריים שבהם מפורסמות חוות דעת אמיתיות על המשרד.",
+      "אנו מפנים למקורות ציבוריים שבהם ניתן לעיין בחוות דעת שפורסמו על המשרד, במקום להציג באתר ציטוטים נבחרים.",
     readOn: "קראו חוות דעת ב-",
     openSource: "פתיחת מקור המקור",
     ctaAll: "לצפייה בכל חוות הדעת",
@@ -34,7 +34,7 @@ const COPY = {
     reviewsEyebrow: "Client Reviews",
     reviewsTitle: "What Our Clients Say",
     reviewsSub:
-      "We believe in full transparency. Instead of quoting reviews on-site, we link you directly to the public platforms where authentic client reviews of the firm are published.",
+      "We link to public platforms where users can review published feedback about the firm, rather than displaying selected quotations on the website.",
     readOn: "Read reviews on ",
     openSource: "Open original source",
     ctaAll: "Read more reviews",

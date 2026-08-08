@@ -215,8 +215,8 @@ function HomeEn() {
                 { t: "Cross-border expertise", d: "Israeli-US Flips, transfer pricing, treaties, dual filings." },
                 { t: "Tech industry native", d: "Fluent across modern cloud accounting stacks — and we speak startup." },
                 { t: "Regulatory depth", d: "Review and preparation of advance tax-ruling applications, financial support for IIA grant applications and assessment of tax-benefit eligibility." },
-                { t: "Fundraising support", d: "Data rooms, financial modeling, DD ready — from Seed to Series C." },
-                { t: "Bilingual practice", d: "Full service in Hebrew and English, working across time zones." },
+                { t: "Fundraising support", d: "Organization of financial information, financial models and due-diligence support according to the company’s stage and agreed scope." },
+                { t: "Bilingual practice", d: "Services in Hebrew and English, with coordination across time zones where included in the engagement." },
               ].map((f) => (
                 <div key={f.t} className="rounded-xl border border-border bg-card p-6">
                   <div className="flex items-start gap-3">

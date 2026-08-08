@@ -36,7 +36,7 @@ function PrivacyPageEn() {
           <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
             Privacy Policy &amp; Terms of Use
           </h1>
-          <p className="mt-3 text-sm text-muted-foreground">Last updated: July 2026</p>
+          <p className="mt-3 text-sm text-muted-foreground">Last updated: August 2026</p>
         </header>
 
         <article className="mt-10 space-y-10 text-foreground leading-relaxed">
