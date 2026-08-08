@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
+import { FirmContactBlock } from "../components/firm-contact-block";
 
 const BASE = "https://www.nimrodi.co.il";
 const UPDATED_EN = "August 2026";
@@ -122,6 +123,7 @@ function AccessibilityEn() {
             </p>
           </div>
         </section>
+        <FirmContactBlock lang="en" />
       </main>
 
       <SiteFooterEn />

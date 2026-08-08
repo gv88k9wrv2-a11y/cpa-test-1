@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
+import { FirmContactBlock } from "../components/firm-contact-block";
 
 export const Route = createFileRoute("/en/privacy-policy")({
   head: () => ({
@@ -174,6 +175,7 @@ function PrivacyPageEn() {
             </address>
           </section>
         </article>
+        <FirmContactBlock lang="en" />
       </main>
       <SiteFooterEn />
       <FloatingWhatsAppEn />
