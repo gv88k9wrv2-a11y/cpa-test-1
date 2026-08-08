@@ -51,13 +51,13 @@ export const Route = createFileRoute("/en/cpa-international")({
         },
         {
           title: "Relocation & residency severance",
-          body: "Leaving Israel? Center of life, physical presence, family, home, work and social ties all matter. We help plan and document the severance, address exit tax (Section 100A), coordinate with the destination country's advisor, and review ongoing Israeli tax and reporting considerations after relocation.",
+          body: "A move abroad does not by itself determine Israeli tax residency. The position depends on the statutory tests, factual circumstances, applicable presumptions, treaty provisions and supporting documentation. Within the agreed scope, the firm may assist with the Israeli tax analysis, exit-tax considerations, organization of relevant information and coordination with an adviser in the destination country, without guaranteeing the position a tax authority may adopt.",
         },
         {
           title: "Treaty planning & cross-border",
           body: (
             <>
-              For dual-status individuals, executives with global equity and families spread across countries — we plan across treaties, coordinate foreign tax credits, time income recognition and file coordinated returns. Foreign parents entering Israel should also see our <Link to="/en/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">foreign-company support</Link>, and founders considering an Israel–Delaware flip should review our <Link to="/en/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">startup CPA practice</Link>.
+              For individuals with connections to more than one country, the tax and reporting treatment may depend on domestic law, the relevant treaty, the type and timing of income and the person’s circumstances. Within the agreed scope, the firm may assist with the Israeli analysis, organization of information and coordination with qualified advisers in the other jurisdiction. Foreign parents entering Israel should also see our <Link to="/en/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">foreign-company support</Link>, and founders considering an Israel–Delaware flip should review our <Link to="/en/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">startup CPA practice</Link>.
             </>
           ),
         },

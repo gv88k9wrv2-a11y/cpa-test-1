@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "Do you actually attend investor pitches?",
-    a: "Yes. We sit in VC meetings alongside the founders, answer complex financial questions, defend the model's assumptions and navigate the financial portion of the pitch. Support includes pre-meeting dry runs, coaching on financial terminology, and live response to investor challenges around Unit Economics, LTV/CAC, Rule of 40 and Gross Margin.",
+    a: "Depending on the agreed engagement scope, the firm may assist with preparation of financial materials, review of model assumptions, discussion preparation and participation in investor meetings. Management remains responsible for the information presented, the company’s statements and all fundraising decisions.",
   },
   {
     q: "What does a Data Room and Ongoing DD include?",
@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     q: "Which KPIs do you track for the Board?",
-    a: "For SaaS: MRR/ARR, Net Revenue Retention, Gross Margin, CAC Payback, LTV/CAC, Magic Number, Rule of 40. For commerce: Contribution Margin, Repeat Rate, AOV, Inventory Turnover. Cross-sector: Cash Balance, Burn, Runway, Headcount and Budget-vs-Actual. We build a monthly Dashboard with variance analysis and recommended actions, delivered to the board and investors on a fixed cadence.",
+    a: "The relevant KPIs depend on the company’s business model, stage, available data and reporting needs. Depending on the agreed scope, reporting may include revenue, retention, margins, customer economics, cash, burn, runway, headcount and budget-versus-actual information. The content, frequency and recipients of each report are agreed with management.",
   },
   {
     q: "How much does a Fractional CFO cost?",
@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     q: "When should a company move to a full-time CFO?",
-    a: "Usually after Series B, when ARR crosses $10M, headcount is 50+, operations span multiple countries and the board includes institutional investors. We manage the transition: define the role, run the search, and continue to advise the incoming CFO as external consultants during the handover to preserve continuity.",
+    a: "The appropriate time to appoint a full-time CFO depends on the company’s reporting complexity, financing activity, geographic footprint, internal team, governance requirements and management needs. The transition should be assessed according to the company’s circumstances rather than a single funding, revenue or headcount threshold. Where agreed, the firm may support an orderly handover of financial information and responsibilities.",
   },
 ];
 
@@ -77,10 +77,10 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       highlights={[
         "Annual budgeting and rigorous cash flow management",
         "Burn Rate & Runway — calculation, monitoring and scenarios",
-        "3–5 year VC-grade financial model (Base / Bull / Bear)",
+        "Financial model and scenarios for the agreed planning period, based on management-approved assumptions",
         "Investor & Board relations — decks, KPIs and pitch prep",
         "Support with financial information and participation in investor discussions where included in the engagement",
-        "Data Room management and continuous DD readiness",
+        "Organization of available financial and tax information for due-diligence processes, according to the agreed scope",
         "Unit-economics and Rule-of-40 analysis based on the company’s data and reporting needs",
         "Debt facilities, Venture Debt and FX hedging",
         "M&A, exit and next-round preparation",
@@ -107,12 +107,12 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           body:
             "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, planned expenditure, financing arrangements and management assumptions. We can assist with calculations and scenarios, while fundraising, cost and strategy decisions remain the responsibility of management:",
           bullets: [
-            "Gross Burn vs Net Burn — precise monthly calculation",
+            "Gross Burn and Net Burn calculations based on the available records and agreed assumptions",
             "Runway simulation across revenue, funding and event scenarios",
-            "Cash Trigger Points — when a decision becomes mandatory",
+            "Cash-planning indicators for management review and decision-making",
             "Deferred Revenue and credit facility monitoring",
             "Fundraise timing: a commonly used planning guideline is to begin fundraising while sufficient runway remains, often around 9–12 months depending on the company's circumstances",
-            "Real-time dashboards for management and the Board",
+            "Periodic dashboards for management and the Board, where included in the engagement and supported by the available systems and data",
           ],
         },
         {
@@ -123,7 +123,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Monthly / quarterly Board Deck — consistent, professional structure",
             "Cross-sector KPI Dashboard: SaaS, E-Commerce, Marketplace",
             "3–5 year Financial Model in files a VC knows how to review",
-            "Monthly Investor Update email — builds credibility and reputation",
+            "Periodic investor-update information prepared according to the agreed reporting scope",
             "Founder coaching before VC meetings",
             "Preparation of financial information and participation in board or committee meetings where agreed",
           ],
@@ -144,7 +144,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         {
           title: "Continuous Due Diligence & M&A readiness",
           body:
-            "Acquisition and funding opportunities arrive without warning. A ready company enters negotiations in days. Insufficient financial preparation can create unnecessary friction during important strategic and commercial processes. We manage the Data Room as an ongoing process, not an emergency project:",
+            "Organized financial and tax information may help a company respond more efficiently to financing or transaction requests. Depending on the agreed scope, the firm may assist with periodic organization of available information and coordination with management and the company’s other advisers:",
           bullets: [
             "Data Room on DocSend / Digify / Google Drive with standard VC folder structure",
             "Periodic organization of available financial records and coordination of supporting documents for due diligence",

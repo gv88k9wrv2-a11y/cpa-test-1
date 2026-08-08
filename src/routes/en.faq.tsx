@@ -5,7 +5,7 @@ const BASE = "https://www.nimrodi.co.il";
 
 const FAQS = [
   { cat: "General", q: "Where is your office and which regions do you serve?", a: "Our office is located in Herzliya Pituach. We serve clients across Israel and internationally via video." },
-  { cat: "General", q: "How does the first meeting work?", a: "A free 45-minute introductory meeting — in-person or via video. We map your situation, discuss options and follow up with a transparent proposal." },
+  { cat: "General", q: "How does the first meeting work?", a: "An introductory meeting may be held in person or by video to understand the relevant needs and discuss a possible engagement. The proposed scope, responsibilities and fees are explained before professional services begin." },
   { cat: "General", q: "In which languages do you work?", a: "Hebrew and English, at full professional level — including reports, meetings and correspondence." },
   { cat: "Fees", q: "How is pricing determined?", a: "We prefer fixed-scope engagements. Fees are based on activity volume, complexity and required services. The proposed scope and fee structure are explained in advance and may change if the agreed work changes." },
   { cat: "Startups", q: "When should a startup engage a CPA?", a: "A startup may benefit from accounting and tax input before company formation, equity grants, financing or cross-border activity. Legal documents and elections should be addressed with qualified legal and tax advisers in the relevant jurisdictions." },
