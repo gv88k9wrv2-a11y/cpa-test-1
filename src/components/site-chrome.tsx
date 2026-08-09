@@ -387,7 +387,7 @@ export function SiteFooter() {
         <div>
           <div className="font-display text-xl font-bold">נמרודי ושות׳</div>
           <p className="mt-2 text-sm text-primary-foreground/70">
-            משרד רואי חשבון בוטיק בהרצליה פיתוח. מעל 25 שנות ניסיון בליווי חברות,
+            משרד רואי חשבון בוטיק בהרצליה פיתוח. המשרד פועל משנת 2000 ומלווה חברות,
             סטארטאפים, עצמאים ופרילנסרים.
           </p>
           <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
