@@ -35,7 +35,8 @@ export const Route = createFileRoute("/en/payroll")({
       icon={ReceiptText}
       eyebrow="Payroll & ESOP"
       title="Israeli payroll, employer reporting and equity-compensation support"
-      intro="Israeli payroll is complex — mandatory pension, study fund, National Insurance, disability, health tax, severance, expat regimes and equity plans. We handle it all so you can focus on your team."
+      intro="Israeli payroll may involve mandatory pension contributions, study-fund arrangements, National Insurance, severance, cross-border employee considerations and equity plans.
+We support the payroll and reporting processes included in the agreed scope."
       highlights={[
         "Monthly Israeli payslips (tlush)",
         "Bituach Leumi & income tax filings",

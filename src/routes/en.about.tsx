@@ -8,7 +8,7 @@ export const Route = createFileRoute("/en/about")({
   head: () => ({
     meta: [
       { title: "About Nimrodi & Co. — Boutique CPA in Herzliya Pituach" },
-      { name: "description", content: "About Nimrodi & Co. CPA — 25+ years serving Israeli and international clients from Herzliya Pituach with senior expertise and boutique-firm attention." },
+      { name: "description", content: "About Nimrodi & Co. CPA — serving Israeli and international clients from Herzliya Pituach since 2000, with senior-level involvement and boutique-firm attention." },
       { property: "og:title", content: "About Nimrodi & Co." },
       { property: "og:description", content: "About Nimrodi & Co., a boutique CPA firm in Herzliya Pituach supporting companies, startups and international clients in Israel. Learn more about our firm." },
       { property: "og:url", content: `${BASE}/en/about` },
@@ -36,7 +36,7 @@ function AboutEn() {
               About the firm
             </div>
             <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">
-              A boutique CPA firm with big-firm depth
+              A boutique CPA firm with senior-level involvement
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
               Nimrodi & Co. was founded on a simple idea: give clients the depth and rigor of a senior professional firm — with the accessibility, partner attention and continuity of a boutique. The firm has operated since 2000 and provides accounting, tax and financial services to companies, founders, individuals and international businesses operating in Israel.
@@ -61,7 +61,7 @@ function AboutEn() {
                   "Long-term relationships. Many client relationships develop over the long term.",
                   "Digital working methods. We use accounting platforms selected according to the client’s needs and the agreed scope of access.",
                   "Cross-border fluency. Israeli tax deeply understood, coordinated with US, UK and EU advisors.",
-                  "Transparent pricing. Fixed-scope engagements wherever possible — no billing surprises.",
+                  "Transparent pricing. Fixed-scope engagements where appropriate, with the scope, assumptions and pricing terms explained in advance.",
                 ].map((v) => (
                   <li key={v} className="flex items-start gap-2 text-foreground">
                     <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-gold" aria-hidden />

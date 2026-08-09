@@ -125,8 +125,9 @@ const SERVICES = [
     to: "/tax-consulting",
     icon: FileSpreadsheet,
     title: "ייעוץ מס ודיווחים מיוחדים",
-    desc: "התמחות מיוחדת במיסוי מטבעות דיגיטליים, ליווי עסקאות קריפטו מורכבות, ליווי ההתנהלות מול בנקים בישראל בכל הנוגע לכספים שמקורם בפעילות בנכסים דיגיטליים, והכנת דיווחים לרשות המסים בהתאם לאופי הפעילות ולדרישות הדין. בנוסף: הכנסות משכירות, שוק ההון, גילוי מרצון וחוות דעת חשבונאיות.",
-    badge: "מומחיות קריפטו",
+    desc: "ניסיון בטיפול בסוגיות מס הנוגעות למטבעות דיגיטליים ונכסים דיגיטליים, לרבות בחינת אופי הפעילות, ארגון נתוני עסקאות והכנת מידע לדיווח ולבחינת מקור כספים, בהתאם לנתונים שנמסרו, לדרישות הגורמים הרלוונטיים ולהוראות הדין.
+בנוסף: הכנסות משכירות, שוק ההון, גילוי מרצון וחוות דעת חשבונאיות.",
+    badge: "נכסים דיגיטליים וקריפטו",
   },
 ] as const;
 
@@ -298,7 +299,7 @@ function HomePage() {
               אודות המשרד
             </div>
             <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
-              משרד רואי חשבון בהרצליה עם ניסיון של מעל 25 שנה
+              משרד רואי חשבון בהרצליה הפועל משנת 2000
             </h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
               המשרד פועל מאז שנת 2000 מהרצליה פיתוח, ומנוהל על ידי רו״ח שלמה נמרודי –
@@ -314,9 +315,9 @@ function HomePage() {
             <ul className="mt-6 space-y-3">
               {[
                 "משרד בוטיק – יחס אישי ודיסקרטי",
-                "מומחיות בחברות טכנולוגיה, סטארטאפים וגיוסי הון",
-                "כלים חשבונאיים מתקדמים וניהול חשבונות מקוון",
-                "זמינות גבוהה ומענה מקצועי, שקוף ויעיל",
+                "ניסיון בליווי חשבונאי, פיננסי ומיסויי של חברות טכנולוגיה וסטארטאפים, לרבות בתהליכי גיוס הון",
+                "כלים חשבונאיים ותהליכי עבודה דיגיטליים בהתאם למערכת ולהיקף השירות",
+                "מענה מקצועי וברור, עם תיאום ציפיות לגבי היקף השירות, האחריות והתהליך",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
@@ -349,8 +350,8 @@ function HomePage() {
                 </div>
                 <div className="border-t border-l border-primary-foreground/10 p-6">
                   <Users className="mb-3 h-6 w-6 text-gold" aria-hidden />
-                  <div className="font-display text-3xl font-bold">מאות</div>
-                  <div className="text-sm text-primary-foreground/70">לקוחות מלווים לאורך השנים</div>
+                  <div className="font-display text-3xl font-bold">משנת 2000</div>
+                  <div className="text-sm text-primary-foreground/70">ליווי חברות, בעלי עסקים ויחידים</div>
                 </div>
                 <div className="border-t border-primary-foreground/10 p-6">
                   <Star className="mb-3 h-6 w-6 text-gold" aria-hidden />

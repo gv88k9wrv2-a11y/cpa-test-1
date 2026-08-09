@@ -269,7 +269,7 @@ export function SiteFooterEn() {
         <div>
           <div className="font-display text-xl font-bold">Nimrodi &amp; Co.</div>
           <p className="mt-2 text-sm text-primary-foreground/70">
-            Boutique CPA firm in Herzliya Pituach. Over 25 years of experience serving companies, startups, freelancers and foreign investors in Israel.
+            Boutique CPA firm in Herzliya Pituach. Operating since 2000 and serving companies, startups, freelancers and foreign investors in Israel.
           </p>
           <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
             <div><a href={PHONE_TEL} className="hover:text-gold">Phone: {PHONE_DISPLAY_EN}</a></div>

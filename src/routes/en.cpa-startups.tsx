@@ -127,7 +127,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
           ],
         },
         {
-          title: "Fundraising readiness — what a serious investor will check",
+          title: "Fundraising readiness — financial information investors may review",
           body: "Before a priced funding round or other transaction, the company may need to organize financial, tax, corporate and commercial information requested by investors and advisers. The firm can assist with the financial and tax information and coordinate with the company’s legal and other professional advisers within the agreed scope:",
           bullets: [
             "Review and organization of available fully diluted capitalization data, including SAFEs, convertible instruments and the option pool",

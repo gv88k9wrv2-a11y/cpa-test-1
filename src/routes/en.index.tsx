@@ -53,7 +53,8 @@ const FAQS = [
   },
   {
     q: "Do you handle foreign income, crypto and relocation?",
-    a: "Yes. We hold specialized expertise in cryptocurrency and digital asset taxation. Transactions involving virtual currencies may give rise to tax and reporting obligations depending on the nature of the activity, the facts of the transactions, the taxpayer's circumstances, and applicable law. We navigate complex Web3 transactions and assist with preparing documentation and information regarding the source and history of funds for consideration by relevant financial institutions, subject to the bank's policies, compliance procedures, and final decision. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
+    a: "Yes.
+We have experience with Israeli tax and reporting matters involving digital assets, including the organization of transaction data, review of the activity’s classification and preparation of information for relevant filings. Transactions involving virtual currencies may give rise to tax and reporting obligations depending on the nature of the activity, the facts of the transactions, the taxpayer's circumstances, and applicable law. We navigate complex Web3 transactions and assist with preparing documentation and information regarding the source and history of funds for consideration by relevant financial institutions, subject to the bank's policies, compliance procedures, and final decision. We also handle international tax advisory, FBAR/FATCA/CRS reporting, residency severance and advisory for new immigrants and returning residents.",
   },
 ];
 
@@ -118,7 +119,7 @@ function HomeEn() {
               Boutique CPA Firm Specializing in Startups, High-Tech & Cross-Border Taxation
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Personal attention, senior-partner involvement and deep expertise in Israeli taxation, high-tech accounting, cross-border structures and fundraising — from Seed to Exit.
+              Personal attention and senior-level involvement, with experience in Israeli accounting and tax, cross-border financial matters and fundraising-related reporting across different stages of a company’s development.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95">
@@ -166,14 +167,14 @@ function HomeEn() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="text-center">
               <div className="text-xs font-semibold uppercase tracking-widest text-gold">Our services</div>
-              <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">Everything a modern business needs</h2>
+              <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">Accounting, tax and financial services for companies and business owners</h2>
             </div>
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {[
                 { to: "/en/cpa-startups", icon: Building2, title: "Startups & Tech", desc: "Accounting support for fundraising, Section 102 equity matters, proposed Israeli-Delaware restructurings and assessment of tax-benefit eligibility." },
                 { to: "/en/cpa-freelancers", icon: Briefcase, title: "Freelancers & Self-Employed", desc: "File openings, VAT reporting, annual returns, Capital Declarations (Asset & Net Worth Report)." },
                 { to: "/en/cpa-foreign-companies", icon: Globe2, title: "Foreign Companies", desc: "Subsidiary vs. branch, banking, Transfer Pricing, ongoing compliance." },
-                { to: "/en/tax-consulting", icon: Award, title: "Tax Advisory & Special Reports", desc: "Specialized expertise in cryptocurrency and digital asset taxation, navigating complex Web3 transactions, assisting with documentation regarding source and history of funds for consideration by relevant financial institutions, and filing tailored compliance reports with the Tax Authority. Plus Pre-Rulings, appeals and objections.", badge: "Crypto & Web3 Expert" },
+                { to: "/en/tax-consulting", icon: Award, title: "Tax Advisory & Special Reports", desc: "Experience with Israeli tax and reporting matters involving digital assets, including transaction-data organization and review of the activity’s classification., navigating complex Web3 transactions, assisting with documentation regarding source and history of funds for consideration by relevant financial institutions, and filing tailored compliance reports with the Tax Authority. Plus Pre-Rulings, appeals and objections.", badge: "Digital Asset Tax & Reporting" },
                 { to: "/en/audit", icon: TrendingUp, title: "Audit & Assurance", desc: "Israeli GAAP & IFRS, statutory audits, due diligence." },
                 { to: "/en/cpa-international", icon: Users, title: "International Tax", desc: "Relocation, returning residents, olim benefits, treaties." },
               ].map((s) => (
