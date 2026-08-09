@@ -35,8 +35,7 @@ export const Route = createFileRoute("/en/payroll")({
       icon={ReceiptText}
       eyebrow="Payroll & ESOP"
       title="Israeli payroll, employer reporting and equity-compensation support"
-      intro="Israeli payroll may involve mandatory pension contributions, study-fund arrangements, National Insurance, severance, cross-border employee considerations and equity plans.",
-      "We support the payroll and reporting processes included in the agreed scope."
+      intro="Israeli payroll may involve mandatory pension contributions, study-fund arrangements, National Insurance, severance, cross-border employee considerations and equity plans. We support the payroll and reporting processes included in the agreed scope."
       highlights={[
         "Monthly Israeli payslips (tlush)",
         "Bituach Leumi & income tax filings",

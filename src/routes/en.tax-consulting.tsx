@@ -36,8 +36,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
       icon={FileSpreadsheet}
       eyebrow="Complex Tax, Crypto & Voluntary Disclosure"
       title="Complex tax disputes, crypto assets and Voluntary Disclosure"
-      intro="Tax planning can help identify relevant tax considerations, compare available alternatives and document decisions before implementation.",
-      "The outcome depends on the facts, applicable law and the position of the relevant authorities. We advise entrepreneurs, companies and international investors on complex Israeli and cross-border tax matters — structuring transactions, preparing tax ruling requests, supporting clients during tax assessments and information requests, assisting with cryptocurrency tax and reporting matters, and supporting Voluntary Disclosure processes — with the same partners you speak to on day one."
+      intro="Tax planning can help identify relevant tax considerations, compare available alternatives and document decisions before implementation. The outcome depends on the facts, applicable law and the position of the relevant authorities. We advise entrepreneurs, companies and international investors on complex Israeli and cross-border tax matters — structuring transactions, preparing tax ruling requests, supporting clients during tax assessments and information requests, assisting with cryptocurrency tax and reporting matters, and supporting Voluntary Disclosure processes — with the same partners you speak to on day one."
       highlights={[
         "Corporate & personal tax planning",
         "Tax ruling requests from the Israel Tax Authority",
