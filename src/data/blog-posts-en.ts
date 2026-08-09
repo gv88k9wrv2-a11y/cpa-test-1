@@ -44,7 +44,8 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Israeli subsidiary — disadvantages",
         p: [
-          "Two-tier taxation: the Israeli company pays corporate income tax (currently 23% for tax year 2026), and a further withholding tax is imposed on dividends distributed to the parent, typically at 5%–15% under an applicable treaty.",
+          "Operations through an Israeli subsidiary may be subject to two levels of taxation: tax at the company level on taxable income and withholding tax when dividends are distributed to the parent company.",
+          "The applicable rates depend on Israeli law, the relevant tax treaty where applicable, the status of the recipient and the conditions governing the distribution.",
           "Requirements for equity capital, formal governance (board of directors, meetings), and audited annual financial statements.",
         ],
       },
@@ -59,7 +60,9 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Comparative tax efficiency — illustrative example",
         p: [
-          "For illustration only: a foreign company earns ILS 1 million in Israel. Through a branch — 23% corporate income tax, leaving ILS 770,000 to be transferred to the head office without further withholding. Through a subsidiary — 23% corporate income tax, followed by 5%–15% withholding on the dividend distribution, depending on the applicable treaty.",
+          "A meaningful tax comparison between an Israeli subsidiary and a branch requires more than applying the corporate tax rate.",
+          "The analysis may include the taxable income attributable to the Israeli activity, deductible expenses, intercompany payments, transfer pricing, withholding tax, the applicable tax treaty, foreign-tax-credit considerations and the treatment in the parent company’s jurisdiction.",
+          "The comparison should therefore be based on the planned structure and the relevant facts rather than on a general numerical example.",
           "The precise outcome depends on the relevant tax treaty, the parent's status in its home jurisdiction, and the availability of foreign tax credits in the country of residence. Accurate quantification requires a case-specific analysis, including the source country's tax rules.",
         ],
       },
@@ -116,7 +119,9 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Digital economy and taxation challenges",
         p: [
           "With the growth of the digital economy, foreign companies sell services and content to Israeli customers without any physical presence. Authorities in many jurisdictions are examining new taxation mechanisms — Digital Services Tax, OECD Pillar One rules, and sourcing rules.",
-          "In Israel, the Israel Tax Authority has issued guidance on 'significant digital presence', which may give rise to a tax liability even in the absence of a physical PE. Actual activity must be evaluated against this guidance and structured accordingly.",
+          "Israeli Tax Authority guidance addresses the Israeli income-tax and VAT considerations that may arise when a foreign company conducts digital activity involving Israeli customers or operations.",
+          "The analysis may include the functions performed in Israel, the involvement of local personnel or related entities, the manner in which services are offered to Israeli customers and the extent of the company’s business activity in Israel.",
+          "Whether the activity creates a permanent establishment, Israeli-source taxable income or VAT registration and reporting obligations depends on the facts, Israeli law and the relevant tax treaty where applicable.",
         ],
       },
       {

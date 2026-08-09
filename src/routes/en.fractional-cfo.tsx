@@ -137,7 +137,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Cohort Analysis and data-driven Retention Curves",
             "Unit Economics: CAC, LTV, Payback Period, Gross Margin",
             "Scenario Analysis: Base / Bull / Bear with adjustable assumptions",
-            "Cap-table and distribution-waterfall analysis for selected transaction scenarios",
+            "Cap-table and distribution-waterfall analysis for selected transaction scenarios and valuation ranges, based on the capitalization data and legal terms provided by the company and its advisers",
             "Dilution Simulation for future funding rounds",
           ],
         },

@@ -26,7 +26,7 @@ const FAQS = [
   },
   {
     q: "מה זה Permanent Establishment ולמה זה חשוב?",
-    a: "PE (Permanent Establishment / מוסד קבע) הוא קונספט מפתח באמנות מס: אם לחברה הזרה יש נוכחות עסקית משמעותית בישראל (משרד, עובד קבוע שסוגר עסקאות, מחסן מרכזי) – היא עלולה להיחשב כמנהלת פעילות בישראל ולהיות חייבת במס חברות ישראלי על אותה פעילות. תכנון נכון של מבנה הפעילות – לרבות שימוש ב-EOR או במבנה של Service Company מקומית במקרים מתאימים – מסייע בהפחתת סיכון PE לא רצוי.",
+    a: "PE (Permanent Establishment / מוסד קבע) הוא קונספט מפתח באמנות מס: אם לחברה הזרה יש נוכחות עסקית משמעותית בישראל (משרד, עובד קבוע שסוגר עסקאות, מחסן מרכזי) – היא עלולה להיחשב כמנהלת פעילות בישראל ולהיות חייבת במס חברות ישראלי על אותה פעילות. מבנה העסקת העובדים והפעלת הפעילות בישראל, לרבות שימוש ב־EOR או בחברת שירותים מקומית, עשוי להשפיע על חובות המס, השכר, הדיווח והחשיפה האפשרית למוסד קבע. הבחינה צריכה להתבסס על הפעילות בפועל, סמכויות הגורמים בישראל, ההסכמים, חלוקת התפקידים, הדין הישראלי ואמנת המס הרלוונטית ככל שחלה. שימוש במבנה מסוים אינו מבטיח כשלעצמו שלא ייווצר מוסד קבע או שלא יחולו חובות רישום ודיווח בישראל.",
   },
   {
     q: "אנחנו רוצים לשלם למפתחים בישראל – חייבים לפתוח סניף?",
@@ -159,9 +159,21 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
           title: "Fractional CFO לחברות זרות בישראל",
           body: (
             <>
-              חברות רב-לאומיות שפועלות בישראל צריכות דמות כספים בכירה מקומית שמדברת עם ה-HQ בשפה שלו (US GAAP / IFRS, בקרה פנימית SOX-ready), ובאותו זמן מכירה את הרגולציה הישראלית לעומק. אנחנו משמשים כ-<Link to="/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO ישראלי</Link> של החברה – מגשרים בין ה-Corporate ל-Local, מובילים את <Link to="/audit" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">הביקורת השנתית ו-Due Diligence</Link>, ומטפלים ב<Link to="/payroll" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">שכר ו-ESOP לעובדים בישראל</Link>.
+              <p>
+                חברות רב-לאומיות שפועלות בישראל צריכות דמות כספים בכירה מקומית שמדברת עם ה-HQ בשפה שלו (US GAAP / IFRS, בקרה פנימית SOX-ready), ובאותו זמן מכירה את הרגולציה הישראלית לעומק.
+              </p>
+              <p className="mt-3">
+                בהתאם לצורכי החברה ולהיקף ההתקשרות, ניתן לשלב תמיכה של <Link to="/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO</Link> בישראל.
+              </p>
+              <p className="mt-3">
+                השירות עשוי לכלול תיאום מידע פיננסי בין הפעילות המקומית לבין מטה הקבוצה, הכנת מידע לתהליכי <Link to="/audit" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ביקורת ובדיקת נאותות</Link> ותמיכה בתהליכי <Link to="/payroll" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">שכר ותוכניות הוניות לעובדים בישראל</Link>.
+              </p>
+              <p className="mt-3">
+                היקף האחריות, תדירות הדיווח וחלוקת העבודה בין הנהלת החברה, המשרד והיועצים האחרים נקבעים מראש במסגרת ההתקשרות.
+              </p>
             </>
           ),
+
           bullets: [
             "Local Country Controller / Country CFO של המטה בישראל",
             "דיווח חודשי ורבעוני ל-HQ בפורמט ובמטבע הנדרשים",
