@@ -50,10 +50,11 @@ function BlogIndex() {
             מאמרים ותובנות מקצועיות
           </div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            תובנות שממנפות עסקים
+            מדריכים מקצועיים בחשבונאות, מס וניהול כספים
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            מדריכים, מאמרים ועדכונים בנושאי חשבונאות ומיסוי, המיועדים להציג מידע כללי בשפה ברורה.
+            מדריכים ומאמרים בנושאי חשבונאות, מס, דיווח וניהול כספים לחברות, עצמאים, סטארטאפים וחברות זרות הפועלות בישראל.
+
           </p>
         </div>
       </section>

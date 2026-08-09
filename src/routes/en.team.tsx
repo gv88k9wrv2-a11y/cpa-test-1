@@ -98,7 +98,7 @@ function TeamEn() {
             </div>
             <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">Our partners and senior team</h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              Our professional team provides private clients, corporations, and startups with comprehensive accounting expertise and advanced, high-level tax solutions.
+              The firm’s team supports individuals, companies, startups and foreign companies operating in Israel with accounting, tax, reporting and financial-management services, according to each client’s needs and the agreed engagement scope.
             </p>
           </div>
         </section>
