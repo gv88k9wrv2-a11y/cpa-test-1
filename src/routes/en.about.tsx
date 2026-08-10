@@ -49,7 +49,7 @@ function AboutEn() {
             <article>
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our story</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Founded by Shlomo Nimrodi, CPA, the practice grew by word of mouth: entrepreneurs, executives and families who wanted a real advisor rather than a form-filler. Today we advise clients in Israel and internationally across technology, professional services, real estate, and cross-border activities.
+                Founded by Shlomo Nimrodi, CPA, the firm serves companies, entrepreneurs, executives and individuals in Israel and internationally in areas including technology, professional services, real estate and cross-border activity.
               </p>
             </article>
 
@@ -57,10 +57,10 @@ function AboutEn() {
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our approach</h2>
               <ul className="mt-5 space-y-3">
                 {[
-                  "Senior-partner attention. You work directly with the senior professional responsible for your engagement.",
-                  "Long-term relationships. Many client relationships develop over the long term.",
+                  "Senior-level involvement. The professional responsible for the engagement is identified according to the agreed scope and working arrangements.",
+                  "Long-term working relationships. Engagements may continue over time according to the client’s needs and the agreed scope.",
                   "Digital working methods. We use accounting platforms selected according to the client’s needs and the agreed scope of access.",
-                  "Cross-border fluency. Israeli tax deeply understood, coordinated with US, UK and EU advisors.",
+                  "Cross-border coordination. Israeli tax matters may be coordinated with qualified advisers in the relevant foreign jurisdictions.",
                   "Transparent pricing. Fixed-scope engagements where appropriate, with the scope, assumptions and pricing terms explained in advance.",
                 ].map((v) => (
                   <li key={v} className="flex items-start gap-2 text-foreground">

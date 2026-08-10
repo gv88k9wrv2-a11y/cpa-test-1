@@ -16,9 +16,9 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
   head: () => ({
     meta: [
       { title: "CPA for Freelancers & Single-Member Companies | Nimrodi" },
-      { name: "description", content: "CPA services in Israel for freelancers and consultants: registration, ongoing reporting, annual returns and capital declarations. Contact us to get started." },
+      { name: "description", content: "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm." },
       { property: "og:title", content: "CPA for Freelancers — Nimrodi & Co." },
-      { property: "og:description", content: "Accounting and tax support for freelancers, consultants and independent businesses in Israel: registration, filings and annual returns. Talk to our team." },
+      { property: "og:description", content: "Accounting and tax support for freelancers, consultants and independent businesses in Israel, including registration, filings and annual returns. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/cpa-freelancers` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -106,13 +106,13 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           ],
         },
         {
-          title: "Sole proprietor → private company — and the Pocket Company (חברת ארנק) trap",
-          body: "Incorporation can be a major strategic step, but it carries the risk of being reclassified as a Pocket Company under Section 62A of the Israeli Income Tax Ordinance. The rule targets professionals using an Ltd shell for what is effectively employment — where the section applies, income may be attributed to the individual shareholder and the effective tax outcome can change. We help review the relevant considerations and documentation:",
+          title: "Sole proprietor → private company — review of the Pocket Company rules",
+          body: "Operating through a private company may require review of the Pocket Company rules under Section 62A of the Israeli Income Tax Ordinance. The analysis depends on the activity, sources of income, working relationships and applicable law. Within the agreed scope, the firm may assist with reviewing the relevant facts and documentation:",
           bullets: [
             "Economic crossover simulation — sole proprietor vs. company",
-            "Genuine business substance: multiple clients, business risk, investment",
+            "Characteristics of the business activity, including clients, risks, investment and the manner in which services are provided",
             "Review of client concentration and the factual characteristics of the working relationship where employee-like or pocket-company classification may be relevant",
-            "Hiring employees or subcontractors — strengthens business classification",
+            "Employees and subcontractors considered as part of the overall factual analysis of the activity",
             "Separation of owner's draws from salary; documentation of owner's role",
             "Support with tax ruling requests in relevant cases, based on the available information and agreed scope",
             "Review of controlling-shareholder distribution considerations under the applicable rules",

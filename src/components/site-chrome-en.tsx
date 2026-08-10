@@ -336,7 +336,7 @@ export function RelatedServicesNavEn({ currentPath }: { currentPath?: string }) 
           <div className="text-xs font-semibold uppercase tracking-widest text-gold">Continue reading</div>
           <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">More services from Nimrodi &amp; Co.</h2>
           <p className="mx-auto mt-2 max-w-2xl text-sm text-muted-foreground">
-            All areas of expertise of our boutique CPA firm in Herzliya Pituach.
+            Explore additional accounting, tax and financial services available from our Herzliya Pituach office.
           </p>
         </div>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

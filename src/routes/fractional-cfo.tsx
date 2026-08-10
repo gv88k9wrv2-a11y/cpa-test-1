@@ -52,7 +52,7 @@ export const Route = createFileRoute("/fractional-cfo")({
       {
         property: "og:description",
         content:
-          "ניהול כספים במיקור חוץ לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס. דברו איתנו על הצרכים שלכם. נשמח לסייע.",
+          "ניהול כספים במיקור חוץ לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס. דברו איתנו על הצרכים שלכם.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/fractional-cfo" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
@@ -180,7 +180,7 @@ export const Route = createFileRoute("/fractional-cfo")({
         ],
       }}
       faqs={FAQS}
-      ctaHeadline="לפני הגיוס הבא או בישיבת בורד חודש הבא? בואו נדבר."
+      ctaHeadline="רוצים לבחון את צורכי התקציב, התזרים והדיווח הניהולי? צרו קשר לשיחת היכרות."
     />
   ),
 });

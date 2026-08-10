@@ -102,7 +102,7 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
       {
         to: "/tax-consulting",
         label: "ייעוץ מס",
-        desc: "תכנון, Pre-Ruling, השגות",
+        desc: "בחינת היבטי מס, החלטות מיסוי והשגות",
         icon: FileSpreadsheet,
       },
     ],

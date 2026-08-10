@@ -36,8 +36,8 @@ const GROUPS: ServiceGroup[] = [
   {
     title: "שירותי ליבה",
     items: [
-      { to: "/fractional-cfo", label: "Fractional CFO – ניהול כספים אסטרטגי", icon: ChartLine, desc: "סמנכ״ל כספים במיקור חוץ – Burn, Runway, מודלים למשקיעים, יחסי בורד ו-DD." },
-      { to: "/bookkeeping", label: "הנהלת חשבונות", icon: Calculator, desc: "ניהול חשבונות מקוון, סגירות חודשיות ודוחות ניהוליים על פלטפורמות ענן מודרניות." },
+      { to: "/fractional-cfo", label: "Fractional CFO – ניהול כספים אסטרטגי", icon: ChartLine, desc: "תקציב, תזרים, מדדי Burn ו־Runway, מודלים פיננסיים ומידע ניהולי לדירקטוריון ולמשקיעים." },
+      { to: "/bookkeeping", label: "הנהלת חשבונות", icon: Calculator, desc: "הנהלת חשבונות דיגיטלית, התאמות, דיווחים תקופתיים והפקת מידע ניהולי בהתאם למערכת ולהיקף השירות." },
       { to: "/payroll", label: "שכר ואופציות (ESOP)", icon: ReceiptText, desc: "תלושי שכר, סעיף 102 (תוכניות אופציות ESOP), טופס 106, טופס 161 ומידע ותיאום בנושאי הפקדות פנסיוניות." },
       { to: "/audit", label: "ביקורת חשבונאית", icon: FileSearch, desc: "ביקורת דוחות כספיים בהתאם לכללי החשבונאות המקובלים בישראל ולתקני IFRS, וכן בדיקות נאותות בעסקאות מיזוג ורכישה." },
       { to: "/tax-consulting", label: "ייעוץ מס", icon: FileSpreadsheet, desc: "בחינת סוגיות מס, הכנת בקשות להחלטות מיסוי במקרים המתאימים וליווי חשבונאי ומיסויי בהליכי שומה והשגה." },
@@ -47,7 +47,7 @@ const GROUPS: ServiceGroup[] = [
     title: "לפי סוג לקוח",
     items: [
       { to: "/cpa-startups", label: "סטארטאפים וחברות טכנולוגיה", icon: Rocket, desc: "גיוסי הון, אופציות 102, מבנה Delaware-Israel Flip ומעמד מפעל טכנולוגי מועדף." },
-      { to: "/cpa-freelancers", label: "עצמאים ופרילנסרים", icon: Briefcase, desc: "פתיחת תיק, ניהול שוטף, דוח שנתי והצהרת הון." },
+      { to: "/cpa-freelancers", label: "עצמאים ופרילנסרים", icon: Briefcase, desc: "סיוע בפתיחת תיקים, דיווחים שוטפים, דוח שנתי והכנת מידע להצהרת הון, בהתאם להיקף ההתקשרות." },
       { to: "/cpa-foreign-companies", label: "חברות זרות בישראל", icon: Globe2, desc: "חברה בת או סניף, KYC, Transfer Pricing ודיווחים שוטפים לפי הדרישות החלות." },
       { to: "/cpa-herzliya", label: "רואה חשבון בהרצליה פיתוח", icon: MapPin, desc: "משרד בוטיק מקומי בלב מסדרון ההייטק של ישראל." },
     ],
@@ -67,13 +67,13 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "כל שירותי משרד רואי חשבון נמרודי ושות׳: ליווי חברות וסטארטאפים, שירותים לעצמאים ופרילנסרים, ייעוץ מס, הנהלת חשבונות, גיוסי הון, ייעוץ בין־לאומי וקריפטו.",
+          "שירותי חשבונאות, ביקורת, מס, הנהלת חשבונות, שכר ודיווח לחברות, סטארטאפים, עצמאים וחברות זרות, לרבות נכסים דיגיטליים.",
       },
       { property: "og:title", content: "שירותי משרד רואי חשבון נמרודי ושות׳" },
       {
         property: "og:description",
         content:
-          "שירותי חשבונאות, שכר, ביקורת, ייעוץ מס וניהול כספים לחברות, לסטארטאפים ולעצמאים, בהתאם לצורך ולהיקף המוסכם. עיינו בתחומי השירות של המשרד שלנו. נשמח לסייע.",
+          "שירותי חשבונאות, שכר, ביקורת, מס ומידע ניהולי לחברות, סטארטאפים, עצמאים וחברות זרות, בהתאם לצורך ולהיקף ההתקשרות.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/services" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
@@ -100,7 +100,7 @@ function ServicesPage() {
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">תחומי ההתמחות שלנו</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-              משרד רואי חשבון בוטיק – מגוון שירותי חשבונאות, מס וניהול כספים
+              שירותי חשבונאות, ביקורת, מס, שכר ומידע פיננסי
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
               מפתיחת תיקים ברשויות ועד ביקורת שנתית וליווי מס בין־לאומי – מגוון שירותים חשבונאיים ומיסויים לעסקים, סטארטאפים ובעלי מקצוע, בהתאם להיקף ההתקשרות.
