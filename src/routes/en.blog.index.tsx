@@ -12,12 +12,12 @@ export const Route = createFileRoute("/en/blog/")({
       {
         name: "description",
         content:
-          "Professional articles on international taxation, foreign companies in Israel, relocation and tax residency — clear, current insight from Nimrodi & Co. CPAs.",
+          "Articles on international taxation, foreign companies in Israel, relocation and tax residency from Nimrodi & Co. CPA. Read the latest available content.",
       },
       { property: "og:title", content: "Blog — Nimrodi & Co. CPAs" },
       {
         property: "og:description",
-        content: "Articles and updates from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and digital assets. Read the blog.",
+        content: "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and digital assets. Explore the available posts.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: CANONICAL },

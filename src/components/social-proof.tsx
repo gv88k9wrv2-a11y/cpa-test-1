@@ -17,22 +17,22 @@ const COPY = {
     reviewsSub:
       "אנו מפנים למקורות ציבוריים שבהם ניתן לעיין בחוות דעת שפורסמו על המשרד, במקום להציג באתר ציטוטים נבחרים.",
     readOn: "קראו חוות דעת ב-",
-    openSource: "פתיחת מקור המקור",
+    openSource: "פתיחת המקור",
     ctaAll: "לצפייה בכל חוות הדעת",
     disclaimer:
       "מוצגים כאן קישורים למקורות ציבוריים בלבד. כל חוות דעת נכתבה על ידי הכותב במקור החיצוני.",
   },
   en: {
-    credEyebrow: "Proven Credibility",
-    credTitle: "An established firm with a real track record",
-    credSub: "Facts, not marketing claims.",
+    credEyebrow: "Firm Information",
+    credTitle: "Operating history and client focus",
+    credSub: "Published information about the firm.",
     facts: [
       { icon: CalendarDays, label: "Operating since 2000" },
       { icon: UserCheck, label: "Led by CPA Shlomo Nimrodi" },
       { icon: Globe2, label: "Serving companies, startups & international clients" },
     ],
     reviewsEyebrow: "Client Reviews",
-    reviewsTitle: "What Our Clients Say",
+    reviewsTitle: "Published Client Reviews",
     reviewsSub:
       "We link to public platforms where users can review published feedback about the firm, rather than displaying selected quotations on the website.",
     readOn: "Read reviews on ",
