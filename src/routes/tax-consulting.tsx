@@ -166,7 +166,9 @@ export const Route = createFileRoute("/tax-consulting")({
           title: "דיווח ומיסוי פעילות בנכסים דיגיטליים",
           body: (
             <>
-              רשות המסים מסווגת מטבעות דיגיטליים כנכס לצורכי מס – מכירה, המרה או שימוש עשויים להוות אירוע מס. אנו מספקים ייעוץ מס, תיעוד והכנת מידע תומך ביחס לנכסים דיגיטליים ולמקור כספים, לרבות הכנת מסמכים להצגה בפני מוסדות פיננסיים בהתאם לדרישותיהם ולדין הרלוונטי. לפעילות בעלת היבטים בין־לאומיים ראו גם <Link to="/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ייעוץ מיסוי בין־לאומי</Link>, וסוחרי קריפטו עצמאים – <Link to="/cpa-freelancers" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">רו״ח לעצמאים ופרילנסרים</Link>:
+              <p>מכירה, המרה, קבלה או שימוש בנכס דיגיטלי עשויים ליצור אירוע מס או חובת דיווח, בהתאם לאופי הפעילות, לסוג הנכס ולנסיבות.</p>
+              <p className="mt-3">בהתאם להיקף ההתקשרות, ניתן לסייע באיסוף ובארגון נתוני העסקאות, בחישוב רווחים או הפסדים, בבחינת סיווג הפעילות ובהכנת מידע לדיווח.</p>
+              <p className="mt-3">כאשר הפעילות כוללת מדינות אחרות או התנהלות מול מוסד פיננסי, יש לבחון גם את דרישות הדיווח, מקור הכספים והמסמכים עם אנשי המקצוע והגורמים הרלוונטיים. ראו גם <Link to="/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ייעוץ מיסוי בין־לאומי</Link> ו<Link to="/cpa-freelancers" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">רו״ח לעצמאים ופרילנסרים</Link>:</p>
             </>
           ),
           bullets: [

@@ -132,7 +132,9 @@ export const Route = createFileRoute("/cpa-international")({
           title: "פעילות עסקית בכמה מדינות",
           body: (
             <>
-              לחברות עם פעילות בכמה מדינות (סניפים, חברות בנות, לקוחות בחו״ל) יש שיקולי Transfer Pricing (תמחור עסקאות בין-חברתיות במחירי שוק), אמנות מס למניעת כפל מס, מיסוי במקור על תשלומים לחו״ל (Withholding Tax), פרטי חשבונאות בין ישויות, וסיכוני Permanent Establishment. אנו מסייעים לבחון מבנה מס מתאים ולתכנן את ההתנהלות בהתאם לפעילות, לדין ולדרישות הרגולטוריות הרלוונטיות. חברות זרות שפותחות פעילות בישראל ימצאו סקירה מלאה בעמוד <Link to="/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי חברות זרות בישראל</Link>, וסטארטאפים לפני Flip לדלאוור ימצאו את הרקע ב<Link to="/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי סטארטאפים</Link>.
+              <p>פעילות באמצעות חברות, סניפים, עובדים, ספקים או לקוחות בכמה מדינות עשויה ליצור חובות מס, ניכוי ודיווח ביותר ממדינה אחת.</p>
+              <p className="mt-3">הבחינה עשויה לכלול עסקאות בין צדדים קשורים, מחירי העברה, אמנות מס, מס זר, ניכוי מס במקור וחשיפה אפשרית למוסד קבע.</p>
+              <p className="mt-3">בהתאם להיקף ההתקשרות, ניתן לסייע בהיבטים הישראליים ובתיאום המידע עם יועצים במדינות הרלוונטיות. ראו גם <Link to="/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי חברות זרות בישראל</Link> ו<Link to="/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">ליווי סטארטאפים</Link>.</p>
             </>
           ),
           bullets: [
