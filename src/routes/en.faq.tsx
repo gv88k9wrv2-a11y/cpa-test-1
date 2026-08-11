@@ -60,7 +60,7 @@ function FaqEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gold">FAQ</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-gold">Israeli CPA FAQ</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">Israeli Accounting and Tax Frequently Asked Questions</h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
               Answers to common questions about Israeli accounting, tax, startups, foreign companies, freelancers, and digital assets.

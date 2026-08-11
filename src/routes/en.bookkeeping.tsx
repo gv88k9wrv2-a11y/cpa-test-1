@@ -46,7 +46,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
       ]}
       sections={[
         {
-          title: "Bookkeeping Services",
+          title: "Bookkeeping and Accounting Processes",
           body: "Israeli bookkeeping services may include the following accounting and reporting processes, according to the agreed engagement:",
           bullets: [
             "Vendor invoice capture, approval workflows, and payment information",
