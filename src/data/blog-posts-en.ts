@@ -79,7 +79,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Conclusion",
         p: [
           "There is no single correct answer for every foreign company. The decision depends on a combination of tax considerations, legal risk, hiring plans, and long-term strategic objectives in Israel. In many cases, technology companies prefer a subsidiary, while a branch may be suitable for more limited activity.",
-          "Nimrodi & Co. CPAs can assist with the Israeli accounting and tax analysis of possible operating structures and with the preparation of information for registrations and ongoing reporting. Entity formation and legal structuring should be reviewed and implemented with qualified legal advisers. Contact us to discuss the activity and the possible engagement scope.",
+          "Nimrodi & Co. can assist with the Israeli accounting and tax analysis of possible operating structures and with the preparation of information for registrations and ongoing reporting. Entity formation and legal structuring should be reviewed and implemented with qualified legal advisers. Contact the firm to discuss the activity and the possible engagement scope.",
         ],
       },
     ],
@@ -144,7 +144,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Conclusion",
         p: [
           "Foreign companies operating in Israel today face a complex regulatory environment. A review before activity commences may help identify accounting, tax, reporting and permanent-establishment issues and compare possible operating structures. The appropriate treatment depends on the facts, applicable law and relevant treaty.",
-          "Nimrodi & Co. CPAs advises foreign companies on entering the Israeli market, including setting up the corporate structure, transfer pricing advisory, and ongoing reporting to the Israel Tax Authority.",
+          "Nimrodi & Co. advises foreign companies entering the Israeli market on accounting and tax analysis of proposed structures, transfer pricing, and ongoing reporting to the Israel Tax Authority.",
         ],
       },
     ],
@@ -207,7 +207,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Conclusion",
         p: [
           "Relocation is a complex personal and financial move that requires advance tax preparation. Proper planning in the year preceding the move can help assess tax exposure, reduce double-taxation risk, and support orderly reporting to the tax authorities in Israel and the destination country.",
-          "Nimrodi & Co. CPAs advises Israelis before, during, and after relocation — including residency analysis, exit tax, tax treaties, and continued Israeli reporting. Contact us for an initial consultation.",
+          "Nimrodi & Co. assists with Israeli relocation tax matters, including tax residency analysis, exit tax, tax treaties, and ongoing Israeli reporting. Contact our Israeli CPA firm for an introductory call about relocation tax, residency, treaty, and reporting needs.",
         ],
       },
     ],

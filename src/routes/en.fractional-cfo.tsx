@@ -7,15 +7,15 @@ const BASE = "https://www.nimrodi.co.il";
 
 const FAQS = [
   {
-    q: "What is a Fractional CFO and who is it for?",
+    q: "What is a fractional CFO in Israel and which companies need one?",
     a: "A fractional CFO provides senior financial-management support on a part-time or flexible basis. The appropriate level of involvement depends on the company’s stage, reporting needs, internal resources and planned transactions. The engagement scope, responsibilities, reporting frequency and points of contact are agreed in advance.",
   },
   {
-    q: "How is a Fractional CFO different from a bookkeeper?",
+    q: "How are fractional CFO services different from bookkeeping?",
     a: "Bookkeeping records and organizes financial transactions. Fractional CFO support may include budgeting, cash-flow planning, management reporting, financial models, board information and transaction preparation. The division of responsibilities between bookkeeping, management and CFO support is defined according to the company’s needs and the agreed scope.",
   },
   {
-    q: "How are Burn Rate and Runway calculated, and why does it matter?",
+    q: "How are startup burn rate and runway calculated?",
     a: "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, operating payments, financing arrangements and assumptions. The calculation and scenarios should be updated when material information changes. Fundraising timing is a management decision that depends on the company’s plans, market conditions and available financing alternatives.",
   },
   {
@@ -23,11 +23,11 @@ const FAQS = [
     a: "Depending on the agreed engagement scope, the firm may assist with preparation of financial materials, review of model assumptions, discussion preparation and participation in investor meetings. Management remains responsible for the information presented, the company’s statements and all fundraising decisions.",
   },
   {
-    q: "What does a Data Room and Ongoing DD include?",
+    q: "What financial information belongs in a startup data room?",
     a: "A Data Room may include financial, tax, corporate, commercial, employment and intellectual-property information requested for a financing or transaction process. The required folders and documents depend on the purpose of the review, the parties’ requests and the information available from the company and its advisers. The firm can assist with organizing available financial and tax information and coordinating related requests within the agreed scope.",
   },
   {
-    q: "Which KPIs do you track for the Board?",
+    q: "Which startup KPIs may be included in board reporting?",
     a: "The relevant KPIs depend on the company’s business model, stage, available data and reporting needs. Depending on the agreed scope, reporting may include revenue, retention, margins, customer economics, cash, burn, runway, headcount and budget-versus-actual information. The content, frequency and recipients of each report are agreed with management.",
   },
   {

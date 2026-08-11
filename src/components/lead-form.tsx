@@ -39,7 +39,7 @@ const COPY = {
     },
   },
   en: {
-    eyebrow: "Discrete Consultation",
+    eyebrow: "Introductory Call",
     title: "Let's have a confidential conversation",
     subtitle:
       "Complete the details to prepare an email inquiry to the office. Inquiries are handled in accordance with the firm’s procedures and privacy policy.",

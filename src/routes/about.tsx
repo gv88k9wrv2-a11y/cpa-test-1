@@ -15,13 +15,13 @@ import aboutImage from "../assets/about-visual.webp";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "אודות | נמרודי ושות׳ – רואי חשבון בהרצליה פיתוח" },
+      { title: "אודות נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח משנת 2000" },
       {
         name: "description",
         content:
           "אודות נמרודי ושות׳, משרד רואי חשבון בהרצליה פיתוח הפעיל משנת 2000 ומלווה חברות, סטארטאפים, חברות זרות ועצמאים בחשבונאות ובמס. קראו עוד על המשרד. נשמח לסייע.",
       },
-      { property: "og:title", content: "אודות נמרודי ושות׳ – רואי חשבון בהרצליה" },
+      { property: "og:title", content: "אודות נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
       {
         property: "og:description",
         content:

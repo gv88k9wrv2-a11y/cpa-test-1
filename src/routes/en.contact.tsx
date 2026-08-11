@@ -9,7 +9,7 @@ const BASE = "https://www.nimrodi.co.il";
 export const Route = createFileRoute("/en/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Nimrodi & Co. CPA | Herzliya Pituach, Israel" },
+      { title: "Contact Nimrodi & Co. | CPA Firm in Herzliya Pituach" },
       { name: "description", content: "Contact Nimrodi & Co. in Herzliya Pituach for an introductory discussion about accounting, tax, payroll, audit and financial services in Israel." },
       { property: "og:title", content: "Contact Nimrodi & Co." },
       { property: "og:description", content: "Contact Nimrodi & Co. CPA in Herzliya Pituach to discuss accounting, tax, payroll, audit or reporting needs for a company or business in Israel." },
@@ -33,9 +33,9 @@ function ContactEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
-            <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">Get in touch</h1>
+            <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">Contact Our CPA Firm in Herzliya Pituach</h1>
             <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-              Contact us for an introductory discussion. We aim to respond as soon as reasonably possible.
+              Contact Nimrodi & Co. for an introductory discussion about accounting, tax, payroll, audit, and financial reporting services in Israel.
             </p>
           </div>
         </section>

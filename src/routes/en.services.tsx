@@ -13,27 +13,27 @@ const GROUPS = [
   {
     title: "Core Services",
     items: [
-      { to: "/en/fractional-cfo", label: "Fractional CFO", icon: LineChart, desc: "Outsourced senior CFO — Burn, Runway, VC-ready models, Board and continuous DD readiness." },
-      { to: "/en/bookkeeping", label: "Bookkeeping", icon: Calculator, desc: "Clean books, monthly closes and management reporting on modern cloud platforms." },
-      { to: "/en/payroll", label: "Payroll & ESOP", icon: ReceiptText, desc: "Israeli payslips, Section 102 (Equity & ESOP Incentive Plans), Form 106 (Annual Tax Statement), Form 161 and pension compliance." },
-      { to: "/en/audit", label: "Audit & Assurance", icon: FileSearch, desc: "Statutory audits under Israeli GAAP and IFRS; M&A due diligence." },
-      { to: "/en/tax-consulting", label: "Tax Advisory", icon: FileSpreadsheet, desc: "Tax planning, tax ruling requests and support during assessments and objections." },
+      { to: "/en/fractional-cfo", label: "Fractional CFO Services in Israel", icon: LineChart, desc: "Fractional CFO support for budgeting, cash flow, burn rate, runway, board reporting, financial models, and due diligence readiness." },
+      { to: "/en/bookkeeping", label: "Bookkeeping Services in Israel", icon: Calculator, desc: "Israeli bookkeeping services including monthly close, reconciliations, VAT reporting, and management information on digital platforms." },
+      { to: "/en/payroll", label: "Israeli Payroll and Section 102 ESOP", icon: ReceiptText, desc: "Israeli payroll services, payslips, Section 102 equity plans, Form 106, Form 161, employer reporting, and pension information." },
+      { to: "/en/audit", label: "Audit and Assurance Services in Israel", icon: FileSearch, desc: "Statutory financial statement audits under Israeli GAAP or IFRS, audit preparation, and financial due diligence support." },
+      { to: "/en/tax-consulting", label: "Israeli Tax Advisory", icon: FileSpreadsheet, desc: "Israeli tax planning, advance tax ruling requests, digital asset reporting, tax assessments, and objections." },
     ],
   },
 
   {
     title: "By Client Type",
     items: [
-      { to: "/en/cpa-startups", label: "Startups & Tech", icon: Building2, desc: "Fundraising, employee equity plans, Israel–Delaware Flip and Preferred Technological Enterprise matters." },
-      { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", icon: Briefcase, desc: "Setup, ongoing filings, annual return and Capital Declaration (Asset & Net Worth Report)." },
-      { to: "/en/cpa-foreign-companies", label: "Foreign Companies", icon: Globe2, desc: "Subsidiary or branch planning, KYC documentation, transfer pricing and applicable Israeli reporting." },
-      { to: "/en/cpa-herzliya", label: "Herzliya Pituach", icon: MapPin, desc: "Local boutique firm at the heart of Israel's tech corridor." },
+      { to: "/en/cpa-startups", label: "CPA Services for Startups and Technology Companies", icon: Building2, desc: "Startup accounting, fundraising readiness, Section 102 equity plans, Israel-Delaware flip analysis, and technology tax incentives." },
+      { to: "/en/cpa-freelancers", label: "CPA Services for Freelancers and Self-Employed Businesses", icon: Briefcase, desc: "Israeli tax registration, periodic filings, annual tax returns, capital declarations, rental income, and digital asset reporting." },
+      { to: "/en/cpa-foreign-companies", label: "CPA Services for Foreign Companies in Israel", icon: Globe2, desc: "Israeli subsidiary or branch analysis, bookkeeping, payroll, KYC information, transfer pricing, and local tax reporting." },
+      { to: "/en/cpa-herzliya", label: "CPA Firm in Herzliya Pituach", icon: MapPin, desc: "Boutique CPA firm in Herzliya Pituach serving companies, startups, foreign businesses, freelancers, and individuals." },
     ],
   },
   {
-    title: "International Tax",
+    title: "International Tax Services in Israel",
     items: [
-      { to: "/en/cpa-international", label: "Relocation & Returning Residents", icon: Plane, desc: "Residency, olim benefits, treaties and cross-border planning." },
+      { to: "/en/cpa-international", label: "Relocation, New Immigrants, and Returning Residents", icon: Plane, desc: "Israeli tax residency, relocation, new immigrant and returning resident benefits, tax treaties, and foreign income reporting." },
     ],
   },
 ] as const;
@@ -41,9 +41,9 @@ const GROUPS = [
 export const Route = createFileRoute("/en/services")({
   head: () => ({
     meta: [
-      { title: "Services — Nimrodi & Co. CPA | Herzliya Pituach" },
+      { title: "CPA Services in Israel | Nimrodi & Co., Herzliya Pituach" },
       { name: "description", content: "Accounting, tax and financial services in Israel for companies and startups, including audit, payroll, bookkeeping, tax advisory and CFO support. Explore the services." },
-      { property: "og:title", content: "Services — Nimrodi & Co." },
+      { property: "og:title", content: "Accounting and Tax Services in Israel | Nimrodi & Co." },
       { property: "og:description", content: "Accounting, tax and financial services for companies and startups in Israel, including audit, bookkeeping, payroll, tax advisory and CFO support. Explore the services." },
       { property: "og:url", content: `${BASE}/en/services` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
@@ -65,12 +65,12 @@ function ServicesEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gold">Our services</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-gold">CPA Services in Israel</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-              Accounting, tax and financial services for businesses in Israel
+              Accounting, Tax, Audit, Payroll, and CFO Services in Israel
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              Support may include business setup, bookkeeping, payroll, financial reporting, audit, tax advisory and cross-border matters, based on the client’s needs and the agreed scope.
+              Our Israeli CPA services may include bookkeeping, payroll, financial reporting, audit, tax advisory, fractional CFO support, and international tax matters, based on the agreed scope.
             </p>
           </div>
         </section>
@@ -99,22 +99,22 @@ function ServicesEn() {
 
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">Not sure which service fits?</h2>
-            <p className="mt-3 text-primary-foreground/80">Contact us for an introductory discussion about your needs and the proposed scope of service.</p>
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">Which Israeli CPA Service Fits Your Needs?</h2>
+            <p className="mt-3 text-primary-foreground/80">Contact our CPA firm in Herzliya Pituach for an introductory discussion about your accounting, tax, payroll, audit, or CFO needs.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground">
                 <MessageCircle className="h-5 w-5" aria-hidden />
                 WhatsApp
               </a>
               <Link to="/en/contact" className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10">
-                Contact page
+                Contact Our CPA Firm
               </Link>
             </div>
           </div>
         </section>
       <GovPortalLinks
         lang="en"
-        title="Official Israeli Regulatory & Tax Authorities"
+        title="Official Israeli Tax, Corporate, and Regulatory Authorities"
         links={[
             { label: "Israel Tax Authority – Corporate, VAT & Filings", href: "https://www.gov.il/en/departments/israel_tax_authority" },
             { label: "National Insurance Institute (Bituach Leumi)", href: "https://www.btl.gov.il" },

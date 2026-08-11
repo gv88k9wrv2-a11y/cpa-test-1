@@ -21,7 +21,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
     if (!loaderData) {
       return {
         meta: [
-          { title: "Article not found | Nimrodi & Co. CPAs" },
+          { title: "Article Not Found | Nimrodi & Co. CPA" },
           { name: "robots", content: "noindex" },
         ],
       };
@@ -163,10 +163,10 @@ function BlogPostPageEn() {
 
         <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
           <h2 className="font-display text-2xl font-bold">
-            Want to discuss your specific situation?
+            Need help with an Israeli accounting or tax matter?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-            Contact us for an introductory discussion about your needs.
+            Contact our Israeli CPA firm for an introductory discussion about your accounting, tax, and reporting needs.
           </p>
           <a
             href={WHATSAPP_URL_EN}
@@ -175,13 +175,13 @@ function BlogPostPageEn() {
             className="mt-6 inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
           >
             <MessageCircle className="h-5 w-5" aria-hidden />
-            Contact us
+            Contact our CPA firm
           </a>
         </div>
 
         {related.length > 0 && (
           <aside className="mt-14 border-t border-border pt-10">
-            <h2 className="font-display text-xl font-bold text-primary">More articles in this category</h2>
+            <h2 className="font-display text-xl font-bold text-primary">More Israeli accounting and tax articles</h2>
             <ul className="mt-4 space-y-3">
               {related.map((r) => (
                 <li key={r.slug}>
@@ -204,7 +204,7 @@ function BlogPostPageEn() {
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-gold"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden />
-            All articles
+            View all accounting and tax articles
           </Link>
         </div>
       </article>
