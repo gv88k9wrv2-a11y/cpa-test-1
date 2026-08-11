@@ -188,7 +188,7 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
       ]}
 
       govPortals={{
-        title: "רישום, מע\"מ ומיסוי חברות זרות בישראל",
+        title: "רישום ומיסוי חברות זרות בישראל: מקורות רשמיים",
         links: [
           { label: "משרד המשפטים – רישום חברה זרה/סניף בישראל", href: "https://www.gov.il/he/departments/ministry_of_justice" },
           { label: "רשות המסים – מיסוי חברות זרות ומחירי העברה", href: "https://www.gov.il/he/departments/israel_tax_authority" },
