@@ -3,7 +3,7 @@ import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/si
 
 const BASE = "https://www.nimrodi.co.il";
 
-const Israeli CPA FAQS = [
+const FAQS = [
   { cat: "General", q: "Where is your CPA office in Israel and which clients do you serve?", a: "Our office is located in Herzliya Pituach. We serve clients across Israel and internationally via video." },
   { cat: "General", q: "How does the first meeting work?", a: "An introductory meeting may be held in person or by video to understand the relevant needs and discuss a possible engagement. The proposed scope, responsibilities and fees are explained before professional services begin." },
   { cat: "General", q: "In which languages do you work?", a: "Services may be provided in Hebrew or English, including meetings, correspondence and documents within the agreed engagement scope." },
