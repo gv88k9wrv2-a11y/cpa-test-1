@@ -52,7 +52,7 @@ export const Route = createFileRoute("/fractional-cfo")({
       {
         property: "og:description",
         content:
-          "שירותי Fractional CFO לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס. תאמו שיחת היכרות.",
+          "שירותי Fractional CFO לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים מזומנים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס הון. תאמו שיחת היכרות.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/fractional-cfo" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
