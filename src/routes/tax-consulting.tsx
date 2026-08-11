@@ -55,7 +55,7 @@ const FAQS = [
 export const Route = createFileRoute("/tax-consulting")({
   head: () => ({
     meta: [
-      { title: "ייעוץ מס לחברות וליחידים לחברות, יחידים וסטארטאפים | נמרודי ושות׳" },
+      { title: "ייעוץ מס לחברות, יחידים וסטארטאפים | נמרודי ושות׳" },
       {
         name: "description",
         content:

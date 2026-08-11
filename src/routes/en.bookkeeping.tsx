@@ -13,7 +13,7 @@ const FAQS = [
 export const Route = createFileRoute("/en/bookkeeping")({
   head: () => ({
     meta: [
-      { title: "Bookkeeping and Accounting Processes in Israel for Companies in Israel | Nimrodi & Co. CPA" },
+      { title: "Bookkeeping for Companies in Israel | Nimrodi & Co. CPA" },
       { name: "description", content: "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT and withholding reporting and management reports. Contact the firm." },
       { property: "og:title", content: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
       { property: "og:description", content: "Cloud bookkeeping and periodic reporting for companies and startups in Israel, including VAT, withholding and management reports. Contact the firm." },
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
       heroImage={heroImg}
       heroImageAlt="Israeli bookkeeping and accounting workstation with financial reporting dashboards"
       icon={Calculator}
-      eyebrow="Bookkeeping"
+      eyebrow="Bookkeeping Services in Israel"
       title="Digital Bookkeeping Services for Companies and Businesses in Israel"
       intro="Digital bookkeeping services for companies, startups, and independent businesses in Israel. Services may include document capture, bank and credit card reconciliations, VAT reporting, withholding tax reporting, and management information, according to the activity and agreed scope."
       highlights={[
