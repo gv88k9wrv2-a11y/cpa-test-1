@@ -8,13 +8,13 @@ const CANONICAL = "https://www.nimrodi.co.il/en/blog";
 export const Route = createFileRoute("/en/blog/")({
   head: () => ({
     meta: [
-      { title: "Professional Blog | Nimrodi & Co. — CPAs in Herzliya" },
+      { title: "Israel Accounting and Tax Insights | Nimrodi & Co. CPA" },
       {
         name: "description",
         content:
           "Articles on international taxation, foreign companies in Israel, relocation and tax residency from Nimrodi & Co. CPA. Read the latest available content.",
       },
-      { property: "og:title", content: "Blog — Nimrodi & Co. CPAs" },
+      { property: "og:title", content: "Accounting and Tax Insights | Nimrodi & Co. CPA" },
       {
         property: "og:description",
         content: "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and digital assets. Explore the available posts.",
@@ -43,13 +43,13 @@ function BlogIndexEn() {
         <section className="border-b border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
             <div className="text-sm font-semibold uppercase tracking-widest text-gold">
-              Professional Blog
+              Israeli Accounting and Tax Blog
             </div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-              Insight that moves businesses forward
+              Accounting and tax insights for businesses in Israel
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              Guides, updates, and analysis from the world of accounting and taxation — grounded in real practice.
+              Practical guides and analysis on Israeli accounting, taxation, reporting, startups, foreign companies, and digital assets.
             </p>
           </div>
         </section>
@@ -88,7 +88,7 @@ function BlogIndexEn() {
                   </span>
                 </div>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold group-hover:underline">
-                  Read the article →
+                  Read the accounting and tax article →
                 </span>
               </Link>
             ))}

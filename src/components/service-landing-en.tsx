@@ -37,7 +37,7 @@ export function ServiceLandingEn({
   highlights,
   sections,
   faqs,
-  ctaHeadline = "Ready to discuss your needs? Contact us for an introductory discussion about the proposed scope of service.",
+  ctaHeadline = "Ready to review your accounting and tax needs? Contact us for an introductory discussion about the proposed scope of service.",
   ctaText,
   icon: Icon,
   heroImage,

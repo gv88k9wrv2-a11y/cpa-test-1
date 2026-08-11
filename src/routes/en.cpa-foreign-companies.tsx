@@ -5,11 +5,11 @@ import heroImg from "../assets/service-foreign.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Subsidiary or branch — which is better?", a: "A subsidiary and a branch differ in legal status, accounting, tax, employment and reporting. The appropriate structure depends on the planned activity, scale, funding, liability considerations, treaty position and group plans. The firm can assist with the Israeli accounting and tax analysis, while legal aspects should be reviewed with qualified counsel." },
+  { q: "Israeli subsidiary or branch: which structure may suit a foreign company?", a: "A subsidiary and a branch differ in legal status, accounting, tax, employment and reporting. The appropriate structure depends on the planned activity, scale, funding, liability considerations, treaty position and group plans. The firm can assist with the Israeli accounting and tax analysis, while legal aspects should be reviewed with qualified counsel." },
   { q: "How long does it take to set up an Israeli subsidiary?", a: "The timetable depends on the proposed structure, the completeness of the documents, identification requirements and the processing times of the relevant authorities. Bank-account onboarding for a foreign-owned entity depends on the ownership structure, KYC information, source-of-funds documentation and the bank’s review. The firm can assist with the Israeli accounting and tax information and coordinate with legal and banking professionals within the agreed scope." },
   { q: "Do you handle Israeli banking regulation?", a: "Bank-account onboarding, incoming funds and foreign-currency activity may require accounting, tax, ownership and source-of-funds information under the bank’s procedures and applicable rules. The firm can assist with preparing the relevant accounting and tax information. Account approval, KYC requirements and banking decisions remain subject to the bank’s review and discretion." },
-  { q: "What is Transfer Pricing and why does it matter?", a: "Transfer pricing concerns the pricing and terms of transactions between related parties. The applicable analysis, documentation and filing requirements depend on the entities, transactions, functions, assets, risks and rules in effect for the relevant period. The firm can assist with the Israeli transfer-pricing analysis and documentation within the agreed scope." },
-  { q: "What is Permanent Establishment (PE) risk?", a: "Permanent-establishment risk depends on the facts, the relevant tax treaty and applicable law, including the nature, duration and authority of the activity in Israel. The position should be reviewed with qualified Israeli and foreign tax and legal advisers. The firm can assist with the Israeli accounting and tax information within the agreed scope." },
+  { q: "What is transfer pricing in Israel and why does it matter?", a: "Transfer pricing concerns the pricing and terms of transactions between related parties. The applicable analysis, documentation and filing requirements depend on the entities, transactions, functions, assets, risks and rules in effect for the relevant period. The firm can assist with the Israeli transfer-pricing analysis and documentation within the agreed scope." },
+  { q: "What is permanent establishment risk for a foreign company in Israel?", a: "Permanent-establishment risk depends on the facts, the relevant tax treaty and applicable law, including the nature, duration and authority of the activity in Israel. The position should be reviewed with qualified Israeli and foreign tax and legal advisers. The firm can assist with the Israeli accounting and tax information within the agreed scope." },
   { q: "Can we pay Israeli developers without opening a branch?", a: "Possible arrangements may include an Employer of Record, engagement with an independent contractor or employment through an Israeli entity. The appropriate arrangement depends on the working relationship, duration and scale of activity, control, classification risk, cost and legal requirements. Each option should be reviewed with qualified employment-law and tax advisers." },
   { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "A foreign-owned Israeli company may be eligible for tax-incentive programs or Israel Innovation Authority support, depending on its activity, ownership, program conditions, required approvals and the law in effect at the relevant time. The firm can assist with assessing potential eligibility and preparing the relevant financial and tax information within the agreed scope." },
 ];
@@ -17,9 +17,9 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-foreign-companies")({
   head: () => ({
     meta: [
-      { title: "Foreign Companies in Israel | Subsidiary & Branch | Nimrodi" },
+      { title: "CPA Services for Foreign Companies in Israel | Subsidiary and Branch Accounting" },
       { name: "description", content: "Israeli CPA services for foreign companies, including subsidiary-or-branch considerations, payroll, transfer-pricing analysis and Israeli reporting information. Contact the firm." },
-      { property: "og:title", content: "Foreign Companies in Israel — Nimrodi & Co." },
+      { property: "og:title", content: "Foreign Companies in Israel | Nimrodi & Co. CPA" },
       { property: "og:description", content: "Accounting and tax support for international companies operating in Israel, including structure information, payroll, transfer pricing and reporting. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/cpa-foreign-companies` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
@@ -35,11 +35,11 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Office tower with international company flags"
+      heroImageAlt="Foreign company accounting and tax services in Israel"
       icon={Globe2}
       eyebrow="Foreign Companies in Israel"
-      title="Accounting, tax and financial support for international companies operating in Israel"
-      intro="Foreign companies operating in Israel may require accounting, tax, payroll and financial-reporting support. We assist with the Israeli accounting and tax aspects of the proposed structure and ongoing activity, with additional qualified advisers involved where required."
+      title="Accounting and Tax Services for Foreign Companies Operating in Israel"
+      intro="Foreign companies operating in Israel may require local accounting, tax, payroll, transfer pricing, and financial reporting services. We assist with the Israeli accounting and tax aspects of a subsidiary, branch, or other proposed structure, with qualified advisers involved where required."
       highlights={[
         "Review of Israeli subsidiary or branch structures and support with registration preparation",
         "Preparation of accounting and tax information for bank and KYC processes, subject to the bank’s requirements and review",
@@ -52,11 +52,11 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
       ]}
       sections={[
         {
-          title: "Reviewing possible operating structures",
+          title: "Israeli Subsidiary, Branch, and Operating Structure Review",
           body: "Possible operating structures may include an Israeli subsidiary, branch, Employer of Record or another arrangement. The accounting and tax review depends on the planned activity, scale, treaty position, intellectual-property arrangements, employment model and future plans. Legal aspects are reviewed separately with qualified counsel.",
         },
         {
-          title: "Accounting and tax support for the setup process",
+          title: "Accounting and Tax Support for Setting Up Operations in Israel",
           body: "Once the proposed structure has been selected, we can assist with the accounting, tax and reporting aspects:",
           bullets: [
             "Preparation of accounting and tax information required for the registration process, with legal registration handled by qualified legal counsel",
@@ -83,65 +83,65 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           body: "After setup, the agreed services may include bookkeeping, payroll coordination, tax reporting and group-reporting information. Responsibilities for financial statements, management decisions and external audit are defined separately and remain subject to applicable independence requirements.",
         },
         {
-          title: "Transfer Pricing & BEPS compliance",
-          body: "For companies with material intra-group transactions, the firm may assist with transfer-pricing analysis and documentation according to the entities, transactions, functions, assets, risks, available information and requirements applicable to the relevant period:",
+          title: "Israeli Transfer Pricing and BEPS Documentation",
+          body: "For foreign companies in Israel with material related-party transactions, the firm may assist with Israeli transfer pricing analysis and documentation based on the entities, transactions, functions, assets, risks, available information, and rules applying to the relevant period:",
           bullets: [
-            "Benchmarking and comparable-data review according to the agreed transfer-pricing scope",
-            "Review of the appropriate method based on the activity, available data and applicable transfer-pricing rules",
-            "Functional analysis — functions, assets and risks",
-            "Local File and Master File under BEPS Action 13",
-            "Country-by-Country Reporting (CbCR) coordination",
-            "Periodic updates and accounting and tax support in discussions with the Israel Tax Authority",
+            "Transfer pricing benchmarking and comparable-company data review within the agreed scope",
+            "Review of the transfer pricing method based on the activity, available data, and applicable Israeli rules",
+            "Transfer pricing functional analysis of functions, assets, and risks",
+            "Local File and Master File documentation under BEPS Action 13",
+            "Country-by-Country Reporting and CbCR coordination",
+            "Periodic transfer pricing updates and accounting support in discussions with the Israel Tax Authority",
           ],
         },
         {
-          title: "Cross-Border IP Tax Structuring",
-          body: "The location of a group's intellectual property is one of the most consequential tax decisions — it drives effective tax rate, royalty flows and eventual Exit valuation. We assist in reviewing the accounting and tax aspects of proposed IP structures in Israel and abroad, with qualified legal and other professional advisers involved where required:",
+          title: "Cross-Border Intellectual Property Tax Analysis",
+          body: "The location and use of a group's intellectual property may affect its effective tax rate, royalty flows, transfer pricing, and transaction analysis. We assist with the Israeli accounting and tax review of proposed intellectual property structures in Israel and abroad, with qualified legal and other advisers involved where required:",
           bullets: [
-            "Review of accounting and tax considerations for proposed intellectual-property locations, with local advisers involved where required",
-            "Transfer-pricing analysis and documentation for intra-group technology, intellectual-property and service transactions",
-            "Assessment of BEPS-related substance, DEMPE functions and transfer-pricing documentation requirements where applicable",
-            "Financial and transfer-pricing analysis of intra-group cost-sharing arrangements, with legal documentation coordinated separately",
-            "Financial and tax analysis of royalty models, with coordination of intellectual-property agreements with legal counsel",
-            "Support with tax ruling requests and related documentation for cross-border intellectual-property transactions",
-            "Review of royalty withholding-tax treatment and potential treaty relief under the applicable rules",
+            "Review of Israeli accounting and tax considerations for proposed intellectual property locations",
+            "Transfer pricing analysis for related-party technology, intellectual property, and service transactions",
+            "Assessment of BEPS substance, DEMPE functions, and transfer pricing documentation requirements",
+            "Financial and transfer pricing analysis of related-party cost-sharing arrangements",
+            "Financial and Israeli tax analysis of royalty models, with legal agreements coordinated separately",
+            "Support with Israeli tax ruling requests for cross-border intellectual property transactions",
+            "Review of Israeli royalty withholding tax and potential tax treaty relief",
           ],
         },
         {
-          title: "Israeli tax incentives for multinationals",
-          body: "Foreign-owned Israeli subsidiaries may be eligible for Israeli tax incentives and IIA support, subject to the applicable program, eligibility conditions, required approvals and the law in effect at the relevant time:",
+          title: "Israeli Tax Incentives for Foreign-Owned Companies",
+          body: "Foreign-owned Israeli subsidiaries may qualify for Israeli tax incentives or Israel Innovation Authority support, subject to the relevant program, eligibility conditions, required approvals, and law applying at the relevant time:",
           bullets: [
-            "Assessment of potential eligibility for Preferred Technological Enterprise tax benefits under the applicable rules",
-            "Review of dividend taxation and potential relief under the applicable incentive regime and tax rules",
-            "Review of the accounting and tax treatment of research and development costs under the applicable rules",
-            "Financial support for IIA grant applications and related reporting, subject to the applicable program, eligibility criteria and required approvals",
-            "Analysis of treaty eligibility, taxing rights and foreign-tax-credit considerations",
+            "Assessment of potential eligibility for Preferred Technological Enterprise tax benefits in Israel",
+            "Review of Israeli dividend taxation and potential relief under the applicable incentive regime",
+            "Review of Israeli accounting and tax treatment for research and development costs",
+            "Financial information support for Israel Innovation Authority grant applications and reporting",
+            "Analysis of tax treaty eligibility, taxing rights, and foreign tax credit considerations",
           ],
         },
         {
-          title: "Fractional CFO for foreign companies in Israel",
-          body: "Foreign groups operating in Israel may require local financial reporting, budgeting, payroll coordination and communication with headquarters. Subject to the agreed scope and applicable independence requirements, the firm can provide fractional CFO support and coordinate with the company’s accounting, tax, audit and legal advisers.",
+          title: "Fractional CFO Services for Foreign Companies in Israel",
+          body: "Foreign groups operating in Israel may require local financial reporting, budgeting, payroll coordination, and communication with overseas headquarters. Subject to the agreed scope and independence requirements, the firm can provide fractional CFO services and coordinate with the company’s accounting, tax, audit, and legal advisers.",
           bullets: [
-            "Local controller and fractional CFO support for the company’s Israeli operations",
-            "Periodic financial reporting to overseas headquarters in the agreed format and reporting currency",
-            "Local budgeting, monitoring and variance analysis based on the agreed group-reporting framework",
-            "Coordination of financial information for Israeli banking, insurance and regulatory processes within the agreed scope",
-            "Preparation and coordination of financial information for statutory and group-audit processes, subject to applicable independence requirements",
-            "Financial preparation and information support for M&A, carve-out or wind-down processes within the agreed scope",
+            "Local controller and fractional CFO services for Israeli operations",
+            "Periodic financial reporting to overseas headquarters in the agreed format and currency",
+            "Israeli budgeting, financial monitoring, and variance analysis under the group reporting framework",
+            "Coordination of financial information for Israeli banking, insurance, and regulatory processes",
+            "Preparation of financial information for Israeli statutory and group audit processes",
+            "Financial information support for M&A, carve-out, or wind-down processes in Israel",
           ],
         },
       ]}
 
       govPortals={{
-        title: "Foreign Corporate Registration & Israeli Tax Compliance",
+        title: "Foreign Company Registration and Israeli Tax Compliance",
         links: [
-          { label: "Registration of a Foreign Company / Israeli Branch", href: "https://www.gov.il/en/departments/ministry_of_justice" },
-          { label: "Israel International Taxation Unit & Treaties", href: "https://www.gov.il/en/departments/israel_tax_authority" },
+          { label: "Registration of a Foreign Company or Israeli Branch", href: "https://www.gov.il/en/departments/ministry_of_justice" },
+          { label: "Israel Tax Authority: International Taxation and Tax Treaties", href: "https://www.gov.il/en/departments/israel_tax_authority" },
 
         ],
       }}
       faqs={FAQS}
-      ctaHeadline="Planning to operate in Israel? Contact us to discuss the proposed activity and service scope."
+      ctaHeadline="Planning business operations in Israel? Contact our CPA firm to discuss accounting, tax, payroll, transfer pricing, and reporting needs."
     />
   ),
 });

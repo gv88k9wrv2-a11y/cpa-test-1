@@ -5,17 +5,17 @@ import heroImg from "../assets/service-bookkeeping.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Which accounting software do you support?", a: "We work with a range of Israeli and international accounting platforms. The appropriate system and setup depend on the client’s activity, reporting needs, existing systems and the agreed scope of service." },
-  { q: "Can you take over from an existing bookkeeper?", a: "Yes. We can assist with the transition from an existing provider, including the review of opening balances, historical reconciliations and available records. The timetable depends on the quality and completeness of the information received." },
-  { q: "Do you handle VAT and withholding tax reporting?", a: "Preparation of periodic VAT, withholding-tax and employer reports, together with year-end reconciliations, according to the reporting obligations and the scope of the engagement." },
+  { q: "Which bookkeeping and accounting software do you support in Israel?", a: "We work with Israeli and international bookkeeping and accounting platforms. The appropriate software and setup depend on the company’s activity, Israeli reporting requirements, existing systems, and the agreed service scope." },
+  { q: "Can you transfer our Israeli bookkeeping from another provider?", a: "We can assist with transferring Israeli bookkeeping from another provider, including reviewing opening balances, historical reconciliations, and available accounting records. The process depends on the completeness and quality of the information received." },
+  { q: "Do you prepare Israeli VAT and withholding tax reports?", a: "The service may include preparing periodic Israeli VAT, withholding tax, and employer reports, together with year-end reconciliations, according to the applicable reporting obligations and agreed scope." },
 ];
 
 export const Route = createFileRoute("/en/bookkeeping")({
   head: () => ({
     meta: [
-      { title: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
+      { title: "Bookkeeping for Companies in Israel | Nimrodi & Co. CPA" },
       { name: "description", content: "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT and withholding reporting and management reports. Contact the firm." },
-      { property: "og:title", content: "Bookkeeping — Nimrodi & Co. CPA" },
+      { property: "og:title", content: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
       { property: "og:description", content: "Cloud bookkeeping and periodic reporting for companies and startups in Israel, including VAT, withholding and management reports. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/bookkeeping` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
@@ -31,43 +31,43 @@ export const Route = createFileRoute("/en/bookkeeping")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Bookkeeping workstation with financial dashboard screens"
+      heroImageAlt="Israeli bookkeeping and accounting workstation with financial reporting dashboards"
       icon={Calculator}
-      eyebrow="Bookkeeping"
-      title="Digital Bookkeeping for Companies and Self-Employed Businesses"
-      intro="Digital bookkeeping services for companies and self-employed businesses, using systems selected according to the nature of the activity and the scope of the engagement. Services may include document capture, reconciliations, periodic reporting and management information."
+      eyebrow="Bookkeeping Services in Israel"
+      title="Digital Bookkeeping Services for Companies and Businesses in Israel"
+      intro="Digital bookkeeping services for companies, startups, and independent businesses in Israel. Services may include document capture, bank and credit card reconciliations, VAT reporting, withholding tax reporting, and management information, according to the activity and agreed scope."
       highlights={[
-        "Monthly bookkeeping services according to the agreed scope",
-        "Preparation of VAT and withholding-tax reporting information according to the applicable requirements",
-        "Bank & credit card reconciliations",
-        "Management dashboards and KPIs",
-        "Trial-balance preparation and supporting reconciliations for the agreed reporting process",
-        "Multi-currency and multi-entity",
+        "Monthly bookkeeping services for Israeli companies and businesses",
+        "Preparation of Israeli VAT and withholding tax reporting information",
+        "Bank and credit card reconciliations",
+        "Management reporting, financial dashboards, and agreed KPIs",
+        "Trial balance preparation and supporting reconciliations for financial reporting",
+        "Multi-currency and multi-entity bookkeeping support",
       ]}
       sections={[
         {
-          title: "Bookkeeping Services",
-          body: "Services may cover the following accounting processes, according to the engagement:",
+          title: "Bookkeeping and Accounting Processes",
+          body: "Israeli bookkeeping services may include the following accounting and reporting processes, according to the agreed engagement:",
           bullets: [
-            "Vendor invoice capture, approvals and payments",
-            "Customer invoicing, collections tracking and A/R",
-            "Payroll integration and employee reimbursements",
-            "Monthly close with reconciliations and accruals",
-            "VAT, withholding tax and annual reconciliations",
-            "IFRS / Israeli GAAP presentation-ready reports",
+            "Vendor invoice capture, approval workflows, and payment information",
+            "Customer invoicing, collection tracking, and accounts receivable",
+            "Payroll accounting integration and employee expense reimbursements",
+            "Monthly accounting close, reconciliations, and accrual entries",
+            "Israeli VAT, withholding tax, and year-end reconciliations",
+            "Accounting information prepared for IFRS or Israeli GAAP reporting",
           ],
         },
         {
-          title: "Cloud stack & automation",
-          body: "We use digital accounting platforms selected according to the client’s needs and the scope of the engagement. Available services may include document capture, accounts-payable workflows, reconciliations and management reporting.",
+          title: "Cloud Bookkeeping and Accounting Automation",
+          body: "Digital bookkeeping platforms are selected according to the client’s activity, systems, Israeli reporting needs, and agreed scope. Services may include document capture, accounts payable workflows, reconciliations, and management reporting.",
         },
         {
-          title: "Reporting cadence",
-          body: "Periodic management reporting may include profit-and-loss information, budget comparisons, cash-flow information, receivables aging and agreed KPIs, based on the available records and engagement scope. The content, frequency and coordination with auditors are agreed separately.",
+          title: "Periodic Management Reporting",
+          body: "Periodic management reporting may include profit and loss information, budget comparisons, cash flow data, accounts receivable aging, and agreed KPIs. The content, reporting frequency, and coordination with auditors depend on the available records and agreed scope.",
         },
       ]}
       faqs={FAQS}
-      ctaHeadline="Discuss your bookkeeping and reporting needs with us."
+      ctaHeadline="Discuss your Israeli bookkeeping, VAT, and management reporting needs with our CPA firm."
     />
   ),
 });

@@ -7,13 +7,13 @@ const UPDATED_HE = "אוגוסט 2026";
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
     meta: [
-      { title: "הצהרת נגישות | נמרודי ושות׳ – רואי חשבון" },
+      { title: "הצהרת נגישות | נמרודי ושות׳ רואי חשבון" },
       {
         name: "description",
         content:
           "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: עקרונות הנגישות באתר, מידע על הגעה ועל נגישות פיזית במשרד בהרצליה פיתוח ודרכי פנייה לתיאום התאמה. נשמח לסייע.",
       },
-      { property: "og:title", content: "הצהרת נגישות – נמרודי ושות׳" },
+      { property: "og:title", content: "הצהרת נגישות | נמרודי ושות׳ רואי חשבון" },
       {
         property: "og:description",
         content:

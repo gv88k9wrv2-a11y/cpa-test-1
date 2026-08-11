@@ -5,19 +5,19 @@ import heroImg from "../assets/service-freelancers.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "What is the difference between osek patur and osek murshe in Israel?", a: "Osek patur and osek murshe are different VAT registration categories for self-employed activity in Israel. The appropriate category depends on the nature of the activity, the applicable turnover threshold, the customer base and the registration rules in effect at the relevant time. The firm can assist with reviewing the available information and preparing the registration documents within the agreed scope." },
-  { q: "How do I compare operating as a sole proprietor or a limited company in Israel?", a: "The comparison depends on the expected income and expenses, the amount the owner plans to withdraw, funds retained for business use, operating costs, legal considerations and future plans. Tax rules that may attribute company income to an individual should also be considered where relevant. Within the agreed scope, the firm can prepare a financial and tax comparison based on the information provided." },
-  { q: "What is an Israeli capital declaration, and what information does it include?", a: "An Israeli capital declaration is a report of assets, liabilities and related financial information requested by the Israel Tax Authority in certain cases. The required information may cover the individual, the household and relevant holdings in Israel or abroad, according to the request and the applicable instructions. The firm can assist with organizing the supporting records and preparing the declaration based on the information provided." },
-  { q: "I work with clients abroad — how do I invoice?", a: "Services supplied to a foreign resident may qualify for zero-rate VAT under Section 30(a)(5), subject to the statutory conditions and the circumstances of the service. The invoicing, VAT, currency-conversion and foreign-document requirements depend on the service, customer and applicable rules. The firm can assist with the Israeli accounting and tax aspects and coordinate information with foreign advisers where required." },
-  { q: "What is a Pocket Company (חברת ארנק) and when may Section 62A apply?", a: "Section 62A of the Israeli Income Tax Ordinance targets one-person companies used to shelter what is effectively employment income. Where the section applies, income may be attributed to the individual shareholder, which can change the effective tax outcome depending on the facts and the rules in force. We help review the relevant factors — client base, business risk, independence and documentation — based on the information provided." },
+  { q: "What is the difference between an osek patur and an osek murshe in Israel?", a: "Osek patur and osek murshe are different VAT registration categories for self-employed activity in Israel. The appropriate category depends on the nature of the activity, the applicable turnover threshold, the customer base and the registration rules in effect at the relevant time. The firm can assist with reviewing the available information and preparing the registration documents within the agreed scope." },
+  { q: "Should I operate as a sole proprietor or limited company in Israel?", a: "The comparison depends on the expected income and expenses, the amount the owner plans to withdraw, funds retained for business use, operating costs, legal considerations and future plans. Tax rules that may attribute company income to an individual should also be considered where relevant. Within the agreed scope, the firm can prepare a financial and tax comparison based on the information provided." },
+  { q: "What is an Israeli capital declaration and what does it include?", a: "An Israeli capital declaration is a report of assets, liabilities and related financial information requested by the Israel Tax Authority in certain cases. The required information may cover the individual, the household and relevant holdings in Israel or abroad, according to the request and the applicable instructions. The firm can assist with organizing the supporting records and preparing the declaration based on the information provided." },
+  { q: "How should an Israeli freelancer invoice foreign clients?", a: "Services supplied to a foreign resident may qualify for zero-rate VAT under Section 30(a)(5), subject to the statutory conditions and the circumstances of the service. The invoicing, VAT, currency-conversion and foreign-document requirements depend on the service, customer and applicable rules. The firm can assist with the Israeli accounting and tax aspects and coordinate information with foreign advisers where required." },
+  { q: "What is an Israeli pocket company and when may Section 62A apply?", a: "Section 62A of the Israeli Income Tax Ordinance targets one-person companies used to shelter what is effectively employment income. Where the section applies, income may be attributed to the individual shareholder, which can change the effective tax outcome depending on the facts and the rules in force. We help review the relevant factors — client base, business risk, independence and documentation — based on the information provided." },
 ];
 
 export const Route = createFileRoute("/en/cpa-freelancers")({
   head: () => ({
     meta: [
-      { title: "CPA for Freelancers & Single-Member Companies | Nimrodi" },
+      { title: "CPA for Freelancers and Independent Businesses in Israel | Nimrodi" },
       { name: "description", content: "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm." },
-      { property: "og:title", content: "CPA for Freelancers — Nimrodi & Co." },
+      { property: "og:title", content: "CPA for Freelancers in Israel | Nimrodi & Co." },
       { property: "og:description", content: "Accounting and tax support for freelancers, consultants and independent businesses in Israel, including registration, filings and annual returns. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/cpa-freelancers` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
@@ -33,21 +33,21 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Freelancer working in a modern home office"
+      heroImageAlt="CPA services for freelancers and independent businesses in Israel"
       icon={Briefcase}
-      eyebrow="Freelancers, Consultants & Single-Member Companies"
-      title="CPA services for freelancers, consultants and independent businesses in Israel"
-      intro="Accounting and tax support for freelancers, independent contractors and boutique businesses in Israel. Services may include registration, ongoing reporting, annual returns, capital declarations and analysis of operating as a sole proprietor or company, according to the client’s circumstances and the agreed scope."
+      eyebrow="Freelancers and Independent Businesses in Israel"
+      title="CPA Services for Freelancers and Independent Businesses in Israel"
+      intro="CPA and tax services for freelancers, consultants, independent contractors, and small businesses in Israel. Services may include VAT and tax registration, periodic reporting, annual tax returns, capital declarations, and analysis of operating as a sole proprietor or limited company."
       highlights={[
         "Assistance with registration information and filings for VAT, the Israel Tax Authority and Bituach Leumi, according to the agreed scope",
-        "Osek patur / osek murshe fit assessment",
-        "Monthly / bi-monthly VAT and withholding filings",
+        "Osek patur or osek murshe registration assessment",
+        "Monthly or bi-monthly Israeli VAT and withholding tax filings",
         "Annual personal tax return and review of deductions based on the available records and applicable rules",
-        "Capital declaration (הצהרת הון) preparation and defense",
-        "Sole proprietor → private company crossover simulation",
+        "Israeli capital declaration preparation and supporting documentation",
+        "Sole proprietor versus limited company tax comparison",
         "Pocket Company (חברת ארנק) risk mitigation",
         "Foreign-client income — review of the applicable VAT treatment and reporting requirements",
-        "Passive income: rental, crypto, foreign securities",
+        "Reporting for rental income, crypto assets, and foreign securities",
       ]}
       sections={[
         {

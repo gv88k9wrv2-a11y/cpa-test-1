@@ -158,7 +158,7 @@ function TeamPage() {
               <div className="mt-5 flex gap-2">
                 <a
                   href="mailto:office@nimrodi.co.il"
-                  aria-label="שליחת מייל"
+                  aria-label="שליחת דוא״ל למשרד נמרודי ושות׳"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold"
                 >
                   <Mail className="h-4 w-4" aria-hidden />
@@ -170,10 +170,10 @@ function TeamPage() {
 
         <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
           <h2 className="text-center font-display text-3xl font-bold text-primary">
-            המחלקות המקצועיות במשרד
+            המחלקות המקצועיות במשרד רואי החשבון
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
-            מחלקות המשרד פועלות בשיתוף פעולה כדי לספק מענה חשבונאי, מיסויי, פיננסי ותפעולי בהתאם לאופי הפעילות ולהיקף השירות הנדרש.
+            המחלקות המקצועיות במשרד רואי החשבון פועלות בשיתוף פעולה ומספקות שירותי חשבונאות, מיסוי, שכר וניהול כספים בהתאם לאופי הפעילות ולהיקף ההתקשרות.
           </p>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             {DEPARTMENTS.map((d) => (
