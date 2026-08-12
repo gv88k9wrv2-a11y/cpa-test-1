@@ -28,7 +28,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Two principal options — and why the choice matters",
         p: [
-          "When an international group seeks to operate in Israel at a meaningful scale, there are generally two options: incorporate a private Israeli company wholly owned by the foreign parent (a subsidiary), or register the foreign company as a foreign corporation and operate through a branch.",
+          "When an international group plans ongoing activity in Israel, two common structures are an Israeli subsidiary and an Israeli branch. Other arrangements may also be relevant, depending on the activity and circumstances.",
           "Each option has implications across multiple areas: corporate income tax and withholding on dividends, legal liability, regulatory requirements, reporting structure, transfer pricing, and local reputation considerations.",
         ],
       },
@@ -54,7 +54,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         p: [
           "A branch is not a separate legal entity — it represents the foreign company's activity in Israel, registered as a foreign corporation with the Israeli Companies Registrar.",
           "Advantages: no withholding tax on the transfer of profits back to the head office (there is no legal 'dividend'), some operational simplicity, and, in certain cases, easier setup or wind-down of activity.",
-          "Disadvantages: the foreign company may be directly exposed to liabilities associated with the Israeli branch, special reporting is required on the income attributed to the branch, and transfer pricing between the branch and head office is scrutinized closely by the Israel Tax Authority.",
+          "Possible disadvantages include direct exposure of the foreign company to liabilities of the Israeli branch, Israeli reporting on income attributed to the branch, and transfer-pricing analysis of dealings between the branch and head office.",
         ],
       },
       {
@@ -70,15 +70,15 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Additional considerations",
         p: [
           "Industry regulation — in certain sectors (banking, insurance, aviation), formal requirements apply to the type of legal entity permitted.",
-          "Local reputation — an Israeli subsidiary with a local name can support local market perception.",
-          "Employee incentive plans — granting options to Israeli employees is generally simpler and more efficient under an Israeli company (Section 102).",
-          "Exit from the market — winding down a subsidiary can be more straightforward legally, though this depends on the circumstances.",
+          "Local market presence — an Israeli subsidiary may provide a clearer local identity for customers, suppliers and employees.",
+          "Employee incentive plans — the structure and tax treatment of options for Israeli employees should be reviewed under Section 102 and the applicable plan arrangements.",
+          "Exit from the market — the legal, tax, employment and reporting steps for winding down a subsidiary or branch depend on the structure and circumstances.",
         ],
       },
       {
         h: "Conclusion",
         p: [
-          "There is no single correct answer for every foreign company. The decision depends on a combination of tax considerations, legal risk, hiring plans, and long-term strategic objectives in Israel. In many cases, technology companies prefer a subsidiary, while a branch may be suitable for more limited activity.",
+          "There is no single correct structure for every foreign company. The decision depends on tax considerations, legal exposure, hiring plans, contracts, expected duration and the company’s objectives in Israel.",
           "Nimrodi & Co. can assist with the Israeli accounting and tax analysis of possible operating structures and with the preparation of information for registrations and ongoing reporting. Entity formation and legal structuring should be reviewed and implemented with qualified legal advisers. Contact the firm to discuss the activity and the possible engagement scope.",
         ],
       },
@@ -97,7 +97,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "The baseline principle — territorial taxation of a foreign company",
         p: [
-          "A company that is not an Israeli tax resident is taxable in Israel only on income produced or accrued in Israel. The central question is when the activity of a foreign company is regarded as 'producing income in Israel', rather than merely 'selling to Israeli customers'.",
+          "A company that is not an Israeli tax resident may still have Israeli tax obligations in relation to Israeli-source income or activity. The analysis distinguishes between selling to Israeli customers and conducting income-producing activity in Israel.",
           "Where a tax treaty exists between Israel and the company's country of residence, an additional layer of analysis applies — generally under the concept of a Permanent Establishment (PE).",
         ],
       },
@@ -127,9 +127,9 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Practical implications where a PE exists",
         p: [
-          "Obligation to register as a foreign corporation with the Companies Registrar and to file annual returns with the Israel Tax Authority on income attributed to the PE.",
-          "Requirement to establish Transfer Pricing in transactions between the foreign company and the PE, at arm's length terms.",
-          "Potential for double taxation if the company is also taxed in its country of residence — tax treaties then govern the availability of a foreign tax credit.",
+          "A permanent establishment may trigger Israeli registration, tax-return and reporting obligations, depending on the legal structure, activity and applicable requirements.",
+          "Transactions and profit attribution between the foreign company and the permanent establishment may require transfer-pricing analysis on an arm’s-length basis.",
+          "Double taxation may arise if the same income is taxed in Israel and in the company’s country of residence; treaty relief and foreign tax credits depend on the applicable rules.",
         ],
       },
       {
@@ -144,7 +144,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         h: "Conclusion",
         p: [
           "Foreign companies operating in Israel today face a complex regulatory environment. A review before activity commences may help identify accounting, tax, reporting and permanent-establishment issues and compare possible operating structures. The appropriate treatment depends on the facts, applicable law and relevant treaty.",
-          "Nimrodi & Co. advises foreign companies entering the Israeli market on accounting and tax analysis of proposed structures, transfer pricing, and ongoing reporting to the Israel Tax Authority.",
+          "Nimrodi & Co. assists foreign companies entering the Israeli market with accounting and tax analysis of proposed structures, transfer-pricing matters and ongoing Israeli reporting.",
         ],
       },
     ],
@@ -162,7 +162,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Why residency classification is so important",
         p: [
-          "Israel taxes its residents on a personal basis — an Israeli resident is taxable on worldwide income, whether earned in Israel or abroad. A non-resident is taxable in Israel only on income produced in Israel (territorial rules).",
+          "Israeli tax residents are generally subject to Israeli tax and reporting rules on worldwide income, while non-residents may be subject to Israeli tax on Israeli-source income, subject to the applicable law and treaty.",
           "Accordingly, the residency question is central to tax planning around relocation. An Israeli employee who moved to Berlin and continues to be classified as an Israeli resident may be liable to Israeli tax on the German salary, subject to a foreign tax credit under an applicable treaty.",
         ],
       },
