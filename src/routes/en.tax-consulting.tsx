@@ -8,7 +8,7 @@ const FAQS = [
   { q: "What is an Israeli advance tax ruling and when should it be considered?", a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear." },
   { q: "Can you assist with Israeli crypto tax reporting and compliance?", a: "Yes — tax, documentation and compliance support relating to crypto-derived funds and their presentation to financial institutions, subject to the institution's requirements and applicable law." },
   { q: "What options may exist for correcting prior Israeli tax reporting?", a: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations may vary depending on status, residence, citizenship, account location and applicable rules." },
-  { q: "Can you assist with Israeli tax analysis for a corporate reorganization?", a: "Yes — we plan and execute tax-deferred reorganizations under Sections 103–105, including mergers, spin-offs and asset transfers between related entities." },
+  { q: "Can the firm assist with the tax analysis of a corporate reorganization?", a: "We assist with Israeli tax analysis for corporate reorganizations that may qualify for tax deferral under the applicable provisions of Part E2 of the Income Tax Ordinance, including certain mergers, demergers and asset or share transfers, subject to the statutory conditions and the facts of the proposed transaction." },
 ];
 
 export const Route = createFileRoute("/en/tax-consulting")({

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.webp";
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";
 
@@ -58,6 +58,13 @@ function ContactEn() {
               value="16 Galgalei ha-Plada St, Herzliya Pituach"
               href="https://www.google.com/maps/search/?api=1&query=16+Galgalei+ha-Plada+St+Herzliya+Pituach"
             />
+            <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-6">
+              <Clock className="mt-1 h-5 w-5 text-gold" aria-hidden />
+              <div>
+                <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Business Hours</div>
+                <div className="mt-1 text-lg font-semibold text-primary">Sun–Thu · 9:00 AM–6:00 PM</div>
+              </div>
+            </div>
           </div>
         </section>
 

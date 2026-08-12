@@ -163,7 +163,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
             "Engagement terms and fees agreed according to the scope and level of CFO involvement",
             "Project-based: model build, Data Room prep, funding round support",
             "Interim CFO — bridging between outgoing and incoming CFO",
-            "Access senior-level financial leadership in a flexible structure tailored to the company's needs",
+            "CFO involvement structured according to the company’s needs, reporting requirements and agreed engagement scope",
             "Coordination with bookkeeping, payroll, tax and audit professionals when relevant to the engagement",
             "Support for an orderly handover to an internal or full-time CFO, based on the agreed transition scope",
           ],

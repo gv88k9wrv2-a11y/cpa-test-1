@@ -118,7 +118,7 @@ function HomeEn() {
               Boutique CPA Firm Specializing in Startups, High-Tech & Cross-Border Taxation
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Personal attention and senior-level involvement, with experience in Israeli accounting and tax, cross-border financial matters and fundraising-related reporting across different stages of a company’s development.
+              Accounting and tax services in Israel, including cross-border financial matters and fundraising-related reporting, provided according to the company’s stage and agreed engagement scope.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95">
@@ -207,13 +207,13 @@ function HomeEn() {
           <div className="mx-auto max-w-5xl px-4 sm:px-6">
             <div className="text-center">
               <div className="text-xs font-semibold uppercase tracking-widest text-gold">Why Nimrodi & Co.</div>
-              <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">A boutique firm with senior expertise</h2>
+              <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">How the firm works with clients</h2>
             </div>
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {[
-                { t: "Senior partner attention", d: "Direct access to the partner in charge — not a rotating junior team." },
-                { t: "Cross-border expertise", d: "Israeli-US Flips, transfer pricing, treaties, dual filings." },
-                { t: "Tech industry native", d: "Fluent across modern cloud accounting stacks — and we speak startup." },
+                { t: "Partner involvement", d: "Access to the partner responsible for the engagement, together with the team members assigned to the work." },
+                { t: "Cross-border tax coordination", d: "Israel-US restructuring matters, transfer pricing, tax treaties and coordination of reporting information." },
+                { t: "Accounting systems for technology companies", d: "Use of cloud accounting systems and financial workflows suited to technology companies and startups." },
                 { t: "Regulatory depth", d: "Review and preparation of advance tax-ruling applications, financial support for IIA grant applications and assessment of tax-benefit eligibility." },
                 { t: "Fundraising support", d: "Organization of financial information, financial models and due-diligence support according to the company’s stage and agreed scope." },
                 { t: "Bilingual practice", d: "Services in Hebrew and English, with coordination across time zones where included in the engagement." },

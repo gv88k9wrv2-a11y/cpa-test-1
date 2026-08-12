@@ -36,10 +36,10 @@ function AboutEn() {
               About the firm
             </div>
             <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">
-              A boutique CPA firm with senior-level involvement
+              Nimrodi & Co. CPA firm in Israel
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Nimrodi & Co. was founded on a simple idea: give clients the depth and rigor of a senior professional firm — with the accessibility, partner attention and continuity of a boutique. The firm has operated since 2000 and provides accounting, tax and financial services to companies, founders, individuals and international businesses operating in Israel.
+              Nimrodi & Co. has operated since 2000 and provides accounting, tax and financial services to companies, founders, individuals and international businesses operating in Israel. Engagement responsibilities, points of contact and service scope are agreed with each client.
             </p>
           </div>
         </section>
@@ -57,7 +57,7 @@ function AboutEn() {
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our approach</h2>
               <ul className="mt-5 space-y-3">
                 {[
-                  "Senior-level involvement. The professional responsible for the engagement is identified according to the agreed scope and working arrangements.",
+                  "Engagement responsibility. The professional responsible for the engagement is identified according to the agreed scope and working arrangements.",
                   "Long-term working relationships. Engagements may continue over time according to the client’s needs and the agreed scope.",
                   "Digital working methods. We use accounting platforms selected according to the client’s needs and the agreed scope of access.",
                   "Cross-border coordination. Israeli tax matters may be coordinated with qualified advisers in the relevant foreign jurisdictions.",
