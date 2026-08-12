@@ -24,6 +24,12 @@ const REDIRECTS: Record<string, string> = {
 };
 
 export const Route = createFileRoute("/$")({
+  head: () => ({
+    meta: [
+      { title: "העמוד לא נמצא | נמרודי ושות׳ – רואי חשבון" },
+      { name: "robots", content: "noindex, follow" },
+    ],
+  }),
   beforeLoad: ({ params }) => {
     const key = (params._splat ?? "").replace(/^\/+|\/+$/g, "");
     const target = REDIRECTS[key];
