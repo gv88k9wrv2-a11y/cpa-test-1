@@ -42,7 +42,7 @@ export const Route = createFileRoute("/en/services")({
   head: () => ({
     meta: [
       { title: "CPA Services in Israel | Nimrodi & Co., Herzliya Pituach" },
-      { name: "description", content: "Accounting, tax and financial services in Israel for companies and startups, including audit, payroll, bookkeeping, tax advisory and CFO support. Explore the services." },
+      { name: "description", content: "Accounting, tax and financial services in Israel for companies and startups, including audit, payroll, bookkeeping and CFO support. Explore the firm's services." },
       { property: "og:title", content: "Accounting and Tax Services in Israel | Nimrodi & Co." },
       { property: "og:description", content: "Accounting, tax and financial services for companies and startups in Israel, including audit, bookkeeping, payroll, tax advisory and CFO support. Explore the services." },
       { property: "og:url", content: `${BASE}/en/services` },
