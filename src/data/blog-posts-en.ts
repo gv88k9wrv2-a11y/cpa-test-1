@@ -7,6 +7,8 @@ export type BlogPostEn = {
   slug: string;
   title: string;
   excerpt: string;
+  /** SEO meta description, 150-160 chars */
+  metaDescription: string;
   date: string;
   readMin: number;
   category: string;
@@ -20,6 +22,8 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     title: "Israeli Subsidiary or Branch: Key Considerations for Foreign Entities",
     excerpt:
       "Choosing between an Israeli subsidiary and a branch of a foreign company affects tax, legal liability, and operations. A professional review of the key considerations.",
+    metaDescription:
+      "Israeli subsidiary or branch of a foreign company: a professional review of the tax, liability, operational and reporting considerations. Contact the firm.",
     date: "2026-03-19",
     readMin: 9,
     category: "International Tax",
@@ -89,6 +93,8 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     title: "Foreign Companies Operating in Israel: When Does a Corporate Tax Liability Arise?",
     excerpt:
       "Permanent Establishment, dependent agents, and digital activity — a professional review of the conditions under which a foreign company becomes taxable in Israel, and the practical implications.",
+    metaDescription:
+      "Foreign companies operating in Israel: permanent establishment, dependent agents, digital activity and local reporting duties, reviewed. Contact the firm today.",
     date: "2026-02-27",
     readMin: 9,
     category: "International Tax",
@@ -154,6 +160,8 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     title: "Relocation from Israel: When Can Israeli Tax Residency End?",
     excerpt:
       "Moving abroad does not automatically sever Israeli tax residency. A review of the residency tests, the implications of relocation, and the 'exit tax' issue.",
+    metaDescription:
+      "Relocation and Israeli tax residency: centre-of-life tests, day counting, severing residency and exit-tax implications, reviewed. Contact the firm today.",
     date: "2026-03-05",
     readMin: 10,
     category: "International Tax",
