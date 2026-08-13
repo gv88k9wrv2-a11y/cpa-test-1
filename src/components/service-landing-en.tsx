@@ -119,7 +119,7 @@ export function ServiceLandingEn({
             {sections.map((s) => (
               <article key={s.title}>
                 <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">{s.title}</h2>
-                <p className="mt-4 leading-relaxed text-muted-foreground whitespace-pre-line">{s.body}</p>
+                <div className="mt-4 leading-relaxed text-muted-foreground whitespace-pre-line">{s.body}</div>
                 {s.bullets && (
                   <ul className="mt-5 space-y-2">
                     {s.bullets.map((b) => (
@@ -145,7 +145,7 @@ export function ServiceLandingEn({
                     <span className="mr-2 text-gold">+</span>
                     {f.q}
                   </summary>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">{f.a}</p>
+                  <div className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">{f.a}</div>
                 </details>
               ))}
             </div>
