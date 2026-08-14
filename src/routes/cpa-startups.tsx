@@ -218,7 +218,7 @@ export const Route = createFileRoute("/cpa-startups")({
             "מודל פיננסי ותרחישים בהתאם לתקופת התכנון ולצורכי החברה",
             "Board Deck חודשי / רבעוני ו-Investor Update Email",
             "השתתפות בדיוני משקיעים ותמיכה במידע הפיננסי כאשר הדבר נכלל בהתקשרות",
-            "ניהול Data Room ומוכנות מתמדת ל-Due Diligence",
+            "ניהול Data Room ומוכנות מתמדת לבדיקת נאותות",
             "ארגון מידע ותיאום העברה ל-CFO פנימי בהתאם להיקף שסוכם ולזמינות הנתונים",
           ],
         },
@@ -228,7 +228,7 @@ export const Route = createFileRoute("/cpa-startups")({
         title: "מידע פיננסי למסלולי מענקים והטבות אפשריים",
         links: [
           { label: "רשות החדשנות – מענקים ומסלולים (המדען הראשי)", href: "https://innovationisrael.org.il" },
-          { label: "דיווח אופציות לעובדים (סעיף 102) – רשות המסים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
+          { label: "דיווח תגמול הוני לעובדים (סעיף 102) – רשות המסים", href: "https://www.gov.il/he/departments/israel_tax_authority" },
 
         ],
       }}

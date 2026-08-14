@@ -48,7 +48,7 @@ const MAIN_LINKS = [
   { to: "/faq", label: "שאלות ותשובות" },
   { to: "/contact", label: "צור קשר" },
   { to: "/accessibility", label: "הצהרת נגישות" },
-  { to: "/privacy-policy", label: "מדיניות פרטיות ושימוש באתר" },
+  { to: "/privacy-policy", label: "מדיניות פרטיות ותנאי שימוש" },
 ] as const;
 
 
@@ -77,8 +77,8 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
     items: [
       {
         to: "/fractional-cfo",
-        label: "ניהול כספים ו-CFO",
-        desc: "Fractional CFO · Burn · Runway · בורד",
+        label: "ניהול כספים ו-Fractional CFO",
+        desc: "תקציב · תזרים · Burn ו-Runway · דיווח ניהולי",
         icon: LineChart,
       },
       {
@@ -89,61 +89,61 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
       },
       {
         to: "/payroll",
-        label: "שכר ותלושים",
-        desc: "102, 106, אופציות לעובדים",
+        label: "חשבות שכר ותלושים",
+        desc: "תלושים · דיווחי מעסיק · טופסי 106 ו-161",
         icon: ReceiptText,
       },
       {
         to: "/audit",
-        label: "ביקורת דוחות",
+        label: "ביקורת דוחות כספיים",
         desc: "Israeli GAAP · IFRS",
         icon: FileSearch,
       },
       {
         to: "/tax-consulting",
         label: "ייעוץ מס",
-        desc: "בחינת היבטי מס, החלטות מיסוי והשגות",
+        desc: "תכנון מס · בקשות להחלטות מיסוי · השגות",
         icon: FileSpreadsheet,
       },
     ],
   },
 
   {
-    label: "לפי סוג לקוח",
+    label: "שירותים לפי סוג לקוח",
     items: [
       {
         to: "/cpa-startups",
-        label: "סטארטאפים והייטק",
-        desc: "גיוסי הון, 102, Flip",
+        label: "סטארטאפים וחברות טכנולוגיה",
+        desc: "חשבונאות · סעיף 102 · הכנה לגיוסי הון",
         icon: Building2,
       },
       {
         to: "/cpa-freelancers",
-        label: "עצמאים ופרילנסרים",
-        desc: "פתיחת תיקים, דוח שנתי, הצהרת הון",
+        label: "עצמאים ובעלי מקצוע",
+        desc: "פתיחת תיקים · דיווחים תקופתיים · דוח שנתי",
         icon: Briefcase,
       },
       {
         to: "/cpa-foreign-companies",
-        label: "חברות זרות בישראל",
-        desc: "הקמת חברה בת, סניף, TP",
+        label: "חברות זרות הפועלות בישראל",
+        desc: "חברה בת או סניף · דיווחים · מחירי העברה",
         icon: Globe2,
       },
       {
         to: "/cpa-herzliya",
-        label: "עסקים בהרצליה",
-        desc: "משרד בוטיק בהרצליה פיתוח",
+        label: "רואה חשבון בהרצליה פיתוח",
+        desc: "שירות במשרד בהרצליה פיתוח או מרחוק",
         icon: MapPin,
       },
     ],
   },
   {
-    label: "מס בין־לאומי",
+    label: "מיסוי בין־לאומי",
     items: [
       {
         to: "/cpa-international",
-        label: "רילוקיישן ותושבים חוזרים",
-        desc: "ניתוק תושבות, הטבות עולים, אמנות מס",
+        label: "רילוקיישן, עולים ותושבים חוזרים",
+        desc: "תושבות מס · הטבות מס · הכנסות מחו״ל · אמנות מס",
         icon: Plane,
       },
     ],

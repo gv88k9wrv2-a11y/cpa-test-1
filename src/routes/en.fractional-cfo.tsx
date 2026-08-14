@@ -19,7 +19,7 @@ const FAQS = [
     a: "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, operating payments, financing arrangements and assumptions. The calculation and scenarios should be updated when material information changes. Fundraising timing is a management decision that depends on the company’s plans, market conditions and available financing alternatives.",
   },
   {
-    q: "Do you actually attend investor pitches?",
+    q: "Does the firm actually attend investor pitches?",
     a: "Depending on the agreed engagement scope, the firm may assist with preparation of financial materials, review of model assumptions, discussion preparation and participation in investor meetings. Management remains responsible for the information presented, the company’s statements and all fundraising decisions.",
   },
   {
@@ -35,7 +35,7 @@ const FAQS = [
     a: "Fees and engagement terms depend on the agreed responsibilities, expected level of involvement, reporting frequency and project requirements. The scope, points of contact and pricing structure are defined in advance and may be updated if the agreed work changes.",
   },
   {
-    q: "When should a company move to a full-time CFO?",
+    q: "When may a company move to a full-time CFO?",
     a: "The appropriate time to appoint a full-time CFO depends on the company’s reporting complexity, financing activity, geographic footprint, internal team, governance requirements and management needs. The transition should be assessed according to the company’s circumstances rather than a single funding, revenue or headcount threshold. Where agreed, the firm may support an orderly handover of financial information and responsibilities.",
   },
 ];
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       {
         name: "description",
         content:
-          "Fractional CFO services in Israel, including budgeting, cash-flow planning, financial models, management reporting and board packages. Contact the firm today.",
+          "Outsourced financial management and Fractional CFO services in Israel, including budgeting, cash-flow planning, financial models, management reporting and board packages. Contact the firm today.",
       },
       { property: "og:title", content: "Fractional CFO — Nimrodi & Co." },
       {
@@ -69,7 +69,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
   component: () => (
     <ServiceLandingEn
       heroImage={heroImg}
-      heroImageAlt="Executive boardroom with financial dashboards — Fractional CFO services"
+      heroImageAlt="Executive boardroom with financial dashboards — Outsourced financial management and Fractional CFO services"
       icon={LineChart}
       eyebrow="Financial Management & CFO"
       title="Fractional CFO — strategic corporate finance for growth-stage companies"
@@ -83,7 +83,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         "Organization of available financial and tax information for due-diligence processes, according to the agreed scope",
         "Unit-economics and Rule-of-40 analysis based on the company’s data and reporting needs",
         "Debt facilities, Venture Debt and FX hedging",
-        "M&A, exit and next-round preparation",
+        "mergers and acquisitions, exit and next-round preparation",
       ]}
       sections={[
         {
@@ -170,7 +170,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         },
       ]}
       faqs={FAQS}
-      ctaHeadline="Approaching the next raise or preparing for a board meeting? Let's talk."
+      ctaHeadline="Approaching the next raise or preparing for a board meeting? Discuss your inquiry."
     />
   ),
 });
