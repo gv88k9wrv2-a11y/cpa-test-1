@@ -42,7 +42,7 @@ function PrivacyPageEn() {
         <article className="mt-10 space-y-10 text-foreground leading-relaxed">
           <section>
             <h2 className="font-display text-2xl font-bold text-primary">
-              1. Commitment to Confidentiality &amp; Scope
+              1. Confidentiality and Scope
             </h2>
             <p className="mt-3">
               Nimrodi &amp; Co. CPA ("the Firm") is bound by strict professional secrecy under the
@@ -59,7 +59,7 @@ function PrivacyPageEn() {
 
           <section>
             <h2 className="font-display text-2xl font-bold text-primary">
-              2. Document, Form &amp; Financial Data Submission
+              2. Submission of Documents and Financial Information
             </h2>
             <p className="mt-3">
               This site is a promotional and informational website only. It{" "}
