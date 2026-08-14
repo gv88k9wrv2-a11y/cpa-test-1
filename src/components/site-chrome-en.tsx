@@ -47,8 +47,11 @@ const MAIN_LINKS = [
   { to: "/en/blog", label: "Blog" },
   { to: "/en/faq", label: "FAQ" },
   { to: "/en/contact", label: "Contact" },
-  { to: "/en/accessibility", label: "Accessibility" },
-  { to: "/en/privacy-policy", label: "Privacy Policy & Terms of Use" },
+] as const;
+
+const LEGAL_LINKS_EN = [
+  { to: "/en/accessibility", label: "Accessibility Statement" },
+  { to: "/en/privacy-policy", label: "Privacy Policy" },
 ] as const;
 
 
@@ -309,6 +312,24 @@ export function SiteFooterEn() {
       <div className="border-t border-primary-foreground/10 py-5 text-center text-xs text-primary-foreground/60">
         © {new Date().getFullYear()} Nimrodi &amp; Co. — Certified Public Accountants. All rights reserved.
       </div>
+      <nav
+        dir="ltr"
+        aria-label="Legal links"
+        className="border-t border-primary-foreground/10 px-4 py-4 sm:px-6"
+      >
+        <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-primary-foreground/70">
+          {LEGAL_LINKS_EN.map((l) => (
+            <li key={l.to}>
+              <Link
+                to={l.to}
+                className="whitespace-normal underline-offset-4 hover:text-gold hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+              >
+                {l.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </footer>
   );
 }
