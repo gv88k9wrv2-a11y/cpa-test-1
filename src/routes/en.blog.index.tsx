@@ -17,7 +17,7 @@ export const Route = createFileRoute("/en/blog/")({
       { property: "og:title", content: "Accounting and Tax Insights | Nimrodi & Co. CPA" },
       {
         property: "og:description",
-        content: "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and digital assets. Explore the available posts.",
+        content: "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and crypto and digital assets. Explore the available posts.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: CANONICAL },

@@ -7,11 +7,11 @@ import { LeadForm } from "../components/lead-form";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "צור קשר | נמרודי ושות׳ רואי חשבון בהרצליה פיתוח" },
+      { title: "יצירת קשר | נמרודי ושות׳ רואי חשבון בהרצליה פיתוח" },
       {
         name: "description",
         content:
-          "צרו קשר עם נמרודי ושות׳ רואי חשבון בהרצליה פיתוח בנושאי חשבונאות, מס, שכר, ביקורת וליווי פיננסי שוטף. בעמוד מופיעים טלפון, וואטסאפ, דוא״ל ופרטי הגעה מלאים.",
+          "צרו קשר עם נמרודי ושות׳ רואי חשבון בהרצליה פיתוח בנושאי חשבונאות, מס, שכר, ביקורת וליווי פיננסי שוטף. בעמוד מופיעים טלפון, פנייה ראשונית בוואטסאפ, דוא״ל ופרטי הגעה מלאים.",
       },
       { property: "og:title", content: "צור קשר עם נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
       {
@@ -46,10 +46,10 @@ function ContactPage() {
             צור קשר
           </div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            בואו נדבר
+            פנו אלינו לבירור חשבונאי, מיסויי או פיננסי
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            השאירו פרטים וניצור עמכם קשר בהקדם האפשרי.
+            אפשר להשאיר פרטים ולתאר בקצרה את הנושא. ניתן לפנות גם בטלפון, בוואטסאפ או בדוא״ל באמצעות פרטי הקשר המופיעים בעמוד.
           </p>
         </div>
       </section>
@@ -86,13 +86,13 @@ function ContactPage() {
             />
             <ContactCard
               icon={MapPin}
-              title="כתובת המשרד"
+              title="כתובת המשרד בהרצליה פיתוח"
               value="גלגלי הפלדה 16, הרצליה פיתוח"
               href="https://www.google.com/maps/search/?api=1&query=גלגלי+הפלדה+16+הרצליה+פיתוח"
             />
             <ContactCard
               icon={Clock}
-              title="שעות פעילות"
+              title="שעות מענה משרדיות"
               value="ימים א׳–ה׳ · 09:00–18:00"
             />
           </div>

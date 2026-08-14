@@ -7,7 +7,7 @@ const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
   { q: "Which bookkeeping and accounting software do you support in Israel?", a: "We work with Israeli and international bookkeeping and accounting platforms. The appropriate software and setup depend on the company’s activity, Israeli reporting requirements, existing systems, and the agreed service scope." },
   { q: "Can you transfer our Israeli bookkeeping from another provider?", a: "We can assist with transferring Israeli bookkeeping from another provider, including reviewing opening balances, historical reconciliations, and available accounting records. The process depends on the completeness and quality of the information received." },
-  { q: "Do you prepare Israeli VAT and withholding tax reports?", a: "The service may include preparing periodic Israeli VAT, withholding tax, and employer reports, together with year-end reconciliations, according to the applicable reporting obligations and agreed scope." },
+  { q: "Does the firm prepare Israeli VAT and withholding tax reports?", a: "The service may include preparing periodic Israeli VAT, withholding tax, and employer reports, together with year-end reconciliations, according to the applicable reporting obligations and agreed scope." },
 ];
 
 export const Route = createFileRoute("/en/bookkeeping")({

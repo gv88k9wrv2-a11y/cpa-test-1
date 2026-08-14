@@ -50,11 +50,11 @@ export const Route = createFileRoute("/en/tax-consulting")({
       ]}
       sections={[
         {
-          title: "Israeli Tax Planning Before a Transaction",
+          title: "Israeli Tax Review Before a Transaction",
           body: "Before a transaction, relevant tax considerations may include fundraising, mergers and acquisitions, secondary sales, spin-offs and other structural changes. Within the agreed scope, the firm may assist with Israeli tax analysis and scenario review based on the available facts and assumptions.",
         },
         {
-          title: "Tax ruling requests",
+          title: "Advance Tax Ruling Requests",
           body: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials.",
         },
         {

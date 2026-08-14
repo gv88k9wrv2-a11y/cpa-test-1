@@ -22,7 +22,7 @@ const GROUPS = [
   },
 
   {
-    title: "By Client Type",
+    title: "Services by Client Type",
     items: [
       { to: "/en/cpa-startups", label: "CPA Services for Startups and Technology Companies", icon: Building2, desc: "Startup accounting, fundraising readiness, Section 102 equity plans, Israel-Delaware flip analysis, and technology tax incentives." },
       { to: "/en/cpa-freelancers", label: "CPA Services for Freelancers and Self-Employed Businesses", icon: Briefcase, desc: "Israeli tax registration, periodic filings, annual tax returns, capital declarations, rental income, and digital asset reporting." },
@@ -31,7 +31,7 @@ const GROUPS = [
     ],
   },
   {
-    title: "International Tax Services in Israel",
+    title: "International and Cross-Border Tax Services",
     items: [
       { to: "/en/cpa-international", label: "Relocation, New Immigrants, and Returning Residents", icon: Plane, desc: "Israeli tax residency, relocation, new immigrant and returning resident benefits, tax treaties, and foreign income reporting." },
     ],

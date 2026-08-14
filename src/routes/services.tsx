@@ -34,9 +34,9 @@ type ServiceGroup = { title: string; items: ServiceItem[] };
 
 const GROUPS: ServiceGroup[] = [
   {
-    title: "שירותי ליבה",
+    title: "שירותים חשבונאיים ופיננסיים",
     items: [
-      { to: "/fractional-cfo", label: "Fractional CFO – ניהול כספים אסטרטגי", icon: ChartLine, desc: "תקציב, תזרים, מדדי Burn ו־Runway, מודלים פיננסיים ומידע ניהולי לדירקטוריון ולמשקיעים." },
+      { to: "/fractional-cfo", label: "ניהול כספים במיקור חוץ ו-Fractional CFO", icon: ChartLine, desc: "תקציב, תזרים, מדדי Burn ו־Runway, מודלים פיננסיים ומידע ניהולי לדירקטוריון ולמשקיעים." },
       { to: "/bookkeeping", label: "הנהלת חשבונות", icon: Calculator, desc: "הנהלת חשבונות דיגיטלית, התאמות, דיווחים תקופתיים והפקת מידע ניהולי בהתאם למערכת ולהיקף השירות." },
       { to: "/payroll", label: "שכר ואופציות (ESOP)", icon: ReceiptText, desc: "תלושי שכר, סעיף 102 (תוכניות אופציות ESOP), טופס 106, טופס 161 ומידע ותיאום בנושאי הפקדות פנסיוניות." },
       { to: "/audit", label: "ביקורת חשבונאית", icon: FileSearch, desc: "ביקורת דוחות כספיים בהתאם לכללי החשבונאות המקובלים בישראל ולתקני IFRS, וכן בדיקות נאותות בעסקאות מיזוג ורכישה." },
@@ -46,16 +46,16 @@ const GROUPS: ServiceGroup[] = [
   {
     title: "לפי סוג לקוח",
     items: [
-      { to: "/cpa-startups", label: "סטארטאפים וחברות טכנולוגיה", icon: Rocket, desc: "גיוסי הון, אופציות 102, מבנה Delaware-Israel Flip ומעמד מפעל טכנולוגי מועדף." },
+      { to: "/cpa-startups", label: "סטארטאפים וחברות טכנולוגיה בישראל", icon: Rocket, desc: "גיוסי הון, אופציות 102, מבנה Delaware-Israel Flip ומעמד מפעל טכנולוגי מועדף." },
       { to: "/cpa-freelancers", label: "עצמאים ופרילנסרים", icon: Briefcase, desc: "סיוע בפתיחת תיקים, דיווחים שוטפים, דוח שנתי והכנת מידע להצהרת הון, בהתאם להיקף ההתקשרות." },
       { to: "/cpa-foreign-companies", label: "חברות זרות בישראל", icon: Globe2, desc: "חברה בת או סניף, KYC, Transfer Pricing ודיווחים שוטפים לפי הדרישות החלות." },
-      { to: "/cpa-herzliya", label: "רואה חשבון בהרצליה פיתוח", icon: MapPin, desc: "משרד בוטיק מקומי בלב מסדרון ההייטק של ישראל." },
+      { to: "/cpa-herzliya", label: "רואה חשבון בהרצליה פיתוח", icon: MapPin, desc: "שירותי ראיית חשבון ממשרד בהרצליה פיתוח, בפגישות מתואמות או בעבודה מרחוק." },
     ],
   },
   {
     title: "מיסוי בין־לאומי",
     items: [
-      { to: "/cpa-international", label: "רילוקיישן ותושבים חוזרים", icon: Plane, desc: "סוגיות תושבות, הטבות לעולים, אמנות מס ותכנון מס בין־לאומי." },
+      { to: "/cpa-international", label: "רילוקיישן ותושבים חוזרים", icon: Plane, desc: "בחינת תושבות מס, הכנסות מחו״ל, הטבות לעולים ולתושבים חוזרים ויישום אמנות מס בהתאם לנסיבות." },
     ],
   },
 ];
@@ -63,7 +63,7 @@ const GROUPS: ServiceGroup[] = [
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "שירותי משרד רואי חשבון | נמרודי ושות׳ – הרצליה" },
+      { title: "שירותי ראיית חשבון, מס וניהול כספים | נמרודי ושות׳" },
       {
         name: "description",
         content:
