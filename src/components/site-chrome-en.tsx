@@ -47,8 +47,11 @@ const MAIN_LINKS = [
   { to: "/en/blog", label: "Blog" },
   { to: "/en/faq", label: "FAQ" },
   { to: "/en/contact", label: "Contact" },
-  { to: "/en/accessibility", label: "Accessibility" },
-  { to: "/en/privacy-policy", label: "Privacy Policy & Terms of Use" },
+] as const;
+
+const LEGAL_LINKS_EN = [
+  { to: "/en/accessibility", label: "Accessibility Statement" },
+  { to: "/en/privacy-policy", label: "Privacy Policy" },
 ] as const;
 
 
