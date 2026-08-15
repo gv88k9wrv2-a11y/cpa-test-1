@@ -35,7 +35,11 @@ export const BLOG_POSTS: BlogPost[] = [
     translationKey: "rental-income-israel",
     imageAlt: "מיסוי הכנסות משכר דירה בישראל – שלושת המסלולים ואיך בוחרים",
     tags: ["שכר דירה", "מיסוי נדל״ן", "דיווח", "הוצאות"],
-    relatedSlugs: ["multiple-rental-properties-taxation", "crypto-reporting", "us-israel-tax-considerations"],
+    relatedSlugs: [
+      "multiple-rental-properties-taxation",
+      "crypto-reporting",
+      "us-israel-tax-considerations",
+    ],
     relatedService: { href: "/tax-consulting", label: "ייעוץ מס ותכנון מס" },
     title: "מיסוי הכנסות משכר דירה בישראל – שלושת המסלולים ואיך בוחרים",
     excerpt:
@@ -58,7 +62,7 @@ export const BLOG_POSTS: BlogPost[] = [
         h: "מסלול א׳ – פטור על שכר דירה נמוך",
         p: [
           "המחוקק קבע פטור חלקי על הכנסה מהשכרת דירת מגורים כאשר סך שכר הדירה החודשי הכולל של המשכיר אינו עולה על תקרה שמתעדכנת מדי שנה. מדובר בתקרה מצטברת – כלומר, אם יש לכם כמה דירות מושכרות, סוכמים את כל שכר הדירה.",
-          "כאשר שכר הדירה בפועל גבוה מהתקרה אך לא בהרבה, קיים חישוב של \"פטור יחסי\" – חלק ההכנסה עד לתקרה יהיה פטור, וההפרש חייב במס לפי המסלול הרגיל.",
+          'כאשר שכר הדירה בפועל גבוה מהתקרה אך לא בהרבה, קיים חישוב של "פטור יחסי" – חלק ההכנסה עד לתקרה יהיה פטור, וההפרש חייב במס לפי המסלול הרגיל.',
           "הפטור מותנה בכך שהדירה משמשת בפועל למגורים של השוכר ואינה מושכרת לצרכים עסקיים. כדאי לשמור את חוזי השכירות ולוודא שהם משקפים שימוש למגורים.",
         ],
       },
@@ -111,7 +115,11 @@ export const BLOG_POSTS: BlogPost[] = [
     translationKey: "multiple-rental-properties",
     imageAlt: "בעל מספר דירות מושכרות – מתי הופכים מ״משקיע״ ל״עוסק״?",
     tags: ["מספר דירות", "עוסק", "מיסוי נדל״ן", "סיווג"],
-    relatedSlugs: ["rental-income-taxation-israel", "crypto-reporting", "startup-taxation-overview"],
+    relatedSlugs: [
+      "rental-income-taxation-israel",
+      "crypto-reporting",
+      "startup-taxation-overview",
+    ],
     relatedService: { href: "/tax-consulting", label: "ייעוץ מס ותכנון מס" },
     title: "בעל מספר דירות מושכרות – מתי הופכים מ״משקיע״ ל״עוסק״?",
     excerpt:
@@ -296,7 +304,11 @@ export const BLOG_POSTS: BlogPost[] = [
     translationKey: "digital-assets-reporting-israel",
     imageAlt: "דיווח ומיסוי פעילות בנכסים דיגיטליים בישראל",
     tags: ["נכסים דיגיטליים", "קריפטו", "דיווח", "מקור כספים"],
-    relatedSlugs: ["rental-income-taxation-israel", "multiple-rental-properties-taxation", "us-israel-tax-considerations"],
+    relatedSlugs: [
+      "rental-income-taxation-israel",
+      "multiple-rental-properties-taxation",
+      "us-israel-tax-considerations",
+    ],
     relatedService: { href: "/tax-consulting", label: "מיסוי ודיווח נכסים דיגיטליים" },
     title: "דיווח ומיסוי פעילות בנכסים דיגיטליים בישראל",
     excerpt:
@@ -495,7 +507,11 @@ export const BLOG_POSTS: BlogPost[] = [
     translationKey: "startup-accounting-israel",
     imageAlt: "מיסוי לסטארטאפים – מדריך מקצועי ליזמים ולמייסדים",
     tags: ["סטארטאפים", "חשבונאות", "שכר", "סעיף 102"],
-    relatedSlugs: ["crypto-reporting", "us-israel-tax-considerations", "rental-income-taxation-israel"],
+    relatedSlugs: [
+      "crypto-reporting",
+      "us-israel-tax-considerations",
+      "rental-income-taxation-israel",
+    ],
     relatedService: { href: "/cpa-startups", label: "שירותי ראיית חשבון לסטארטאפים" },
     title: "מיסוי לסטארטאפים – מדריך מקצועי ליזמים ולמייסדים",
     excerpt:
@@ -644,7 +660,11 @@ export const BLOG_POSTS: BlogPost[] = [
     translationKey: "us-citizens-israel-reporting",
     imageAlt: "מיסוי ודיווח בין ישראל לארצות הברית ליחידים ולחברות",
     tags: ["ארה״ב", "מיסוי בין־לאומי", "דיווח", "זיכוי מס"],
-    relatedSlugs: ["crypto-reporting", "rental-income-taxation-israel", "startup-taxation-overview"],
+    relatedSlugs: [
+      "crypto-reporting",
+      "rental-income-taxation-israel",
+      "startup-taxation-overview",
+    ],
     relatedService: { href: "/cpa-international", label: "מיסוי בין־לאומי ורילוקיישן" },
     title: "מיסוי ודיווח בין ישראל לארצות הברית ליחידים ולחברות",
     excerpt:
@@ -662,7 +682,6 @@ export const BLOG_POSTS: BlogPost[] = [
           "מגורים בישראל אינם מבטלים בהכרח חובות מס או דיווח החלות בארצות הברית מכוח אזרחות, תושבות או מעמד אמריקאי אחר. סוגי הדוחות והטפסים נבחנים לפי המעמד, ההכנסות, החשבונות, הנכסים, ההחזקות והנתונים של כל שנת מס.",
           "דוח מס פדרלי, FBAR ו־Form 8938 הם דיווחים נפרדים, ולכל אחד תנאים, ספים ומידע נדרש משלו. יש לבדוק בכל שנת מס אילו חובות חלות ולהכין את המידע עם יועץ מס אמריקאי מוסמך. השלכות של איחור או אי־דיווח תלויות בסוג החובה ובדין האמריקאי.",
           "יש לבחון את החובות עם יועץ מס אמריקאי מוסמך. המשרד יכול לסייע בהיבטים הישראליים ובתיאום המידע הנדרש.",
-
         ],
       },
       {
@@ -724,8 +743,15 @@ export const BLOG_POSTS: BlogPost[] = [
     image: imgForeign,
     imageAlt: "חברה ישראלית או סניף של חברה זרה: איך בוחנים את מבנה הפעילות בישראל",
     tags: ["חברות זרות", "חברה בת", "סניף", "מיסוי בין־לאומי"],
-    relatedSlugs: ["foreign-company-tax-liability-israel", "relocation-tax-residency-israel", "crypto-reporting"],
-    relatedService: { href: "/cpa-foreign-companies", label: "שירותי ראיית חשבון לחברות זרות בישראל" },
+    relatedSlugs: [
+      "foreign-company-tax-liability-israel",
+      "relocation-tax-residency-israel",
+      "crypto-reporting",
+    ],
+    relatedService: {
+      href: "/cpa-foreign-companies",
+      label: "שירותי ראיית חשבון לחברות זרות בישראל",
+    },
     sections: [
       {
         h: "הבחירה מתחילה באופי הפעילות",
@@ -797,8 +823,15 @@ export const BLOG_POSTS: BlogPost[] = [
     image: imgForeign,
     imageAlt: "מתי פעילות של חברה זרה יוצרת חבות מס או מוסד קבע בישראל?",
     tags: ["חברות זרות", "מוסד קבע", "חבות מס", "דיווח"],
-    relatedSlugs: ["israeli-subsidiary-or-branch", "relocation-tax-residency-israel", "crypto-reporting"],
-    relatedService: { href: "/cpa-foreign-companies", label: "שירותי ראיית חשבון לחברות זרות בישראל" },
+    relatedSlugs: [
+      "israeli-subsidiary-or-branch",
+      "relocation-tax-residency-israel",
+      "crypto-reporting",
+    ],
+    relatedService: {
+      href: "/cpa-foreign-companies",
+      label: "שירותי ראיית חשבון לחברות זרות בישראל",
+    },
     sections: [
       {
         h: "לא רק מקום ההתאגדות קובע",
@@ -876,7 +909,11 @@ export const BLOG_POSTS: BlogPost[] = [
     image: imgIntl,
     imageAlt: "רילוקיישן מישראל: מתי עשויה להיפסק תושבות המס הישראלית?",
     tags: ["רילוקיישן", "תושבות מס", "מרכז החיים", "מס יציאה"],
-    relatedSlugs: ["israeli-subsidiary-or-branch", "foreign-company-tax-liability-israel", "crypto-reporting"],
+    relatedSlugs: [
+      "israeli-subsidiary-or-branch",
+      "foreign-company-tax-liability-israel",
+      "crypto-reporting",
+    ],
     relatedService: { href: "/cpa-international", label: "מיסוי בין־לאומי ורילוקיישן" },
     sections: [
       {

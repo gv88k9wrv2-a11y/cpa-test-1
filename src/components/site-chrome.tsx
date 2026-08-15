@@ -17,10 +17,8 @@ import {
 } from "lucide-react";
 import { SocialIcons } from "./social-proof";
 
-
 const WHATSAPP_URL =
-  "https://wa.me/972546688681?text=" +
-  encodeURIComponent("פנייה מהאתר – נמרודי ושות׳");
+  "https://wa.me/972546688681?text=" + encodeURIComponent("פנייה מהאתר – נמרודי ושות׳");
 
 const PHONE_TEL = "tel:099582211";
 const PHONE_DISPLAY = "09-9582211";
@@ -56,7 +54,6 @@ const LEGAL_LINKS = [
   { to: "/accessibility", label: "הצהרת נגישות" },
   { to: "/privacy-policy", label: "מדיניות פרטיות ושימוש באתר" },
 ] as const;
-
 
 type ServiceRoute =
   | "/bookkeeping"
@@ -170,126 +167,131 @@ export function SiteHeader() {
         דלג לתוכן העיקרי
       </a>
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        {/* Logo */}
-        <Link to="/" className="flex min-w-0 flex-col leading-tight">
-          <span className="truncate font-display text-lg font-bold text-primary sm:text-xl">
-            נמרודי ושות׳
-          </span>
-          <span className="hidden text-[11px] text-muted-foreground sm:block sm:text-xs">
-            רואי חשבון · הרצליה פיתוח
-          </span>
-        </Link>
-
-        {/* Desktop nav */}
-        <nav
-          aria-label="ניווט ראשי"
-          className="hidden items-center gap-1 text-sm font-medium text-foreground/80 lg:flex"
-        >
-          <Link
-            to="/"
-            className="rounded-md px-3 py-2 hover:text-primary"
-            activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
-            activeOptions={{ exact: true }}
-          >
-            בית
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+          {/* Logo */}
+          <Link to="/" className="flex min-w-0 flex-col leading-tight">
+            <span className="truncate font-display text-lg font-bold text-primary sm:text-xl">
+              נמרודי ושות׳
+            </span>
+            <span className="hidden text-[11px] text-muted-foreground sm:block sm:text-xs">
+              רואי חשבון · הרצליה פיתוח
+            </span>
           </Link>
 
-          {/* Services mega-menu (hover) */}
-          <div className="group relative">
-            <button
-              type="button"
-              className="inline-flex items-center gap-1 rounded-md px-3 py-2 hover:text-primary"
+          {/* Desktop nav */}
+          <nav
+            aria-label="ניווט ראשי"
+            className="hidden items-center gap-1 text-sm font-medium text-foreground/80 lg:flex"
+          >
+            <Link
+              to="/"
+              className="rounded-md px-3 py-2 hover:text-primary"
+              activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
+              activeOptions={{ exact: true }}
             >
-              שירותים
-              <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden />
-            </button>
+              בית
+            </Link>
 
-            <div className="pointer-events-none invisible absolute right-0 top-full z-50 w-[720px] translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-              <div className="grid grid-cols-3 gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl">
-                {SERVICE_GROUPS.map((group) => (
-                  <div key={group.label}>
-                    <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-gold">
-                      {group.label}
+            {/* Services mega-menu (hover) */}
+            <div className="group relative">
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 rounded-md px-3 py-2 hover:text-primary"
+              >
+                שירותים
+                <ChevronDown
+                  className="h-3.5 w-3.5 transition group-hover:rotate-180"
+                  aria-hidden
+                />
+              </button>
+
+              <div className="pointer-events-none invisible absolute right-0 top-full z-50 w-[720px] translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+                <div className="grid grid-cols-3 gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl">
+                  {SERVICE_GROUPS.map((group) => (
+                    <div key={group.label}>
+                      <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-gold">
+                        {group.label}
+                      </div>
+                      <ul className="space-y-1">
+                        {group.items.map((item) => (
+                          <li key={item.to}>
+                            <Link
+                              to={item.to}
+                              className="group/link flex items-start gap-3 rounded-lg p-2 transition hover:bg-secondary"
+                            >
+                              <div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-md bg-secondary text-primary group-hover/link:bg-gold/20 group-hover/link:text-gold">
+                                <item.icon className="h-4 w-4" aria-hidden />
+                              </div>
+                              <div className="min-w-0">
+                                <div className="text-sm font-semibold text-primary">
+                                  {item.label}
+                                </div>
+                                <div className="truncate text-xs text-muted-foreground">
+                                  {item.desc}
+                                </div>
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <ul className="space-y-1">
-                      {group.items.map((item) => (
-                        <li key={item.to}>
-                          <Link
-                            to={item.to}
-                            className="group/link flex items-start gap-3 rounded-lg p-2 transition hover:bg-secondary"
-                          >
-                            <div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-md bg-secondary text-primary group-hover/link:bg-gold/20 group-hover/link:text-gold">
-                              <item.icon className="h-4 w-4" aria-hidden />
-                            </div>
-                            <div className="min-w-0">
-                              <div className="text-sm font-semibold text-primary">{item.label}</div>
-                              <div className="truncate text-xs text-muted-foreground">{item.desc}</div>
-                            </div>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
+                  ))}
+                  <div className="col-span-3 flex items-center justify-between border-t border-border pt-4">
+                    <span className="text-xs text-muted-foreground">מגוון השירותים של המשרד</span>
+                    <Link
+                      to="/services"
+                      className="text-xs font-semibold text-primary hover:text-gold"
+                    >
+                      לעמוד השירותים המלא ←
+                    </Link>
                   </div>
-                ))}
-                <div className="col-span-3 flex items-center justify-between border-t border-border pt-4">
-                  <span className="text-xs text-muted-foreground">
-                    מגוון השירותים של המשרד
-                  </span>
-                  <Link
-                    to="/services"
-                    className="text-xs font-semibold text-primary hover:text-gold"
-                  >
-                    לעמוד השירותים המלא ←
-                  </Link>
                 </div>
               </div>
             </div>
-          </div>
 
-          {MAIN_LINKS.filter((l) => l.to !== "/" && l.to !== "/services").map((l) => (
-            <Link
-              key={l.to}
-              to={l.to}
-              className="rounded-md px-3 py-2 hover:text-primary"
-              activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
+            {MAIN_LINKS.filter((l) => l.to !== "/" && l.to !== "/services").map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="rounded-md px-3 py-2 hover:text-primary"
+                activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Right cluster */}
+          <div className="flex shrink-0 items-center gap-2">
+            <a
+              href={enHref}
+              className="inline-flex items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary"
+              aria-label="English version"
+              hrefLang="en"
             >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
+              EN
+            </a>
+            <a
+              href={PHONE_TEL}
+              className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex"
+            >
+              <Phone className="h-4 w-4" aria-hidden />
+              {PHONE_DISPLAY}
+            </a>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener"
+              className="hidden items-center gap-1.5 rounded-md bg-gold px-3 py-2 text-sm font-semibold text-gold-foreground shadow-sm transition hover:brightness-95 sm:inline-flex"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden />
+              ייעוץ ראשוני
+            </a>
 
-        {/* Right cluster */}
-        <div className="flex shrink-0 items-center gap-2">
-          <a
-            href={enHref}
-            className="inline-flex items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary"
-            aria-label="English version"
-            hrefLang="en"
-          >
-            EN
-          </a>
-          <a
-            href={PHONE_TEL}
-            className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex"
-          >
-            <Phone className="h-4 w-4" aria-hidden />
-            {PHONE_DISPLAY}
-          </a>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener"
-            className="hidden items-center gap-1.5 rounded-md bg-gold px-3 py-2 text-sm font-semibold text-gold-foreground shadow-sm transition hover:brightness-95 sm:inline-flex"
-          >
-            <MessageCircle className="h-4 w-4" aria-hidden />
-            ייעוץ ראשוני
-          </a>
-
-          {/* Mobile menu toggle */}
-          <MobileMenu enHref={enHref} />
+            {/* Mobile menu toggle */}
+            <MobileMenu enHref={enHref} />
+          </div>
         </div>
-      </div>
       </header>
     </>
   );
@@ -393,12 +395,14 @@ export function SiteFooter() {
         <div>
           <div className="font-display text-xl font-bold">נמרודי ושות׳</div>
           <p className="mt-2 text-sm text-primary-foreground/70">
-            משרד רואי חשבון בוטיק בהרצליה פיתוח. המשרד פועל משנת 2000 ומלווה חברות,
-            סטארטאפים, עצמאים ופרילנסרים.
+            משרד רואי חשבון בוטיק בהרצליה פיתוח. המשרד פועל משנת 2000 ומלווה חברות, סטארטאפים,
+            עצמאים ופרילנסרים.
           </p>
           <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
             <div>
-              <a href={PHONE_TEL} className="hover:text-gold">טלפון: {PHONE_DISPLAY}</a>
+              <a href={PHONE_TEL} className="hover:text-gold">
+                טלפון: {PHONE_DISPLAY}
+              </a>
             </div>
             <div>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener" className="hover:text-gold">
@@ -406,7 +410,9 @@ export function SiteFooter() {
               </a>
             </div>
             <div>
-              <a href={`mailto:${EMAIL}`} className="hover:text-gold">{EMAIL}</a>
+              <a href={`mailto:${EMAIL}`} className="hover:text-gold">
+                {EMAIL}
+              </a>
             </div>
             <div>
               <a href={MAPS_URL} target="_blank" rel="noopener" className="hover:text-gold">
@@ -415,22 +421,23 @@ export function SiteFooter() {
             </div>
           </address>
           <div className="mt-5">
-            <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-gold">עקבו אחרינו</div>
+            <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-gold">
+              עקבו אחרינו
+            </div>
             <SocialIcons lang="he" variant="footer" />
           </div>
         </div>
 
         <div>
-          <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">
-            ניווט
-          </div>
+          <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">ניווט</div>
           <ul className="space-y-2 text-sm text-primary-foreground/80">
             {MAIN_LINKS.map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="hover:text-gold">{l.label}</Link>
+                <Link to={l.to} className="hover:text-gold">
+                  {l.label}
+                </Link>
               </li>
             ))}
-
           </ul>
         </div>
 
@@ -442,13 +449,17 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               {group.items.map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="hover:text-gold">{l.label}</Link>
+                  <Link to={l.to} className="hover:text-gold">
+                    {l.label}
+                  </Link>
                 </li>
               ))}
               {group.label === "לפי סוג לקוח" &&
                 SERVICE_GROUPS[2].items.map((l) => (
                   <li key={l.to}>
-                    <Link to={l.to} className="hover:text-gold">{l.label}</Link>
+                    <Link to={l.to} className="hover:text-gold">
+                      {l.label}
+                    </Link>
                   </li>
                 ))}
             </ul>

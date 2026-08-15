@@ -34,7 +34,10 @@ export const Route = createFileRoute("/en/blog/$slug")({
         { title: `${post.title} | Nimrodi & Co. Blog` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
-        { property: "og:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
+        {
+          property: "og:description",
+          content: toMetaDescription(post.metaDescription ?? post.excerpt),
+        },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { property: "og:image", content: `${ORIGIN}/og-image.jpg` },
@@ -96,7 +99,9 @@ function PostNotFoundEn() {
       <main id="main-content">
         <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
           <h1 className="font-display text-3xl font-bold text-primary">Article not found</h1>
-          <p className="mt-3 text-muted-foreground">The link may have changed or the article may have been removed.</p>
+          <p className="mt-3 text-muted-foreground">
+            The link may have changed or the article may have been removed.
+          </p>
           <Link
             to="/en/blog"
             className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
@@ -123,9 +128,13 @@ function BlogPostPageEn() {
 
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <nav className="mb-6 text-xs text-muted-foreground">
-          <Link to="/en" className="hover:text-primary">Home</Link>
+          <Link to="/en" className="hover:text-primary">
+            Home
+          </Link>
           <span className="mx-2">/</span>
-          <Link to="/en/blog" className="hover:text-primary">Blog</Link>
+          <Link to="/en/blog" className="hover:text-primary">
+            Blog
+          </Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{post.category}</span>
         </nav>
@@ -184,9 +193,14 @@ function BlogPostPageEn() {
 
         {post.relatedService ? (
           <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
-            <h2 className="font-display text-xl font-bold text-primary">Related professional service</h2>
+            <h2 className="font-display text-xl font-bold text-primary">
+              Related professional service
+            </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              <Link to={post.relatedService.href} className="font-semibold text-primary hover:text-gold hover:underline">
+              <Link
+                to={post.relatedService.href}
+                className="font-semibold text-primary hover:text-gold hover:underline"
+              >
                 {post.relatedService.label}
               </Link>
             </p>
@@ -198,7 +212,8 @@ function BlogPostPageEn() {
             Need help with an Israeli accounting or tax matter?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-            Contact our Israeli CPA firm for an introductory discussion about your accounting, tax, and reporting needs.
+            Contact our Israeli CPA firm for an introductory discussion about your accounting, tax,
+            and reporting needs.
           </p>
           <a
             href={WHATSAPP_URL_EN}
@@ -213,7 +228,9 @@ function BlogPostPageEn() {
 
         {related.length > 0 && (
           <aside className="mt-14 border-t border-border pt-10">
-            <h2 className="font-display text-xl font-bold text-primary">More Israeli accounting and tax articles</h2>
+            <h2 className="font-display text-xl font-bold text-primary">
+              More Israeli accounting and tax articles
+            </h2>
             <ul className="mt-4 space-y-3">
               {related.map((r) => (
                 <li key={r.slug}>

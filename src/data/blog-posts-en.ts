@@ -32,8 +32,15 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     translationKey: "foreign-company-structure",
     imageAlt: "Israeli Subsidiary or Branch: Key Considerations for Foreign Entities",
     tags: ["foreign companies", "subsidiary", "branch", "international tax"],
-    relatedSlugs: ["foreign-companies-operating-in-israel", "relocation-tax-residency", "startup-accounting-tax-israel"],
-    relatedService: { href: "/en/cpa-foreign-companies", label: "CPA services for foreign companies in Israel" },
+    relatedSlugs: [
+      "foreign-companies-operating-in-israel",
+      "relocation-tax-residency",
+      "startup-accounting-tax-israel",
+    ],
+    relatedService: {
+      href: "/en/cpa-foreign-companies",
+      label: "CPA services for foreign companies in Israel",
+    },
     title: "Israeli Subsidiary or Branch: Key Considerations for Foreign Entities",
     excerpt:
       "Choosing between an Israeli subsidiary and a branch of a foreign company affects tax, legal liability, and operations. A professional review of the key considerations.",
@@ -108,8 +115,15 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     translationKey: "foreign-company-tax-presence",
     imageAlt: "Foreign Companies Operating in Israel: When Does a Corporate Tax Liability Arise?",
     tags: ["foreign companies", "permanent establishment", "corporate tax", "reporting"],
-    relatedSlugs: ["israeli-subsidiary-vs-branch", "relocation-tax-residency", "startup-accounting-tax-israel"],
-    relatedService: { href: "/en/cpa-foreign-companies", label: "CPA services for foreign companies in Israel" },
+    relatedSlugs: [
+      "israeli-subsidiary-vs-branch",
+      "relocation-tax-residency",
+      "startup-accounting-tax-israel",
+    ],
+    relatedService: {
+      href: "/en/cpa-foreign-companies",
+      label: "CPA services for foreign companies in Israel",
+    },
     title: "Foreign Companies Operating in Israel: When Does a Corporate Tax Liability Arise?",
     excerpt:
       "Permanent Establishment, dependent agents, and digital activity — a professional review of the conditions under which a foreign company becomes taxable in Israel, and the practical implications.",
@@ -180,7 +194,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     translationKey: "relocation-tax-residency",
     imageAlt: "Relocation from Israel: When Can Israeli Tax Residency End?",
     tags: ["relocation", "tax residency", "centre of life", "exit tax"],
-    relatedSlugs: ["israeli-subsidiary-vs-branch", "foreign-companies-operating-in-israel", "israeli-tax-reporting-us-citizens"],
+    relatedSlugs: [
+      "israeli-subsidiary-vs-branch",
+      "foreign-companies-operating-in-israel",
+      "israeli-tax-reporting-us-citizens",
+    ],
     relatedService: { href: "/en/cpa-international", label: "International tax and relocation" },
     title: "Relocation from Israel: When Can Israeli Tax Residency End?",
     excerpt:
@@ -259,7 +277,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     image: imgTax,
     imageAlt: "Israeli Rental Income Tax and Reporting: Choosing the Appropriate Route",
     tags: ["rental income", "Israeli tax", "property", "reporting"],
-    relatedSlugs: ["multiple-rental-properties-business-classification-israel", "digital-assets-tax-reporting-israel", "israeli-tax-reporting-us-citizens"],
+    relatedSlugs: [
+      "multiple-rental-properties-business-classification-israel",
+      "digital-assets-tax-reporting-israel",
+      "israeli-tax-reporting-us-citizens",
+    ],
     relatedService: { href: "/en/tax-consulting", label: "Israeli tax advisory" },
     sections: [
       {
@@ -336,9 +358,14 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     readMin: 3,
     category: "Israeli Tax",
     image: imgTax,
-    imageAlt: "Multiple Rental Properties in Israel: When Can the Activity Be Treated as a Business?",
+    imageAlt:
+      "Multiple Rental Properties in Israel: When Can the Activity Be Treated as a Business?",
     tags: ["rental properties", "business classification", "Israeli tax", "reporting"],
-    relatedSlugs: ["israeli-rental-income-tax-reporting", "digital-assets-tax-reporting-israel", "startup-accounting-tax-israel"],
+    relatedSlugs: [
+      "israeli-rental-income-tax-reporting",
+      "digital-assets-tax-reporting-israel",
+      "startup-accounting-tax-israel",
+    ],
     relatedService: { href: "/en/tax-consulting", label: "Israeli tax advisory" },
     sections: [
       {
@@ -411,7 +438,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     image: imgCrypto,
     imageAlt: "Digital Assets in Israel: Tax Events, Records and Reporting",
     tags: ["digital assets", "crypto", "tax reporting", "records"],
-    relatedSlugs: ["israeli-rental-income-tax-reporting", "israeli-tax-reporting-us-citizens", "startup-accounting-tax-israel"],
+    relatedSlugs: [
+      "israeli-rental-income-tax-reporting",
+      "israeli-tax-reporting-us-citizens",
+      "startup-accounting-tax-israel",
+    ],
     relatedService: { href: "/en/tax-consulting", label: "Digital-asset tax and reporting" },
     sections: [
       {
@@ -490,7 +521,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     image: imgIntl,
     imageAlt: "Israeli Tax and Reporting for US Citizens Living in Israel",
     tags: ["US citizens", "international tax", "reporting", "Israel"],
-    relatedSlugs: ["digital-assets-tax-reporting-israel", "israeli-rental-income-tax-reporting", "startup-accounting-tax-israel"],
+    relatedSlugs: [
+      "digital-assets-tax-reporting-israel",
+      "israeli-rental-income-tax-reporting",
+      "startup-accounting-tax-israel",
+    ],
     relatedService: { href: "/en/cpa-international", label: "International tax and relocation" },
     sections: [
       {
@@ -569,7 +604,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     image: imgStartups,
     imageAlt: "Accounting and Tax for Startups Operating in Israel",
     tags: ["startups", "accounting", "payroll", "Section 102"],
-    relatedSlugs: ["digital-assets-tax-reporting-israel", "israeli-tax-reporting-us-citizens", "israeli-rental-income-tax-reporting"],
+    relatedSlugs: [
+      "digital-assets-tax-reporting-israel",
+      "israeli-tax-reporting-us-citizens",
+      "israeli-rental-income-tax-reporting",
+    ],
     relatedService: { href: "/en/cpa-startups", label: "CPA services for startups" },
     sections: [
       {
