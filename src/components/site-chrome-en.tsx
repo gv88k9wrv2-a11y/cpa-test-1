@@ -27,6 +27,8 @@ const PHONE_DISPLAY_EN = "+972-9-9582211";
 const WHATSAPP_DISPLAY_EN = "+972-54-6688681";
 const EMAIL = "office@nimrodi.co.il";
 const ADDRESS_EN = "16 Galgalei ha-Plada St, Herzliya Pituach";
+import { heHrefForEnSlug } from "../data/blog-pairs";
+
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
   encodeURIComponent("16 Galgalei ha-Plada St, Herzliya Pituach");
@@ -34,6 +36,7 @@ const MAPS_URL =
 /** Map current English path → Hebrew equivalent. */
 function toHebrewPath(pathname: string): string {
   if (!pathname || pathname === "/en" || pathname === "/en/") return "/";
+  if (pathname.startsWith("/en/blog/")) return heHrefForEnSlug(pathname.slice("/en/blog/".length));
   if (pathname.startsWith("/en/blog")) return "/blog";
   if (pathname.startsWith("/en/")) return pathname.slice(3);
   return pathname;

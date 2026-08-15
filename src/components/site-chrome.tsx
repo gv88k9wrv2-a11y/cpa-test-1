@@ -27,6 +27,8 @@ const PHONE_DISPLAY = "09-9582211";
 const WHATSAPP_DISPLAY = "054-6688681";
 const EMAIL = "office@nimrodi.co.il";
 const ADDRESS_HE = "גלגלי הפלדה 16, הרצליה פיתוח";
+import { enHrefForHeSlug } from "../data/blog-pairs";
+
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
   encodeURIComponent("גלגלי הפלדה 16, הרצליה פיתוח");
@@ -35,7 +37,8 @@ const MAPS_URL =
 function toEnglishPath(pathname: string): string {
   if (!pathname || pathname === "/") return "/en";
   if (pathname.startsWith("/en")) return pathname;
-  if (pathname.startsWith("/blog")) return "/en";
+  if (pathname.startsWith("/blog/")) return enHrefForHeSlug(pathname.slice("/blog/".length));
+  if (pathname.startsWith("/blog")) return "/en/blog";
   return `/en${pathname}`;
 }
 
