@@ -8,6 +8,7 @@ import {
 } from "../components/site-chrome-en";
 import { BLOG_POSTS_EN, BLOG_POSTS_EN_BY_SLUG, type BlogPostEn } from "../data/blog-posts-en";
 import { toMetaDescription } from "../lib/meta";
+import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
@@ -33,7 +34,10 @@ export const Route = createFileRoute("/en/blog/$slug")({
         { title: `${post.title} | Nimrodi & Co. Blog` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
-        { property: "og:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
+        {
+          property: "og:description",
+          content: toMetaDescription(post.metaDescription ?? post.excerpt),
+        },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { property: "og:image", content: `${ORIGIN}/og-image.jpg` },
@@ -44,7 +48,24 @@ export const Route = createFileRoute("/en/blog/$slug")({
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [
+        { rel: "canonical", href: url },
+        ...(EN_TO_HE_SLUG[params.slug]
+          ? [
+              {
+                rel: "alternate",
+                hrefLang: "he-IL",
+                href: `${ORIGIN}/blog/${EN_TO_HE_SLUG[params.slug]}`,
+              },
+              { rel: "alternate", hrefLang: "en-US", href: url },
+              {
+                rel: "alternate",
+                hrefLang: "x-default",
+                href: `${ORIGIN}/blog/${EN_TO_HE_SLUG[params.slug]}`,
+              },
+            ]
+          : []),
+      ],
       scripts: [
         {
           type: "application/ld+json",
@@ -52,12 +73,15 @@ export const Route = createFileRoute("/en/blog/$slug")({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: post.title,
-            description: post.excerpt,
+            description: post.metaDescription ?? post.excerpt,
+            image: `${ORIGIN}/og-image.jpg`,
             datePublished: post.date,
+            ...(post.modifiedDate ? { dateModified: post.modifiedDate } : {}),
             inLanguage: "en-US",
             author: { "@type": "Organization", name: "Nimrodi & Co. CPAs" },
             publisher: { "@type": "Organization", name: "Nimrodi & Co. CPAs" },
             articleSection: post.category,
+            ...(post.tags?.length ? { keywords: post.tags.join(", ") } : {}),
             mainEntityOfPage: url,
           }),
         },
@@ -75,7 +99,9 @@ function PostNotFoundEn() {
       <main id="main-content">
         <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
           <h1 className="font-display text-3xl font-bold text-primary">Article not found</h1>
-          <p className="mt-3 text-muted-foreground">The link may have changed or the article may have been removed.</p>
+          <p className="mt-3 text-muted-foreground">
+            The link may have changed or the article may have been removed.
+          </p>
           <Link
             to="/en/blog"
             className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
@@ -92,9 +118,9 @@ function PostNotFoundEn() {
 function BlogPostPageEn() {
   const { post } = Route.useLoaderData() as { post: BlogPostEn; slug: string };
 
-  const related = BLOG_POSTS_EN.filter(
-    (p) => p.slug !== post.slug && p.category === post.category,
-  ).slice(0, 3);
+  const related = (post.relatedSlugs ?? [])
+    .map((slug) => BLOG_POSTS_EN.find((p) => p.slug === slug))
+    .filter((p): p is BlogPostEn => Boolean(p) && p!.slug !== post.slug);
 
   return (
     <div className="min-h-screen bg-background">
@@ -102,9 +128,13 @@ function BlogPostPageEn() {
 
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <nav className="mb-6 text-xs text-muted-foreground">
-          <Link to="/en" className="hover:text-primary">Home</Link>
+          <Link to="/en" className="hover:text-primary">
+            Home
+          </Link>
           <span className="mx-2">/</span>
-          <Link to="/en/blog" className="hover:text-primary">Blog</Link>
+          <Link to="/en/blog" className="hover:text-primary">
+            Blog
+          </Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{post.category}</span>
         </nav>
@@ -134,7 +164,7 @@ function BlogPostPageEn() {
           <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
             <img
               src={post.image}
-              alt={`Illustration for the article: ${post.title}`}
+              alt={post.imageAlt ?? `Illustration for the article: ${post.title}`}
               width={1024}
               height={1024}
               loading="lazy"
@@ -161,12 +191,29 @@ function BlogPostPageEn() {
           ))}
         </div>
 
+        {post.relatedService ? (
+          <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
+            <h2 className="font-display text-xl font-bold text-primary">
+              Related professional service
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <Link
+                to={post.relatedService.href}
+                className="font-semibold text-primary hover:text-gold hover:underline"
+              >
+                {post.relatedService.label}
+              </Link>
+            </p>
+          </aside>
+        ) : null}
+
         <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
           <h2 className="font-display text-2xl font-bold">
             Need help with an Israeli accounting or tax matter?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-            Contact our Israeli CPA firm for an introductory discussion about your accounting, tax, and reporting needs.
+            Contact our Israeli CPA firm for an introductory discussion about your accounting, tax,
+            and reporting needs.
           </p>
           <a
             href={WHATSAPP_URL_EN}
@@ -181,7 +228,9 @@ function BlogPostPageEn() {
 
         {related.length > 0 && (
           <aside className="mt-14 border-t border-border pt-10">
-            <h2 className="font-display text-xl font-bold text-primary">More Israeli accounting and tax articles</h2>
+            <h2 className="font-display text-xl font-bold text-primary">
+              More Israeli accounting and tax articles
+            </h2>
             <ul className="mt-4 space-y-3">
               {related.map((r) => (
                 <li key={r.slug}>

@@ -1,13 +1,9 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, CalendarDays, Clock, MessageCircle } from "lucide-react";
-import {
-  FloatingWhatsApp,
-  SiteFooter,
-  SiteHeader,
-  WHATSAPP_URL,
-} from "../components/site-chrome";
+import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
 import { toMetaDescription } from "../lib/meta";
+import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
@@ -32,7 +28,10 @@ export const Route = createFileRoute("/blog/$slug")({
         { title: `${post.title} | בלוג נמרודי ושות׳` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
-        { property: "og:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
+        {
+          property: "og:description",
+          content: toMetaDescription(post.metaDescription ?? post.excerpt),
+        },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `${ORIGIN}/blog/${params.slug}` },
         { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
@@ -42,7 +41,20 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],
-      links: [{ rel: "canonical", href: `${ORIGIN}/blog/${params.slug}` }],
+      links: [
+        { rel: "canonical", href: `${ORIGIN}/blog/${params.slug}` },
+        ...(HE_TO_EN_SLUG[params.slug]
+          ? [
+              { rel: "alternate", hrefLang: "he-IL", href: `${ORIGIN}/blog/${params.slug}` },
+              {
+                rel: "alternate",
+                hrefLang: "en-US",
+                href: `${ORIGIN}/en/blog/${HE_TO_EN_SLUG[params.slug]}`,
+              },
+              { rel: "alternate", hrefLang: "x-default", href: `${ORIGIN}/blog/${params.slug}` },
+            ]
+          : []),
+      ],
       scripts: [
         {
           type: "application/ld+json",
@@ -50,8 +62,10 @@ export const Route = createFileRoute("/blog/$slug")({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: post.title,
-            description: post.excerpt,
+            description: post.metaDescription ?? post.excerpt,
+            image: `${ORIGIN}/og-image.jpg`,
             datePublished: post.date,
+            ...(post.modifiedDate ? { dateModified: post.modifiedDate } : {}),
             inLanguage: "he-IL",
             author: {
               "@type": "Organization",
@@ -61,7 +75,9 @@ export const Route = createFileRoute("/blog/$slug")({
               "@type": "Organization",
               name: "נמרודי ושות׳ – רואי חשבון",
             },
+            mainEntityOfPage: `${ORIGIN}/blog/${params.slug}`,
             articleSection: post.category,
+            ...(post.tags?.length ? { keywords: post.tags.join(", ") } : {}),
           }),
         },
       ],
@@ -76,16 +92,16 @@ function PostNotFound() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <main id="main-content">
-      <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
-        <h1 className="font-display text-3xl font-bold text-primary">המאמר לא נמצא</h1>
-        <p className="mt-3 text-muted-foreground">ייתכן שהקישור השתנה או שהמאמר הוסר.</p>
-        <Link
-          to="/blog"
-          className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
-        >
-          חזרה לבלוג
-        </Link>
-      </div>
+        <div className="mx-auto max-w-2xl px-4 py-24 text-center sm:px-6">
+          <h1 className="font-display text-3xl font-bold text-primary">המאמר לא נמצא</h1>
+          <p className="mt-3 text-muted-foreground">ייתכן שהקישור השתנה או שהמאמר הוסר.</p>
+          <Link
+            to="/blog"
+            className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+          >
+            חזרה לבלוג
+          </Link>
+        </div>
       </main>
       <SiteFooter />
     </div>
@@ -95,9 +111,9 @@ function PostNotFound() {
 function BlogPostPage() {
   const { post } = Route.useLoaderData() as { post: BlogPost; slug: string };
 
-  const related = BLOG_POSTS.filter(
-    (p) => p.slug !== post.slug && p.category === post.category,
-  ).slice(0, 3);
+  const related = (post.relatedSlugs ?? [])
+    .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
+    .filter((p): p is BlogPost => Boolean(p) && p!.slug !== post.slug);
 
   return (
     <div className="min-h-screen bg-background">
@@ -105,9 +121,13 @@ function BlogPostPage() {
 
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <nav className="mb-6 text-xs text-muted-foreground">
-          <Link to="/" className="hover:text-primary">בית</Link>
+          <Link to="/" className="hover:text-primary">
+            בית
+          </Link>
           <span className="mx-2">/</span>
-          <Link to="/blog" className="hover:text-primary">בלוג</Link>
+          <Link to="/blog" className="hover:text-primary">
+            בלוג
+          </Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">{post.category}</span>
         </nav>
@@ -137,7 +157,7 @@ function BlogPostPage() {
           <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
             <img
               src={post.image}
-              alt={`תמונה נלווית למאמר: ${post.title}`}
+              alt={post.imageAlt ?? `תמונה נלווית למאמר: ${post.title}`}
               width={1024}
               height={1024}
               loading="lazy"
@@ -164,10 +184,22 @@ function BlogPostPage() {
           ))}
         </div>
 
+        {post.relatedService ? (
+          <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
+            <h2 className="font-display text-xl font-bold text-primary">שירות מקצועי בנושא זה</h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <Link
+                to={post.relatedService.href}
+                className="font-semibold text-primary hover:text-gold hover:underline"
+              >
+                {post.relatedService.label}
+              </Link>
+            </p>
+          </aside>
+        ) : null}
+
         <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
-          <h2 className="font-display text-2xl font-bold">
-            רוצים לשוחח על המצב הספציפי שלכם?
-          </h2>
+          <h2 className="font-display text-2xl font-bold">רוצים לשוחח על המצב הספציפי שלכם?</h2>
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
             אפשר ליצור קשר לצורך שיחת היכרות ראשונית ובחינת הצרכים.
           </p>
@@ -184,7 +216,9 @@ function BlogPostPage() {
 
         {related.length > 0 && (
           <aside className="mt-14 border-t border-border pt-10">
-            <h2 className="font-display text-xl font-bold text-primary">מאמרים נוספים באותו נושא</h2>
+            <h2 className="font-display text-xl font-bold text-primary">
+              מאמרים נוספים באותו נושא
+            </h2>
             <ul className="mt-4 space-y-3">
               {related.map((r) => (
                 <li key={r.slug}>

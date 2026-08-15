@@ -17,16 +17,16 @@ import {
 } from "lucide-react";
 import { SocialIcons } from "./social-proof";
 
-
 export const WHATSAPP_URL_EN =
-  "https://wa.me/972546688681?text=" +
-  encodeURIComponent("Website inquiry – Nimrodi & Co.");
+  "https://wa.me/972546688681?text=" + encodeURIComponent("Website inquiry – Nimrodi & Co.");
 
 const PHONE_TEL = "tel:+97299582211";
 const PHONE_DISPLAY_EN = "+972-9-9582211";
 const WHATSAPP_DISPLAY_EN = "+972-54-6688681";
 const EMAIL = "office@nimrodi.co.il";
 const ADDRESS_EN = "16 Galgalei ha-Plada St, Herzliya Pituach";
+import { heHrefForEnSlug } from "../data/blog-pairs";
+
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
   encodeURIComponent("16 Galgalei ha-Plada St, Herzliya Pituach");
@@ -34,6 +34,7 @@ const MAPS_URL =
 /** Map current English path → Hebrew equivalent. */
 function toHebrewPath(pathname: string): string {
   if (!pathname || pathname === "/en" || pathname === "/en/") return "/";
+  if (pathname.startsWith("/en/blog/")) return heHrefForEnSlug(pathname.slice("/en/blog/".length));
   if (pathname.startsWith("/en/blog")) return "/blog";
   if (pathname.startsWith("/en/")) return pathname.slice(3);
   return pathname;
@@ -53,7 +54,6 @@ const LEGAL_LINKS_EN = [
   { to: "/en/accessibility", label: "Accessibility Statement" },
   { to: "/en/privacy-policy", label: "Privacy Policy" },
 ] as const;
-
 
 type ServiceRoute =
   | "/en/bookkeeping"
@@ -78,27 +78,77 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
   {
     label: "Core Services",
     items: [
-      { to: "/en/fractional-cfo", label: "Fractional CFO", desc: "Burn · Runway · Board · VC prep", icon: LineChart },
-      { to: "/en/bookkeeping", label: "Bookkeeping", desc: "Bookkeeping · Reconciliations · Management reports", icon: Calculator },
-      { to: "/en/payroll", label: "Payroll", desc: "Section 102 (ESOP), Form 106 (Annual Tax Statement)", icon: ReceiptText },
-      { to: "/en/audit", label: "Audit & Assurance", desc: "Israeli GAAP · IFRS", icon: FileSearch },
-      { to: "/en/tax-consulting", label: "Tax Advisory", desc: "Israeli tax planning · Ruling requests · Objections", icon: FileSpreadsheet },
+      {
+        to: "/en/fractional-cfo",
+        label: "Fractional CFO",
+        desc: "Burn · Runway · Board · VC prep",
+        icon: LineChart,
+      },
+      {
+        to: "/en/bookkeeping",
+        label: "Bookkeeping",
+        desc: "Bookkeeping · Reconciliations · Management reports",
+        icon: Calculator,
+      },
+      {
+        to: "/en/payroll",
+        label: "Payroll",
+        desc: "Section 102 (ESOP), Form 106 (Annual Tax Statement)",
+        icon: ReceiptText,
+      },
+      {
+        to: "/en/audit",
+        label: "Audit & Assurance",
+        desc: "Israeli GAAP · IFRS",
+        icon: FileSearch,
+      },
+      {
+        to: "/en/tax-consulting",
+        label: "Tax Advisory",
+        desc: "Israeli tax planning · Ruling requests · Objections",
+        icon: FileSpreadsheet,
+      },
     ],
   },
 
   {
     label: "By Client Type",
     items: [
-      { to: "/en/cpa-startups", label: "Startups & Tech", desc: "Fundraising · Employee equity · Israel–Delaware Flip", icon: Building2 },
-      { to: "/en/cpa-freelancers", label: "Freelancers & Self-Employed", desc: "Setup, filings, Capital Declaration (Asset & Net Worth Report)", icon: Briefcase },
-      { to: "/en/cpa-foreign-companies", label: "Foreign Companies in Israel", desc: "Subsidiary or branch · Reporting · Transfer pricing coordination", icon: Globe2 },
-      { to: "/en/cpa-herzliya", label: "Businesses in Herzliya", desc: "Boutique firm in Herzliya Pituach", icon: MapPin },
+      {
+        to: "/en/cpa-startups",
+        label: "Startups & Tech",
+        desc: "Fundraising · Employee equity · Israel–Delaware Flip",
+        icon: Building2,
+      },
+      {
+        to: "/en/cpa-freelancers",
+        label: "Freelancers & Self-Employed",
+        desc: "Setup, filings, Capital Declaration (Asset & Net Worth Report)",
+        icon: Briefcase,
+      },
+      {
+        to: "/en/cpa-foreign-companies",
+        label: "Foreign Companies in Israel",
+        desc: "Subsidiary or branch · Reporting · Transfer pricing coordination",
+        icon: Globe2,
+      },
+      {
+        to: "/en/cpa-herzliya",
+        label: "Businesses in Herzliya",
+        desc: "Boutique firm in Herzliya Pituach",
+        icon: MapPin,
+      },
     ],
   },
   {
     label: "International Tax",
     items: [
-      { to: "/en/cpa-international", label: "Relocation & Returning Residents", desc: "Residency, olim benefits, treaties", icon: Plane },
+      {
+        to: "/en/cpa-international",
+        label: "Relocation & Returning Residents",
+        desc: "Residency, olim benefits, treaties",
+        icon: Plane,
+      },
     ],
   },
 ];
@@ -127,15 +177,29 @@ export function SiteHeaderEn() {
             </span>
           </Link>
 
-          <nav aria-label="Main navigation" className="hidden items-center gap-1 text-sm font-medium text-foreground/80 lg:flex">
-            <Link to="/en" className="rounded-md px-3 py-2 hover:text-primary" activeProps={{ className: "rounded-md px-3 py-2 text-primary" }} activeOptions={{ exact: true }}>
+          <nav
+            aria-label="Main navigation"
+            className="hidden items-center gap-1 text-sm font-medium text-foreground/80 lg:flex"
+          >
+            <Link
+              to="/en"
+              className="rounded-md px-3 py-2 hover:text-primary"
+              activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
+              activeOptions={{ exact: true }}
+            >
               Home
             </Link>
 
             <div className="group relative">
-              <button type="button" className="inline-flex items-center gap-1 rounded-md px-3 py-2 hover:text-primary">
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 rounded-md px-3 py-2 hover:text-primary"
+              >
                 Services
-                <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden />
+                <ChevronDown
+                  className="h-3.5 w-3.5 transition group-hover:rotate-180"
+                  aria-hidden
+                />
               </button>
               <div className="pointer-events-none invisible absolute left-0 top-full z-50 w-[720px] translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                 <div className="grid grid-cols-3 gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl">
@@ -147,13 +211,20 @@ export function SiteHeaderEn() {
                       <ul className="space-y-1">
                         {group.items.map((item) => (
                           <li key={item.to}>
-                            <Link to={item.to} className="group/link flex items-start gap-3 rounded-lg p-2 transition hover:bg-secondary">
+                            <Link
+                              to={item.to}
+                              className="group/link flex items-start gap-3 rounded-lg p-2 transition hover:bg-secondary"
+                            >
                               <div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-md bg-secondary text-primary group-hover/link:bg-gold/20 group-hover/link:text-gold">
                                 <item.icon className="h-4 w-4" aria-hidden />
                               </div>
                               <div className="min-w-0">
-                                <div className="text-sm font-semibold text-primary">{item.label}</div>
-                                <div className="truncate text-xs text-muted-foreground">{item.desc}</div>
+                                <div className="text-sm font-semibold text-primary">
+                                  {item.label}
+                                </div>
+                                <div className="truncate text-xs text-muted-foreground">
+                                  {item.desc}
+                                </div>
                               </div>
                             </Link>
                           </li>
@@ -163,7 +234,10 @@ export function SiteHeaderEn() {
                   ))}
                   <div className="col-span-3 flex items-center justify-between border-t border-border pt-4">
                     <span className="text-xs text-muted-foreground">Explore our service areas</span>
-                    <Link to="/en/services" className="text-xs font-semibold text-primary hover:text-gold">
+                    <Link
+                      to="/en/services"
+                      className="text-xs font-semibold text-primary hover:text-gold"
+                    >
                       All services →
                     </Link>
                   </div>
@@ -172,7 +246,12 @@ export function SiteHeaderEn() {
             </div>
 
             {MAIN_LINKS.filter((l) => l.to !== "/en" && l.to !== "/en/services").map((l) => (
-              <Link key={l.to} to={l.to} className="rounded-md px-3 py-2 hover:text-primary" activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}>
+              <Link
+                key={l.to}
+                to={l.to}
+                className="rounded-md px-3 py-2 hover:text-primary"
+                activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
+              >
                 {l.label}
               </Link>
             ))}
@@ -187,7 +266,10 @@ export function SiteHeaderEn() {
             >
               עברית
             </a>
-            <a href={PHONE_TEL} className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex">
+            <a
+              href={PHONE_TEL}
+              className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex"
+            >
               <Phone className="h-4 w-4" aria-hidden />
               {PHONE_DISPLAY_EN}
             </a>
@@ -211,9 +293,14 @@ export function SiteHeaderEn() {
 function MobileMenuEn({ heHref }: { heHref: string }) {
   return (
     <details className="group relative lg:hidden">
-      <summary aria-label="Open menu" className="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-md border border-border bg-card text-primary [&::-webkit-details-marker]:hidden">
+      <summary
+        aria-label="Open menu"
+        className="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-md border border-border bg-card text-primary [&::-webkit-details-marker]:hidden"
+      >
         <Menu className="h-5 w-5 group-open:hidden" aria-hidden />
-        <span className="hidden text-lg font-bold group-open:block" aria-hidden>×</span>
+        <span className="hidden text-lg font-bold group-open:block" aria-hidden>
+          ×
+        </span>
       </summary>
       <div className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-border bg-background shadow-xl">
         <div className="px-4 py-4 sm:px-6">
@@ -223,7 +310,10 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
                 <Link
                   to={l.to}
                   className="block rounded-md px-3 py-2.5 text-base font-medium text-foreground hover:bg-secondary"
-                  activeProps={{ className: "block rounded-md bg-secondary px-3 py-2.5 text-base font-semibold text-primary" }}
+                  activeProps={{
+                    className:
+                      "block rounded-md bg-secondary px-3 py-2.5 text-base font-semibold text-primary",
+                  }}
                   activeOptions={{ exact: l.to === "/en" }}
                 >
                   {l.label}
@@ -240,7 +330,10 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
                 <ul className="space-y-1">
                   {group.items.map((item) => (
                     <li key={item.to}>
-                      <Link to={item.to} className="flex items-center gap-3 rounded-md px-3 py-2 text-sm hover:bg-secondary">
+                      <Link
+                        to={item.to}
+                        className="flex items-center gap-3 rounded-md px-3 py-2 text-sm hover:bg-secondary"
+                      >
                         <item.icon className="h-4 w-4 shrink-0 text-gold" aria-hidden />
                         <span className="text-foreground">{item.label}</span>
                       </Link>
@@ -251,10 +344,19 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
             ))}
           </div>
           <div className="mt-4 grid grid-cols-2 gap-2 border-t border-border pt-4">
-            <a href={heHref} className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary" hrefLang="he">
+            <a
+              href={heHref}
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary"
+              hrefLang="he"
+            >
               עברית
             </a>
-            <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center justify-center gap-2 rounded-md bg-gold px-3 py-2.5 text-sm font-semibold text-gold-foreground">
+            <a
+              href={WHATSAPP_URL_EN}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-gold px-3 py-2.5 text-sm font-semibold text-gold-foreground"
+            >
               <MessageCircle className="h-4 w-4" aria-hidden />
               WhatsApp
             </a>
@@ -272,45 +374,85 @@ export function SiteFooterEn() {
         <div>
           <div className="font-display text-xl font-bold">Nimrodi &amp; Co.</div>
           <p className="mt-2 text-sm text-primary-foreground/70">
-            Boutique CPA firm in Herzliya Pituach. Operating since 2000 and serving companies, startups, freelancers and foreign investors in Israel.
+            Boutique CPA firm in Herzliya Pituach. Operating since 2000 and serving companies,
+            startups, freelancers and foreign investors in Israel.
           </p>
           <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
-            <div><a href={PHONE_TEL} className="hover:text-gold">Phone: {PHONE_DISPLAY_EN}</a></div>
-            <div><a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="hover:text-gold">WhatsApp: {WHATSAPP_DISPLAY_EN}</a></div>
-            <div><a href={`mailto:${EMAIL}`} className="hover:text-gold">{EMAIL}</a></div>
-            <div><a href={MAPS_URL} target="_blank" rel="noopener" className="hover:text-gold">{ADDRESS_EN}</a></div>
+            <div>
+              <a href={PHONE_TEL} className="hover:text-gold">
+                Phone: {PHONE_DISPLAY_EN}
+              </a>
+            </div>
+            <div>
+              <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="hover:text-gold">
+                WhatsApp: {WHATSAPP_DISPLAY_EN}
+              </a>
+            </div>
+            <div>
+              <a href={`mailto:${EMAIL}`} className="hover:text-gold">
+                {EMAIL}
+              </a>
+            </div>
+            <div>
+              <a href={MAPS_URL} target="_blank" rel="noopener" className="hover:text-gold">
+                {ADDRESS_EN}
+              </a>
+            </div>
           </address>
           <div className="mt-5">
-            <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-gold">Follow us</div>
+            <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-gold">
+              Follow us
+            </div>
             <SocialIcons lang="en" variant="footer" />
           </div>
         </div>
         <div>
-          <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">Navigation</div>
+          <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">
+            Navigation
+          </div>
           <ul className="space-y-2 text-sm text-primary-foreground/80">
             {MAIN_LINKS.map((l) => (
-              <li key={l.to}><Link to={l.to} className="hover:text-gold">{l.label}</Link></li>
+              <li key={l.to}>
+                <Link to={l.to} className="hover:text-gold">
+                  {l.label}
+                </Link>
+              </li>
             ))}
-            <li><Link to="/" className="hover:text-gold">עברית / Hebrew</Link></li>
+            <li>
+              <Link to="/" className="hover:text-gold">
+                עברית / Hebrew
+              </Link>
+            </li>
           </ul>
         </div>
         {SERVICE_GROUPS_EN.slice(0, 2).map((group) => (
           <div key={group.label}>
-            <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">{group.label}</div>
+            <div className="mb-3 text-sm font-semibold uppercase tracking-wider text-gold">
+              {group.label}
+            </div>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               {group.items.map((l) => (
-                <li key={l.to}><Link to={l.to} className="hover:text-gold">{l.label}</Link></li>
+                <li key={l.to}>
+                  <Link to={l.to} className="hover:text-gold">
+                    {l.label}
+                  </Link>
+                </li>
               ))}
               {group.label === "By Client Type" &&
                 SERVICE_GROUPS_EN[2].items.map((l) => (
-                  <li key={l.to}><Link to={l.to} className="hover:text-gold">{l.label}</Link></li>
+                  <li key={l.to}>
+                    <Link to={l.to} className="hover:text-gold">
+                      {l.label}
+                    </Link>
+                  </li>
                 ))}
             </ul>
           </div>
         ))}
       </div>
       <div className="border-t border-primary-foreground/10 py-5 text-center text-xs text-primary-foreground/60">
-        © {new Date().getFullYear()} Nimrodi &amp; Co. — Certified Public Accountants. All rights reserved.
+        © {new Date().getFullYear()} Nimrodi &amp; Co. — Certified Public Accountants. All rights
+        reserved.
       </div>
       <nav
         dir="ltr"
@@ -351,19 +493,30 @@ export function FloatingWhatsAppEn() {
 export function RelatedServicesNavEn({ currentPath }: { currentPath?: string }) {
   const items = ALL_SERVICES_EN.filter((l) => l.to !== currentPath);
   return (
-    <section aria-label="Related services" className="border-t border-border/60 bg-secondary/30 py-14">
+    <section
+      aria-label="Related services"
+      className="border-t border-border/60 bg-secondary/30 py-14"
+    >
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-gold">Continue reading</div>
-          <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">More services from Nimrodi &amp; Co.</h2>
+          <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+            Continue reading
+          </div>
+          <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">
+            More services from Nimrodi &amp; Co.
+          </h2>
           <p className="mx-auto mt-2 max-w-2xl text-sm text-muted-foreground">
-            Explore additional accounting, tax and financial services available from our Herzliya Pituach office.
+            Explore additional accounting, tax and financial services available from our Herzliya
+            Pituach office.
           </p>
         </div>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((l) => (
             <li key={l.to}>
-              <Link to={l.to} className="flex items-start gap-3 rounded-lg border border-border bg-card p-4 transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md">
+              <Link
+                to={l.to}
+                className="flex items-start gap-3 rounded-lg border border-border bg-card p-4 transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md"
+              >
                 <div className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-secondary text-primary">
                   <l.icon className="h-4 w-4" aria-hidden />
                 </div>
