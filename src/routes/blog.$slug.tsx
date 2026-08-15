@@ -8,6 +8,7 @@ import {
 } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
 import { toMetaDescription } from "../lib/meta";
+import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
@@ -42,7 +43,20 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],
-      links: [{ rel: "canonical", href: `${ORIGIN}/blog/${params.slug}` }],
+      links: [
+        { rel: "canonical", href: `${ORIGIN}/blog/${params.slug}` },
+        ...(HE_TO_EN_SLUG[params.slug]
+          ? [
+              { rel: "alternate", hrefLang: "he-IL", href: `${ORIGIN}/blog/${params.slug}` },
+              {
+                rel: "alternate",
+                hrefLang: "en-US",
+                href: `${ORIGIN}/en/blog/${HE_TO_EN_SLUG[params.slug]}`,
+              },
+              { rel: "alternate", hrefLang: "x-default", href: `${ORIGIN}/blog/${params.slug}` },
+            ]
+          : []),
+      ],
       scripts: [
         {
           type: "application/ld+json",
@@ -50,8 +64,10 @@ export const Route = createFileRoute("/blog/$slug")({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: post.title,
-            description: post.excerpt,
+            description: post.metaDescription ?? post.excerpt,
+            image: `${ORIGIN}/og-image.jpg`,
             datePublished: post.date,
+            ...(post.modifiedDate ? { dateModified: post.modifiedDate } : {}),
             inLanguage: "he-IL",
             author: {
               "@type": "Organization",
@@ -61,7 +77,9 @@ export const Route = createFileRoute("/blog/$slug")({
               "@type": "Organization",
               name: "נמרודי ושות׳ – רואי חשבון",
             },
+            mainEntityOfPage: `${ORIGIN}/blog/${params.slug}`,
             articleSection: post.category,
+            ...(post.tags?.length ? { keywords: post.tags.join(", ") } : {}),
           }),
         },
       ],
@@ -95,9 +113,9 @@ function PostNotFound() {
 function BlogPostPage() {
   const { post } = Route.useLoaderData() as { post: BlogPost; slug: string };
 
-  const related = BLOG_POSTS.filter(
-    (p) => p.slug !== post.slug && p.category === post.category,
-  ).slice(0, 3);
+  const related = (post.relatedSlugs ?? [])
+    .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
+    .filter((p): p is BlogPost => Boolean(p) && p!.slug !== post.slug);
 
   return (
     <div className="min-h-screen bg-background">
@@ -137,7 +155,7 @@ function BlogPostPage() {
           <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
             <img
               src={post.image}
-              alt={`תמונה נלווית למאמר: ${post.title}`}
+              alt={post.imageAlt ?? `תמונה נלווית למאמר: ${post.title}`}
               width={1024}
               height={1024}
               loading="lazy"
@@ -163,6 +181,17 @@ function BlogPostPage() {
             </section>
           ))}
         </div>
+
+        {post.relatedService ? (
+          <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
+            <h2 className="font-display text-xl font-bold text-primary">שירות מקצועי בנושא זה</h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <Link to={post.relatedService.href} className="font-semibold text-primary hover:text-gold hover:underline">
+                {post.relatedService.label}
+              </Link>
+            </p>
+          </aside>
+        ) : null}
 
         <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
           <h2 className="font-display text-2xl font-bold">
