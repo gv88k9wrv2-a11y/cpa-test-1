@@ -58,11 +58,11 @@ export const Route = createFileRoute("/en/payroll")({
         },
         {
           title: "Section 102 ESOP plans",
-          body: "We support startups in designing and operating Section 102 employee equity plans, including trustee coordination, Tax Authority filings, exercise mechanics and employee guidance at sale/exit events. Under certain routes and subject to the applicable conditions, capital-gains tax treatment may apply. The actual tax treatment depends on the relevant allocation route, plan terms, trustee requirements, holding periods and the circumstances of the realization.",
+          body: "We assist with the Israeli accounting, payroll and tax aspects of Section 102 employee equity plans, including relevant information, reporting and trustee coordination, within the agreed scope and in coordination with the company’s legal advisers. Under certain routes and subject to the applicable conditions, capital-gains tax treatment may apply. The actual tax treatment depends on the relevant allocation route, plan terms, trustee requirements, holding periods and the circumstances of the realization.",
         },
         {
           title: "Termination & severance",
-          body: "We prepare Form 161, coordinate with the pension provider on severance release, help split taxable vs. tax-deferred portions, and support the employee through their filing.",
+          body: "Depending on the engagement, services may include preparation of Form 161 information, coordination of relevant payroll data and assistance with the accounting and tax information required for the termination process.",
         },
       ]}
       faqs={FAQS}

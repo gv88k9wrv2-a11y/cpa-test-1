@@ -147,7 +147,7 @@ function HomeEn() {
                     target="_blank"
                     rel="noopener"
                     className="group block transition hover:opacity-90"
-                    aria-label={`${label} – read verified Google reviews`}
+                    aria-label={`${label} – view publicly available Google reviews`}
                   >
                     {content}
                   </a>
