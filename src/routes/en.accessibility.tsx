@@ -73,9 +73,10 @@ function AccessibilityEn() {
                 the area is available on public streets or in nearby public parking facilities,
                 subject to availability and the applicable conditions. These parking spaces are not
                 private spaces belonging to the firm or the building, and availability is not
-                controlled or guaranteed by the firm. There is no approved continuous accessible
-                route from the street, parking area or building entrance to the office, and the
-                building does not have approved accessible restrooms. If an accessibility
+                controlled or guaranteed by the firm. There is a continuous accessible route
+                from street parking to the office, including elevator access. The building has
+                restrooms, but to the Firm’s knowledge they have not yet been approved as required
+                or marked as accessible restrooms. If an accessibility
                 accommodation is required to receive service, please contact us in advance so that
                 we can consider coordination or an accessible alternative based on the need and
                 available options.

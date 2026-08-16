@@ -45,10 +45,10 @@ function PrivacyPageEn() {
               1. Confidentiality and Scope
             </h2>
             <p className="mt-3">
-              Nimrodi &amp; Co. CPA ("the Firm") is bound by strict professional secrecy under the
-              Israeli CPA ethics code and the Protection of Privacy Law, 5741-1981 (including
-              Amendment No. 13). All client and prospect information is treated with full
-              discretion.
+              Nimrodi &amp; Co. CPA Firm ("the Firm") is subject to the professional confidentiality and
+              ethics obligations applicable to certified public accountants in Israel and handles
+              personal information in accordance with applicable law, internal procedures and the
+              relevant engagement arrangements.
             </p>
             <p className="mt-3">
               This policy governs interactions with the Firm's website. Formal professional services
@@ -69,9 +69,9 @@ function PrivacyPageEn() {
               necessary for an initial inquiry.
             </p>
             <p className="mt-3">
-              Clients are asked to submit documents and data exclusively through the Firm's
-              authorized secure channels (e.g., secure intake questionnaires, Dropbox File Request,
-              encrypted email, or in-person delivery at the office).
+              Clients should submit documents and data only through channels specifically authorized by
+              the Firm for the relevant engagement. The appropriate submission method will be
+              communicated directly by the Firm.
             </p>
           </section>
 

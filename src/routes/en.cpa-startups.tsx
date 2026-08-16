@@ -111,7 +111,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
             "Accounting and Israeli tax treatment of escrow, holdback, and clawback provisions",
             "Support with tax ruling requests and related financial information for material transactions where relevant",
             "Employee tax reporting, Form 106 information, and Section 102 trustee coordination",
-            "Founder-level planning: tax spreading, returning-resident relief, spousal split",
+            "Review of the founder’s individual Israeli tax circumstances, potentially relevant reliefs and reporting obligations.",
           ],
         },
         {
@@ -120,9 +120,9 @@ export const Route = createFileRoute("/en/cpa-startups")({
           bullets: [
             "SAFE financing terms including valuation cap, discount, MFN, and pro rata rights",
             "Convertible loan accounting for interest, maturity, and automatic or optional conversion",
-            "SAFE and convertible loan accounting under IFRS 9 or ASC 480",
+            "SAFE and convertible loan accounting under IFRS 9, with any application of U.S. GAAP, including ASC 480, confirmed with appropriately qualified U.S. advisers.",
             "Conversion scenarios and fully diluted ownership impact at the next funding round",
-            "Tax implications for company and investor — including FIRPTA and Section 1202 QSBS",
+            "Israeli tax considerations for the company and investor, with any U.S. tax matters, including FIRPTA and Section 1202 QSBS, reviewed by appropriately qualified U.S. advisers.",
             "Coordination of financial information for side letters, consent processes and other transaction documents prepared by legal counsel",
           ],
         },

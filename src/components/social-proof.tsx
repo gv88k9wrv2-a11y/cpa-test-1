@@ -48,8 +48,8 @@ const REVIEW_SOURCES = [
     name: "Google Maps",
     href: "https://www.google.com/maps/search/?api=1&query=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99+%D7%95%D7%A9%D7%95%D7%AA+%D7%A8%D7%95%D7%90%D7%99+%D7%97%D7%A9%D7%91%D7%95%D7%9F+%D7%92%D7%9C%D7%92%D7%9C%D7%99+%D7%94%D7%A4%D7%9C%D7%93%D7%94+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94",
     description: {
-      he: "צפו בביקורות שלנו ב-Google Maps – פרופיל העסק הרשמי של נמרודי ושות׳ רואי חשבון.",
-      en: "View our Google Maps reviews – the official Google Business Profile of Nimrodi & Co. CPAs.",
+      he: "צפייה בתוצאות ובביקורות ציבוריות ב-Google Maps הנוגעות לנמרודי ושות׳ – רואי חשבון.",
+      en: "View publicly available Google Maps results and reviews relating to Nimrodi & Co. CPA Firm.",
     },
   },
   {
@@ -69,11 +69,11 @@ const REVIEW_SOURCES = [
     },
   },
   {
-    name: "B144 / T.co.il",
+    name: "T.co.il",
     href: "https://www.t.co.il/mobile/busins/545-c:408.html",
     description: {
-      he: "פרופיל עסקי וביקורות בפלטפורמת B144.",
-      en: "Business profile and reviews on the B144 platform.",
+      he: "פרופיל עסקי וביקורות בפלטפורמת T.co.il.",
+      en: "Business profile and reviews on the T.co.il platform.",
     },
   },
 ] as const;
