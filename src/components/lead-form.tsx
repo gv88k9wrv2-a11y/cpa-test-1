@@ -20,6 +20,7 @@ const COPY = {
     phonePh: "לדוגמה: 050-1234567 או ‎+1 415 555 0100",
     message: "כיצד נוכל לסייע לך?",
     messagePh: "ספרו לנו בקצרה על הצורך – מס, ביקורת, CFO, בין־לאומי וכו׳.",
+    messageNotice: "נא לא להזין או לצרף בטופס מידע פיננסי, אישי או מסמכים רגישים.",
     submit: "שליחת פנייה במייל",
     sending: "מכין את הפנייה…",
     whatsapp: "מעדיפים WhatsApp? פתחו הודעה מוכנה בצ׳אט",
@@ -51,6 +52,8 @@ const COPY = {
     message: "How can we assist your business?",
     messagePh:
       "Tell us briefly about your need – tax, audit, fractional CFO, cross-border, etc.",
+    messageNotice:
+      "Please do not enter or attach sensitive financial or personal information or documents in this form.",
     submit: "Send inquiry by email",
     sending: "Preparing your inquiry…",
     whatsapp: "Prefer WhatsApp? Chat with us directly",
@@ -289,6 +292,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
                     : "border-input focus:border-gold focus:ring-gold/30"
                 }`}
               />
+              <p className="mt-1.5 text-xs text-muted-foreground">{t.messageNotice}</p>
               {errors.message && (
                 <p id="lf-message-error" className="mt-1 text-xs font-medium text-destructive">
                   {errors.message}

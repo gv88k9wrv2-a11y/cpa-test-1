@@ -62,9 +62,11 @@ function PrivacyPageEn() {
               2. Submission of Documents and Financial Information
             </h2>
             <p className="mt-3">
-              This site is a promotional and informational website only. It{" "}
-              <strong>does not accept, process, or store</strong> financial statements, tax forms,
-              payroll data, or any confidential personal or financial documents.
+              This site is a promotional and informational website only. The website does not
+              provide a dedicated system for uploading or securely submitting sensitive financial or
+              personal documents. Users should not enter or submit sensitive financial, personal or
+              confidential information through the website inquiry form when such information is not
+              necessary for an initial inquiry.
             </p>
             <p className="mt-3">
               Clients are asked to submit documents and data exclusively through the Firm's
@@ -84,7 +86,7 @@ function PrivacyPageEn() {
               information.
             </p>
             <p className="mt-3">
-              This data is used solely to respond to your inquiry and coordinate a consultation. It is not processed for unrelated purposes, and is never sold, rented, or transferred to third parties, except as required by applicable law.
+              This data is used solely to respond to your inquiry and coordinate a consultation. Personal information is not sold or rented to third parties. However, where necessary to operate the website and provide related services, information may be processed by service providers acting on behalf of the firm, such as hosting, cloud infrastructure, security and technology service providers, subject to applicable law and appropriate safeguards.
             </p>
           </section>
 
