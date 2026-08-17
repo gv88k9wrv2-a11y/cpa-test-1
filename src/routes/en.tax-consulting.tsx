@@ -50,6 +50,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
       ]}
       sections={[
         {
+          id: "annual-returns-and-capital-declarations",
           title: "Israeli Tax Review Before a Transaction",
           body: "Before a transaction, relevant tax considerations may include fundraising, mergers and acquisitions, secondary sales, spin-offs and other structural changes. Within the agreed scope, the firm may assist with Israeli tax analysis and scenario review based on the available facts and assumptions.",
         },
@@ -58,6 +59,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           body: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials.",
         },
         {
+          id: "crypto-and-digital-assets",
           title: "Israeli Crypto and Digital Asset Tax Reporting",
           body: (
             <>
@@ -74,6 +76,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           ],
         },
         {
+          id: "rental-income",
           title: "Correction or regularization of prior reporting on foreign accounts",
           body: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations (FBAR, FATCA, CRS) may vary depending on the taxpayer's status, residence, citizenship, account location and the applicable reporting rules:",
           bullets: [
