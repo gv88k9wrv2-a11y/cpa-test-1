@@ -466,20 +466,17 @@ export function SiteFooter() {
           </div>
         ))}
       </div>
-      <div className="border-t border-primary-foreground/10 py-5 text-center text-xs text-primary-foreground/60">
-        © {new Date().getFullYear()} נמרודי ושות׳ – רואי חשבון. כל הזכויות שמורות.
-      </div>
       <nav
         dir="rtl"
         aria-label="קישורים משפטיים"
-        className="border-t border-primary-foreground/10 px-4 py-4 sm:px-6"
+        className="w-full border-t border-primary-foreground/10"
       >
-        <ul className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-primary-foreground/70">
+        <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 px-4 py-5 text-sm text-primary-foreground/80">
           {LEGAL_LINKS.map((l) => (
             <li key={l.to}>
               <Link
                 to={l.to}
-                className="whitespace-normal underline-offset-4 hover:text-gold hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                className="hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
               >
                 {l.label}
               </Link>
@@ -487,6 +484,9 @@ export function SiteFooter() {
           ))}
         </ul>
       </nav>
+      <div className="w-full border-t border-primary-foreground/10 px-4 py-5 text-center text-sm text-primary-foreground/60">
+        © {new Date().getFullYear()} נמרודי ושות׳ – רואי חשבון. כל הזכויות שמורות.
+      </div>
     </footer>
   );
 }
