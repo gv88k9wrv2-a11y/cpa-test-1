@@ -5,23 +5,55 @@ import heroImg from "../assets/service-startups.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "When does a startup need a CPA?", a: "Accounting and tax input may be useful before or shortly after incorporation, depending on the proposed structure, jurisdictions, financing plans, founders’ arrangements and equity-compensation model. US legal and tax matters should be reviewed with appropriately qualified US advisers." },
-  { q: "Do you support fundraising rounds?", a: "Depending on the engagement scope, the firm may assist with financial models, organization of financial and tax information, and coordination with the company’s legal and other professional advisers. Legal documents and transaction structure remain the responsibility of qualified legal advisers, and no particular tax outcome is guaranteed." },
-  { q: "Can you handle an Israel–Delaware Flip?", a: "We can assist with the Israeli accounting and tax aspects of a proposed Israel–Delaware restructuring, including assessing the need for an advance tax-ruling application, coordinating with legal and U.S. advisers and reviewing post-transaction transfer-pricing requirements." },
-  { q: "What is Section 102 (Equity & ESOP Incentive Plans) and how does it work?", a: "Employee equity arrangements may involve Israeli tax, reporting, valuation and legal considerations. Within the agreed scope, the firm may assist with the Israeli accounting and tax analysis, preparation of relevant information and coordination with the company’s legal advisers, trustee and other professionals. The applicable route and tax treatment depend on the plan, the recipient, the statutory conditions and the circumstances of the realization." },
-  { q: "What is the Preferred Technological Enterprise regime?", a: "Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law. The firm may assist with an initial eligibility review and preparation of relevant accounting and tax information. Eligibility, the applicable rate and acceptance of the company’s position depend on the law, the facts and the decisions of the relevant authorities." },
-  { q: "What is a 409A Valuation and why does it matter?", a: "US equity-compensation arrangements may require a current fair-market-value assessment under applicable US rules. The required timing, method and potential consequences depend on the company’s circumstances and should be confirmed with qualified US legal and tax advisers. We can assist with the Israeli accounting and tax aspects and coordinate information with the company’s US advisers within the agreed scope." },
-  { q: "How should we build the Cap Table for investors?", a: "A clear capitalization table can help founders and investors understand ownership and dilution. Depending on the scope of the engagement, we can assist with capitalization-table data, option-pool information and dilution scenarios using the company’s selected platform." },
-  { q: "What is a secondary transaction, and what tax risks may arise?", a: "A Secondary is a sale of founder or employee shares to an existing or new investor. The accounting and tax treatment depends on the seller, the instrument, the transaction terms, the applicable plan and the relevant law. Where appropriate, the need for an advance tax-ruling request may be considered with the company’s legal and tax advisers." },
+  {
+    q: "When does a startup need a CPA?",
+    a: "Accounting and tax input may be useful before or shortly after incorporation, depending on the proposed structure, jurisdictions, financing plans, founders’ arrangements and equity-compensation model. US legal and tax matters should be reviewed with appropriately qualified US advisers.",
+  },
+  {
+    q: "Do you support fundraising rounds?",
+    a: "Depending on the engagement scope, the firm may assist with financial models, organization of financial and tax information, and coordination with the company’s legal and other professional advisers. Legal documents and transaction structure remain the responsibility of qualified legal advisers, and no particular tax outcome is guaranteed.",
+  },
+  {
+    q: "Can you handle an Israel–Delaware Flip?",
+    a: "We can assist with the Israeli accounting and tax aspects of a proposed Israel–Delaware restructuring, including assessing the need for an advance tax-ruling application, coordinating with legal and U.S. advisers and reviewing post-transaction transfer-pricing requirements.",
+  },
+  {
+    q: "What is Section 102 (Equity & ESOP Incentive Plans) and how does it work?",
+    a: "Employee equity arrangements may involve Israeli tax, reporting, valuation and legal considerations. Within the agreed scope, the firm may assist with the Israeli accounting and tax analysis, preparation of relevant information and coordination with the company’s legal advisers, trustee and other professionals. The applicable route and tax treatment depend on the plan, the recipient, the statutory conditions and the circumstances of the realization.",
+  },
+  {
+    q: "What is the Preferred Technological Enterprise regime?",
+    a: "Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law. The firm may assist with an initial eligibility review and preparation of relevant accounting and tax information. Eligibility, the applicable rate and acceptance of the company’s position depend on the law, the facts and the decisions of the relevant authorities.",
+  },
+  {
+    q: "What is a 409A Valuation and why does it matter?",
+    a: "US equity-compensation arrangements may require a current fair-market-value assessment under applicable US rules. The required timing, method and potential consequences depend on the company’s circumstances and should be confirmed with qualified US legal and tax advisers. We can assist with the Israeli accounting and tax aspects and coordinate information with the company’s US advisers within the agreed scope.",
+  },
+  {
+    q: "How should we build the Cap Table for investors?",
+    a: "A clear capitalization table can help founders and investors understand ownership and dilution. Depending on the scope of the engagement, we can assist with capitalization-table data, option-pool information and dilution scenarios using the company’s selected platform.",
+  },
+  {
+    q: "What is a secondary transaction, and what tax risks may arise?",
+    a: "A Secondary is a sale of founder or employee shares to an existing or new investor. The accounting and tax treatment depends on the seller, the instrument, the transaction terms, the applicable plan and the relevant law. Where appropriate, the need for an advance tax-ruling request may be considered with the company’s legal and tax advisers.",
+  },
 ];
 
 export const Route = createFileRoute("/en/cpa-startups")({
   head: () => ({
     meta: [
       { title: "CPA for Startups Israel | Section 102 & Delaware Flip" },
-      { name: "description", content: "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss." },
+      {
+        name: "description",
+        content:
+          "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss.",
+      },
       { property: "og:title", content: "CPA for Startups — Nimrodi & Co." },
-      { property: "og:description", content: "Accounting, tax and CFO support for Israeli startups, including reporting, financial models and investor information according to the agreed scope. Contact the firm." },
+      {
+        property: "og:description",
+        content:
+          "Accounting, tax and CFO support for Israeli startups, including reporting, financial models and investor information according to the agreed scope. Contact the firm.",
+      },
       { property: "og:url", content: `${BASE}/en/cpa-startups` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -143,7 +175,30 @@ export const Route = createFileRoute("/en/cpa-startups")({
           title: "Fractional CFO Services for Startups in Israel",
           body: (
             <>
-              Growth-stage companies may require senior financial support before appointing a full-time CFO. Depending on the company’s needs and the agreed engagement scope, services may include <Link to="/en/fractional-cfo" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">Fractional CFO support</Link>. Companies with cross-border activity may also consider <Link to="/en/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">international tax services</Link>, while foreign groups operating in Israel may consider <Link to="/en/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">services for foreign companies in Israel</Link>, according to their activity and the agreed scope.
+              Growth-stage companies may require senior financial support before appointing a
+              full-time CFO. Depending on the company’s needs and the agreed engagement scope,
+              services may include{" "}
+              <Link
+                to="/en/fractional-cfo"
+                className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                Fractional CFO support
+              </Link>
+              . Companies with cross-border activity may also consider{" "}
+              <Link
+                to="/en/cpa-international"
+                className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                international tax services
+              </Link>
+              , while foreign groups operating in Israel may consider{" "}
+              <Link
+                to="/en/cpa-foreign-companies"
+                className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                services for foreign companies in Israel
+              </Link>
+              , according to their activity and the agreed scope.
             </>
           ),
           bullets: [
@@ -156,13 +211,17 @@ export const Route = createFileRoute("/en/cpa-startups")({
           ],
         },
       ]}
-
       govPortals={{
         title: "Israeli R&D Grants, Technology Tax Incentives, and Section 102 Options",
         links: [
-          { label: "Israel Innovation Authority – Incentive Programs & Grants", href: "https://innovationisrael.org.il/en/" },
-          { label: "Capital Investment Encouragement Law (Tax Relief)", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-
+          {
+            label: "Israel Innovation Authority – Incentive Programs & Grants",
+            href: "https://innovationisrael.org.il/en/",
+          },
+          {
+            label: "Capital Investment Encouragement Law (Tax Relief)",
+            href: "https://www.gov.il/en/departments/israel_tax_authority",
+          },
         ],
       }}
       faqs={FAQS}

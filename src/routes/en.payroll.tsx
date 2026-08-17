@@ -5,18 +5,35 @@ import heroImg from "../assets/service-payroll.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Can you run payroll for a foreign company with employees in Israel?", a: "We can assist with payroll setup and ongoing administration, including employer information required for National Insurance and income-tax reporting. Legal registration and pension or insurance advice require the appropriate qualified advisers." },
-  { q: "Do you handle Section 102 ESOP plans?", a: "Yes — we work with trustees, coordinate filings and approval processes with the Tax Authority, produce Form 106 (Annual Tax Statement), and support employees through exercise and sale under Section 102 (Equity & ESOP Incentive Plans)." },
-  { q: "What about severance (Form 161) and terminations?", a: "We prepare payroll information for Form 161, coordinate available pension information and assist with reviewing tax considerations relating to severance, subject to the employee’s circumstances and applicable law." },
+  {
+    q: "Can you run payroll for a foreign company with employees in Israel?",
+    a: "We can assist with payroll setup and ongoing administration, including employer information required for National Insurance and income-tax reporting. Legal registration and pension or insurance advice require the appropriate qualified advisers.",
+  },
+  {
+    q: "Do you handle Section 102 ESOP plans?",
+    a: "Yes — we work with trustees, coordinate filings and approval processes with the Tax Authority, produce Form 106 (Annual Tax Statement), and support employees through exercise and sale under Section 102 (Equity & ESOP Incentive Plans).",
+  },
+  {
+    q: "What about severance (Form 161) and terminations?",
+    a: "We prepare payroll information for Form 161, coordinate available pension information and assist with reviewing tax considerations relating to severance, subject to the employee’s circumstances and applicable law.",
+  },
 ];
 
 export const Route = createFileRoute("/en/payroll")({
   head: () => ({
     meta: [
       { title: "Israeli Payroll Services | Section 102 ESOP | Nimrodi & Co." },
-      { name: "description", content: "Payroll services in Israel for companies and startups, including payslips, employer reporting, Section 102 information and annual forms. Contact the firm today." },
+      {
+        name: "description",
+        content:
+          "Payroll services in Israel for companies and startups, including payslips, employer reporting, Section 102 information and annual forms. Contact the firm today.",
+      },
       { property: "og:title", content: "Payroll & ESOP Services — Nimrodi & Co." },
-      { property: "og:description", content: "Israeli payroll administration and equity-plan reporting for companies and startups, including payslips, employer filings and annual forms. Contact the firm." },
+      {
+        property: "og:description",
+        content:
+          "Israeli payroll administration and equity-plan reporting for companies and startups, including payslips, employer filings and annual forms. Contact the firm.",
+      },
       { property: "og:url", content: `${BASE}/en/payroll` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

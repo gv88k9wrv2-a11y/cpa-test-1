@@ -53,7 +53,9 @@ function AccessibilityEn() {
             </p>
 
             <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">Website accessibility</h2>
+              <h2 className="font-display text-2xl font-bold text-primary">
+                Website accessibility
+              </h2>
               <p>
                 The website was built with commonly accepted accessibility principles in mind,
                 including semantic structure, keyboard navigation, alternative text for images,
@@ -73,18 +75,19 @@ function AccessibilityEn() {
                 the area is available on public streets or in nearby public parking facilities,
                 subject to availability and the applicable conditions. These parking spaces are not
                 private spaces belonging to the firm or the building, and availability is not
-                controlled or guaranteed by the firm. There is a continuous accessible route
-                from street parking to the office, including elevator access. The building has
-                restrooms, but to the Firm’s knowledge they have not yet been approved as required
-                or marked as accessible restrooms. If an accessibility
-                accommodation is required to receive service, please contact us in advance so that
-                we can consider coordination or an accessible alternative based on the need and
-                available options.
+                controlled or guaranteed by the firm. There is a continuous accessible route from
+                street parking to the office, including elevator access. The building has restrooms,
+                but to the Firm’s knowledge they have not yet been approved as required or marked as
+                accessible restrooms. If an accessibility accommodation is required to receive
+                service, please contact us in advance so that we can consider coordination or an
+                accessible alternative based on the need and available options.
               </p>
             </div>
 
             <div className="space-y-4">
-              <h2 className="font-display text-2xl font-bold text-primary">Accessibility contact</h2>
+              <h2 className="font-display text-2xl font-bold text-primary">
+                Accessibility contact
+              </h2>
               <div className="space-y-3 rounded-lg border border-border/60 bg-secondary/30 p-6">
                 <p>
                   <strong>Telephone:</strong>{" "}
