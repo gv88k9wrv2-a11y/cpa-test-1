@@ -343,6 +343,21 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
               </div>
             ))}
           </div>
+
+          <div className="mt-4 border-t border-border pt-4">
+            <div className="grid grid-cols-2 gap-2">
+              {LEGAL_LINKS_EN.map((l) => (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  className="flex min-h-11 items-center justify-center rounded-md border border-border px-3 py-2.5 text-center text-sm font-semibold text-primary hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <div className="mt-4 grid grid-cols-2 gap-2 border-t border-border pt-4">
             <a
               href={heHref}
