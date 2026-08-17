@@ -118,8 +118,8 @@ function ServicesEn() {
 
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">Which Israeli CPA Service Fits Your Needs?</h2>
-            <p className="mt-3 text-primary-foreground/80">Contact our CPA firm in Herzliya Pituach for an introductory discussion about your accounting, tax, payroll, audit, or CFO needs.</p>
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">Choose the Service Path That Fits Your Needs</h2>
+            <p className="mt-3 text-primary-foreground/80">Start by client type or by the professional service required. Each path leads to the relevant service information.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground">
                 <MessageCircle className="h-5 w-5" aria-hidden />
