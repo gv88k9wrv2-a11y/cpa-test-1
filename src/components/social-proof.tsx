@@ -82,11 +82,19 @@ export function ClientLogosStrip({ lang = "he" }: { lang?: Lang }) {
   const t = COPY[lang];
   const dir = lang === "he" ? "rtl" : "ltr";
   return (
-    <section dir={dir} aria-label={t.credTitle} className="border-y border-border/60 bg-background py-14">
+    <section
+      dir={dir}
+      aria-label={t.credTitle}
+      className="border-y border-border/60 bg-background py-14"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-gold">{t.credEyebrow}</div>
-          <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">{t.credTitle}</h2>
+          <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+            {t.credEyebrow}
+          </div>
+          <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">
+            {t.credTitle}
+          </h2>
           <p className="mx-auto mt-2 max-w-2xl text-sm text-muted-foreground">{t.credSub}</p>
         </div>
 
@@ -117,9 +125,15 @@ export function ExecutiveTestimonials({ lang = "he" }: { lang?: Lang }) {
     <section dir={dir} className="bg-secondary/40 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-gold">{t.reviewsEyebrow}</div>
-          <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">{t.reviewsTitle}</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">{t.reviewsSub}</p>
+          <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+            {t.reviewsEyebrow}
+          </div>
+          <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">
+            {t.reviewsTitle}
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            {t.reviewsSub}
+          </p>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -130,9 +144,7 @@ export function ExecutiveTestimonials({ lang = "he" }: { lang?: Lang }) {
             >
               <div className="flex items-center gap-1.5 text-gold" aria-hidden>
                 <Star className="h-4 w-4" />
-                <span className="text-xs font-semibold uppercase tracking-wider">
-                  {src.name}
-                </span>
+                <span className="text-xs font-semibold uppercase tracking-wider">{src.name}</span>
               </div>
               <h3 className="mt-4 font-display text-lg font-bold text-primary">{src.name}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">

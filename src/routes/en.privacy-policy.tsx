@@ -15,7 +15,8 @@ export const Route = createFileRoute("/en/privacy-policy")({
       { property: "og:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
       {
         property: "og:description",
-        content: "How Nimrodi & Co. CPA collects, uses, stores and protects personal information from clients and website visitors under Israeli law. Read the full policy.",
+        content:
+          "How Nimrodi & Co. CPA collects, uses, stores and protects personal information from clients and website visitors under Israeli law. Read the full policy.",
       },
     ],
     links: [
@@ -45,10 +46,10 @@ function PrivacyPageEn() {
               1. Confidentiality and Scope
             </h2>
             <p className="mt-3">
-              Nimrodi &amp; Co. CPA Firm ("the Firm") is subject to the professional confidentiality and
-              ethics obligations applicable to certified public accountants in Israel and handles
-              personal information in accordance with applicable law, internal procedures and the
-              relevant engagement arrangements.
+              Nimrodi &amp; Co. CPA Firm ("the Firm") is subject to the professional confidentiality
+              and ethics obligations applicable to certified public accountants in Israel and
+              handles personal information in accordance with applicable law, internal procedures
+              and the relevant engagement arrangements.
             </p>
             <p className="mt-3">
               This policy governs interactions with the Firm's website. Formal professional services
@@ -69,8 +70,8 @@ function PrivacyPageEn() {
               necessary for an initial inquiry.
             </p>
             <p className="mt-3">
-              Clients should submit documents and data only through channels specifically authorized by
-              the Firm for the relevant engagement. The appropriate submission method will be
+              Clients should submit documents and data only through channels specifically authorized
+              by the Firm for the relevant engagement. The appropriate submission method will be
               communicated directly by the Firm.
             </p>
           </section>
@@ -86,7 +87,12 @@ function PrivacyPageEn() {
               information.
             </p>
             <p className="mt-3">
-              This data is used solely to respond to your inquiry and coordinate a consultation. Personal information is not sold or rented to third parties. However, where necessary to operate the website and provide related services, information may be processed by service providers acting on behalf of the firm, such as hosting, cloud infrastructure, security and technology service providers, subject to applicable law and appropriate safeguards.
+              This data is used solely to respond to your inquiry and coordinate a consultation.
+              Personal information is not sold or rented to third parties. However, where necessary
+              to operate the website and provide related services, information may be processed by
+              service providers acting on behalf of the firm, such as hosting, cloud infrastructure,
+              security and technology service providers, subject to applicable law and appropriate
+              safeguards.
             </p>
           </section>
 
@@ -106,8 +112,8 @@ function PrivacyPageEn() {
               collect information from minors.
             </p>
             <p className="mt-3">
-              Information may also be processed or stored outside Israel by trusted service providers
-              that implement appropriate security and confidentiality measures.
+              Information may also be processed or stored outside Israel by trusted service
+              providers that implement appropriate security and confidentiality measures.
             </p>
           </section>
 
