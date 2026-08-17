@@ -20,7 +20,7 @@ export type ServiceLandingEnProps = {
   title: string;
   intro: string;
   highlights: string[];
-  sections: { title: string; body: ReactNode; bullets?: string[] }[];
+  sections: { id?: string; title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
   ctaText?: string;
@@ -117,7 +117,7 @@ export function ServiceLandingEn({
         <section className="py-16">
           <div className="mx-auto max-w-4xl space-y-12 px-4 sm:px-6">
             {sections.map((s) => (
-              <article key={s.title}>
+              <article key={s.title} id={s.id} className="scroll-mt-24">
                 <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">{s.title}</h2>
                 <div className="mt-4 leading-relaxed text-muted-foreground whitespace-pre-line">{s.body}</div>
                 {s.bullets && (

@@ -75,6 +75,25 @@ function ServicesEn() {
           </div>
         </section>
 
+        <section className="py-12">
+          <div className="mx-auto grid max-w-6xl gap-5 px-4 sm:px-6 md:grid-cols-3">
+            {[
+              { to: "/en/companies", label: "Companies & Startups" },
+              { to: "/en/individuals", label: "Individuals & Self-Employed" },
+              { to: "/en/services", label: "Services" },
+            ].map((c) => (
+              <Link
+                key={c.label}
+                to={c.to}
+                className="flex min-h-24 items-center justify-center rounded-2xl border border-border bg-card p-6 text-center font-display text-xl font-bold text-primary transition hover:-translate-y-1 hover:border-gold hover:shadow-lg"
+              >
+                {c.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+
         <section className="py-16">
           <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">
             {GROUPS.map((g) => (
@@ -99,8 +118,8 @@ function ServicesEn() {
 
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">Which Israeli CPA Service Fits Your Needs?</h2>
-            <p className="mt-3 text-primary-foreground/80">Contact our CPA firm in Herzliya Pituach for an introductory discussion about your accounting, tax, payroll, audit, or CFO needs.</p>
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">Choose the Service Path That Fits Your Needs</h2>
+            <p className="mt-3 text-primary-foreground/80">Start by client type or by the professional service required. Each path leads to the relevant service information.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground">
                 <MessageCircle className="h-5 w-5" aria-hidden />

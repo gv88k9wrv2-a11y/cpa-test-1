@@ -15,6 +15,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PayrollRouteImport } from './routes/payroll'
+import { Route as IndividualsRouteImport } from './routes/individuals'
 import { Route as FractionalCfoRouteImport } from './routes/fractional-cfo'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as EnRouteImport } from './routes/en'
@@ -24,6 +25,7 @@ import { Route as CpaHerzliyaRouteImport } from './routes/cpa-herzliya'
 import { Route as CpaFreelancersRouteImport } from './routes/cpa-freelancers'
 import { Route as CpaForeignCompaniesRouteImport } from './routes/cpa-foreign-companies'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CompaniesRouteImport } from './routes/companies'
 import { Route as BookkeepingRouteImport } from './routes/bookkeeping'
 import { Route as AuditRouteImport } from './routes/audit'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
@@ -37,6 +39,7 @@ import { Route as EnTaxConsultingRouteImport } from './routes/en.tax-consulting'
 import { Route as EnServicesRouteImport } from './routes/en.services'
 import { Route as EnPrivacyPolicyRouteImport } from './routes/en.privacy-policy'
 import { Route as EnPayrollRouteImport } from './routes/en.payroll'
+import { Route as EnIndividualsRouteImport } from './routes/en.individuals'
 import { Route as EnFractionalCfoRouteImport } from './routes/en.fractional-cfo'
 import { Route as EnFaqRouteImport } from './routes/en.faq'
 import { Route as EnCpaStartupsRouteImport } from './routes/en.cpa-startups'
@@ -45,6 +48,7 @@ import { Route as EnCpaHerzliyaRouteImport } from './routes/en.cpa-herzliya'
 import { Route as EnCpaFreelancersRouteImport } from './routes/en.cpa-freelancers'
 import { Route as EnCpaForeignCompaniesRouteImport } from './routes/en.cpa-foreign-companies'
 import { Route as EnContactRouteImport } from './routes/en.contact'
+import { Route as EnCompaniesRouteImport } from './routes/en.companies'
 import { Route as EnBookkeepingRouteImport } from './routes/en.bookkeeping'
 import { Route as EnAuditRouteImport } from './routes/en.audit'
 import { Route as EnAccessibilityRouteImport } from './routes/en.accessibility'
@@ -81,6 +85,11 @@ const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
 const PayrollRoute = PayrollRouteImport.update({
   id: '/payroll',
   path: '/payroll',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndividualsRoute = IndividualsRouteImport.update({
+  id: '/individuals',
+  path: '/individuals',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FractionalCfoRoute = FractionalCfoRouteImport.update({
@@ -126,6 +135,11 @@ const CpaForeignCompaniesRoute = CpaForeignCompaniesRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CompaniesRoute = CompaniesRouteImport.update({
+  id: '/companies',
+  path: '/companies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BookkeepingRoute = BookkeepingRouteImport.update({
@@ -193,6 +207,11 @@ const EnPayrollRoute = EnPayrollRouteImport.update({
   path: '/payroll',
   getParentRoute: () => EnRoute,
 } as any)
+const EnIndividualsRoute = EnIndividualsRouteImport.update({
+  id: '/individuals',
+  path: '/individuals',
+  getParentRoute: () => EnRoute,
+} as any)
 const EnFractionalCfoRoute = EnFractionalCfoRouteImport.update({
   id: '/fractional-cfo',
   path: '/fractional-cfo',
@@ -231,6 +250,11 @@ const EnCpaForeignCompaniesRoute = EnCpaForeignCompaniesRouteImport.update({
 const EnContactRoute = EnContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => EnRoute,
+} as any)
+const EnCompaniesRoute = EnCompaniesRouteImport.update({
+  id: '/companies',
+  path: '/companies',
   getParentRoute: () => EnRoute,
 } as any)
 const EnBookkeepingRoute = EnBookkeepingRouteImport.update({
@@ -276,6 +300,7 @@ export interface FileRoutesByFullPath {
   '/accessibility': typeof AccessibilityRoute
   '/audit': typeof AuditRoute
   '/bookkeeping': typeof BookkeepingRoute
+  '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
   '/cpa-foreign-companies': typeof CpaForeignCompaniesRoute
   '/cpa-freelancers': typeof CpaFreelancersRoute
@@ -285,6 +310,7 @@ export interface FileRoutesByFullPath {
   '/en': typeof EnRouteWithChildren
   '/faq': typeof FaqRoute
   '/fractional-cfo': typeof FractionalCfoRoute
+  '/individuals': typeof IndividualsRoute
   '/payroll': typeof PayrollRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/services': typeof ServicesRoute
@@ -296,6 +322,7 @@ export interface FileRoutesByFullPath {
   '/en/accessibility': typeof EnAccessibilityRoute
   '/en/audit': typeof EnAuditRoute
   '/en/bookkeeping': typeof EnBookkeepingRoute
+  '/en/companies': typeof EnCompaniesRoute
   '/en/contact': typeof EnContactRoute
   '/en/cpa-foreign-companies': typeof EnCpaForeignCompaniesRoute
   '/en/cpa-freelancers': typeof EnCpaFreelancersRoute
@@ -304,6 +331,7 @@ export interface FileRoutesByFullPath {
   '/en/cpa-startups': typeof EnCpaStartupsRoute
   '/en/faq': typeof EnFaqRoute
   '/en/fractional-cfo': typeof EnFractionalCfoRoute
+  '/en/individuals': typeof EnIndividualsRoute
   '/en/payroll': typeof EnPayrollRoute
   '/en/privacy-policy': typeof EnPrivacyPolicyRoute
   '/en/services': typeof EnServicesRoute
@@ -321,6 +349,7 @@ export interface FileRoutesByTo {
   '/accessibility': typeof AccessibilityRoute
   '/audit': typeof AuditRoute
   '/bookkeeping': typeof BookkeepingRoute
+  '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
   '/cpa-foreign-companies': typeof CpaForeignCompaniesRoute
   '/cpa-freelancers': typeof CpaFreelancersRoute
@@ -329,6 +358,7 @@ export interface FileRoutesByTo {
   '/cpa-startups': typeof CpaStartupsRoute
   '/faq': typeof FaqRoute
   '/fractional-cfo': typeof FractionalCfoRoute
+  '/individuals': typeof IndividualsRoute
   '/payroll': typeof PayrollRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/services': typeof ServicesRoute
@@ -340,6 +370,7 @@ export interface FileRoutesByTo {
   '/en/accessibility': typeof EnAccessibilityRoute
   '/en/audit': typeof EnAuditRoute
   '/en/bookkeeping': typeof EnBookkeepingRoute
+  '/en/companies': typeof EnCompaniesRoute
   '/en/contact': typeof EnContactRoute
   '/en/cpa-foreign-companies': typeof EnCpaForeignCompaniesRoute
   '/en/cpa-freelancers': typeof EnCpaFreelancersRoute
@@ -348,6 +379,7 @@ export interface FileRoutesByTo {
   '/en/cpa-startups': typeof EnCpaStartupsRoute
   '/en/faq': typeof EnFaqRoute
   '/en/fractional-cfo': typeof EnFractionalCfoRoute
+  '/en/individuals': typeof EnIndividualsRoute
   '/en/payroll': typeof EnPayrollRoute
   '/en/privacy-policy': typeof EnPrivacyPolicyRoute
   '/en/services': typeof EnServicesRoute
@@ -366,6 +398,7 @@ export interface FileRoutesById {
   '/accessibility': typeof AccessibilityRoute
   '/audit': typeof AuditRoute
   '/bookkeeping': typeof BookkeepingRoute
+  '/companies': typeof CompaniesRoute
   '/contact': typeof ContactRoute
   '/cpa-foreign-companies': typeof CpaForeignCompaniesRoute
   '/cpa-freelancers': typeof CpaFreelancersRoute
@@ -375,6 +408,7 @@ export interface FileRoutesById {
   '/en': typeof EnRouteWithChildren
   '/faq': typeof FaqRoute
   '/fractional-cfo': typeof FractionalCfoRoute
+  '/individuals': typeof IndividualsRoute
   '/payroll': typeof PayrollRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/services': typeof ServicesRoute
@@ -386,6 +420,7 @@ export interface FileRoutesById {
   '/en/accessibility': typeof EnAccessibilityRoute
   '/en/audit': typeof EnAuditRoute
   '/en/bookkeeping': typeof EnBookkeepingRoute
+  '/en/companies': typeof EnCompaniesRoute
   '/en/contact': typeof EnContactRoute
   '/en/cpa-foreign-companies': typeof EnCpaForeignCompaniesRoute
   '/en/cpa-freelancers': typeof EnCpaFreelancersRoute
@@ -394,6 +429,7 @@ export interface FileRoutesById {
   '/en/cpa-startups': typeof EnCpaStartupsRoute
   '/en/faq': typeof EnFaqRoute
   '/en/fractional-cfo': typeof EnFractionalCfoRoute
+  '/en/individuals': typeof EnIndividualsRoute
   '/en/payroll': typeof EnPayrollRoute
   '/en/privacy-policy': typeof EnPrivacyPolicyRoute
   '/en/services': typeof EnServicesRoute
@@ -413,6 +449,7 @@ export interface FileRouteTypes {
     | '/accessibility'
     | '/audit'
     | '/bookkeeping'
+    | '/companies'
     | '/contact'
     | '/cpa-foreign-companies'
     | '/cpa-freelancers'
@@ -422,6 +459,7 @@ export interface FileRouteTypes {
     | '/en'
     | '/faq'
     | '/fractional-cfo'
+    | '/individuals'
     | '/payroll'
     | '/privacy-policy'
     | '/services'
@@ -433,6 +471,7 @@ export interface FileRouteTypes {
     | '/en/accessibility'
     | '/en/audit'
     | '/en/bookkeeping'
+    | '/en/companies'
     | '/en/contact'
     | '/en/cpa-foreign-companies'
     | '/en/cpa-freelancers'
@@ -441,6 +480,7 @@ export interface FileRouteTypes {
     | '/en/cpa-startups'
     | '/en/faq'
     | '/en/fractional-cfo'
+    | '/en/individuals'
     | '/en/payroll'
     | '/en/privacy-policy'
     | '/en/services'
@@ -458,6 +498,7 @@ export interface FileRouteTypes {
     | '/accessibility'
     | '/audit'
     | '/bookkeeping'
+    | '/companies'
     | '/contact'
     | '/cpa-foreign-companies'
     | '/cpa-freelancers'
@@ -466,6 +507,7 @@ export interface FileRouteTypes {
     | '/cpa-startups'
     | '/faq'
     | '/fractional-cfo'
+    | '/individuals'
     | '/payroll'
     | '/privacy-policy'
     | '/services'
@@ -477,6 +519,7 @@ export interface FileRouteTypes {
     | '/en/accessibility'
     | '/en/audit'
     | '/en/bookkeeping'
+    | '/en/companies'
     | '/en/contact'
     | '/en/cpa-foreign-companies'
     | '/en/cpa-freelancers'
@@ -485,6 +528,7 @@ export interface FileRouteTypes {
     | '/en/cpa-startups'
     | '/en/faq'
     | '/en/fractional-cfo'
+    | '/en/individuals'
     | '/en/payroll'
     | '/en/privacy-policy'
     | '/en/services'
@@ -502,6 +546,7 @@ export interface FileRouteTypes {
     | '/accessibility'
     | '/audit'
     | '/bookkeeping'
+    | '/companies'
     | '/contact'
     | '/cpa-foreign-companies'
     | '/cpa-freelancers'
@@ -511,6 +556,7 @@ export interface FileRouteTypes {
     | '/en'
     | '/faq'
     | '/fractional-cfo'
+    | '/individuals'
     | '/payroll'
     | '/privacy-policy'
     | '/services'
@@ -522,6 +568,7 @@ export interface FileRouteTypes {
     | '/en/accessibility'
     | '/en/audit'
     | '/en/bookkeeping'
+    | '/en/companies'
     | '/en/contact'
     | '/en/cpa-foreign-companies'
     | '/en/cpa-freelancers'
@@ -530,6 +577,7 @@ export interface FileRouteTypes {
     | '/en/cpa-startups'
     | '/en/faq'
     | '/en/fractional-cfo'
+    | '/en/individuals'
     | '/en/payroll'
     | '/en/privacy-policy'
     | '/en/services'
@@ -548,6 +596,7 @@ export interface RootRouteChildren {
   AccessibilityRoute: typeof AccessibilityRoute
   AuditRoute: typeof AuditRoute
   BookkeepingRoute: typeof BookkeepingRoute
+  CompaniesRoute: typeof CompaniesRoute
   ContactRoute: typeof ContactRoute
   CpaForeignCompaniesRoute: typeof CpaForeignCompaniesRoute
   CpaFreelancersRoute: typeof CpaFreelancersRoute
@@ -557,6 +606,7 @@ export interface RootRouteChildren {
   EnRoute: typeof EnRouteWithChildren
   FaqRoute: typeof FaqRoute
   FractionalCfoRoute: typeof FractionalCfoRoute
+  IndividualsRoute: typeof IndividualsRoute
   PayrollRoute: typeof PayrollRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   ServicesRoute: typeof ServicesRoute
@@ -609,6 +659,13 @@ declare module '@tanstack/react-router' {
       path: '/payroll'
       fullPath: '/payroll'
       preLoaderRoute: typeof PayrollRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/individuals': {
+      id: '/individuals'
+      path: '/individuals'
+      fullPath: '/individuals'
+      preLoaderRoute: typeof IndividualsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fractional-cfo': {
@@ -672,6 +729,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/companies': {
+      id: '/companies'
+      path: '/companies'
+      fullPath: '/companies'
+      preLoaderRoute: typeof CompaniesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bookkeeping': {
@@ -765,6 +829,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnPayrollRouteImport
       parentRoute: typeof EnRoute
     }
+    '/en/individuals': {
+      id: '/en/individuals'
+      path: '/individuals'
+      fullPath: '/en/individuals'
+      preLoaderRoute: typeof EnIndividualsRouteImport
+      parentRoute: typeof EnRoute
+    }
     '/en/fractional-cfo': {
       id: '/en/fractional-cfo'
       path: '/fractional-cfo'
@@ -819,6 +890,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/en/contact'
       preLoaderRoute: typeof EnContactRouteImport
+      parentRoute: typeof EnRoute
+    }
+    '/en/companies': {
+      id: '/en/companies'
+      path: '/companies'
+      fullPath: '/en/companies'
+      preLoaderRoute: typeof EnCompaniesRouteImport
       parentRoute: typeof EnRoute
     }
     '/en/bookkeeping': {
@@ -878,6 +956,7 @@ interface EnRouteChildren {
   EnAccessibilityRoute: typeof EnAccessibilityRoute
   EnAuditRoute: typeof EnAuditRoute
   EnBookkeepingRoute: typeof EnBookkeepingRoute
+  EnCompaniesRoute: typeof EnCompaniesRoute
   EnContactRoute: typeof EnContactRoute
   EnCpaForeignCompaniesRoute: typeof EnCpaForeignCompaniesRoute
   EnCpaFreelancersRoute: typeof EnCpaFreelancersRoute
@@ -886,6 +965,7 @@ interface EnRouteChildren {
   EnCpaStartupsRoute: typeof EnCpaStartupsRoute
   EnFaqRoute: typeof EnFaqRoute
   EnFractionalCfoRoute: typeof EnFractionalCfoRoute
+  EnIndividualsRoute: typeof EnIndividualsRoute
   EnPayrollRoute: typeof EnPayrollRoute
   EnPrivacyPolicyRoute: typeof EnPrivacyPolicyRoute
   EnServicesRoute: typeof EnServicesRoute
@@ -901,6 +981,7 @@ const EnRouteChildren: EnRouteChildren = {
   EnAccessibilityRoute: EnAccessibilityRoute,
   EnAuditRoute: EnAuditRoute,
   EnBookkeepingRoute: EnBookkeepingRoute,
+  EnCompaniesRoute: EnCompaniesRoute,
   EnContactRoute: EnContactRoute,
   EnCpaForeignCompaniesRoute: EnCpaForeignCompaniesRoute,
   EnCpaFreelancersRoute: EnCpaFreelancersRoute,
@@ -909,6 +990,7 @@ const EnRouteChildren: EnRouteChildren = {
   EnCpaStartupsRoute: EnCpaStartupsRoute,
   EnFaqRoute: EnFaqRoute,
   EnFractionalCfoRoute: EnFractionalCfoRoute,
+  EnIndividualsRoute: EnIndividualsRoute,
   EnPayrollRoute: EnPayrollRoute,
   EnPrivacyPolicyRoute: EnPrivacyPolicyRoute,
   EnServicesRoute: EnServicesRoute,
@@ -928,6 +1010,7 @@ const rootRouteChildren: RootRouteChildren = {
   AccessibilityRoute: AccessibilityRoute,
   AuditRoute: AuditRoute,
   BookkeepingRoute: BookkeepingRoute,
+  CompaniesRoute: CompaniesRoute,
   ContactRoute: ContactRoute,
   CpaForeignCompaniesRoute: CpaForeignCompaniesRoute,
   CpaFreelancersRoute: CpaFreelancersRoute,
@@ -937,6 +1020,7 @@ const rootRouteChildren: RootRouteChildren = {
   EnRoute: EnRouteWithChildren,
   FaqRoute: FaqRoute,
   FractionalCfoRoute: FractionalCfoRoute,
+  IndividualsRoute: IndividualsRoute,
   PayrollRoute: PayrollRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   ServicesRoute: ServicesRoute,
