@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import {
   Phone,
@@ -16,6 +17,16 @@ import {
   LineChart,
 } from "lucide-react";
 import { SocialIcons } from "./social-proof";
+import {
+  ABOUT_GROUP_EN,
+  COMPANIES_BOTTOM_EN,
+  COMPANIES_GROUPS_EN,
+  INDIVIDUALS_BOTTOM_EN,
+  INDIVIDUALS_GROUPS_EN,
+  KNOWLEDGE_GROUP_EN,
+  SERVICES_GROUPS_EN,
+} from "../data/nav-content";
+import type { NavGroup, NavItem } from "../data/nav-content";
 
 export const WHATSAPP_URL_EN =
   "https://wa.me/972546688681?text=" + encodeURIComponent("Website inquiry – Nimrodi & Co.");
@@ -41,12 +52,11 @@ function toHebrewPath(pathname: string): string {
 }
 
 const MAIN_LINKS = [
-  { to: "/en", label: "Home" },
+  { to: "/en/companies", label: "Companies & Startups" },
+  { to: "/en/individuals", label: "Individuals" },
   { to: "/en/services", label: "Services" },
+  { to: "/en/blog", label: "Insights" },
   { to: "/en/about", label: "About" },
-  { to: "/en/team", label: "Team" },
-  { to: "/en/blog", label: "Blog" },
-  { to: "/en/faq", label: "FAQ" },
   { to: "/en/contact", label: "Contact" },
 ] as const;
 
