@@ -177,7 +177,7 @@ export function SiteHeaderEn() {
         Skip to main content
       </a>
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
           <Link to="/en" className="flex min-w-0 flex-col leading-tight">
             <span className="truncate font-display text-lg font-bold text-primary sm:text-xl">
               Nimrodi &amp; Co.
@@ -189,82 +189,28 @@ export function SiteHeaderEn() {
 
           <nav
             aria-label="Main navigation"
-            className="hidden items-center gap-1 text-sm font-medium text-foreground/80 lg:flex"
+            className="hidden items-center gap-0.5 text-sm font-medium text-foreground/80 xl:flex"
           >
+            <MegaMenuEn
+              label="Companies & Startups"
+              groups={COMPANIES_GROUPS_EN}
+              bottom={COMPANIES_BOTTOM_EN}
+            />
+            <MegaMenuEn
+              label="Individuals"
+              groups={INDIVIDUALS_GROUPS_EN}
+              bottom={INDIVIDUALS_BOTTOM_EN}
+            />
+            <MegaMenuEn label="Services" groups={SERVICES_GROUPS_EN} />
+            <DropdownEn label="Insights" items={KNOWLEDGE_GROUP_EN} />
+            <DropdownEn label="About" items={ABOUT_GROUP_EN} />
             <Link
-              to="/en"
-              className="rounded-md px-3 py-2 hover:text-primary"
-              activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
-              activeOptions={{ exact: true }}
+              to="/en/contact"
+              className="whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
+              activeProps={{ className: "whitespace-nowrap rounded-md px-3 py-2 text-primary" }}
             >
-              Home
+              Contact
             </Link>
-
-            <div className="group relative">
-              <button
-                type="button"
-                className="inline-flex items-center gap-1 rounded-md px-3 py-2 hover:text-primary"
-              >
-                Services
-                <ChevronDown
-                  className="h-3.5 w-3.5 transition group-hover:rotate-180"
-                  aria-hidden
-                />
-              </button>
-              <div className="pointer-events-none invisible absolute left-0 top-full z-50 w-[720px] translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
-                <div className="grid grid-cols-3 gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl">
-                  {SERVICE_GROUPS_EN.map((group) => (
-                    <div key={group.label}>
-                      <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-gold">
-                        {group.label}
-                      </div>
-                      <ul className="space-y-1">
-                        {group.items.map((item) => (
-                          <li key={item.to}>
-                            <Link
-                              to={item.to}
-                              className="group/link flex items-start gap-3 rounded-lg p-2 transition hover:bg-secondary"
-                            >
-                              <div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-md bg-secondary text-primary group-hover/link:bg-gold/20 group-hover/link:text-gold">
-                                <item.icon className="h-4 w-4" aria-hidden />
-                              </div>
-                              <div className="min-w-0">
-                                <div className="text-sm font-semibold text-primary">
-                                  {item.label}
-                                </div>
-                                <div className="truncate text-xs text-muted-foreground">
-                                  {item.desc}
-                                </div>
-                              </div>
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                  <div className="col-span-3 flex items-center justify-between border-t border-border pt-4">
-                    <span className="text-xs text-muted-foreground">Explore our service areas</span>
-                    <Link
-                      to="/en/services"
-                      className="text-xs font-semibold text-primary hover:text-gold"
-                    >
-                      All services →
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {MAIN_LINKS.filter((l) => l.to !== "/en" && l.to !== "/en/services").map((l) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                className="rounded-md px-3 py-2 hover:text-primary"
-                activeProps={{ className: "rounded-md px-3 py-2 text-primary" }}
-              >
-                {l.label}
-              </Link>
-            ))}
           </nav>
 
           <div className="flex shrink-0 items-center gap-2">
@@ -300,59 +246,240 @@ export function SiteHeaderEn() {
   );
 }
 
-function MobileMenuEn({ heHref }: { heHref: string }) {
+function NavPathLinkEn({
+  to,
+  hash,
+  className,
+  children,
+}: {
+  to: string;
+  hash?: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
   return (
-    <details className="group relative lg:hidden">
-      <summary
-        aria-label="Open menu"
-        className="grid h-10 w-10 cursor-pointer list-none place-items-center rounded-md border border-border bg-card text-primary [&::-webkit-details-marker]:hidden"
+    <Link to={to as "/en/services"} hash={hash} className={className}>
+      {children}
+    </Link>
+  );
+}
+
+function MegaMenuEn({
+  label,
+  groups,
+  bottom,
+}: {
+  label: string;
+  groups: NavGroup[];
+  bottom?: NavItem;
+}) {
+  return (
+    <div className="group relative">
+      <button
+        type="button"
+        className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
-        <Menu className="h-5 w-5 group-open:hidden" aria-hidden />
-        <span className="hidden text-lg font-bold group-open:block" aria-hidden>
-          ×
-        </span>
-      </summary>
-      <div className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-border bg-background shadow-xl">
+        {label}
+        <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden />
+      </button>
+      <div className="pointer-events-none invisible absolute left-0 top-full z-50 w-[680px] max-w-[calc(100vw-2rem)] translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+        <div className="grid gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl sm:grid-cols-3">
+          {groups.map((group) => (
+            <div key={group.title}>
+              <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-gold">
+                {group.title}
+              </div>
+              <ul className="space-y-1">
+                {group.items.map((item) => (
+                  <li key={item.label}>
+                    <NavPathLinkEn
+                      to={item.to}
+                      hash={item.hash}
+                      className="block rounded-md px-2 py-1.5 text-sm text-foreground/90 transition hover:bg-secondary hover:text-primary"
+                    >
+                      {item.label}
+                    </NavPathLinkEn>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          {bottom && (
+            <div className="border-t border-border pt-4 sm:col-span-3">
+              <NavPathLinkEn
+                to={bottom.to}
+                className="text-xs font-semibold text-primary hover:text-gold"
+              >
+                {bottom.label} →
+              </NavPathLinkEn>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DropdownEn({ label, items }: { label: string; items: NavItem[] }) {
+  return (
+    <div className="group relative">
+      <button
+        type="button"
+        className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
+      >
+        {label}
+        <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden />
+      </button>
+      <div className="pointer-events-none invisible absolute left-0 top-full z-50 w-64 translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+        <ul className="rounded-xl border border-border bg-card p-3 shadow-2xl">
+          {items.map((item) => (
+            <li key={item.label}>
+              <NavPathLinkEn
+                to={item.to}
+                className="block rounded-md px-3 py-2 text-sm text-foreground/90 transition hover:bg-secondary hover:text-primary"
+              >
+                {item.label}
+              </NavPathLinkEn>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+const MOBILE_COMPANIES_EN: NavItem[] = [
+  { label: "Israeli Companies", to: "/en/companies" },
+  { label: "Startups & Technology Companies", to: "/en/cpa-startups" },
+  { label: "Foreign Companies Operating in Israel", to: "/en/cpa-foreign-companies" },
+  { label: "Audit & Bookkeeping", to: "/en/audit" },
+  { label: "Fractional CFO & Financial Management", to: "/en/fractional-cfo" },
+  { label: "All Services for Companies & Startups", to: "/en/companies" },
+];
+
+const MOBILE_INDIVIDUALS_EN: NavItem[] = [
+  {
+    label: "Annual Returns & Capital Declarations",
+    to: "/en/tax-consulting",
+    hash: "annual-returns-and-capital-declarations",
+  },
+  { label: "Crypto & Digital Assets", to: "/en/tax-consulting", hash: "crypto-and-digital-assets" },
+  { label: "Rental Income", to: "/en/tax-consulting", hash: "rental-income" },
+  { label: "Relocation & Tax Residency", to: "/en/cpa-international" },
+  { label: "Self-Employed & Freelancers", to: "/en/cpa-freelancers" },
+  { label: "All Services for Individuals & Self-Employed", to: "/en/individuals" },
+];
+
+function MobileAccordionEn({
+  id,
+  label,
+  items,
+  open,
+  onToggle,
+}: {
+  id: string;
+  label: string;
+  items: NavItem[];
+  open: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="border-b border-border">
+      <button
+        type="button"
+        aria-expanded={open}
+        aria-controls={id}
+        onClick={onToggle}
+        className="flex w-full items-center justify-between gap-2 px-3 py-3 text-base font-semibold text-foreground"
+      >
+        {label}
+        <ChevronDown className={`h-4 w-4 transition ${open ? "rotate-180" : ""}`} aria-hidden />
+      </button>
+      <ul id={id} hidden={!open} className="pb-3">
+        {items.map((item) => (
+          <li key={item.label}>
+            <NavPathLinkEn
+              to={item.to}
+              hash={item.hash}
+              className="block rounded-md px-5 py-2 text-sm text-muted-foreground hover:bg-secondary hover:text-primary"
+            >
+              {item.label}
+            </NavPathLinkEn>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function MobileMenuEn({ heHref }: { heHref: string }) {
+  const [open, setOpen] = useState(false);
+  const [section, setSection] = useState<string | null>(null);
+  const toggle = (key: string) => setSection((cur) => (cur === key ? null : key));
+
+  return (
+    <div className="relative xl:hidden">
+      <button
+        type="button"
+        aria-label="Open menu"
+        aria-expanded={open}
+        aria-controls="mobile-menu-en"
+        onClick={() => setOpen((v) => !v)}
+        className="grid h-10 w-10 place-items-center rounded-md border border-border bg-card text-primary"
+      >
+        {open ? (
+          <span className="text-lg font-bold" aria-hidden>
+            ×
+          </span>
+        ) : (
+          <Menu className="h-5 w-5" aria-hidden />
+        )}
+      </button>
+
+      <div
+        id="mobile-menu-en"
+        hidden={!open}
+        className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-border bg-background shadow-xl"
+      >
         <div className="px-4 py-4 sm:px-6">
-          <ul className="space-y-1">
-            {MAIN_LINKS.map((l) => (
+          <MobileAccordionEn
+            id="m-en-companies"
+            label="Companies & Startups"
+            items={MOBILE_COMPANIES_EN}
+            open={section === "companies"}
+            onToggle={() => toggle("companies")}
+          />
+          <MobileAccordionEn
+            id="m-en-individuals"
+            label="Individuals & Self-Employed"
+            items={MOBILE_INDIVIDUALS_EN}
+            open={section === "individuals"}
+            onToggle={() => toggle("individuals")}
+          />
+          <MobileAccordionEn
+            id="m-en-services"
+            label="Services"
+            items={SERVICES_GROUPS_EN[0].items}
+            open={section === "services"}
+            onToggle={() => toggle("services")}
+          />
+
+          <ul className="mt-3 space-y-1">
+            {[
+              { to: "/en/blog", label: "Insights" },
+              { to: "/en/about", label: "About" },
+              { to: "/en/contact", label: "Contact" },
+            ].map((l) => (
               <li key={l.to}>
-                <Link
+                <NavPathLinkEn
                   to={l.to}
                   className="block rounded-md px-3 py-2.5 text-base font-medium text-foreground hover:bg-secondary"
-                  activeProps={{
-                    className:
-                      "block rounded-md bg-secondary px-3 py-2.5 text-base font-semibold text-primary",
-                  }}
-                  activeOptions={{ exact: l.to === "/en" }}
                 >
                   {l.label}
-                </Link>
+                </NavPathLinkEn>
               </li>
             ))}
           </ul>
-          <div className="mt-5 border-t border-border pt-4">
-            {SERVICE_GROUPS_EN.map((group) => (
-              <div key={group.label} className="mb-4">
-                <div className="mb-2 px-3 text-[11px] font-semibold uppercase tracking-wider text-gold">
-                  {group.label}
-                </div>
-                <ul className="space-y-1">
-                  {group.items.map((item) => (
-                    <li key={item.to}>
-                      <Link
-                        to={item.to}
-                        className="flex items-center gap-3 rounded-md px-3 py-2 text-sm hover:bg-secondary"
-                      >
-                        <item.icon className="h-4 w-4 shrink-0 text-gold" aria-hidden />
-                        <span className="text-foreground">{item.label}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
 
           <div className="mt-4 border-t border-border pt-4">
             <div className="grid grid-cols-2 gap-2">
@@ -368,13 +495,20 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
             </div>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-2 border-t border-border pt-4">
+          <div className="mt-4 grid grid-cols-3 gap-2 border-t border-border pt-4">
             <a
               href={heHref}
               className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2.5 text-sm font-semibold text-primary"
               hrefLang="he"
             >
               עברית
+            </a>
+            <a
+              href={PHONE_TEL}
+              className="inline-flex items-center justify-center gap-2 rounded-md border border-primary px-3 py-2.5 text-sm font-semibold text-primary"
+            >
+              <Phone className="h-4 w-4" aria-hidden />
+              Call
             </a>
             <a
               href={WHATSAPP_URL_EN}
@@ -388,9 +522,10 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
           </div>
         </div>
       </div>
-    </details>
+    </div>
   );
 }
+
 
 export function SiteFooterEn() {
   return (
