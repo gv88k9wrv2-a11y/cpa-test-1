@@ -100,13 +100,32 @@ function ServicesPage() {
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
             <div className="text-xs font-semibold uppercase tracking-widest text-gold">תחומי ההתמחות שלנו</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-              שירותי חשבונאות, ביקורת, מס, שכר ומידע פיננסי
+              בחרו את מסלול השירות המתאים לכם
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              מפתיחת תיקים ברשויות ועד ביקורת שנתית וליווי מס בין־לאומי – מגוון שירותים חשבונאיים ומיסויים לעסקים, סטארטאפים ובעלי מקצוע, בהתאם להיקף ההתקשרות.
+              התחילו לפי סוג הלקוח או לפי השירות המקצועי המבוקש. כל מסלול מוביל לעמודים המפרטים את השירותים הרלוונטיים.
             </p>
           </div>
         </section>
+
+        <section className="py-12">
+          <div className="mx-auto grid max-w-6xl gap-5 px-4 sm:px-6 md:grid-cols-3">
+            {[
+              { to: "/companies", label: "חברות וסטארטאפים" },
+              { to: "/individuals", label: "יחידים ועצמאים" },
+              { to: "/services", label: "לפי שירות מקצועי" },
+            ].map((c) => (
+              <Link
+                key={c.label}
+                to={c.to}
+                className="flex min-h-24 items-center justify-center rounded-2xl border border-border bg-card p-6 text-center font-display text-xl font-bold text-primary transition hover:-translate-y-1 hover:border-gold hover:shadow-lg"
+              >
+                {c.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
 
         <section className="py-16">
           <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">

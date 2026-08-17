@@ -75,6 +75,25 @@ function ServicesEn() {
           </div>
         </section>
 
+        <section className="py-12">
+          <div className="mx-auto grid max-w-6xl gap-5 px-4 sm:px-6 md:grid-cols-3">
+            {[
+              { to: "/en/companies", label: "Companies & Startups" },
+              { to: "/en/individuals", label: "Individuals & Self-Employed" },
+              { to: "/en/services", label: "Services" },
+            ].map((c) => (
+              <Link
+                key={c.label}
+                to={c.to}
+                className="flex min-h-24 items-center justify-center rounded-2xl border border-border bg-card p-6 text-center font-display text-xl font-bold text-primary transition hover:-translate-y-1 hover:border-gold hover:shadow-lg"
+              >
+                {c.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+
+
         <section className="py-16">
           <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6">
             {GROUPS.map((g) => (
