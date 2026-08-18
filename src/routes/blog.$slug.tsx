@@ -1,13 +1,26 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { ArrowRight, CalendarDays, Clock, MessageCircle } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
 import { toMetaDescription } from "../lib/meta";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
+import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
+// Permanent redirects for consolidated duplicate Hebrew articles.
+const MERGED_SLUGS: Record<string, string> = {
+  "israeli-subsidiary-branch-of-foreign-company": "israeli-subsidiary-or-branch",
+  "foreign-companies-operating-in-israel": "foreign-company-tax-liability-israel",
+};
+
 export const Route = createFileRoute("/blog/$slug")({
+  beforeLoad: ({ params }) => {
+    const target = MERGED_SLUGS[params.slug];
+    if (target) {
+      throw redirect({ href: `/blog/${target}`, statusCode: 301 });
+    }
+  },
   loader: ({ params }) => {
     const post = BLOG_POSTS_BY_SLUG[params.slug];
     if (!post) throw notFound();
@@ -80,6 +93,22 @@ export const Route = createFileRoute("/blog/$slug")({
             ...(post.tags?.length ? { keywords: post.tags.join(", ") } : {}),
           }),
         },
+        ...(post.faqs?.length
+          ? [
+              {
+                type: "application/ld+json",
+                children: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: post.faqs.map((f) => ({
+                    "@type": "Question",
+                    name: f.q,
+                    acceptedAnswer: { "@type": "Answer", text: f.a },
+                  })),
+                }),
+              },
+            ]
+          : []),
       ],
     };
   },
@@ -184,6 +213,28 @@ function BlogPostPage() {
           ))}
         </div>
 
+        {post.faqs?.length ? (
+          <section className="mt-14">
+            <h2 className="font-display text-2xl font-bold text-primary">שאלות נפוצות</h2>
+            <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">
+              {post.faqs.map((f) => (
+                <details
+                  key={f.q}
+                  className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden"
+                >
+                  <summary className="flex cursor-pointer items-start justify-between gap-4 text-right font-semibold text-primary">
+                    <span>{f.q}</span>
+                    <span className="mt-1 text-gold transition group-open:rotate-45" aria-hidden>
+                      ＋
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         {post.relatedService ? (
           <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
             <h2 className="font-display text-xl font-bold text-primary">שירות מקצועי בנושא זה</h2>
@@ -197,6 +248,10 @@ function BlogPostPage() {
             </p>
           </aside>
         ) : null}
+
+        {/* Professional disclaimer */}
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+        <ProfessionalDisclaimer lang="he" className="mt-10" />
 
         <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
           <h2 className="font-display text-2xl font-bold">רוצים לשוחח על המצב הספציפי שלכם?</h2>

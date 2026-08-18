@@ -12,6 +12,7 @@ import {
 import { LeadForm } from "./lead-form";
 import { ScrollToTop } from "./scroll-to-top";
 import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
+import { ProfessionalDisclaimer } from "./professional-disclaimer";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -53,9 +54,13 @@ export function ServiceLandingEn({
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20">
             <nav className="mb-6 text-xs text-muted-foreground" aria-label="breadcrumb">
-              <Link to="/en" className="hover:text-primary">Home</Link>
+              <Link to="/en" className="hover:text-primary">
+                Home
+              </Link>
               <span className="mx-2">/</span>
-              <Link to="/en/services" className="hover:text-primary">Services</Link>
+              <Link to="/en/services" className="hover:text-primary">
+                Services
+              </Link>
               <span className="mx-2">/</span>
               <span className="text-foreground">{eyebrow}</span>
             </nav>
@@ -72,7 +77,10 @@ export function ServiceLandingEn({
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {highlights.map((h) => (
-                <li key={h} className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 text-sm text-foreground">
+                <li
+                  key={h}
+                  className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 text-sm text-foreground"
+                >
                   <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
                   <span>{h}</span>
                 </li>
@@ -118,8 +126,12 @@ export function ServiceLandingEn({
           <div className="mx-auto max-w-4xl space-y-12 px-4 sm:px-6">
             {sections.map((s) => (
               <article key={s.title} id={s.id} className="scroll-mt-24">
-                <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">{s.title}</h2>
-                <div className="mt-4 leading-relaxed text-muted-foreground whitespace-pre-line">{s.body}</div>
+                <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+                  {s.title}
+                </h2>
+                <div className="mt-4 leading-relaxed text-muted-foreground whitespace-pre-line">
+                  {s.body}
+                </div>
                 {s.bullets && (
                   <ul className="mt-5 space-y-2">
                     {s.bullets.map((b) => (
@@ -140,12 +152,17 @@ export function ServiceLandingEn({
             <h2 className="text-center font-display text-3xl font-bold text-primary">FAQ</h2>
             <div className="mt-8 space-y-3">
               {faqs.map((f) => (
-                <details key={f.q} className="group rounded-lg border border-border bg-card p-4 shadow-sm open:shadow-md">
+                <details
+                  key={f.q}
+                  className="group rounded-lg border border-border bg-card p-4 shadow-sm open:shadow-md"
+                >
                   <summary className="cursor-pointer list-none font-semibold text-primary">
                     <span className="mr-2 text-gold">+</span>
                     {f.q}
                   </summary>
-                  <div className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">{f.a}</div>
+                  <div className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">
+                    {f.a}
+                  </div>
                 </details>
               ))}
             </div>
@@ -158,16 +175,32 @@ export function ServiceLandingEn({
           <GovPortalLinks title={govPortals.title} links={govPortals.links} lang="en" />
         ) : null}
 
+        {/* Professional disclaimer */}
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+        <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+          <ProfessionalDisclaimer lang="en" />
+        </section>
+
         <section className="py-16">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">{ctaHeadline}</h2>
+            <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
+              {ctaHeadline}
+            </h2>
             {ctaText ? <p className="mt-4 text-muted-foreground">{ctaText}</p> : null}
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95">
+              <a
+                href={WHATSAPP_URL_EN}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
                 <MessageCircle className="h-5 w-5" aria-hidden />
                 Contact us
               </a>
-              <Link to="/en/contact" className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90">
+              <Link
+                to="/en/contact"
+                className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
+              >
                 Contact page
               </Link>
             </div>
