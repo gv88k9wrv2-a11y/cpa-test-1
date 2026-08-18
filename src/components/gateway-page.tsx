@@ -1,12 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "./site-chrome";
-import {
-  FloatingWhatsAppEn,
-  SiteFooterEn,
-  SiteHeaderEn,
-  WHATSAPP_URL_EN,
-} from "./site-chrome-en";
+import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "./site-chrome-en";
 import type { NavGroup } from "../data/nav-content";
 import { ProfessionalDisclaimer } from "./professional-disclaimer";
 

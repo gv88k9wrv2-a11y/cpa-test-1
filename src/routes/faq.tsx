@@ -113,11 +113,9 @@ export const Route = createFileRoute("/faq")({
     links: [
       { rel: "canonical", href: "https://www.nimrodi.co.il/faq" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/faq" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/faq" }
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/faq" },
     ],
-    scripts: [
-      { type: "application/ld+json", children: JSON.stringify(FAQ_JSONLD) },
-    ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(FAQ_JSONLD) }],
   }),
   component: FaqPage,
 });
@@ -128,52 +126,54 @@ function FaqPage() {
       <SiteHeader />
 
       <main id="main-content">
-      <section className="border-b border-border/60 bg-secondary/40">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold">
-            שאלות ותשובות
-          </div>
-          <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            שאלות ותשובות נפוצות
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            שאלות ותשובות נפוצות מלקוחות פרטיים ועסקיים על שירותי משרד רואי החשבון.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="mx-auto max-w-3xl space-y-14 px-4 sm:px-6">
-          {CATEGORIES.map((cat) => (
-            <div key={cat.title}>
-              <h2 className="font-display text-2xl font-bold text-primary">{cat.title}</h2>
-              <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">
-                {cat.items.map((f) => (
-                  <details
-                    key={f.q}
-                    className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden"
-                  >
-                    <summary className="flex cursor-pointer items-start justify-between gap-4 text-right font-semibold text-primary">
-                      <span>{f.q}</span>
-                      <span className="mt-1 text-gold transition group-open:rotate-45" aria-hidden>
-                        ＋
-                      </span>
-                    </summary>
-                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
-                  </details>
-                ))}
-              </div>
+        <section className="border-b border-border/60 bg-secondary/40">
+          <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
+            <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+              שאלות ותשובות
             </div>
-          ))}
-        </div>
-      </section>
+            <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
+              שאלות ותשובות נפוצות
+            </h1>
+            <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+              שאלות ותשובות נפוצות מלקוחות פרטיים ועסקיים על שירותי משרד רואי החשבון.
+            </p>
+          </div>
+        </section>
 
-      {/* Professional disclaimer */}
-      {/* Required on all professional-content pages. Do not remove or duplicate. */}
-      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-        <ProfessionalDisclaimer lang="he" />
-      </section>
+        <section className="py-16">
+          <div className="mx-auto max-w-3xl space-y-14 px-4 sm:px-6">
+            {CATEGORIES.map((cat) => (
+              <div key={cat.title}>
+                <h2 className="font-display text-2xl font-bold text-primary">{cat.title}</h2>
+                <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">
+                  {cat.items.map((f) => (
+                    <details
+                      key={f.q}
+                      className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden"
+                    >
+                      <summary className="flex cursor-pointer items-start justify-between gap-4 text-right font-semibold text-primary">
+                        <span>{f.q}</span>
+                        <span
+                          className="mt-1 text-gold transition group-open:rotate-45"
+                          aria-hidden
+                        >
+                          ＋
+                        </span>
+                      </summary>
+                      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
+        {/* Professional disclaimer */}
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+        <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+          <ProfessionalDisclaimer lang="he" />
+        </section>
       </main>
 
       <SiteFooter />

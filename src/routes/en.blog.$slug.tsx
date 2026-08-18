@@ -233,7 +233,6 @@ function BlogPostPageEn() {
 
         <ProfessionalDisclaimer lang="en" className="mt-10" />
 
-
         {related.length > 0 && (
           <aside className="mt-14 border-t border-border pt-10">
             <h2 className="font-display text-xl font-bold text-primary">
