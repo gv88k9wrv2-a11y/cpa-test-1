@@ -81,6 +81,22 @@ export const Route = createFileRoute("/blog/$slug")({
             ...(post.tags?.length ? { keywords: post.tags.join(", ") } : {}),
           }),
         },
+        ...(post.faqs?.length
+          ? [
+              {
+                type: "application/ld+json",
+                children: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: post.faqs.map((f) => ({
+                    "@type": "Question",
+                    name: f.q,
+                    acceptedAnswer: { "@type": "Answer", text: f.a },
+                  })),
+                }),
+              },
+            ]
+          : []),
       ],
     };
   },
@@ -184,6 +200,28 @@ function BlogPostPage() {
             </section>
           ))}
         </div>
+
+        {post.faqs?.length ? (
+          <section className="mt-14">
+            <h2 className="font-display text-2xl font-bold text-primary">שאלות נפוצות</h2>
+            <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">
+              {post.faqs.map((f) => (
+                <details
+                  key={f.q}
+                  className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden"
+                >
+                  <summary className="flex cursor-pointer items-start justify-between gap-4 text-right font-semibold text-primary">
+                    <span>{f.q}</span>
+                    <span className="mt-1 text-gold transition group-open:rotate-45" aria-hidden>
+                      ＋
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         {post.relatedService ? (
           <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">

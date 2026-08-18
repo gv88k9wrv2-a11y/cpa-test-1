@@ -63,12 +63,17 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/blog/relocation-tax-residency", changefreq: "monthly", priority: "0.7" },
           { path: "/blog/center-of-life-tax-residency", changefreq: "monthly", priority: "0.7" },
           {
-            path: "/blog/foreign-companies-operating-in-israel",
+            path: "/blog/undistributed-profits-closely-held-company-israel",
             changefreq: "monthly",
             priority: "0.7",
           },
           {
-            path: "/blog/israeli-subsidiary-branch-of-foreign-company",
+            path: "/blog/wallet-companies-section-62a-profitability-israel",
+            changefreq: "monthly",
+            priority: "0.7",
+          },
+          {
+            path: "/blog/dividend-salary-retained-profits-company-israel",
             changefreq: "monthly",
             priority: "0.7",
           },
