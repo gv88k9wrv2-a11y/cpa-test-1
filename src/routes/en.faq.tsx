@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
+import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const BASE = "https://www.nimrodi.co.il";
 
@@ -87,6 +88,11 @@ function FaqEn() {
               </div>
             ))}
           </div>
+        </section>
+        {/* Professional disclaimer */}
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+        <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+          <ProfessionalDisclaimer lang="en" />
         </section>
       </main>
       <SiteFooterEn />

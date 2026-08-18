@@ -12,6 +12,7 @@ import {
 import { LeadForm } from "./lead-form";
 import { ScrollToTop } from "./scroll-to-top";
 import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
+import { ProfessionalDisclaimer } from "./professional-disclaimer";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -179,6 +180,12 @@ export function ServiceLanding({
       {govPortals ? (
         <GovPortalLinks title={govPortals.title} links={govPortals.links} lang="he" />
       ) : null}
+
+      {/* Professional disclaimer */}
+      {/* Required on all professional-content pages. Do not remove or duplicate. */}
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+        <ProfessionalDisclaimer lang="he" />
+      </section>
 
       {/* CTA */}
       <section className="py-16">

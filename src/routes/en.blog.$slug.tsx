@@ -9,6 +9,7 @@ import {
 import { BLOG_POSTS_EN, BLOG_POSTS_EN_BY_SLUG, type BlogPostEn } from "../data/blog-posts-en";
 import { toMetaDescription } from "../lib/meta";
 import { EN_TO_HE_SLUG } from "../data/blog-pairs";
+import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
@@ -225,6 +226,13 @@ function BlogPostPageEn() {
             Contact our CPA firm
           </a>
         </div>
+
+        {/* Professional disclaimer */}
+
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+
+        <ProfessionalDisclaimer lang="en" className="mt-10" />
+
 
         {related.length > 0 && (
           <aside className="mt-14 border-t border-border pt-10">

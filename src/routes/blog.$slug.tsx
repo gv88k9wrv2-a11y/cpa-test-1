@@ -4,6 +4,7 @@ import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../compo
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
 import { toMetaDescription } from "../lib/meta";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
+import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
@@ -197,6 +198,10 @@ function BlogPostPage() {
             </p>
           </aside>
         ) : null}
+
+        {/* Professional disclaimer */}
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+        <ProfessionalDisclaimer lang="he" className="mt-10" />
 
         <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
           <h2 className="font-display text-2xl font-bold">רוצים לשוחח על המצב הספציפי שלכם?</h2>

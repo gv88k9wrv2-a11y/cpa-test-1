@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
+import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const CATEGORIES = [
   {
@@ -165,6 +166,12 @@ function FaqPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Professional disclaimer */}
+      {/* Required on all professional-content pages. Do not remove or duplicate. */}
+      <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
+        <ProfessionalDisclaimer lang="he" />
       </section>
 
       </main>

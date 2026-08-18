@@ -8,6 +8,7 @@ import {
   WHATSAPP_URL_EN,
 } from "./site-chrome-en";
 import type { NavGroup } from "../data/nav-content";
+import { ProfessionalDisclaimer } from "./professional-disclaimer";
 
 type Lang = "he" | "en";
 
@@ -105,6 +106,12 @@ export function GatewayPage({
             </div>
           </section>
         )}
+
+        {/* Professional disclaimer */}
+        {/* Required on all professional-content pages. Do not remove or duplicate. */}
+        <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+          <ProfessionalDisclaimer lang={lang} />
+        </section>
 
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto flex max-w-3xl flex-wrap justify-center gap-3 px-4 sm:px-6">
