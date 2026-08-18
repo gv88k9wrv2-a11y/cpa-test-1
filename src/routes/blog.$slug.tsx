@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { ArrowRight, CalendarDays, Clock, MessageCircle } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
@@ -8,7 +8,19 @@ import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
+// Permanent redirects for consolidated duplicate Hebrew articles.
+const MERGED_SLUGS: Record<string, string> = {
+  "israeli-subsidiary-branch-of-foreign-company": "israeli-subsidiary-or-branch",
+  "foreign-companies-operating-in-israel": "foreign-company-tax-liability-israel",
+};
+
 export const Route = createFileRoute("/blog/$slug")({
+  beforeLoad: ({ params }) => {
+    const target = MERGED_SLUGS[params.slug];
+    if (target) {
+      throw redirect({ href: `/blog/${target}`, statusCode: 301 });
+    }
+  },
   loader: ({ params }) => {
     const post = BLOG_POSTS_BY_SLUG[params.slug];
     if (!post) throw notFound();
