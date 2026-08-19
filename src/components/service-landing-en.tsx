@@ -4,7 +4,6 @@ import type { LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 import {
   FloatingWhatsAppEn,
-  RelatedServicesNavEn,
   SiteFooterEn,
   SiteHeaderEn,
   WHATSAPP_URL_EN,
@@ -13,6 +12,7 @@ import { LeadForm } from "./lead-form";
 import { ScrollToTop } from "./scroll-to-top";
 import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 import { ProfessionalDisclaimer } from "./professional-disclaimer";
+import { RelatedServiceBlock } from "./internal-links";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -169,7 +169,7 @@ export function ServiceLandingEn({
           </div>
         </section>
 
-        <RelatedServicesNavEn currentPath={pathname} />
+        <RelatedServiceBlock lang="en" currentPath={pathname} />
 
         {govPortals ? (
           <GovPortalLinks title={govPortals.title} links={govPortals.links} lang="en" />

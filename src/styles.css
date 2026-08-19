@@ -108,3 +108,49 @@
     outline-offset: 3px;
   }
 }
+
+@layer base {
+  /* Hash targets stay clear of the sticky header. */
+  [id] {
+    scroll-margin-top: 96px;
+  }
+
+  /* Inline contextual links: navy label with a gold underline at rest. */
+  .link-inline {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-gold);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .link-inline:hover,
+  .link-inline:focus-visible {
+    text-decoration-thickness: 2px;
+  }
+
+  /* Hash-target feedback: brief pale-gold highlight, no focus change. */
+  @keyframes target-highlight {
+    from {
+      background-color: color-mix(in oklab, var(--color-gold) 18%, transparent);
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+  :target {
+    animation: target-highlight 2.2s ease-out 1;
+    border-radius: 8px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :target {
+      animation: none;
+    }
+    .link-row,
+    .link-card {
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+}
