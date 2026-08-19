@@ -1,7 +1,19 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-tax.webp";
+import { TaxTopicList } from "../components/internal-links";
+import { TAX_TOPICS, TAX_GROUP_TITLES } from "../data/internal-links";
+
+/** Topics that already have a full section on this page. */
+const EXISTING_TOPIC_IDS = new Set([
+  "investments-options-digital-assets",
+  "prior-reporting-regularization",
+]);
+
+const TOPIC_SECTIONS = TAX_TOPICS.en
+  .filter((t) => !EXISTING_TOPIC_IDS.has(t.id))
+  .map((t) => ({ id: t.id, title: t.heading, body: t.intro }));
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
@@ -50,7 +62,10 @@ export const Route = createFileRoute("/en/tax-consulting")({
       ]}
       sections={[
         {
-          id: "annual-returns-and-capital-declarations",
+          title: TAX_GROUP_TITLES.en.listHeading,
+          body: <TaxTopicList lang="en" />,
+        },
+        {
           title: "Israeli Tax Review Before a Transaction",
           body: "Before a transaction, relevant tax considerations may include fundraising, mergers and acquisitions, secondary sales, spin-offs and other structural changes. Within the agreed scope, the firm may assist with Israeli tax analysis and scenario review based on the available facts and assumptions.",
         },
@@ -59,11 +74,11 @@ export const Route = createFileRoute("/en/tax-consulting")({
           body: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials.",
         },
         {
-          id: "crypto-and-digital-assets",
-          title: "Israeli Crypto and Digital Asset Tax Reporting",
+          id: "investments-options-digital-assets",
+          title: "Taxation of investments, options and digital assets",
           body: (
             <>
-              Digital-asset transactions may have Israeli tax and reporting implications depending on the activity, transaction facts and applicable law. Within the agreed scope, the firm may assist with organizing accounting and tax information for reporting and for review by financial institutions, subject to each institution’s requirements and final decision. Cross-border holders should also review our <Link to="/en/cpa-international" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">international tax practice</Link>, and independent crypto traders should see our <Link to="/en/cpa-freelancers" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">CPA for freelancers</Link>:
+              Digital-asset transactions may have Israeli tax and reporting implications depending on the activity, transaction facts and applicable law. Within the agreed scope, the firm may assist with organizing accounting and tax information for reporting and for review by financial institutions, subject to each institution’s requirements and final decision.
             </>
           ),
           bullets: [
@@ -76,8 +91,8 @@ export const Route = createFileRoute("/en/tax-consulting")({
           ],
         },
         {
-          id: "rental-income",
-          title: "Correction or regularization of prior reporting on foreign accounts",
+          id: "prior-reporting-regularization",
+          title: "Correction and regularization of prior reporting on assets and income",
           body: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations (FBAR, FATCA, CRS) may vary depending on the taxpayer's status, residence, citizenship, account location and the applicable reporting rules:",
           bullets: [
             "Review of available routes for regularization at the time of engagement",
@@ -102,6 +117,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           title: "Objections, settlement discussions and legal coordination",
           body: "If the Israel Tax Authority challenges a position, we may assist with the accounting and tax aspects of the response, assessment, objection and settlement discussions. Court proceedings and criminal-tax matters require coordination with qualified legal counsel.",
         },
+        ...TOPIC_SECTIONS,
       ]}
       faqs={FAQS}
     />
