@@ -52,7 +52,7 @@ export const INDIVIDUALS_GROUPS_HE: NavGroup[] = [
       {
         label: "הצהרות הון",
         to: "/tax-consulting",
-        hash: "annual-tax-returns-individuals",
+        hash: "capital-declarations",
       },
       { label: "גילוי מרצון ודיווח על נכסים והכנסות", to: "/tax-consulting", hash: "prior-reporting-regularization" },
       { label: "החזרי מס לשכירים", to: "/tax-consulting", hash: "employee-tax-refunds" },
@@ -165,9 +165,9 @@ export const INDIVIDUALS_GROUPS_EN: NavGroup[] = [
       {
         label: "Capital Declarations",
         to: "/en/tax-consulting",
-        hash: "annual-tax-returns-individuals",
+        hash: "capital-declarations",
       },
-      { label: "Voluntary Disclosure and Reporting of Assets and Income", to: "/en/tax-consulting" },
+      { label: "Voluntary Disclosure and Reporting of Assets and Income", to: "/en/tax-consulting", hash: "prior-reporting-regularization" },
       { label: "Employee Tax Refunds", to: "/en/tax-consulting", hash: "employee-tax-refunds" },
       { label: "Services for Guardians", to: "/en/tax-consulting", hash: "guardianship-reporting" },
     ],
