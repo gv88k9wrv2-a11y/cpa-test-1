@@ -57,9 +57,9 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
         {
           label: "אני צריך לדווח על קריפטו",
           to: "/tax-consulting",
-          hash: "crypto-and-digital-assets",
+          hash: "investments-options-digital-assets",
         },
-        { label: "יש לי הכנסות משכר דירה", to: "/tax-consulting", hash: "rental-income" },
+        { label: "יש לי הכנסות משכר דירה", to: "/tax-consulting", hash: "real-estate-tax-israel" },
         { label: "אני לפני רילוקיישן או חזרה לישראל", to: "/cpa-international" },
         { label: "אני עצמאי וצריך דיווח או דוח שנתי", to: "/cpa-freelancers" },
       ],
@@ -91,12 +91,12 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           {
             label: "דוחות שנתיים והצהרות הון",
             to: "/tax-consulting",
-            hash: "annual-returns-and-capital-declarations",
+            hash: "annual-tax-returns-individuals",
           },
-          { label: "הכנסות משכר דירה", to: "/tax-consulting", hash: "rental-income" },
-          { label: "החזרי מס לשכירים", to: "/individuals", hash: "employee-tax-refunds" },
+          { label: "הכנסות משכר דירה", to: "/tax-consulting", hash: "real-estate-tax-israel" },
+          { label: "החזרי מס לשכירים", to: "/tax-consulting", hash: "employee-tax-refunds" },
           { label: "עצמאים ופרילנסרים", to: "/cpa-freelancers" },
-          { label: "שירותים לאפוטרופוסים", to: "/individuals", hash: "guardians" },
+          { label: "שירותים לאפוטרופוסים", to: "/tax-consulting", hash: "guardianship-reporting" },
         ],
       },
       {
@@ -105,7 +105,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           {
             label: "קריפטו ונכסים דיגיטליים",
             to: "/tax-consulting",
-            hash: "crypto-and-digital-assets",
+            hash: "investments-options-digital-assets",
           },
           { label: "רילוקיישן ותושבות מס", to: "/cpa-international" },
           { label: "עולים חדשים ותושבים חוזרים", to: "/cpa-international" },
@@ -186,9 +186,9 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
         {
           label: "I need to report crypto activity",
           to: "/en/tax-consulting",
-          hash: "crypto-and-digital-assets",
+          hash: "investments-options-digital-assets",
         },
-        { label: "I have rental income", to: "/en/tax-consulting", hash: "rental-income" },
+        { label: "I have rental income", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
         { label: "I am planning relocation or a return to Israel", to: "/en/cpa-international" },
         {
           label: "I am self-employed and need reporting or an annual return",
@@ -223,12 +223,12 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           {
             label: "Annual Returns & Capital Declarations",
             to: "/en/tax-consulting",
-            hash: "annual-returns-and-capital-declarations",
+            hash: "annual-tax-returns-individuals",
           },
-          { label: "Rental Income", to: "/en/tax-consulting", hash: "rental-income" },
-          { label: "Employee Tax Refunds", to: "/en/individuals", hash: "employee-tax-refunds" },
+          { label: "Rental Income", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
+          { label: "Employee Tax Refunds", to: "/en/tax-consulting", hash: "employee-tax-refunds" },
           { label: "Self-Employed & Freelancers", to: "/en/cpa-freelancers" },
-          { label: "Services for Guardians", to: "/en/individuals", hash: "guardians" },
+          { label: "Services for Guardians", to: "/en/tax-consulting", hash: "guardianship-reporting" },
         ],
       },
       {
@@ -237,7 +237,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           {
             label: "Crypto & Digital Assets",
             to: "/en/tax-consulting",
-            hash: "crypto-and-digital-assets",
+            hash: "investments-options-digital-assets",
           },
           { label: "Relocation & Tax Residency", to: "/en/cpa-international" },
           { label: "New Immigrants & Returning Residents", to: "/en/cpa-international" },

@@ -369,10 +369,10 @@ const MOBILE_INDIVIDUALS: NavItem[] = [
   {
     label: "דוחות שנתיים והצהרות הון",
     to: "/tax-consulting",
-    hash: "annual-returns-and-capital-declarations",
+    hash: "annual-tax-returns-individuals",
   },
-  { label: "קריפטו ונכסים דיגיטליים", to: "/tax-consulting", hash: "crypto-and-digital-assets" },
-  { label: "הכנסות משכר דירה", to: "/tax-consulting", hash: "rental-income" },
+  { label: "קריפטו ונכסים דיגיטליים", to: "/tax-consulting", hash: "investments-options-digital-assets" },
+  { label: "הכנסות משכר דירה", to: "/tax-consulting", hash: "real-estate-tax-israel" },
   { label: "רילוקיישן ותושבות מס", to: "/cpa-international" },
   { label: "עצמאים ופרילנסרים", to: "/cpa-freelancers" },
   { label: "לכל השירותים ליחידים ולעצמאים", to: "/individuals" },

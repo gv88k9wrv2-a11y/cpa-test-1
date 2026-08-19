@@ -361,10 +361,10 @@ const MOBILE_INDIVIDUALS_EN: NavItem[] = [
   {
     label: "Annual Returns & Capital Declarations",
     to: "/en/tax-consulting",
-    hash: "annual-returns-and-capital-declarations",
+    hash: "annual-tax-returns-individuals",
   },
-  { label: "Crypto & Digital Assets", to: "/en/tax-consulting", hash: "crypto-and-digital-assets" },
-  { label: "Rental Income", to: "/en/tax-consulting", hash: "rental-income" },
+  { label: "Crypto & Digital Assets", to: "/en/tax-consulting", hash: "investments-options-digital-assets" },
+  { label: "Rental Income", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
   { label: "Relocation & Tax Residency", to: "/en/cpa-international" },
   { label: "Self-Employed & Freelancers", to: "/en/cpa-freelancers" },
   { label: "All Services for Individuals & Self-Employed", to: "/en/individuals" },
