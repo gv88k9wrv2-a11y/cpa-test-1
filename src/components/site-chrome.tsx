@@ -179,17 +179,18 @@ export function SiteHeader() {
       >
         דלג לתוכן העיקרי
       </a>
-      <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
+      <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
+        <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
           {/* Logo */}
           <Link to="/" className="flex min-w-0 flex-col leading-tight">
-            <span className="truncate font-display text-lg font-bold text-primary sm:text-xl">
+            <span className="font-display text-lg font-bold text-primary sm:text-xl">
               נמרודי ושות׳
             </span>
-            <span className="hidden text-[11px] text-muted-foreground sm:block sm:text-xs">
-              רואי חשבון · הרצליה פיתוח
+            <span className="text-[11px] text-muted-foreground sm:text-xs">
+              רואי חשבון · מאז 2000
             </span>
           </Link>
+
 
           {/* Desktop nav (xl and above) */}
           <nav
@@ -219,15 +220,17 @@ export function SiteHeader() {
           </nav>
 
           {/* Right cluster */}
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-2">
             <a
               href={enHref}
-              className="inline-flex items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary"
+              className="inline-flex h-11 min-w-[44px] items-center justify-center gap-1 rounded-md border border-border/40 px-2.5 text-xs font-semibold text-primary hover:bg-secondary"
               aria-label="English version"
               hrefLang="en"
             >
               EN
             </a>
+            <span className="h-6 w-px bg-border/60 xl:hidden" aria-hidden />
+
             <a
               href={PHONE_TEL}
               className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex"
@@ -433,7 +436,7 @@ function MobileMenu({ enHref }: { enHref: string }) {
         aria-expanded={open}
         aria-controls="mobile-menu-he"
         onClick={() => setOpen((v) => !v)}
-        className="grid h-10 w-10 place-items-center rounded-md border border-border bg-card text-primary"
+        className="grid h-11 w-11 place-items-center rounded-md border border-border/40 bg-card text-primary"
       >
         {open ? (
           <span className="text-lg font-bold" aria-hidden>

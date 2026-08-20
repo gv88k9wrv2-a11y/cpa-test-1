@@ -65,19 +65,24 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
             />
           </div>
 
-          <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:py-28">
+          <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-20 lg:py-28">
             <div className="max-w-3xl text-primary-foreground">
               <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
                 <Sparkles className="h-3.5 w-3.5" aria-hidden />
                 {t.hero.eyebrow}
               </div>
-              <h1 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+              <h1
+                className={`mt-3 font-display font-bold leading-tight sm:mt-5 sm:text-5xl lg:text-6xl ${
+                  isHe ? "text-4xl" : "text-[2.5rem] leading-[1.08]"
+                }`}
+              >
                 {t.hero.h1}
               </h1>
-              <p className="mt-5 max-w-2xl text-lg text-primary-foreground/85 sm:text-xl">
+              <p className="mt-4 max-w-2xl text-lg text-primary-foreground/85 sm:mt-5 sm:text-xl">
                 {t.hero.paragraph}
               </p>
-              <div className="mt-8 flex flex-col gap-3">
+              <div className="mt-6 flex flex-col gap-3 sm:mt-8">
+
                 <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-stretch">
                   {t.hero.buttons.slice(0, 2).map((b) => (
                     <PathLink
