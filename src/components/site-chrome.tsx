@@ -436,7 +436,7 @@ function MobileMenu({ enHref }: { enHref: string }) {
         aria-expanded={open}
         aria-controls="mobile-menu-he"
         onClick={() => setOpen((v) => !v)}
-        className="grid h-10 w-10 place-items-center rounded-md border border-border bg-card text-primary"
+        className="grid h-11 w-11 place-items-center rounded-md border border-border/40 bg-card text-primary"
       >
         {open ? (
           <span className="text-lg font-bold" aria-hidden>
