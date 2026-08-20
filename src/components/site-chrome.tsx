@@ -648,9 +648,9 @@ export function FloatingWhatsApp() {
       target="_blank"
       rel="noopener"
       aria-label="פנייה בוואטסאפ"
-      className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/20 transition hover:scale-105"
+      className="fixed bottom-[calc(1rem+env(safe-area-inset-bottom))] left-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/20 transition hover:scale-105 sm:h-14 sm:w-14"
     >
-      <MessageCircle className="h-7 w-7" aria-hidden />
+      <MessageCircle className="h-6 w-6 sm:h-7 sm:w-7" aria-hidden />
     </a>
   );
 }
