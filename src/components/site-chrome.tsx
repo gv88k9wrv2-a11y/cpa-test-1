@@ -179,17 +179,18 @@ export function SiteHeader() {
       >
         דלג לתוכן העיקרי
       </a>
-      <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
+      <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
+        <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
           {/* Logo */}
           <Link to="/" className="flex min-w-0 flex-col leading-tight">
-            <span className="truncate font-display text-lg font-bold text-primary sm:text-xl">
+            <span className="font-display text-lg font-bold text-primary sm:text-xl">
               נמרודי ושות׳
             </span>
-            <span className="hidden text-[11px] text-muted-foreground sm:block sm:text-xs">
-              רואי חשבון · הרצליה פיתוח
+            <span className="text-[11px] text-muted-foreground sm:text-xs">
+              רואי חשבון · מאז 2000
             </span>
           </Link>
+
 
           {/* Desktop nav (xl and above) */}
           <nav
