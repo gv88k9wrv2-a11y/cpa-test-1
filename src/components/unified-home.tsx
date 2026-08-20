@@ -77,20 +77,26 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
               <p className="mt-5 max-w-2xl text-lg text-primary-foreground/85 sm:text-xl">
                 {t.hero.paragraph}
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                {t.hero.buttons.map((b, i) => (
+              <div className="mt-8 flex flex-col gap-3">
+                <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-stretch">
+                  {t.hero.buttons.slice(0, 2).map((b) => (
+                    <PathLink
+                      key={b.to}
+                      to={b.to}
+                      className="inline-flex min-h-[56px] flex-1 items-center justify-center rounded-md border border-gold bg-primary/70 px-6 py-3 text-center text-base font-semibold text-primary-foreground shadow-sm backdrop-blur transition hover:bg-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98]"
+                    >
+                      {b.label}
+                    </PathLink>
+                  ))}
+                </div>
+                {t.hero.buttons[2] && (
                   <PathLink
-                    key={b.to}
-                    to={b.to}
-                    className={
-                      i === 0
-                        ? "inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-base font-semibold text-gold-foreground shadow-lg transition hover:brightness-95"
-                        : "inline-flex items-center gap-2 rounded-md border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-base font-semibold text-primary-foreground backdrop-blur transition hover:bg-primary-foreground/20"
-                    }
+                    to={t.hero.buttons[2].to}
+                    className="inline-flex min-h-[48px] items-center justify-center rounded-md border border-primary-foreground/40 bg-transparent px-6 py-3 text-center text-base font-semibold text-primary-foreground transition hover:bg-primary-foreground/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                   >
-                    {b.label}
+                    {t.hero.buttons[2].label}
                   </PathLink>
-                ))}
+                )}
               </div>
             </div>
           </div>
