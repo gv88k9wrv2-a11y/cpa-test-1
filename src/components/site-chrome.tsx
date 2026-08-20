@@ -220,15 +220,17 @@ export function SiteHeader() {
           </nav>
 
           {/* Right cluster */}
-          <div className="flex shrink-0 items-center gap-2">
+          <div className="flex shrink-0 items-center gap-1 sm:gap-2">
             <a
               href={enHref}
-              className="inline-flex items-center gap-1 rounded-md border border-border px-2.5 py-1.5 text-xs font-semibold text-primary hover:bg-secondary"
+              className="inline-flex h-11 min-w-[44px] items-center justify-center gap-1 rounded-md border border-border/40 px-2.5 text-xs font-semibold text-primary hover:bg-secondary"
               aria-label="English version"
               hrefLang="en"
             >
               EN
             </a>
+            <span className="h-6 w-px bg-border/60 xl:hidden" aria-hidden />
+
             <a
               href={PHONE_TEL}
               className="hidden items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary hover:bg-secondary md:inline-flex"
