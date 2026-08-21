@@ -65,30 +65,52 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
             />
           </div>
 
-          <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-20 lg:py-28">
+          <div
+            className={`relative mx-auto max-w-6xl px-4 sm:px-6 sm:py-20 lg:py-28 ${
+              isHe ? "py-10" : "py-7"
+            }`}
+          >
             <div className="max-w-3xl text-primary-foreground">
-              <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
-                <Sparkles className="h-3.5 w-3.5" aria-hidden />
+              <div
+                className={`inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 font-medium text-gold sm:px-3 sm:py-1 sm:text-xs ${
+                  isHe ? "px-3 py-1 text-xs" : "whitespace-nowrap px-2.5 py-0.5 text-[11px]"
+                }`}
+              >
+                <Sparkles className="h-3.5 w-3.5 shrink-0" aria-hidden />
                 {t.hero.eyebrow}
               </div>
               <h1
-                className={`mt-3 font-display font-bold leading-tight sm:mt-5 sm:text-5xl lg:text-6xl ${
-                  isHe ? "text-4xl" : "text-[2.5rem] leading-[1.08]"
+                className={`font-display font-bold sm:mt-5 sm:text-5xl sm:leading-tight lg:text-6xl ${
+                  isHe ? "mt-3 text-4xl leading-tight" : "mt-2.5 text-[1.75rem] leading-[1.15]"
                 }`}
               >
                 {t.hero.h1}
               </h1>
-              <p className="mt-4 max-w-2xl text-lg text-primary-foreground/85 sm:mt-5 sm:text-xl">
+              <p
+                className={`max-w-2xl text-primary-foreground/85 sm:mt-5 sm:text-xl ${
+                  isHe ? "mt-4 text-lg" : "mt-3 text-base leading-relaxed"
+                }`}
+              >
                 {t.hero.paragraph}
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:mt-8">
+              <div
+                className={`flex flex-col sm:mt-8 sm:gap-3 ${isHe ? "mt-6 gap-3" : "mt-5 gap-2.5"}`}
+              >
 
-                <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-stretch">
+                <div
+                  className={`flex w-full flex-col sm:flex-row sm:items-stretch sm:gap-3 ${
+                    isHe ? "gap-3" : "gap-2.5"
+                  }`}
+                >
                   {t.hero.buttons.slice(0, 2).map((b) => (
                     <PathLink
                       key={b.to}
                       to={b.to}
-                      className="inline-flex min-h-[56px] flex-1 items-center justify-center rounded-md border border-gold bg-primary/70 px-6 py-3 text-center text-base font-semibold text-primary-foreground shadow-sm backdrop-blur transition hover:bg-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98]"
+                      className={`inline-flex flex-1 items-center justify-center rounded-md border border-gold bg-primary/70 text-center font-semibold text-primary-foreground shadow-sm backdrop-blur transition hover:bg-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98] sm:min-h-[56px] sm:px-6 sm:py-3 sm:text-base ${
+                        isHe
+                          ? "min-h-[56px] px-6 py-3 text-base"
+                          : "min-h-[46px] px-5 py-2.5 text-[15px]"
+                      }`}
                     >
                       {b.label}
                     </PathLink>
@@ -97,7 +119,11 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                 {t.hero.buttons[2] && (
                   <PathLink
                     to={t.hero.buttons[2].to}
-                    className="inline-flex min-h-[48px] items-center justify-center rounded-md border border-primary-foreground/40 bg-transparent px-6 py-3 text-center text-base font-semibold text-primary-foreground transition hover:bg-primary-foreground/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                    className={`inline-flex items-center justify-center rounded-md border border-primary-foreground/40 bg-transparent text-center font-semibold text-primary-foreground transition hover:bg-primary-foreground/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold sm:min-h-[48px] sm:px-6 sm:py-3 sm:text-base ${
+                      isHe
+                        ? "min-h-[48px] px-6 py-3 text-base"
+                        : "min-h-[46px] px-5 py-2.5 text-[15px]"
+                    }`}
                   >
                     {t.hero.buttons[2].label}
                   </PathLink>
