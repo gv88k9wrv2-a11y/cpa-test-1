@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 
 import {
@@ -171,6 +171,29 @@ const ALL_SERVICES: ServiceItem[] = SERVICE_GROUPS.flatMap((g) => g.items);
 export function SiteHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const enHref = toEnglishPath(pathname);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const navRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setOpenMenu(null);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!openMenu) return;
+    const onDown = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) setOpenMenu(null);
+    };
+    document.addEventListener("mousedown", onDown);
+    return () => document.removeEventListener("mousedown", onDown);
+  }, [openMenu]);
+
+  const menu = (key: string) => ({
+    id: `nav-panel-${key}`,
+    open: openMenu === key,
+    onToggle: () => setOpenMenu((cur) => (cur === key ? null : key)),
+    onClose: () => setOpenMenu(null),
+  });
+
   return (
     <>
       <a
@@ -194,6 +217,7 @@ export function SiteHeader() {
 
           {/* Desktop nav (xl and above) */}
           <nav
+            ref={navRef}
             aria-label="ניווט ראשי"
             className="hidden items-center gap-0.5 text-sm font-medium text-foreground/80 xl:flex"
           >
@@ -201,15 +225,17 @@ export function SiteHeader() {
               label="חברות וסטארטאפים"
               groups={COMPANIES_GROUPS_HE}
               bottom={COMPANIES_BOTTOM_HE}
+              {...menu("companies")}
             />
             <MegaMenu
               label="יחידים ועצמאים"
               groups={INDIVIDUALS_GROUPS_HE}
               bottom={INDIVIDUALS_BOTTOM_HE}
+              {...menu("individuals")}
             />
-            <MegaMenu label="שירותים" groups={SERVICES_GROUPS_HE} />
-            <Dropdown label="מרכז ידע" items={KNOWLEDGE_GROUP_HE} />
-            <Dropdown label="אודות" items={ABOUT_GROUP_HE} />
+            <MegaMenu label="שירותים" groups={SERVICES_GROUPS_HE} {...menu("services")} />
+            <Dropdown label="מרכז ידע" items={KNOWLEDGE_GROUP_HE} {...menu("knowledge")} />
+            <Dropdown label="אודות" items={ABOUT_GROUP_HE} {...menu("about")} />
             <Link
               to="/contact"
               className="whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
@@ -218,6 +244,7 @@ export function SiteHeader() {
               צור קשר
             </Link>
           </nav>
+
 
           {/* Right cluster */}
           <div className="flex shrink-0 items-center gap-1 sm:gap-2">
@@ -279,21 +306,57 @@ function MegaMenu({
   label,
   groups,
   bottom,
+  id,
+  open,
+  onToggle,
+  onClose,
 }: {
   label: string;
   groups: NavGroup[];
   bottom?: NavItem;
+  id: string;
+  open: boolean;
+  onToggle: () => void;
+  onClose: () => void;
 }) {
+  const btnRef = useRef<HTMLButtonElement | null>(null);
+  const close = () => {
+    onClose();
+    btnRef.current?.focus();
+  };
   return (
-    <div className="group relative">
+    <div
+      className="relative"
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && open) {
+          e.stopPropagation();
+          close();
+        }
+      }}
+    >
       <button
+        ref={btnRef}
         type="button"
+        id={`${id}-trigger`}
+        aria-expanded={open}
+        aria-controls={id}
+        onClick={onToggle}
         className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
         {label}
-        <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden />
+        <ChevronDown
+          className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`}
+          aria-hidden
+        />
       </button>
-      <div className="pointer-events-none invisible absolute right-0 top-full z-50 w-[680px] max-w-[calc(100vw-2rem)] translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+      <div
+        id={id}
+        hidden={!open}
+        className="absolute right-0 top-full z-50 w-[680px] max-w-[calc(100vw-2rem)] pt-2"
+        onClick={(e) => {
+          if ((e.target as HTMLElement).closest("a")) onClose();
+        }}
+      >
         <div className="grid gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl sm:grid-cols-3">
           {groups.map((group) => (
             <div key={group.title}>
@@ -331,17 +394,59 @@ function MegaMenu({
   );
 }
 
-function Dropdown({ label, items }: { label: string; items: NavItem[] }) {
+function Dropdown({
+  label,
+  items,
+  id,
+  open,
+  onToggle,
+  onClose,
+}: {
+  label: string;
+  items: NavItem[];
+  id: string;
+  open: boolean;
+  onToggle: () => void;
+  onClose: () => void;
+}) {
+  const btnRef = useRef<HTMLButtonElement | null>(null);
+  const close = () => {
+    onClose();
+    btnRef.current?.focus();
+  };
   return (
-    <div className="group relative">
+    <div
+      className="relative"
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && open) {
+          e.stopPropagation();
+          close();
+        }
+      }}
+    >
       <button
+        ref={btnRef}
         type="button"
+        id={`${id}-trigger`}
+        aria-expanded={open}
+        aria-controls={id}
+        onClick={onToggle}
         className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
         {label}
-        <ChevronDown className="h-3.5 w-3.5 transition group-hover:rotate-180" aria-hidden />
+        <ChevronDown
+          className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`}
+          aria-hidden
+        />
       </button>
-      <div className="pointer-events-none invisible absolute right-0 top-full z-50 w-64 translate-y-1 pt-2 opacity-0 transition group-hover:pointer-events-auto group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100">
+      <div
+        id={id}
+        hidden={!open}
+        className="absolute right-0 top-full z-50 w-64 pt-2"
+        onClick={(e) => {
+          if ((e.target as HTMLElement).closest("a")) onClose();
+        }}
+      >
         <ul className="rounded-xl border border-border bg-card p-3 shadow-2xl">
           {items.map((item) => (
             <li key={item.label}>
@@ -424,15 +529,46 @@ function MobileAccordion({
 }
 
 function MobileMenu({ enHref }: { enHref: string }) {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [open, setOpen] = useState(false);
   const [section, setSection] = useState<string | null>(null);
   const toggle = (key: string) => setSection((cur) => (cur === key ? null : key));
+  const btnRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    setOpen(false);
+    setSection(null);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
+
+  const closeMenu = () => {
+    setOpen(false);
+    setSection(null);
+  };
 
   return (
-    <div className="relative xl:hidden">
+    <div
+      className="relative xl:hidden"
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && open) {
+          e.stopPropagation();
+          closeMenu();
+          btnRef.current?.focus();
+        }
+      }}
+    >
       <button
+        ref={btnRef}
         type="button"
-        aria-label="פתח תפריט"
+        aria-label={open ? "תפריט סגירה" : "תפריט פתיחה"}
         aria-expanded={open}
         aria-controls="mobile-menu-he"
         onClick={() => setOpen((v) => !v)}
@@ -451,6 +587,9 @@ function MobileMenu({ enHref }: { enHref: string }) {
         id="mobile-menu-he"
         hidden={!open}
         className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-border bg-background shadow-xl"
+        onClick={(e) => {
+          if ((e.target as HTMLElement).closest("a")) closeMenu();
+        }}
       >
         <div className="px-4 py-4 sm:px-6">
           <MobileAccordion
