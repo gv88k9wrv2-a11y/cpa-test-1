@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { ScrollToTop } from "../components/scroll-to-top";
 
 // Replace with your GA4 Measurement ID (e.g. "G-XXXXXXXXXX") to enable analytics.
 const GA4_MEASUREMENT_ID = "G-XXXXXXXXXX";
@@ -262,9 +263,12 @@ function RootComponent() {
     });
   }, [pathname]);
 
+  const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
+
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
+      <ScrollToTop lang={isEnglish ? "en" : "he"} />
     </QueryClientProvider>
   );
 }
