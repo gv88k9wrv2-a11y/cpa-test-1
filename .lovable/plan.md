@@ -1,74 +1,23 @@
-## המטרה
-לבנות את האתר המקצועי המוביל למשרד "נמרודי ושות׳ – רואי חשבון" בהרצליה פיתוח. שלב 1: גרסה עברית מלאה ומלוטשת. שלב 2 (לאחר אישור): גרסה אנגלית מקבילה.
+# Single global "back to top" button
 
-## מה כבר קיים באתר הנוכחי
-- דף בית, שירותים, אודות, צור קשר
-- 5 דפי נחיתה ייעודיים: הרצליה, סטארטאפים, עצמאים, בינלאומי, חברות זרות
-- עיצוב נייבי + זהב, פונט Frank Ruhl Libre + Heebo, RTL מלא
-- SEO: JSON-LD (AccountingService, FAQPage), sitemap, meta ייחודי לכל דף
-- כפתור וואטסאפ צף, header/footer אחידים
+Today the scroll-to-top button only appears on service pages (it is rendered inside the Hebrew and English service-landing components), and it sits on the same side as the floating WhatsApp button. The fix makes it a single, global button on every page, on the opposite side from WhatsApp.
 
-## מה אשדרג בשלב 1 (עברית) – "האתר הכי טוב שיש"
+## What changes
 
-### 1. שדרוגי עיצוב וחוויה
-- **Hero דרמטי** עם תמונה מקצועית של המשרד/הרצליה פיתוח, אנימציית fade-in עדינה (framer-motion)
-- **סטטיסטיקות חיות** (25+ שנות ניסיון, מאות לקוחות, ליווי גיוסים)
-- **Testimonials** – ציטוטים מלקוחות (Placeholder לעריכה)
-- **Trust bar** – לוגואים של לקוחות/שותפים
-- **Section "למה אנחנו"** עם 4-6 יתרונות ואייקונים
-- **Timeline** של תהליך העבודה עם המשרד
-- **Case studies** קצרים (2-3 סיפורי הצלחה אנונימיים)
-- מיקרו-אנימציות בגלילה, hover states מוקפדים
+- One scroll-to-top button rendered globally, so it appears on all pages: home, gateway, service, blog, contact, FAQ, privacy, accessibility and 404 — in both Hebrew and English.
+- Language detected from the URL: `/en` and `/en/*` use English labels; everything else uses Hebrew.
+- The two per-page copies inside the service pages are removed, so no page ever shows two buttons.
+- Placement: Hebrew pages show it bottom-right, English pages bottom-left (always opposite the WhatsApp button), 16px from the side and bottom, minimum 44x44px tap area, with accessible labels in the right language.
+- Behavior stays the same: appears after scrolling past 300px, hides again at or below 300px, smooth scroll to the top.
+- No other layout, content, navigation or styling is touched.
 
-### 2. דפי תוכן חדשים
-- **/blog** – תשתית לבלוג מקצועי (מאמרי מס, רגולציה) עם 3 מאמרי דמו
-- **/team** – עמוד צוות עם השותפים
-- **/faq** – עמוד שאלות ותשובות מרכזי (Schema FAQPage)
-- **/careers** – דרושים (עוזר בגיוס טאלנטים)
+## Technical notes
 
-### 3. שירותים נוספים (עוד דפי נחיתה)
-- `/tax-consulting` – ייעוץ מס
-- `/audit` – ביקורת דוחות
-- `/bookkeeping` – הנהלת חשבונות
-- `/payroll` – שכר
-- `/business-valuation` – הערכות שווי וגיוסים
+- `src/routes/__root.tsx`: render `<ScrollToTop lang={isEnglish ? "en" : "he"} />` inside `RootComponent`, next to `<Outlet />`, reusing the existing `pathname` from `useRouterState` for the `/en` check.
+- `src/components/scroll-to-top.tsx`: flip the side mapping to `he -> right-4`, `en -> left-4`; change `bottom-24` to `bottom-4` (kept above `env(safe-area-inset-bottom)`); ensure the button is at least 44x44 (`h-11 w-11` already satisfies this) and keeps `aria-label`.
+- `src/components/service-landing.tsx` and `src/components/service-landing-en.tsx`: remove the `ScrollToTop` import and its usage.
 
-### 4. Lead generation
-- **טופס יצירת קשר משודרג** בעמוד /contact עם שדות רלוונטיים (סוג עסק, שירות מבוקש)
-- **CTA חכם** בסוף כל דף שירות
-- **פופ-אפ יציאה** עדין (Exit intent) להצעת שיחת ייעוץ
-- **חלון הזמנת פגישה** (Calendly-style placeholder)
+## Verification
 
-### 5. SEO אגרסיבי (למספר 1 בגוגל)
-- Schema.org מלא: Organization, LocalBusiness, Service, Person, BreadcrumbList, Article
-- Open Graph images ייחודיות לכל דף (נייצר עם imagegen)
-- Sitemap דינמי מלא + robots.txt מותאם
-- Internal linking חכם בין דפי שירות
-- Alt text עברי לכל תמונה, semantic HTML, H1 יחיד לדף
-- מהירות טעינה: תמונות מוטמעות/דחוסות, lazy load
-- Local SEO: כתובת מלאה, שעות פעילות, מפה מוטמעת (Google Maps)
-- קישור ל-Google Business Profile
-
-### 6. נגישות (חובה בישראל – תקנה 35)
-- הצהרת נגישות (/accessibility)
-- ווידג'ט נגישות (ניגודיות, גודל טקסט)
-- ARIA labels, keyboard navigation, focus states
-
-### 7. תשתית לשלב 2 (אנגלית)
-- מבנה קבצים מוכן ל-i18n עם ניתוב `/en/*`
-- מתג שפה בהדר (מוסתר עד ששלב 2 מאושר)
-
-## מבנה טכני
-- TanStack Start + file-based routing
-- כל דף route נפרד עם head() ייחודי (title, description, og:*, canonical, JSON-LD)
-- קומפוננטות משותפות: SiteHeader, SiteFooter, ServiceLanding, TestimonialCard, StatsBar, CTASection
-- Tailwind v4 עם tokens קיימים (נייבי + זהב)
-- framer-motion לאנימציות
-
-## מה זה דורש ממך
-- **אישור התוכן**: אני אכתוב טקסטים מקצועיים שיווקיים – תרצה לעבור עליהם לפני?
-- **תמונות אמיתיות** של המשרד/הצוות (אופציונלי – אחרת אשתמש בתמונות שנוצרות ב-AI)
-- **פרטים נוספים**: שמות שותפים, שנת הקמה מדויקת, לוגואי לקוחות (אם ניתן לפרסם)
-- **טסטימוניאלס אמיתיים** מלקוחות (או אשתמש בכלליים כ-placeholder)
-
-לאחר אישור השלב הראשון ובדיקה שהכל נראה מצוין – אתקדם לשלב 2: תרגום מלא לאנגלית עם hreflang, ניתוב `/en/*`, ומתג שפה פעיל.
+- Run build and TypeScript check.
+- Playwright pass over Hebrew and English home, gateway, service, blog, contact, FAQ, privacy, accessibility and a 404 URL: scroll past 300px and assert exactly one scroll-to-top button, correct side, and that it hides again when scrolled back up.
