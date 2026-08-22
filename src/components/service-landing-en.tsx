@@ -9,7 +9,7 @@ import {
   WHATSAPP_URL_EN,
 } from "./site-chrome-en";
 import { LeadForm } from "./lead-form";
-import { ScrollToTop } from "./scroll-to-top";
+
 import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 import { ProfessionalDisclaimer } from "./professional-disclaimer";
 import { RelatedServiceBlock } from "./internal-links";
@@ -211,7 +211,7 @@ export function ServiceLandingEn({
       <LeadForm lang="en" />
       <SiteFooterEn />
       <FloatingWhatsAppEn />
-      <ScrollToTop lang="en" />
+      
     </div>
   );
 }
