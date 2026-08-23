@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
@@ -77,6 +78,16 @@ export const Route = createFileRoute("/cpa-international")({
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-international" }
     ],
     scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          buildBreadcrumbJsonLd([
+            { name: "בית", url: "https://www.nimrodi.co.il" },
+            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "ייעוץ מס בין־לאומי, רילוקיישן ותושבות מס בישראל", url: "https://www.nimrodi.co.il/cpa-international" },
+          ]),
+        ),
+      },
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },
     ],
   }),

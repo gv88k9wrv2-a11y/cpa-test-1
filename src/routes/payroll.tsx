@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { ReceiptText } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
@@ -76,6 +77,16 @@ export const Route = createFileRoute("/payroll")({
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/payroll" }
     ],
     scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          buildBreadcrumbJsonLd([
+            { name: "בית", url: "https://www.nimrodi.co.il" },
+            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "שירותי שכר ותלושים לחברות", url: "https://www.nimrodi.co.il/payroll" },
+          ]),
+        ),
+      },
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },
     ],
   }),

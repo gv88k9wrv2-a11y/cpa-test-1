@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LineChart } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
@@ -66,6 +67,16 @@ export const Route = createFileRoute("/fractional-cfo")({
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/fractional-cfo" },
     ],
     scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          buildBreadcrumbJsonLd([
+            { name: "בית", url: "https://www.nimrodi.co.il" },
+            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "Fractional CFO", url: "https://www.nimrodi.co.il/fractional-cfo" },
+          ]),
+        ),
+      },
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },
     ],
   }),

@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Globe2 } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
@@ -67,6 +68,16 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-foreign-companies" }
     ],
     scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          buildBreadcrumbJsonLd([
+            { name: "בית", url: "https://www.nimrodi.co.il" },
+            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "ליווי חברות זרות בישראל", url: "https://www.nimrodi.co.il/cpa-foreign-companies" },
+          ]),
+        ),
+      },
       { type: "application/ld+json", children: JSON.stringify(buildFaqJsonLd(FAQS)) },
     ],
   }),
