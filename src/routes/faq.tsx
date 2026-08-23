@@ -104,7 +104,7 @@ export const Route = createFileRoute("/faq")({
         content:
           "מדריך שאלות ותשובות של נמרודי ושות׳ רואי חשבון: אופן העבודה, היקף השירות, מיסוי, דיווחים וליווי עצמאים וחברות. קראו לפני שמתחילים לעבוד עם רואה חשבון.",
       },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/faq" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

@@ -19,7 +19,7 @@ export const Route = createFileRoute("/contact")({
         content:
           "פרטי התקשרות עם משרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח: טלפון, וואטסאפ, דוא״ל, פרטי הגעה וטופס פנייה מקוון. נחזור אליכם בהתאם לפרטים שנמסרו ולשעות הפעילות.",
       },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/contact" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

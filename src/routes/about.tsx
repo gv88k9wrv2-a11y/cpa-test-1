@@ -27,7 +27,7 @@ export const Route = createFileRoute("/about")({
         content:
           "משרד רואי חשבון בהרצליה פיתוח המלווה חברות טכנולוגיה, סטארטאפים, עצמאים וחברות זרות בחשבונאות, שכר, דוחות וייעוץ מס. קראו עוד על הדרך המקצועית שלנו. נשמח לסייע.",
       },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/about" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

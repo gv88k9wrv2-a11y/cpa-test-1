@@ -65,7 +65,7 @@ export const Route = createFileRoute("/cpa-freelancers")({
         content:
           "ליווי חשבונאי ומיסויי לעצמאים ולפרילנסרים בישראל: פתיחת תיקים, ניהול שוטף, דוחות שנתיים והצהרות הון בהיקף מוסכם. דברו איתנו על הצרכים שלכם.",
       },
-      { property: "og:url", content: "/cpa-freelancers" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-freelancers" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

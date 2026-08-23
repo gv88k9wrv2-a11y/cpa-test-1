@@ -55,7 +55,7 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
         content:
           "שירותי חשבונאות ומס לחברות זרות הפועלות בישראל, לרבות בחינת מבנה הפעילות, שכר, מחירי העברה ודיווחים שוטפים. קראו על היקף השירות האפשרי.",
       },
-      { property: "og:url", content: "/cpa-foreign-companies" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-foreign-companies" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

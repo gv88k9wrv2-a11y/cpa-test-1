@@ -64,7 +64,7 @@ export const Route = createFileRoute("/payroll")({
         property: "og:description",
         content: "מערך שכר לחברות ולסטארטאפים: תלושי שכר, דיווחי מעסיק, טופסי 106 ו־161 וליווי תוכניות אופציות לעובדים. דברו איתנו על היקף השירות.",
       },
-      { property: "og:url", content: "/payroll" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/payroll" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
