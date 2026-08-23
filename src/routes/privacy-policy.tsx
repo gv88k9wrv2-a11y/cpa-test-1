@@ -14,6 +14,7 @@ export const Route = createFileRoute("/privacy-policy")({
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "מדיניות פרטיות ותנאי שימוש | נמרודי ושות׳" },
       { property: "og:description", content: "מדיניות הפרטיות של נמרודי ושות׳: איסוף מידע, שימוש, אבטחה וזכויות משתמש בהתאם לדין החל בישראל. קראו את המדיניות המלאה באתר." },
+      { property: "og:url", content: "https://www.nimrodi.co.il/privacy-policy" },
     ],
     links: [
       { rel: "canonical", href: "https://www.nimrodi.co.il/privacy-policy" },

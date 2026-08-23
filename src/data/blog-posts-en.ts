@@ -45,7 +45,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "Choosing between an Israeli subsidiary and a branch of a foreign company affects tax, legal liability, and operations. A professional review of the key considerations.",
     metaDescription:
-      "Israeli subsidiary or branch of a foreign company: a professional review of the tax, liability, operational and reporting considerations. Contact the firm.",
+      "Israeli subsidiary or branch: review tax, liability, operational and reporting considerations for a foreign company entering Israel. Contact our firm today.",
     date: "2026-03-19",
     readMin: 9,
     category: "International Tax",
@@ -128,7 +128,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "Permanent Establishment, dependent agents, and digital activity — a professional review of the conditions under which a foreign company becomes taxable in Israel, and the practical implications.",
     metaDescription:
-      "Foreign companies operating in Israel: permanent establishment, dependent agents, digital activity and local reporting duties, reviewed. Contact the firm today.",
+      "Foreign companies operating in Israel: review permanent establishment, dependent agents, digital activity and local reporting duties. Contact our firm today.",
     date: "2026-02-27",
     readMin: 9,
     category: "International Tax",
@@ -270,7 +270,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "Israeli residential rental income may be taxed under different routes. The right analysis depends on the property, rent, expenses, ownership and the taxpayer’s full circumstances.",
     metaDescription:
-      "Israeli rental income tax and reporting explained: compare the main routes, expenses, ownership issues, records and annual filing considerations for property owners.",
+      "Israeli rental income tax and reporting: compare routes, expenses, ownership, records and annual filing considerations for property owners. Contact our firm.",
     date: "2026-08-14",
     readMin: 3,
     category: "Israeli Tax",
@@ -353,7 +353,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "Owning several rental properties does not create an automatic classification. The analysis considers scale, organization, financing, frequency, expertise and the way the activity is managed.",
     metaDescription:
-      "Multiple rental properties in Israel: factors that may distinguish passive rental income from a business, including scale, management, financing, records and reporting.",
+      "Multiple rental properties in Israel: review scale, management, financing, records and reporting factors affecting business classification. Contact our firm.",
     date: "2026-08-14",
     readMin: 3,
     category: "Israeli Tax",
@@ -431,7 +431,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "Digital-asset reporting starts with a complete transaction history. Trades, conversions, payments, transfers, staking and other activity may require classification and supporting records.",
     metaDescription:
-      "Digital assets tax and reporting in Israel: organize wallet and exchange records, identify taxable events, calculate gains and prepare a clear source-of-funds file.",
+      "Digital assets tax reporting in Israel: organize wallet and exchange records, identify taxable events, calculate gains and prepare source-of-funds records.",
     date: "2026-08-14",
     readMin: 3,
     category: "Digital Assets",
@@ -514,7 +514,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "US citizens living in Israel may face reporting in both countries. A coordinated process should map residence, income, companies, investments, accounts and available relief.",
     metaDescription:
-      "Israeli tax reporting for US citizens in Israel: coordinate residence, foreign income, companies, investments, rental income and cross-border records with US advisers.",
+      "Israeli tax reporting for US citizens: coordinate residence, foreign income, companies, investments, rental income and records with qualified US advisers.",
     date: "2026-08-14",
     readMin: 3,
     category: "International Tax",
@@ -597,7 +597,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     excerpt:
       "Startup accounting should support statutory reporting, management decisions and fundraising. The system must connect bookkeeping, payroll, options, grants, intercompany activity and cash planning.",
     metaDescription:
-      "Startup accounting and tax in Israel: build reliable bookkeeping, payroll, Section 102 records, intercompany documentation, grant tracking and investor-ready reporting.",
+      "Startup accounting and tax in Israel: organize bookkeeping, payroll, Section 102 records, intercompany documents, grants and investor-ready reporting.",
     date: "2026-08-14",
     readMin: 3,
     category: "Startups",

@@ -47,7 +47,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       {
         name: "description",
         content:
-          "Outsourced financial management and Fractional CFO services in Israel, including budgeting, cash-flow planning, financial models, management reporting and board packages. Contact the firm today.",
+          "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today.",
       },
       { property: "og:title", content: "Fractional CFO — Nimrodi & Co." },
       {
