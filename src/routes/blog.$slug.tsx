@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-route
 import { ArrowRight, CalendarDays, Clock, MessageCircle } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
-import { toMetaDescription } from "../lib/meta";
+import { buildBreadcrumbJsonLd, toMetaDescription } from "../lib/meta";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
@@ -10,6 +10,7 @@ const ORIGIN = "https://www.nimrodi.co.il";
 
 // Permanent redirects for consolidated duplicate Hebrew articles.
 const MERGED_SLUGS: Record<string, string> = {
+  "relocation-tax-residency": "relocation-tax-residency-israel",
   "israeli-subsidiary-branch-of-foreign-company": "israeli-subsidiary-or-branch",
   "foreign-companies-operating-in-israel": "foreign-company-tax-liability-israel",
 };
@@ -69,6 +70,16 @@ export const Route = createFileRoute("/blog/$slug")({
           : []),
       ],
       scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(
+            buildBreadcrumbJsonLd([
+              { name: "בית", url: ORIGIN },
+              { name: "בלוג", url: `${ORIGIN}/blog` },
+              { name: post.title, url: `${ORIGIN}/blog/${params.slug}` },
+            ]),
+          ),
+        },
         {
           type: "application/ld+json",
           children: JSON.stringify({

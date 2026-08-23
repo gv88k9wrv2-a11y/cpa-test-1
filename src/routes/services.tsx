@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Briefcase,
@@ -85,6 +86,17 @@ export const Route = createFileRoute("/services")({
       { rel: "canonical", href: "https://www.nimrodi.co.il/services" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/services" },
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/services" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(
+          buildBreadcrumbJsonLd([
+            { name: "בית", url: "https://www.nimrodi.co.il" },
+            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+          ]),
+        ),
+      },
     ],
   }),
   component: ServicesPage,

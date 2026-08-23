@@ -14,3 +14,19 @@ export function toMetaDescription(input: string, maxLength: number = MAX_LENGTH)
   const cut = lastSpace > MIN_LENGTH - 20 ? slice.slice(0, lastSpace) : slice;
   return cut.replace(/[\s,;:.\-–—]+$/u, "") + "…";
 }
+
+export type BreadcrumbItem = { name: string; url: string };
+
+/** BreadcrumbList JSON-LD for a canonical page hierarchy. */
+export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
