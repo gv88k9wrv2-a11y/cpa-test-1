@@ -65,7 +65,7 @@ export const Route = createFileRoute("/cpa-startups")({
         content:
           "ליווי חשבונאי, מיסויי ופיננסי לסטארטאפים בישראל: הקמה, ניהול שוטף, אופציות לעובדים, מידע לגיוסי הון ודיווח למשקיעים. דברו איתנו על שלב החברה.",
       },
-      { property: "og:url", content: "/cpa-startups" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-startups" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

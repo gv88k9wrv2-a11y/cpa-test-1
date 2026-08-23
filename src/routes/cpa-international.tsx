@@ -65,7 +65,7 @@ export const Route = createFileRoute("/cpa-international")({
         content:
           "ליווי מיסוי בין־לאומי לרילוקיישן, לעולים חדשים ולתושבים חוזרים: בחינת תושבות, אמנות מס, דיווחים בישראל ותיאום עם יועצים בחו״ל. נשמח לשוחח על המקרה.",
       },
-      { property: "og:url", content: "/cpa-international" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-international" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

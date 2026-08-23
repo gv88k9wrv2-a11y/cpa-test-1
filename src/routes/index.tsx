@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
         content:
           "ליווי חשבונאי ומיסויי לסטארטאפים, חברות זרות ועצמאים מהרצליה פיתוח: הנהלת חשבונות, שכר, דוחות, ביקורת, ייעוץ מס ודיווח נכסים דיגיטליים. דברו איתנו לשיחת היכרות.",
       },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

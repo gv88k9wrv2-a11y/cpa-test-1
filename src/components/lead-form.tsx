@@ -274,7 +274,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
 
             <label htmlFor="lf-message" className="mt-4 block">
               <span className="text-sm font-medium text-foreground">
-                {t.message} <span className="text-gold">{t.required}</span>
+                {t.message} <span className="text-gold-text" aria-hidden="true">{t.required}</span>
               </span>
               <textarea
                 id="lf-message"

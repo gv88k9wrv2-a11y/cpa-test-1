@@ -82,7 +82,7 @@ export const Route = createFileRoute("/team")({
         property: "og:description",
         content: "צוות נמרודי ושות׳ כולל רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס והשכר, המלווים חברות, סטארטאפים, חברות זרות ועצמאים.",
       },
-      { property: "og:url", content: "/team" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/team" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

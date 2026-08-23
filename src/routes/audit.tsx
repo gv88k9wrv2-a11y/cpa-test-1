@@ -65,7 +65,7 @@ export const Route = createFileRoute("/audit")({
         property: "og:description",
         content: "שירותי ביקורת וסקירה לדוחות כספיים של חברות, עמותות ושותפויות בהתאם לתקינה החלה, לצד מכתבים להנהלה. נשמח לשוחח על היקף הביקורת הנדרש.",
       },
-      { property: "og:url", content: "/audit" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/audit" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

@@ -61,7 +61,7 @@ export const Route = createFileRoute("/cpa-herzliya")({
         property: "og:description",
         content: "משרד רואי חשבון בהרצליה פיתוח המלווה חברות, סטארטאפים ועצמאים באזור השרון בחשבונאות, שכר, דוחות כספיים ומס. מוזמנים ליצור קשר לשיחת היכרות.",
       },
-      { property: "og:url", content: "/cpa-herzliya" },
+      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-herzliya" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },

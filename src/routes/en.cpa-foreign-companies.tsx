@@ -17,7 +17,7 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-foreign-companies")({
   head: () => ({
     meta: [
-      { title: "CPA Services for Foreign Companies in Israel | Subsidiary and Branch Accounting" },
+      { title: "Foreign Companies in Israel | CPA, Tax & Payroll" },
       { name: "description", content: "Israeli CPA services for foreign companies, including subsidiary-or-branch considerations, payroll, transfer-pricing analysis and reporting. Contact the firm." },
       { property: "og:title", content: "Foreign Companies in Israel | Nimrodi & Co. CPA" },
       { property: "og:description", content: "Accounting and tax support for international companies operating in Israel, including structure information, payroll, transfer pricing and reporting. Contact the firm." },
