@@ -62,8 +62,8 @@
   --accent: oklch(0.94 0.02 90);
   --accent-foreground: oklch(0.24 0.07 260);
 
-  --gold: oklch(0.72 0.13 80);
-  --gold-text: oklch(0.46 0.10 80);             /* refined gold */
+  --gold: oklch(0.72 0.13 80);                  /* refined gold */
+  --gold-text: oklch(0.46 0.10 80);
   --gold-foreground: oklch(0.18 0.03 260);
 
   --destructive: oklch(0.577 0.245 27.325);
