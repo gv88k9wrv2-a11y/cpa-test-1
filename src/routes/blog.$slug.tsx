@@ -10,6 +10,7 @@ const ORIGIN = "https://www.nimrodi.co.il";
 
 // Permanent redirects for consolidated duplicate Hebrew articles.
 const MERGED_SLUGS: Record<string, string> = {
+  "relocation-tax-residency": "relocation-tax-residency-israel",
   "israeli-subsidiary-branch-of-foreign-company": "israeli-subsidiary-or-branch",
   "foreign-companies-operating-in-israel": "foreign-company-tax-liability-israel",
 };
