@@ -568,7 +568,7 @@ function MobileMenu({ enHref }: { enHref: string }) {
       <button
         ref={btnRef}
         type="button"
-        aria-label={open ? "תפריט סגירה" : "תפריט פתיחה"}
+        aria-label={open ? "סגור תפריט" : "פתח תפריט"}
         aria-expanded={open}
         aria-controls="mobile-menu-he"
         onClick={() => setOpen((v) => !v)}

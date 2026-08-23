@@ -41,7 +41,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       href: "/en/cpa-foreign-companies",
       label: "CPA services for foreign companies in Israel",
     },
-    title: "Israeli Subsidiary or Branch: Key Considerations for Foreign Entities",
+    title: "Israeli Subsidiary or Branch: Key Tax Considerations",
     excerpt:
       "Choosing between an Israeli subsidiary and a branch of a foreign company affects tax, legal liability, and operations. A professional review of the key considerations.",
     metaDescription:
@@ -124,7 +124,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       href: "/en/cpa-foreign-companies",
       label: "CPA services for foreign companies in Israel",
     },
-    title: "Foreign Companies Operating in Israel: When Does a Corporate Tax Liability Arise?",
+    title: "Foreign Companies in Israel: Corporate Tax Liability",
     excerpt:
       "Permanent Establishment, dependent agents, and digital activity — a professional review of the conditions under which a foreign company becomes taxable in Israel, and the practical implications.",
     metaDescription:
@@ -266,7 +266,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     slug: "israeli-rental-income-tax-reporting",
     translationKey: "rental-income-israel",
-    title: "Israeli Rental Income Tax and Reporting: Choosing the Appropriate Route",
+    title: "Israeli Rental Income Tax: Choosing a Reporting Route",
     excerpt:
       "Israeli residential rental income may be taxed under different routes. The right analysis depends on the property, rent, expenses, ownership and the taxpayer’s full circumstances.",
     metaDescription:
@@ -349,7 +349,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     slug: "multiple-rental-properties-business-classification-israel",
     translationKey: "multiple-rental-properties",
-    title: "Multiple Rental Properties in Israel: When Can the Activity Be Treated as a Business?",
+    title: "Multiple Rental Properties: Business Classification in Israel",
     excerpt:
       "Owning several rental properties does not create an automatic classification. The analysis considers scale, organization, financing, frequency, expertise and the way the activity is managed.",
     metaDescription:
@@ -427,7 +427,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     slug: "digital-assets-tax-reporting-israel",
     translationKey: "digital-assets-reporting-israel",
-    title: "Digital Assets in Israel: Tax Events, Records and Reporting",
+    title: "Digital Assets in Israel: Tax and Reporting Records",
     excerpt:
       "Digital-asset reporting starts with a complete transaction history. Trades, conversions, payments, transfers, staking and other activity may require classification and supporting records.",
     metaDescription:
