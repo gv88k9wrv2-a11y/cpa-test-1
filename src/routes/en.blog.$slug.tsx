@@ -7,7 +7,7 @@ import {
   WHATSAPP_URL_EN,
 } from "../components/site-chrome-en";
 import { BLOG_POSTS_EN, BLOG_POSTS_EN_BY_SLUG, type BlogPostEn } from "../data/blog-posts-en";
-import { toMetaDescription } from "../lib/meta";
+import { buildBreadcrumbJsonLd, toMetaDescription } from "../lib/meta";
 import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
@@ -68,6 +68,16 @@ export const Route = createFileRoute("/en/blog/$slug")({
           : []),
       ],
       scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(
+            buildBreadcrumbJsonLd([
+              { name: "Home", url: `${ORIGIN}/en` },
+              { name: "Blog", url: `${ORIGIN}/en/blog` },
+              { name: post.title, url },
+            ]),
+          ),
+        },
         {
           type: "application/ld+json",
           children: JSON.stringify({

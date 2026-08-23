@@ -93,7 +93,7 @@ export const Route = createFileRoute("/services")({
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
             { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים חשבונאיים ופיננסיים", url: "https://www.nimrodi.co.il/services" },
+            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
           ]),
         ),
       },
