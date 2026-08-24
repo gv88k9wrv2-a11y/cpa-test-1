@@ -294,7 +294,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
               />
               <p className="mt-1.5 text-xs text-muted-foreground">{t.messageNotice}</p>
               {errors.message && (
-                <p id="lf-message-error" className="mt-1 text-xs font-medium text-destructive">
+                <p id="lf-message-error" role="alert" className="mt-1 text-xs font-medium text-destructive">
                   {errors.message}
                 </p>
               )}
@@ -408,7 +408,7 @@ function LFField({
         }`}
       />
       {error && (
-        <p id={`${id}-error`} className="mt-1 text-xs font-medium text-destructive">
+        <p id={`${id}-error`} role="alert" className="mt-1 text-xs font-medium text-destructive">
           {error}
         </p>
       )}
