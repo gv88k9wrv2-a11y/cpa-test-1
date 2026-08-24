@@ -110,7 +110,7 @@ function PrivacyPage() {
             </p>
             <p className="mt-3">
               לשאלות בנושא פרטיות או למימוש זכויותיכם ניתן לפנות לכתובת הדוא״ל:{" "}
-              <a href="mailto:office@nimrodi.co.il" className="text-gold underline">
+              <a href="mailto:office@nimrodi.co.il" className="text-gold-text underline">
                 office@nimrodi.co.il
               </a>
               .
@@ -150,12 +150,12 @@ function PrivacyPage() {
               כתובת: גלגלי הפלדה 16, הרצליה פיתוח
               <br />
               טלפון:{" "}
-              <a href="tel:099582211" className="text-gold underline">
+              <a href="tel:099582211" className="text-gold-text underline">
                 09-9582211
               </a>
               <br />
               דוא״ל:{" "}
-              <a href="mailto:office@nimrodi.co.il" className="text-gold underline">
+              <a href="mailto:office@nimrodi.co.il" className="text-gold-text underline">
                 office@nimrodi.co.il
               </a>
             </address>

@@ -19,26 +19,35 @@ const GA4_MEASUREMENT_ID = "G-XXXXXXXXXX";
 const GA_ENABLED = GA4_MEASUREMENT_ID.startsWith("G-") && !GA4_MEASUREMENT_ID.includes("XXXX");
 
 function NotFoundComponent() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const en = pathname === "/en" || pathname.startsWith("/en/");
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4" dir="rtl">
+    <div
+      className="flex min-h-screen items-center justify-center bg-background px-4"
+      dir={en ? "ltr" : "rtl"}
+    >
       <div className="max-w-md text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold">404</p>
-        <h1 className="mt-3 font-display text-4xl font-bold text-primary">לא מצאנו את העמוד המבוקש</h1>
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold-text">404</p>
+        <h1 className="mt-3 font-display text-4xl font-bold text-primary">
+          {en ? "Page not found" : "לא מצאנו את העמוד המבוקש"}
+        </h1>
         <p className="mt-3 text-sm text-muted-foreground">
-          ייתכן שהקישור השתנה או שהעמוד הוסר. אפשר לחזור לדף הבית או לעבור לאחד משירותי הליבה שלנו.
+          {en
+            ? "The link may have changed or the page may have been removed. You can return home or review our core services."
+            : "ייתכן שהקישור השתנה או שהעמוד הוסר. אפשר לחזור לדף הבית או לעבור לאחד משירותי הליבה שלנו."}
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <Link
-            to="/"
+            to={en ? "/en" : "/"}
             className="inline-flex min-h-[44px] items-center justify-center rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            חזרה לדף הבית
+            {en ? "Back to home" : "חזרה לדף הבית"}
           </Link>
           <Link
-            to="/services"
+            to={en ? "/en/services" : "/services"}
             className="inline-flex min-h-[44px] items-center justify-center rounded-md border border-input bg-background px-5 py-2 text-sm font-medium text-foreground hover:bg-accent"
           >
-            לסקירת השירותים
+            {en ? "View services" : "לסקירת השירותים"}
           </Link>
         </div>
       </div>

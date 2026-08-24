@@ -73,7 +73,9 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
             <div className="max-w-3xl text-primary-foreground">
               <div
                 className={`inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 font-medium text-gold sm:px-3 sm:py-1 sm:text-xs ${
-                  isHe ? "px-3 py-1 text-xs" : "whitespace-nowrap px-2.5 py-0.5 text-[11px]"
+                  isHe
+                    ? "px-3 py-1 text-xs"
+                    : "max-w-full whitespace-normal px-2.5 py-1 text-center text-[11px] leading-snug sm:whitespace-nowrap"
                 }`}
               >
                 <Sparkles className="h-3.5 w-3.5 shrink-0" aria-hidden />

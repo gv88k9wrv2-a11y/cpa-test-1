@@ -89,7 +89,7 @@ export function ClientLogosStrip({ lang = "he" }: { lang?: Lang }) {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+          <div className="text-xs font-semibold uppercase tracking-widest text-gold-text">
             {t.credEyebrow}
           </div>
           <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">
@@ -125,7 +125,7 @@ export function ExecutiveTestimonials({ lang = "he" }: { lang?: Lang }) {
     <section dir={dir} className="bg-secondary/40 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+          <div className="text-xs font-semibold uppercase tracking-widest text-gold-text">
             {t.reviewsEyebrow}
           </div>
           <h2 className="mt-2 font-display text-3xl font-bold text-primary sm:text-4xl">
