@@ -32,7 +32,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
     const url = `${ORIGIN}/en/blog/${params.slug}`;
     return {
       meta: [
-        { title: `${post.title} | Nimrodi & Co. Blog` },
+        { title: `${post.metaTitle ?? post.title} | Nimrodi & Co.` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
         {

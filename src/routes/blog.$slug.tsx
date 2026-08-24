@@ -39,7 +39,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.title} | בלוג נמרודי ושות׳` },
+        { title: `${post.metaTitle ?? post.title} | נמרודי ושות׳` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
         {
@@ -159,6 +159,7 @@ function BlogPostPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
+      <main id="main-content">
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <nav className="mb-6 text-xs text-muted-foreground">
           <Link to="/" className="hover:text-primary">
@@ -311,6 +312,7 @@ function BlogPostPage() {
           </Link>
         </div>
       </article>
+      </main>
 
       <SiteFooter />
       <FloatingWhatsApp />
