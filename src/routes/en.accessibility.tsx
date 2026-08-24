@@ -122,7 +122,7 @@ function AccessibilityEn() {
               </p>
             </div>
 
-            <p className="pt-4 text-sm text-muted-foreground/80">
+            <p className="pt-4 text-sm text-muted-foreground">
               This statement was last updated in {UPDATED_EN}.
             </p>
           </div>
