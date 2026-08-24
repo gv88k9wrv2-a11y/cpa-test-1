@@ -92,7 +92,7 @@ function TeamEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold-text">
               <Users className="h-3.5 w-3.5" aria-hidden />
               The team
             </div>
@@ -116,7 +116,7 @@ function TeamEn() {
             {TEAM.map((m) => (
               <article key={m.name} className="rounded-xl border border-border bg-card p-6">
                 <h2 className="font-display text-xl font-bold text-primary">{m.name}</h2>
-                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold">{m.role}</div>
+                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-text">{m.role}</div>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
               </article>
             ))}
@@ -134,7 +134,7 @@ function TeamEn() {
                 <article key={d.name} className="flex flex-col rounded-xl border border-border bg-card p-6">
                   <d.icon className="h-8 w-8 text-gold" aria-hidden />
                   <h3 className="mt-4 font-display text-xl font-bold text-primary">{d.name}</h3>
-                  <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold">{d.role}</div>
+                  <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-text">{d.role}</div>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
                   <ul className="mt-5 space-y-2 border-t border-border pt-4">
                     {d.credentials.map((c) => (

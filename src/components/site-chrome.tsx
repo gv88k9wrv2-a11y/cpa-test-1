@@ -360,7 +360,7 @@ function MegaMenu({
         <div className="grid gap-6 rounded-xl border border-border bg-card p-6 shadow-2xl sm:grid-cols-3">
           {groups.map((group) => (
             <div key={group.title}>
-              <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-gold">
+              <div className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-gold-text">
                 {group.title}
               </div>
               <ul className="space-y-1">
@@ -382,7 +382,7 @@ function MegaMenu({
             <div className="border-t border-border pt-4 sm:col-span-3">
               <NavPathLink
                 to={bottom.to}
-                className="text-xs font-semibold text-primary hover:text-gold"
+                className="text-xs font-semibold text-primary hover:text-gold-text"
               >
                 {bottom.label} ←
               </NavPathLink>
