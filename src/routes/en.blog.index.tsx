@@ -42,7 +42,7 @@ function BlogIndexEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-            <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+            <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
               Israeli Accounting and Tax Blog
             </div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
@@ -64,10 +64,10 @@ function BlogIndexEn() {
                 aria-label={`Read the article: ${p.title}`}
                 className="group flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-gold/60 hover:shadow-lg"
               >
-                <div className="mb-3 inline-flex w-fit items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold">
+                <div className="mb-3 inline-flex w-fit items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold-text">
                   {p.category}
                 </div>
-                <h2 className="font-display text-xl font-bold text-primary group-hover:text-gold">
+                <h2 className="font-display text-xl font-bold text-primary group-hover:text-gold-text">
                   {p.title}
                 </h2>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
@@ -87,7 +87,7 @@ function BlogIndexEn() {
                     {p.readMin} min read
                   </span>
                 </div>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold group-hover:underline">
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-gold-text group-hover:underline">
                   Read the accounting and tax article →
                 </span>
               </Link>

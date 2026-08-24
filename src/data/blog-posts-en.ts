@@ -9,6 +9,8 @@ export type BlogSectionEn = { h: string; p: string[] };
 export type BlogPostEn = {
   slug: string;
   title: string;
+  /** Short SEO title, <=44 chars (suffix added by the route) */
+  metaTitle?: string;
   excerpt: string;
   /** SEO meta description, 150-160 chars */
   metaDescription: string;
@@ -42,6 +44,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       label: "CPA services for foreign companies in Israel",
     },
     title: "Israeli Subsidiary or Branch: Key Tax Considerations",
+    metaTitle: "Israeli Subsidiary or Branch",
     excerpt:
       "Choosing between an Israeli subsidiary and a branch of a foreign company affects tax, legal liability, and operations. A professional review of the key considerations.",
     metaDescription:
@@ -125,6 +128,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       label: "CPA services for foreign companies in Israel",
     },
     title: "Foreign Companies in Israel: Corporate Tax Liability",
+    metaTitle: "Foreign Companies: Israeli Tax",
     excerpt:
       "Permanent Establishment, dependent agents, and digital activity — a professional review of the conditions under which a foreign company becomes taxable in Israel, and the practical implications.",
     metaDescription:
@@ -201,6 +205,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     ],
     relatedService: { href: "/en/cpa-international", label: "International tax and relocation" },
     title: "Relocation from Israel: When Can Israeli Tax Residency End?",
+    metaTitle: "Relocation and Israeli Tax Residency",
     excerpt:
       "Moving abroad does not automatically sever Israeli tax residency. A review of the residency tests, the implications of relocation, and the 'exit tax' issue.",
     metaDescription:
@@ -267,6 +272,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     slug: "israeli-rental-income-tax-reporting",
     translationKey: "rental-income-israel",
     title: "Israeli Rental Income Tax: Choosing a Reporting Route",
+    metaTitle: "Israeli Rental Income Tax",
     excerpt:
       "Israeli residential rental income may be taxed under different routes. The right analysis depends on the property, rent, expenses, ownership and the taxpayer’s full circumstances.",
     metaDescription:
@@ -350,6 +356,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     slug: "multiple-rental-properties-business-classification-israel",
     translationKey: "multiple-rental-properties",
     title: "Multiple Rental Properties: Business Classification in Israel",
+    metaTitle: "Multiple Rental Properties in Israel",
     excerpt:
       "Owning several rental properties does not create an automatic classification. The analysis considers scale, organization, financing, frequency, expertise and the way the activity is managed.",
     metaDescription:
@@ -428,6 +435,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     slug: "digital-assets-tax-reporting-israel",
     translationKey: "digital-assets-reporting-israel",
     title: "Digital Assets in Israel: Tax and Reporting Records",
+    metaTitle: "Digital Asset Tax in Israel",
     excerpt:
       "Digital-asset reporting starts with a complete transaction history. Trades, conversions, payments, transfers, staking and other activity may require classification and supporting records.",
     metaDescription:
@@ -511,6 +519,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     slug: "israeli-tax-reporting-us-citizens",
     translationKey: "us-citizens-israel-reporting",
     title: "Israeli Tax and Reporting for US Citizens Living in Israel",
+    metaTitle: "US Citizens: Israeli Tax Reporting",
     excerpt:
       "US citizens living in Israel may face reporting in both countries. A coordinated process should map residence, income, companies, investments, accounts and available relief.",
     metaDescription:
@@ -594,6 +603,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     slug: "startup-accounting-tax-israel",
     translationKey: "startup-accounting-israel",
     title: "Accounting and Tax for Startups Operating in Israel",
+    metaTitle: "Startup Accounting and Tax in Israel",
     excerpt:
       "Startup accounting should support statutory reporting, management decisions and fundraising. The system must connect bookkeeping, payroll, options, grants, intercompany activity and cash planning.",
     metaDescription:

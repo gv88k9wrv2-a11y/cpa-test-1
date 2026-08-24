@@ -5,7 +5,7 @@ import { FirmContactBlock } from "../components/firm-contact-block";
 const BASE = "https://www.nimrodi.co.il";
 const UPDATED_EN = "August 2026";
 const DESCRIPTION =
-  "Accessibility statement of Nimrodi & Co. CPA: website accessibility principles, physical access details for the Herzliya Pituach office and how to request help.";
+  "Accessibility statement of Nimrodi & Co. CPA: website accessibility principles, physical access to our Herzliya Pituach office and how to request assistance.";
 
 export const Route = createFileRoute("/en/accessibility")({
   head: () => ({
@@ -122,7 +122,7 @@ function AccessibilityEn() {
               </p>
             </div>
 
-            <p className="pt-4 text-sm text-muted-foreground/80">
+            <p className="pt-4 text-sm text-muted-foreground">
               This statement was last updated in {UPDATED_EN}.
             </p>
           </div>

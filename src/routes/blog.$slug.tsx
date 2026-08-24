@@ -39,7 +39,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.title} | בלוג נמרודי ושות׳` },
+        { title: `${post.metaTitle ?? post.title} | נמרודי ושות׳` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
         {
@@ -159,6 +159,7 @@ function BlogPostPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
+      <main id="main-content">
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <nav className="mb-6 text-xs text-muted-foreground">
           <Link to="/" className="hover:text-primary">
@@ -172,7 +173,7 @@ function BlogPostPage() {
           <span className="text-foreground">{post.category}</span>
         </nav>
 
-        <div className="inline-flex items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold">
+        <div className="inline-flex items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold-text">
           {post.category}
         </div>
         <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-primary sm:text-5xl">
@@ -235,7 +236,7 @@ function BlogPostPage() {
                 >
                   <summary className="flex cursor-pointer items-start justify-between gap-4 text-right font-semibold text-primary">
                     <span>{f.q}</span>
-                    <span className="mt-1 text-gold transition group-open:rotate-45" aria-hidden>
+                    <span className="mt-1 text-gold-text transition group-open:rotate-45" aria-hidden>
                       ＋
                     </span>
                   </summary>
@@ -252,7 +253,7 @@ function BlogPostPage() {
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               <Link
                 to={post.relatedService.href}
-                className="font-semibold text-primary hover:text-gold hover:underline"
+                className="font-semibold text-primary hover:text-gold-text hover:underline"
               >
                 {post.relatedService.label}
               </Link>
@@ -291,7 +292,7 @@ function BlogPostPage() {
                   <Link
                     to="/blog/$slug"
                     params={{ slug: r.slug }}
-                    className="text-primary hover:text-gold hover:underline"
+                    className="text-primary hover:text-gold-text hover:underline"
                   >
                     {r.title}
                   </Link>
@@ -304,13 +305,14 @@ function BlogPostPage() {
         <div className="mt-10">
           <Link
             to="/blog"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-gold"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-gold-text"
           >
             <ArrowRight className="h-4 w-4" aria-hidden />
             לכל המאמרים
           </Link>
         </div>
       </article>
+      </main>
 
       <SiteFooter />
       <FloatingWhatsApp />

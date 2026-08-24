@@ -11,6 +11,8 @@ export type BlogFaq = { q: string; a: string };
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Short SEO title, <=44 chars (suffix added by the route) */
+  metaTitle?: string;
   excerpt: string;
   /** SEO meta description, 150-160 chars */
   metaDescription: string;
@@ -45,6 +47,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedService: { href: "/tax-consulting", label: "ייעוץ מס ותכנון מס" },
     title: "מיסוי הכנסות משכר דירה בישראל – שלושת המסלולים ואיך בוחרים",
+    metaTitle: "מיסוי הכנסות משכר דירה בישראל",
     excerpt:
       "פטור, מס מופחת של 10% או מסלול רגיל עם הוצאות – סקירה מקצועית של שלושת המסלולים למיסוי שכר דירה למגורים ואיך להחליט מה מתאים לכם.",
     metaDescription:
@@ -125,6 +128,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedService: { href: "/tax-consulting", label: "ייעוץ מס ותכנון מס" },
     title: "בעל מספר דירות מושכרות – מתי הופכים מ״משקיע״ ל״עוסק״?",
+    metaTitle: "מספר דירות מושכרות: משקיע או עוסק",
     excerpt:
       "החזקה של כמה דירות להשקעה עלולה להיחשב כפעילות עסקית ולהוציא אתכם ממסלולי ההטבה. סקירת המבחנים המקצועיים והשלכות המס.",
     metaDescription:
@@ -182,6 +186,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "center-of-life-tax-residency",
     title: "מבחן מרכז החיים ותושבות מס של יחיד בישראל",
+    metaTitle: "מבחן מרכז החיים ותושבות מס",
     excerpt:
       "מהו ״מרכז החיים״ בפקודת מס הכנסה, אילו סממנים בוחנת הרשות, ואיך תיעוד מסודר יכול למנוע מחלוקות עם רשות המסים.",
     metaDescription:
@@ -249,6 +254,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedService: { href: "/tax-consulting", label: "מיסוי ודיווח נכסים דיגיטליים" },
     title: "דיווח ומיסוי פעילות בנכסים דיגיטליים בישראל",
+    metaTitle: "מיסוי ודיווח נכסים דיגיטליים",
     excerpt:
       "סקירה של אירועי מס בנכסים דיגיטליים, חישוב רווחים והפסדים, איסוף נתוני עסקאות, דיווח ותיקון מידע משנים קודמות.",
     metaDescription:
@@ -317,6 +323,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedService: { href: "/cpa-startups", label: "שירותי ראיית חשבון לסטארטאפים" },
     title: "מיסוי לסטארטאפים – מדריך מקצועי ליזמים ולמייסדים",
+    metaTitle: "מיסוי לסטארטאפים – מדריך ליזמים",
     excerpt:
       "החל מהקמת החברה, דרך גיוסי הון, מיסוי מייסדים, ועד לאירוע אקזיט – סקירה מקצועית של סוגיות המס המרכזיות של סטארטאפ ישראלי.",
     metaDescription:
@@ -396,6 +403,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "startup-equity-102",
     title: "אופציות לעובדים בסטארטאפ – מסלול רווח הון לפי סעיף 102",
+    metaTitle: "אופציות לעובדים לפי סעיף 102",
     excerpt:
       "איך להעניק אופציות תוך בחינת הטבות מס אפשריות, מהו אישור נאמן ומהן מלכודות נפוצות בתכניות אופציות של סטארטאפים.",
     metaDescription:
@@ -470,6 +478,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     relatedService: { href: "/cpa-international", label: "מיסוי בין־לאומי ורילוקיישן" },
     title: "מיסוי ודיווח בין ישראל לארצות הברית ליחידים ולחברות",
+    metaTitle: "מיסוי ישראל–ארצות הברית",
     excerpt:
       "סקירה של חובות מס ודיווח אפשריות, אמנת המס, זיכוי מס זר והחזקות בחברות עבור מי שכפוף לדין הישראלי והאמריקאי.",
     metaDescription:
@@ -536,6 +545,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "israeli-subsidiary-or-branch",
     translationKey: "foreign-company-structure",
     title: "חברה ישראלית או סניף של חברה זרה: איך בוחנים את מבנה הפעילות בישראל",
+    metaTitle: "חברה בת או סניף בישראל",
     excerpt:
       "חברה זרה שמתחילה לפעול בישראל נדרשת לבחון אם לפעול באמצעות חברה בת ישראלית או סניף. ההחלטה משפיעה על אחריות, דיווח, מס ותפעול.",
     metaDescription:
@@ -622,6 +632,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "foreign-company-tax-liability-israel",
     translationKey: "foreign-company-tax-presence",
     title: "מתי פעילות של חברה זרה יוצרת חבות מס או מוסד קבע בישראל?",
+    metaTitle: "מוסד קבע וחבות מס לחברה זרה",
     excerpt:
       "חברה זרה עשויה להיחשף למס ולחובות דיווח בישראל גם בלי להקים חברה מקומית. המבחן מתמקד בפעילות בפועל, בסמכויות, בחוזים ובנוכחות העסקית.",
     metaDescription:
@@ -721,6 +732,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "relocation-tax-residency-israel",
     translationKey: "relocation-tax-residency",
     title: "רילוקיישן ותושבות מס בישראל: מרכז החיים, ניתוק תושבות ומס יציאה",
+    metaTitle: "רילוקיישן ותושבות מס בישראל",
     excerpt:
       "מעבר לחו״ל אינו מנתק בהכרח תושבות מס בישראל. נבחנים מרכז החיים, ימי השהייה, הבית, המשפחה, העבודה, הנכסים והקשרים הכלכליים והחברתיים.",
     metaDescription:
@@ -835,6 +847,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "undistributed-profits-closely-held-company-israel",
     title: "רווחים לא מחולקים בחברת מעטים: מס של 2% או חלוקת דיבידנד?",
+    metaTitle: "רווחים לא מחולקים בחברת מעטים",
     excerpt:
       "תיקון 277 שינה את אופן בדיקת הרווחים הלא מחולקים בחברות מעטים. כך נבחנים רווחים נצברים, רווחים עודפים, תוספת מס וחלופות חלוקה.",
     metaDescription:
@@ -939,6 +952,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "wallet-companies-section-62a-profitability-israel",
     title: "חברות ארנק לאחר תיקון 277: מבחן הרווחיות וייחוס הכנסה לבעל המניות",
+    metaTitle: "חברות ארנק ותיקון 277",
     excerpt:
       "תיקון 277 הרחיב את בדיקת חברות הארנק. המאמר מסביר את סעיף 62א, מבחן הרווחיות, פעילות עתירת יגיעה אישית וייחוס הכנסה לבעל מניות.",
     metaDescription:
@@ -1054,6 +1068,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: "dividend-salary-retained-profits-company-israel",
     title: "דיבידנד, שכר או השארת כסף בחברה: אילו נתונים צריך להשוות?",
+    metaTitle: "דיבידנד, שכר או רווחים בחברה",
     excerpt:
       "השוואה בין שכר, דיבידנד והשארת כסף בחברה דורשת בחינת מס, תזרים, צורכי השקעה ורווחים לא מחולקים. אלה הנתונים שכדאי להכין.",
     metaDescription:

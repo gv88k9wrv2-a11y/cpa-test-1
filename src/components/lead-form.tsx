@@ -182,7 +182,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className={`mb-8 ${align}`}>
-          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">
+          <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold-text">
             <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
             {t.eyebrow}
           </div>
@@ -294,7 +294,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
               />
               <p className="mt-1.5 text-xs text-muted-foreground">{t.messageNotice}</p>
               {errors.message && (
-                <p id="lf-message-error" className="mt-1 text-xs font-medium text-destructive">
+                <p id="lf-message-error" role="alert" className="mt-1 text-xs font-medium text-destructive">
                   {errors.message}
                 </p>
               )}
@@ -408,7 +408,7 @@ function LFField({
         }`}
       />
       {error && (
-        <p id={`${id}-error`} className="mt-1 text-xs font-medium text-destructive">
+        <p id={`${id}-error`} role="alert" className="mt-1 text-xs font-medium text-destructive">
           {error}
         </p>
       )}

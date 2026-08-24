@@ -22,11 +22,13 @@ function NotFoundComponent() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const en = pathname === "/en" || pathname.startsWith("/en/");
   return (
-    <div
-      className="flex min-h-screen items-center justify-center bg-background px-4"
+    <main
+      id="main-content"
+      className="flex min-h-dvh items-center justify-center bg-background px-4"
       dir={en ? "ltr" : "rtl"}
     >
       <div className="max-w-md text-center">
+
         <p className="text-sm font-semibold uppercase tracking-widest text-gold-text">404</p>
         <h1 className="mt-3 font-display text-4xl font-bold text-primary">
           {en ? "Page not found" : "לא מצאנו את העמוד המבוקש"}
@@ -51,8 +53,9 @@ function NotFoundComponent() {
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
+
 }
 
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {

@@ -58,7 +58,7 @@ function AboutPage() {
       <main id="main-content">
       <section className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold">אודות</div>
+          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">אודות</div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
             נמרודי ושות׳ – רואי חשבון
           </h1>
@@ -107,7 +107,7 @@ function AboutPage() {
               />
             </div>
             <div className="mt-6 rounded-xl border border-gold/40 bg-gold/10 p-6">
-              <Star className="mb-2 h-6 w-6 text-gold" aria-hidden />
+              <Star className="mb-2 h-6 w-6 text-gold-text" aria-hidden />
               <div className="font-display text-lg font-bold text-primary">
                 ביקורות וחוות דעת ב-Google
               </div>
@@ -118,7 +118,7 @@ function AboutPage() {
                 href="https://www.google.com/maps/search/?api=1&query=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99+%D7%95%D7%A9%D7%95%D7%AA+%D7%A8%D7%95%D7%90%D7%99+%D7%97%D7%A9%D7%91%D7%95%D7%9F+%D7%92%D7%9C%D7%92%D7%9C%D7%99+%D7%94%D7%A4%D7%9C%D7%93%D7%94+%D7%94%D7%A8%D7%A6%D7%9C%D7%99%D7%94"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-block text-sm font-semibold text-primary hover:text-gold"
+                className="mt-3 inline-block text-sm font-semibold text-primary hover:text-gold-text"
               >
                 צפו בביקורות שלנו ב-Google Maps ←
               </a>
@@ -135,7 +135,7 @@ function AboutPage() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {VALUES.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="rounded-xl border border-border bg-card p-6">
-                <Icon className="mb-3 h-6 w-6 text-gold" aria-hidden />
+                <Icon className="mb-3 h-6 w-6 text-gold-text" aria-hidden />
                 <h3 className="font-display text-lg font-semibold text-primary">{title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{desc}</p>
               </div>
@@ -146,7 +146,7 @@ function AboutPage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-          <Building2 className="mx-auto mb-4 h-8 w-8 text-gold" aria-hidden />
+          <Building2 className="mx-auto mb-4 h-8 w-8 text-gold-text" aria-hidden />
           <h2 className="font-display text-3xl font-bold text-primary">
             רוצים להכיר את המשרד מקרוב?
           </h2>

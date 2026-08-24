@@ -32,7 +32,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
     const url = `${ORIGIN}/en/blog/${params.slug}`;
     return {
       meta: [
-        { title: `${post.title} | Nimrodi & Co. Blog` },
+        { title: `${post.metaTitle ?? post.title} | Nimrodi & Co.` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
         {
@@ -137,6 +137,7 @@ function BlogPostPageEn() {
     <div className="min-h-screen bg-background">
       <SiteHeaderEn />
 
+      <main id="main-content">
       <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <nav className="mb-6 text-xs text-muted-foreground">
           <Link to="/en" className="hover:text-primary">
@@ -150,7 +151,7 @@ function BlogPostPageEn() {
           <span className="text-foreground">{post.category}</span>
         </nav>
 
-        <div className="inline-flex items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold">
+        <div className="inline-flex items-center rounded-full bg-gold/15 px-2.5 py-0.5 text-xs font-medium text-gold-text">
           {post.category}
         </div>
         <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-primary sm:text-5xl">
@@ -210,7 +211,7 @@ function BlogPostPageEn() {
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               <Link
                 to={post.relatedService.href}
-                className="font-semibold text-primary hover:text-gold hover:underline"
+                className="font-semibold text-primary hover:text-gold-text hover:underline"
               >
                 {post.relatedService.label}
               </Link>
@@ -254,7 +255,7 @@ function BlogPostPageEn() {
                   <Link
                     to="/en/blog/$slug"
                     params={{ slug: r.slug }}
-                    className="text-primary hover:text-gold hover:underline"
+                    className="text-primary hover:text-gold-text hover:underline"
                   >
                     {r.title}
                   </Link>
@@ -267,13 +268,14 @@ function BlogPostPageEn() {
         <div className="mt-10">
           <Link
             to="/en/blog"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-gold"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-gold-text"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden />
             View all accounting and tax articles
           </Link>
         </div>
       </article>
+      </main>
 
       <SiteFooterEn />
       <FloatingWhatsAppEn />

@@ -47,7 +47,7 @@ export function ServiceRowList({
         <li key={`${i.to}${i.hash ?? ""}${i.label}`}>
           <PathLink to={i.to} hash={i.hash} className={ROW_CLASS}>
             <span>{i.label}</span>
-            <Arrow className="h-4 w-4 shrink-0 text-gold" aria-hidden />
+            <Arrow className="h-4 w-4 shrink-0 text-gold-text" aria-hidden />
           </PathLink>
         </li>
       ))}
@@ -101,7 +101,7 @@ export function RelatedServiceBlock({ lang, currentPath }: { lang: Lang; current
             className="link-card flex items-center justify-between gap-3 rounded-xl border border-gold/40 bg-card px-5 py-4 text-base font-semibold text-primary transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md"
           >
             <span>{item.label}</span>
-            <Arrow className="h-5 w-5 shrink-0 text-gold" aria-hidden />
+            <Arrow className="h-5 w-5 shrink-0 text-gold-text" aria-hidden />
           </PathLink>
         </div>
       </div>
