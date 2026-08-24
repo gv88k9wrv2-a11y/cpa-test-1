@@ -334,7 +334,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
                 {lang === "he" ? (
                   <>
                     בשליחת הטופס אתם מאשרים כי קראתם את{" "}
-                    <Link to="/privacy-policy" className="text-gold underline">
+                    <Link to="/privacy-policy" className="text-gold-text underline">
                       מדיניות הפרטיות
                     </Link>
                     .
@@ -342,7 +342,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
                 ) : (
                   <>
                     By submitting this form, you acknowledge that you have read the{" "}
-                    <Link to="/en/privacy-policy" className="text-gold underline">
+                    <Link to="/en/privacy-policy" className="text-gold-text underline">
                       Privacy Policy
                     </Link>
                     .
@@ -386,7 +386,7 @@ function LFField({
   return (
     <label htmlFor={id} className="block">
       <span className="text-sm font-medium text-foreground">
-        {label} {required ? <span className="text-gold">*</span> : null}
+        {label} {required ? <span className="text-gold-text" aria-hidden="true">*</span> : null}
       </span>
       <input
         id={id}

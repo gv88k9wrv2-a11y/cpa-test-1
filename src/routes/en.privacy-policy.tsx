@@ -129,7 +129,7 @@ function PrivacyPageEn() {
             </p>
             <p className="mt-3">
               For privacy-related questions or to exercise your privacy rights, please contact:{" "}
-              <a href="mailto:office@nimrodi.co.il" className="text-gold underline">
+              <a href="mailto:office@nimrodi.co.il" className="text-gold-text underline">
                 office@nimrodi.co.il
               </a>
               .
@@ -173,12 +173,12 @@ function PrivacyPageEn() {
               Address: 16 Galgalei ha-Plada St, Herzliya Pituach
               <br />
               Phone:{" "}
-              <a href="tel:+97299582211" className="text-gold underline">
+              <a href="tel:+97299582211" className="text-gold-text underline">
                 +972-9-9582211
               </a>
               <br />
               Email:{" "}
-              <a href="mailto:office@nimrodi.co.il" className="text-gold underline">
+              <a href="mailto:office@nimrodi.co.il" className="text-gold-text underline">
                 office@nimrodi.co.il
               </a>
             </address>

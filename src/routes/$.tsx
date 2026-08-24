@@ -23,6 +23,7 @@ const REDIRECTS: Record<string, string> = {
   "en/auditing-accounting-herzliya": "/en/services",
   "blog/israeli-subsidiary-branch-of-foreign-company": "/blog/israeli-subsidiary-or-branch",
   "blog/foreign-companies-operating-in-israel": "/blog/foreign-company-tax-liability-israel",
+  "blog/relocation-tax-residency": "/blog/relocation-tax-residency-israel",
 };
 
 export const Route = createFileRoute("/$")({
