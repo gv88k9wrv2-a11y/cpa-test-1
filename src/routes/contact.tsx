@@ -42,7 +42,7 @@ function ContactPage() {
       <main id="main-content">
       <section className="border-b border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
             צור קשר
           </div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">

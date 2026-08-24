@@ -59,7 +59,7 @@ function ContactEn() {
               href="https://www.google.com/maps/search/?api=1&query=16+Galgalei+ha-Plada+St+Herzliya+Pituach"
             />
             <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-6">
-              <Clock className="mt-1 h-5 w-5 text-gold" aria-hidden />
+              <Clock className="mt-1 h-5 w-5 text-gold-text" aria-hidden />
               <div>
                 <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Business Hours</div>
                 <div className="mt-1 text-lg font-semibold text-primary">Sun–Thu · 9:00 AM–6:00 PM</div>
@@ -94,7 +94,7 @@ function InfoCard({
       rel="noopener"
       className="flex items-start gap-3 rounded-xl border border-border bg-card p-6 transition hover:border-gold/40"
     >
-      <Icon className="mt-1 h-5 w-5 text-gold" aria-hidden />
+      <Icon className="mt-1 h-5 w-5 text-gold-text" aria-hidden />
       <div>
         <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</div>
         <div className="mt-1 text-lg font-semibold text-primary">{value}</div>

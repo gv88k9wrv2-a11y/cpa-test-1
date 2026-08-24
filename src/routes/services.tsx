@@ -110,7 +110,7 @@ function ServicesPage() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gold">תחומי ההתמחות שלנו</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-gold-text">תחומי ההתמחות שלנו</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
               בחרו את מסלול השירות המתאים לכם
             </h1>
@@ -151,12 +151,12 @@ function ServicesPage() {
                       to={s.to}
                       className="group flex cursor-pointer flex-col rounded-xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:border-gold hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                     >
-                      <div className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary group-hover:bg-gold/15 group-hover:text-gold">
+                      <div className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary group-hover:bg-gold/15 group-hover:text-gold-text">
                         <s.icon className="h-5 w-5" aria-hidden />
                       </div>
                       <h3 className="mt-4 font-display text-xl font-bold text-primary">{s.label}</h3>
                       <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
-                      <span className="mt-4 inline-flex text-xs font-semibold text-gold">{s.label} ←</span>
+                      <span className="mt-4 inline-flex text-xs font-semibold text-gold-text">{s.label} ←</span>
                     </Link>
                   ))}
                 </div>
@@ -167,7 +167,7 @@ function ServicesPage() {
 
         <section className="py-16">
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-            <Handshake className="mx-auto mb-4 h-8 w-8 text-gold" aria-hidden />
+            <Handshake className="mx-auto mb-4 h-8 w-8 text-gold-text" aria-hidden />
             <h2 className="font-display text-3xl font-bold text-primary sm:text-4xl">
               לא בטוחים איזה שירות מתאים לכם?
             </h2>

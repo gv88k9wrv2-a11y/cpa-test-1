@@ -128,7 +128,7 @@ function FaqPage() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-            <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+            <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
               שאלות ותשובות
             </div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
@@ -154,7 +154,7 @@ function FaqPage() {
                       <summary className="flex cursor-pointer items-start justify-between gap-4 text-right font-semibold text-primary">
                         <span>{f.q}</span>
                         <span
-                          className="mt-1 text-gold transition group-open:rotate-45"
+                          className="mt-1 text-gold-text transition group-open:rotate-45"
                           aria-hidden
                         >
                           ＋

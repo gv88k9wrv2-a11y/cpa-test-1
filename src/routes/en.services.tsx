@@ -77,7 +77,7 @@ function ServicesEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
-            <div className="text-xs font-semibold uppercase tracking-widest text-gold">CPA Services in Israel</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-gold-text">CPA Services in Israel</div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
               Accounting, Tax, Audit, Payroll, and CFO Services in Israel
             </h1>
@@ -114,12 +114,12 @@ function ServicesEn() {
                 <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                   {g.items.map((s) => (
                     <Link key={s.to} to={s.to} className="group rounded-xl border border-border bg-card p-6 transition hover:-translate-y-1 hover:border-gold hover:shadow-xl">
-                      <div className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary group-hover:bg-gold/15 group-hover:text-gold">
+                      <div className="grid h-11 w-11 place-items-center rounded-lg bg-secondary text-primary group-hover:bg-gold/15 group-hover:text-gold-text">
                         <s.icon className="h-5 w-5" aria-hidden />
                       </div>
                       <h3 className="mt-4 font-display text-xl font-bold text-primary">{s.label}</h3>
                       <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
-                      <span className="mt-4 inline-flex text-xs font-semibold text-gold">{s.label} →</span>
+                      <span className="mt-4 inline-flex text-xs font-semibold text-gold-text">{s.label} →</span>
                     </Link>
                   ))}
                 </div>

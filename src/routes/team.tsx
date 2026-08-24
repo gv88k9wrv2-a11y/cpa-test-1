@@ -105,7 +105,7 @@ function TeamPage() {
       <main id="main-content">
       <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
             השותף המייסד
           </div>
           <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
@@ -143,14 +143,14 @@ function TeamPage() {
               <h2 className="font-display text-xl font-semibold text-primary">
                 {p.name}
               </h2>
-              <div className="mt-1 text-sm font-medium text-gold">{p.role}</div>
+              <div className="mt-1 text-sm font-medium text-gold-text">{p.role}</div>
               <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
                 {p.bio}
               </p>
               <ul className="mt-5 space-y-2 border-t border-border pt-4">
                 {p.credentials.map((c) => (
                   <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
-                    <GraduationCap className="h-3.5 w-3.5 text-gold" aria-hidden />
+                    <GraduationCap className="h-3.5 w-3.5 text-gold-text" aria-hidden />
                     {c}
                   </li>
                 ))}
@@ -159,7 +159,7 @@ function TeamPage() {
                 <a
                   href="mailto:office@nimrodi.co.il"
                   aria-label="שליחת דוא״ל למשרד נמרודי ושות׳"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold-text"
                 >
                   <Mail className="h-4 w-4" aria-hidden />
                 </a>
@@ -181,14 +181,14 @@ function TeamPage() {
                 key={d.name}
                 className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
               >
-                <d.icon className="h-8 w-8 text-gold" aria-hidden />
+                <d.icon className="h-8 w-8 text-gold-text" aria-hidden />
                 <h3 className="mt-4 font-display text-xl font-semibold text-primary">{d.name}</h3>
-                <div className="mt-1 text-sm font-medium text-gold">{d.role}</div>
+                <div className="mt-1 text-sm font-medium text-gold-text">{d.role}</div>
                 <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
                 <ul className="mt-5 space-y-2 border-t border-border pt-4">
                   {d.credentials.map((c) => (
                     <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
-                      <GraduationCap className="h-3.5 w-3.5 text-gold" aria-hidden />
+                      <GraduationCap className="h-3.5 w-3.5 text-gold-text" aria-hidden />
                       {c}
                     </li>
                   ))}
@@ -200,13 +200,13 @@ function TeamPage() {
 
 
         <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-secondary/40 p-8 text-center">
-          <Award className="mx-auto mb-4 h-10 w-10 text-gold" aria-hidden />
+          <Award className="mx-auto mb-4 h-10 w-10 text-gold-text" aria-hidden />
           <h2 className="font-display text-2xl font-bold text-primary">
             מחפשים להצטרף לצוות?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
             המשרד בוחן מעת לעת מועמדים – רואי חשבון, סטודנטים ומנהלי חשבונות – להצטרפות
-            למשרד. שלחו קו״ח ל־<a href="mailto:office@nimrodi.co.il" className="font-semibold text-primary hover:text-gold">office@nimrodi.co.il</a>.
+            למשרד. שלחו קו״ח ל־<a href="mailto:office@nimrodi.co.il" className="font-semibold text-primary hover:text-gold-text">office@nimrodi.co.il</a>.
           </p>
         </div>
       </section>

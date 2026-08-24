@@ -74,9 +74,9 @@ export function GatewayPage({
                       <PathLink
                         to={i.to}
                         hash={i.hash}
-                        className="inline-flex items-start gap-2 text-sm text-muted-foreground transition hover:text-gold"
+                        className="inline-flex items-start gap-2 text-sm text-muted-foreground transition hover:text-gold-text"
                       >
-                        <Arrow className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold" aria-hidden />
+                        <Arrow className="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold-text" aria-hidden />
                         {i.label}
                       </PathLink>
                     </li>

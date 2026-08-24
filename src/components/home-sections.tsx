@@ -80,7 +80,7 @@ export function WhyUsSection() {
     <section className="border-y border-border/60 bg-background py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div {...fadeUp} className="mx-auto max-w-2xl text-center">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
             למה נמרודי ושות׳
           </div>
           <h2 className="mt-3 font-display text-3xl font-bold text-primary sm:text-4xl">
@@ -99,7 +99,7 @@ export function WhyUsSection() {
               transition={{ ...fadeUp.transition, delay: i * 0.05 }}
               className="rounded-xl border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-gold/60 hover:shadow-lg"
             >
-              <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gold/15 text-gold">
+              <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-gold/15 text-gold-text">
                 <Icon className="h-5 w-5" aria-hidden />
               </div>
               <h3 className="font-display text-lg font-semibold text-primary">{title}</h3>
@@ -117,7 +117,7 @@ export function ProcessSection() {
     <section className="bg-secondary/40 py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <motion.div {...fadeUp} className="mx-auto max-w-2xl text-center">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold">
+          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
             תהליך העבודה
           </div>
           <h2 className="mt-3 font-display text-3xl font-bold text-primary sm:text-4xl">
@@ -137,7 +137,7 @@ export function ProcessSection() {
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-gold bg-background font-display text-lg font-bold text-primary">
                   {i + 1}
                 </span>
-                <Icon className="h-5 w-5 text-gold" aria-hidden />
+                <Icon className="h-5 w-5 text-gold-text" aria-hidden />
               </div>
               <h3 className="font-display text-lg font-semibold text-primary">{title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>

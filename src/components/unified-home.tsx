@@ -150,7 +150,7 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {a.desc}
                 </p>
-                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold">
+                <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-text">
                   {a.cta}
                   <Arrow className="h-4 w-4" aria-hidden />
                 </span>
@@ -177,7 +177,7 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                     className="flex h-full items-center justify-between gap-3 rounded-xl border border-border bg-card p-5 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md"
                   >
                     <span>{c.label}</span>
-                    <Arrow className="h-4 w-4 shrink-0 text-gold" aria-hidden />
+                    <Arrow className="h-4 w-4 shrink-0 text-gold-text" aria-hidden />
                   </PathLink>
                 </li>
               ))}
@@ -197,7 +197,7 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                   key={f}
                   className="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-sm"
                 >
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" aria-hidden />
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-gold-text" aria-hidden />
                   <span className="text-sm font-medium leading-relaxed text-foreground">{f}</span>
                 </li>
               ))}
@@ -221,9 +221,9 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                         <PathLink
                           to={i.to}
                           hash={i.hash}
-                          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition hover:text-gold"
+                          className="inline-flex items-center gap-2 text-sm text-muted-foreground transition hover:text-gold-text"
                         >
-                          <Arrow className="h-3.5 w-3.5 shrink-0 text-gold" aria-hidden />
+                          <Arrow className="h-3.5 w-3.5 shrink-0 text-gold-text" aria-hidden />
                           {i.label}
                         </PathLink>
                       </li>
@@ -251,7 +251,7 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                   className="group rounded-lg border border-border bg-card p-4 shadow-sm open:shadow-md"
                 >
                   <summary className="cursor-pointer list-none font-semibold text-primary">
-                    <span className="mx-2 text-gold">+</span>
+                    <span className="mx-2 text-gold-text">+</span>
                     {f.q}
                   </summary>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>

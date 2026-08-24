@@ -69,7 +69,7 @@ export function ServiceLanding({
               <span className="text-foreground">{eyebrow}</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold-text">
               <Icon className="h-3.5 w-3.5" aria-hidden />
               {eyebrow}
             </div>
@@ -85,7 +85,7 @@ export function ServiceLanding({
                   key={h}
                   className="flex items-start gap-2 rounded-lg border border-border bg-card p-3 text-sm text-foreground"
                 >
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold-text" aria-hidden />
                   <span>{h}</span>
                 </li>
               ))}
@@ -141,7 +141,7 @@ export function ServiceLanding({
                   <ul className="mt-5 space-y-2">
                     {s.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2 text-foreground">
-                        <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-gold" aria-hidden />
+                        <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-gold-text" aria-hidden />
                         <span>{b}</span>
                       </li>
                     ))}
@@ -165,7 +165,7 @@ export function ServiceLanding({
                   className="group rounded-lg border border-border bg-card p-4 shadow-sm open:shadow-md"
                 >
                   <summary className="cursor-pointer list-none font-semibold text-primary">
-                    <span className="mr-2 text-gold">+</span>
+                    <span className="mr-2 text-gold-text">+</span>
                     {f.q}
                   </summary>
                   <div className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">
