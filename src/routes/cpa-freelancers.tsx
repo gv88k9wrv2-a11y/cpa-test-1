@@ -94,7 +94,7 @@ export const Route = createFileRoute("/cpa-freelancers")({
   component: () => (
     <ServiceLanding
       heroImage={heroImg}
-      heroImageAlt="פרילנסרית עובדת במשרד ביתי מודרני"
+      heroImageAlt="עמדת עבודה עצמאית מודרנית עם מחשב נייד ומחברת"
       icon={Briefcase}
       eyebrow="רואה חשבון לעצמאים ופרילנסרים"
       title="שירותי רואה חשבון לעצמאים ולפרילנסרים"
