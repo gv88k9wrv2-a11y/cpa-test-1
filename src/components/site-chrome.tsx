@@ -807,7 +807,7 @@ export function RelatedServicesNav({ currentPath }: { currentPath?: string }) {
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
-          <div className="text-xs font-semibold uppercase tracking-widest text-gold">
+          <div className="text-xs font-semibold uppercase tracking-widest text-gold-text">
             המשך קריאה
           </div>
           <h2 className="mt-2 font-display text-2xl font-bold text-primary sm:text-3xl">
