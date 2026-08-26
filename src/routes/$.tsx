@@ -61,8 +61,14 @@ export const Route = createFileRoute("/$")({
   },
 
   beforeLoad: ({ params }) => {
-    const key = (params._splat ?? "").replace(/^\/+|\/+$/g, "");
-    const target = REDIRECTS[key];
+    const raw = (params._splat ?? "").replace(/^\/+|\/+$/g, "");
+    let decoded = raw;
+    try {
+      decoded = decodeURIComponent(raw);
+    } catch {
+      decoded = raw;
+    }
+    const target = REDIRECTS[raw] ?? REDIRECTS[decoded];
     if (target) {
       throw redirect({ href: target, statusCode: 301 });
     }
