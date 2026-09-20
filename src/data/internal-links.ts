@@ -214,64 +214,137 @@ export const TAX_GROUP_TITLES: Record<Lang, { A: string; B: string; listHeading:
   },
 };
 
-export type RelatedService = { label: string; to: string; hash?: string };
+export type RelatedService = {
+  label: string;
+  to: string;
+  hash?: string;
+  /** Route params for dynamic destinations such as blog articles. */
+  params?: Record<string, string>;
+};
 
-/** Section 10 — one Related Services item per listed page. */
-export const RELATED_SERVICE: Record<string, RelatedService> = {
-  "/bookkeeping": { label: "ייעוץ מס ודיווחים תקופתיים", to: "/tax-consulting" },
-  "/payroll": { label: "שירותי שכר לחברות וסטארטאפים", to: "/companies" },
-  "/audit": { label: "ניהול כספים במיקור חוץ", to: "/fractional-cfo" },
-  "/fractional-cfo": { label: "ביקורת דוחות כספיים", to: "/audit" },
-  "/cpa-startups": {
-    label: "מיסוי השקעות, אופציות ונכסים דיגיטליים",
-    to: "/tax-consulting",
-    hash: "investments-options-digital-assets",
-  },
-  "/cpa-freelancers": {
-    label: "מיסוי הכנסות משכר דירה",
-    to: "/tax-consulting",
-    hash: "real-estate-tax-israel",
-  },
-  "/cpa-foreign-companies": {
-    label: "מיסוי חברות בישראל",
-    to: "/tax-consulting",
-    hash: "corporate-tax-israel",
-  },
-  "/cpa-international": {
-    label: "תיקון והסדרת דיווחים קודמים",
-    to: "/tax-consulting",
-    hash: "prior-reporting-regularization",
-  },
-  "/tax-consulting": { label: "שירותי רואה חשבון לעצמאים ופרילנסרים", to: "/cpa-freelancers" },
+/**
+ * Related-services block. Maximum three contextual destinations per page,
+ * matching the approved internal-linking map.
+ */
+export const RELATED_SERVICES: Record<string, RelatedService[]> = {
+  "/bookkeeping": [
+    { label: "ייעוץ מס ודיווחים תקופתיים", to: "/tax-consulting" },
+    { label: "שירותים לחברות ולסטארטאפים", to: "/companies" },
+  ],
+  "/payroll": [
+    { label: "שירותי שכר לחברות וסטארטאפים", to: "/companies" },
+    { label: "ניהול כספים במיקור חוץ", to: "/fractional-cfo" },
+  ],
+  "/audit": [
+    { label: "ניהול כספים במיקור חוץ", to: "/fractional-cfo" },
+    { label: "הנהלת חשבונות", to: "/bookkeeping" },
+  ],
+  "/fractional-cfo": [
+    { label: "ביקורת דוחות כספיים", to: "/audit" },
+    { label: "סטארטאפים וחברות טכנולוגיה", to: "/cpa-startups" },
+  ],
+  "/cpa-startups": [
+    { label: "ניהול כספים במיקור חוץ", to: "/fractional-cfo" },
+    { label: "חברות זרות הפועלות בישראל", to: "/cpa-foreign-companies" },
+    {
+      label: "מיסוי השקעות, אופציות ונכסים דיגיטליים",
+      to: "/tax-consulting",
+      hash: "investments-options-digital-assets",
+    },
+  ],
+  "/cpa-freelancers": [
+    { label: "ייעוץ מס לעצמאים ולפרילנסרים", to: "/tax-consulting" },
+    { label: "הנהלת חשבונות", to: "/bookkeeping" },
+    {
+      label: "מיסוי הכנסות משכר דירה",
+      to: "/tax-consulting",
+      hash: "real-estate-tax-israel",
+    },
+  ],
+  "/cpa-foreign-companies": [
+    { label: "מיסוי בין־לאומי ותושבות מס", to: "/cpa-international" },
+    { label: "סטארטאפים וחברות טכנולוגיה", to: "/cpa-startups" },
+    { label: "צור קשר →", to: "/contact" },
+  ],
+  "/cpa-international": [
+    { label: "חברות זרות הפועלות בישראל", to: "/cpa-foreign-companies" },
+    {
+      label: "רילוקיישן ותושבות מס — מדריך",
+      to: "/blog/$slug",
+      params: { slug: "relocation-tax-residency-israel" },
+    },
+    {
+      label: "תיקון והסדרת דיווחים קודמים",
+      to: "/tax-consulting",
+      hash: "prior-reporting-regularization",
+    },
+  ],
+  "/tax-consulting": [
+    { label: "שירותי רואה חשבון לעצמאים ופרילנסרים", to: "/cpa-freelancers" },
+    { label: "שירותים ליחידים ולעצמאים", to: "/individuals" },
+    { label: "צור קשר →", to: "/contact" },
+  ],
 
-  "/en/bookkeeping": { label: "Tax advisory and periodic reporting", to: "/en/tax-consulting" },
-  "/en/payroll": { label: "Payroll services for companies and startups", to: "/en/companies" },
-  "/en/audit": { label: "Outsourced financial management", to: "/en/fractional-cfo" },
-  "/en/fractional-cfo": { label: "Financial statement audit", to: "/en/audit" },
-  "/en/cpa-startups": {
-    label: "Taxation of investments, options and digital assets",
-    to: "/en/tax-consulting",
-    hash: "investments-options-digital-assets",
-  },
-  "/en/cpa-freelancers": {
-    label: "Rental-income taxation",
-    to: "/en/tax-consulting",
-    hash: "real-estate-tax-israel",
-  },
-  "/en/cpa-foreign-companies": {
-    label: "Corporate tax in Israel",
-    to: "/en/tax-consulting",
-    hash: "corporate-tax-israel",
-  },
-  "/en/cpa-international": {
-    label: "Correction and regularization of prior reporting",
-    to: "/en/tax-consulting",
-    hash: "prior-reporting-regularization",
-  },
-  "/en/tax-consulting": {
-    label: "CPA services for freelancers and self-employed clients",
-    to: "/en/cpa-freelancers",
-  },
+  "/en/bookkeeping": [
+    { label: "Tax advisory and periodic reporting", to: "/en/tax-consulting" },
+    { label: "Services for companies and startups", to: "/en/companies" },
+  ],
+  "/en/payroll": [
+    { label: "Payroll services for companies and startups", to: "/en/companies" },
+    { label: "Outsourced financial management", to: "/en/fractional-cfo" },
+  ],
+  "/en/audit": [
+    { label: "Outsourced financial management", to: "/en/fractional-cfo" },
+    { label: "Bookkeeping", to: "/en/bookkeeping" },
+  ],
+  "/en/fractional-cfo": [
+    { label: "Financial statement audit", to: "/en/audit" },
+    { label: "Startups and technology companies", to: "/en/cpa-startups" },
+  ],
+  "/en/cpa-startups": [
+    { label: "Fractional CFO and financial management", to: "/en/fractional-cfo" },
+    { label: "Foreign companies operating in Israel", to: "/en/cpa-foreign-companies" },
+    {
+      label: "Taxation of investments, options and digital assets",
+      to: "/en/tax-consulting",
+      hash: "investments-options-digital-assets",
+    },
+  ],
+  "/en/cpa-freelancers": [
+    { label: "Tax advisory for freelancers and self-employed clients", to: "/en/tax-consulting" },
+    { label: "Bookkeeping", to: "/en/bookkeeping" },
+    {
+      label: "Rental-income taxation",
+      to: "/en/tax-consulting",
+      hash: "real-estate-tax-israel",
+    },
+  ],
+  "/en/cpa-foreign-companies": [
+    { label: "International tax and tax residency", to: "/en/cpa-international" },
+    { label: "Startups and technology companies", to: "/en/cpa-startups" },
+    { label: "Contact Us →", to: "/en/contact" },
+  ],
+  "/en/cpa-international": [
+    { label: "Foreign companies operating in Israel", to: "/en/cpa-foreign-companies" },
+    {
+      label: "Relocation and tax residency — guide",
+      to: "/en/blog/$slug",
+      params: { slug: "relocation-tax-residency" },
+    },
+    {
+      label: "Correction and regularization of prior reporting",
+      to: "/en/tax-consulting",
+      hash: "prior-reporting-regularization",
+    },
+  ],
+  "/en/tax-consulting": [
+    {
+      label: "CPA services for freelancers and self-employed clients",
+      to: "/en/cpa-freelancers",
+    },
+    { label: "Services for individuals and self-employed clients", to: "/en/individuals" },
+    { label: "Contact Us →", to: "/en/contact" },
+  ],
 };
 
 export const RELATED_HEADING: Record<Lang, string> = {
