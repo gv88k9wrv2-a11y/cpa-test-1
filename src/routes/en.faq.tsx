@@ -188,6 +188,17 @@ function FaqEn() {
                         {f.q}
                       </summary>
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                      {FAQ_LINKS[f.q] ? (
+                        <p className="mt-3 text-sm">
+                          <Link
+                            to={FAQ_LINKS[f.q].to as "/en/services"}
+                            hash={FAQ_LINKS[f.q].hash}
+                            className="font-semibold text-primary hover:text-gold-text hover:underline"
+                          >
+                            {FAQ_LINKS[f.q].label}
+                          </Link>
+                        </p>
+                      ) : null}
                     </details>
                   ))}
                 </div>
@@ -199,6 +210,28 @@ function FaqEn() {
         {/* Required on all professional-content pages. Do not remove or duplicate. */}
         <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
           <ProfessionalDisclaimer lang="en" />
+        </section>
+
+        <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              Didn’t find the answer you were looking for?
+            </h2>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                to="/en/contact"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
+                Schedule a Consultation →
+              </Link>
+              <Link
+                to="/en/services"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+              >
+                Click To Continue →
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
       <SiteFooterEn />
