@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
