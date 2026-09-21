@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import {
   RELATED_HEADING,
-  RELATED_SERVICE,
+  RELATED_SERVICES,
   TAX_GROUP_TITLES,
   TAX_TOPICS,
   type Lang,
@@ -12,16 +12,23 @@ import {
 function PathLink({
   to,
   hash,
+  params,
   className,
   children,
 }: {
   to: string;
   hash?: string;
+  params?: Record<string, string>;
   className?: string;
   children: React.ReactNode;
 }) {
   return (
-    <Link to={to as "/services"} hash={hash} className={className}>
+    <Link
+      to={to as "/services"}
+      hash={hash}
+      params={params as never}
+      className={className}
+    >
       {children}
     </Link>
   );
