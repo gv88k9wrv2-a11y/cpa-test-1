@@ -67,6 +67,48 @@ const FAQS = [
   },
 ];
 
+/** One contextual internal link per FAQ answer (maximum one). */
+const FAQ_LINKS: Record<string, { label: string; to: string; hash?: string }> = {
+  "Where is your CPA office in Israel and which clients do you serve?": {
+    label: "CPA firm in Herzliya Pituach",
+    to: "/en/cpa-herzliya",
+  },
+  "How does the first meeting work?": {
+    label: "Contact Us →",
+    to: "/en/contact",
+  },
+  "How is pricing determined?": {
+    label: "All services",
+    to: "/en/services",
+  },
+  "When should an Israeli startup engage a CPA firm?": {
+    label: "Startups and technology companies",
+    to: "/en/cpa-startups",
+  },
+  "Can you assist with the Israeli tax analysis of an Israel-Delaware flip?": {
+    label: "Fractional CFO and financial management",
+    to: "/en/fractional-cfo",
+  },
+  "Can you assist a foreign company with Israeli subsidiary registration and bank onboarding information?":
+    {
+      label: "Foreign companies operating in Israel",
+      to: "/en/cpa-foreign-companies",
+    },
+  "What Israeli tax benefits may apply to new immigrants and returning residents?": {
+    label: "International tax and tax residency",
+    to: "/en/cpa-international",
+  },
+  "Do you provide Israeli cryptocurrency and digital asset tax reporting services?": {
+    label: "Taxation of investments, options and digital assets",
+    to: "/en/tax-consulting",
+    hash: "investments-options-digital-assets",
+  },
+  "What information may an Israeli bank request for cryptocurrency proceeds?": {
+    label: "Services for individuals and self-employed clients",
+    to: "/en/individuals",
+  },
+};
+
 export const Route = createFileRoute("/en/faq")({
   head: () => ({
     meta: [
