@@ -94,6 +94,26 @@ function BlogIndexEn() {
             ))}
           </div>
         </section>
+        <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">Have a question about your own activity?</h2>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                to="/en/contact"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
+                Schedule a Consultation →
+              </Link>
+              <Link
+                to="/en/services"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+              >
+                Click To Continue →
+              </Link>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <SiteFooterEn />
