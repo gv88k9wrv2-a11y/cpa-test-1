@@ -32,7 +32,7 @@ export const Route = createFileRoute("/companies")({
       intro="שירותי חשבונאות, ביקורת, מס, שכר וניהול כספים לחברות ישראליות, סטארטאפים, חברות זרות הפועלות בישראל ועמותות."
       instruction="בחרו את סוג החברה או את השירות המקצועי המתאים."
       groups={COMPANIES_GROUPS_HE}
-      ctaLabel="ליצירת קשר"
+      ctaLabel="צור קשר →"
       ctaTo="/contact"
     />
   ),

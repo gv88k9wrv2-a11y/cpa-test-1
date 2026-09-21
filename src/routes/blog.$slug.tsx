@@ -270,15 +270,23 @@ function BlogPostPage() {
           <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
             אפשר ליצור קשר לצורך שיחת היכרות ראשונית ובחינת הצרכים.
           </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener"
-            className="mt-6 inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
-          >
-            <MessageCircle className="h-5 w-5" aria-hidden />
-            דברו איתנו
-          </a>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden />
+              דברו איתנו
+            </a>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+            >
+              קבעו שיחת היכרות →
+            </Link>
+          </div>
         </div>
 
         {related.length > 0 && (

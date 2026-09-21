@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
@@ -66,6 +66,48 @@ const FAQS = [
     a: "Depending on the facts and the agreed scope, the firm may assist with the accounting and Israeli tax analysis, preparation of information for a tax-ruling request and coordination with legal or other advisers. Filing a request does not guarantee that the Israel Tax Authority will issue a ruling or accept a particular position.",
   },
 ];
+
+/** One contextual internal link per FAQ answer (maximum one). */
+const FAQ_LINKS: Record<string, { label: string; to: string; hash?: string }> = {
+  "Where is your CPA office in Israel and which clients do you serve?": {
+    label: "CPA firm in Herzliya Pituach",
+    to: "/en/cpa-herzliya",
+  },
+  "How does the first meeting work?": {
+    label: "Contact Us →",
+    to: "/en/contact",
+  },
+  "How is pricing determined?": {
+    label: "All services",
+    to: "/en/services",
+  },
+  "When should an Israeli startup engage a CPA firm?": {
+    label: "Startups and technology companies",
+    to: "/en/cpa-startups",
+  },
+  "Can you assist with the Israeli tax analysis of an Israel-Delaware flip?": {
+    label: "Fractional CFO and financial management",
+    to: "/en/fractional-cfo",
+  },
+  "Can you assist a foreign company with Israeli subsidiary registration and bank onboarding information?":
+    {
+      label: "Foreign companies operating in Israel",
+      to: "/en/cpa-foreign-companies",
+    },
+  "What Israeli tax benefits may apply to new immigrants and returning residents?": {
+    label: "International tax and tax residency",
+    to: "/en/cpa-international",
+  },
+  "Do you provide Israeli cryptocurrency and digital asset tax reporting services?": {
+    label: "Taxation of investments, options and digital assets",
+    to: "/en/tax-consulting",
+    hash: "investments-options-digital-assets",
+  },
+  "What information may an Israeli bank request for cryptocurrency proceeds?": {
+    label: "Services for individuals and self-employed clients",
+    to: "/en/individuals",
+  },
+};
 
 export const Route = createFileRoute("/en/faq")({
   head: () => ({
@@ -146,6 +188,17 @@ function FaqEn() {
                         {f.q}
                       </summary>
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                      {FAQ_LINKS[f.q] ? (
+                        <p className="mt-3 text-sm">
+                          <Link
+                            to={FAQ_LINKS[f.q].to as "/en/services"}
+                            hash={FAQ_LINKS[f.q].hash}
+                            className="font-semibold text-primary hover:text-gold-text hover:underline"
+                          >
+                            {FAQ_LINKS[f.q].label}
+                          </Link>
+                        </p>
+                      ) : null}
                     </details>
                   ))}
                 </div>
@@ -157,6 +210,28 @@ function FaqEn() {
         {/* Required on all professional-content pages. Do not remove or duplicate. */}
         <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
           <ProfessionalDisclaimer lang="en" />
+        </section>
+
+        <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              Didn’t find the answer you were looking for?
+            </h2>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                to="/en/contact"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
+                Schedule a Consultation →
+              </Link>
+              <Link
+                to="/en/services"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+              >
+                Click To Continue →
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
       <SiteFooterEn />

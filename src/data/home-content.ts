@@ -30,7 +30,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
       buttons: [
         { label: "שירותים לחברות וסטארטאפים", to: "/companies" },
         { label: "שירותים ליחידים ולעצמאים", to: "/individuals" },
-        { label: "יצירת קשר", to: "/contact" },
+        { label: "צור קשר →", to: "/contact" },
       ],
       imageAlt: "משרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח",
     },
@@ -140,7 +140,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
     cta: {
       heading: "לא בטוחים לאיזה שירות לפנות?",
       body: "כתבו לנו אם הפנייה היא עבור חברה, עצמאי או יחיד ומה הנושא המרכזי, ונבחן את אופן ההמשך המתאים.",
-      contact: "לעמוד יצירת קשר",
+      contact: "צור קשר →",
       whatsapp: "וואטסאפ",
       contactTo: "/contact",
     },
@@ -156,7 +156,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
       buttons: [
         { label: "Services for Companies & Startups", to: "/en/companies" },
         { label: "Services for Individuals & Self-Employed", to: "/en/individuals" },
-        { label: "Contact Us", to: "/en/contact" },
+        { label: "Contact Us →", to: "/en/contact" },
       ],
       imageAlt: "Nimrodi & Co. CPA offices in Herzliya Pituach, Israel",
     },
@@ -272,7 +272,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
     cta: {
       heading: "Not Sure Which Service to Choose?",
       body: "Tell us whether the inquiry concerns a company, a self-employed business or an individual, and describe the main topic so that the appropriate next step can be considered.",
-      contact: "Contact page",
+      contact: "Contact Us →",
       whatsapp: "WhatsApp",
       contactTo: "/en/contact",
     },

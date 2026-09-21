@@ -32,7 +32,7 @@ export const Route = createFileRoute("/en/individuals")({
       intro="Israeli tax and reporting services for individuals and self-employed clients, including annual returns, capital declarations, crypto, rental income, relocation, voluntary disclosure and employee tax refunds."
       instruction="Choose the topic that best matches your needs to reach the relevant service page."
       groups={INDIVIDUALS_GROUPS_EN}
-      ctaLabel="Contact Us"
+      ctaLabel="Contact Us →"
       ctaTo="/en/contact"
     />
   ),

@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
@@ -76,6 +76,52 @@ const CATEGORIES = [
     ],
   },
 ];
+
+/** One contextual internal link per FAQ answer (maximum one). */
+const FAQ_LINKS: Record<string, { label: string; to: string; hash?: string }> = {
+  "מה כדאי לבדוק לפני בחירת רואה חשבון לחברה או לעסק?": {
+    label: "לכל השירותים של המשרד",
+    to: "/services",
+  },
+  "איפה ממוקם המשרד ובאילו אזורים אתם מלווים לקוחות?": {
+    label: "רואה חשבון בהרצליה פיתוח",
+    to: "/cpa-herzliya",
+  },
+  "אילו שירותים עשוי לכלול ליווי חשבונאי לחברה או לסטארטאפ?": {
+    label: "שירותים לחברות ולסטארטאפים",
+    to: "/companies",
+  },
+  "האם אתם מלווים בגיוסי הון וסבבי השקעה?": {
+    label: "סטארטאפים וחברות טכנולוגיה",
+    to: "/cpa-startups",
+  },
+  "אילו היבטי מס ודיווח חלים על תוכניות אופציות לפי סעיף 102?": {
+    label: "חשבות שכר ותוכניות הוניות",
+    to: "/payroll",
+  },
+  "האם אתם מתאימים גם לעצמאים בתחילת דרך?": {
+    label: "שירותים לעצמאים ולפרילנסרים",
+    to: "/cpa-freelancers",
+  },
+  "מה ההבדל בין עוסק פטור לעוסק מורשה?": {
+    label: "הנהלת חשבונות ודיווחים שוטפים",
+    to: "/bookkeeping",
+  },
+  "באילו נושאי מיסוי בין־לאומי ונכסים דיגיטליים ניתן לקבל סיוע?": {
+    label: "מיסוי בין־לאומי ותושבות מס",
+    to: "/cpa-international",
+  },
+  "אילו פעולות בנכסים דיגיטליים עשויות לחייב בחינת מס ודיווח?": {
+    label: "מיסוי השקעות, אופציות ונכסים דיגיטליים",
+    to: "/tax-consulting",
+    hash: "investments-options-digital-assets",
+  },
+  "איזה מידע עשוי להידרש בהתנהלות מול בנק בנוגע לפעילות קריפטו?": {
+    label: "צור קשר →",
+    to: "/contact",
+  },
+};
+
 
 const FAQ_JSONLD = {
   "@context": "https://schema.org",
@@ -161,6 +207,17 @@ function FaqPage() {
                         </span>
                       </summary>
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                      {FAQ_LINKS[f.q] ? (
+                        <p className="mt-3 text-sm">
+                          <Link
+                            to={FAQ_LINKS[f.q].to as "/services"}
+                            hash={FAQ_LINKS[f.q].hash}
+                            className="font-semibold text-primary hover:text-gold-text hover:underline"
+                          >
+                            {FAQ_LINKS[f.q].label}
+                          </Link>
+                        </p>
+                      ) : null}
                     </details>
                   ))}
                 </div>
@@ -173,6 +230,28 @@ function FaqPage() {
         {/* Required on all professional-content pages. Do not remove or duplicate. */}
         <section className="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
           <ProfessionalDisclaimer lang="he" />
+        </section>
+
+        <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              לא מצאתם את התשובה שחיפשתם?
+            </h2>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                to="/contact"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
+                קבעו שיחת היכרות →
+              </Link>
+              <Link
+                to="/services"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+              >
+                לחצו למעבר →
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
 

@@ -348,6 +348,6 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
 };
 
 export const RELATED_HEADING: Record<Lang, string> = {
-  he: "שירות נוסף רלוונטי",
-  en: "Related service",
+  he: "שירותים נוספים רלוונטיים",
+  en: "Related services",
 };

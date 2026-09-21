@@ -227,15 +227,23 @@ function BlogPostPageEn() {
             Contact our Israeli CPA firm for an introductory discussion about your accounting, tax,
             and reporting needs.
           </p>
-          <a
-            href={WHATSAPP_URL_EN}
-            target="_blank"
-            rel="noopener"
-            className="mt-6 inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
-          >
-            <MessageCircle className="h-5 w-5" aria-hidden />
-            Contact our CPA firm
-          </a>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <a
+              href={WHATSAPP_URL_EN}
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+            >
+              <MessageCircle className="h-5 w-5" aria-hidden />
+              Contact our CPA firm
+            </a>
+            <Link
+              to="/en/contact"
+              className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+            >
+              Schedule a Consultation →
+            </Link>
+          </div>
         </div>
 
         {/* Professional disclaimer */}

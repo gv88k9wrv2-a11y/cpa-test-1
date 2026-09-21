@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import { Award, Building2, Calculator, GraduationCap, Mail, UserCheck } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 import teamPhoto from "../assets/team-photo.webp";
@@ -210,6 +210,26 @@ function TeamPage() {
           </p>
         </div>
       </section>
+
+        <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
+          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">רוצים לשוחח עם המשרד?</h2>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link
+                to="/contact"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
+                קבעו שיחת היכרות →
+              </Link>
+              <Link
+                to="/services"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+              >
+                לחצו למעבר →
+              </Link>
+            </div>
+          </div>
+        </section>
 
       </main>
 

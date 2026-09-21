@@ -213,7 +213,7 @@ export function ServiceLanding({
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
-                לעמוד יצירת קשר
+              קבעו שיחת היכרות →
               </Link>
             </div>
           </div>

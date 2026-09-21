@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import {
   RELATED_HEADING,
-  RELATED_SERVICE,
+  RELATED_SERVICES,
   TAX_GROUP_TITLES,
   TAX_TOPICS,
   type Lang,
@@ -12,16 +12,23 @@ import {
 function PathLink({
   to,
   hash,
+  params,
   className,
   children,
 }: {
   to: string;
   hash?: string;
+  params?: Record<string, string>;
   className?: string;
   children: React.ReactNode;
 }) {
   return (
-    <Link to={to as "/services"} hash={hash} className={className}>
+    <Link
+      to={to as "/services"}
+      hash={hash}
+      params={params as never}
+      className={className}
+    >
       {children}
     </Link>
   );
@@ -78,11 +85,11 @@ export function TaxTopicList({ lang }: { lang: Lang }) {
   );
 }
 
-/** Section 10 — one Related Services block containing one item only. */
+/** Related services block — up to three approved contextual destinations. */
 export function RelatedServiceBlock({ lang, currentPath }: { lang: Lang; currentPath: string }) {
   const path = currentPath.replace(/\/$/, "") || "/";
-  const item = RELATED_SERVICE[path];
-  if (!item) return null;
+  const items = RELATED_SERVICES[path];
+  if (!items || items.length === 0) return null;
   const Arrow = lang === "he" ? ArrowLeft : ArrowRight;
 
   return (
@@ -94,15 +101,19 @@ export function RelatedServiceBlock({ lang, currentPath }: { lang: Lang; current
         <h2 className="text-center font-display text-2xl font-bold text-primary">
           {RELATED_HEADING[lang]}
         </h2>
-        <div className="mt-6">
-          <PathLink
-            to={item.to}
-            hash={item.hash}
-            className="link-card flex items-center justify-between gap-3 rounded-xl border border-gold/40 bg-card px-5 py-4 text-base font-semibold text-primary transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md"
-          >
-            <span>{item.label}</span>
-            <Arrow className="h-5 w-5 shrink-0 text-gold-text" aria-hidden />
-          </PathLink>
+        <div className="mt-6 space-y-3">
+          {items.map((item) => (
+            <PathLink
+              key={`${item.to}${item.hash ?? ""}${item.label}`}
+              to={item.to}
+              hash={item.hash}
+              params={item.params}
+              className="link-card flex items-center justify-between gap-3 rounded-xl border border-gold/40 bg-card px-5 py-4 text-base font-semibold text-primary transition hover:-translate-y-0.5 hover:border-gold hover:shadow-md"
+            >
+              <span>{item.label}</span>
+              <Arrow className="h-5 w-5 shrink-0 text-gold-text" aria-hidden />
+            </PathLink>
+          ))}
         </div>
       </div>
     </section>
