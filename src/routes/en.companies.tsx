@@ -32,7 +32,7 @@ export const Route = createFileRoute("/en/companies")({
       intro="Accounting, audit, tax, payroll and financial-management services for Israeli companies, startups, foreign companies operating in Israel and nonprofit organizations."
       instruction="Choose the company type or professional service that best matches your needs."
       groups={COMPANIES_GROUPS_EN}
-      ctaLabel="Contact Us"
+      ctaLabel="Contact Us →"
       ctaTo="/en/contact"
     />
   ),

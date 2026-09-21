@@ -201,7 +201,7 @@ export function ServiceLandingEn({
                 to="/en/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
-                Contact page
+                Schedule a Consultation →
               </Link>
             </div>
           </div>

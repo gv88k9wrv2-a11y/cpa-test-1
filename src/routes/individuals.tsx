@@ -32,7 +32,7 @@ export const Route = createFileRoute("/individuals")({
       intro="שירותי מס ודיווח ליחידים ולעצמאים, לרבות דוחות שנתיים, הצהרות הון, קריפטו, שכר דירה, רילוקיישן, גילוי מרצון והחזרי מס."
       instruction="בחרו את הנושא המתאים כדי להגיע לעמוד השירות הרלוונטי."
       groups={INDIVIDUALS_GROUPS_HE}
-      ctaLabel="ליצירת קשר"
+      ctaLabel="צור קשר →"
       ctaTo="/contact"
     />
   ),
