@@ -29,6 +29,7 @@ export const Route = createFileRoute("/blog/")({
       { rel: "canonical", href: "https://www.nimrodi.co.il/blog" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/blog" },
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/blog" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/blog" },
     ],
   }),
   component: BlogIndex,

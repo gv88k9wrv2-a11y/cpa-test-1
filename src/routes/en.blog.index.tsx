@@ -25,7 +25,12 @@ export const Route = createFileRoute("/en/blog/")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
-    links: [{ rel: "canonical", href: CANONICAL }],
+    links: [
+      { rel: "canonical", href: CANONICAL },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/blog" },
+      { rel: "alternate", hrefLang: "en-US", href: CANONICAL },
+      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/blog" },
+    ],
   }),
   component: BlogIndexEn,
 });

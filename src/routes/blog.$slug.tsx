@@ -94,10 +94,16 @@ export const Route = createFileRoute("/blog/$slug")({
             author: {
               "@type": "Organization",
               name: "נמרודי ושות׳ – רואי חשבון",
+              url: ORIGIN,
             },
             publisher: {
               "@type": "Organization",
               name: "נמרודי ושות׳ – רואי חשבון",
+              url: ORIGIN,
+              logo: {
+                "@type": "ImageObject",
+                url: `${ORIGIN}/og-image.jpg`,
+              },
             },
             mainEntityOfPage: `${ORIGIN}/blog/${params.slug}`,
             articleSection: post.category,
