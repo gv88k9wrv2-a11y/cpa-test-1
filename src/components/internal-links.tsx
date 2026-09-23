@@ -23,12 +23,7 @@ function PathLink({
   children: React.ReactNode;
 }) {
   return (
-    <Link
-      to={to as "/services"}
-      hash={hash}
-      params={params as never}
-      className={className}
-    >
+    <Link to={to as "/services"} hash={hash} params={params as never} className={className}>
       {children}
     </Link>
   );
@@ -73,11 +68,13 @@ export function TaxTopicList({ lang }: { lang: Lang }) {
           <h3 className="mb-3 font-display text-lg font-bold text-primary">{titles[g]}</h3>
           <ServiceRowList
             lang={lang}
-            items={topics.filter((t) => t.group === g).map((t) => ({
-              label: t.label,
-              to: lang === "he" ? "/tax-consulting" : "/en/tax-consulting",
-              hash: t.id,
-            }))}
+            items={topics
+              .filter((t) => t.group === g)
+              .map((t) => ({
+                label: t.label,
+                to: lang === "he" ? "/tax-consulting" : "/en/tax-consulting",
+                hash: t.id,
+              }))}
           />
         </div>
       ))}

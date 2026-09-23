@@ -24,7 +24,8 @@ const COPY = {
     submit: "שליחת פנייה במייל",
     sending: "מכין את הפנייה…",
     whatsapp: "מעדיפים WhatsApp? פתחו הודעה מוכנה בצ׳אט",
-    privacy: "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. ניצור עמכם קשר בהקדם האפשרי.",
+    privacy:
+      "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. ניצור עמכם קשר בהקדם האפשרי.",
     required: "*",
     successTitle: "פנייתך מוכנה לשליחה",
     successText:
@@ -34,8 +35,7 @@ const COPY = {
     errors: {
       name: "אנא הזינו שם מלא (לפחות 2 תווים).",
       email: "כתובת אימייל אינה תקינה – ודאו שהיא כוללת @ ודומיין חוקי.",
-      phone:
-        "מספר טלפון אינו תקין. הזינו מספר מקומי (למשל 050-1234567) או בין־לאומי החל ב-+.",
+      phone: "מספר טלפון אינו תקין. הזינו מספר מקומי (למשל 050-1234567) או בין־לאומי החל ב-+.",
       message: "אנא פרטו בקצרה במה נוכל לסייע (לפחות 10 תווים).",
     },
   },
@@ -50,8 +50,7 @@ const COPY = {
     phone: "Direct Phone Number",
     phonePh: "e.g. +1 415 555 0100 or 050-1234567",
     message: "How can we assist your business?",
-    messagePh:
-      "Tell us briefly about your need – tax, audit, fractional CFO, cross-border, etc.",
+    messagePh: "Tell us briefly about your need – tax, audit, fractional CFO, cross-border, etc.",
     messageNotice:
       "Please do not enter or attach sensitive financial or personal information or documents in this form.",
     submit: "Send inquiry by email",
@@ -109,7 +108,9 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
-  const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(`https://wa.me/${WHATSAPP_NUMBER}`);
+  const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(
+    `https://wa.me/${WHATSAPP_NUMBER}`,
+  );
   const [form, setForm] = useState<FormState>({
     name: "",
     company: "",
@@ -127,9 +128,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
       : `New inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
 
   const buildSubject = () =>
-    lang === "he"
-      ? `פנייה חדשה מהאתר – ${form.name}`
-      : `New website inquiry – ${form.name}`;
+    lang === "he" ? `פנייה חדשה מהאתר – ${form.name}` : `New website inquiry – ${form.name}`;
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -186,7 +185,10 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
             <ShieldCheck className="h-3.5 w-3.5" aria-hidden />
             {t.eyebrow}
           </div>
-          <h2 id="lead-title" className="mt-3 font-display text-3xl font-bold text-primary sm:text-4xl">
+          <h2
+            id="lead-title"
+            className="mt-3 font-display text-3xl font-bold text-primary sm:text-4xl"
+          >
             {t.title}
           </h2>
           <p className="mt-3 text-muted-foreground">{t.subtitle}</p>
@@ -274,7 +276,10 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
 
             <label htmlFor="lf-message" className="mt-4 block">
               <span className="text-sm font-medium text-foreground">
-                {t.message} <span className="text-gold-text" aria-hidden="true">{t.required}</span>
+                {t.message}{" "}
+                <span className="text-gold-text" aria-hidden="true">
+                  {t.required}
+                </span>
               </span>
               <textarea
                 id="lf-message"
@@ -294,7 +299,11 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
               />
               <p className="mt-1.5 text-xs text-muted-foreground">{t.messageNotice}</p>
               {errors.message && (
-                <p id="lf-message-error" role="alert" className="mt-1 text-xs font-medium text-destructive">
+                <p
+                  id="lf-message-error"
+                  role="alert"
+                  className="mt-1 text-xs font-medium text-destructive"
+                >
                   {errors.message}
                 </p>
               )}
@@ -386,7 +395,12 @@ function LFField({
   return (
     <label htmlFor={id} className="block">
       <span className="text-sm font-medium text-foreground">
-        {label} {required ? <span className="text-gold-text" aria-hidden="true">*</span> : null}
+        {label}{" "}
+        {required ? (
+          <span className="text-gold-text" aria-hidden="true">
+            *
+          </span>
+        ) : null}
       </span>
       <input
         id={id}

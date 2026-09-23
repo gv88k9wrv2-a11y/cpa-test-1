@@ -9,9 +9,17 @@ export const Route = createFileRoute("/en/team")({
   head: () => ({
     meta: [
       { title: "Nimrodi & Co. CPA Team | Herzliya Pituach, Israel" },
-      { name: "description", content: "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients." },
+      {
+        name: "description",
+        content:
+          "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients.",
+      },
       { property: "og:title", content: "Our Team — Nimrodi & Co." },
-      { property: "og:description", content: "Meet the team at Nimrodi & Co. CPA in Herzliya Pituach, working with companies, startups, foreign businesses and individuals in Israel. Read more about us." },
+      {
+        property: "og:description",
+        content:
+          "Meet the team at Nimrodi & Co. CPA in Herzliya Pituach, working with companies, startups, foreign businesses and individuals in Israel. Read more about us.",
+      },
       { property: "og:url", content: `${BASE}/en/team` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -26,7 +34,11 @@ export const Route = createFileRoute("/en/team")({
 });
 
 const TEAM = [
-  { name: "Shlomo Nimrodi, CPA", role: "Founding Partner", bio: "Certified Public Accountant and a member of the Institute of Certified Public Accountants in Israel. Professional experience includes controller and CFO roles in private and public companies, work with foreign companies operating in Israel and services relating to Israeli and international taxation. Previous experience also includes financial participation in capital-raising and public-company processes." },
+  {
+    name: "Shlomo Nimrodi, CPA",
+    role: "Founding Partner",
+    bio: "Certified Public Accountant and a member of the Institute of Certified Public Accountants in Israel. Professional experience includes controller and CFO roles in private and public companies, work with foreign companies operating in Israel and services relating to Israeli and international taxation. Previous experience also includes financial participation in capital-raising and public-company processes.",
+  },
 ];
 
 const DEPARTMENTS = [
@@ -84,7 +96,6 @@ const DEPARTMENTS = [
   },
 ];
 
-
 function TeamEn() {
   return (
     <div className="min-h-screen bg-background">
@@ -96,27 +107,40 @@ function TeamEn() {
               <Users className="h-3.5 w-3.5" aria-hidden />
               The team
             </div>
-            <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">Our partners and senior team</h1>
+            <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">
+              Our partners and senior team
+            </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              The firm’s team supports individuals, companies, startups and foreign companies operating in Israel with accounting, tax, reporting and financial-management services, according to each client’s needs and the agreed engagement scope.
+              The firm’s team supports individuals, companies, startups and foreign companies
+              operating in Israel with accounting, tax, reporting and financial-management services,
+              according to each client’s needs and the agreed engagement scope.
             </p>
           </div>
         </section>
-      <section className="border-b border-border/60">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-            <img src={heroImg} alt="Nimrodi & Co. CPA team at the Herzliya Pituach offices" width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
+        <section className="border-b border-border/60">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
+              <img
+                src={heroImg}
+                alt="Nimrodi & Co. CPA team at the Herzliya Pituach offices"
+                width={1024}
+                height={1024}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full object-cover"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-
+        </section>
 
         <section className="py-16">
           <div className="mx-auto grid max-w-5xl gap-6 px-4 sm:px-6 md:max-w-md">
             {TEAM.map((m) => (
               <article key={m.name} className="rounded-xl border border-border bg-card p-6">
                 <h2 className="font-display text-xl font-bold text-primary">{m.name}</h2>
-                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-text">{m.role}</div>
+                <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-text">
+                  {m.role}
+                </div>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
               </article>
             ))}
@@ -127,15 +151,24 @@ function TeamEn() {
               Professional Service Areas
             </h2>
             <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
-              The firm&rsquo;s teams work together to provide accounting, tax, financial and operational support according to each client&rsquo;s activity and the agreed scope of service.
+              The firm&rsquo;s teams work together to provide accounting, tax, financial and
+              operational support according to each client&rsquo;s activity and the agreed scope of
+              service.
             </p>
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {DEPARTMENTS.map((d) => (
-                <article key={d.name} className="flex flex-col rounded-xl border border-border bg-card p-6">
+                <article
+                  key={d.name}
+                  className="flex flex-col rounded-xl border border-border bg-card p-6"
+                >
                   <d.icon className="h-8 w-8 text-gold" aria-hidden />
                   <h3 className="mt-4 font-display text-xl font-bold text-primary">{d.name}</h3>
-                  <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-text">{d.role}</div>
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
+                  <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-gold-text">
+                    {d.role}
+                  </div>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    {d.bio}
+                  </p>
                   <ul className="mt-5 space-y-2 border-t border-border pt-4">
                     {d.credentials.map((c) => (
                       <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
@@ -152,7 +185,9 @@ function TeamEn() {
 
         <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-2xl font-bold sm:text-3xl">Want to talk with our firm?</h2>
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              Want to talk with our firm?
+            </h2>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 to="/en/contact"
@@ -169,7 +204,6 @@ function TeamEn() {
             </div>
           </div>
         </section>
-
       </main>
       <SiteFooterEn />
       <FloatingWhatsAppEn />

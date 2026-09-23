@@ -29,7 +29,6 @@ import {
 } from "../data/nav-content";
 import type { NavGroup, NavItem } from "../data/nav-content";
 
-
 const WHATSAPP_URL =
   "https://wa.me/972546688681?text=" + encodeURIComponent("פנייה מהאתר – נמרודי ושות׳");
 
@@ -61,7 +60,6 @@ const MAIN_LINKS = [
   { to: "/about", label: "אודות" },
   { to: "/contact", label: "צור קשר" },
 ] as const;
-
 
 const LEGAL_LINKS = [
   { to: "/accessibility", label: "הצהרת נגישות" },
@@ -214,7 +212,6 @@ export function SiteHeader() {
             </span>
           </Link>
 
-
           {/* Desktop nav (xl and above) */}
           <nav
             ref={navRef}
@@ -244,7 +241,6 @@ export function SiteHeader() {
               צור קשר
             </Link>
           </nav>
-
 
           {/* Right cluster */}
           <div className="flex shrink-0 items-center gap-1 sm:gap-2">
@@ -344,10 +340,7 @@ function MegaMenu({
         className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
         {label}
-        <ChevronDown
-          className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`}
-          aria-hidden
-        />
+        <ChevronDown className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`} aria-hidden />
       </button>
       <div
         id={id}
@@ -434,10 +427,7 @@ function Dropdown({
         className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
         {label}
-        <ChevronDown
-          className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`}
-          aria-hidden
-        />
+        <ChevronDown className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`} aria-hidden />
       </button>
       <div
         id={id}
@@ -479,7 +469,11 @@ const MOBILE_INDIVIDUALS: NavItem[] = [
     to: "/tax-consulting",
     hash: "annual-tax-returns-individuals",
   },
-  { label: "קריפטו ונכסים דיגיטליים", to: "/tax-consulting", hash: "investments-options-digital-assets" },
+  {
+    label: "קריפטו ונכסים דיגיטליים",
+    to: "/tax-consulting",
+    hash: "investments-options-digital-assets",
+  },
   { label: "הכנסות משכר דירה", to: "/tax-consulting", hash: "real-estate-tax-israel" },
   { label: "רילוקיישן ותושבות מס", to: "/cpa-international" },
   { label: "עצמאים ופרילנסרים", to: "/cpa-freelancers" },
@@ -678,7 +672,6 @@ function MobileMenu({ enHref }: { enHref: string }) {
     </div>
   );
 }
-
 
 export function SiteFooter() {
   return (

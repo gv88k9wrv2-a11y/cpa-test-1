@@ -72,7 +72,10 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           buildBreadcrumbJsonLd([
             { name: "Home", url: "https://www.nimrodi.co.il/en" },
             { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "Fractional CFO Services in Israel", url: "https://www.nimrodi.co.il/en/fractional-cfo" },
+            {
+              name: "Fractional CFO Services in Israel",
+              url: "https://www.nimrodi.co.il/en/fractional-cfo",
+            },
           ]),
         ),
       },
@@ -103,7 +106,31 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           title: "Strategic Corporate Finance",
           body: (
             <>
-              Fractional CFO support may help management organize budgeting, cash-flow planning, variance analysis and financial information for decision-making. The scope, frequency, assumptions and responsibilities are agreed with management in advance. This service pairs naturally with our <Link to="/en/cpa-startups" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">startup CPA practice</Link>, <Link to="/en/cpa-foreign-companies" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">foreign-company support in Israel</Link>, and <Link to="/en/audit" className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">statutory audit and assurance</Link>.
+              Fractional CFO support may help management organize budgeting, cash-flow planning,
+              variance analysis and financial information for decision-making. The scope, frequency,
+              assumptions and responsibilities are agreed with management in advance. This service
+              pairs naturally with our{" "}
+              <Link
+                to="/en/cpa-startups"
+                className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                startup CPA practice
+              </Link>
+              ,{" "}
+              <Link
+                to="/en/cpa-foreign-companies"
+                className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                foreign-company support in Israel
+              </Link>
+              , and{" "}
+              <Link
+                to="/en/audit"
+                className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                statutory audit and assurance
+              </Link>
+              .
             </>
           ),
           bullets: [
@@ -117,8 +144,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         },
         {
           title: "Burn Rate & Runway — the company's lifeline",
-          body:
-            "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, planned expenditure, financing arrangements and management assumptions. We can assist with calculations and scenarios, while fundraising, cost and strategy decisions remain the responsibility of management:",
+          body: "Burn rate and runway are planning measures based on the company’s cash position, expected receipts, planned expenditure, financing arrangements and management assumptions. We can assist with calculations and scenarios, while fundraising, cost and strategy decisions remain the responsibility of management:",
           bullets: [
             "Gross Burn and Net Burn calculations based on the available records and agreed assumptions",
             "Runway simulation across revenue, funding and event scenarios",
@@ -130,8 +156,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         },
         {
           title: "Investor Relations & Board readiness",
-          body:
-            "Clear and consistent financial information can support board discussions. Depending on the agreed scope, services may include preparation of financial materials, review of assumptions, discussion preparation and participation in board or committee meetings. Management remains responsible for the information presented and the decisions made:",
+          body: "Clear and consistent financial information can support board discussions. Depending on the agreed scope, services may include preparation of financial materials, review of assumptions, discussion preparation and participation in board or committee meetings. Management remains responsible for the information presented and the decisions made:",
           bullets: [
             "Monthly / quarterly Board Deck — consistent, professional structure",
             "Cross-sector KPI Dashboard: SaaS, E-Commerce, Marketplace",
@@ -143,8 +168,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         },
         {
           title: "Financial model for fundraising",
-          body:
-            "A financial model can help present management’s assumptions, revenue drivers, expenditure plans, cash requirements and sensitivity scenarios. Models are prepared from information and assumptions supplied or approved by management and do not predict or guarantee actual performance:",
+          body: "A financial model can help present management’s assumptions, revenue drivers, expenditure plans, cash requirements and sensitivity scenarios. Models are prepared from information and assumptions supplied or approved by management and do not predict or guarantee actual performance:",
           bullets: [
             "Revenue engines: SaaS ARR, Transactional Revenue, Marketplace GMV",
             "Cohort Analysis and data-driven Retention Curves",
@@ -156,8 +180,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         },
         {
           title: "Continuous Due Diligence & M&A readiness",
-          body:
-            "Organized financial and tax information may help a company respond more efficiently to financing or transaction requests. Depending on the agreed scope, the firm may assist with periodic organization of available information and coordination with management and the company’s other advisers:",
+          body: "Organized financial and tax information may help a company respond more efficiently to financing or transaction requests. Depending on the agreed scope, the firm may assist with periodic organization of available information and coordination with management and the company’s other advisers:",
           bullets: [
             "Data Room on DocSend / Digify / Google Drive with standard VC folder structure",
             "Periodic organization of available financial records and coordination of supporting documents for due diligence",
@@ -170,8 +193,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         },
         {
           title: "Tailored flexibility for your stage",
-          body:
-            "The level and frequency of CFO involvement are tailored to the company’s stage, reporting needs, transactions and internal resources. The engagement structure, responsibilities and points of contact are agreed in advance, with an emphasis on continuity and orderly knowledge transfer:",
+          body: "The level and frequency of CFO involvement are tailored to the company’s stage, reporting needs, transactions and internal resources. The engagement structure, responsibilities and points of contact are agreed in advance, with an emphasis on continuity and orderly knowledge transfer:",
           bullets: [
             "Engagement terms and fees agreed according to the scope and level of CFO involvement",
             "Project-based: model build, Data Room prep, funding round support",

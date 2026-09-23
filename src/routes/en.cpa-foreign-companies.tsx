@@ -6,22 +6,51 @@ import heroImg from "../assets/service-foreign.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Israeli subsidiary or branch: which structure may suit a foreign company?", a: "A subsidiary and a branch differ in legal status, accounting, tax, employment and reporting. The appropriate structure depends on the planned activity, scale, funding, liability considerations, treaty position and group plans. The firm can assist with the Israeli accounting and tax analysis, while legal aspects should be reviewed with qualified counsel." },
-  { q: "How long does it take to set up an Israeli subsidiary?", a: "The timetable depends on the proposed structure, the completeness of the documents, identification requirements and the processing times of the relevant authorities. Bank-account onboarding for a foreign-owned entity depends on the ownership structure, KYC information, source-of-funds documentation and the bank’s review. The firm can assist with the Israeli accounting and tax information and coordinate with legal and banking professionals within the agreed scope." },
-  { q: "Do you handle Israeli banking regulation?", a: "Bank-account onboarding, incoming funds and foreign-currency activity may require accounting, tax, ownership and source-of-funds information under the bank’s procedures and applicable rules. The firm can assist with preparing the relevant accounting and tax information. Account approval, KYC requirements and banking decisions remain subject to the bank’s review and discretion." },
-  { q: "What is transfer pricing in Israel and why does it matter?", a: "Transfer pricing concerns the pricing and terms of transactions between related parties. The applicable analysis, documentation and filing requirements depend on the entities, transactions, functions, assets, risks and rules in effect for the relevant period. The firm can assist with the Israeli transfer-pricing analysis and documentation within the agreed scope." },
-  { q: "What is permanent establishment risk for a foreign company in Israel?", a: "Permanent-establishment risk depends on the facts, the relevant tax treaty and applicable law, including the nature, duration and authority of the activity in Israel. The position should be reviewed with qualified Israeli and foreign tax and legal advisers. The firm can assist with the Israeli accounting and tax information within the agreed scope." },
-  { q: "Can we pay Israeli developers without opening a branch?", a: "Possible arrangements may include an Employer of Record, engagement with an independent contractor or employment through an Israeli entity. The appropriate arrangement depends on the working relationship, duration and scale of activity, control, classification risk, cost and legal requirements. Each option should be reviewed with qualified employment-law and tax advisers." },
-  { q: "What Israeli tax benefits are available to foreign-owned subsidiaries?", a: "A foreign-owned Israeli company may be eligible for tax-incentive programs or Israel Innovation Authority support, depending on its activity, ownership, program conditions, required approvals and the law in effect at the relevant time. The firm can assist with assessing potential eligibility and preparing the relevant financial and tax information within the agreed scope." },
+  {
+    q: "Israeli subsidiary or branch: which structure may suit a foreign company?",
+    a: "A subsidiary and a branch differ in legal status, accounting, tax, employment and reporting. The appropriate structure depends on the planned activity, scale, funding, liability considerations, treaty position and group plans. The firm can assist with the Israeli accounting and tax analysis, while legal aspects should be reviewed with qualified counsel.",
+  },
+  {
+    q: "How long does it take to set up an Israeli subsidiary?",
+    a: "The timetable depends on the proposed structure, the completeness of the documents, identification requirements and the processing times of the relevant authorities. Bank-account onboarding for a foreign-owned entity depends on the ownership structure, KYC information, source-of-funds documentation and the bank’s review. The firm can assist with the Israeli accounting and tax information and coordinate with legal and banking professionals within the agreed scope.",
+  },
+  {
+    q: "Do you handle Israeli banking regulation?",
+    a: "Bank-account onboarding, incoming funds and foreign-currency activity may require accounting, tax, ownership and source-of-funds information under the bank’s procedures and applicable rules. The firm can assist with preparing the relevant accounting and tax information. Account approval, KYC requirements and banking decisions remain subject to the bank’s review and discretion.",
+  },
+  {
+    q: "What is transfer pricing in Israel and why does it matter?",
+    a: "Transfer pricing concerns the pricing and terms of transactions between related parties. The applicable analysis, documentation and filing requirements depend on the entities, transactions, functions, assets, risks and rules in effect for the relevant period. The firm can assist with the Israeli transfer-pricing analysis and documentation within the agreed scope.",
+  },
+  {
+    q: "What is permanent establishment risk for a foreign company in Israel?",
+    a: "Permanent-establishment risk depends on the facts, the relevant tax treaty and applicable law, including the nature, duration and authority of the activity in Israel. The position should be reviewed with qualified Israeli and foreign tax and legal advisers. The firm can assist with the Israeli accounting and tax information within the agreed scope.",
+  },
+  {
+    q: "Can we pay Israeli developers without opening a branch?",
+    a: "Possible arrangements may include an Employer of Record, engagement with an independent contractor or employment through an Israeli entity. The appropriate arrangement depends on the working relationship, duration and scale of activity, control, classification risk, cost and legal requirements. Each option should be reviewed with qualified employment-law and tax advisers.",
+  },
+  {
+    q: "What Israeli tax benefits are available to foreign-owned subsidiaries?",
+    a: "A foreign-owned Israeli company may be eligible for tax-incentive programs or Israel Innovation Authority support, depending on its activity, ownership, program conditions, required approvals and the law in effect at the relevant time. The firm can assist with assessing potential eligibility and preparing the relevant financial and tax information within the agreed scope.",
+  },
 ];
 
 export const Route = createFileRoute("/en/cpa-foreign-companies")({
   head: () => ({
     meta: [
       { title: "Foreign Companies in Israel | CPA, Tax & Payroll" },
-      { name: "description", content: "Israeli CPA services for foreign companies, including subsidiary-or-branch considerations, payroll, transfer-pricing analysis and reporting. Contact the firm." },
+      {
+        name: "description",
+        content:
+          "Israeli CPA services for foreign companies, including subsidiary-or-branch considerations, payroll, transfer-pricing analysis and reporting. Contact the firm.",
+      },
       { property: "og:title", content: "Foreign Companies in Israel | Nimrodi & Co. CPA" },
-      { property: "og:description", content: "Accounting and tax support for international companies operating in Israel, including structure information, payroll, transfer pricing and reporting. Contact the firm." },
+      {
+        property: "og:description",
+        content:
+          "Accounting and tax support for international companies operating in Israel, including structure information, payroll, transfer pricing and reporting. Contact the firm.",
+      },
       { property: "og:url", content: `${BASE}/en/cpa-foreign-companies` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -38,7 +67,10 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           buildBreadcrumbJsonLd([
             { name: "Home", url: "https://www.nimrodi.co.il/en" },
             { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "Foreign Companies in Israel", url: "https://www.nimrodi.co.il/en/cpa-foreign-companies" },
+            {
+              name: "Foreign Companies in Israel",
+              url: "https://www.nimrodi.co.il/en/cpa-foreign-companies",
+            },
           ]),
         ),
       },
@@ -144,13 +176,17 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
       ]}
-
       govPortals={{
         title: "Foreign Company Registration and Israeli Tax Compliance",
         links: [
-          { label: "Registration of a Foreign Company or Israeli Branch", href: "https://www.gov.il/en/departments/ministry_of_justice" },
-          { label: "Israel Tax Authority: International Taxation and Tax Treaties", href: "https://www.gov.il/en/departments/israel_tax_authority" },
-
+          {
+            label: "Registration of a Foreign Company or Israeli Branch",
+            href: "https://www.gov.il/en/departments/ministry_of_justice",
+          },
+          {
+            label: "Israel Tax Authority: International Taxation and Tax Treaties",
+            href: "https://www.gov.il/en/departments/israel_tax_authority",
+          },
         ],
       }}
       faqs={FAQS}

@@ -1,6 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, CheckCircle2, MessageCircle } from "lucide-react";
-import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
+import {
+  FloatingWhatsAppEn,
+  SiteFooterEn,
+  SiteHeaderEn,
+  WHATSAPP_URL_EN,
+} from "../components/site-chrome-en";
 
 const BASE = "https://www.nimrodi.co.il";
 
@@ -8,9 +13,17 @@ export const Route = createFileRoute("/en/about")({
   head: () => ({
     meta: [
       { title: "About Nimrodi & Co. | CPA Firm in Herzliya Pituach Since 2000" },
-      { name: "description", content: "About Nimrodi & Co. CPA — serving Israeli and international clients from Herzliya Pituach since 2000, with senior-level involvement and boutique-firm attention." },
+      {
+        name: "description",
+        content:
+          "About Nimrodi & Co. CPA — serving Israeli and international clients from Herzliya Pituach since 2000, with senior-level involvement and boutique-firm attention.",
+      },
       { property: "og:title", content: "About Nimrodi & Co." },
-      { property: "og:description", content: "About Nimrodi & Co., a boutique CPA firm in Herzliya Pituach supporting companies, startups and international clients in Israel. Learn more about our firm." },
+      {
+        property: "og:description",
+        content:
+          "About Nimrodi & Co., a boutique CPA firm in Herzliya Pituach supporting companies, startups and international clients in Israel. Learn more about our firm.",
+      },
       { property: "og:url", content: `${BASE}/en/about` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -39,7 +52,10 @@ function AboutEn() {
               Nimrodi & Co. CPA firm in Israel
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">
-              Nimrodi & Co. has operated since 2000 and provides accounting, tax and financial services to companies, founders, individuals and international businesses operating in Israel. Engagement responsibilities, points of contact and service scope are agreed with each client.
+              Nimrodi & Co. has operated since 2000 and provides accounting, tax and financial
+              services to companies, founders, individuals and international businesses operating in
+              Israel. Engagement responsibilities, points of contact and service scope are agreed
+              with each client.
             </p>
           </div>
         </section>
@@ -47,14 +63,20 @@ function AboutEn() {
         <section className="py-16">
           <div className="mx-auto max-w-4xl space-y-12 px-4 sm:px-6">
             <article>
-              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our story</h2>
+              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+                Our story
+              </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Founded by Shlomo Nimrodi, CPA, the firm serves companies, entrepreneurs, executives and individuals in Israel and internationally in areas including technology, professional services, real estate and cross-border activity.
+                Founded by Shlomo Nimrodi, CPA, the firm serves companies, entrepreneurs, executives
+                and individuals in Israel and internationally in areas including technology,
+                professional services, real estate and cross-border activity.
               </p>
             </article>
 
             <article>
-              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Our approach</h2>
+              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+                Our approach
+              </h2>
               <ul className="mt-5 space-y-3">
                 {[
                   "Engagement responsibility. The professional responsible for the engagement is identified according to the agreed scope and working arrangements.",
@@ -72,9 +94,12 @@ function AboutEn() {
             </article>
 
             <article>
-              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">Where we're based</h2>
+              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+                Where we're based
+              </h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Our office is in Herzliya Pituach — the Herzliya Pituach business district, home to many technology campuses. We serve clients across Israel and internationally.
+                Our office is in Herzliya Pituach — the Herzliya Pituach business district, home to
+                many technology campuses. We serve clients across Israel and internationally.
               </p>
             </article>
           </div>
@@ -83,13 +108,23 @@ function AboutEn() {
         <section className="border-t border-border/60 bg-primary py-16 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="font-display text-3xl font-bold sm:text-4xl">Let's talk</h2>
-            <p className="mt-3 text-primary-foreground/80">Introductory consultation, with scope and terms explained in advance.</p>
+            <p className="mt-3 text-primary-foreground/80">
+              Introductory consultation, with scope and terms explained in advance.
+            </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a href={WHATSAPP_URL_EN} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground">
+              <a
+                href={WHATSAPP_URL_EN}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground"
+              >
                 <MessageCircle className="h-5 w-5" aria-hidden />
                 WhatsApp
               </a>
-              <Link to="/en/contact" className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10">
+              <Link
+                to="/en/contact"
+                className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
+              >
                 Contact page
               </Link>
             </div>

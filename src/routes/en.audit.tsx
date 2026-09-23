@@ -6,18 +6,35 @@ import heroImg from "../assets/service-audit.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "How is the applicable financial reporting framework determined?", a: "The applicable financial reporting framework depends on the type of entity, its reporting obligations, relevant regulation and the needs of shareholders, lenders or other stakeholders. Financial statements may be prepared under IFRS, Israeli accounting standards or another applicable framework. The firm performs audit services according to the agreed engagement and relevant professional requirements, while management remains responsible for preparing the financial statements." },
-  { q: "How long does a statutory audit take?", a: "The timetable for a statutory audit depends on the entity’s reporting framework, size and complexity, the completeness of the accounting records and supporting documents, and the availability of management to address questions and provide additional information. At the start of the engagement, the required information and expected work schedule are defined according to the company’s circumstances and the agreed scope." },
-  { q: "What can financial due diligence include for an acquisition, investment or fundraising process?", a: "Financial due diligence may include review of accounting and financial information, revenue and profitability analysis, working-capital considerations, tax matters and preparation or organization of transaction-related information. The procedures are determined by the purpose of the transaction, the available information and the agreed engagement scope. Financial due diligence is separate from a financial-statement audit and does not guarantee identification of every risk or missing item." },
+  {
+    q: "How is the applicable financial reporting framework determined?",
+    a: "The applicable financial reporting framework depends on the type of entity, its reporting obligations, relevant regulation and the needs of shareholders, lenders or other stakeholders. Financial statements may be prepared under IFRS, Israeli accounting standards or another applicable framework. The firm performs audit services according to the agreed engagement and relevant professional requirements, while management remains responsible for preparing the financial statements.",
+  },
+  {
+    q: "How long does a statutory audit take?",
+    a: "The timetable for a statutory audit depends on the entity’s reporting framework, size and complexity, the completeness of the accounting records and supporting documents, and the availability of management to address questions and provide additional information. At the start of the engagement, the required information and expected work schedule are defined according to the company’s circumstances and the agreed scope.",
+  },
+  {
+    q: "What can financial due diligence include for an acquisition, investment or fundraising process?",
+    a: "Financial due diligence may include review of accounting and financial information, revenue and profitability analysis, working-capital considerations, tax matters and preparation or organization of transaction-related information. The procedures are determined by the purpose of the transaction, the available information and the agreed engagement scope. Financial due diligence is separate from a financial-statement audit and does not guarantee identification of every risk or missing item.",
+  },
 ];
 
 export const Route = createFileRoute("/en/audit")({
   head: () => ({
     meta: [
       { title: "Audit and Assurance Services in Israel | Nimrodi & Co. CPA" },
-      { name: "description", content: "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm." },
+      {
+        name: "description",
+        content:
+          "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm.",
+      },
       { property: "og:title", content: "Audit and Assurance in Israel | Nimrodi & Co. CPA" },
-      { property: "og:description", content: "Audit and assurance in Israel for companies and nonprofits, including statutory audits, IFRS reporting, internal controls and financial due diligence. Contact the firm." },
+      {
+        property: "og:description",
+        content:
+          "Audit and assurance in Israel for companies and nonprofits, including statutory audits, IFRS reporting, internal controls and financial due diligence. Contact the firm.",
+      },
       { property: "og:url", content: `${BASE}/en/audit` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -34,7 +51,10 @@ export const Route = createFileRoute("/en/audit")({
           buildBreadcrumbJsonLd([
             { name: "Home", url: "https://www.nimrodi.co.il/en" },
             { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "Audit and Assurance Services in Israel", url: "https://www.nimrodi.co.il/en/audit" },
+            {
+              name: "Audit and Assurance Services in Israel",
+              url: "https://www.nimrodi.co.il/en/audit",
+            },
           ]),
         ),
       },

@@ -176,7 +176,8 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
     ],
     needs: {
       heading: "How Can We Help?",
-      intro: "Choose the topic that best matches your needs to reach the relevant information and services.",
+      intro:
+        "Choose the topic that best matches your needs to reach the relevant information and services.",
       cards: [
         { label: "I have a company or startup", to: "/en/companies" },
         {
@@ -228,7 +229,11 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           { label: "Rental Income", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
           { label: "Employee Tax Refunds", to: "/en/tax-consulting", hash: "employee-tax-refunds" },
           { label: "Self-Employed & Freelancers", to: "/en/cpa-freelancers" },
-          { label: "Services for Guardians", to: "/en/tax-consulting", hash: "guardianship-reporting" },
+          {
+            label: "Services for Guardians",
+            to: "/en/tax-consulting",
+            hash: "guardianship-reporting",
+          },
         ],
       },
       {

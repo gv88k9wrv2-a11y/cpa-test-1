@@ -2,12 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
-import {
-  FloatingWhatsApp,
-  SiteFooter,
-  SiteHeader,
-  WHATSAPP_URL,
-} from "./site-chrome";
+import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "./site-chrome";
 import { LeadForm } from "./lead-form";
 
 import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
@@ -141,7 +136,10 @@ export function ServiceLanding({
                   <ul className="mt-5 space-y-2">
                     {s.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2 text-foreground">
-                        <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-gold-text" aria-hidden />
+                        <CheckCircle2
+                          className="mt-1 h-4 w-4 shrink-0 text-gold-text"
+                          aria-hidden
+                        />
                         <span>{b}</span>
                       </li>
                     ))}
@@ -213,7 +211,7 @@ export function ServiceLanding({
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
-              קבעו שיחת היכרות →
+                קבעו שיחת היכרות →
               </Link>
             </div>
           </div>
@@ -223,7 +221,6 @@ export function ServiceLanding({
       <LeadForm lang="he" />
       <SiteFooter />
       <FloatingWhatsApp />
-      
     </div>
   );
 }

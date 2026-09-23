@@ -67,7 +67,6 @@ const DEPARTMENTS = [
   },
 ];
 
-
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
@@ -80,7 +79,8 @@ export const Route = createFileRoute("/team")({
       { property: "og:title", content: "הצוות של נמרודי ושות׳" },
       {
         property: "og:description",
-        content: "צוות נמרודי ושות׳ כולל רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס והשכר, המלווים חברות, סטארטאפים, חברות זרות ועצמאים.",
+        content:
+          "צוות נמרודי ושות׳ כולל רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס והשכר, המלווים חברות, סטארטאפים, חברות זרות ועצמאים.",
       },
       { property: "og:url", content: "https://www.nimrodi.co.il/team" },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
@@ -91,7 +91,7 @@ export const Route = createFileRoute("/team")({
     links: [
       { rel: "canonical", href: "https://www.nimrodi.co.il/team" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/team" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/team" }
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/team" },
     ],
   }),
   component: TeamPage,
@@ -103,113 +103,117 @@ function TeamPage() {
       <SiteHeader />
 
       <main id="main-content">
-      <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
-            השותף המייסד
+        <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
+          <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
+            <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
+              השותף המייסד
+            </div>
+            <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
+              רו״ח שלמה נמרודי
+            </h1>
+            <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+              רו״ח שלמה נמרודי מלווה חברות, עצמאים ויחידים בנושאי חשבונאות, מס וניהול כספים, בהתאם
+              לצורכי הלקוח ולהיקף ההתקשרות.
+            </p>
           </div>
-          <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            רו״ח שלמה נמרודי
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-            רו״ח שלמה נמרודי מלווה חברות, עצמאים ויחידים בנושאי חשבונאות, מס וניהול כספים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.
-          </p>
-        </div>
-      </section>
+        </section>
 
-      <section className="border-b border-border/60">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-            <img
-              src={teamPhoto}
-              alt="צוות משרד רואי חשבון נמרודי ושות׳ במשרדי המשרד בהרצליה פיתוח"
-              width={1024}
-              height={1024}
-              loading="lazy"
-              decoding="async"
-              className="h-auto w-full object-cover"
-            />
+        <section className="border-b border-border/60">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
+              <img
+                src={teamPhoto}
+                alt="צוות משרד רואי חשבון נמרודי ושות׳ במשרדי המשרד בהרצליה פיתוח"
+                width={1024}
+                height={1024}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full object-cover"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:max-w-md">
-          {TEAM.map((p) => (
-            <article
-              key={p.name}
-              className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
-            >
-              <h2 className="font-display text-xl font-semibold text-primary">
-                {p.name}
-              </h2>
-              <div className="mt-1 text-sm font-medium text-gold-text">{p.role}</div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
-                {p.bio}
-              </p>
-              <ul className="mt-5 space-y-2 border-t border-border pt-4">
-                {p.credentials.map((c) => (
-                  <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
-                    <GraduationCap className="h-3.5 w-3.5 text-gold-text" aria-hidden />
-                    {c}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-5 flex gap-2">
-                <a
-                  href="mailto:office@nimrodi.co.il"
-                  aria-label="שליחת דוא״ל למשרד נמרודי ושות׳"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold-text"
-                >
-                  <Mail className="h-4 w-4" aria-hidden />
-                </a>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
-          <h2 className="text-center font-display text-3xl font-bold text-primary">
-            המחלקות המקצועיות במשרד רואי החשבון
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
-            המחלקות המקצועיות במשרד רואי החשבון פועלות בשיתוף פעולה ומספקות שירותי חשבונאות, מיסוי, שכר וניהול כספים בהתאם לאופי הפעילות ולהיקף ההתקשרות.
-          </p>
-          <div className="mt-10 grid gap-8 md:grid-cols-3">
-            {DEPARTMENTS.map((d) => (
+        <section className="py-16">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:max-w-md">
+            {TEAM.map((p) => (
               <article
-                key={d.name}
+                key={p.name}
                 className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
               >
-                <d.icon className="h-8 w-8 text-gold-text" aria-hidden />
-                <h3 className="mt-4 font-display text-xl font-semibold text-primary">{d.name}</h3>
-                <div className="mt-1 text-sm font-medium text-gold-text">{d.role}</div>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">{d.bio}</p>
+                <h2 className="font-display text-xl font-semibold text-primary">{p.name}</h2>
+                <div className="mt-1 text-sm font-medium text-gold-text">{p.role}</div>
+                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">{p.bio}</p>
                 <ul className="mt-5 space-y-2 border-t border-border pt-4">
-                  {d.credentials.map((c) => (
+                  {p.credentials.map((c) => (
                     <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
                       <GraduationCap className="h-3.5 w-3.5 text-gold-text" aria-hidden />
                       {c}
                     </li>
                   ))}
                 </ul>
+                <div className="mt-5 flex gap-2">
+                  <a
+                    href="mailto:office@nimrodi.co.il"
+                    aria-label="שליחת דוא״ל למשרד נמרודי ושות׳"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition hover:border-gold hover:text-gold-text"
+                  >
+                    <Mail className="h-4 w-4" aria-hidden />
+                  </a>
+                </div>
               </article>
             ))}
           </div>
-        </div>
 
+          <div className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+            <h2 className="text-center font-display text-3xl font-bold text-primary">
+              המחלקות המקצועיות במשרד רואי החשבון
+            </h2>
+            <p className="mx-auto mt-4 max-w-3xl text-center text-muted-foreground">
+              המחלקות המקצועיות במשרד רואי החשבון פועלות בשיתוף פעולה ומספקות שירותי חשבונאות,
+              מיסוי, שכר וניהול כספים בהתאם לאופי הפעילות ולהיקף ההתקשרות.
+            </p>
+            <div className="mt-10 grid gap-8 md:grid-cols-3">
+              {DEPARTMENTS.map((d) => (
+                <article
+                  key={d.name}
+                  className="flex flex-col rounded-2xl border border-border bg-card p-8 shadow-sm transition hover:-translate-y-1 hover:border-gold/50 hover:shadow-lg"
+                >
+                  <d.icon className="h-8 w-8 text-gold-text" aria-hidden />
+                  <h3 className="mt-4 font-display text-xl font-semibold text-primary">{d.name}</h3>
+                  <div className="mt-1 text-sm font-medium text-gold-text">{d.role}</div>
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    {d.bio}
+                  </p>
+                  <ul className="mt-5 space-y-2 border-t border-border pt-4">
+                    {d.credentials.map((c) => (
+                      <li key={c} className="flex items-center gap-2 text-xs text-foreground/80">
+                        <GraduationCap className="h-3.5 w-3.5 text-gold-text" aria-hidden />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </div>
 
-        <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-secondary/40 p-8 text-center">
-          <Award className="mx-auto mb-4 h-10 w-10 text-gold-text" aria-hidden />
-          <h2 className="font-display text-2xl font-bold text-primary">
-            מחפשים להצטרף לצוות?
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
-            המשרד בוחן מעת לעת מועמדים – רואי חשבון, סטודנטים ומנהלי חשבונות – להצטרפות
-            למשרד. שלחו קו״ח ל־<a href="mailto:office@nimrodi.co.il" className="font-semibold text-primary hover:text-gold-text">office@nimrodi.co.il</a>.
-          </p>
-        </div>
-      </section>
+          <div className="mx-auto mt-16 max-w-3xl rounded-2xl border border-border bg-secondary/40 p-8 text-center">
+            <Award className="mx-auto mb-4 h-10 w-10 text-gold-text" aria-hidden />
+            <h2 className="font-display text-2xl font-bold text-primary">מחפשים להצטרף לצוות?</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-muted-foreground">
+              המשרד בוחן מעת לעת מועמדים – רואי חשבון, סטודנטים ומנהלי חשבונות – להצטרפות למשרד.
+              שלחו קו״ח ל־
+              <a
+                href="mailto:office@nimrodi.co.il"
+                className="font-semibold text-primary hover:text-gold-text"
+              >
+                office@nimrodi.co.il
+              </a>
+              .
+            </p>
+          </div>
+        </section>
 
         <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
@@ -230,7 +234,6 @@ function TeamPage() {
             </div>
           </div>
         </section>
-
       </main>
 
       <SiteFooter />
