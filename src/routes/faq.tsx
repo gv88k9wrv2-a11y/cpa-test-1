@@ -122,7 +122,6 @@ const FAQ_LINKS: Record<string, { label: string; to: string; hash?: string }> = 
   },
 };
 
-
 const FAQ_JSONLD = {
   "@context": "https://schema.org",
   "@type": "FAQPage",

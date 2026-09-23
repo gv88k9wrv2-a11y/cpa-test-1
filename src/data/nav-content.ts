@@ -54,7 +54,11 @@ export const INDIVIDUALS_GROUPS_HE: NavGroup[] = [
         to: "/tax-consulting",
         hash: "capital-declarations",
       },
-      { label: "גילוי מרצון ודיווח על נכסים והכנסות", to: "/tax-consulting", hash: "prior-reporting-regularization" },
+      {
+        label: "גילוי מרצון ודיווח על נכסים והכנסות",
+        to: "/tax-consulting",
+        hash: "prior-reporting-regularization",
+      },
       { label: "החזרי מס לשכירים", to: "/tax-consulting", hash: "employee-tax-refunds" },
       { label: "שירותים לאפוטרופוסים", to: "/tax-consulting", hash: "guardianship-reporting" },
     ],
@@ -62,7 +66,11 @@ export const INDIVIDUALS_GROUPS_HE: NavGroup[] = [
   {
     title: "נכסים והכנסות",
     items: [
-      { label: "קריפטו ונכסים דיגיטליים", to: "/tax-consulting", hash: "investments-options-digital-assets" },
+      {
+        label: "קריפטו ונכסים דיגיטליים",
+        to: "/tax-consulting",
+        hash: "investments-options-digital-assets",
+      },
       { label: "הכנסות משכר דירה בישראל", to: "/tax-consulting", hash: "real-estate-tax-israel" },
       { label: "הכנסות משכר דירה בחו״ל", to: "/tax-consulting", hash: "real-estate-tax-israel" },
       { label: "השקעות וניירות ערך", to: "/tax-consulting" },
@@ -167,7 +175,11 @@ export const INDIVIDUALS_GROUPS_EN: NavGroup[] = [
         to: "/en/tax-consulting",
         hash: "capital-declarations",
       },
-      { label: "Voluntary Disclosure and Reporting of Assets and Income", to: "/en/tax-consulting", hash: "prior-reporting-regularization" },
+      {
+        label: "Voluntary Disclosure and Reporting of Assets and Income",
+        to: "/en/tax-consulting",
+        hash: "prior-reporting-regularization",
+      },
       { label: "Employee Tax Refunds", to: "/en/tax-consulting", hash: "employee-tax-refunds" },
       { label: "Services for Guardians", to: "/en/tax-consulting", hash: "guardianship-reporting" },
     ],
@@ -180,7 +192,11 @@ export const INDIVIDUALS_GROUPS_EN: NavGroup[] = [
         to: "/en/tax-consulting",
         hash: "investments-options-digital-assets",
       },
-      { label: "Rental Income in Israel", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
+      {
+        label: "Rental Income in Israel",
+        to: "/en/tax-consulting",
+        hash: "real-estate-tax-israel",
+      },
       { label: "Foreign Rental Income", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
       { label: "Investments & Securities", to: "/en/tax-consulting" },
       { label: "Foreign Income & Foreign Tax Credits", to: "/en/cpa-international" },

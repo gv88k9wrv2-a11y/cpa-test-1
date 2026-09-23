@@ -6,20 +6,43 @@ import heroImg from "../assets/service-freelancers.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "What is the difference between an osek patur and an osek murshe in Israel?", a: "Osek patur and osek murshe are different VAT registration categories for self-employed activity in Israel. The appropriate category depends on the nature of the activity, the applicable turnover threshold, the customer base and the registration rules in effect at the relevant time. The firm can assist with reviewing the available information and preparing the registration documents within the agreed scope." },
-  { q: "Should I operate as a sole proprietor or limited company in Israel?", a: "The comparison depends on the expected income and expenses, the amount the owner plans to withdraw, funds retained for business use, operating costs, legal considerations and future plans. Tax rules that may attribute company income to an individual should also be considered where relevant. Within the agreed scope, the firm can prepare a financial and tax comparison based on the information provided." },
-  { q: "What is an Israeli capital declaration and what does it include?", a: "An Israeli capital declaration is a report of assets, liabilities and related financial information requested by the Israel Tax Authority in certain cases. The required information may cover the individual, the household and relevant holdings in Israel or abroad, according to the request and the applicable instructions. The firm can assist with organizing the supporting records and preparing the declaration based on the information provided." },
-  { q: "How should an Israeli freelancer invoice foreign clients?", a: "Services supplied to a foreign resident may qualify for zero-rate VAT under Section 30(a)(5), subject to the statutory conditions and the circumstances of the service. The invoicing, VAT, currency-conversion and foreign-document requirements depend on the service, customer and applicable rules. The firm can assist with the Israeli accounting and tax aspects and coordinate information with foreign advisers where required." },
-  { q: "What is an Israeli pocket company and when may Section 62A apply?", a: "Section 62A of the Israeli Income Tax Ordinance targets one-person companies used to shelter what is effectively employment income. Where the section applies, income may be attributed to the individual shareholder, which can change the effective tax outcome depending on the facts and the rules in force. We help review the relevant factors — client base, business risk, independence and documentation — based on the information provided." },
+  {
+    q: "What is the difference between an osek patur and an osek murshe in Israel?",
+    a: "Osek patur and osek murshe are different VAT registration categories for self-employed activity in Israel. The appropriate category depends on the nature of the activity, the applicable turnover threshold, the customer base and the registration rules in effect at the relevant time. The firm can assist with reviewing the available information and preparing the registration documents within the agreed scope.",
+  },
+  {
+    q: "Should I operate as a sole proprietor or limited company in Israel?",
+    a: "The comparison depends on the expected income and expenses, the amount the owner plans to withdraw, funds retained for business use, operating costs, legal considerations and future plans. Tax rules that may attribute company income to an individual should also be considered where relevant. Within the agreed scope, the firm can prepare a financial and tax comparison based on the information provided.",
+  },
+  {
+    q: "What is an Israeli capital declaration and what does it include?",
+    a: "An Israeli capital declaration is a report of assets, liabilities and related financial information requested by the Israel Tax Authority in certain cases. The required information may cover the individual, the household and relevant holdings in Israel or abroad, according to the request and the applicable instructions. The firm can assist with organizing the supporting records and preparing the declaration based on the information provided.",
+  },
+  {
+    q: "How should an Israeli freelancer invoice foreign clients?",
+    a: "Services supplied to a foreign resident may qualify for zero-rate VAT under Section 30(a)(5), subject to the statutory conditions and the circumstances of the service. The invoicing, VAT, currency-conversion and foreign-document requirements depend on the service, customer and applicable rules. The firm can assist with the Israeli accounting and tax aspects and coordinate information with foreign advisers where required.",
+  },
+  {
+    q: "What is an Israeli pocket company and when may Section 62A apply?",
+    a: "Section 62A of the Israeli Income Tax Ordinance targets one-person companies used to shelter what is effectively employment income. Where the section applies, income may be attributed to the individual shareholder, which can change the effective tax outcome depending on the facts and the rules in force. We help review the relevant factors — client base, business risk, independence and documentation — based on the information provided.",
+  },
 ];
 
 export const Route = createFileRoute("/en/cpa-freelancers")({
   head: () => ({
     meta: [
       { title: "CPA for Freelancers and Independent Businesses in Israel | Nimrodi" },
-      { name: "description", content: "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm." },
+      {
+        name: "description",
+        content:
+          "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm.",
+      },
       { property: "og:title", content: "CPA for Freelancers in Israel | Nimrodi & Co." },
-      { property: "og:description", content: "Accounting and tax support for freelancers, consultants and independent businesses in Israel, including registration, filings and annual returns. Contact the firm." },
+      {
+        property: "og:description",
+        content:
+          "Accounting and tax support for freelancers, consultants and independent businesses in Israel, including registration, filings and annual returns. Contact the firm.",
+      },
       { property: "og:url", content: `${BASE}/en/cpa-freelancers` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -36,7 +59,10 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           buildBreadcrumbJsonLd([
             { name: "Home", url: "https://www.nimrodi.co.il/en" },
             { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "CPA for Freelancers and Independent Businesses in Israel", url: "https://www.nimrodi.co.il/en/cpa-freelancers" },
+            {
+              name: "CPA for Freelancers and Independent Businesses in Israel",
+              url: "https://www.nimrodi.co.il/en/cpa-freelancers",
+            },
           ]),
         ),
       },

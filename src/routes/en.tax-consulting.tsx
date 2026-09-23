@@ -18,19 +18,42 @@ const TOPIC_SECTIONS = TAX_TOPICS.en
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "What is an Israeli advance tax ruling and when should it be considered?", a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear." },
-  { q: "Can you assist with Israeli crypto tax reporting and compliance?", a: "Yes — tax, documentation and compliance support relating to crypto-derived funds and their presentation to financial institutions, subject to the institution's requirements and applicable law." },
-  { q: "What options may exist for correcting prior Israeli tax reporting?", a: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations may vary depending on status, residence, citizenship, account location and applicable rules." },
-  { q: "Can the firm assist with the tax analysis of a corporate reorganization?", a: "We assist with Israeli tax analysis for corporate reorganizations that may qualify for tax deferral under the applicable provisions of Part E2 of the Income Tax Ordinance, including certain mergers, demergers and asset or share transfers, subject to the statutory conditions and the facts of the proposed transaction." },
+  {
+    q: "What is an Israeli advance tax ruling and when should it be considered?",
+    a: "Assistance in assessing and preparing applications for advance tax rulings, where appropriate, together with the relevant supporting materials — typically considered when tax exposure is material and precedent is unclear.",
+  },
+  {
+    q: "Can you assist with Israeli crypto tax reporting and compliance?",
+    a: "Yes — tax, documentation and compliance support relating to crypto-derived funds and their presentation to financial institutions, subject to the institution's requirements and applicable law.",
+  },
+  {
+    q: "What options may exist for correcting prior Israeli tax reporting?",
+    a: "Assistance in assessing available options for correcting or regularizing prior reporting, subject to the applicable law and arrangements available at the relevant time. Cross-border reporting obligations may vary depending on status, residence, citizenship, account location and applicable rules.",
+  },
+  {
+    q: "Can the firm assist with the tax analysis of a corporate reorganization?",
+    a: "We assist with Israeli tax analysis for corporate reorganizations that may qualify for tax deferral under the applicable provisions of Part E2 of the Income Tax Ordinance, including certain mergers, demergers and asset or share transfers, subject to the statutory conditions and the facts of the proposed transaction.",
+  },
 ];
 
 export const Route = createFileRoute("/en/tax-consulting")({
   head: () => ({
     meta: [
       { title: "Israeli Tax Advisory and Crypto Reporting | Nimrodi & Co." },
-      { name: "description", content: "Israeli tax advisory for companies and individuals, including tax-ruling requests, digital-asset reporting, assessments and objections. Contact the firm." },
-      { property: "og:title", content: "Israeli Tax Advisory and Digital Asset Reporting | Nimrodi & Co." },
-      { property: "og:description", content: "Israeli tax advisory from a Herzliya Pituach CPA firm, including tax-ruling requests, digital-asset reporting and support during assessments and objections." },
+      {
+        name: "description",
+        content:
+          "Israeli tax advisory for companies and individuals, including tax-ruling requests, digital-asset reporting, assessments and objections. Contact the firm.",
+      },
+      {
+        property: "og:title",
+        content: "Israeli Tax Advisory and Digital Asset Reporting | Nimrodi & Co.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Israeli tax advisory from a Herzliya Pituach CPA firm, including tax-ruling requests, digital-asset reporting and support during assessments and objections.",
+      },
       { property: "og:url", content: `${BASE}/en/tax-consulting` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -47,7 +70,10 @@ export const Route = createFileRoute("/en/tax-consulting")({
           buildBreadcrumbJsonLd([
             { name: "Home", url: "https://www.nimrodi.co.il/en" },
             { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "Israeli Tax Advisory and Crypto Reporting", url: "https://www.nimrodi.co.il/en/tax-consulting" },
+            {
+              name: "Israeli Tax Advisory and Crypto Reporting",
+              url: "https://www.nimrodi.co.il/en/tax-consulting",
+            },
           ]),
         ),
       },
@@ -91,7 +117,11 @@ export const Route = createFileRoute("/en/tax-consulting")({
           title: "Taxation of investments, options and digital assets",
           body: (
             <>
-              Digital-asset transactions may have Israeli tax and reporting implications depending on the activity, transaction facts and applicable law. Within the agreed scope, the firm may assist with organizing accounting and tax information for reporting and for review by financial institutions, subject to each institution’s requirements and final decision.
+              Digital-asset transactions may have Israeli tax and reporting implications depending
+              on the activity, transaction facts and applicable law. Within the agreed scope, the
+              firm may assist with organizing accounting and tax information for reporting and for
+              review by financial institutions, subject to each institution’s requirements and final
+              decision.
             </>
           ),
           bullets: [

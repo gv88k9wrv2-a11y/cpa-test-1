@@ -54,9 +54,7 @@ export function GovPortalLinks({ title, links, lang = "he" }: GovPortalLinksProp
                     className="mt-0.5 h-4 w-4 shrink-0 text-primary/70 group-hover:text-gold"
                     aria-hidden
                   />
-                  <span className="flex-1 text-foreground group-hover:text-primary">
-                    {l.label}
-                  </span>
+                  <span className="flex-1 text-foreground group-hover:text-primary">{l.label}</span>
                   <ExternalLink
                     className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground group-hover:text-gold"
                     aria-label={externalLabel}

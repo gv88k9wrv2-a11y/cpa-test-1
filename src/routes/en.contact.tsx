@@ -1,7 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
-import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "../components/site-chrome-en";
+import {
+  FloatingWhatsAppEn,
+  SiteFooterEn,
+  SiteHeaderEn,
+  WHATSAPP_URL_EN,
+} from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";
 
 const BASE = "https://www.nimrodi.co.il";
@@ -10,9 +15,17 @@ export const Route = createFileRoute("/en/contact")({
   head: () => ({
     meta: [
       { title: "Contact Nimrodi & Co. | CPA Firm in Herzliya Pituach" },
-      { name: "description", content: "Contact Nimrodi & Co. in Herzliya Pituach for an introductory discussion about accounting, tax, payroll, audit and ongoing financial services in Israel today." },
+      {
+        name: "description",
+        content:
+          "Contact Nimrodi & Co. in Herzliya Pituach for an introductory discussion about accounting, tax, payroll, audit and ongoing financial services in Israel today.",
+      },
       { property: "og:title", content: "Contact Nimrodi & Co." },
-      { property: "og:description", content: "Contact Nimrodi & Co. CPA in Herzliya Pituach to discuss accounting, tax, payroll, audit or reporting needs for a company or business in Israel." },
+      {
+        property: "og:description",
+        content:
+          "Contact Nimrodi & Co. CPA in Herzliya Pituach to discuss accounting, tax, payroll, audit or reporting needs for a company or business in Israel.",
+      },
       { property: "og:url", content: `${BASE}/en/contact` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -33,16 +46,27 @@ function ContactEn() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
-            <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">Contact Our CPA Firm in Herzliya Pituach</h1>
+            <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
+              Contact Our CPA Firm in Herzliya Pituach
+            </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-              Contact Nimrodi & Co. for an introductory discussion about accounting, tax, payroll, audit, and financial reporting services in Israel.
+              Contact Nimrodi & Co. for an introductory discussion about accounting, tax, payroll,
+              audit, and financial reporting services in Israel.
             </p>
           </div>
         </section>
         <section className="border-b border-border/60">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-              <img src={heroImg} alt="Reception area at the Nimrodi & Co. CPA office in Herzliya Pituach" width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
+              <img
+                src={heroImg}
+                alt="Reception area at the Nimrodi & Co. CPA office in Herzliya Pituach"
+                width={1024}
+                height={1024}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -50,8 +74,18 @@ function ContactEn() {
         <section className="py-16">
           <div className="mx-auto grid max-w-4xl gap-4 px-4 sm:grid-cols-2 sm:px-6">
             <InfoCard icon={Phone} label="Phone" value="+972-9-9582211" href="tel:+97299582211" />
-            <InfoCard icon={MessageCircle} label="WhatsApp" value="+972-54-6688681" href={WHATSAPP_URL_EN} />
-            <InfoCard icon={Mail} label="Email" value="office@nimrodi.co.il" href="mailto:office@nimrodi.co.il" />
+            <InfoCard
+              icon={MessageCircle}
+              label="WhatsApp"
+              value="+972-54-6688681"
+              href={WHATSAPP_URL_EN}
+            />
+            <InfoCard
+              icon={Mail}
+              label="Email"
+              value="office@nimrodi.co.il"
+              href="mailto:office@nimrodi.co.il"
+            />
             <InfoCard
               icon={MapPin}
               label="Office"
@@ -61,8 +95,12 @@ function ContactEn() {
             <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-6">
               <Clock className="mt-1 h-5 w-5 text-gold-text" aria-hidden />
               <div>
-                <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Business Hours</div>
-                <div className="mt-1 text-lg font-semibold text-primary">Sun–Thu · 9:00 AM–6:00 PM</div>
+                <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Business Hours
+                </div>
+                <div className="mt-1 text-lg font-semibold text-primary">
+                  Sun–Thu · 9:00 AM–6:00 PM
+                </div>
               </div>
             </div>
           </div>
@@ -96,7 +134,9 @@ function InfoCard({
     >
       <Icon className="mt-1 h-5 w-5 text-gold-text" aria-hidden />
       <div>
-        <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</div>
+        <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {label}
+        </div>
         <div className="mt-1 text-lg font-semibold text-primary">{value}</div>
       </div>
     </a>

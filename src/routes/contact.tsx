@@ -28,7 +28,7 @@ export const Route = createFileRoute("/contact")({
     links: [
       { rel: "canonical", href: "https://www.nimrodi.co.il/contact" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/contact" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/contact" }
+      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/contact" },
     ],
   }),
   component: ContactPage,
@@ -40,67 +40,69 @@ function ContactPage() {
       <SiteHeader />
 
       <main id="main-content">
-      <section className="border-b border-border/60 bg-secondary/40">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-          <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
-            צור קשר
+        <section className="border-b border-border/60 bg-secondary/40">
+          <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
+            <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
+              צור קשר
+            </div>
+            <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
+              פנו אלינו לבירור חשבונאי, מיסויי או פיננסי
+            </h1>
+            <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
+              אפשר להשאיר פרטים ולתאר בקצרה את הנושא. ניתן לפנות גם בטלפון, בוואטסאפ או בדוא״ל
+              באמצעות פרטי הקשר המופיעים בעמוד.
+            </p>
           </div>
-          <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
-            פנו אלינו לבירור חשבונאי, מיסויי או פיננסי
-          </h1>
-          <p className="mx-auto mt-5 max-w-xl text-lg text-muted-foreground">
-            אפשר להשאיר פרטים ולתאר בקצרה את הנושא. ניתן לפנות גם בטלפון, בוואטסאפ או בדוא״ל באמצעות פרטי הקשר המופיעים בעמוד.
-          </p>
-        </div>
-      </section>
-      <section className="border-b border-border/60">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
-            <img src={heroImg} alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח" width={1024} height={1024} loading="lazy" decoding="async" className="h-auto w-full object-cover" />
+        </section>
+        <section className="border-b border-border/60">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="overflow-hidden rounded-2xl border border-border shadow-xl">
+              <img
+                src={heroImg}
+                alt="קבלת אורחים במשרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח"
+                width={1024}
+                height={1024}
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-full object-cover"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-
-      <section className="py-16">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <div className="space-y-4">
-            <ContactCard
-              icon={Phone}
-              title="טלפון"
-              value="09-9582211"
-              href="tel:099582211"
-            />
-            <ContactCard
-              icon={MessageCircle}
-              title="וואטסאפ"
-              value="054-6688681"
-              href={WHATSAPP_URL}
-              accent
-            />
-            <ContactCard
-              icon={Mail}
-              title="דוא״ל"
-              value="office@nimrodi.co.il"
-              href="mailto:office@nimrodi.co.il"
-            />
-            <ContactCard
-              icon={MapPin}
-              title="כתובת המשרד בהרצליה פיתוח"
-              value="גלגלי הפלדה 16, הרצליה פיתוח"
-              href="https://www.google.com/maps/search/?api=1&query=גלגלי+הפלדה+16+הרצליה+פיתוח"
-            />
-            <ContactCard
-              icon={Clock}
-              title="שעות מענה משרדיות"
-              value="ימים א׳–ה׳ · 09:00–18:00"
-            />
+        <section className="py-16">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6">
+            <div className="space-y-4">
+              <ContactCard icon={Phone} title="טלפון" value="09-9582211" href="tel:099582211" />
+              <ContactCard
+                icon={MessageCircle}
+                title="וואטסאפ"
+                value="054-6688681"
+                href={WHATSAPP_URL}
+                accent
+              />
+              <ContactCard
+                icon={Mail}
+                title="דוא״ל"
+                value="office@nimrodi.co.il"
+                href="mailto:office@nimrodi.co.il"
+              />
+              <ContactCard
+                icon={MapPin}
+                title="כתובת המשרד בהרצליה פיתוח"
+                value="גלגלי הפלדה 16, הרצליה פיתוח"
+                href="https://www.google.com/maps/search/?api=1&query=גלגלי+הפלדה+16+הרצליה+פיתוח"
+              />
+              <ContactCard
+                icon={Clock}
+                title="שעות מענה משרדיות"
+                value="ימים א׳–ה׳ · 09:00–18:00"
+              />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <LeadForm lang="he" />
-
+        <LeadForm lang="he" />
       </main>
 
       <SiteFooter />
@@ -108,7 +110,6 @@ function ContactPage() {
     </div>
   );
 }
-
 
 function ContactCard({
   icon: Icon,

@@ -210,7 +210,6 @@ export function SiteHeaderEn() {
             </span>
           </Link>
 
-
           <nav
             ref={navRef}
             aria-label="Main navigation"
@@ -239,7 +238,6 @@ export function SiteHeaderEn() {
               Contact
             </Link>
           </nav>
-
 
           <div className="flex shrink-0 items-center gap-1 sm:gap-2">
             <a
@@ -336,10 +334,7 @@ function MegaMenuEn({
         className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
         {label}
-        <ChevronDown
-          className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`}
-          aria-hidden
-        />
+        <ChevronDown className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`} aria-hidden />
       </button>
       <div
         id={id}
@@ -426,10 +421,7 @@ function DropdownEn({
         className="inline-flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2 hover:text-primary"
       >
         {label}
-        <ChevronDown
-          className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`}
-          aria-hidden
-        />
+        <ChevronDown className={`h-3.5 w-3.5 transition ${open ? "rotate-180" : ""}`} aria-hidden />
       </button>
       <div
         id={id}
@@ -471,7 +463,11 @@ const MOBILE_INDIVIDUALS_EN: NavItem[] = [
     to: "/en/tax-consulting",
     hash: "annual-tax-returns-individuals",
   },
-  { label: "Crypto & Digital Assets", to: "/en/tax-consulting", hash: "investments-options-digital-assets" },
+  {
+    label: "Crypto & Digital Assets",
+    to: "/en/tax-consulting",
+    hash: "investments-options-digital-assets",
+  },
   { label: "Rental Income", to: "/en/tax-consulting", hash: "real-estate-tax-israel" },
   { label: "Relocation & Tax Residency", to: "/en/cpa-international" },
   { label: "Self-Employed & Freelancers", to: "/en/cpa-freelancers" },
@@ -667,7 +663,6 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
     </div>
   );
 }
-
 
 export function SiteFooterEn() {
   return (

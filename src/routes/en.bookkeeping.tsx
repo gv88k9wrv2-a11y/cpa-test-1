@@ -6,18 +6,35 @@ import heroImg from "../assets/service-bookkeeping.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 const FAQS = [
-  { q: "Which bookkeeping and accounting software do you support in Israel?", a: "We work with Israeli and international bookkeeping and accounting platforms. The appropriate software and setup depend on the company’s activity, Israeli reporting requirements, existing systems, and the agreed service scope." },
-  { q: "Can you transfer our Israeli bookkeeping from another provider?", a: "We can assist with transferring Israeli bookkeeping from another provider, including reviewing opening balances, historical reconciliations, and available accounting records. The process depends on the completeness and quality of the information received." },
-  { q: "Does the firm prepare Israeli VAT and withholding tax reports?", a: "The service may include preparing periodic Israeli VAT, withholding tax, and employer reports, together with year-end reconciliations, according to the applicable reporting obligations and agreed scope." },
+  {
+    q: "Which bookkeeping and accounting software do you support in Israel?",
+    a: "We work with Israeli and international bookkeeping and accounting platforms. The appropriate software and setup depend on the company’s activity, Israeli reporting requirements, existing systems, and the agreed service scope.",
+  },
+  {
+    q: "Can you transfer our Israeli bookkeeping from another provider?",
+    a: "We can assist with transferring Israeli bookkeeping from another provider, including reviewing opening balances, historical reconciliations, and available accounting records. The process depends on the completeness and quality of the information received.",
+  },
+  {
+    q: "Does the firm prepare Israeli VAT and withholding tax reports?",
+    a: "The service may include preparing periodic Israeli VAT, withholding tax, and employer reports, together with year-end reconciliations, according to the applicable reporting obligations and agreed scope.",
+  },
 ];
 
 export const Route = createFileRoute("/en/bookkeeping")({
   head: () => ({
     meta: [
       { title: "Bookkeeping for Companies in Israel | Nimrodi & Co. CPA" },
-      { name: "description", content: "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT reporting and management reports. Contact the firm." },
+      {
+        name: "description",
+        content:
+          "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT reporting and management reports. Contact the firm.",
+      },
       { property: "og:title", content: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
-      { property: "og:description", content: "Cloud bookkeeping and periodic reporting for companies and startups in Israel, including VAT, withholding and management reports. Contact the firm." },
+      {
+        property: "og:description",
+        content:
+          "Cloud bookkeeping and periodic reporting for companies and startups in Israel, including VAT, withholding and management reports. Contact the firm.",
+      },
       { property: "og:url", content: `${BASE}/en/bookkeeping` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -34,7 +51,10 @@ export const Route = createFileRoute("/en/bookkeeping")({
           buildBreadcrumbJsonLd([
             { name: "Home", url: "https://www.nimrodi.co.il/en" },
             { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "Bookkeeping for Companies in Israel", url: "https://www.nimrodi.co.il/en/bookkeeping" },
+            {
+              name: "Bookkeeping for Companies in Israel",
+              url: "https://www.nimrodi.co.il/en/bookkeeping",
+            },
           ]),
         ),
       },

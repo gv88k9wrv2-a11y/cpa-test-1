@@ -17,7 +17,8 @@ export const Route = createFileRoute("/en/blog/")({
       { property: "og:title", content: "Accounting and Tax Insights | Nimrodi & Co. CPA" },
       {
         property: "og:description",
-        content: "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and crypto and digital assets. Explore the available posts.",
+        content:
+          "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and crypto and digital assets. Explore the available posts.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: CANONICAL },
@@ -54,7 +55,8 @@ function BlogIndexEn() {
               Accounting and tax insights for businesses in Israel
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-              Practical guides and analysis on Israeli accounting, taxation, reporting, startups, foreign companies, and digital assets.
+              Practical guides and analysis on Israeli accounting, taxation, reporting, startups,
+              foreign companies, and digital assets.
             </p>
           </div>
         </section>
@@ -101,7 +103,9 @@ function BlogIndexEn() {
         </section>
         <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <h2 className="font-display text-2xl font-bold sm:text-3xl">Have a question about your own activity?</h2>
+            <h2 className="font-display text-2xl font-bold sm:text-3xl">
+              Have a question about your own activity?
+            </h2>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
                 to="/en/contact"
@@ -118,7 +122,6 @@ function BlogIndexEn() {
             </div>
           </div>
         </section>
-
       </main>
 
       <SiteFooterEn />

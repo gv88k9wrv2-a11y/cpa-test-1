@@ -1,12 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, CheckCircle2, MessageCircle, Sparkles } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "./site-chrome";
-import {
-  FloatingWhatsAppEn,
-  SiteFooterEn,
-  SiteHeaderEn,
-  WHATSAPP_URL_EN,
-} from "./site-chrome-en";
+import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "./site-chrome-en";
 import { ExecutiveTestimonials } from "./social-proof";
 import { HOME_CONTENT } from "../data/home-content";
 import heroImage from "../assets/hero-office.webp";
@@ -98,7 +93,6 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
               <div
                 className={`flex flex-col sm:mt-8 sm:gap-3 ${isHe ? "mt-6 gap-3" : "mt-5 gap-2.5"}`}
               >
-
                 <div
                   className={`flex w-full flex-col sm:flex-row sm:items-stretch sm:gap-3 ${
                     isHe ? "gap-3" : "gap-2.5"

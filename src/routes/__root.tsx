@@ -28,7 +28,6 @@ function NotFoundComponent() {
       dir={en ? "ltr" : "rtl"}
     >
       <div className="max-w-md text-center">
-
         <p className="text-sm font-semibold uppercase tracking-widest text-gold-text">404</p>
         <h1 className="mt-3 font-display text-4xl font-bold text-primary">
           {en ? "Page not found" : "לא מצאנו את העמוד המבוקש"}
@@ -55,7 +54,6 @@ function NotFoundComponent() {
       </div>
     </main>
   );
-
 }
 
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
@@ -68,9 +66,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4" dir="rtl">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">
-          הדף לא נטען
-        </h1>
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">הדף לא נטען</h1>
         <p className="mt-2 text-sm text-muted-foreground">
           משהו השתבש. אפשר לרענן או לחזור לדף הבית.
         </p>
@@ -143,7 +139,6 @@ const ORG_JSONLD = {
   sameAs: ["https://maps.app.goo.gl/jxWz9287qp3QRVFg8"],
 };
 
-
 const WEBSITE_JSONLD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -152,10 +147,6 @@ const WEBSITE_JSONLD = {
   inLanguage: "he-IL",
   publisher: { "@type": "Organization", name: "נמרודי ושות׳ – רואי חשבון" },
 };
-
-
-
-
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -171,10 +162,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { title: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
       { property: "og:title", content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
-      { name: "twitter:title", content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
-      { name: "description", content: "משרד רואי חשבון בהרצליה פיתוח המלווה חברות, סטארטאפים, חברות זרות ועצמאים בהנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס בהיקף מוסכם. מוזמנים ליצור איתנו קשר." },
-      { property: "og:description", content: "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת ומס לחברות, סטארטאפים וחברות זרות, בהתאם לצורכי הדיווח ולהיקף ההתקשרות." },
-      { name: "twitter:description", content: "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת, מס ודיווח על נכסים דיגיטליים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות." },
+      {
+        name: "twitter:title",
+        content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות",
+      },
+      {
+        name: "description",
+        content:
+          "משרד רואי חשבון בהרצליה פיתוח המלווה חברות, סטארטאפים, חברות זרות ועצמאים בהנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס בהיקף מוסכם. מוזמנים ליצור איתנו קשר.",
+      },
+      {
+        property: "og:description",
+        content:
+          "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת ומס לחברות, סטארטאפים וחברות זרות, בהתאם לצורכי הדיווח ולהיקף ההתקשרות.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת, מס ודיווח על נכסים דיגיטליים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.",
+      },
       { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
@@ -198,10 +204,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify(WEBSITE_JSONLD),
       },
 
-
-
       ...(GA_ENABLED
-
         ? [
             {
               src: `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`,
@@ -246,23 +249,24 @@ function RootComponent() {
     if (typeof window === "undefined") return;
     const origin = window.location.origin;
     if (origin === DEFAULT_ORIGIN) return;
-    document.querySelectorAll<HTMLScriptElement>('script[type="application/ld+json"]').forEach((el) => {
-      if (!el.textContent?.includes("AccountingService")) return;
-      try {
-        const data = JSON.parse(el.textContent) as Record<string, unknown>;
-        if (data["@type"] !== "AccountingService") return;
-        data.url = origin;
-        data["@id"] = `${origin}/#website`;
-        data.image = `${origin}/og-image.jpg`;
-        el.textContent = JSON.stringify(data);
-      } catch {
-        /* ignore */
-      }
-    });
+    document
+      .querySelectorAll<HTMLScriptElement>('script[type="application/ld+json"]')
+      .forEach((el) => {
+        if (!el.textContent?.includes("AccountingService")) return;
+        try {
+          const data = JSON.parse(el.textContent) as Record<string, unknown>;
+          if (data["@type"] !== "AccountingService") return;
+          data.url = origin;
+          data["@id"] = `${origin}/#website`;
+          data.image = `${origin}/og-image.jpg`;
+          el.textContent = JSON.stringify(data);
+        } catch {
+          /* ignore */
+        }
+      });
   }, []);
 
   useEffect(() => {
-
     if (!GA_ENABLED || typeof window === "undefined") return;
     const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
     const page_path = window.location.pathname + window.location.search;

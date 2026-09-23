@@ -49,7 +49,7 @@ export const Route = createFileRoute("/")({
       { rel: "canonical", href: "https://www.nimrodi.co.il/" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/" },
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en" },
-      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/" }
+      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/" },
     ],
     scripts: [
       {
