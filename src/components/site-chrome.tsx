@@ -91,7 +91,7 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
     items: [
       {
         to: "/fractional-cfo",
-        label: "ניהול כספים ו-Fractional CFO",
+        label: "ניהול כספים במיקור חוץ (Fractional CFO)",
         desc: "תקציב · תזרים · Burn ו-Runway · דיווח ניהולי",
         icon: LineChart,
       },
@@ -459,7 +459,7 @@ const MOBILE_COMPANIES: NavItem[] = [
   { label: "סטארטאפים וחברות טכנולוגיה", to: "/cpa-startups" },
   { label: "חברות זרות הפועלות בישראל", to: "/cpa-foreign-companies" },
   { label: "ביקורת והנהלת חשבונות", to: "/audit" },
-  { label: "Fractional CFO וניהול כספים", to: "/fractional-cfo" },
+  { label: "מנהל כספים במיקור חוץ (Fractional CFO)", to: "/fractional-cfo" },
   { label: "לכל השירותים לחברות וסטארטאפים", to: "/companies" },
 ];
 

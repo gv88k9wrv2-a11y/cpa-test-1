@@ -217,7 +217,7 @@ export const Route = createFileRoute("/cpa-startups")({
           ],
         },
         {
-          title: "Fractional CFO – תקציב, תזרים ודיווח ניהולי",
+          title: "מנהל כספים במיקור חוץ (Fractional CFO) – תקציב, תזרים ודיווח ניהולי",
           body: (
             <>
               חברות בשלבי צמיחה עשויות להידרש לתמיכה פיננסית בכירה עוד לפני מינוי CFO במשרה מלאה.
@@ -226,7 +226,7 @@ export const Route = createFileRoute("/cpa-startups")({
                 to="/fractional-cfo"
                 className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
               >
-                Fractional CFO
+                מנהל כספים במיקור חוץ (Fractional CFO)
               </Link>
               . חברות עם פעילות בין־לאומית יכולות לבחון גם{" "}
               <Link

@@ -39,7 +39,7 @@ const GROUPS: ServiceGroup[] = [
     items: [
       {
         to: "/fractional-cfo",
-        label: "ניהול כספים במיקור חוץ ו-Fractional CFO",
+        label: "ניהול כספים במיקור חוץ (Fractional CFO)",
         icon: ChartLine,
         desc: "תקציב, תזרים, מדדי Burn ו־Runway, מודלים פיננסיים ומידע ניהולי לדירקטוריון ולמשקיעים.",
       },

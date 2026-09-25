@@ -197,7 +197,7 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
                   to="/fractional-cfo"
                   className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
                 >
-                  Fractional CFO
+                  מנהל כספים במיקור חוץ (Fractional CFO)
                 </Link>{" "}
                 בישראל.
               </p>

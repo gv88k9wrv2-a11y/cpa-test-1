@@ -1084,7 +1084,10 @@ export const BLOG_POSTS: BlogPost[] = [
       "wallet-companies-section-62a-profitability-israel",
       "startup-taxation-overview",
     ],
-    relatedService: { href: "/fractional-cfo", label: "ניהול כספים ו־Fractional CFO" },
+    relatedService: {
+      href: "/fractional-cfo",
+      label: "ניהול כספים במיקור חוץ (Fractional CFO)",
+    },
     faqs: [
       {
         q: "האם תמיד עדיף למשוך דיבידנד במקום שכר?",
