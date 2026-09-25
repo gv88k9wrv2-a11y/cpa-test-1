@@ -82,7 +82,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           { label: "הנהלת חשבונות", to: "/bookkeeping" },
           { label: "חשבות שכר", to: "/payroll" },
           { label: "סטארטאפים וחברות טכנולוגיה", to: "/cpa-startups" },
-          { label: "Fractional CFO וניהול כספים", to: "/fractional-cfo" },
+          { label: "מנהל כספים במיקור חוץ (Fractional CFO)", to: "/fractional-cfo" },
         ],
       },
       {

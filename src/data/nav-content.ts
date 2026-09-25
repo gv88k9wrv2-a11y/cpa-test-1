@@ -26,7 +26,7 @@ export const COMPANIES_GROUPS_HE: NavGroup[] = [
   {
     title: "ניהול כספים וצמיחה",
     items: [
-      { label: "Fractional CFO וניהול כספים", to: "/fractional-cfo" },
+      { label: "מנהל כספים במיקור חוץ (Fractional CFO)", to: "/fractional-cfo" },
       { label: "תקציב, תזרים ודיווח ניהולי", to: "/fractional-cfo" },
       { label: "ליווי סטארטאפים וגיוסי הון", to: "/cpa-startups" },
       { label: "בדיקות נאותות ו-M&A", to: "/fractional-cfo" },
@@ -105,7 +105,7 @@ export const SERVICES_GROUPS_HE: NavGroup[] = [
       { label: "חשבות שכר", to: "/payroll" },
       { label: "ייעוץ מס", to: "/tax-consulting" },
       { label: "מיסוי בין־לאומי", to: "/cpa-international" },
-      { label: "Fractional CFO וניהול כספים", to: "/fractional-cfo" },
+      { label: "מנהל כספים במיקור חוץ (Fractional CFO)", to: "/fractional-cfo" },
       { label: "רואה חשבון בהרצליה פיתוח", to: "/cpa-herzliya" },
       { label: "לכל השירותים", to: "/services" },
     ],
