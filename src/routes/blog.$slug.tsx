@@ -2,7 +2,8 @@ import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-route
 import { ArrowRight, CalendarDays, Clock, MessageCircle } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
-import { buildBreadcrumbJsonLd, toMetaDescription } from "../lib/meta";
+import { AUTHOR_PERSON_REF, buildBreadcrumbJsonLd, toMetaDescription } from "../lib/meta";
+import { SummaryBox } from "../components/page-summary";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
