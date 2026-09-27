@@ -2,7 +2,8 @@ import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-route
 import { ArrowRight, CalendarDays, Clock, MessageCircle } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { BLOG_POSTS_BY_SLUG, BLOG_POSTS, type BlogPost } from "../data/blog-posts";
-import { buildBreadcrumbJsonLd, toMetaDescription } from "../lib/meta";
+import { AUTHOR_PERSON_REF, buildBreadcrumbJsonLd, toMetaDescription } from "../lib/meta";
+import { SummaryBox } from "../components/page-summary";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
@@ -91,11 +92,8 @@ export const Route = createFileRoute("/blog/$slug")({
             datePublished: post.date,
             ...(post.modifiedDate ? { dateModified: post.modifiedDate } : {}),
             inLanguage: "he-IL",
-            author: {
-              "@type": "Organization",
-              name: "נמרודי ושות׳ – רואי חשבון",
-              url: ORIGIN,
-            },
+            author: AUTHOR_PERSON_REF,
+            reviewedBy: AUTHOR_PERSON_REF,
             publisher: {
               "@type": "Organization",
               name: "נמרודי ושות׳ – רואי חשבון",
@@ -214,7 +212,9 @@ function BlogPostPage() {
             </div>
           ) : null}
 
-          <p className="mt-8 text-lg leading-relaxed text-foreground/90">{post.excerpt}</p>
+          <div className="mt-8">
+            <SummaryBox text={post.excerpt} lang="he" />
+          </div>
 
           <div className="mt-8 space-y-10">
             {post.sections.map((s) => (
