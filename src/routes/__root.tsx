@@ -92,12 +92,14 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+import { ORG_ID, PERSON_ID, PERSON_JSONLD } from "../lib/meta";
+
 const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
   "@type": "AccountingService",
-  "@id": `${DEFAULT_ORIGIN}/#website`,
+  "@id": ORG_ID,
   name: "נמרודי ושות׳ – רואי חשבון",
   alternateName: "Shlomo Nimrodi & Co. CPA",
   description:
@@ -106,11 +108,23 @@ const ORG_JSONLD = {
   image: `${DEFAULT_ORIGIN}/og-image.jpg`,
   telephone: "+972-9-9582211",
   email: "office@nimrodi.co.il",
-  areaServed: ["הרצליה", "רמת השרון", "רעננה", "תל אביב", "ישראל"],
+  foundingDate: "2000",
+  knowsLanguage: ["he", "en"],
+  hasMap: "https://maps.app.goo.gl/jxWz9287qp3QRVFg8",
+  areaServed: [
+    { "@type": "City", name: "הרצליה", alternateName: "Herzliya" },
+    { "@type": "Place", name: "הרצליה פיתוח", alternateName: "Herzliya Pituach" },
+    { "@type": "City", name: "רמת השרון", alternateName: "Ramat HaSharon" },
+    { "@type": "City", name: "רעננה", alternateName: "Ra'anana" },
+    { "@type": "City", name: "תל אביב", alternateName: "Tel Aviv" },
+    { "@type": "AdministrativeArea", name: "אזור השרון", alternateName: "Sharon region" },
+    { "@type": "Country", name: "ישראל", alternateName: "Israel" },
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "גלגלי הפלדה 16",
     addressLocality: "הרצליה פיתוח",
+    addressRegion: "מחוז תל אביב",
     addressCountry: "IL",
   },
   geo: {
@@ -118,7 +132,17 @@ const ORG_JSONLD = {
     latitude: 32.1624,
     longitude: 34.8085,
   },
-  founder: { "@type": "Person", name: "שלמה נמרודי" },
+  founder: { "@id": PERSON_ID },
+  employee: { "@id": PERSON_ID },
+  knowsAbout: [
+    "ביקורת דוחות כספיים",
+    "הנהלת חשבונות",
+    "שכר",
+    "ייעוץ מס",
+    "מיסוי בין־לאומי ורילוקיישן",
+    "ליווי סטארטאפים",
+    "חברות זרות בישראל",
+  ],
   priceRange: "$$",
   openingHoursSpecification: [
     {
@@ -129,6 +153,13 @@ const ORG_JSONLD = {
     },
   ],
   contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+972-9-9582211",
+      contactType: "customer service",
+      areaServed: "IL",
+      availableLanguage: ["he", "en"],
+    },
     {
       "@type": "ContactPoint",
       telephone: "+972-54-6688681",
@@ -145,7 +176,7 @@ const WEBSITE_JSONLD = {
   name: "נמרודי ושות׳ – רואי חשבון",
   url: "https://www.nimrodi.co.il",
   inLanguage: "he-IL",
-  publisher: { "@type": "Organization", name: "נמרודי ושות׳ – רואי חשבון" },
+  publisher: { "@id": ORG_ID },
 };
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -202,6 +233,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         type: "application/ld+json",
         children: JSON.stringify(WEBSITE_JSONLD),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(PERSON_JSONLD),
       },
 
       ...(GA_ENABLED
