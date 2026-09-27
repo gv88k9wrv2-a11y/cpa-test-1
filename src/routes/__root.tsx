@@ -1,3 +1,4 @@
+import { ORG_ID, PERSON_ID, PERSON_JSONLD } from "../lib/meta";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -91,8 +92,6 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     </div>
   );
 }
-
-import { ORG_ID, PERSON_ID, PERSON_JSONLD } from "../lib/meta";
 
 const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
 
