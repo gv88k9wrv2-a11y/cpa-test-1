@@ -8,6 +8,7 @@ import { LeadForm } from "./lead-form";
 import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 import { ProfessionalDisclaimer } from "./professional-disclaimer";
 import { RelatedServiceBlock } from "./internal-links";
+import { PageSummary } from "./page-summary";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -124,6 +125,7 @@ export function ServiceLanding({
         {/* Content sections */}
         <section className="py-16">
           <div className="mx-auto max-w-4xl space-y-12 px-4 sm:px-6">
+            <PageSummary pathname={pathname} lang="he" />
             {sections.map((s) => (
               <article key={s.title} id={s.id} className="scroll-mt-24">
                 <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">

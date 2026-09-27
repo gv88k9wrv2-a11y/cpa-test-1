@@ -91,11 +91,8 @@ export const Route = createFileRoute("/blog/$slug")({
             datePublished: post.date,
             ...(post.modifiedDate ? { dateModified: post.modifiedDate } : {}),
             inLanguage: "he-IL",
-            author: {
-              "@type": "Organization",
-              name: "נמרודי ושות׳ – רואי חשבון",
-              url: ORIGIN,
-            },
+            author: AUTHOR_PERSON_REF,
+            reviewedBy: AUTHOR_PERSON_REF,
             publisher: {
               "@type": "Organization",
               name: "נמרודי ושות׳ – רואי חשבון",
@@ -214,7 +211,9 @@ function BlogPostPage() {
             </div>
           ) : null}
 
-          <p className="mt-8 text-lg leading-relaxed text-foreground/90">{post.excerpt}</p>
+          <div className="mt-8">
+            <SummaryBox text={post.excerpt} lang="he" />
+          </div>
 
           <div className="mt-8 space-y-10">
             {post.sections.map((s) => (
