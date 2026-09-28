@@ -73,7 +73,7 @@ function ContactEn() {
 
         <section className="py-16">
           <div className="mx-auto grid max-w-4xl gap-4 px-4 sm:grid-cols-2 sm:px-6">
-            <InfoCard icon={Phone} label="Phone" value="+972-9-9582211" href="tel:+97299582211" />
+            <InfoCard icon={Phone} label="Phone" value="+972 9-958-2211" href="tel:+97299582211" />
             <InfoCard
               icon={MessageCircle}
               label="WhatsApp"
@@ -89,8 +89,8 @@ function ContactEn() {
             <InfoCard
               icon={MapPin}
               label="Office"
-              value="16 Galgalei ha-Plada St, Herzliya Pituach"
-              href="https://www.google.com/maps/search/?api=1&query=16+Galgalei+ha-Plada+St+Herzliya+Pituach"
+              value="16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel"
+              href="https://maps.app.goo.gl/jxWz9287qp3QRVFg8"
             />
             <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-6">
               <Clock className="mt-1 h-5 w-5 text-gold-text" aria-hidden />

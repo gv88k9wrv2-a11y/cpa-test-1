@@ -158,7 +158,7 @@ function PrivacyPage() {
             <address className="mt-3 not-italic leading-8">
               <strong>נמרודי ושות׳ – רואי חשבון</strong>
               <br />
-              כתובת: גלגלי הפלדה 16, הרצליה פיתוח
+              כתובת: גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל
               <br />
               טלפון:{" "}
               <a href="tel:099582211" className="text-gold-text underline">

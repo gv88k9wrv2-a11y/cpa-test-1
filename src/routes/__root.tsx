@@ -97,7 +97,7 @@ const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
-  "@type": "AccountingService",
+  "@type": ["AccountingService", "Organization"],
   "@id": ORG_ID,
   name: "נמרודי ושות׳ – רואי חשבון",
   alternateName: "Shlomo Nimrodi & Co. CPA",
@@ -123,8 +123,16 @@ const ORG_JSONLD = {
     "@type": "PostalAddress",
     streetAddress: "גלגלי הפלדה 16",
     addressLocality: "הרצליה פיתוח",
+    postalCode: "4672216",
     addressRegion: "מחוז תל אביב",
     addressCountry: "IL",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: 72,
+    bestRating: "5",
+    worstRating: "1",
   },
   geo: {
     "@type": "GeoCoordinates",
@@ -289,7 +297,12 @@ function RootComponent() {
         if (!el.textContent?.includes("AccountingService")) return;
         try {
           const data = JSON.parse(el.textContent) as Record<string, unknown>;
-          if (data["@type"] !== "AccountingService") return;
+          const schemaTypes = data["@type"];
+          if (
+            schemaTypes !== "AccountingService" &&
+            !(Array.isArray(schemaTypes) && schemaTypes.includes("AccountingService"))
+          )
+            return;
           data.url = origin;
           data["@id"] = `${origin}/#website`;
           data.image = `${origin}/og-image.jpg`;

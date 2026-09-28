@@ -36,12 +36,12 @@ const PHONE_TEL = "tel:099582211";
 const PHONE_DISPLAY = "09-9582211";
 const WHATSAPP_DISPLAY = "054-6688681";
 const EMAIL = "office@nimrodi.co.il";
-const ADDRESS_HE = "גלגלי הפלדה 16, הרצליה פיתוח";
+const ADDRESS_HE = "גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל";
 import { enHrefForHeSlug } from "../data/blog-pairs";
 
 const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent("גלגלי הפלדה 16, הרצליה פיתוח");
+  encodeURIComponent(ADDRESS_HE);
 
 /** Map current Hebrew path → English equivalent. */
 function toEnglishPath(pathname: string): string {
