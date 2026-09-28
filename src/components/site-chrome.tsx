@@ -40,8 +40,7 @@ const ADDRESS_HE = "גלגלי הפלדה 16, הרצליה פיתוח, 4672216, 
 import { enHrefForHeSlug } from "../data/blog-pairs";
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent(ADDRESS_HE);
+  "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ADDRESS_HE);
 
 /** Map current Hebrew path → English equivalent. */
 function toEnglishPath(pathname: string): string {

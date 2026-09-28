@@ -39,8 +39,7 @@ const ADDRESS_EN = "16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel";
 import { heHrefForEnSlug } from "../data/blog-pairs";
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent(ADDRESS_EN);
+  "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ADDRESS_EN);
 
 /** Map current English path → Hebrew equivalent. */
 function toHebrewPath(pathname: string): string {
