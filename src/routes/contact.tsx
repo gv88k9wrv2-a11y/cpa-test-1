@@ -90,8 +90,8 @@ function ContactPage() {
               <ContactCard
                 icon={MapPin}
                 title="כתובת המשרד בהרצליה פיתוח"
-                value="גלגלי הפלדה 16, הרצליה פיתוח"
-                href="https://www.google.com/maps/search/?api=1&query=גלגלי+הפלדה+16+הרצליה+פיתוח"
+                value="גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל"
+                href="https://maps.app.goo.gl/jxWz9287qp3QRVFg8"
               />
               <ContactCard
                 icon={Clock}

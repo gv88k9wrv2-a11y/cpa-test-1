@@ -78,6 +78,36 @@ const REVIEW_SOURCES = [
   },
 ] as const;
 
+export const GOOGLE_REVIEWS_URL = "https://maps.app.goo.gl/jxWz9287qp3QRVFg8";
+
+export function GoogleReviewsBadge({
+  lang = "he",
+  variant = "light",
+}: {
+  lang?: Lang;
+  variant?: "light" | "dark";
+}) {
+  const label = lang === "he" ? "5.0 ★★★★★ (72 ביקורות ב-Google)" : "5.0 ★★★★★ (72 Google Reviews)";
+  const linkLabel = lang === "he" ? "לקריאת כל הביקורות ב-Google" : "Read all reviews on Google";
+  const colors =
+    variant === "dark"
+      ? "border-gold/50 bg-primary/75 text-primary-foreground hover:bg-primary/90"
+      : "border-gold/50 bg-card text-primary hover:border-gold hover:shadow-md";
+
+  return (
+    <a
+      href={GOOGLE_REVIEWS_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={linkLabel}
+      className={`inline-flex min-h-11 max-w-full items-center gap-3 rounded-lg border px-4 py-2.5 text-sm font-semibold shadow-sm transition ${colors}`}
+    >
+      <span>{label}</span>
+      <ExternalLink className="h-4 w-4 shrink-0" aria-hidden />
+    </a>
+  );
+}
+
 export function ClientLogosStrip({ lang = "he" }: { lang?: Lang }) {
   const t = COPY[lang];
   const dir = lang === "he" ? "rtl" : "ltr";

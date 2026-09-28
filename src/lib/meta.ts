@@ -46,6 +46,14 @@ export const PERSON_JSONLD = {
   jobTitle: "Certified Public Accountant (CPA), Founding Partner",
   url: `${SITE_ORIGIN}/en/team`,
   worksFor: { "@id": ORG_ID },
+  telephone: "+972 9-958-2211",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "16 Galgalei HaPlada St.",
+    addressLocality: "Herzliya Pituach",
+    postalCode: "4672216",
+    addressCountry: "IL",
+  },
   hasCredential: {
     "@type": "EducationalOccupationalCredential",
     credentialCategory: "Professional license",

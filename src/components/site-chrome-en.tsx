@@ -32,15 +32,14 @@ export const WHATSAPP_URL_EN =
   "https://wa.me/972546688681?text=" + encodeURIComponent("Website inquiry – Nimrodi & Co.");
 
 const PHONE_TEL = "tel:+97299582211";
-const PHONE_DISPLAY_EN = "+972-9-9582211";
+const PHONE_DISPLAY_EN = "+972 9-958-2211";
 const WHATSAPP_DISPLAY_EN = "+972-54-6688681";
 const EMAIL = "office@nimrodi.co.il";
-const ADDRESS_EN = "16 Galgalei ha-Plada St, Herzliya Pituach";
+const ADDRESS_EN = "16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel";
 import { heHrefForEnSlug } from "../data/blog-pairs";
 
 const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent("16 Galgalei ha-Plada St, Herzliya Pituach");
+  "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ADDRESS_EN);
 
 /** Map current English path → Hebrew equivalent. */
 function toHebrewPath(pathname: string): string {

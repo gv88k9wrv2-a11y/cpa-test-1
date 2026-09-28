@@ -170,11 +170,11 @@ function PrivacyPageEn() {
             <address className="mt-3 not-italic leading-8">
               <strong>Nimrodi &amp; Co. CPA</strong>
               <br />
-              Address: 16 Galgalei ha-Plada St, Herzliya Pituach
+              Address: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel
               <br />
               Phone:{" "}
               <a href="tel:+97299582211" className="text-gold-text underline">
-                +972-9-9582211
+                +972 9-958-2211
               </a>
               <br />
               Email:{" "}

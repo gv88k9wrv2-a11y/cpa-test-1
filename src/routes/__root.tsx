@@ -97,7 +97,7 @@ const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
-  "@type": "AccountingService",
+  "@type": ["AccountingService", "Organization"],
   "@id": ORG_ID,
   name: "נמרודי ושות׳ – רואי חשבון",
   alternateName: "Shlomo Nimrodi & Co. CPA",
@@ -105,7 +105,7 @@ const ORG_JSONLD = {
     "משרד רואי חשבון בהרצליה פיתוח המספק שירותי ביקורת, דיווח, מס, הנהלת חשבונות ושכר לחברות, סטארטאפים, עצמאים וחברות זרות, בהתאם להיקף ההתקשרות.",
   url: DEFAULT_ORIGIN,
   image: `${DEFAULT_ORIGIN}/og-image.jpg`,
-  telephone: "+972-9-9582211",
+  telephone: "+972 9-958-2211",
   email: "office@nimrodi.co.il",
   foundingDate: "2000",
   knowsLanguage: ["he", "en"],
@@ -123,8 +123,16 @@ const ORG_JSONLD = {
     "@type": "PostalAddress",
     streetAddress: "גלגלי הפלדה 16",
     addressLocality: "הרצליה פיתוח",
+    postalCode: "4672216",
     addressRegion: "מחוז תל אביב",
     addressCountry: "IL",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: 72,
+    bestRating: "5",
+    worstRating: "1",
   },
   geo: {
     "@type": "GeoCoordinates",
@@ -154,7 +162,7 @@ const ORG_JSONLD = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+972-9-9582211",
+      telephone: "+972 9-958-2211",
       contactType: "customer service",
       areaServed: "IL",
       availableLanguage: ["he", "en"],
@@ -289,7 +297,12 @@ function RootComponent() {
         if (!el.textContent?.includes("AccountingService")) return;
         try {
           const data = JSON.parse(el.textContent) as Record<string, unknown>;
-          if (data["@type"] !== "AccountingService") return;
+          const schemaTypes = data["@type"];
+          if (
+            schemaTypes !== "AccountingService" &&
+            !(Array.isArray(schemaTypes) && schemaTypes.includes("AccountingService"))
+          )
+            return;
           data.url = origin;
           data["@id"] = `${origin}/#website`;
           data.image = `${origin}/og-image.jpg`;

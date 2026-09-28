@@ -9,6 +9,7 @@ import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 import { ProfessionalDisclaimer } from "./professional-disclaimer";
 import { RelatedServiceBlock } from "./internal-links";
 import { PageSummary } from "./page-summary";
+import { GoogleReviewsBadge } from "./social-proof";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -71,6 +72,10 @@ export function ServiceLandingEn({
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">{intro}</p>
 
+            <div className="mt-5">
+              <GoogleReviewsBadge lang="en" />
+            </div>
+
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {highlights.map((h) => (
                 <li
@@ -98,7 +103,7 @@ export function ServiceLandingEn({
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
                 <Phone className="h-4 w-4" aria-hidden />
-                +972-9-9582211
+                +972 9-958-2211
               </a>
             </div>
 

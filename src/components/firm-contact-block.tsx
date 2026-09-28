@@ -17,8 +17,14 @@ export function FirmContactBlock({ lang }: FirmContactBlockProps) {
           <p>
             <strong>{he ? "טלפון:" : "Telephone:"}</strong>{" "}
             <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
-              09-9582211
+              {he ? "09-9582211" : "+972 9-958-2211"}
             </a>
+          </p>
+          <p>
+            <strong>{he ? "כתובת:" : "Address:"}</strong>{" "}
+            {he
+              ? "גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל"
+              : "16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel"}
           </p>
           <p>
             <strong>{he ? "וואטסאפ:" : "WhatsApp:"}</strong>{" "}

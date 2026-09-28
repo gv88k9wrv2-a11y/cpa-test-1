@@ -71,16 +71,16 @@ function AccessibilityEn() {
                 Physical access and arrival information
               </h2>
               <p>
-                The office is located at 16 Galgalei HaPlada Street, Herzliya Pituach. Parking in
-                the area is available on public streets or in nearby public parking facilities,
-                subject to availability and the applicable conditions. These parking spaces are not
-                private spaces belonging to the firm or the building, and availability is not
-                controlled or guaranteed by the firm. There is a continuous accessible route from
-                street parking to the office, including elevator access. The building has restrooms,
-                but to the Firm’s knowledge they have not yet been approved as required or marked as
-                accessible restrooms. If an accessibility accommodation is required to receive
-                service, please contact us in advance so that we can consider coordination or an
-                accessible alternative based on the need and available options.
+                The office is located at 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel.
+                Parking in the area is available on public streets or in nearby public parking
+                facilities, subject to availability and the applicable conditions. These parking
+                spaces are not private spaces belonging to the firm or the building, and
+                availability is not controlled or guaranteed by the firm. There is a continuous
+                accessible route from street parking to the office, including elevator access. The
+                building has restrooms, but to the Firm’s knowledge they have not yet been approved
+                as required or marked as accessible restrooms. If an accessibility accommodation is
+                required to receive service, please contact us in advance so that we can consider
+                coordination or an accessible alternative based on the need and available options.
               </p>
             </div>
 
@@ -91,8 +91,11 @@ function AccessibilityEn() {
               <div className="space-y-3 rounded-lg border border-border/60 bg-secondary/30 p-6">
                 <p>
                   <strong>Telephone:</strong>{" "}
-                  <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
-                    09-9582211
+                  <a
+                    href="tel:+97299582211"
+                    className="text-primary hover:text-gold hover:underline"
+                  >
+                    +972 9-958-2211
                   </a>
                 </p>
                 <p>

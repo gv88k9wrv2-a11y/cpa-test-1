@@ -9,6 +9,7 @@ import { GovPortalLinks, type GovPortalLink } from "./gov-portal-links";
 import { ProfessionalDisclaimer } from "./professional-disclaimer";
 import { RelatedServiceBlock } from "./internal-links";
 import { PageSummary } from "./page-summary";
+import { GoogleReviewsBadge } from "./social-proof";
 
 export type ServiceFAQ = { q: string; a: string };
 
@@ -74,6 +75,10 @@ export function ServiceLanding({
               {title}
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">{intro}</p>
+
+            <div className="mt-5">
+              <GoogleReviewsBadge lang="he" />
+            </div>
 
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {highlights.map((h) => (
