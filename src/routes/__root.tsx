@@ -105,7 +105,7 @@ const ORG_JSONLD = {
     "משרד רואי חשבון בהרצליה פיתוח המספק שירותי ביקורת, דיווח, מס, הנהלת חשבונות ושכר לחברות, סטארטאפים, עצמאים וחברות זרות, בהתאם להיקף ההתקשרות.",
   url: DEFAULT_ORIGIN,
   image: `${DEFAULT_ORIGIN}/og-image.jpg`,
-  telephone: "+972-9-9582211",
+  telephone: "+972 9-958-2211",
   email: "office@nimrodi.co.il",
   foundingDate: "2000",
   knowsLanguage: ["he", "en"],
@@ -162,7 +162,7 @@ const ORG_JSONLD = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+972-9-9582211",
+      telephone: "+972 9-958-2211",
       contactType: "customer service",
       areaServed: "IL",
       availableLanguage: ["he", "en"],

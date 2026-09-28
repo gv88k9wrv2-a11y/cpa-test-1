@@ -103,7 +103,7 @@ export function ServiceLandingEn({
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
                 <Phone className="h-4 w-4" aria-hidden />
-                +972-9-9582211
+                +972 9-958-2211
               </a>
             </div>
 
