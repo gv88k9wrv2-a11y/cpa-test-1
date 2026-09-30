@@ -107,6 +107,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
   const t = COPY[lang];
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [sendError, setSendError] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(
     `https://wa.me/${WHATSAPP_NUMBER}`,
@@ -139,30 +140,57 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
       document.getElementById(`lf-${first}`)?.focus();
       return;
     }
-    setSubmitting(true);
-
-    // GA4 conversion event
-    try {
-      const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ event: "form_submission", form_id: "lead_form", language: lang });
-      w.gtag?.("event", "form_submission", { form_id: "lead_form", language: lang });
-    } catch {
-      /* noop */
+    if (submitting) return;
+    // Honeypot: bots fill hidden field — silently pretend success
+    const hp = (e.currentTarget.elements.namedItem("botcheck") as HTMLInputElement | null)?.checked;
+    if (hp) {
+      setSubmitted(true);
+      return;
     }
+    setSubmitting(true);
+    setSendError(false);
 
     const subject = buildSubject();
     const body = buildBody();
-    const mailto = `mailto:${RECIPIENT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`;
-    setLastWhatsAppUrl(wa);
+    setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`);
 
-    await new Promise((r) => setTimeout(r, 500));
-    // Open the user's mail client to send to office@nimrodi.co.il
-    window.location.href = mailto;
+    try {
+      if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject,
+          from_name: lang === "he" ? "אתר נמרודי ושות׳" : "Nimrodi CPA Website",
+          replyto: form.email.trim(),
+          email: form.email.trim(),
+          name: form.name.trim(),
+          company: form.company.trim() || "—",
+          phone: form.phone.trim(),
+          message: form.message.trim(),
+          language: lang === "he" ? "עברית" : "English",
+          page: window.location.href,
+          botcheck: false,
+        }),
+      });
+      const json = (await res.json().catch(() => ({}))) as { success?: boolean };
+      if (!res.ok || !json.success) throw new Error(`send failed ${res.status}`);
 
-    setSubmitting(false);
-    setSubmitted(true);
+      try {
+        const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({ event: "form_submission", form_id: "lead_form", language: lang });
+        w.gtag?.("event", "form_submission", { form_id: "lead_form", language: lang });
+      } catch {
+        /* noop */
+      }
+      setSubmitted(true);
+    } catch {
+      setSendError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const reset = () => {
