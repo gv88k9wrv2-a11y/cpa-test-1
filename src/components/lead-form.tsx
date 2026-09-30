@@ -4,7 +4,8 @@ import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "l
 
 type Lang = "he" | "en";
 
-const RECIPIENT = "office@nimrodi.co.il";
+// Web3Forms public access key (linked to office@nimrodi.co.il). Safe to expose client-side.
+const WEB3FORMS_ACCESS_KEY = (import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined) ?? "";
 const WHATSAPP_NUMBER = "972546688681";
 
 const COPY = {
@@ -22,14 +23,15 @@ const COPY = {
     messagePh: "ספרו לנו בקצרה על הצורך – מס, ביקורת, CFO, בין־לאומי וכו׳.",
     messageNotice: "נא לא להזין או לצרף בטופס מידע פיננסי, אישי או מסמכים רגישים.",
     submit: "שליחת פנייה במייל",
-    sending: "מכין את הפנייה…",
+    sending: "שולח את הפנייה…",
+    sendError:
+      "לא הצלחנו לשלוח את הפנייה כרגע. נסו שוב בעוד רגע, או פנו אלינו בטלפון 09-9582211 או בוואטסאפ.",
     whatsapp: "מעדיפים WhatsApp? פתחו הודעה מוכנה בצ׳אט",
     privacy:
       "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. ניצור עמכם קשר בהקדם האפשרי.",
     required: "*",
-    successTitle: "פנייתך מוכנה לשליחה",
-    successText:
-      "נפתחה עבורך אפליקציית הדוא״ל עם הפרטים לשליחה ל-office@nimrodi.co.il. אם היא לא נפתחה, ניתן לפנות אלינו בוואטסאפ.",
+    successTitle: "פנייתך נשלחה בהצלחה",
+    successText: "תודה! הפנייה התקבלה במשרד, וניצור עמכם קשר בהקדם האפשרי.",
     successCta: "לשליחת פנייה נוספת",
     successWhats: "המשך בוואטסאפ",
     errors: {
@@ -54,14 +56,15 @@ const COPY = {
     messageNotice:
       "Please do not enter or attach sensitive financial or personal information or documents in this form.",
     submit: "Send inquiry by email",
-    sending: "Preparing your inquiry…",
+    sending: "Sending your inquiry…",
+    sendError:
+      "We couldn't send your inquiry right now. Please try again shortly, or call +972 9-958-2211 or message us on WhatsApp.",
     whatsapp: "Prefer WhatsApp? Chat with us directly",
     privacy:
       "We treat inquiries confidentially and handle submitted information in accordance with our privacy policy. We aim to respond as soon as possible, typically within one business day.",
     required: "*",
-    successTitle: "Your inquiry is ready to send",
-    successText:
-      "Your email app just opened with the details pre-filled for office@nimrodi.co.il. If it didn't open, reach us on WhatsApp instead.",
+    successTitle: "Your inquiry has been sent",
+    successText: "Thank you! Your inquiry has reached our office and we will get back to you shortly.",
     successCta: "Send another inquiry",
     successWhats: "Continue on WhatsApp",
     errors: {
@@ -107,6 +110,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
   const t = COPY[lang];
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [sendError, setSendError] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(
     `https://wa.me/${WHATSAPP_NUMBER}`,
@@ -139,30 +143,57 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
       document.getElementById(`lf-${first}`)?.focus();
       return;
     }
-    setSubmitting(true);
-
-    // GA4 conversion event
-    try {
-      const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
-      w.dataLayer = w.dataLayer || [];
-      w.dataLayer.push({ event: "form_submission", form_id: "lead_form", language: lang });
-      w.gtag?.("event", "form_submission", { form_id: "lead_form", language: lang });
-    } catch {
-      /* noop */
+    if (submitting) return;
+    // Honeypot: bots fill hidden field — silently pretend success
+    const hp = (e.currentTarget.elements.namedItem("botcheck") as HTMLInputElement | null)?.checked;
+    if (hp) {
+      setSubmitted(true);
+      return;
     }
+    setSubmitting(true);
+    setSendError(false);
 
     const subject = buildSubject();
     const body = buildBody();
-    const mailto = `mailto:${RECIPIENT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`;
-    setLastWhatsAppUrl(wa);
+    setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`);
 
-    await new Promise((r) => setTimeout(r, 500));
-    // Open the user's mail client to send to office@nimrodi.co.il
-    window.location.href = mailto;
+    try {
+      if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject,
+          from_name: lang === "he" ? "אתר נמרודי ושות׳" : "Nimrodi CPA Website",
+          replyto: form.email.trim(),
+          email: form.email.trim(),
+          name: form.name.trim(),
+          company: form.company.trim() || "—",
+          phone: form.phone.trim(),
+          message: form.message.trim(),
+          language: lang === "he" ? "עברית" : "English",
+          page: window.location.href,
+          botcheck: false,
+        }),
+      });
+      const json = (await res.json().catch(() => ({}))) as { success?: boolean };
+      if (!res.ok || !json.success) throw new Error(`send failed ${res.status}`);
 
-    setSubmitting(false);
-    setSubmitted(true);
+      try {
+        const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
+        w.dataLayer = w.dataLayer || [];
+        w.dataLayer.push({ event: "form_submission", form_id: "lead_form", language: lang });
+        w.gtag?.("event", "form_submission", { form_id: "lead_form", language: lang });
+      } catch {
+        /* noop */
+      }
+      setSubmitted(true);
+    } catch {
+      setSendError(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const reset = () => {
@@ -308,6 +339,21 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
                 </p>
               )}
             </label>
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="hidden"
+            />
+
+            {sendError && (
+              <p role="alert" className="mt-4 text-sm font-medium text-destructive">
+                {t.sendError}
+              </p>
+            )}
 
             <button
               type="submit"
