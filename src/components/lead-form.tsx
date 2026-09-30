@@ -4,7 +4,8 @@ import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "l
 
 type Lang = "he" | "en";
 
-const RECIPIENT = "office@nimrodi.co.il";
+// Web3Forms public access key (linked to office@nimrodi.co.il). Safe to expose client-side.
+const WEB3FORMS_ACCESS_KEY = (import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined) ?? "";
 const WHATSAPP_NUMBER = "972546688681";
 
 const COPY = {
@@ -22,14 +23,15 @@ const COPY = {
     messagePh: "ספרו לנו בקצרה על הצורך – מס, ביקורת, CFO, בין־לאומי וכו׳.",
     messageNotice: "נא לא להזין או לצרף בטופס מידע פיננסי, אישי או מסמכים רגישים.",
     submit: "שליחת פנייה במייל",
-    sending: "מכין את הפנייה…",
+    sending: "שולח את הפנייה…",
+    sendError:
+      "לא הצלחנו לשלוח את הפנייה כרגע. נסו שוב בעוד רגע, או פנו אלינו בטלפון 09-9582211 או בוואטסאפ.",
     whatsapp: "מעדיפים WhatsApp? פתחו הודעה מוכנה בצ׳אט",
     privacy:
       "אנו מתייחסים לפניות בסודיות ומטפלים במידע שנמסר בהתאם למדיניות הפרטיות שלנו. ניצור עמכם קשר בהקדם האפשרי.",
     required: "*",
-    successTitle: "פנייתך מוכנה לשליחה",
-    successText:
-      "נפתחה עבורך אפליקציית הדוא״ל עם הפרטים לשליחה ל-office@nimrodi.co.il. אם היא לא נפתחה, ניתן לפנות אלינו בוואטסאפ.",
+    successTitle: "פנייתך נשלחה בהצלחה",
+    successText: "תודה! הפנייה התקבלה במשרד, וניצור עמכם קשר בהקדם האפשרי.",
     successCta: "לשליחת פנייה נוספת",
     successWhats: "המשך בוואטסאפ",
     errors: {
@@ -54,14 +56,15 @@ const COPY = {
     messageNotice:
       "Please do not enter or attach sensitive financial or personal information or documents in this form.",
     submit: "Send inquiry by email",
-    sending: "Preparing your inquiry…",
+    sending: "Sending your inquiry…",
+    sendError:
+      "We couldn't send your inquiry right now. Please try again shortly, or call +972 9-958-2211 or message us on WhatsApp.",
     whatsapp: "Prefer WhatsApp? Chat with us directly",
     privacy:
       "We treat inquiries confidentially and handle submitted information in accordance with our privacy policy. We aim to respond as soon as possible, typically within one business day.",
     required: "*",
-    successTitle: "Your inquiry is ready to send",
-    successText:
-      "Your email app just opened with the details pre-filled for office@nimrodi.co.il. If it didn't open, reach us on WhatsApp instead.",
+    successTitle: "Your inquiry has been sent",
+    successText: "Thank you! Your inquiry has reached our office and we will get back to you shortly.",
     successCta: "Send another inquiry",
     successWhats: "Continue on WhatsApp",
     errors: {
@@ -336,6 +339,21 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
                 </p>
               )}
             </label>
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+              className="hidden"
+            />
+
+            {sendError && (
+              <p role="alert" className="mt-4 text-sm font-medium text-destructive">
+                {t.sendError}
+              </p>
+            )}
 
             <button
               type="submit"
