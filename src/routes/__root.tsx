@@ -15,8 +15,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ScrollToTop } from "../components/scroll-to-top";
 
-// Replace with your GA4 Measurement ID (e.g. "G-XXXXXXXXXX") to enable analytics.
-const GA4_MEASUREMENT_ID = "G-XXXXXXXXXX";
+// GA4 Measurement ID — analytics enabled.
+const GA4_MEASUREMENT_ID = "G-DVPW43Z6TN";
 const GA_ENABLED = GA4_MEASUREMENT_ID.startsWith("G-") && !GA4_MEASUREMENT_ID.includes("XXXX");
 
 function NotFoundComponent() {
