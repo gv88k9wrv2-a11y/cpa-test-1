@@ -80,6 +80,9 @@
 
   html {
     scroll-behavior: smooth;
+    /* Lock page width: prevents horizontal drift and clipping on mobile (RTL). */
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   body {
@@ -88,6 +91,8 @@
     font-family: var(--font-sans);
     font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   h1,
