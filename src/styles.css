@@ -102,6 +102,12 @@
     font-family: var(--font-display);
     letter-spacing: -0.01em;
   }
+
+  /* Page wrapper: clip stray overflowing elements (RTL, floating buttons). */
+  body > div {
+    overflow-x: clip;
+    max-width: 100%;
+  }
 }
 
 @layer base {
