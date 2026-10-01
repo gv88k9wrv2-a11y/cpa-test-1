@@ -80,8 +80,8 @@
 
   html {
     scroll-behavior: smooth;
-    /* Lock page width: prevents horizontal drift and clipping on mobile (RTL). */
-    overflow-x: hidden;
+    /* Lock page width: prevents horizontal drift on mobile without breaking sticky. */
+    overflow-x: clip;
     max-width: 100%;
   }
 
@@ -91,7 +91,7 @@
     font-family: var(--font-sans);
     font-feature-settings: "kern";
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    overflow-x: clip;
     max-width: 100%;
   }
 
@@ -103,8 +103,9 @@
     letter-spacing: -0.01em;
   }
 
-  /* Page wrapper: keep within viewport width (RTL, floating buttons). */
+  /* Page wrapper: contain stray overflowing elements (RTL, floating buttons). */
   body > div {
+    overflow-x: clip;
     max-width: 100%;
   }
 }
