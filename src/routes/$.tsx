@@ -28,6 +28,7 @@ const REDIRECTS: Record<string, string> = {
   "שאלות-ותשובות": "/faq",
   "הוצאות-מוכרות-לעצמאים": "/tax-consulting",
   "חוות-דעת-חשבונאית": "/services",
+  "ייעוץ-כלכלי-והערכת-שווי": "/services",
   "ייעוץ-מס-בינלאומי": "/cpa-international",
   "חישוב-דיווח-קריפטו": "/blog/crypto-reporting",
   "ניהול-כספים-וחשבות-לחברות": "/fractional-cfo",
