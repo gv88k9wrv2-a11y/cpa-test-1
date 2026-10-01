@@ -163,7 +163,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
       if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
           subject,
