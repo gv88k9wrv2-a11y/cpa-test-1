@@ -5,7 +5,9 @@ import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "l
 type Lang = "he" | "en";
 
 // Web3Forms public access key (linked to office@nimrodi.co.il). Safe to expose client-side.
-const WEB3FORMS_ACCESS_KEY = (import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined) ?? "";
+const WEB3FORMS_ACCESS_KEY =
+  (import.meta.env.VITE_WEB3FORMS_ACCESS_KEY as string | undefined) ||
+  "e3bc763c-3b72-486f-99a1-6d6bfb368d06";
 const WHATSAPP_NUMBER = "972546688681";
 
 const COPY = {
@@ -161,7 +163,7 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
       if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
           subject,
