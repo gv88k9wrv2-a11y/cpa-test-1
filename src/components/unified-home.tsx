@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowLeft, ArrowRight, CheckCircle2, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, MessageCircle, Phone, Sparkles } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "./site-chrome";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from "./site-chrome-en";
 import { ExecutiveTestimonials, GoogleReviewsBadge } from "./social-proof";
@@ -114,6 +114,17 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                       {b.label}
                     </PathLink>
                   ))}
+                  <a
+                    href={isHe ? "tel:099582211" : "tel:+97299582211"}
+                    className={`inline-flex flex-1 items-center justify-center gap-2 rounded-md border border-gold bg-primary/70 font-semibold text-primary-foreground shadow-sm backdrop-blur transition hover:bg-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98] sm:min-h-[56px] sm:px-6 sm:py-3 sm:text-base ${
+                      isHe
+                        ? "min-h-[56px] px-6 py-3 text-base"
+                        : "min-h-[46px] px-5 py-2.5 text-[15px]"
+                    }`}
+                  >
+                    <Phone className="h-5 w-5 shrink-0" aria-hidden />
+                    {isHe ? "חייגו 09-9582211" : "+972 9-958-2211"}
+                  </a>
                 </div>
                 {t.hero.buttons[2] && (
                   <PathLink
@@ -285,7 +296,40 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
       </main>
 
       {isHe ? <SiteFooter /> : <SiteFooterEn />}
-      {isHe ? <FloatingWhatsApp /> : <FloatingWhatsAppEn />}
+      {isHe ? (
+        <div className="hidden sm:block">
+          <FloatingWhatsApp />
+        </div>
+      ) : (
+        <div className="hidden sm:block">
+          <FloatingWhatsAppEn />
+        </div>
+      )}
+
+      {/* Sticky mobile action bar — quick call + WhatsApp */}
+      <div className="fixed inset-x-0 bottom-0 z-50 sm:hidden">
+        <div
+          className="flex items-stretch gap-2 border-t border-gold/30 bg-primary p-2 shadow-lg"
+          style={{ paddingBottom: "calc(0.5rem + env(safe-area-inset-bottom))" }}
+        >
+          <a
+            href={isHe ? "tel:099582211" : "tel:+97299582211"}
+            className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-md bg-gold px-3 font-semibold text-gold-foreground transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98]"
+          >
+            <Phone className="h-5 w-5 shrink-0" aria-hidden />
+            {isHe ? "חייגו 09-9582211" : "Call +972 9-958-2211"}
+          </a>
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-md bg-[#25D366] px-3 font-semibold text-white transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98]"
+          >
+            <MessageCircle className="h-5 w-5 shrink-0" aria-hidden />
+            {isHe ? "וואטסאפ" : "WhatsApp"}
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
