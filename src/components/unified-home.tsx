@@ -34,7 +34,7 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
   const whatsappUrl = isHe ? WHATSAPP_URL : WHATSAPP_URL_EN;
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background pb-[calc(4.25rem+env(safe-area-inset-bottom))] text-foreground sm:pb-0">
       {isHe ? <SiteHeader /> : <SiteHeaderEn />}
 
       <main id="main-content">
