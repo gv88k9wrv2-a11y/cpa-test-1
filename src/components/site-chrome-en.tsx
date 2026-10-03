@@ -200,12 +200,15 @@ export function SiteHeaderEn() {
       </a>
       <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
         <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
-          <Link to="/en" className="flex min-w-0 flex-col leading-tight">
+          <Link to="/en" className="flex min-w-0 items-center gap-2 leading-tight">
+            <img src="/apple-touch-icon.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-md" />
+            <span className="flex min-w-0 flex-col">
             <span className="font-display text-lg font-bold text-primary sm:text-xl">
               Nimrodi &amp; Co.
             </span>
             <span className="text-[11px] text-muted-foreground sm:text-xs">
               Certified Public Accountants · Since 2000
+            </span>
             </span>
           </Link>
 
@@ -672,6 +675,11 @@ export function SiteFooterEn() {
           <p className="mt-2 text-sm text-primary-foreground/70">
             Boutique CPA firm in Herzliya Pituach. Operating since 2000 and serving companies,
             startups, freelancers and foreign investors in Israel.
+          </p>
+          <p className="mt-3 text-sm text-primary-foreground/80">
+            <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="hover:text-gold underline underline-offset-4">
+              Certified Public Accountant Shlomo Nimrodi is licensed by the Auditors Council of Israel, holding an active CPA license since 1997.
+            </a>
           </p>
           <address className="mt-4 space-y-1 text-sm not-italic text-primary-foreground/80">
             <div>

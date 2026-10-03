@@ -71,6 +71,11 @@ function AboutEn() {
                 and individuals in Israel and internationally in areas including technology,
                 professional services, real estate and cross-border activity.
               </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
+                  Certified Public Accountant Shlomo Nimrodi is licensed by the Auditors Council of Israel, holding an active CPA license since 1997.
+                </a>
+              </p>
             </article>
 
             <article>

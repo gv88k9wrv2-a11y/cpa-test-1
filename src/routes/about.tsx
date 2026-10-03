@@ -85,6 +85,11 @@ function AboutPage() {
                 המשרד מנוהל על ידי רו״ח שלמה נמרודי, בעל ניסיון בחשבונאות ובניהול כספים, אשר שימש
                 בעבר כחשב וכמנהל כספים בחברות ציבוריות והיה מעורב בתהליכי הנפקה בבורסה בישראל.
               </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
+                  רואה חשבון שלמה נמרודי מוסמך על ידי מועצת רואי חשבון בישראל ומחזיק ברישיון פעיל משנת 1997.
+                </a>
+              </p>
               <p>
                 שירותי המשרד כוללים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות, ביקורת ודוחות כספיים, הנהלת
                 חשבונות, שכר, ייעוץ ודיווחי מס, טיפול בהצהרות הון, פתיחת תיקים ותמיכה בתהליכים
