@@ -65,7 +65,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
       ],
     },
     trust: {
-      heading: "ניסיון, בהירות וליווי מקצועי",
+      heading: "ניסיון, שקיפות וליווי מקצועי",
       facts: [
         "המשרד פועל משנת 2000",
         "למעלה מ־30 שנות ניסיון לרו״ח שלמה נמרודי",
@@ -198,7 +198,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
       ],
     },
     trust: {
-      heading: "Experience, Clarity and Professional Support",
+      heading: "Experience, Transparency and Professional Support",
       facts: [
         "Firm operating since 2000",
         "More than 30 years of experience for Shlomo Nimrodi, CPA",
