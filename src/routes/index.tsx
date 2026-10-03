@@ -50,6 +50,13 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
     ],
     links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: heroOffice,
+        type: "image/webp",
+        fetchPriority: "high",
+      },
       { rel: "canonical", href: "https://www.nimrodi.co.il/" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/" },
       { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en" },
