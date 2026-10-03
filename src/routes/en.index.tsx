@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { UnifiedHome } from "../components/unified-home";
+import heroOffice from "../assets/hero-office.webp";
 
 const BASE = "https://www.nimrodi.co.il";
 
@@ -51,6 +52,13 @@ export const Route = createFileRoute("/en/")({
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
     links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: heroOffice,
+        type: "image/webp",
+        fetchPriority: "high",
+      },
       { rel: "canonical", href: `${BASE}/en` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/` },
       { rel: "alternate", hrefLang: "en-US", href: `${BASE}/en` },
