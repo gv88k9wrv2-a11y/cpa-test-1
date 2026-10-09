@@ -78,7 +78,7 @@ function BlogIndex() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                   {p.excerpt}
                 </p>
-                <div className="mt-5 flex items-center gap-4 border-t border-border pt-4 text-xs text-muted-foreground">
+                <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 border-t border-border pt-4 text-xs text-muted-foreground">
                   <span className="inline-flex items-center gap-1.5">
                     <CalendarDays className="h-3.5 w-3.5" aria-hidden />
                     {new Date(p.date).toLocaleDateString("he-IL", {
@@ -87,6 +87,7 @@ function BlogIndex() {
                       year: "numeric",
                     })}
                   </span>
+                  <span aria-hidden="true">·</span>
                   <span className="inline-flex items-center gap-1.5">
                     <Clock className="h-3.5 w-3.5" aria-hidden />
                     {p.readMin} דק׳ קריאה

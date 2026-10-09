@@ -14,12 +14,35 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ScrollToTop } from "../components/scroll-to-top";
+import { AccessibilityWidget } from "../components/accessibility-widget";
+
+// Inject robots noindex,nofollow on error/404 renders so Google never indexes them.
+function useNoindex() {
+  useEffect(() => {
+    const existing = document.querySelector<HTMLMetaElement>('meta[name="robots"]');
+    if (existing) {
+      const prev = existing.content;
+      existing.content = "noindex, nofollow";
+      return () => {
+        existing.content = prev;
+      };
+    }
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, nofollow";
+    document.head.appendChild(meta);
+    return () => {
+      meta.remove();
+    };
+  }, []);
+}
 
 // GA4 Measurement ID — analytics enabled.
 const GA4_MEASUREMENT_ID = "G-DVPW43Z6TN";
 const GA_ENABLED = GA4_MEASUREMENT_ID.startsWith("G-") && !GA4_MEASUREMENT_ID.includes("XXXX");
 
 function NotFoundComponent() {
+  useNoindex();
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const en = pathname === "/en" || pathname.startsWith("/en/");
   return (
@@ -58,6 +81,7 @@ function NotFoundComponent() {
 }
 
 function ErrorComponent({ error, reset }: import("@tanstack/react-router").ErrorComponentProps) {
+  useNoindex();
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -227,6 +251,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "manifest", href: "/manifest.json" },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: "/icon-192.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -334,6 +359,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <Outlet />
       <ScrollToTop lang={isEnglish ? "en" : "he"} />
+      <AccessibilityWidget lang={isEnglish ? "en" : "he"} />
     </QueryClientProvider>
   );
 }

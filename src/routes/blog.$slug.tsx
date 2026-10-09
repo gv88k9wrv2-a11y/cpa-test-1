@@ -183,7 +183,7 @@ function BlogPostPage() {
           <h1 className="mt-4 font-display text-4xl font-bold leading-tight text-primary sm:text-5xl">
             {post.title}
           </h1>
-          <div className="mt-6 flex items-center gap-5 border-b border-border pb-6 text-xs text-muted-foreground">
+          <div className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-border pb-6 text-xs text-muted-foreground">
             <span className="inline-flex items-center gap-1.5">
               <CalendarDays className="h-3.5 w-3.5" aria-hidden />
               {new Date(post.date).toLocaleDateString("he-IL", {
@@ -192,6 +192,7 @@ function BlogPostPage() {
                 year: "numeric",
               })}
             </span>
+            <span aria-hidden="true">·</span>
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" aria-hidden />
               {post.readMin} דק׳ קריאה
