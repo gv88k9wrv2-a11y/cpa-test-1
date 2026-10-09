@@ -85,7 +85,11 @@ export function AccessibilityWidget({ lang }: { lang: Lang }) {
   const active = "border-gold bg-gold/10 text-primary";
 
   return (
-    <div className="fixed bottom-20 left-4 z-40 sm:bottom-6" dir={lang === "he" ? "rtl" : "ltr"}>
+    <div
+      className={`fixed z-40 ${lang === "he" ? "left-4" : "right-4"}`}
+      style={{ bottom: "calc(4.5rem + env(safe-area-inset-bottom))" }}
+      dir={lang === "he" ? "rtl" : "ltr"}
+    >
       {open && (
         <div
           role="dialog"
