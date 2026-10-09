@@ -170,3 +170,39 @@
     }
   }
 }
+
+/* Accessibility widget modes (toggled on <html> by accessibility-widget.tsx) */
+@layer base {
+  .a11y-contrast {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0 0 0);
+    --primary: oklch(0.15 0.05 260);
+    --secondary: oklch(0.98 0 0);
+    --secondary-foreground: oklch(0 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.25 0.02 260);
+    --accent: oklch(0.95 0 0);
+    --accent-foreground: oklch(0 0 0);
+    --gold-text: oklch(0.35 0.1 80);
+    --border: oklch(0.5 0 0);
+    --input: oklch(0.5 0 0);
+  }
+  .a11y-readable-font body,
+  .a11y-readable-font h1,
+  .a11y-readable-font h2,
+  .a11y-readable-font h3,
+  .a11y-readable-font h4 {
+    font-family: "Heebo", Arial, ui-sans-serif, system-ui, sans-serif !important;
+    letter-spacing: 0.01em;
+  }
+  .a11y-highlight-links a {
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 3px;
+    outline: 2px solid var(--color-gold);
+    outline-offset: 1px;
+    border-radius: 2px;
+  }
+}
