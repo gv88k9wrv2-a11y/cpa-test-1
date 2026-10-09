@@ -19,6 +19,14 @@ import { AccessibilityWidget } from "../components/accessibility-widget";
 // Inject robots noindex,nofollow on error/404 renders so Google never indexes them.
 function useNoindex() {
   useEffect(() => {
+    const existing = document.querySelector<HTMLMetaElement>('meta[name="robots"]');
+    if (existing) {
+      const prev = existing.content;
+      existing.content = "noindex, nofollow";
+      return () => {
+        existing.content = prev;
+      };
+    }
     const meta = document.createElement("meta");
     meta.name = "robots";
     meta.content = "noindex, nofollow";
