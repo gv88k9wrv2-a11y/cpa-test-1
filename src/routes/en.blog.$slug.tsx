@@ -173,6 +173,7 @@ function BlogPostPageEn() {
                 year: "numeric",
               })}
             </span>
+            <span aria-hidden="true">·</span>
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" aria-hidden />
               {post.readMin} min read
