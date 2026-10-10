@@ -208,7 +208,9 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
           phone: form.phone.trim(),
           message: form.message.trim(),
           language: lang === "he" ? "עברית" : "English",
-          page: window.location.href,
+          [lang === "he" ? "שירות_או_עמוד" : "Service_or_Page"]: source,
+          [lang === "he" ? "כתובת_עמוד" : "Page_URL"]: pageUrl(),
+          page: pageUrl(),
           botcheck: false,
         }),
       });
