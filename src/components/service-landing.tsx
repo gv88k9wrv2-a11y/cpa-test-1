@@ -225,7 +225,7 @@ export function ServiceLanding({
         </section>
       </main>
 
-      <LeadForm lang="he" />
+      <LeadForm lang="he" serviceName={title} />
       <SiteFooter />
       <FloatingWhatsApp />
     </div>

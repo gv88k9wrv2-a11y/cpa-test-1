@@ -102,7 +102,7 @@ function ContactPage() {
           </div>
         </section>
 
-        <LeadForm lang="he" />
+        <LeadForm lang="he" serviceName="יצירת קשר" />
       </main>
 
       <SiteFooter />
