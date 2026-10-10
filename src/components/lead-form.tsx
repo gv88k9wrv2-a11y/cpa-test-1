@@ -108,8 +108,39 @@ function validate(form: FormState, t: (typeof COPY)[Lang]): FieldErrors {
   return errors;
 }
 
-export function LeadForm({ lang = "he" }: { lang?: Lang }) {
+// Friendly fallback page names when serviceName is not passed explicitly
+const PAGE_NAMES: Record<Lang, Record<string, string>> = {
+  he: {
+    "/": "דף הבית",
+    "/contact": "יצירת קשר",
+    "/about": "אודות",
+    "/services": "שירותים",
+    "/blog": "מאמרים",
+    "/team": "הצוות",
+  },
+  en: {
+    "/en": "Home Page",
+    "/en/contact": "Contact Us",
+    "/en/about": "About",
+    "/en/services": "Services",
+    "/en/blog": "Articles",
+    "/en/team": "Team",
+  },
+};
+
+function deriveServiceName(lang: Lang): string {
+  if (typeof window === "undefined") return lang === "he" ? "האתר" : "Website";
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  const map = PAGE_NAMES[lang];
+  if (map[path]) return map[path];
+  const slug = path.split("/").filter(Boolean).pop() || "";
+  const pretty = slug.replace(/[-_]+/g, " ").trim();
+  return pretty || map["/"] || (lang === "he" ? "האתר" : "Website");
+}
+
+export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceName?: string }) {
   const t = COPY[lang];
+  const source = serviceName || deriveServiceName(lang);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [sendError, setSendError] = useState(false);
