@@ -215,6 +215,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "google-site-verification",
+        content: "L5dPfUFOFWx6um0FIg4RaZiIoL-x8X2jQSZUqwoBZfc",
+      },
       { name: "theme-color", content: "#0c689b" },
       { name: "author", content: "נמרודי ושות׳ – רואי חשבון" },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
