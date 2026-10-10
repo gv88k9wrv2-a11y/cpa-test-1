@@ -159,13 +159,15 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
   const dir = lang === "he" ? "rtl" : "ltr";
   const align = lang === "he" ? "text-right" : "text-left";
 
+  const pageUrl = () => (typeof window === "undefined" ? "" : window.location.href);
+
   const buildBody = () =>
     lang === "he"
-      ? `פנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n`
-      : `New inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
+      ? `תחום / שירות: ${source}\nכתובת עמוד: ${pageUrl()}\n\nפנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n`
+      : `Service / Page: ${source}\nPage URL: ${pageUrl()}\n\nNew inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
 
   const buildSubject = () =>
-    lang === "he" ? `פנייה חדשה מהאתר – ${form.name}` : `New website inquiry – ${form.name}`;
+    lang === "he" ? `פנייה [${source}] – ${form.name}` : `Inquiry [${source}] – ${form.name}`;
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
