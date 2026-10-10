@@ -108,8 +108,39 @@ function validate(form: FormState, t: (typeof COPY)[Lang]): FieldErrors {
   return errors;
 }
 
-export function LeadForm({ lang = "he" }: { lang?: Lang }) {
+// Friendly fallback page names when serviceName is not passed explicitly
+const PAGE_NAMES: Record<Lang, Record<string, string>> = {
+  he: {
+    "/": "דף הבית",
+    "/contact": "יצירת קשר",
+    "/about": "אודות",
+    "/services": "שירותים",
+    "/blog": "מאמרים",
+    "/team": "הצוות",
+  },
+  en: {
+    "/en": "Home Page",
+    "/en/contact": "Contact Us",
+    "/en/about": "About",
+    "/en/services": "Services",
+    "/en/blog": "Articles",
+    "/en/team": "Team",
+  },
+};
+
+function deriveServiceName(lang: Lang): string {
+  if (typeof window === "undefined") return lang === "he" ? "האתר" : "Website";
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  const map = PAGE_NAMES[lang];
+  if (map[path]) return map[path];
+  const slug = path.split("/").filter(Boolean).pop() || "";
+  const pretty = slug.replace(/[-_]+/g, " ").trim();
+  return pretty || map["/"] || (lang === "he" ? "האתר" : "Website");
+}
+
+export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceName?: string }) {
   const t = COPY[lang];
+  const source = serviceName || deriveServiceName(lang);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [sendError, setSendError] = useState(false);
@@ -128,13 +159,15 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
   const dir = lang === "he" ? "rtl" : "ltr";
   const align = lang === "he" ? "text-right" : "text-left";
 
+  const pageUrl = () => (typeof window === "undefined" ? "" : window.location.href);
+
   const buildBody = () =>
     lang === "he"
-      ? `פנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n`
-      : `New inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
+      ? `תחום / שירות: ${source}\nכתובת עמוד: ${pageUrl()}\n\nפנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n`
+      : `Service / Page: ${source}\nPage URL: ${pageUrl()}\n\nNew inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
 
   const buildSubject = () =>
-    lang === "he" ? `פנייה חדשה מהאתר – ${form.name}` : `New website inquiry – ${form.name}`;
+    lang === "he" ? `פנייה [${source}] – ${form.name}` : `Inquiry [${source}] – ${form.name}`;
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -175,7 +208,9 @@ export function LeadForm({ lang = "he" }: { lang?: Lang }) {
           phone: form.phone.trim(),
           message: form.message.trim(),
           language: lang === "he" ? "עברית" : "English",
-          page: window.location.href,
+          [lang === "he" ? "שירות_או_עמוד" : "Service_or_Page"]: source,
+          [lang === "he" ? "כתובת_עמוד" : "Page_URL"]: pageUrl(),
+          page: pageUrl(),
           botcheck: false,
         }),
       });
