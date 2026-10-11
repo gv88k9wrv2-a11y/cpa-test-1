@@ -20,8 +20,7 @@ export function ScrollToTop({ lang = "he" }: { lang?: "he" | "en" }) {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label={label}
       title={label}
-      style={{ bottom: "calc(1rem + env(safe-area-inset-bottom))" }}
-      className={`fixed ${side} z-40 grid h-11 w-11 min-h-[44px] min-w-[44px] place-items-center rounded-full border border-gold/40 bg-primary text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold ${
+      className={`fixed ${side} z-50 grid h-11 w-11 min-h-[44px] min-w-[44px] place-items-center rounded-full border border-gold/40 bg-primary text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold max-sm:bottom-[calc(4.5rem_+_env(safe-area-inset-bottom))] sm:bottom-[calc(1rem_+_env(safe-area-inset-bottom))] ${
         visible ? "opacity-100 translate-y-0" : "pointer-events-none opacity-0 translate-y-3"
       }`}
     >
