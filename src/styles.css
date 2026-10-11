@@ -36,6 +36,10 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-a11y-trigger: var(--a11y-trigger);
+  --color-a11y-trigger-hover: var(--a11y-trigger-hover);
+  --color-a11y-trigger-border: var(--a11y-trigger-border);
+  --color-a11y-trigger-foreground: var(--a11y-trigger-foreground);
 }
 
 :root {
@@ -71,6 +75,12 @@
   --border: oklch(0.9 0.01 90);
   --input: oklch(0.9 0.01 90);
   --ring: oklch(0.72 0.13 80);
+
+  /* Floating accessibility trigger: high-visibility accessibility blue. */
+  --a11y-trigger: #0066cc;
+  --a11y-trigger-hover: #0052a3;
+  --a11y-trigger-border: rgba(255, 255, 255, 0.9);
+  --a11y-trigger-foreground: #ffffff;
 }
 
 @layer base {

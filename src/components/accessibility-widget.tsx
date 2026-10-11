@@ -152,7 +152,7 @@ export function AccessibilityWidget({ lang }: { lang: Lang }) {
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? t.close : t.open}
         aria-expanded={open}
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition hover:bg-primary/90"
+        className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-a11y-trigger-border bg-a11y-trigger text-a11y-trigger-foreground shadow-xl transition hover:bg-a11y-trigger-hover focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-gold"
       >
         <Accessibility className="h-6 w-6" aria-hidden />
       </button>
