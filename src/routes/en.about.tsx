@@ -54,6 +54,24 @@ function AboutEn() {
             <h1 className="mt-4 font-display text-4xl font-bold text-primary sm:text-5xl">
               Nimrodi & Co. CPA firm in Israel
             </h1>
+            {/* Mobile only: the portrait sits with the opening text; on desktop it stays beside the story text. */}
+            <figure className="mt-6 w-full max-w-[15rem] sm:hidden">
+              <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+                <img
+                  src={profileImage}
+                  alt="Shlomo Nimrodi, CPA, founding partner of Nimrodi & Co."
+                  width={928}
+                  height={1152}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+              <figcaption className="mt-2 text-sm font-semibold text-primary">
+                Shlomo Nimrodi, CPA – Founding Partner
+              </figcaption>
+            </figure>
             <p className="mt-5 text-lg text-muted-foreground">
               Nimrodi & Co. has operated since 2000 and provides accounting, tax and financial
               services to companies, founders, individuals and international businesses operating in
