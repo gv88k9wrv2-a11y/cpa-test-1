@@ -200,13 +200,13 @@ export function SiteHeaderEn() {
       </a>
       <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
         <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
-          <Link to="/en" className="flex min-w-0 items-center gap-2 leading-tight">
+          <Link to="/en" className="flex shrink-0 items-center gap-2 leading-tight">
             <img src="/apple-touch-icon.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-md" />
-            <span className="flex min-w-0 flex-col">
+            <span className="flex flex-col whitespace-nowrap">
             <span className="font-display text-lg font-bold text-primary sm:text-xl">
               Nimrodi &amp; Co.
             </span>
-            <span className="text-[11px] text-muted-foreground sm:text-xs">
+            <span className="block text-[11px] text-muted-foreground sm:text-xs xl:hidden 2xl:block">
               Certified Public Accountants · Since 2000
             </span>
             </span>
