@@ -1,5 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, CheckCircle2, MessageCircle } from "lucide-react";
+import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
+
+const profileImage = profileAsset.url;
 import {
   FloatingWhatsAppEn,
   SiteFooterEn,
@@ -62,20 +65,38 @@ function AboutEn() {
 
         <section className="py-16">
           <div className="mx-auto max-w-4xl space-y-12 px-4 sm:px-6">
-            <article>
-              <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
-                Our story
-              </h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                Founded by Shlomo Nimrodi, CPA, the firm serves companies, entrepreneurs, executives
-                and individuals in Israel and internationally in areas including technology,
-                professional services, real estate and cross-border activity.
-              </p>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
-                <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
-                  Certified Public Accountant Shlomo Nimrodi is licensed by the Auditors Council of Israel, holding an active CPA license since 1997.
-                </a>
-              </p>
+            <article className="grid items-start gap-8 sm:grid-cols-[auto_minmax(0,1fr)]">
+              <figure className="w-full max-w-xs shrink-0 justify-self-center sm:justify-self-start">
+                <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+                  <img
+                    src={profileImage}
+                    alt="Shlomo Nimrodi, CPA, founding partner of Nimrodi & Co."
+                    width={928}
+                    height={1152}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-auto w-full object-cover"
+                  />
+                </div>
+                <figcaption className="mt-2 text-sm font-semibold text-primary">
+                  Shlomo Nimrodi, CPA – Founding Partner
+                </figcaption>
+              </figure>
+              <div className="min-w-0">
+                <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+                  Our story
+                </h2>
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  Founded by Shlomo Nimrodi, CPA, the firm serves companies, entrepreneurs, executives
+                  and individuals in Israel and internationally in areas including technology,
+                  professional services, real estate and cross-border activity.
+                </p>
+                <p className="mt-4 leading-relaxed text-muted-foreground">
+                  <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
+                    Certified Public Accountant Shlomo Nimrodi is licensed by the Auditors Council of Israel, holding an active CPA license since 1997.
+                  </a>
+                </p>
+              </div>
             </article>
 
             <article>
