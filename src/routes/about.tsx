@@ -2,6 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Building2, ChartLine, Handshake, MessageCircle, Star, Users } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import aboutImage from "../assets/about-visual.webp";
+import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
+
+const profileImage = profileAsset.url;
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -107,7 +110,21 @@ function AboutPage() {
             </div>
 
             <aside className="lg:col-span-2">
-              <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+              <figure className="mx-auto max-w-sm overflow-hidden rounded-2xl border border-border shadow-lg lg:max-w-none">
+                <img
+                  src={profileImage}
+                  alt="רו״ח שלמה נמרודי, מייסד ומנהל משרד נמרודי ושות׳"
+                  width={928}
+                  height={1152}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-auto w-full object-cover"
+                />
+                <figcaption className="border-t border-border bg-card px-4 py-3 text-sm font-semibold text-primary">
+                  רו״ח שלמה נמרודי – מייסד ומנהל המשרד
+                </figcaption>
+              </figure>
+              <div className="mt-6 overflow-hidden rounded-2xl border border-border shadow-lg">
                 <img
                   src={aboutImage}
                   alt="פתרונות חשבונאיים ופיננסיים מקצועיים במשרד רואי החשבון נמרודי ושות׳"
