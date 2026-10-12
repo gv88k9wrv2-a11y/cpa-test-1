@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Building2, ChartLine, Handshake, MessageCircle, Star, Users } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
-import aboutImage from "../assets/about-visual.webp";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
 
 const profileImage = profileAsset.url;
@@ -82,8 +81,24 @@ function AboutPage() {
         </section>
 
         <section className="py-16">
-          <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-5 lg:items-start">
-            <div className="lg:col-span-3 space-y-5 text-muted-foreground leading-relaxed">
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:items-start lg:gap-12">
+            <figure className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl border border-border shadow-lg lg:col-span-2 lg:order-2 lg:max-w-none">
+              <img
+                src={profileImage}
+                alt="רו״ח שלמה נמרודי, מייסד ומנהל משרד נמרודי ושות׳"
+                width={928}
+                height={1152}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="h-auto w-full object-cover"
+              />
+              <figcaption className="border-t border-border bg-card px-4 py-3 text-sm font-semibold text-primary">
+                רו״ח שלמה נמרודי – מייסד ומנהל המשרד
+              </figcaption>
+            </figure>
+
+            <div className="min-w-0 space-y-5 leading-relaxed text-muted-foreground lg:col-span-3 lg:order-1">
               <p>
                 המשרד מנוהל על ידי רו״ח שלמה נמרודי, בעל ניסיון בחשבונאות ובניהול כספים, אשר שימש
                 בעבר כחשב וכמנהל כספים בחברות ציבוריות והיה מעורב בתהליכי הנפקה בבורסה בישראל.
@@ -107,35 +122,8 @@ function AboutPage() {
                 העבודה מתבצעת בליווי אישי, בתיאום ציפיות מראש ובהתאם למידע, למסמכים ולתחומי האחריות
                 שנקבעו בהתקשרות.
               </p>
-            </div>
 
-            <aside className="lg:col-span-2">
-              <figure className="mx-auto max-w-sm overflow-hidden rounded-2xl border border-border shadow-lg lg:max-w-none">
-                <img
-                  src={profileImage}
-                  alt="רו״ח שלמה נמרודי, מייסד ומנהל משרד נמרודי ושות׳"
-                  width={928}
-                  height={1152}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-auto w-full object-cover"
-                />
-                <figcaption className="border-t border-border bg-card px-4 py-3 text-sm font-semibold text-primary">
-                  רו״ח שלמה נמרודי – מייסד ומנהל המשרד
-                </figcaption>
-              </figure>
-              <div className="mt-6 overflow-hidden rounded-2xl border border-border shadow-lg">
-                <img
-                  src={aboutImage}
-                  alt="פתרונות חשבונאיים ופיננסיים מקצועיים במשרד רואי החשבון נמרודי ושות׳"
-                  width={1200}
-                  height={900}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-              <div className="mt-6 rounded-xl border border-gold/40 bg-gold/10 p-6">
+              <div className="rounded-xl border border-gold/40 bg-gold/10 p-6">
                 <Star className="mb-2 h-6 w-6 text-gold-text" aria-hidden />
                 <div className="font-display text-lg font-bold text-primary">
                   ביקורות וחוות דעת ב-Google
@@ -152,7 +140,7 @@ function AboutPage() {
                   צפו בביקורות שלנו ב-Google Maps ←
                 </a>
               </div>
-            </aside>
+            </div>
           </div>
         </section>
 
