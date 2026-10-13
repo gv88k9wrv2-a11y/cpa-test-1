@@ -32,6 +32,7 @@ import { Route as ServicesRouteImport } from './routes/services'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TaxConsultingRouteImport } from './routes/tax-consulting'
 import { Route as TeamRouteImport } from './routes/team'
+import { Route as VoluntaryDisclosureRouteImport } from './routes/voluntary-disclosure'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as EnIndexRouteImport } from './routes/en.index'
@@ -54,6 +55,7 @@ import { Route as EnPrivacyPolicyRouteImport } from './routes/en.privacy-policy'
 import { Route as EnServicesRouteImport } from './routes/en.services'
 import { Route as EnTaxConsultingRouteImport } from './routes/en.tax-consulting'
 import { Route as EnTeamRouteImport } from './routes/en.team'
+import { Route as EnVoluntaryDisclosureRouteImport } from './routes/en.voluntary-disclosure'
 import { Route as EnBlogIndexRouteImport } from './routes/en.blog.index'
 import { Route as EnBlogSlugRouteImport } from './routes/en.blog.$slug'
 
@@ -172,6 +174,11 @@ const TeamRoute = TeamRouteImport.update({
   path: '/team',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VoluntaryDisclosureRoute = VoluntaryDisclosureRouteImport.update({
+  id: '/voluntary-disclosure',
+  path: '/voluntary-disclosure',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -282,6 +289,11 @@ const EnTeamRoute = EnTeamRouteImport.update({
   path: '/team',
   getParentRoute: () => EnRoute,
 } as any)
+const EnVoluntaryDisclosureRoute = EnVoluntaryDisclosureRouteImport.update({
+  id: '/voluntary-disclosure',
+  path: '/voluntary-disclosure',
+  getParentRoute: () => EnRoute,
+} as any)
 const EnBlogIndexRoute = EnBlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -317,6 +329,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tax-consulting': typeof TaxConsultingRoute
   '/team': typeof TeamRoute
+  '/voluntary-disclosure': typeof VoluntaryDisclosureRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/en/about': typeof EnAboutRoute
   '/en/accessibility': typeof EnAccessibilityRoute
@@ -337,6 +350,7 @@ export interface FileRoutesByFullPath {
   '/en/services': typeof EnServicesRoute
   '/en/tax-consulting': typeof EnTaxConsultingRoute
   '/en/team': typeof EnTeamRoute
+  '/en/voluntary-disclosure': typeof EnVoluntaryDisclosureRoute
   '/blog/': typeof BlogIndexRoute
   '/en/': typeof EnIndexRoute
   '/en/blog/$slug': typeof EnBlogSlugRoute
@@ -365,6 +379,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tax-consulting': typeof TaxConsultingRoute
   '/team': typeof TeamRoute
+  '/voluntary-disclosure': typeof VoluntaryDisclosureRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/en/about': typeof EnAboutRoute
   '/en/accessibility': typeof EnAccessibilityRoute
@@ -385,6 +400,7 @@ export interface FileRoutesByTo {
   '/en/services': typeof EnServicesRoute
   '/en/tax-consulting': typeof EnTaxConsultingRoute
   '/en/team': typeof EnTeamRoute
+  '/en/voluntary-disclosure': typeof EnVoluntaryDisclosureRoute
   '/blog': typeof BlogIndexRoute
   '/en': typeof EnIndexRoute
   '/en/blog/$slug': typeof EnBlogSlugRoute
@@ -415,6 +431,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tax-consulting': typeof TaxConsultingRoute
   '/team': typeof TeamRoute
+  '/voluntary-disclosure': typeof VoluntaryDisclosureRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/en/about': typeof EnAboutRoute
   '/en/accessibility': typeof EnAccessibilityRoute
@@ -435,6 +452,7 @@ export interface FileRoutesById {
   '/en/services': typeof EnServicesRoute
   '/en/tax-consulting': typeof EnTaxConsultingRoute
   '/en/team': typeof EnTeamRoute
+  '/en/voluntary-disclosure': typeof EnVoluntaryDisclosureRoute
   '/blog/': typeof BlogIndexRoute
   '/en/': typeof EnIndexRoute
   '/en/blog/$slug': typeof EnBlogSlugRoute
@@ -466,6 +484,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tax-consulting'
     | '/team'
+    | '/voluntary-disclosure'
     | '/blog/$slug'
     | '/en/about'
     | '/en/accessibility'
@@ -486,6 +505,7 @@ export interface FileRouteTypes {
     | '/en/services'
     | '/en/tax-consulting'
     | '/en/team'
+    | '/en/voluntary-disclosure'
     | '/blog/'
     | '/en/'
     | '/en/blog/$slug'
@@ -514,6 +534,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tax-consulting'
     | '/team'
+    | '/voluntary-disclosure'
     | '/blog/$slug'
     | '/en/about'
     | '/en/accessibility'
@@ -534,6 +555,7 @@ export interface FileRouteTypes {
     | '/en/services'
     | '/en/tax-consulting'
     | '/en/team'
+    | '/en/voluntary-disclosure'
     | '/blog'
     | '/en'
     | '/en/blog/$slug'
@@ -563,6 +585,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tax-consulting'
     | '/team'
+    | '/voluntary-disclosure'
     | '/blog/$slug'
     | '/en/about'
     | '/en/accessibility'
@@ -583,6 +606,7 @@ export interface FileRouteTypes {
     | '/en/services'
     | '/en/tax-consulting'
     | '/en/team'
+    | '/en/voluntary-disclosure'
     | '/blog/'
     | '/en/'
     | '/en/blog/$slug'
@@ -613,6 +637,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TaxConsultingRoute: typeof TaxConsultingRoute
   TeamRoute: typeof TeamRoute
+  VoluntaryDisclosureRoute: typeof VoluntaryDisclosureRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
@@ -780,6 +805,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TeamRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/voluntary-disclosure': {
+      id: '/voluntary-disclosure'
+      path: '/voluntary-disclosure'
+      fullPath: '/voluntary-disclosure'
+      preLoaderRoute: typeof VoluntaryDisclosureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/': {
       id: '/blog/'
       path: '/blog'
@@ -934,6 +966,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnTeamRouteImport
       parentRoute: typeof EnRoute
     }
+    '/en/voluntary-disclosure': {
+      id: '/en/voluntary-disclosure'
+      path: '/voluntary-disclosure'
+      fullPath: '/en/voluntary-disclosure'
+      preLoaderRoute: typeof EnVoluntaryDisclosureRouteImport
+      parentRoute: typeof EnRoute
+    }
     '/en/blog/': {
       id: '/en/blog/'
       path: '/blog'
@@ -971,6 +1010,7 @@ interface EnRouteChildren {
   EnServicesRoute: typeof EnServicesRoute
   EnTaxConsultingRoute: typeof EnTaxConsultingRoute
   EnTeamRoute: typeof EnTeamRoute
+  EnVoluntaryDisclosureRoute: typeof EnVoluntaryDisclosureRoute
   EnIndexRoute: typeof EnIndexRoute
   EnBlogSlugRoute: typeof EnBlogSlugRoute
   EnBlogIndexRoute: typeof EnBlogIndexRoute
@@ -996,6 +1036,7 @@ const EnRouteChildren: EnRouteChildren = {
   EnServicesRoute: EnServicesRoute,
   EnTaxConsultingRoute: EnTaxConsultingRoute,
   EnTeamRoute: EnTeamRoute,
+  EnVoluntaryDisclosureRoute: EnVoluntaryDisclosureRoute,
   EnIndexRoute: EnIndexRoute,
   EnBlogSlugRoute: EnBlogSlugRoute,
   EnBlogIndexRoute: EnBlogIndexRoute,
@@ -1027,6 +1068,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TaxConsultingRoute: TaxConsultingRoute,
   TeamRoute: TeamRoute,
+  VoluntaryDisclosureRoute: VoluntaryDisclosureRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
