@@ -67,12 +67,17 @@ function AboutPage() {
       <main id="main-content">
         <section className="border-b border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-            <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-xs font-semibold text-gold-text">
+              <Award className="h-3.5 w-3.5" aria-hidden />
               אודות
             </div>
             <h1 className="mt-3 font-display text-4xl font-bold text-primary sm:text-5xl">
               נמרודי ושות׳ – רואי חשבון
             </h1>
+            <figure className="mx-auto mt-6 w-full max-w-[15rem] sm:hidden">
+              <img src={profileImage} alt="רו״ח שלמה נמרודי – שותף מייסד" width={928} height={1152} loading="eager" fetchPriority="high" decoding="async" className="h-auto w-full rounded-lg border border-border shadow-lg" />
+              <figcaption className="mt-2 text-sm font-semibold text-primary">רו״ח שלמה נמרודי – שותף מייסד</figcaption>
+            </figure>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
               נמרודי ושות׳ הוא משרד רואי חשבון בוטיק הפועל משנת 2000 בהרצליה פיתוח ומספק שירותי
               חשבונאות, ביקורת, מס וניהול כספים לחברות, עצמאים ויחידים.
@@ -82,7 +87,7 @@ function AboutPage() {
 
         <section className="py-16">
           <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-5 lg:items-start lg:gap-12">
-            <figure className="mx-auto w-full max-w-xs overflow-hidden rounded-2xl border border-border shadow-lg lg:col-span-2 lg:order-2 lg:max-w-none">
+            <figure className="mx-auto hidden w-full max-w-xs overflow-hidden rounded-2xl border border-border shadow-lg sm:block lg:col-span-2 lg:order-2 lg:max-w-none">
               <img
                 src={profileImage}
                 alt="רו״ח שלמה נמרודי, מייסד ומנהל משרד נמרודי ושות׳"
@@ -94,7 +99,7 @@ function AboutPage() {
                 className="h-auto w-full object-cover"
               />
               <figcaption className="border-t border-border bg-card px-4 py-3 text-sm font-semibold text-primary">
-                רו״ח שלמה נמרודי – מייסד ומנהל המשרד
+                רו״ח שלמה נמרודי – שותף מייסד
               </figcaption>
             </figure>
 
