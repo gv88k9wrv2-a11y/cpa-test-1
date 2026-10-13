@@ -1,5 +1,10 @@
 # Requested updates
 
+- [ ] Move Hebrew About portrait below the title, update caption and badge; verify mobile and desktop.
+- [ ] Prevent Hebrew header wrapping, match intermediate-width subtitle visibility, widen container.
+- [ ] Add approved bilingual voluntary disclosure pages, legal wording, process, FAQ, contact form and schemas.
+- [ ] Add bilingual navigation/footer links and sitemap entries; verify page and contact flows.
+
 - [x] Official header icon in Hebrew and English.
 - [x] Remove duplicate homepage hero call button; retain contact and mobile actions.
 - [x] Use Call Now in English mobile actions.
