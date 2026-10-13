@@ -1,4 +1,5 @@
 import { createServerFn } from "@tanstack/react-start";
+import { getRequest } from "@tanstack/react-start/server";
 import { z } from "zod";
 
 const inquirySchema = z.object({
@@ -15,7 +16,13 @@ const inquirySchema = z.object({
 export const storeVoluntaryInquiry = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => inquirySchema.parse(input))
   .handler(async ({ data }) => {
+    const request = getRequest();
+    const requestOrigin = request.headers.get("origin");
+    const allowedOrigins = new Set(["https://nimrodi.co.il", "https://www.nimrodi.co.il", "https://cpa-test-1.lovable.app", "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app", new URL(request.url).origin]);
+    if (!requestOrigin || !allowedOrigins.has(requestOrigin)) throw new Error("Forbidden");
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+    const digits = data.phone.replace(/\D/g, "");
+    if (digits.length < 8 || digits.length > 15) throw new Error("Invalid phone");
     const payload = {
       ...data,
       service_name: data.language === "he" ? "גילוי מרצון והסדרה יזומה" : "Voluntary Disclosure & Tax Regularization",
