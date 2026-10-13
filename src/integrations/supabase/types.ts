@@ -14,13 +14,51 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      voluntary_disclosure_inquiries: {
+        Row: {
+          company: string
+          created_at: string
+          email: string
+          id: string
+          language: string
+          message: string
+          name: string
+          page_path: string
+          phone: string
+          service_name: string
+        }
+        Insert: {
+          company?: string
+          created_at?: string
+          email: string
+          id: string
+          language: string
+          message: string
+          name: string
+          page_path: string
+          phone: string
+          service_name: string
+        }
+        Update: {
+          company?: string
+          created_at?: string
+          email?: string
+          id?: string
+          language?: string
+          message?: string
+          name?: string
+          page_path?: string
+          phone?: string
+          service_name?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      store_voluntary_inquiry: { Args: { payload: Json }; Returns: string }
     }
     Enums: {
       [_ in never]: never

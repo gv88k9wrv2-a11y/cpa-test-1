@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import { storeVoluntaryInquiry } from "../lib/voluntary-inquiry.functions";
 import { Link } from "@tanstack/react-router";
 import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "lucide-react";
 
@@ -138,7 +140,10 @@ function deriveServiceName(lang: Lang): string {
   return pretty || map["/"] || (lang === "he" ? "האתר" : "Website");
 }
 
-export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceName?: string }) {
+export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = false }: { lang?: Lang; serviceName?: string; persistVoluntaryInquiry?: boolean }) {
+  const storeInquiry = useServerFn(storeVoluntaryInquiry);
+  const inquiryId = useRef<string | null>(null);
+  const sending = useRef(false);
   const t = COPY[lang];
   const source = serviceName || deriveServiceName(lang);
   const [submitted, setSubmitted] = useState(false);
@@ -178,7 +183,7 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
       document.getElementById(`lf-${first}`)?.focus();
       return;
     }
-    if (submitting) return;
+    if (submitting || sending.current) return;
     // Honeypot: bots fill hidden field — silently pretend success
     const hp = (e.currentTarget.elements.namedItem("botcheck") as HTMLInputElement | null)?.checked;
     if (hp) {
@@ -186,6 +191,7 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
       return;
     }
     setSubmitting(true);
+    sending.current = true;
     setSendError(false);
 
     const subject = buildSubject();
@@ -193,6 +199,10 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
     setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`);
 
     try {
+      if (persistVoluntaryInquiry) {
+        inquiryId.current = inquiryId.current ?? crypto.randomUUID();
+        await storeInquiry({ data: { id: inquiryId.current, ...form, language: lang } });
+      }
       if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -229,11 +239,13 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
     } catch {
       setSendError(true);
     } finally {
+      sending.current = false;
       setSubmitting(false);
     }
   };
 
   const reset = () => {
+    inquiryId.current = null;
     setSubmitted(false);
     setErrors({});
     setForm({ name: "", company: "", email: "", phone: "", message: "" });
