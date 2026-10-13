@@ -1,6 +1,8 @@
 // Short factual "Key Takeaways" (40–50 words) shown at the top of core service pages.
 // Keyed by pathname. Content is derived only from existing page copy.
 export const PAGE_SUMMARIES: Record<string, string> = {
+  "/voluntary-disclosure": "נמרודי ושות׳ מלווה הסדרה יזומה של דיווחים על חשבונות בחו״ל, נכסים דיגיטליים והכנסות שלא דווחו. הטיפול כולל בחינת חשיפה, איסוף ושחזור מסמכים, תחשיבי מס, דיווחים ומגעים מול פקיד השומה ותיעוד מקור כספים לבנקים. סודיות מקצועית אינה חיסיון עו״ד; אין הבטחת תוצאה והטיפול מותאם לדין ולנסיבות.",
+  "/en/voluntary-disclosure": "Nimrodi & Co. assists with proactive Israeli tax regularization for foreign accounts, digital assets and unreported income. Support includes exposure review, document reconstruction, tax calculations, amended filings, assessing-officer dialogue and banking documentation. Professional confidentiality is not attorney-client privilege; outcomes depend on individual circumstances and applicable law.",
   "/audit":
     "נמרודי ושות׳, משרד רואי חשבון בהרצליה פיתוח, מבצע ביקורת דוחות כספיים בהתאם למסגרת הדיווח החלה (IFRS או Israeli GAAP), לתקני הביקורת הרלוונטיים ולהיקף ההתקשרות. דוחות מבוקרים משמשים חברות, בעלי מניות, מלווים וגורמים נוספים, בהתאם לדרישות החלות ולמטרת הדיווח.",
   "/bookkeeping":

@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
+import { storeVoluntaryInquiry } from "../lib/voluntary-inquiry.functions";
 import { Link } from "@tanstack/react-router";
 import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "lucide-react";
 
@@ -138,12 +140,16 @@ function deriveServiceName(lang: Lang): string {
   return pretty || map["/"] || (lang === "he" ? "האתר" : "Website");
 }
 
-export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceName?: string }) {
+export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = false }: { lang?: Lang; serviceName?: string; persistVoluntaryInquiry?: boolean }) {
+  const storeInquiry = useServerFn(storeVoluntaryInquiry);
+  const inquiryId = useRef<string | null>(null);
+  const sending = useRef(false);
   const t = COPY[lang];
   const source = serviceName || deriveServiceName(lang);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [sendError, setSendError] = useState(false);
+  const [savedWithoutEmail, setSavedWithoutEmail] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(
     `https://wa.me/${WHATSAPP_NUMBER}`,
@@ -178,7 +184,7 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
       document.getElementById(`lf-${first}`)?.focus();
       return;
     }
-    if (submitting) return;
+    if (submitting || sending.current) return;
     // Honeypot: bots fill hidden field — silently pretend success
     const hp = (e.currentTarget.elements.namedItem("botcheck") as HTMLInputElement | null)?.checked;
     if (hp) {
@@ -186,13 +192,21 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
       return;
     }
     setSubmitting(true);
+    sending.current = true;
     setSendError(false);
+    setSavedWithoutEmail(false);
+    let stored = false;
 
     const subject = buildSubject();
     const body = buildBody();
     setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(body)}`);
 
     try {
+      if (persistVoluntaryInquiry) {
+        inquiryId.current = inquiryId.current ?? crypto.randomUUID();
+        await storeInquiry({ data: { id: inquiryId.current, ...form, language: lang } });
+        stored = true;
+      }
       if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -227,14 +241,22 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
       }
       setSubmitted(true);
     } catch {
-      setSendError(true);
+      if (stored) {
+        setSavedWithoutEmail(true);
+        setSubmitted(true);
+      } else {
+        setSendError(true);
+      }
     } finally {
+      sending.current = false;
       setSubmitting(false);
     }
   };
 
   const reset = () => {
+    inquiryId.current = null;
     setSubmitted(false);
+    setSavedWithoutEmail(false);
     setErrors({});
     setForm({ name: "", company: "", email: "", phone: "", message: "" });
     setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}`);
@@ -271,8 +293,8 @@ export function LeadForm({ lang = "he", serviceName }: { lang?: Lang; serviceNam
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gold/15 text-gold">
               <CheckCircle2 className="h-8 w-8" aria-hidden />
             </div>
-            <h3 className="font-display text-2xl font-bold text-primary">{t.successTitle}</h3>
-            <p className="mt-3 text-muted-foreground">{t.successText}</p>
+            <h3 className="font-display text-2xl font-bold text-primary">{savedWithoutEmail ? (lang === "he" ? "פנייתך נשמרה במערכת המשרד" : "Your inquiry has been saved") : t.successTitle}</h3>
+            <p className="mt-3 text-muted-foreground">{savedWithoutEmail ? (lang === "he" ? "הפנייה נשמרה, אך שליחת הודעת הדוא״ל לא הושלמה. ניתן לפנות גם בטלפון או להמשיך בוואטסאפ." : "Your inquiry was saved, but the email notification could not be sent. You can also call or continue on WhatsApp.") : t.successText}</p>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 href={lastWhatsAppUrl}

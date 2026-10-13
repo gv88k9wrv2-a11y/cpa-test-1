@@ -270,14 +270,13 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
     },
     {
       label: "תיקון והסדרת דיווחים קודמים",
-      to: "/tax-consulting",
-      hash: "prior-reporting-regularization",
+      to: "/voluntary-disclosure",
     },
   ],
   "/tax-consulting": [
     { label: "שירותי רואה חשבון לעצמאים ופרילנסרים", to: "/cpa-freelancers" },
     { label: "שירותים ליחידים ולעצמאים", to: "/individuals" },
-    { label: "צור קשר →", to: "/contact" },
+    { label: "גילוי מרצון והסדרה יזומה", to: "/voluntary-disclosure" },
   ],
 
   "/en/bookkeeping": [
@@ -328,8 +327,7 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
     },
     {
       label: "Correction and regularization of prior reporting",
-      to: "/en/tax-consulting",
-      hash: "prior-reporting-regularization",
+      to: "/en/voluntary-disclosure",
     },
   ],
   "/en/tax-consulting": [
@@ -338,7 +336,7 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
       to: "/en/cpa-freelancers",
     },
     { label: "Services for individuals and self-employed clients", to: "/en/individuals" },
-    { label: "Contact Us →", to: "/en/contact" },
+    { label: "Voluntary Disclosure & Tax Regularization", to: "/en/voluntary-disclosure" },
   ],
 };
 

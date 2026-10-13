@@ -70,6 +70,7 @@ type ServiceRoute =
   | "/payroll"
   | "/audit"
   | "/tax-consulting"
+  | "/voluntary-disclosure"
   | "/fractional-cfo"
   | "/cpa-startups"
   | "/cpa-freelancers"
@@ -118,6 +119,7 @@ const SERVICE_GROUPS: { label: string; items: ServiceItem[] }[] = [
         desc: "תכנון מס · בקשות להחלטות מיסוי · השגות",
         icon: FileSpreadsheet,
       },
+      { to: "/voluntary-disclosure", label: "גילוי מרצון והסדרה יזומה", desc: "הסדרת דיווחים · תיעוד מקור כספים", icon: FileSpreadsheet },
     ],
   },
 
@@ -200,15 +202,15 @@ export function SiteHeader() {
         דלג לתוכן העיקרי
       </a>
       <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
-        <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
+        <div className="mx-auto flex h-[70px] max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
           {/* Logo */}
-          <Link to="/" className="flex min-w-0 items-center gap-2 leading-tight">
+          <Link to="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap leading-tight">
             <img src="/apple-touch-icon.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-md" />
-            <span className="flex min-w-0 flex-col">
+            <span className="flex flex-col whitespace-nowrap">
             <span className="font-display text-lg font-bold text-primary sm:text-xl">
               נמרודי ושות׳
             </span>
-            <span className="text-[11px] text-muted-foreground sm:text-xs">
+            <span className="block text-[11px] text-muted-foreground sm:text-xs xl:hidden 2xl:block">
               רואי חשבון · מאז 2000
             </span>
             </span>
@@ -466,6 +468,7 @@ const MOBILE_COMPANIES: NavItem[] = [
 ];
 
 const MOBILE_INDIVIDUALS: NavItem[] = [
+  { label: "גילוי מרצון והסדרה יזומה", to: "/voluntary-disclosure" },
   {
     label: "דוחות שנתיים והצהרות הון",
     to: "/tax-consulting",

@@ -13,6 +13,9 @@
 
 ## Project rules
 
+- Voluntary-disclosure pages share a typed bilingual content module and presentation component; leaf routes supply language-specific metadata and schemas to keep approved content consistent.
+- New voluntary-disclosure forms persist validated inquiries through a write-only server function with database-backed rate limiting before using the existing Web3Forms delivery; other form behavior remains unchanged.
+
 - IndexNow key lives at public/b96942c3f69d63c3ffeb41ddd5525a25.txt; ping via `bun scripts/indexnow-ping.ts` after publish — keeps Bing/Yandex/AI indexes fresh without a public write endpoint.
 - Service-page "Key Takeaways" text lives in src/data/page-summaries.ts keyed by pathname — one source for LLM-quotable summaries.
 - Person/Organization JSON-LD share @ids from src/lib/meta.ts (ORG_ID, PERSON_ID) — articles reference the founder as author/reviewer by @id.

@@ -69,6 +69,7 @@ type ServiceRoute =
   | "/en/payroll"
   | "/en/audit"
   | "/en/tax-consulting"
+  | "/en/voluntary-disclosure"
   | "/en/fractional-cfo"
   | "/en/cpa-startups"
   | "/en/cpa-freelancers"
@@ -117,6 +118,7 @@ export const SERVICE_GROUPS_EN: { label: string; items: ServiceItem[] }[] = [
         desc: "Israeli tax planning · Ruling requests · Objections",
         icon: FileSpreadsheet,
       },
+      { to: "/en/voluntary-disclosure", label: "Voluntary Disclosure & Tax Regularization", desc: "Amended filings · Source-of-funds documentation", icon: FileSpreadsheet },
     ],
   },
 
@@ -460,6 +462,7 @@ const MOBILE_COMPANIES_EN: NavItem[] = [
 ];
 
 const MOBILE_INDIVIDUALS_EN: NavItem[] = [
+  { label: "Voluntary Disclosure & Tax Regularization", to: "/en/voluntary-disclosure" },
   {
     label: "Annual Returns & Capital Declarations",
     to: "/en/tax-consulting",
