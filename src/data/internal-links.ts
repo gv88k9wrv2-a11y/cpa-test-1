@@ -222,6 +222,11 @@ export type RelatedService = {
  * matching the approved internal-linking map.
  */
 export const RELATED_SERVICES: Record<string, RelatedService[]> = {
+  "/cpa-herzliya": [
+    { label: "שירותים לחברות ולסטארטאפים", to: "/companies" },
+    { label: "ניהול כספים במיקור חוץ (Fractional CFO)", to: "/fractional-cfo" },
+    { label: "ייעוץ מס ותכנון מס", to: "/tax-consulting" },
+  ],
   "/bookkeeping": [
     { label: "ייעוץ מס ודיווחים תקופתיים", to: "/tax-consulting" },
     { label: "שירותים לחברות ולסטארטאפים", to: "/companies" },
@@ -236,6 +241,7 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
   ],
   "/fractional-cfo": [
     { label: "ביקורת דוחות כספיים", to: "/audit" },
+    { label: "רואה חשבון בהרצליה פיתוח", to: "/cpa-herzliya" },
     { label: "סטארטאפים וחברות טכנולוגיה", to: "/cpa-startups" },
   ],
   "/cpa-startups": [
@@ -279,6 +285,11 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
     { label: "גילוי מרצון והסדרה יזומה", to: "/voluntary-disclosure" },
   ],
 
+  "/en/cpa-herzliya": [
+    { label: "Services for companies and startups", to: "/en/companies" },
+    { label: "Fractional CFO and financial management", to: "/en/fractional-cfo" },
+    { label: "Israeli tax advisory", to: "/en/tax-consulting" },
+  ],
   "/en/bookkeeping": [
     { label: "Tax advisory and periodic reporting", to: "/en/tax-consulting" },
     { label: "Services for companies and startups", to: "/en/companies" },
@@ -294,6 +305,7 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
   "/en/fractional-cfo": [
     { label: "Financial statement audit", to: "/en/audit" },
     { label: "Startups and technology companies", to: "/en/cpa-startups" },
+    { label: "CPA in Herzliya Pituach", to: "/en/cpa-herzliya" },
   ],
   "/en/cpa-startups": [
     { label: "Fractional CFO and financial management", to: "/en/fractional-cfo" },

@@ -14,6 +14,14 @@ import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const ORIGIN = "https://www.nimrodi.co.il";
 
+
+/** Articles where outsourced financial management is a natural next step. */
+const CFO_SLUGS = new Set([
+  "startup-accounting-tax-israel",
+  "israeli-subsidiary-vs-branch",
+  "foreign-companies-operating-in-israel",
+]);
+
 export const Route = createFileRoute("/en/blog/$slug")({
   loader: ({ params }) => {
     const post = BLOG_POSTS_EN_BY_SLUG[params.slug];
@@ -224,6 +232,26 @@ function BlogPostPageEn() {
                   className="font-semibold text-primary hover:text-gold-text hover:underline"
                 >
                   {post.relatedService.label}
+                </Link>
+              </p>
+              {CFO_SLUGS.has(post.slug) ? (
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Ongoing financial management:{" "}
+                  <Link
+                    to="/en/fractional-cfo"
+                    className="font-semibold text-primary hover:text-gold-text hover:underline"
+                  >
+                    Fractional CFO services in Israel
+                  </Link>
+                </p>
+              ) : null}
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Meet us at the office:{" "}
+                <Link
+                  to="/en/cpa-herzliya"
+                  className="font-semibold text-primary hover:text-gold-text hover:underline"
+                >
+                  CPA in Herzliya Pituach
                 </Link>
               </p>
             </aside>
