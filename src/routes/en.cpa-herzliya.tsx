@@ -51,17 +51,17 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-herzliya")({
   head: () => ({
     meta: [
-      { title: "CPA in Herzliya Pituach | Nimrodi & Co." },
+      { title: "CPA in Herzliya | Nimrodi & Co. CPAs – Herzliya Pituach" },
       {
         name: "description",
         content:
-          "Boutique CPA firm located in Herzliya Pituach — serving tech companies, startups, foreign entities and professionals in Israel's leading business district.",
+          "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211.",
       },
-      { property: "og:title", content: "CPA in Herzliya Pituach — Nimrodi & Co." },
+      { property: "og:title", content: "CPA in Herzliya | Nimrodi & Co. CPAs – Herzliya Pituach" },
       {
         property: "og:description",
         content:
-          "Boutique CPA firm based in Herzliya Pituach, supporting local companies, startups and independent businesses with accounting and tax work. Get in touch.",
+          "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211.",
       },
       { property: "og:url", content: `${BASE}/en/cpa-herzliya` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },

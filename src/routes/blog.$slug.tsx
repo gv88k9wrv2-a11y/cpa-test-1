@@ -268,6 +268,15 @@ function BlogPostPage() {
                   {post.relatedService.label}
                 </Link>
               </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                לפגישה במשרד:{" "}
+                <Link
+                  to="/cpa-herzliya"
+                  className="font-semibold text-primary hover:text-gold-text hover:underline"
+                >
+                  רואה חשבון בהרצליה פיתוח
+                </Link>
+              </p>
             </aside>
           ) : null}
 
