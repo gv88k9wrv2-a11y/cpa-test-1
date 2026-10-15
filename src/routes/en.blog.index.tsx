@@ -3,7 +3,7 @@ import { CalendarDays, Clock } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 import { BLOG_POSTS_EN } from "../data/blog-posts-en";
 
-const CANONICAL = "https://www.nimrodi.co.il/en/blog";
+const CANONICAL = "https://nimrodi.co.il/en/blog";
 
 export const Route = createFileRoute("/en/blog/")({
   head: () => ({
@@ -22,15 +22,15 @@ export const Route = createFileRoute("/en/blog/")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: CANONICAL },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: CANONICAL },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/blog" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/blog" },
       { rel: "alternate", hrefLang: "en-US", href: CANONICAL },
-      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/blog" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://nimrodi.co.il/blog" },
     ],
   }),
   component: BlogIndexEn,

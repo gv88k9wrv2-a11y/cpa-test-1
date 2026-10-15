@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { INDIVIDUALS_GROUPS_EN } from "../data/nav-content";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const DESCRIPTION =
   "Israeli tax and reporting services for individuals and self-employed clients, including annual returns, crypto, rental income and relocation. Contact our firm.";
 

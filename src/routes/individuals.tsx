@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { INDIVIDUALS_GROUPS_HE } from "../data/nav-content";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const DESCRIPTION =
   "שירותי מס ודיווח ליחידים ולעצמאים: דוחות שנתיים, הצהרות הון, קריפטו, שכר דירה, רילוקיישן, גילוי מרצון והחזרי מס. בחרו נושא ופנו למשרד לשיחת היכרות כעת.";
 

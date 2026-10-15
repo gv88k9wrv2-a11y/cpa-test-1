@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { UnifiedHome } from "../components/unified-home";
 import heroOffice from "../assets/hero-office.webp";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 
 const FAQS = [
   {

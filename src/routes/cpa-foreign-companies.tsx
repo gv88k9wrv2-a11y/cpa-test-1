@@ -62,23 +62,23 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
         content:
           "שירותי חשבונאות ומס לחברות זרות הפועלות בישראל, לרבות בחינת מבנה הפעילות, שכר, מחירי העברה ודיווחים שוטפים. קראו על היקף השירות האפשרי.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-foreign-companies" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/cpa-foreign-companies" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-foreign-companies" },
+      { rel: "canonical", href: "https://nimrodi.co.il/cpa-foreign-companies" },
       {
         rel: "alternate",
         hrefLang: "he-IL",
-        href: "https://www.nimrodi.co.il/cpa-foreign-companies",
+        href: "https://nimrodi.co.il/cpa-foreign-companies",
       },
       {
         rel: "alternate",
         hrefLang: "en-US",
-        href: "https://www.nimrodi.co.il/en/cpa-foreign-companies",
+        href: "https://nimrodi.co.il/en/cpa-foreign-companies",
       },
     ],
     scripts: [
@@ -86,11 +86,11 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
             {
               name: "ליווי חברות זרות בישראל",
-              url: "https://www.nimrodi.co.il/cpa-foreign-companies",
+              url: "https://nimrodi.co.il/cpa-foreign-companies",
             },
           ]),
         ),

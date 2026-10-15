@@ -4,7 +4,7 @@ import { Calculator } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-bookkeeping.webp";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const FAQS = [
   {
     q: "Which bookkeeping and accounting software do you support in Israel?",
@@ -49,11 +49,11 @@ export const Route = createFileRoute("/en/bookkeeping")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
             {
               name: "Bookkeeping for Companies in Israel",
-              url: "https://www.nimrodi.co.il/en/bookkeeping",
+              url: "https://nimrodi.co.il/en/bookkeeping",
             },
           ]),
         ),

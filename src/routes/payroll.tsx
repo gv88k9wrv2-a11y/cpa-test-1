@@ -66,25 +66,25 @@ export const Route = createFileRoute("/payroll")({
         content:
           "מערך שכר לחברות ולסטארטאפים: תלושי שכר, דיווחי מעסיק, טופסי 106 ו־161 וליווי תוכניות אופציות לעובדים. דברו איתנו על היקף השירות.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/payroll" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/payroll" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/payroll" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/payroll" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/payroll" },
+      { rel: "canonical", href: "https://nimrodi.co.il/payroll" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/payroll" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/payroll" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
-            { name: "שירותי שכר ותלושים לחברות", url: "https://www.nimrodi.co.il/payroll" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
+            { name: "שירותי שכר ותלושים לחברות", url: "https://nimrodi.co.il/payroll" },
           ]),
         ),
       },

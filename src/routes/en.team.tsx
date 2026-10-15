@@ -3,7 +3,7 @@ import heroImg from "../assets/team-photo.webp";
 import { Building2, Calculator, GraduationCap, UserCheck, Users } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 
 export const Route = createFileRoute("/en/team")({
   head: () => ({

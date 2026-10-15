@@ -117,7 +117,7 @@ function ErrorComponent({ error, reset }: import("@tanstack/react-router").Error
   );
 }
 
-const DEFAULT_ORIGIN = "https://www.nimrodi.co.il";
+const DEFAULT_ORIGIN = "https://nimrodi.co.il";
 
 const ORG_JSONLD = {
   "@context": "https://schema.org",
@@ -205,7 +205,7 @@ const WEBSITE_JSONLD = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "נמרודי ושות׳ – רואי חשבון",
-  url: "https://www.nimrodi.co.il",
+  url: "https://nimrodi.co.il",
   inLanguage: "he-IL",
   publisher: { "@id": ORG_ID },
 };
@@ -247,8 +247,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת, מס ודיווח על נכסים דיגיטליים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.",
       },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

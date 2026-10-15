@@ -71,7 +71,7 @@ export function VoluntaryDisclosurePage({ lang }: { lang: "he" | "en" }) {
             <address className="not-italic">{he ? "גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל" : "16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel"}</address>
             <div className="flex flex-wrap gap-x-6 gap-y-3"><a href={he ? "tel:099582211" : "tel:+97299582211"} className="inline-flex items-center gap-2 text-primary"><Phone className="h-4 w-4" aria-hidden /><bdi>{he ? "09-9582211" : "+972 9-958-2211"}</bdi></a><a href="https://wa.me/972546688681" target="_blank" rel="noopener noreferrer" className="text-primary">WhatsApp: 054-6688681</a><a href="mailto:office@nimrodi.co.il" className="text-primary">office@nimrodi.co.il</a></div>
             <p>{he ? "רו״ח שלמה נמרודי – רישיון מועצת רואי חשבון בישראל משנת 1997" : "Shlomo Nimrodi, CPA — licensed by the Auditors Council of Israel since 1997"}</p>
-            <a href="https://www.nimrodi.co.il" className="inline-block text-primary">www.nimrodi.co.il</a>
+            <a href="https://nimrodi.co.il" className="inline-block text-primary">nimrodi.co.il</a>
           </div>
         </section>
       </main>

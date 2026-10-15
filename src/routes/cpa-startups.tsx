@@ -66,27 +66,27 @@ export const Route = createFileRoute("/cpa-startups")({
         content:
           "ליווי חשבונאי, מיסויי ופיננסי לסטארטאפים בישראל: הקמה, ניהול שוטף, אופציות לעובדים, מידע לגיוסי הון ודיווח למשקיעים. דברו איתנו על שלב החברה.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-startups" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/cpa-startups" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-startups" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/cpa-startups" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-startups" },
+      { rel: "canonical", href: "https://nimrodi.co.il/cpa-startups" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/cpa-startups" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/cpa-startups" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
             {
               name: "רואה חשבון לסטארטאפים ולגיוסי הון",
-              url: "https://www.nimrodi.co.il/cpa-startups",
+              url: "https://nimrodi.co.il/cpa-startups",
             },
           ]),
         ),

@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 import { FirmContactBlock } from "../components/firm-contact-block";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const UPDATED_EN = "August 2026";
 const DESCRIPTION =
   "Accessibility statement of Nimrodi & Co. CPA: website accessibility principles, physical access to our Herzliya Pituach office and how to request assistance.";

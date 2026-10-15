@@ -10,7 +10,7 @@ import {
   WHATSAPP_URL_EN,
 } from "../components/site-chrome-en";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 
 export const Route = createFileRoute("/en/about")({
   head: () => ({

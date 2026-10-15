@@ -126,24 +126,24 @@ export const Route = createFileRoute("/services")({
         content:
           "שירותי חשבונאות, שכר, ביקורת, מס ומידע ניהולי לחברות, סטארטאפים, עצמאים וחברות זרות, בהתאם לצורך ולהיקף ההתקשרות.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/services" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/services" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/services" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/services" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/services" },
+      { rel: "canonical", href: "https://nimrodi.co.il/services" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/services" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/services" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
           ]),
         ),
       },

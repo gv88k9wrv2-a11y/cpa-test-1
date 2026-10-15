@@ -7,7 +7,7 @@ import { SummaryBox } from "../components/page-summary";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
-const ORIGIN = "https://www.nimrodi.co.il";
+const ORIGIN = "https://nimrodi.co.il";
 
 // Permanent redirects for consolidated duplicate Hebrew articles.
 const MERGED_SLUGS: Record<string, string> = {
@@ -49,10 +49,10 @@ export const Route = createFileRoute("/blog/$slug")({
         },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `${ORIGIN}/blog/${params.slug}` },
-        { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+        { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "640" },
-        { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+        { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],

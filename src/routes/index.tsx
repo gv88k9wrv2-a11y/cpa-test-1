@@ -43,11 +43,11 @@ export const Route = createFileRoute("/")({
         content:
           "משרד רואי חשבון בהרצליה פיתוח מאז 2000: הנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס במענה אישי לחברות, סטארטאפים ועצמאים. חייגו 09-9582211 לשיחת היכרות.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
       {
@@ -57,10 +57,10 @@ export const Route = createFileRoute("/")({
         type: "image/webp",
         fetchPriority: "high",
       },
-      { rel: "canonical", href: "https://www.nimrodi.co.il/" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en" },
-      { rel: "alternate", hrefLang: "x-default", href: "https://www.nimrodi.co.il/" },
+      { rel: "canonical", href: "https://nimrodi.co.il/" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en" },
+      { rel: "alternate", hrefLang: "x-default", href: "https://nimrodi.co.il/" },
     ],
     scripts: [
       {

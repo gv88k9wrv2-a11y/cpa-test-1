@@ -16,7 +16,7 @@ const TOPIC_SECTIONS = TAX_TOPICS.en
   .filter((t) => !EXISTING_TOPIC_IDS.has(t.id))
   .map((t) => ({ id: t.id, title: t.heading, body: t.intro }));
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const FAQS = [
   {
     q: "What is an Israeli advance tax ruling and when should it be considered?",
@@ -68,11 +68,11 @@ export const Route = createFileRoute("/en/tax-consulting")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
             {
               name: "Israeli Tax Advisory and Crypto Reporting",
-              url: "https://www.nimrodi.co.il/en/tax-consulting",
+              url: "https://nimrodi.co.il/en/tax-consulting",
             },
           ]),
         ),

@@ -66,19 +66,19 @@ export const Route = createFileRoute("/cpa-international")({
         content:
           "ליווי מיסוי בין־לאומי לרילוקיישן, לעולים חדשים ולתושבים חוזרים: בחינת תושבות, אמנות מס, דיווחים בישראל ותיאום עם יועצים בחו״ל. נשמח לשוחח על המקרה.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-international" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/cpa-international" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-international" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/cpa-international" },
+      { rel: "canonical", href: "https://nimrodi.co.il/cpa-international" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/cpa-international" },
       {
         rel: "alternate",
         hrefLang: "en-US",
-        href: "https://www.nimrodi.co.il/en/cpa-international",
+        href: "https://nimrodi.co.il/en/cpa-international",
       },
     ],
     scripts: [
@@ -86,11 +86,11 @@ export const Route = createFileRoute("/cpa-international")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
             {
               name: "ייעוץ מס בין־לאומי, רילוקיישן ותושבות מס בישראל",
-              url: "https://www.nimrodi.co.il/cpa-international",
+              url: "https://nimrodi.co.il/cpa-international",
             },
           ]),
         ),
