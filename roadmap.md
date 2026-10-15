@@ -1,5 +1,9 @@
 # Requested updates
 
+- [x] Stage 3: enrich founder licensing schema and verify visible credentials and author/reviewer references; official registry remains a public search link, not a fresh status verification.
+- [x] Stage 3: refresh AI reference files and verify direct-answer summaries for the approved service areas; no new articles.
+- [x] Stage 3: verify rendered metadata, reference files and build status; preview checks passed without runtime errors, build OK.
+
 - [x] Move Hebrew About portrait below the title, update caption and badge; verify mobile and desktop.
 - [x] Prevent Hebrew header wrapping, match intermediate-width subtitle visibility, widen container.
 - [x] Add approved bilingual voluntary disclosure pages, legal wording, process, FAQ, contact form and schemas.

@@ -19,4 +19,5 @@
 - IndexNow key lives at public/b96942c3f69d63c3ffeb41ddd5525a25.txt; ping via `bun scripts/indexnow-ping.ts` after publish — keeps Bing/Yandex/AI indexes fresh without a public write endpoint.
 - Service-page "Key Takeaways" text lives in src/data/page-summaries.ts keyed by pathname — one source for LLM-quotable summaries.
 - Person/Organization JSON-LD share @ids from src/lib/meta.ts (ORG_ID, PERSON_ID) — articles reference the founder as author/reviewer by @id.
+- Founder credentials and official registry URL are defined centrally in src/lib/meta.ts and reused by Person and article author/reviewer references and About-page registry links — keeps licensing facts consistent without asserting a license number or independent review.
 - Official NAP is 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel / גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל; phone +972 9-958-2211 (09-9582211) — keep all visible and structured references synchronized.
