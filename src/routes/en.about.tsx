@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, CheckCircle2, MessageCircle } from "lucide-react";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
+import { CPA_REGISTRY_URL } from "../lib/meta";
 
 const profileImage = profileAsset.url;
 import {
@@ -19,15 +20,17 @@ export const Route = createFileRoute("/en/about")({
       {
         name: "description",
         content:
-          "About Nimrodi & Co. CPA — serving Israeli and international clients from Herzliya Pituach since 2000, with senior-level involvement and boutique-firm attention.",
+          "About Nimrodi & Co. and Shlomo Nimrodi, CPA, licensed since 1997 by Israel’s Auditors Council, Ministry of Justice. Based in Herzliya Pituach. Meet our firm.",
       },
       { property: "og:title", content: "About Nimrodi & Co." },
       {
         property: "og:description",
         content:
-          "About Nimrodi & Co., a boutique CPA firm in Herzliya Pituach supporting companies, startups and international clients in Israel. Learn more about our firm.",
+          "About Nimrodi & Co. and Shlomo Nimrodi, CPA, licensed since 1997 by Israel’s Auditors Council, Ministry of Justice. Based in Herzliya Pituach. Meet our firm.",
       },
       { property: "og:url", content: `${BASE}/en/about` },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
@@ -110,8 +113,8 @@ function AboutEn() {
                   professional services, real estate and cross-border activity.
                 </p>
                 <p className="mt-4 leading-relaxed text-muted-foreground">
-                  <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
-                    Certified Public Accountant Shlomo Nimrodi is licensed by the Auditors Council of Israel, holding an active CPA license since 1997.
+                  <a href={CPA_REGISTRY_URL} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
+                    Shlomo Nimrodi, CPA, has held an Israeli CPA license since 1997, issued by the Auditors Council, Ministry of Justice. View the official licensing registry.
                   </a>
                 </p>
               </div>

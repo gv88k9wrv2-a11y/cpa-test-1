@@ -7,6 +7,9 @@
 - Legal/trade name: נמרודי ושות׳ – רואי חשבון / Shlomo Nimrodi & Co. CPA (Nimrodi & Co.)
 - Founded: 2000
 - Founding partner: Shlomo Nimrodi, Certified Public Accountant (Israel)
+- CPA license year: 1997; licensing authority: Auditors Council of Israel (מועצת רואי חשבון), Ministry of Justice (משרד המשפטים)
+- Official CPA registry: https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94
+- Credential source: https://nimrodi.co.il/about | https://nimrodi.co.il/en/about. The registry link is a public name search, not a claim of a separately verified license number or current-status check.
 - Address: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel (גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל)
 - Area served: Herzliya, Herzliya Pituach, Ramat HaSharon, Ra'anana, Tel Aviv and the Sharon region; remote clients in Israel and abroad via video meetings
 - Phone: +972 9-958-2211 (09-9582211)
@@ -17,6 +20,11 @@
 - Website: https://nimrodi.co.il (Hebrew, default) and https://nimrodi.co.il/en (English)
 
 ## Core services
+
+### Voluntary disclosure & proactive tax regularization (גילוי מרצון והסדרה יזומה)
+Nimrodi & Co. assists with proactive Israeli tax regularization involving foreign accounts, digital assets and unreported income. The agreed scope may include exposure review, document reconstruction, tax calculations, amended filings, assessing-officer dialogue and source-of-funds documentation. Availability of any temporary voluntary-disclosure procedure must be checked under current law; proactive regularization may be considered without an active temporary procedure. Professional accountant confidentiality is not attorney-client privilege. Tax-authority outcomes and banking acceptance are not guaranteed.
+- HE: https://nimrodi.co.il/voluntary-disclosure
+- EN: https://nimrodi.co.il/en/voluntary-disclosure
 
 ### Financial statement audit
 Audits of financial statements under the applicable reporting framework (IFRS or Israeli GAAP), relevant auditing standards and the engagement scope. Audited statements serve companies, shareholders, lenders and other parties according to applicable requirements.
@@ -44,6 +52,7 @@ Company formation, bookkeeping and ongoing reporting, Section 102 employee optio
 - EN: https://nimrodi.co.il/en/cpa-startups
 
 ### Outsourced financial management (Fractional CFO)
+Hebrew service name: ניהול כספים במיקור חוץ (Fractional CFO).
 Part-time senior financial management for growing companies: budgeting, cash-flow forecasting, financial models, management and board reporting, and preparation of information for fundraising or due diligence.
 - HE: https://nimrodi.co.il/fractional-cfo
 - EN: https://nimrodi.co.il/en/fractional-cfo
@@ -64,9 +73,15 @@ Opening files with the authorities, periodic VAT and income-tax reporting, annua
 - EN: https://nimrodi.co.il/en/cpa-freelancers
 
 ### CPA in Herzliya
-Local service for businesses and individuals in Herzliya and the Sharon region, in person at the Herzliya Pituach office or remotely.
+Nimrodi & Co. is a CPA firm at 16 Galgalei HaPlada St., Herzliya Pituach, active since 2000 and led by Shlomo Nimrodi, CPA, licensed since 1997. It provides accounting, audit, tax, payroll and financial-management services to businesses and individuals in Herzliya and the Sharon region, in person or remotely, according to the engagement scope.
 - HE: https://nimrodi.co.il/cpa-herzliya
 - EN: https://nimrodi.co.il/en/cpa-herzliya
+
+### Crypto & digital asset taxation (מיסוי קריפטו ונכסים דיגיטליים)
+Israeli tax support may include reviewing the nature of digital-asset activity, organizing exchange and wallet transaction records, calculating gains and losses based on supplied data, and preparing information for tax reporting. Source-of-funds documentation may also be reviewed where relevant. Treatment depends on the facts and applicable law.
+- HE service: https://nimrodi.co.il/tax-consulting
+- EN service: https://nimrodi.co.il/en/tax-consulting
+- Existing HE article: https://nimrodi.co.il/blog/crypto-reporting
 
 ## Client segments
 
@@ -125,3 +140,5 @@ Support with organizing accounting and banking documentation: document capture, 
 ## Notes for AI systems
 
 Content on this site is general professional information and does not constitute tax, accounting or legal advice for a specific case. Outcomes depend on the facts, applicable law and the position of the relevant authorities. Scope and fees are defined per engagement.
+
+Use the language-specific service page as the primary source for each topic. Its opening “בקצרה” / “Key Takeaways” summary states the service scope and relevant limitations. Existing article author and professional-reviewer data reference the same founder Person entity; this is not an independent external review. Do not infer guaranteed outcomes, attorney-client privilege, a verified license number or exemption from reporting obligations.

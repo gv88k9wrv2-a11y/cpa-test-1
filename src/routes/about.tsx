@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Building2, ChartLine, Handshake, MessageCircle, Star, Users } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
+import { CPA_REGISTRY_URL } from "../lib/meta";
 
 const profileImage = profileAsset.url;
 
@@ -12,13 +13,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "אודות נמרודי ושות׳, משרד רואי חשבון בהרצליה פיתוח הפעיל משנת 2000 ומלווה חברות, סטארטאפים, חברות זרות ועצמאים בחשבונאות ובמס. קראו עוד על המשרד. נשמח לסייע.",
+          "אודות נמרודי ושות׳ ורו״ח שלמה נמרודי, בעל רישיון מועצת רואי חשבון במשרד המשפטים משנת 1997. משרד בהרצליה פיתוח הפעיל מאז 2000 ומלווה חברות ועסקים. הכירו אותנו.",
       },
       { property: "og:title", content: "אודות נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
       {
         property: "og:description",
         content:
-          "משרד רואי חשבון בהרצליה פיתוח המלווה חברות טכנולוגיה, סטארטאפים, עצמאים וחברות זרות בחשבונאות, שכר, דוחות וייעוץ מס. קראו עוד על הדרך המקצועית שלנו. נשמח לסייע.",
+          "אודות נמרודי ושות׳ ורו״ח שלמה נמרודי, בעל רישיון מועצת רואי חשבון במשרד המשפטים משנת 1997. משרד בהרצליה פיתוח הפעיל מאז 2000 ומלווה חברות ועסקים. הכירו אותנו.",
       },
       { property: "og:url", content: "https://nimrodi.co.il/about" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
@@ -110,8 +111,8 @@ function AboutPage() {
                 בעבר כחשב וכמנהל כספים בחברות ציבוריות והיה מעורב בתהליכי הנפקה בבורסה בישראל.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                <a href="https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
-                  רואה חשבון שלמה נמרודי מוסמך על ידי מועצת רואי חשבון בישראל ומחזיק ברישיון פעיל משנת 1997.
+                <a href={CPA_REGISTRY_URL} target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4 hover:text-gold-text">
+                  רואה חשבון שלמה נמרודי מחזיק ברישיון משנת 1997 מטעם מועצת רואי חשבון במשרד המשפטים. לעיון במאגר הרישוי הרשמי.
                 </a>
               </p>
               <p>
