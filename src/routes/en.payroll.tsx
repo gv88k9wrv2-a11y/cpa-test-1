@@ -4,7 +4,7 @@ import { ReceiptText } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-payroll.webp";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const FAQS = [
   {
     q: "Can you run payroll for a foreign company with employees in Israel?",
@@ -49,9 +49,9 @@ export const Route = createFileRoute("/en/payroll")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "Israeli Payroll Services", url: "https://www.nimrodi.co.il/en/payroll" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
+            { name: "Israeli Payroll Services", url: "https://nimrodi.co.il/en/payroll" },
           ]),
         ),
       },

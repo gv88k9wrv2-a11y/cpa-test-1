@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-startups.webp";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const FAQS = [
   {
     q: "Where is the office located?",
@@ -77,9 +77,9 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
-            { name: "CPA in Herzliya Pituach", url: "https://www.nimrodi.co.il/en/cpa-herzliya" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
+            { name: "CPA in Herzliya Pituach", url: "https://nimrodi.co.il/en/cpa-herzliya" },
           ]),
         ),
       },

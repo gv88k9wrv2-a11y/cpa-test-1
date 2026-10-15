@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-freelancers.webp";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const FAQS = [
   {
     q: "What is the difference between an osek patur and an osek murshe in Israel?",
@@ -57,11 +57,11 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
             {
               name: "CPA for Freelancers and Independent Businesses in Israel",
-              url: "https://www.nimrodi.co.il/en/cpa-freelancers",
+              url: "https://nimrodi.co.il/en/cpa-freelancers",
             },
           ]),
         ),

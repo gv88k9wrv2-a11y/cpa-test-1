@@ -67,25 +67,25 @@ export const Route = createFileRoute("/cpa-herzliya")({
         content:
           "מחפשים רואה חשבון בהרצליה? נמרודי ושות׳ ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת, שכר וחשבות לחברות, סטארטאפים ועסקים. חייגו 09-9582211 עכשיו.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-herzliya" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/cpa-herzliya" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-herzliya" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/cpa-herzliya" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-herzliya" },
+      { rel: "canonical", href: "https://nimrodi.co.il/cpa-herzliya" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/cpa-herzliya" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/cpa-herzliya" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
-            { name: "רואה חשבון בהרצליה פיתוח", url: "https://www.nimrodi.co.il/cpa-herzliya" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
+            { name: "רואה חשבון בהרצליה פיתוח", url: "https://nimrodi.co.il/cpa-herzliya" },
           ]),
         ),
       },

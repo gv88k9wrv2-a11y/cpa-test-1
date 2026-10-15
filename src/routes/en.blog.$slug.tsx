@@ -12,7 +12,7 @@ import { SummaryBox } from "../components/page-summary";
 import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
-const ORIGIN = "https://www.nimrodi.co.il";
+const ORIGIN = "https://nimrodi.co.il";
 
 
 /** Articles where outsourced financial management is a natural next step. */

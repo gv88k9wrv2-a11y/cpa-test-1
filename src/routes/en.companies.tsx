@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { COMPANIES_GROUPS_EN } from "../data/nav-content";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 const DESCRIPTION =
   "Audit, accounting, Israeli tax, payroll and financial-management services for companies, startups and foreign businesses operating in Israel. Contact our firm.";
 

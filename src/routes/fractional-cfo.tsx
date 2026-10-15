@@ -58,25 +58,25 @@ export const Route = createFileRoute("/fractional-cfo")({
         content:
           "שירותי Fractional CFO לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים מזומנים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס הון. תאמו עמנו שיחת היכרות.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/fractional-cfo" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/fractional-cfo" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/fractional-cfo" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/fractional-cfo" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/fractional-cfo" },
+      { rel: "canonical", href: "https://nimrodi.co.il/fractional-cfo" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/fractional-cfo" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/fractional-cfo" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
-            { name: "Fractional CFO", url: "https://www.nimrodi.co.il/fractional-cfo" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
+            { name: "Fractional CFO", url: "https://nimrodi.co.il/fractional-cfo" },
           ]),
         ),
       },

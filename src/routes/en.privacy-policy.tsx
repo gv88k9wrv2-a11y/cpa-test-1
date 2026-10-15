@@ -18,12 +18,12 @@ export const Route = createFileRoute("/en/privacy-policy")({
         content:
           "How Nimrodi & Co. CPA collects, uses, stores and protects personal information from clients and website visitors under Israeli law. Read the full policy.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/en/privacy-policy" },
+      { property: "og:url", content: "https://nimrodi.co.il/en/privacy-policy" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/en/privacy-policy" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/privacy-policy" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/privacy-policy" },
+      { rel: "canonical", href: "https://nimrodi.co.il/en/privacy-policy" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/privacy-policy" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/privacy-policy" },
     ],
   }),
   component: PrivacyPageEn,

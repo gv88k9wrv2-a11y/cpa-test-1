@@ -22,7 +22,7 @@ import {
 } from "../components/site-chrome-en";
 import { GovPortalLinks } from "../components/gov-portal-links";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 
 const GROUPS = [
   {
@@ -132,8 +132,8 @@ export const Route = createFileRoute("/en/services")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
           ]),
         ),
       },

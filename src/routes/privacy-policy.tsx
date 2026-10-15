@@ -18,12 +18,12 @@ export const Route = createFileRoute("/privacy-policy")({
         content:
           "מדיניות הפרטיות של נמרודי ושות׳: איסוף מידע, שימוש, אבטחה וזכויות משתמש בהתאם לדין החל בישראל. קראו את המדיניות המלאה באתר.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/privacy-policy" },
+      { property: "og:url", content: "https://nimrodi.co.il/privacy-policy" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/privacy-policy" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/privacy-policy" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/privacy-policy" },
+      { rel: "canonical", href: "https://nimrodi.co.il/privacy-policy" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/privacy-policy" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/privacy-policy" },
     ],
   }),
   component: PrivacyPage,

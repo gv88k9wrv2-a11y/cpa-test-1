@@ -66,27 +66,27 @@ export const Route = createFileRoute("/cpa-freelancers")({
         content:
           "ליווי חשבונאי ומיסויי לעצמאים ולפרילנסרים בישראל: פתיחת תיקים, ניהול שוטף, דוחות שנתיים והצהרות הון בהיקף מוסכם. דברו איתנו על הצרכים שלכם.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/cpa-freelancers" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/cpa-freelancers" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/cpa-freelancers" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/cpa-freelancers" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/cpa-freelancers" },
+      { rel: "canonical", href: "https://nimrodi.co.il/cpa-freelancers" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/cpa-freelancers" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/cpa-freelancers" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
             {
               name: "רואה חשבון לעצמאים ולפרילנסרים",
-              url: "https://www.nimrodi.co.il/cpa-freelancers",
+              url: "https://nimrodi.co.il/cpa-freelancers",
             },
           ]),
         ),

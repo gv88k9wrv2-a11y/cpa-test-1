@@ -31,7 +31,7 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   };
 }
 
-const SITE_ORIGIN = "https://www.nimrodi.co.il";
+const SITE_ORIGIN = "https://nimrodi.co.il";
 export const ORG_ID = `${SITE_ORIGIN}/#organization`;
 export const PERSON_ID = `${SITE_ORIGIN}/#shlomo-nimrodi`;
 

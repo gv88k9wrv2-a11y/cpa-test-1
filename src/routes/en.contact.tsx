@@ -9,7 +9,7 @@ import {
 } from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 
 export const Route = createFileRoute("/en/contact")({
   head: () => ({

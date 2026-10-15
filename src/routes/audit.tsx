@@ -70,25 +70,25 @@ export const Route = createFileRoute("/audit")({
         content:
           "שירותי ביקורת וסקירה לדוחות כספיים של חברות, עמותות ושותפויות בהתאם לתקינה החלה, לצד מכתבים להנהלה. נשמח לשוחח על היקף הביקורת הנדרש.",
       },
-      { property: "og:url", content: "https://www.nimrodi.co.il/audit" },
-      { property: "og:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { property: "og:url", content: "https://nimrodi.co.il/audit" },
+      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
-      { name: "twitter:image", content: "https://www.nimrodi.co.il/og-image.jpg" },
+      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.nimrodi.co.il/audit" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://www.nimrodi.co.il/audit" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://www.nimrodi.co.il/en/audit" },
+      { rel: "canonical", href: "https://nimrodi.co.il/audit" },
+      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/audit" },
+      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/audit" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "בית", url: "https://www.nimrodi.co.il" },
-            { name: "שירותים", url: "https://www.nimrodi.co.il/services" },
-            { name: "ביקורת דוחות כספיים לחברות", url: "https://www.nimrodi.co.il/audit" },
+            { name: "בית", url: "https://nimrodi.co.il" },
+            { name: "שירותים", url: "https://nimrodi.co.il/services" },
+            { name: "ביקורת דוחות כספיים לחברות", url: "https://nimrodi.co.il/audit" },
           ]),
         ),
       },

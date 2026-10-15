@@ -18,7 +18,7 @@ export const storeVoluntaryInquiry = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const request = getRequest();
     const requestOrigin = request.headers.get("origin");
-    const allowedOrigins = new Set(["https://nimrodi.co.il", "https://www.nimrodi.co.il", "https://cpa-test-1.lovable.app", "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app", new URL(request.url).origin]);
+    const allowedOrigins = new Set(["https://nimrodi.co.il", "https://nimrodi.co.il", "https://cpa-test-1.lovable.app", "https://id-preview--11cf7c4c-7c75-4426-b3e1-7078afb54370.lovable.app", new URL(request.url).origin]);
     if (!requestOrigin || !allowedOrigins.has(requestOrigin)) throw new Error("Forbidden");
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const digits = data.phone.replace(/\D/g, "");

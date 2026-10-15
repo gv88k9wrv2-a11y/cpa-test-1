@@ -4,7 +4,7 @@ import { LineChart } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-cfo.webp";
 
-const BASE = "https://www.nimrodi.co.il";
+const BASE = "https://nimrodi.co.il";
 
 const FAQS = [
   {
@@ -70,11 +70,11 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         type: "application/ld+json",
         children: JSON.stringify(
           buildBreadcrumbJsonLd([
-            { name: "Home", url: "https://www.nimrodi.co.il/en" },
-            { name: "Services", url: "https://www.nimrodi.co.il/en/services" },
+            { name: "Home", url: "https://nimrodi.co.il/en" },
+            { name: "Services", url: "https://nimrodi.co.il/en/services" },
             {
               name: "Fractional CFO Services in Israel",
-              url: "https://www.nimrodi.co.il/en/fractional-cfo",
+              url: "https://nimrodi.co.il/en/fractional-cfo",
             },
           ]),
         ),
