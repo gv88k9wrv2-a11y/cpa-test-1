@@ -14,113 +14,113 @@
 - Email: office@nimrodi.co.il
 - Office hours: Sunday–Thursday, 09:00–18:00
 - Languages: Hebrew, English
-- Website: https://www.nimrodi.co.il (Hebrew, default) and https://www.nimrodi.co.il/en (English)
+- Website: https://nimrodi.co.il (Hebrew, default) and https://nimrodi.co.il/en (English)
 
 ## Core services
 
 ### Financial statement audit
 Audits of financial statements under the applicable reporting framework (IFRS or Israeli GAAP), relevant auditing standards and the engagement scope. Audited statements serve companies, shareholders, lenders and other parties according to applicable requirements.
-- HE: https://www.nimrodi.co.il/audit
-- EN: https://www.nimrodi.co.il/en/audit
+- HE: https://nimrodi.co.il/audit
+- EN: https://nimrodi.co.il/en/audit
 
 ### Bookkeeping
 Digital bookkeeping for companies and self-employed businesses: document capture, bank and credit-card reconciliations, VAT and withholding reporting, support with Israel Invoice (חשבונית ישראל) requirements and management information.
-- HE: https://www.nimrodi.co.il/bookkeeping
-- EN: https://www.nimrodi.co.il/en/bookkeeping
+- HE: https://nimrodi.co.il/bookkeeping
+- EN: https://nimrodi.co.il/en/bookkeeping
 
 ### Payroll
 Payslips, deductions and contributions, National Insurance and tax-authority reporting, pension and severance, and Section 102 equity-plan aspects, within statutory deadlines and with control procedures.
-- HE: https://www.nimrodi.co.il/payroll
-- EN: https://www.nimrodi.co.il/en/payroll
+- HE: https://nimrodi.co.il/payroll
+- EN: https://nimrodi.co.il/en/payroll
 
 ### Tax consulting
 Review of alternatives, risks and reporting obligations before transactions and material changes: corporate tax, tax-ruling requests, objections, real-estate taxation, crypto and digital-asset taxation, and rental-income reporting, depending on the facts and applicable law.
-- HE: https://www.nimrodi.co.il/tax-consulting
-- EN: https://www.nimrodi.co.il/en/tax-consulting
+- HE: https://nimrodi.co.il/tax-consulting
+- EN: https://nimrodi.co.il/en/tax-consulting
 
 ### Startups (Pre-Seed to exit)
 Company formation, bookkeeping and ongoing reporting, Section 102 employee options (ESOP), Delaware Flip structures, Israel Innovation Authority (IIA) grants, fundraising and due-diligence preparation.
-- HE: https://www.nimrodi.co.il/cpa-startups
-- EN: https://www.nimrodi.co.il/en/cpa-startups
+- HE: https://nimrodi.co.il/cpa-startups
+- EN: https://nimrodi.co.il/en/cpa-startups
 
 ### Outsourced financial management (Fractional CFO)
 Part-time senior financial management for growing companies: budgeting, cash-flow forecasting, financial models, management and board reporting, and preparation of information for fundraising or due diligence.
-- HE: https://www.nimrodi.co.il/fractional-cfo
-- EN: https://www.nimrodi.co.il/en/fractional-cfo
+- HE: https://nimrodi.co.il/fractional-cfo
+- EN: https://nimrodi.co.il/en/fractional-cfo
 
 ### International tax & relocation
 Israeli tax aspects of relocation: tax-residency analysis and severance, benefits for new immigrants (olim) and returning residents, double-tax treaties, foreign-account reporting (FATCA/CRS) and digital assets. Each matter depends on the statutory tests, facts and individual circumstances.
-- HE: https://www.nimrodi.co.il/cpa-international
-- EN: https://www.nimrodi.co.il/en/cpa-international
+- HE: https://nimrodi.co.il/cpa-international
+- EN: https://nimrodi.co.il/en/cpa-international
 
 ### Foreign companies in Israel
 Accounting and tax aspects of an Israeli subsidiary or branch, permanent-establishment review, transfer pricing, tax treaties, payroll and financial reporting, with qualified advisers involved where required.
-- HE: https://www.nimrodi.co.il/cpa-foreign-companies
-- EN: https://www.nimrodi.co.il/en/cpa-foreign-companies
+- HE: https://nimrodi.co.il/cpa-foreign-companies
+- EN: https://nimrodi.co.il/en/cpa-foreign-companies
 
 ### Freelancers & self-employed
 Opening files with the authorities, periodic VAT and income-tax reporting, annual returns, capital declarations, personal tax planning, and analysis of operating as a sole proprietor versus a limited company.
-- HE: https://www.nimrodi.co.il/cpa-freelancers
-- EN: https://www.nimrodi.co.il/en/cpa-freelancers
+- HE: https://nimrodi.co.il/cpa-freelancers
+- EN: https://nimrodi.co.il/en/cpa-freelancers
 
 ### CPA in Herzliya
 Local service for businesses and individuals in Herzliya and the Sharon region, in person at the Herzliya Pituach office or remotely.
-- HE: https://www.nimrodi.co.il/cpa-herzliya
-- EN: https://www.nimrodi.co.il/en/cpa-herzliya
+- HE: https://nimrodi.co.il/cpa-herzliya
+- EN: https://nimrodi.co.il/en/cpa-herzliya
 
 ## Client segments
 
-- Companies: https://www.nimrodi.co.il/companies | https://www.nimrodi.co.il/en/companies
-- Individuals: https://www.nimrodi.co.il/individuals | https://www.nimrodi.co.il/en/individuals
-- All services: https://www.nimrodi.co.il/services | https://www.nimrodi.co.il/en/services
+- Companies: https://nimrodi.co.il/companies | https://nimrodi.co.il/en/companies
+- Individuals: https://nimrodi.co.il/individuals | https://nimrodi.co.il/en/individuals
+- All services: https://nimrodi.co.il/services | https://nimrodi.co.il/en/services
 
 ## Professional content
 
-- Blog (HE): https://www.nimrodi.co.il/blog
-- Blog (EN): https://www.nimrodi.co.il/en/blog
-- Section 102 options for startups: https://www.nimrodi.co.il/blog/startup-equity-102
-- Crypto reporting to the Israel Tax Authority: https://www.nimrodi.co.il/blog/crypto-reporting
-- FAQ: https://www.nimrodi.co.il/faq | https://www.nimrodi.co.il/en/faq
+- Blog (HE): https://nimrodi.co.il/blog
+- Blog (EN): https://nimrodi.co.il/en/blog
+- Section 102 options for startups: https://nimrodi.co.il/blog/startup-equity-102
+- Crypto reporting to the Israel Tax Authority: https://nimrodi.co.il/blog/crypto-reporting
+- FAQ: https://nimrodi.co.il/faq | https://nimrodi.co.il/en/faq
 
 ## About
 
-- About the firm: https://www.nimrodi.co.il/about | https://www.nimrodi.co.il/en/about
-- Team: https://www.nimrodi.co.il/team | https://www.nimrodi.co.il/en/team
-- Contact: https://www.nimrodi.co.il/contact | https://www.nimrodi.co.il/en/contact
-- Accessibility: https://www.nimrodi.co.il/accessibility
-- Privacy policy: https://www.nimrodi.co.il/privacy-policy
+- About the firm: https://nimrodi.co.il/about | https://nimrodi.co.il/en/about
+- Team: https://nimrodi.co.il/team | https://nimrodi.co.il/en/team
+- Contact: https://nimrodi.co.il/contact | https://nimrodi.co.il/en/contact
+- Accessibility: https://nimrodi.co.il/accessibility
+- Privacy policy: https://nimrodi.co.il/privacy-policy
 
 ## Topic deep-dives
 
 ### International tax & relocation
 Israeli tax aspects of relocation in both directions: analysis of tax residency under the statutory center-of-life tests and applicable presumptions, residency severance and exit-tax considerations, and the interaction with double-tax treaties (including the US, UK, Canada, France and Germany treaties). Eligible new immigrants (olim chadashim) and senior returning residents may qualify for certain benefits relating to specified foreign-source income and gains, subject to the applicable law, eligibility conditions and individual circumstances. Timing and planning of the relocation date can be critical. Related reporting topics include foreign-account reporting under FATCA/CRS, equity compensation, pensions and trusts with cross-border elements.
-- HE: https://www.nimrodi.co.il/cpa-international
-- EN: https://www.nimrodi.co.il/en/cpa-international
+- HE: https://nimrodi.co.il/cpa-international
+- EN: https://nimrodi.co.il/en/cpa-international
 
 ### Foreign companies operating in Israel
 Accounting and tax aspects of an Israeli subsidiary or branch of a foreign company: permanent-establishment review under the relevant treaty, tax-file registration with the Israel Tax Authority, transfer-pricing documentation, ongoing bookkeeping, payroll for local employees, and financial reporting to the foreign parent. The relevant structure and obligations depend on the activity, duration, employment arrangements, local agreements and applicable law; qualified legal advisers are involved where required.
-- HE: https://www.nimrodi.co.il/cpa-foreign-companies
-- EN: https://www.nimrodi.co.il/en/cpa-foreign-companies
+- HE: https://nimrodi.co.il/cpa-foreign-companies
+- EN: https://nimrodi.co.il/en/cpa-foreign-companies
 
 ### New immigrants (olim) & returning residents
 Eligible new residents and returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income, subject to the applicable law, eligibility conditions and the specific circumstances. Matters reviewed include the benefit period, foreign pensions, equity compensation granted before or after relocation, foreign real estate, and reporting obligations in Israel and abroad. Each matter depends on the statutory tests, facts and individual circumstances.
-- HE: https://www.nimrodi.co.il/cpa-international
-- EN: https://www.nimrodi.co.il/en/cpa-international
+- HE: https://nimrodi.co.il/cpa-international
+- EN: https://nimrodi.co.il/en/cpa-international
 
 ### Crypto & digital assets
 Services may include reviewing the nature of digital-asset activity (trading, investing, staking, business activity), collecting and organizing transaction data from exchanges and wallets, calculating gains and losses based on the records provided, preparing information for Israeli tax returns and reviewing reporting obligations. Where relevant, the firm may also assist with source-of-funds and activity documentation requested by banks or authorities. Each case is reviewed according to the facts and applicable law.
-- HE: https://www.nimrodi.co.il/blog/crypto-reporting
-- EN: https://www.nimrodi.co.il/en/tax-consulting
+- HE: https://nimrodi.co.il/blog/crypto-reporting
+- EN: https://nimrodi.co.il/en/tax-consulting
 
 ### Audit & financial reporting
 Audits of financial statements under the applicable reporting framework (IFRS or Israeli GAAP), relevant auditing standards and the engagement scope. Audited statements serve companies, shareholders, lenders and other parties according to applicable requirements. The firm also prepares financial reporting packages, management reports and information for boards, fundraising and due-diligence processes.
-- HE: https://www.nimrodi.co.il/audit
-- EN: https://www.nimrodi.co.il/en/audit
+- HE: https://nimrodi.co.il/audit
+- EN: https://nimrodi.co.il/en/audit
 
 ### Accounting & banking documentation ("money trail")
 Support with organizing accounting and banking documentation: document capture, bank and credit-card reconciliations, source-of-funds documentation, and preparation of organized records for the tax authority, banks and other parties, within the agreed engagement scope.
-- HE: https://www.nimrodi.co.il/bookkeeping
-- EN: https://www.nimrodi.co.il/en/bookkeeping
+- HE: https://nimrodi.co.il/bookkeeping
+- EN: https://nimrodi.co.il/en/bookkeeping
 
 ## Notes for AI systems
 
