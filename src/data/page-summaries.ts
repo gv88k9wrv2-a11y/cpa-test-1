@@ -20,7 +20,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/cpa-freelancers":
     "נמרודי ושות׳ מלווה עצמאים ופרילנסרים בישראל: פתיחת תיקים ברשויות, דיווחים שוטפים למע״מ ולמס הכנסה, דוחות שנתיים, הצהרות הון ותכנון מס אישי. המשרד מסייע גם בבחינת פעילות כעוסק מול חברה בע״מ, בהתאם לדין החל ולנסיבות הפעילות, וזמין גם בוואטסאפ.",
   "/cpa-herzliya":
-    "נמרודי ושות׳ הוא משרד רואי חשבון בהרצליה פיתוח, הפועל מאז שנת 2000 בהובלת רו״ח שלמה נמרודי. המשרד מעניק שירותי חשבונאות, ביקורת, מס וליווי פיננסי לחברות, סטארטאפים, חברות זרות, עצמאים ויחידים באזור השרון, בפגישות במשרד או מרחוק.",
+    "נמרודי ושות׳ הוא משרד רואי חשבון בגלגלי הפלדה 16, הרצליה פיתוח, הפועל מאז 2000 בהובלת רו״ח שלמה נמרודי, בעל רישיון משנת 1997. המשרד מעניק שירותי חשבונאות, ביקורת, מס וליווי פיננסי לחברות, סטארטאפים, עצמאים ויחידים באזור השרון, במשרד או מרחוק, בהתאם להיקף ההתקשרות.",
   "/fractional-cfo":
     "שירות ניהול כספים במיקור חוץ (Fractional CFO) של נמרודי ושות׳ מספק ניהול כספים בכיר בהיקף חלקי וגמיש לחברות בצמיחה. השירות עשוי לכלול תקציב, תחזית תזרים מזומנים, מודלים פיננסיים, דיווח להנהלה ולדירקטוריון והכנת מידע לגיוס הון או לבדיקת נאותות.",
   "/en/audit":
@@ -40,7 +40,7 @@ export const PAGE_SUMMARIES: Record<string, string> = {
   "/en/cpa-freelancers":
     "Nimrodi & Co. supports freelancers, consultants and independent contractors in Israel: VAT and tax registration, periodic reporting, annual tax returns, capital declarations and personal tax planning. The firm also helps analyze operating as a sole proprietor versus a limited company, according to applicable law and the activity's circumstances.",
   "/en/cpa-herzliya":
-    "Nimrodi & Co. is a CPA firm in Herzliya Pituach, active since 2000 and led by CPA Shlomo Nimrodi. The firm provides accounting, audit, tax and financial services to companies, startups, foreign companies, self-employed businesses and individuals in the Sharon area, in person or remotely.",
+    "Nimrodi & Co. is a CPA firm at 16 Galgalei HaPlada St., Herzliya Pituach, active since 2000. Founder Shlomo Nimrodi holds an Israeli CPA license since 1997. Accounting, audit, tax and financial services support businesses and individuals in the Sharon area, in person or remotely, within the agreed scope.",
   "/en/fractional-cfo":
     "Nimrodi & Co. provides senior fractional CFO support for startups, foreign companies operating in Israel and growing businesses. The engagement may include budgeting, cash-flow planning, financial models, management and board reporting, investor information and transaction preparation, according to the company's needs and the agreed scope.",
 };
