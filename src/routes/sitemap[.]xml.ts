@@ -61,6 +61,8 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/faq", en: "/en/faq", changefreq: "monthly", priority: "0.8" },
           { path: "/blog", changefreq: "weekly", priority: "0.8" },
           { path: "/en/blog", changefreq: "weekly", priority: "0.8" },
+          { path: "/blog/self-employed-vs-company-israel", changefreq: "monthly", priority: "0.7" },
+          { path: "/blog/crypto-funds-bank-israel", changefreq: "monthly", priority: "0.7" },
           { path: "/blog/center-of-life-tax-residency", changefreq: "monthly", priority: "0.7" },
           {
             path: "/blog/undistributed-profits-closely-held-company-israel",

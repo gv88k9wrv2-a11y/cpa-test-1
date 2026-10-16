@@ -1,5 +1,5 @@
 import { buildBreadcrumbJsonLd } from "../lib/meta";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-tax.webp";
@@ -182,7 +182,7 @@ export const Route = createFileRoute("/tax-consulting")({
         {
           id: "shareholder-tax",
           title: "מיסוי בעלי מניות והתחשבנויות עם החברה",
-          body: "העברת כספים או נכסים בין חברה לבין בעל מניות עשויה ליצור השלכות חשבונאיות ומיסויות בהתאם לסוג הפעולה, ליתרות, למועדים, למסמכים ולהוראות הדין. הבחינה יכולה להתייחס לשכר, לדיבידנד, להלוואות, להחזר יתרות ולהתחשבנויות אחרות בין החברה לבין בעל המניות. ניתן לסייע בבחינת החלופות ובתיעוד הנתונים. יישום כל חלופה מחייב את ההחלטות והמסמכים המתאימים, ותוצאות המס אינן נקבעות לפי שם הפעולה בלבד.",
+          body: <><p>העברת כספים או נכסים בין חברה לבין בעל מניות עשויה ליצור השלכות חשבונאיות ומיסויות בהתאם לסוג הפעולה, ליתרות, למועדים, למסמכים ולהוראות הדין. הבחינה יכולה להתייחס לשכר, לדיבידנד, להלוואות, להחזר יתרות ולהתחשבנויות אחרות בין החברה לבין בעל המניות. ניתן לסייע בבחינת החלופות ובתיעוד הנתונים. יישום כל חלופה מחייב את ההחלטות והמסמכים המתאימים, ותוצאות המס אינן נקבעות לפי שם הפעולה בלבד.</p><p className="mt-4">לפני שינוי מבנה הפעילות, קראו: <Link to="/blog/$slug" params={{ slug: "self-employed-vs-company-israel" }} className="font-semibold text-primary underline underline-offset-4 hover:text-gold-text">עוסק מורשה מול חברה בע״מ: חברות ארנק ומשיכות בעלים</Link>.</p></>,
           bullets: [
             "בחינת משיכת כספים באמצעות שכר, דיבידנד, החזר הלוואת בעלים או התחשבנות אחרת, בהתאם לנתונים ולהוראות הדין",
             "בחינת יתרות והלוואות בין החברה לבעל המניות, לרבות כיוון ההלוואה, תנאיה, התנועות, המסמכים והשלכות המס האפשריות",
