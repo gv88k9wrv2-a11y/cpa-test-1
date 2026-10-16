@@ -45,6 +45,7 @@ export function VoluntaryDisclosurePage({ lang }: { lang: "he" | "en" }) {
             <article>
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">{he ? "גילוי מרצון לחשבונות בנק בחו״ל, נכסי קריפטו והכנסות שלא דווחו" : "Voluntary Disclosure for Foreign Accounts, Crypto & Undisclosed Income"}</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">{c.context}</p>
+              {he ? <p className="mt-4 leading-relaxed text-muted-foreground">להרחבה בנושא תיעוד ודרישות בנקאיות: <Link to="/blog/$slug" params={{ slug: "crypto-funds-bank-israel" }} className="font-semibold text-primary underline underline-offset-4 hover:text-gold-text">כספי קריפטו במערכת הבנקאית בישראל</Link>.</p> : null}
             </article>
             <article id="process" className="scroll-mt-24">
               <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">{he ? "ארבעת שלבי הטיפול במשרד נמרודי ושות׳" : "The Four-Step Process at Nimrodi & Co."}</h2>
