@@ -6,6 +6,7 @@ import { AUTHOR_PERSON_REF, buildBreadcrumbJsonLd, toMetaDescription } from "../
 import { SummaryBox } from "../components/page-summary";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
+import { BlogInlineContent } from "../components/blog-inline-content";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -40,7 +41,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const { post } = loaderData;
     return {
       meta: [
-        { title: `${post.metaTitle ?? post.title} | נמרודי ושות׳` },
+        { title: post.metaTitle?.includes("|") ? post.metaTitle : `${post.metaTitle ?? post.title} | נמרודי ושות׳` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
         {
@@ -48,11 +49,8 @@ export const Route = createFileRoute("/blog/$slug")({
           content: toMetaDescription(post.metaDescription ?? post.excerpt),
         },
         { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
         { property: "og:url", content: `${ORIGIN}/blog/${params.slug}` },
-        { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
-        { property: "og:image:width", content: "1200" },
-        { property: "og:image:height", content: "640" },
-        { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],
@@ -157,7 +155,7 @@ function BlogPostPage() {
 
   const related = (post.relatedSlugs ?? [])
     .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
-    .filter((p): p is BlogPost => Boolean(p) && p!.slug !== post.slug);
+    .filter((p): p is BlogPost => p !== undefined && p.slug !== post.slug);
 
   return (
     <div className="min-h-screen bg-background">
@@ -223,11 +221,20 @@ function BlogPostPage() {
                 <h2 className="font-display text-2xl font-bold text-primary">{s.h}</h2>
                 <div className="mt-4 space-y-4">
                   {s.p.map((para, i) => (
-                    <p key={i} className="leading-relaxed text-muted-foreground">
-                      {para}
+                    <p key={i} className="whitespace-pre-line leading-relaxed text-muted-foreground">
+                      <BlogInlineContent text={para} />
                     </p>
                   ))}
                 </div>
+                {s.table ? (
+                  <div className="mt-5 overflow-x-auto">
+                    <table className="w-full min-w-[36rem] border-collapse text-right text-sm leading-relaxed">
+                      <caption className="sr-only">{s.h}</caption>
+                      <thead><tr>{s.table.headers.map(header => <th key={header} scope="col" className="border border-border bg-secondary p-3 font-semibold text-primary">{header}</th>)}</tr></thead>
+                      <tbody>{s.table.rows.map((row, index) => <tr key={index}>{row.map((cell, column) => column === 0 ? <th key={column} scope="row" className="border border-border p-3 font-semibold text-foreground"><BlogInlineContent text={cell} /></th> : <td key={column} className="border border-border p-3 text-muted-foreground"><BlogInlineContent text={cell} /></td>)}</tr>)}</tbody>
+                    </table>
+                  </div>
+                ) : null}
               </section>
             ))}
           </div>
@@ -282,7 +289,7 @@ function BlogPostPage() {
 
           {/* Professional disclaimer */}
           {/* Required on all professional-content pages. Do not remove or duplicate. */}
-          <ProfessionalDisclaimer lang="he" className="mt-10" />
+          <ProfessionalDisclaimer lang="he" text={post.disclaimer} className="mt-10" />
 
           <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
             <h2 className="font-display text-2xl font-bold">רוצים לשוחח על המצב הספציפי שלכם?</h2>

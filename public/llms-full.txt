@@ -91,6 +91,16 @@ Israeli tax support may include reviewing the nature of digital-asset activity, 
 
 ## Professional content
 
+### Self-employed business vs. limited company in Israel (Hebrew article)
+Incorporation is assessed based on sustainable profits available for reinvestment, personal withdrawals, activity structure, operating costs and business risks, not revenue alone. The article covers Section 62A personal-service companies, Section 3(t1) shareholder withdrawals, Section 77, salary/dividend planning and common transition mistakes. A company does not automatically save tax; current-law and individual review are required.
+- Published: 2026-10-15; author and professional reviewer: Shlomo Nimrodi, CPA (the same founder, not an independent review).
+- HE: https://nimrodi.co.il/blog/self-employed-vs-company-israel
+
+### Crypto funds and Israeli banking documentation (Hebrew article)
+The article covers source-of-funds evidence from initial fiat capital through exchanges, wallets and disposal, Banking Directive 411, CPA documentation and historical tax reporting. Staking and mining classification depends on the circumstances. Tax payment and CPA documentation do not guarantee banking acceptance; each bank applies its own compliance and risk assessment. Accountant confidentiality is not attorney-client privilege.
+- Published: 2026-10-15; author and professional reviewer: Shlomo Nimrodi, CPA (the same founder, not an independent review).
+- HE: https://nimrodi.co.il/blog/crypto-funds-bank-israel
+
 - Blog (HE): https://nimrodi.co.il/blog
 - Blog (EN): https://nimrodi.co.il/en/blog
 - Section 102 options for startups: https://nimrodi.co.il/blog/startup-equity-102
