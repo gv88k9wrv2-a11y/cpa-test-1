@@ -1,7 +1,7 @@
 # Requested updates
 
-- [ ] Add the two approved Hebrew articles dated 2026-10-15, full draft sections, FAQs, images and contextual outgoing/incoming links.
-- [ ] Add both article URLs and summaries to the sitemap and AI reference files; verify rendered pages, links and build status without publishing.
+- [x] Add the two approved Hebrew articles dated 2026-10-15, full draft sections, FAQs, images and contextual outgoing/incoming links.
+- [x] Add both article URLs and summaries to the sitemap and AI reference files; desktop/mobile, FAQs, incoming links, metadata and public references verified without runtime errors; build OK, not published.
 
 - [x] Stage 3: enrich founder licensing schema and verify visible credentials and author/reviewer references; official registry remains a public search link, not a fresh status verification.
 - [x] Stage 3: refresh AI reference files and verify direct-answer summaries for the approved service areas; no new articles.
