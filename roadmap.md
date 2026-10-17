@@ -1,5 +1,7 @@
 # Requested updates
 
+- [x] Add six bilingual contextual service links and replace two unrelated startup article recommendations with foreign-company guides; all eight destinations clicked successfully, desktop/mobile rendering verified without runtime errors, build OK; not published.
+
 - [x] Add the two approved Hebrew articles dated 2026-10-15, full draft sections, FAQs, images and contextual outgoing/incoming links.
 - [x] Add both article URLs and summaries to the sitemap and AI reference files; desktop/mobile, FAQs, incoming links, metadata and public references verified without runtime errors; build OK, not published.
 
