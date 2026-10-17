@@ -615,9 +615,9 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     imageAlt: "Accounting and Tax for Startups Operating in Israel",
     tags: ["startups", "accounting", "payroll", "Section 102"],
     relatedSlugs: [
+      "israeli-subsidiary-vs-branch",
+      "foreign-companies-operating-in-israel",
       "digital-assets-tax-reporting-israel",
-      "israeli-tax-reporting-us-citizens",
-      "israeli-rental-income-tax-reporting",
     ],
     relatedService: { href: "/en/cpa-startups", label: "CPA services for startups" },
     sections: [
