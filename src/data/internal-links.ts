@@ -230,14 +230,17 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
   "/bookkeeping": [
     { label: "ייעוץ מס ודיווחים תקופתיים", to: "/tax-consulting" },
     { label: "שירותים לחברות ולסטארטאפים", to: "/companies" },
+    { label: "ביקורת דוחות כספיים", to: "/audit" },
   ],
   "/payroll": [
     { label: "שירותי שכר לחברות וסטארטאפים", to: "/companies" },
     { label: "ניהול כספים במיקור חוץ", to: "/fractional-cfo" },
+    { label: "הנהלת חשבונות ודיווחים שוטפים", to: "/bookkeeping" },
   ],
   "/audit": [
     { label: "ניהול כספים במיקור חוץ", to: "/fractional-cfo" },
     { label: "הנהלת חשבונות", to: "/bookkeeping" },
+    { label: "שירותים לחברות ולסטארטאפים", to: "/companies" },
   ],
   "/fractional-cfo": [
     { label: "ביקורת דוחות כספיים", to: "/audit" },
@@ -293,14 +296,17 @@ export const RELATED_SERVICES: Record<string, RelatedService[]> = {
   "/en/bookkeeping": [
     { label: "Tax advisory and periodic reporting", to: "/en/tax-consulting" },
     { label: "Services for companies and startups", to: "/en/companies" },
+    { label: "Financial statement audit", to: "/en/audit" },
   ],
   "/en/payroll": [
     { label: "Payroll services for companies and startups", to: "/en/companies" },
     { label: "Outsourced financial management", to: "/en/fractional-cfo" },
+    { label: "Bookkeeping and ongoing reporting", to: "/en/bookkeeping" },
   ],
   "/en/audit": [
     { label: "Outsourced financial management", to: "/en/fractional-cfo" },
     { label: "Bookkeeping", to: "/en/bookkeeping" },
+    { label: "Services for companies and startups", to: "/en/companies" },
   ],
   "/en/fractional-cfo": [
     { label: "Financial statement audit", to: "/en/audit" },
