@@ -70,7 +70,7 @@ const DEPARTMENTS = [
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
-      { title: "השותף המייסד | נמרודי ושות׳ – רואי חשבון בהרצליה" },
+      { title: "הצוות של נמרודי ושות׳ | שותף מייסד ומחלקות המשרד" },
       {
         name: "description",
         content:
@@ -218,10 +218,25 @@ function TeamPage() {
         <section className="border-t border-border/60 bg-primary py-14 text-primary-foreground">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
             <h2 className="font-display text-2xl font-bold sm:text-3xl">רוצים לשוחח עם המשרד?</h2>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-primary-foreground/80">
+              המשרד נמצא בהרצליה פיתוח ומלווה לקוחות מכל הארץ –{" "}
+              <Link
+                to="/cpa-herzliya"
+                className="font-semibold text-gold underline decoration-gold/60 underline-offset-4 hover:text-gold-text"
+              >
+                רואה חשבון בהרצליה – נמרודי ושות׳
+              </Link>
+            </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <Link
-                to="/contact"
+                to="/cpa-herzliya"
                 className="inline-flex min-h-12 items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
+              >
+                רואה חשבון בהרצליה →
+              </Link>
+              <Link
+                to="/contact"
+                className="inline-flex min-h-12 items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
               >
                 קבעו שיחת היכרות →
               </Link>
