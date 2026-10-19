@@ -4,7 +4,12 @@ import imgTax from "../assets/blog-tax-planning.webp";
 import imgIntl from "../assets/service-international.webp";
 import imgStartups from "../assets/service-startups.webp";
 
-export type BlogSectionEn = { h: string; p: string[] };
+export type BlogSectionEn = {
+  h: string;
+  p: string[];
+  /** Optional typed comparison table rendered after the paragraphs. */
+  table?: { headers: string[]; rows: string[][] };
+};
 
 export type BlogPostEn = {
   slug: string;
@@ -25,6 +30,9 @@ export type BlogPostEn = {
   relatedSlugs?: string[];
   relatedService?: { href: string; label: string };
   modifiedDate?: string;
+  /** Article-specific disclaimer overriding the shared one. */
+  disclaimer?: string;
+  faqs?: { q: string; a: string }[];
   sections: BlogSectionEn[];
 };
 
