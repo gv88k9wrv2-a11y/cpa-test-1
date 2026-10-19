@@ -11,6 +11,7 @@ import { AUTHOR_PERSON_REF, buildBreadcrumbJsonLd, toMetaDescription } from "../
 import { SummaryBox } from "../components/page-summary";
 import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
+import { BlogInlineContent } from "../components/blog-inline-content";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -20,6 +21,7 @@ const CFO_SLUGS = new Set([
   "startup-accounting-tax-israel",
   "israeli-subsidiary-vs-branch",
   "foreign-companies-operating-in-israel",
+  "preferred-technological-enterprise",
 ]);
 
 export const Route = createFileRoute("/en/blog/$slug")({
