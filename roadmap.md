@@ -1,6 +1,6 @@
 # Requested updates
 
-- [ ] Final QA and publication of English `/en/blog/preferred-technological-enterprise` only, including article/FAQ/breadcrumb schemas, image-role verification, language convention, blog index and sitemap; blocked because the approved English article is absent from the current project and supplied uploads. Do not publish its Hebrew counterpart.
+- [x] Embed approved English article `/en/blog/preferred-technological-enterprise` with Article/FAQ/Breadcrumb/Person schemas (inLanguage en-US), comparison table, 4 FAQs, article-specific disclaimer, service-startups.webp image, canonical, blog index and sitemap entry; verified live (200, 5 table rows, 4 FAQs, schemas, internal links), build OK; not published. Hebrew counterpart remains unpublished.
 
 - [x] Add six bilingual contextual service links and replace two unrelated startup article recommendations with foreign-company guides; all eight destinations clicked successfully, desktop/mobile rendering verified without runtime errors, build OK; not published.
 
