@@ -3,6 +3,7 @@ import imgEquity from "../assets/blog-equity.webp";
 import imgCrypto from "../assets/blog-crypto.webp";
 import imgForeign from "../assets/service-foreign.webp";
 import imgIntl from "../assets/service-international.webp";
+import imgStartups from "../assets/service-startups.webp";
 
 export type BlogSection = { h: string; p: string[]; table?: { headers: string[]; rows: string[][] } };
 
