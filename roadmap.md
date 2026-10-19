@@ -1,6 +1,7 @@
 # Requested updates
 
-- [x] Embed approved English article `/en/blog/preferred-technological-enterprise` with Article/FAQ/Breadcrumb/Person schemas (inLanguage en-US), comparison table, 4 FAQs, article-specific disclaimer, service-startups.webp image, canonical, blog index and sitemap entry; verified live (200, 5 table rows, 4 FAQs, schemas, internal links), build OK; not published. Hebrew counterpart remains unpublished.
+- [x] Embed approved English article `/en/blog/preferred-technological-enterprise` with Article/FAQ/Breadcrumb/Person schemas (inLanguage en-US), comparison table, 4 FAQs, article-specific disclaimer, service-startups.webp image, canonical, blog index and sitemap entry; verified live (200, 5 table rows, 4 FAQs, schemas, internal links), build OK; not published.
+- [x] Embed approved Hebrew counterpart `/blog/preferred-technological-enterprise` with shared translationKey linking both articles (hreflang he-IL/en-US/x-default both directions), paired sitemap entry, table, FAQs, disclaimer; verified live (200, schemas, index card), build OK; not published.
 
 - [x] Add six bilingual contextual service links and replace two unrelated startup article recommendations with foreign-company guides; all eight destinations clicked successfully, desktop/mobile rendering verified without runtime errors, build OK; not published.
 

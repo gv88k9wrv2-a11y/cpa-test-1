@@ -39,6 +39,7 @@ export type BlogPostEn = {
 export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     slug: "preferred-technological-enterprise",
+    translationKey: "preferred-technological-enterprise",
     imageAlt: "Preferred Technological Enterprise (PTE): Tax Incentives for Israeli Tech Companies",
     tags: [
       "preferred technological enterprise",
