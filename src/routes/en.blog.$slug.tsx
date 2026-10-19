@@ -11,6 +11,7 @@ import { AUTHOR_PERSON_REF, buildBreadcrumbJsonLd, toMetaDescription } from "../
 import { SummaryBox } from "../components/page-summary";
 import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
+import { BlogInlineContent } from "../components/blog-inline-content";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -20,6 +21,7 @@ const CFO_SLUGS = new Set([
   "startup-accounting-tax-israel",
   "israeli-subsidiary-vs-branch",
   "foreign-companies-operating-in-israel",
+  "preferred-technological-enterprise",
 ]);
 
 export const Route = createFileRoute("/en/blog/$slug")({
@@ -111,6 +113,22 @@ export const Route = createFileRoute("/en/blog/$slug")({
             mainEntityOfPage: url,
           }),
         },
+        ...(post.faqs?.length
+          ? [
+              {
+                type: "application/ld+json",
+                children: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: post.faqs.map((f) => ({
+                    "@type": "Question",
+                    name: f.q,
+                    acceptedAnswer: { "@type": "Answer", text: f.a },
+                  })),
+                }),
+              },
+            ]
+          : []),
       ],
     };
   },
@@ -212,14 +230,50 @@ function BlogPostPageEn() {
                 <h2 className="font-display text-2xl font-bold text-primary">{s.h}</h2>
                 <div className="mt-4 space-y-4">
                   {s.p.map((para, i) => (
-                    <p key={i} className="leading-relaxed text-muted-foreground">
-                      {para}
+                    <p key={i} className="whitespace-pre-line leading-relaxed text-muted-foreground">
+                      <BlogInlineContent text={para} />
                     </p>
                   ))}
                 </div>
+                {s.table ? (
+                  <div className="mt-5 overflow-x-auto">
+                    <table className="w-full min-w-[36rem] border-collapse text-left text-sm leading-relaxed">
+                      <caption className="sr-only">{s.h}</caption>
+                      <thead><tr>{s.table.headers.map((header) => <th key={header} scope="col" className="border border-border bg-secondary p-3 font-semibold text-primary">{header}</th>)}</tr></thead>
+                      <tbody>{s.table.rows.map((row, index) => <tr key={index}>{row.map((cell, column) => column === 0 ? <th key={column} scope="row" className="border border-border p-3 font-semibold text-foreground"><BlogInlineContent text={cell} /></th> : <td key={column} className="border border-border p-3 text-muted-foreground"><BlogInlineContent text={cell} /></td>)}</tr>)}</tbody>
+                    </table>
+                  </div>
+                ) : null}
               </section>
             ))}
           </div>
+
+          {post.faqs?.length ? (
+            <section className="mt-14">
+              <h2 className="font-display text-2xl font-bold text-primary">
+                Frequently Asked Questions
+              </h2>
+              <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">
+                {post.faqs.map((f) => (
+                  <details
+                    key={f.q}
+                    className="group px-6 py-5 [&_summary::-webkit-details-marker]:hidden"
+                  >
+                    <summary className="flex cursor-pointer items-start justify-between gap-4 text-left font-semibold text-primary">
+                      <span>{f.q}</span>
+                      <span
+                        className="mt-1 text-gold-text transition group-open:rotate-45"
+                        aria-hidden
+                      >
+                        ＋
+                      </span>
+                    </summary>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           {post.relatedService ? (
             <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
@@ -288,7 +342,7 @@ function BlogPostPageEn() {
 
           {/* Required on all professional-content pages. Do not remove or duplicate. */}
 
-          <ProfessionalDisclaimer lang="en" className="mt-10" />
+          <ProfessionalDisclaimer lang="en" text={post.disclaimer} className="mt-10" />
 
           {related.length > 0 && (
             <aside className="mt-14 border-t border-border pt-10">
