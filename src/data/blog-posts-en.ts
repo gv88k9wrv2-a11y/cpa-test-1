@@ -38,6 +38,141 @@ export type BlogPostEn = {
 
 export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
+    slug: "preferred-technological-enterprise",
+    imageAlt: "Preferred Technological Enterprise (PTE): Tax Incentives for Israeli Tech Companies",
+    tags: [
+      "preferred technological enterprise",
+      "PTE",
+      "corporate tax",
+      "R&D incentives",
+      "startups",
+    ],
+    relatedSlugs: ["startup-accounting-tax-israel", "israeli-subsidiary-vs-branch"],
+    relatedService: {
+      href: "/en/cpa-startups",
+      label: "CPA services for startups and tech ventures in Israel",
+    },
+    title: "Preferred Technological Enterprise (PTE): Tax Incentives Guide for Israeli Tech Companies",
+    metaTitle: "Preferred Technological Enterprise (PTE)",
+    excerpt:
+      "Israel's Law for the Encouragement of Capital Investments provides technology companies, software ventures, and startups with the opportunity to benefit from reduced corporate tax rates, which may apply where statutory requirements are satisfied, alongside reduced dividend withholding tax. Eligibility depends on R&D expenditure tests, qualified intellectual property (IP), international competitiveness, and application of the OECD Nexus approach. This guide reviews key eligibility criteria, calculation mechanics, and reporting requirements with the Israel Tax Authority.",
+    metaDescription:
+      "Guide to Israel's Preferred Technological Enterprise (PTE) regime: eligibility, Nexus rules, dividend taxation, reporting requirements and tax incentives.",
+    date: "2026-10-19",
+    readMin: 11,
+    category: "Corporate & Tech Tax",
+    image: imgStartups,
+    disclaimer:
+      "The information presented in this article constitutes a general professional overview only. The legal framework governing capital investment incentives, Preferred Enterprises, and Preferred Technological Enterprises is grounded in detailed statutory provisions, regulations, administrative tax circulars, and the specific application of facts to each individual case. The contents herein should not be relied upon for decision-making without independent professional review of the particular circumstances. Nothing in this article constitutes legal advice, formal tax opinion, or an engagement recommendation. Each case must be evaluated based on its distinct factual background, operational structure, and applicable law and precedent at the relevant time. For tailored professional guidance, please contact our firm.",
+    faqs: [
+      {
+        q: "Are SaaS companies delivering cloud-based software eligible for PTE benefits?",
+        a: "In many cases, the mere hosting of servers or cloud infrastructure outside Israel does not in itself preclude eligibility. However, qualification requires an evaluation of statutory requirements, revenue sourcing, where the underlying IP was developed, and operational substance. Where software is engineered in Israel and constitutes a qualifying intangible asset, subscription-based revenue (SaaS) can qualify as technological income, provided all other legal benchmarks are satisfied.",
+      },
+      {
+        q: "Is prior approval required from the Israel Tax Authority or the Innovation Authority?",
+        a: "In most standard PTE scenarios, an eligible company generally claims the applicable benefits through its annual corporate tax return (\"self-assessment track\"), provided objective statutory tests are met. However, companies that do not meet quantitative growth thresholds require formal certification from the Israel Innovation Authority. For complex group restructurings or cross-border asset transfers, seeking a formal pre-ruling from the Israel Tax Authority is strongly advisable.",
+      },
+      {
+        q: "What is the primary difference between a Preferred Enterprise and a PTE?",
+        a: "A standard Preferred Enterprise primarily serves traditional or advanced manufacturing enterprises exporting tangible goods, offering corporate tax rates of 16% (central Israel) or 7.5% (Development Area A). In contrast, a Preferred Technological Enterprise (PTE) targets IP-centric software, technology, and R&D enterprises, delivering a 12% corporate tax rate in central Israel, 7.5% in development zones, and specialized withholding tax relief on dividends paid to foreign parent entities.",
+      },
+      {
+        q: "Can tax incentives apply if the IP was acquired from a third party?",
+        a: "Acquiring intellectual property from an external party does not automatically disqualify an enterprise, but directly affects the Nexus ratio: the acquisition cost is added to the denominator, potentially reducing the proportion of income eligible for preferential rates if subsequent substantial development is not conducted by the acquiring entity. A detailed analysis of the transaction structure and subsequent R&D operations is necessary.",
+      },
+    ],
+    sections: [
+      {
+        h: "Introduction: Tax Incentives for Technology and Growth Companies in Israel",
+        p: [
+          "The Law for the Encouragement of Capital Investments, 5719-1959, serves as one of the State of Israel's central economic incentive frameworks designed to foster business expansion, exports, and research and development (R&D). While historical incentive regimes focused primarily on traditional, asset-heavy industrial plants, modern legislative amendments—most notably Amendment 73—realigned the tax framework with the knowledge-based economy, targeting software companies, startups, and intellectual property (IP)-intensive ventures.",
+          "For technology companies operating in Israel, distinguishing between a **Preferred Enterprise** and a **Preferred Technological Enterprise (PTE)** is critical. Selecting the appropriate track, combined with rigorous compliance with international Nexus principles (OECD BEPS Action 5), can yield a substantially reduced corporate tax rate relative to the standard rate, alongside significant dividend withholding tax relief—strictly subject to satisfying statutory provisions and examining the specific circumstances of each case.",
+        ],
+      },
+      {
+        h: "Comparison of Tracks and Corporate Tax Rates",
+        p: [
+          "*The tax rates and conditions presented below are general and may vary based on statutory provisions, temporary orders, ownership structure, and the specific facts of each case.*",
+        ],
+        table: {
+          headers: [
+            "Parameter",
+            "Standard Company",
+            "Preferred Enterprise",
+            "Preferred Technological Enterprise (PTE)",
+            "Special Preferred Technological Enterprise",
+          ],
+          rows: [
+            ["**Corporate Income Tax – Central Israel**", "23%", "16%", "12%", "6%"],
+            ["**Corporate Income Tax – Development Area A**", "23%", "7.5%", "7.5%", "6%"],
+            ["**Dividend Tax for Individual Israeli Residents**", "25%–30%", "20%", "20%", "20%"],
+            [
+              "**Dividend Tax for Foreign Parent Company**",
+              "Treaty rate (typically 10%–25%)",
+              "Treaty rate",
+              "4% (subject to statutory criteria)",
+              "4% (subject to statutory criteria)",
+            ],
+            [
+              "**Primary Eligibility Basis**",
+              "None",
+              "Industrial exports & competitiveness",
+              "R&D activity & qualifying IP",
+              "Global group turnover exceeding NIS 10B",
+            ],
+          ],
+        },
+      },
+      {
+        h: "Key Criteria for Assessing Preferred Technological Enterprise (PTE) Eligibility",
+        p: [
+          "*The criteria below represent the primary statutory tests. Actual eligibility is governed by the law, regulations, Israel Tax Authority positions, and the specific facts of each company and its operations.*",
+          "Eligibility assessment involves several statutory tests established by law, regulations, and tax authority guidance, with implementation varying based on company characteristics:",
+          "**1. Group Revenue Ceiling** — The total consolidated revenue of the company (or the multinational group of which it is part) does not exceed NIS 10 billion in the tax year. (Enterprises exceeding this threshold are assessed under the \"Special Preferred Technological Enterprise\" regime).",
+          "**2. Qualifying Intangible Asset (Qualifying IP)** — Revenues must derive from a qualifying intangible asset as defined in the law and regulations—such as computer software, patents, technological know-how, or other proprietary rights satisfying statutory requirements—developed through the enterprise's research and development activities.",
+          "**3. Technological Activity Test (R&D Spending and Growth)** — The company must satisfy the baseline R&D expenditure threshold (R&D expenses representing at least 7% of annual revenue or at least NIS 75 million per year), alongside at least one of the following additional criteria: sustained workforce growth (at least 200 employees or a 25% increase in headcount in accordance with statutory rules); external venture capital investment of at least NIS 8 million; at least 25% revenue growth over a three-year period; or, alternatively, obtaining specific formal certification from the Israel Innovation Authority (IIA) recognizing the company as an \"innovation-promoting company.\"",
+          "**4. International Competitiveness Test (Exports)** — Compliance with statutory export and competitiveness tests. The statutory provisions set forth diverse market and export benchmarks, which in certain instances relate to the characteristics of the target market.",
+        ],
+      },
+      {
+        h: "The Nexus Formula: Calculating Qualifying Technological Income",
+        p: [
+          "Tax benefits under the PTE regime do not automatically apply to an enterprise's total net profit, but solely to its **Preferred Technological Income**. The eligible income ratio is calculated in accordance with the modified Nexus approach established under OECD BEPS Action 5:",
+          "Eligible Nexus Ratio = min(1, (Direct Qualifying R&D * 1.3) / (Total R&D Costs + IP Acquisition Costs))",
+          "*The formula presented above is for illustrative purposes only and does not replace a comprehensive professional computation.*",
+          "Economic implications of the Nexus formula:",
+          "**1. Incentivizing Direct Local R&D:** The greater the proportion of core development performed directly by company employees in Israel, the closer the eligible ratio approaches 100%.",
+          "**2. Impact of IP Acquisitions and Outsourcing:** Acquiring intellectual property from foreign affiliates or outsourcing core R&D activities outside of Israel expands the denominator, potentially diluting the proportion of income eligible for reduced corporate tax rates.",
+          "**3. The 30% Uplift Factor:** Israeli law permits a 30% uplift on qualifying domestic R&D expenses to buffer against certain external and outsourced expenditures, capped at total actual R&D costs.",
+        ],
+      },
+      {
+        h: "Dividend Taxation for Foreign Parent Companies (The 4% Regime)",
+        p: [
+          "A substantial advantage of the Preferred Technological Enterprise regime involves reduced taxation on dividends distributed to a foreign parent entity holding the Israeli enterprise.",
+          "As a general rule, the law establishes a series of cumulative statutory conditions for the application of this reduced withholding rate, including conditions relating to the ownership structure, characteristics of the foreign parent, origin of the distributed profits, and additional legal prerequisites. Determining eligibility requires a case-by-case analysis of the multinational group structure, corporate classification, and the circumstances of the distribution, in conjunction with applicable bilateral double taxation treaties.",
+        ],
+      },
+      {
+        h: "Common Pitfalls in Managing Technological Tax Regimes",
+        p: [
+          "**1. Inadequate R&D Time and Project Tracking:** Failure to maintain a clear evidentiary separation between qualified R&D activities and routine technical support, implementation, or sales operations.",
+          "**2. IP Acquisitions Without Prior Nexus Modeling:** Purchasing source code or technology assets from related entities without modeling how the acquisition will affect the Nexus denominator and overall effective tax rate.",
+          "**3. Cross-Border Transactions and Transfer Pricing:** Inconsistent transfer pricing methodologies between the foreign parent and the Israeli development center, creating exposure to dual-jurisdiction tax audits.",
+          "**4. Incomplete Annual Tax Return Filings:** Omitting required forms and supporting documentation from the annual corporate tax return (such as Form 973 for calculating preferred technological income, Form 901A, and related filings in accordance with statutory provisions and Israel Tax Authority directives). Additional notifications, declarations, and attachments may be required depending on the chosen track and filing circumstances.",
+        ],
+      },
+      {
+        h: "Professional Consultation & Advisory",
+        p: [
+          "Evaluating eligibility for tax incentives under Israel's Law for the Encouragement of Capital Investments? Nimrodi & Co. CPAs assists software companies, startups, and technology enterprises in assessing eligibility for Preferred Enterprise and Preferred Technological Enterprise (PTE) regimes, modeling tax impacts, preparing defensible Nexus documentation, and assisting with tax authority interactions, reporting requirements and auditor coordination. See also our [corporate tax consulting and planning](/en/tax-consulting) services.",
+          "**Phone:** 09-958-2211 · **Email:** office@nimrodi.co.il · **Address:** 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel",
+        ],
+      },
+    ],
+  },
+  {
     slug: "israeli-subsidiary-vs-branch",
     translationKey: "foreign-company-structure",
     imageAlt: "Israeli Subsidiary or Branch: Key Considerations for Foreign Entities",
