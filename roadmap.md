@@ -1,5 +1,7 @@
 # Requested updates
 
+- [x] Update both AI reference files to the approved copy with absolute URLs, PTE guides, and all existing professional limitations preserved; served content matches, all 32/48 local targets return 200, build OK; not published.
+
 - [x] Embed approved English article `/en/blog/preferred-technological-enterprise` with Article/FAQ/Breadcrumb/Person schemas (inLanguage en-US), comparison table, 4 FAQs, article-specific disclaimer, service-startups.webp image, canonical, blog index and sitemap entry; verified live (200, 5 table rows, 4 FAQs, schemas, internal links), build OK; not published.
 - [x] Embed approved Hebrew counterpart `/blog/preferred-technological-enterprise` with shared translationKey linking both articles (hreflang he-IL/en-US/x-default both directions), paired sitemap entry, table, FAQs, disclaimer; verified live (200, schemas, index card), build OK; not published.
 

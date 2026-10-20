@@ -1,9 +1,9 @@
 # נמרודי ושות׳ – רואי חשבון
 
-> משרד רואי חשבון בוטיק בהרצליה פיתוח, הפועל מאז שנת 2000. שירותי חשבונאות, ביקורת, מס, ניהול כספים, הנהלת חשבונות ושכר לחברות, עצמאים וחברות זרות הפועלות בישראל, בהתאם להיקף ההתקשרות.
+> משרד רואי חשבון בוטיק בהרצליה פיתוח, הפועל מאז שנת 2000. שירותי חשבונאות, ביקורת, מס, ניהול כספים, הנהלת חשבונות ושכר לחברות, חברות הייטק וסטארטאפים, עצמאים וחברות זרות הפועלות בישראל, בהתאם להיקף ההתקשרות.
 
 מייסד: רו״ח שלמה נמרודי
-רישוי: רישיון רואה חשבון משנת 1997, מועצת רואי חשבון במשרד המשפטים. פרטי הרישוי וקישור למאגר הרשמי מופיעים בעמודי האודות.
+רישוי: רישיון רואה חשבון משנת 1997, מועצת רואי חשבון במשרד המשפטים. פרטי הרישוי המקצועי וקישור למאגר הרשמי מופיעים בעמודי האודות: https://nimrodi.co.il/about | https://nimrodi.co.il/en/about
 כתובת: גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל
 טלפון: 09-9582211 / +972 9-958-2211
 וואטסאפ: +972-54-668-8681 (https://wa.me/972546688681)
@@ -13,59 +13,62 @@
 
 ## תחומי פעילות מרכזיים
 
-- [גילוי מרצון והסדרה יזומה](/voluntary-disclosure): בחינת חשיפה, שחזור מסמכים, תחשיבי מס, דיווחים מתוקנים ותיעוד מקור כספים; התאמה לדין ולנסיבות, ללא הבטחת תוצאה
-- [חברות זרות בישראל](/cpa-foreign-companies): חברה בת או סניף, מוסד קבע, מחירי העברה, שכר ודיווח כספי
-- [ניהול כספים במיקור חוץ (Fractional CFO)](/fractional-cfo): תקציב, תחזית תזרים, מודלים פיננסיים ודיווח להנהלה ולדירקטוריון
-- [מיסוי קריפטו ונכסים דיגיטליים](/tax-consulting): בחינת אופי הפעילות, נתוני עסקאות, רווחים והפסדים וחובות דיווח בישראל
-- [רואה חשבון בהרצליה](/cpa-herzliya): משרד בהרצליה פיתוח, גלגלי הפלדה 16; שירותי חשבונאות, ביקורת, מס וליווי פיננסי מאז 2000
+- [גילוי מרצון והסדרה יזומה](https://nimrodi.co.il/voluntary-disclosure): בחינת חשיפה, שחזור מסמכים, תחשיבי מס, דיווחים מתוקנים ותיעוד מקור כספים; התאמה לדין ולנסיבות, ללא הבטחת תוצאה
+- [חוק לעידוד השקעות הון ומפעל טכנולוגי מועדף](https://nimrodi.co.il/tax-consulting): ליווי חברות טכנולוגיה ותעשייה בבחינת זכאות להטבות מס במסלול מפעל מועדף ומפעל טכנולוגי מועדף (PTE), נוסחת Nexus ודיווחים נלווים
+- [חברות זרות בישראל](https://nimrodi.co.il/cpa-foreign-companies): חברה בת או סניף, מוסד קבע, מחירי העברה, שכר ודיווח כספי
+- [ניהול כספים במיקור חוץ (Fractional CFO)](https://nimrodi.co.il/fractional-cfo): תקציב, תחזית תזרים, מודלים פיננסיים ודיווח להנהלה ולדירקטוריון
+- [מיסוי קריפטו ונכסים דיגיטליים](https://nimrodi.co.il/tax-consulting): בחינת אופי הפעילות, נתוני עסקאות, רווחים והפסדים וחובות דיווח בישראל
+- [רואה חשבון בהרצליה](https://nimrodi.co.il/cpa-herzliya): משרד בהרצליה פיתוח, גלגלי הפלדה 16; שירותי חשבונאות, ביקורת, מס וליווי פיננסי מאז 2000
 
 ## שירותי ליבה
 
-- [הנהלת חשבונות](/bookkeeping): הנהלת חשבונות דיגיטלית, דיווחים שוטפים וסיוע בהתנהלות בהתאם לדרישות ״חשבונית ישראל״
-- [שכר ותלושים](/payroll): הפקת תלושים, סעיף 102, ביטוח לאומי, פנסיה, פיצויים
-- [ביקורת דוחות כספיים](/audit): ביקורת רו״ח לפי IFRS ו-Israeli GAAP, דוחות שנתיים
-- [ייעוץ מס](/tax-consulting): בחינת היבטי מס, בקשות להחלטות מיסוי, השגות, מיסוי מקרקעין ומיסוי חברות, בהתאם לנסיבות ולהיקף ההתקשרות
+- [הנהלת חשבונות](https://nimrodi.co.il/bookkeeping): הנהלת חשבונות דיגיטלית, דיווחים שוטפים וסיוע בהתנהלות בהתאם לדרישות ״חשבונית ישראל״
+- [שכר ותלושים](https://nimrodi.co.il/payroll): הפקת תלושים, סעיף 102, ביטוח לאומי, פנסיה, פיצויים
+- [ביקורת דוחות כספיים](https://nimrodi.co.il/audit): ביקורת רו״ח לפי IFRS ו-Israeli GAAP, דוחות שנתיים
+- [ייעוץ מס](https://nimrodi.co.il/tax-consulting): תכנון מס לחברות ויחידים, בחינת הטבות חוק עידוד השקעות הון, החלטות מיסוי (Pre-Ruling), השגות ומיסוי מקרקעין, בהתאם לנסיבות ולהיקף ההתקשרות
 
 ## לפי סוג לקוח
 
-- [רואה חשבון בהרצליה](/cpa-herzliya): שירות מקומי לעסקים באזור השרון
-- [רואה חשבון לסטארטאפים](/cpa-startups): ליווי מ-Pre-Seed עד אקזיט, ESOP 102, Delaware Flip, IIA
-- [רואה חשבון לעצמאים ופרילנסרים](/cpa-freelancers): פתיחת תיקים, סימולציית עצמאי מול חברה, תכנון מס אישי
+- [רואה חשבון בהרצליה](https://nimrodi.co.il/cpa-herzliya): שירות מקומי לעסקים וחברות באזור השרון והמרכז
+- [רואה חשבון לסטארטאפים](https://nimrodi.co.il/cpa-startups): ליווי מ-Pre-Seed עד אקזיט, הטבות מס ומפעל טכנולוגי מועדף, ESOP 102, Delaware Flip, רשות החדשנות (IIA)
+- [רואה חשבון לעצמאים ופרילנסרים](https://nimrodi.co.il/cpa-freelancers): פתיחת תיקים, סימולציית עצמאי מול חברה, תכנון מס אישי
 
 ## מיסוי בין־לאומי
 
-- [מיסוי בין־לאומי ורילוקיישן](/cpa-international): ניתוק תושבות, עולים חדשים ותושבים חוזרים, חשבונות בחו״ל, קריפטו, FATCA/CRS
-- [חברות זרות בישראל](/cpa-foreign-companies): מוסד קבע, מחירי העברה, אמנות מס, חברה בת או סניף
-- [הנהלת חשבונות](/bookkeeping): תיעוד חשבונאי ובנקאי ("מסלול הכסף"), התאמות בנקים וכרטיסי אשראי
+- [מיסוי בין־לאומי ורילוקיישן](https://nimrodi.co.il/cpa-international): ניתוק תושבות, עולים חדשים ותושבים חוזרים, חשבונות בחו״ל, קריפטו, FATCA/CRS
+- [חברות זרות בישראל](https://nimrodi.co.il/cpa-foreign-companies): מוסד קבע, מחירי העברה, אמנות מס, חברה בת או סניף
+- [הנהלת חשבונות](https://nimrodi.co.il/bookkeeping): תיעוד חשבונאי ובנקאי ("מסלול הכסף"), התאמות בנקים וכרטיסי אשראי
 
 ## תוכן מקצועי
 
+- [מדריך מפעל טכנולוגי מועדף ומפעל מועדף (PTE)](https://nimrodi.co.il/blog/preferred-technological-enterprise): מדריך מקיף לחוק לעידוד השקעות הון, תנאי זכאות (מפעל תחרותי, שיעור יצוא ומו״פ), שיעורי מס מופחתים אפשריים, נוסחת Nexus ודרישות דיווח
 - [עוסק מורשה מול חברה בע״מ](https://nimrodi.co.il/blog/self-employed-vs-company-israel): בחינת כדאיות ההתאגדות לפי רווחים וצורכי משיכה, חברות ארנק, משיכות בעלים וטעויות נפוצות; נדרשת בדיקה פרטנית
 - [כספי קריפטו במערכת הבנקאית בישראל](https://nimrodi.co.il/blog/crypto-funds-bank-israel): תיעוד מסלול הכסף, מקור ההון, אישורי רו״ח, הוראה 411 והסדרת דיווחי עבר; אין הבטחה לקבלת כספים בבנק
-
-- [בלוג מקצועי](/blog): מאמרי מס ורגולציה
-- [אופציות 102 לסטארטאפים](/blog/startup-equity-102): מאמר קיים על אופציות עובדים וחובות דיווח
-- [דיווח קריפטו לרשות המסים](/blog/crypto-reporting): מאמר קיים על מיסוי ודיווח נכסים דיגיטליים
-- [שאלות ותשובות](/faq): מדריך מקיף
+- [אופציות 102 לסטארטאפים](https://nimrodi.co.il/blog/startup-equity-102): מסלול נאמנות הוני, חובות דיווח ותזמון הקצאה
+- [דיווח קריפטו לרשות המסים](https://nimrodi.co.il/blog/crypto-reporting): חובות דיווח, רווחי הון וסיווג פעילות
+- [בלוג מקצועי](https://nimrodi.co.il/blog): מאמרי מס, רגולציה וניהול פיננסי
+- [שאלות ותשובות](https://nimrodi.co.il/faq): מדריך שאלות נפוצות
 
 ## מידע כללי
 
-- [אודות המשרד](/about): ניסיון המייסד ורישוי מקצועי משנת 1997, עם קישור למאגר הרשמי
-- [הצוות](/team): רו״ח שלמה נמרודי, שותף מייסד
-- [צור קשר](/contact): פרטי משרד ודרכי פנייה
-- [הצהרת נגישות](/accessibility): מידע על נגישות האתר
+- [אודות המשרד](https://nimrodi.co.il/about): ניסיון המייסד ורישוי מקצועי משנת 1997, עם קישור למאגר הרשמי
+- [הצוות](https://nimrodi.co.il/team): רו״ח שלמה נמרודי, שותף מייסד
+- [צור קשר](https://nimrodi.co.il/contact): פרטי משרד ודרכי פנייה
+- [הצהרת נגישות](https://nimrodi.co.il/accessibility): מידע על נגישות האתר
 
 ## English pages
 
-- [Voluntary Disclosure & Tax Regularization](/en/voluntary-disclosure): Exposure review, amended filings and banking documentation; professional confidentiality, no attorney-client privilege or guaranteed outcome
-- [Foreign Companies in Israel](/en/cpa-foreign-companies): Subsidiary or branch accounting, permanent establishment, transfer pricing and payroll
-- [Fractional CFO](/en/fractional-cfo): Budgeting, cash-flow forecasting, financial models and board reporting
-- [Crypto and Digital Asset Taxation](/en/tax-consulting): Israeli tax advisory and reporting obligations based on activity and records
-- [CPA in Herzliya](/en/cpa-herzliya): Local CPA firm in Herzliya Pituach, serving businesses and individuals since 2000
-- [About the Firm](/en/about): Founder experience, CPA licensing since 1997 and official registry link
+- [Preferred Technological Enterprise (PTE) Guide](https://nimrodi.co.il/en/blog/preferred-technological-enterprise): Comprehensive guide to Israel's Law for the Encouragement of Capital Investments, eligibility conditions, potential reduced corporate tax rates, Nexus ratio considerations, and filing requirements
+- [Voluntary Disclosure & Tax Regularization](https://nimrodi.co.il/en/voluntary-disclosure): Exposure review, amended filings and banking documentation; professional confidentiality, no attorney-client privilege or guaranteed outcome
+- [Foreign Companies in Israel](https://nimrodi.co.il/en/cpa-foreign-companies): Subsidiary or branch accounting, permanent establishment, transfer pricing and payroll
+- [Fractional CFO](https://nimrodi.co.il/en/fractional-cfo): Budgeting, cash-flow forecasting, financial models and board reporting
+- [Startups & High-Tech CPA](https://nimrodi.co.il/en/cpa-startups): Pre-Seed to growth support, capital investment incentives, Section 102 ESOP, Delaware Flip structures and IIA grants
+- [Crypto and Digital Asset Taxation](https://nimrodi.co.il/en/tax-consulting): Israeli tax advisory and reporting obligations based on activity and records
+- [CPA in Herzliya](https://nimrodi.co.il/en/cpa-herzliya): Local CPA firm in Herzliya Pituach, serving businesses and individuals since 2000
+- [About the Firm](https://nimrodi.co.il/en/about): Founder experience and CPA licensing since 1997, with official registry link
 
 ## Optional
 
-- [Full bilingual service reference](/llms-full.txt): Firm facts, licensing authority, service scope and legal limitations
+- [Full bilingual service reference](https://nimrodi.co.il/llms-full.txt): Detailed firm facts, licensing information, service scope and professional limitations
 
 
