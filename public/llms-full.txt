@@ -1,6 +1,6 @@
 # Shlomo Nimrodi & Co. CPA (נמרודי ושות׳ – רואי חשבון) — Full Reference
 
-> Boutique CPA firm in Herzliya Pituach, Israel, active since 2000 and led by founding partner CPA Shlomo Nimrodi. The firm provides accounting, audit, tax, payroll, bookkeeping and outsourced financial-management services to companies, startups, foreign companies operating in Israel, freelancers and individuals, according to the agreed engagement scope.
+> Boutique CPA firm in Herzliya Pituach, Israel, active since 2000 and led by founding partner CPA Shlomo Nimrodi. The firm provides accounting, audit, tax, payroll, bookkeeping and outsourced financial-management services to companies, high-tech startups, foreign companies operating in Israel, freelancers and individuals, according to the agreed engagement scope.
 
 ## Firm facts
 
@@ -9,7 +9,7 @@
 - Founding partner: Shlomo Nimrodi, Certified Public Accountant (Israel)
 - CPA license year: 1997; licensing authority: Auditors Council of Israel (מועצת רואי חשבון), Ministry of Justice (משרד המשפטים)
 - Official CPA registry: https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94
-- Credential source: https://nimrodi.co.il/about | https://nimrodi.co.il/en/about. The registry link is a public name search, not a claim of a separately verified license number or current-status check.
+- Professional credentials: https://nimrodi.co.il/about | https://nimrodi.co.il/en/about. The registry link is a public name search, not a claim of a separately verified license number or current-status check.
 - Address: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel (גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל)
 - Area served: Herzliya, Herzliya Pituach, Ramat HaSharon, Ra'anana, Tel Aviv and the Sharon region; remote clients in Israel and abroad via video meetings
 - Phone: +972 9-958-2211 (09-9582211)
@@ -20,6 +20,13 @@
 - Website: https://nimrodi.co.il (Hebrew, default) and https://nimrodi.co.il/en (English)
 
 ## Core services
+
+### Capital investment incentives & Preferred Technological Enterprise (חוק לעידוד השקעות הון ומפעל טכנולוגי מועדף)
+Advisory and compliance under Israel's Law for the Encouragement of Capital Investments, 5719-1959. Services cover statutory eligibility reviews (competitive enterprise test, export requirements, technological criteria), tracking and calculating the OECD BEPS modified Nexus ratio, corporate tax return disclosures, and dividend withholding analysis.
+- HE guide: https://nimrodi.co.il/blog/preferred-technological-enterprise
+- EN guide: https://nimrodi.co.il/en/blog/preferred-technological-enterprise
+- Related service (Startups): https://nimrodi.co.il/cpa-startups | https://nimrodi.co.il/en/cpa-startups
+- Related service (Tax consulting): https://nimrodi.co.il/tax-consulting | https://nimrodi.co.il/en/tax-consulting
 
 ### Voluntary disclosure & proactive tax regularization (גילוי מרצון והסדרה יזומה)
 Nimrodi & Co. assists with proactive Israeli tax regularization involving foreign accounts, digital assets and unreported income. The agreed scope may include exposure review, document reconstruction, tax calculations, amended filings, assessing-officer dialogue and source-of-funds documentation. Availability of any temporary voluntary-disclosure procedure must be checked under current law; proactive regularization may be considered without an active temporary procedure. Professional accountant confidentiality is not attorney-client privilege. Tax-authority outcomes and banking acceptance are not guaranteed.
@@ -47,7 +54,7 @@ Review of alternatives, risks and reporting obligations before transactions and 
 - EN: https://nimrodi.co.il/en/tax-consulting
 
 ### Startups (Pre-Seed to exit)
-Company formation, bookkeeping and ongoing reporting, Section 102 employee options (ESOP), Delaware Flip structures, Israel Innovation Authority (IIA) grants, fundraising and due-diligence preparation.
+Company formation, bookkeeping and ongoing reporting, Section 102 employee options (ESOP), Delaware Flip structures, Israel Innovation Authority (IIA) grants, fundraising preparation, and guidance on eligibility for Preferred Technological Enterprise tax benefits.
 - HE: https://nimrodi.co.il/cpa-startups
 - EN: https://nimrodi.co.il/en/cpa-startups
 
@@ -91,6 +98,13 @@ Israeli tax support may include reviewing the nature of digital-asset activity, 
 
 ## Professional content
 
+### Preferred Technological Enterprise (PTE) Guide (Bilingual guide)
+Comprehensive guide to tax incentives under Israel's Law for the Encouragement of Capital Investments, 5719-1959.
+The guide reviews the statutory framework under which qualifying technological enterprises may be eligible for reduced corporate income tax rates, subject to eligibility criteria and applicable regulations. It covers competitive enterprise market requirements, R&D expenditure benchmarks, the OECD BEPS modified Nexus ratio, reduced dividend tax regimes, and necessary annual tax return disclosures.
+- Published: 2026-10-19; author: Shlomo Nimrodi, CPA (founding partner). Professional reviewer: the same founder, not an independent review.
+- HE: https://nimrodi.co.il/blog/preferred-technological-enterprise
+- EN: https://nimrodi.co.il/en/blog/preferred-technological-enterprise
+
 ### Self-employed business vs. limited company in Israel (Hebrew article)
 Incorporation is assessed based on sustainable profits available for reinvestment, personal withdrawals, activity structure, operating costs and business risks, not revenue alone. The article covers Section 62A personal-service companies, Section 3(t1) shareholder withdrawals, Section 77, salary/dividend planning and common transition mistakes. A company does not automatically save tax; current-law and individual review are required.
 - Published: 2026-10-15; author and professional reviewer: Shlomo Nimrodi, CPA (the same founder, not an independent review).
@@ -117,33 +131,38 @@ The article covers source-of-funds evidence from initial fiat capital through ex
 
 ## Topic deep-dives
 
+### Capital investment incentives & Preferred Technological Enterprise (חוק לעידוד השקעות הון)
+Assistance for technology companies, software developers, and industrial enterprises in evaluating eligibility under the Law for the Encouragement of Capital Investments. Advisory includes reviewing qualifying enterprise status, foreign market export requirements, R&D thresholds, and application of the OECD BEPS modified Nexus formula. Programs may provide reduced corporate tax rates and dividend withholding benefits, subject to statutory conditions, advance notifications, and annual tax return disclosures.
+- HE: https://nimrodi.co.il/blog/preferred-technological-enterprise
+- EN: https://nimrodi.co.il/en/blog/preferred-technological-enterprise
+
 ### International tax & relocation
-Israeli tax aspects of relocation in both directions: analysis of tax residency under the statutory center-of-life tests and applicable presumptions, residency severance and exit-tax considerations, and the interaction with double-tax treaties (including the US, UK, Canada, France and Germany treaties). Eligible new immigrants (olim chadashim) and senior returning residents may qualify for certain benefits relating to specified foreign-source income and gains, subject to the applicable law, eligibility conditions and individual circumstances. Timing and planning of the relocation date can be critical. Related reporting topics include foreign-account reporting under FATCA/CRS, equity compensation, pensions and trusts with cross-border elements.
+Israeli tax aspects of cross-border relocation: analysis of tax residency under statutory center-of-life tests and presumptions, residency severance, and double-tax treaty application. The firm advises eligible new immigrants (olim chadashim) and returning residents on foreign-source income rules, FATCA/CRS foreign-account reporting, and cross-border equity or pension considerations. Eligible new immigrants and senior returning residents may qualify for certain benefits relating to specified foreign-source income and gains, subject to the applicable law, eligibility conditions and individual circumstances. Exit-tax considerations and timing of the relocation date can be critical; trusts may also have cross-border elements.
 - HE: https://nimrodi.co.il/cpa-international
 - EN: https://nimrodi.co.il/en/cpa-international
 
 ### Foreign companies operating in Israel
-Accounting and tax aspects of an Israeli subsidiary or branch of a foreign company: permanent-establishment review under the relevant treaty, tax-file registration with the Israel Tax Authority, transfer-pricing documentation, ongoing bookkeeping, payroll for local employees, and financial reporting to the foreign parent. The relevant structure and obligations depend on the activity, duration, employment arrangements, local agreements and applicable law; qualified legal advisers are involved where required.
+Tax and accounting services for Israeli subsidiaries and branches of foreign corporations: permanent-establishment exposure reviews, tax registrations with Israeli authorities, transfer-pricing compliance, ongoing statutory bookkeeping, local payroll administration, and reporting packages to parent entities. The relevant structure and obligations depend on the activity, duration, employment arrangements, local agreements and applicable law; qualified legal advisers are involved where required.
 - HE: https://nimrodi.co.il/cpa-foreign-companies
 - EN: https://nimrodi.co.il/en/cpa-foreign-companies
 
 ### New immigrants (olim) & returning residents
-Eligible new residents and returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income, subject to the applicable law, eligibility conditions and the specific circumstances. Matters reviewed include the benefit period, foreign pensions, equity compensation granted before or after relocation, foreign real estate, and reporting obligations in Israel and abroad. Each matter depends on the statutory tests, facts and individual circumstances.
+Advisory on tax benefits applicable to qualifying foreign-source income for eligible new and returning residents under Israeli law. Reviews cover benefit durations, foreign pension income, cross-border equity awards, and ongoing compliance requirements in Israel and foreign jurisdictions, based on individual facts. Benefits remain subject to the applicable law, eligibility conditions and the specific circumstances. Matters may include foreign real estate and equity compensation granted before or after relocation. Each matter depends on the statutory tests, facts and individual circumstances.
 - HE: https://nimrodi.co.il/cpa-international
 - EN: https://nimrodi.co.il/en/cpa-international
 
 ### Crypto & digital assets
-Services may include reviewing the nature of digital-asset activity (trading, investing, staking, business activity), collecting and organizing transaction data from exchanges and wallets, calculating gains and losses based on the records provided, preparing information for Israeli tax returns and reviewing reporting obligations. Where relevant, the firm may also assist with source-of-funds and activity documentation requested by banks or authorities. Each case is reviewed according to the facts and applicable law.
+Guidance on Israeli tax treatment for digital assets: analyzing the nature of trading, investment, staking, mining or business activities, organizing transaction history across exchanges and self-hosted wallets, calculating capital gains or losses based on the records provided, and preparing disclosures for Israeli tax returns and banking documentation requests under applicable directives. Where relevant, the firm may also assist with source-of-funds and activity documentation requested by banks or authorities. Each case is reviewed according to the facts and applicable law.
 - HE: https://nimrodi.co.il/blog/crypto-reporting
 - EN: https://nimrodi.co.il/en/tax-consulting
 
 ### Audit & financial reporting
-Audits of financial statements under the applicable reporting framework (IFRS or Israeli GAAP), relevant auditing standards and the engagement scope. Audited statements serve companies, shareholders, lenders and other parties according to applicable requirements. The firm also prepares financial reporting packages, management reports and information for boards, fundraising and due-diligence processes.
+Audits of financial statements in accordance with the applicable reporting framework (IFRS or Israeli GAAP), relevant statutory auditing standards and the engagement scope for private companies, subsidiaries, and non-profits. Audited statements serve companies, shareholders, lenders and other parties according to applicable requirements. The firm also prepares financial packages and management reporting for boards, financing institutions, and due-diligence processes.
 - HE: https://nimrodi.co.il/audit
 - EN: https://nimrodi.co.il/en/audit
 
 ### Accounting & banking documentation ("money trail")
-Support with organizing accounting and banking documentation: document capture, bank and credit-card reconciliations, source-of-funds documentation, and preparation of organized records for the tax authority, banks and other parties, within the agreed engagement scope.
+Support with structured documentation: bookkeeping, document capture, bank and credit card reconciliations, source-of-funds tracing, and preparation of clear financial records for tax authorities, commercial banks, and institutional reviews within the agreed scope.
 - HE: https://nimrodi.co.il/bookkeeping
 - EN: https://nimrodi.co.il/en/bookkeeping
 
