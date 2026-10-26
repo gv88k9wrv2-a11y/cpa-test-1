@@ -214,7 +214,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: (ctx) => {
     // A render whose deepest match is the "/$" catch-all is a not-found page:
     // crawlers must never index it or follow the links it shows.
-    const isNotFound = ctx.matches[ctx.matches.length - 1]?.routeId === "/$";
+    const lastRouteId: string = String(
+      ctx.matches[ctx.matches.length - 1]?.routeId ?? "",
+    );
+    const isNotFound = lastRouteId === "/$";
     return {
       meta: [
         { charSet: "utf-8" },
