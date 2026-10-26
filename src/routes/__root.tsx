@@ -211,11 +211,13 @@ const WEBSITE_JSONLD = {
 };
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: (ctx) => ({
-    meta: [
-      { name: "x-probe-match-count", content: String(ctx.matches.length) },
-      { name: "x-probe-last-route", content: String(ctx.matches[ctx.matches.length - 1]?.routeId ?? "none") },
-      { charSet: "utf-8" },
+  head: (ctx) => {
+    // A render whose deepest match is the "/$" catch-all is a not-found page:
+    // crawlers must never index it or follow the links it shows.
+    const isNotFound = ctx.matches[ctx.matches.length - 1]?.routeId === "/$";
+    return {
+      meta: [
+        { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         name: "google-site-verification",
@@ -223,7 +225,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "theme-color", content: "#0c689b" },
       { name: "author", content: "נמרודי ושות׳ – רואי חשבון" },
-      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
+      {
+        name: "robots",
+        content: isNotFound
+          ? "noindex, nofollow"
+          : "index, follow, max-image-preview:large, max-snippet:-1",
+      },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "נמרודי ושות׳ – רואי חשבון" },
       { property: "og:locale", content: "he_IL" },
@@ -290,8 +297,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             },
           ]
         : []),
-    ],
-  }),
+      ],
+    };
+  },
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
