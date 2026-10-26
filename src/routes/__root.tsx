@@ -211,8 +211,10 @@ const WEBSITE_JSONLD = {
 };
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
+  head: (ctx) => ({
     meta: [
+      { name: "x-probe-match-count", content: String(ctx.matches.length) },
+      { name: "x-probe-last-route", content: String(ctx.matches[ctx.matches.length - 1]?.routeId ?? "none") },
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
