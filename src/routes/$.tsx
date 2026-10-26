@@ -61,13 +61,19 @@ function decodeAttempt(value: string): string {
 }
 
 export const Route = createFileRoute("/$")({
-  head: () => ({
-    meta: [
-      {
-        title: "Page not found | Nimrodi & Co. CPA",
-      },
-      { name: "robots", content: "noindex, nofollow" },
-    ],
+  head: ({ params }) => {
+    const path = (params._splat ?? "").replace(/^\/+/, "");
+    const en = path === "en" || path.startsWith("en/");
+    return {
+      meta: [
+        {
+          title: en
+            ? "Page not found | Nimrodi & Co. CPA"
+            : "העמוד לא נמצא | נמרודי ושות׳ – רואי חשבון",
+        },
+        { name: "robots", content: "noindex, nofollow" },
+      ],
+    };
   },
 
   beforeLoad: ({ params }) => {
