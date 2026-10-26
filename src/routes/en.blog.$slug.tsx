@@ -35,7 +35,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
       return {
         meta: [
           { title: "Article Not Found | Nimrodi & Co. CPA" },
-          { name: "robots", content: "noindex" },
+          { name: "robots", content: "noindex, nofollow" },
         ],
       };
     }

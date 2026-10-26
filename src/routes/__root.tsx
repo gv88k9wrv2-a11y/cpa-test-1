@@ -218,85 +218,88 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     return {
       meta: [
         { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        name: "google-site-verification",
-        content: "L5dPfUFOFWx6um0FIg4RaZiIoL-x8X2jQSZUqwoBZfc",
-      },
-      { name: "theme-color", content: "#0c689b" },
-      { name: "author", content: "נמרודי ושות׳ – רואי חשבון" },
-      {
-        name: "robots",
-        content: isNotFound
-          ? "noindex, nofollow"
-          : "index, follow, max-image-preview:large, max-snippet:-1",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "נמרודי ושות׳ – רואי חשבון" },
-      { property: "og:locale", content: "he_IL" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { title: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
-      { property: "og:title", content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
-      {
-        name: "twitter:title",
-        content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות",
-      },
-      {
-        name: "description",
-        content:
-          "משרד רואי חשבון בהרצליה פיתוח המלווה חברות, סטארטאפים, חברות זרות ועצמאים בהנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס בהיקף מוסכם. מוזמנים ליצור איתנו קשר.",
-      },
-      {
-        property: "og:description",
-        content:
-          "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת ומס לחברות, סטארטאפים וחברות זרות, בהתאם לצורכי הדיווח ולהיקף ההתקשרות.",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת, מס ודיווח על נכסים דיגיטליים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.",
-      },
-      { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
-      { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
-    ],
-    links: [
-      { rel: "stylesheet", href: appCss },
-      { rel: "manifest", href: "/manifest.json" },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-      { rel: "icon", type: "image/png", sizes: "192x192", href: "/icon-192.png" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap",
-      },
-    ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(ORG_JSONLD),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(WEBSITE_JSONLD),
-      },
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(PERSON_JSONLD),
-      },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "google-site-verification",
+          content: "L5dPfUFOFWx6um0FIg4RaZiIoL-x8X2jQSZUqwoBZfc",
+        },
+        { name: "theme-color", content: "#0c689b" },
+        { name: "author", content: "נמרודי ושות׳ – רואי חשבון" },
+        {
+          name: "robots",
+          content: isNotFound
+            ? "noindex, nofollow"
+            : "index, follow, max-image-preview:large, max-snippet:-1",
+        },
+        { property: "og:type", content: "website" },
+        { property: "og:site_name", content: "נמרודי ושות׳ – רואי חשבון" },
+        { property: "og:locale", content: "he_IL" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { title: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
+        {
+          property: "og:title",
+          content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות",
+        },
+        {
+          name: "twitter:title",
+          content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות",
+        },
+        {
+          name: "description",
+          content:
+            "משרד רואי חשבון בהרצליה פיתוח המלווה חברות, סטארטאפים, חברות זרות ועצמאים בהנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס בהיקף מוסכם. מוזמנים ליצור איתנו קשר.",
+        },
+        {
+          property: "og:description",
+          content:
+            "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת ומס לחברות, סטארטאפים וחברות זרות, בהתאם לצורכי הדיווח ולהיקף ההתקשרות.",
+        },
+        {
+          name: "twitter:description",
+          content:
+            "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת, מס ודיווח על נכסים דיגיטליים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.",
+        },
+        { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
+        { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
+      ],
+      links: [
+        { rel: "stylesheet", href: appCss },
+        { rel: "manifest", href: "/manifest.json" },
+        { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+        { rel: "icon", type: "image/png", sizes: "192x192", href: "/icon-192.png" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700;900&display=swap",
+        },
+      ],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(ORG_JSONLD),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(WEBSITE_JSONLD),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(PERSON_JSONLD),
+        },
 
-      ...(GA_ENABLED
-        ? [
-            {
-              src: `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`,
-              async: true,
-            },
-            {
-              children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA4_MEASUREMENT_ID}',{send_page_view:false});`,
-            },
-          ]
-        : []),
+        ...(GA_ENABLED
+          ? [
+              {
+                src: `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`,
+                async: true,
+              },
+              {
+                children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA4_MEASUREMENT_ID}',{send_page_view:false});`,
+              },
+            ]
+          : []),
       ],
     };
   },
