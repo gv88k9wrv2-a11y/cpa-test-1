@@ -47,6 +47,19 @@ const REDIRECTS: Record<string, string> = {
   "פתיחת-תיקים-ברשויות-המס-הבסיס-הנכון-וה": "/bookkeeping",
 };
 
+// Malformed URLs created by broken link builders (e.g. "https:///", "http:/",
+// or their percent-encoded forms) can never resolve to a real page, so they are
+// sent permanently to the canonical root instead of rendering a 404.
+const MALFORMED_PROTOCOL = /https?:/i;
+
+function decodeAttempt(value: string): string {
+  try {
+    return decodeURIComponent(value);
+  } catch {
+    return value;
+  }
+}
+
 export const Route = createFileRoute("/$")({
   head: ({ params }) => {
     const path = (params._splat ?? "").replace(/^\/+/, "");
@@ -58,19 +71,24 @@ export const Route = createFileRoute("/$")({
             ? "Page not found | Nimrodi & Co. CPA"
             : "העמוד לא נמצא | נמרודי ושות׳ – רואי חשבון",
         },
-        { name: "robots", content: "noindex, follow" },
+        { name: "robots", content: "noindex, nofollow" },
       ],
     };
   },
 
   beforeLoad: ({ params }) => {
     const raw = (params._splat ?? "").replace(/^\/+|\/+$/g, "");
-    let decoded = raw;
-    try {
-      decoded = decodeURIComponent(raw);
-    } catch {
-      decoded = raw;
+    const decoded = decodeAttempt(raw);
+    const doubleDecoded = decodeAttempt(decoded);
+
+    if (
+      MALFORMED_PROTOCOL.test(raw) ||
+      MALFORMED_PROTOCOL.test(decoded) ||
+      MALFORMED_PROTOCOL.test(doubleDecoded)
+    ) {
+      throw redirect({ href: "/", statusCode: 301 });
     }
+
     const target = REDIRECTS[raw] ?? REDIRECTS[decoded];
     if (target) {
       throw redirect({ href: target, statusCode: 301 });

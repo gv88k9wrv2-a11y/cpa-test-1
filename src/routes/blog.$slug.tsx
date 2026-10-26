@@ -34,7 +34,7 @@ export const Route = createFileRoute("/blog/$slug")({
       return {
         meta: [
           { title: "המאמר המבוקש לא נמצא | נמרודי ושות׳" },
-          { name: "robots", content: "noindex" },
+          { name: "robots", content: "noindex, nofollow" },
         ],
       };
     }
