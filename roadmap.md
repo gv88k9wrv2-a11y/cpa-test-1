@@ -1,6 +1,6 @@
 # Requested updates
 
-- [ ] Embed the full approved Hebrew and English relocation articles supplied 2026-10-27 07:14 UTC: all 11 sections in order, section 4 tables, section 10 FAQs, exact disclaimers and numerical example; verify language switching, schemas, sitemap and compilation. Do not publish.
+- [x] Embed the full approved Hebrew and English relocation articles supplied 2026-10-27 07:14 UTC: all 11 sections in order, section 4 tables, section 10 FAQs, exact disclaimers and numerical example. Verified 200 responses, all sections, four FAQs per language, Article/FAQPage/Breadcrumb schemas, date, canonical/hreflang, actual language switching, paired sitemap and desktop/mobile rendering without runtime errors. No publication performed.
 
 - [x] Catch-all route: 301 malformed URLs containing http:/https: (plain and percent-encoded) to the canonical root; robots noindex,nofollow on every not-found render (root head detects the "/$" match, plus both article not-found branches); all REDIRECTS kept. Verified live: 301 to /, 404 pages noindex,nofollow, normal pages index,follow, build OK; not published.
 
