@@ -340,24 +340,24 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     slug: "relocation-tax-residency",
     translationKey: "relocation-tax-residency",
-    imageAlt: "Relocation from Israel: When Can Israeli Tax Residency End?",
+    imageAlt: "Terminating Israeli Tax Residency: Exit Tax, Relocation and National Insurance Guide",
     tags: ["relocation", "tax residency", "centre of life", "exit tax"],
     relatedSlugs: [
-      "israeli-subsidiary-vs-branch",
       "foreign-companies-operating-in-israel",
-      "israeli-tax-reporting-us-citizens",
+      "israeli-subsidiary-vs-branch",
+      "preferred-technological-enterprise",
     ],
-    relatedService: { href: "/en/cpa-international", label: "International tax and relocation" },
-    title: "Relocation from Israel: When Can Israeli Tax Residency End?",
-    metaTitle: "Relocation and Israeli Tax Residency",
+    relatedService: { href: "/en/cpa-international", label: "International tax and relocation planning" },
+    title: "Terminating Israeli Tax Residency: Exit Tax, Relocation & National Insurance Guide | Nimrodi & Co.",
+    metaTitle: "Terminating Israeli Tax Residency",
     excerpt:
-      "Moving abroad does not automatically sever Israeli tax residency. A review of the residency tests, the implications of relocation, and the 'exit tax' issue.",
+      "Planning a relocation abroad? Comprehensive guide by Shlomo Nimrodi, CPA, covering Israeli tax residency termination, Section 100A exit tax, National Insurance, RSUs, employee stock options, and tax treaties.",
     metaDescription:
-      "Relocation and Israeli tax residency: centre-of-life tests, day counting, severing residency and exit-tax implications, reviewed. Contact the firm today.",
-    date: "2026-03-05",
-    readMin: 10,
+      "Planning a relocation abroad? Comprehensive guide by Shlomo Nimrodi, CPA, covering Israeli tax residency termination, Section 100A exit tax, National Insurance, RSUs, employee stock options, and tax treaties.",
+    date: "2026-10-27",
+    readMin: 14,
     category: "International Tax",
-    image: imgCrypto,
+    image: imgIntl,
     sections: [
       {
         h: "Why residency classification is so important",
