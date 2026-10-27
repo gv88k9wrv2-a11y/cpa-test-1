@@ -1,6 +1,6 @@
 # Requested updates
 
-- [ ] Embed the approved full Hebrew and English relocation tax residency pillar articles; verify schemas, translation pairing, internal links, sitemap and compilation. Blocked: full approved HE/EN texts are absent from available uploads and project chat history. Existing abbreviated articles already have the requested slugs, translation keys, Article/Breadcrumb schemas, service links and paired sitemap entry; full content and FAQs await the approved source.
+- [ ] Embed the approved full Hebrew and English relocation tax residency pillar articles. Done 2026-10-27: approved configuration applied to both existing articles (titles, meta, excerpts, category, date 2026-10-27, readMin 14, imgIntl, approved relatedSlugs and relatedService labels); verified live — 200, canonical, hreflang he-IL/en-US/x-default both directions, Article/Breadcrumb schemas, paired sitemap entry, build OK; not published. Still blocked: the full 11-section approved body texts, comparison table, 4 FAQs and exact disclaimer wording were not included in the request and are absent from uploads and chat history — await the approved source texts.
 
 - [x] Catch-all route: 301 malformed URLs containing http:/https: (plain and percent-encoded) to the canonical root; robots noindex,nofollow on every not-found render (root head detects the "/$" match, plus both article not-found branches); all REDIRECTS kept. Verified live: 301 to /, 404 pages noindex,nofollow, normal pages index,follow, build OK; not published.
 
