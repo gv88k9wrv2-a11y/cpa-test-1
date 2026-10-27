@@ -7,6 +7,7 @@ import { SummaryBox } from "../components/page-summary";
 import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 import { BlogInlineContent } from "../components/blog-inline-content";
+import { BlogFaqList } from "../components/blog-faq-list";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -235,11 +236,17 @@ function BlogPostPage() {
                     </table>
                   </div>
                 ) : null}
+                {s.afterTable?.map((para, index) => (
+                  <p key={index} className="mt-4 whitespace-pre-line leading-relaxed text-muted-foreground">
+                    <BlogInlineContent text={para} />
+                  </p>
+                ))}
+                {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="he" /> : null}
               </section>
             ))}
           </div>
 
-          {post.faqs?.length ? (
+          {post.faqs?.length && !post.sections.some((section) => section.faqs) ? (
             <section className="mt-14">
               <h2 className="font-display text-2xl font-bold text-primary">שאלות נפוצות</h2>
               <div className="mt-5 divide-y divide-border rounded-xl border border-border bg-card">

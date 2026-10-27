@@ -14,6 +14,7 @@
 ## Project rules
 
 - Hebrew blog sections support escaped inline local Markdown links, bold emphasis and optional typed comparison tables; article-specific disclaimers override the shared disclaimer without duplicating it, preserving approved editorial structure safely.
+- Bilingual blog sections can place post-level FAQs inline and paragraphs after comparison tables; the shared FAQ list keeps approved article order without duplicating FAQ content or schema.
 
 - Voluntary-disclosure pages share a typed bilingual content module and presentation component; leaf routes supply language-specific metadata and schemas to keep approved content consistent.
 - New voluntary-disclosure forms persist validated inquiries through a write-only server function with database-backed rate limiting before using the existing Web3Forms delivery; other form behavior remains unchanged.

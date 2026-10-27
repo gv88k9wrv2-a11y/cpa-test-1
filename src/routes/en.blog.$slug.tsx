@@ -12,6 +12,7 @@ import { SummaryBox } from "../components/page-summary";
 import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 import { BlogInlineContent } from "../components/blog-inline-content";
+import { BlogFaqList } from "../components/blog-faq-list";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -43,7 +44,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
     const url = `${ORIGIN}/en/blog/${params.slug}`;
     return {
       meta: [
-        { title: `${post.metaTitle ?? post.title} | Nimrodi & Co.` },
+        { title: post.metaTitle?.includes("|") ? post.metaTitle : `${post.metaTitle ?? post.title} | Nimrodi & Co.` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
         {
@@ -52,11 +53,7 @@ export const Route = createFileRoute("/en/blog/$slug")({
         },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
-        { property: "og:image", content: `${ORIGIN}/og-image.jpg` },
-        { property: "og:image:width", content: "1200" },
-        { property: "og:image:height", content: "640" },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:image", content: `${ORIGIN}/og-image.jpg` },
         { property: "article:published_time", content: post.date },
         { property: "article:section", content: post.category },
       ],
@@ -164,7 +161,7 @@ function BlogPostPageEn() {
 
   const related = (post.relatedSlugs ?? [])
     .map((slug) => BLOG_POSTS_EN.find((p) => p.slug === slug))
-    .filter((p): p is BlogPostEn => Boolean(p) && p!.slug !== post.slug);
+    .filter((p): p is BlogPostEn => p !== undefined && p.slug !== post.slug);
 
   return (
     <div className="min-h-screen bg-background">
@@ -244,11 +241,17 @@ function BlogPostPageEn() {
                     </table>
                   </div>
                 ) : null}
+                {s.afterTable?.map((para, index) => (
+                  <p key={index} className="mt-4 whitespace-pre-line leading-relaxed text-muted-foreground">
+                    <BlogInlineContent text={para} />
+                  </p>
+                ))}
+                {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="en" /> : null}
               </section>
             ))}
           </div>
 
-          {post.faqs?.length ? (
+          {post.faqs?.length && !post.sections.some((section) => section.faqs) ? (
             <section className="mt-14">
               <h2 className="font-display text-2xl font-bold text-primary">
                 Frequently Asked Questions
