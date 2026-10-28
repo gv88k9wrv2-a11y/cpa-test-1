@@ -10,6 +10,7 @@ const inquirySchema = z.object({
   phone: z.string().trim().min(8).max(30).regex(/^[+\d\s().-]+$/),
   message: z.string().trim().min(10).max(1000),
   language: z.enum(["he", "en"]),
+  consent: z.literal(true),
 });
 
 // Public write-only contact operation: validate and rate-limit before privileged storage.

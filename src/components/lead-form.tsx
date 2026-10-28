@@ -425,6 +425,56 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
               </p>
             )}
 
+            <div className="mt-5">
+              <div
+                className={`flex items-start gap-3 rounded-md border p-3 ${
+                  consentError ? "border-destructive" : "border-input"
+                }`}
+              >
+                <input
+                  id="lf-consent"
+                  type="checkbox"
+                  required
+                  checked={consent}
+                  onChange={(e) => {
+                    setConsent(e.target.checked);
+                    setConsentError(false);
+                  }}
+                  aria-invalid={consentError}
+                  aria-describedby={consentError ? "lf-consent-error" : undefined}
+                  className="mt-0.5 h-4 w-4 shrink-0 accent-gold"
+                />
+                <label htmlFor="lf-consent" className="text-sm leading-relaxed text-foreground">
+                  {lang === "he" ? (
+                    <>
+                      קראתי ואני מאשר/ת את{" "}
+                      <Link to="/privacy-policy" className="text-gold-text underline underline-offset-2">
+                        תנאי השימוש ואת מדיניות הפרטיות
+                      </Link>{" "}
+                      של האתר.
+                    </>
+                  ) : (
+                    <>
+                      I have read and accept the site&rsquo;s{" "}
+                      <Link to="/en/privacy-policy" className="text-gold-text underline underline-offset-2">
+                        Terms of Use and Privacy Policy
+                      </Link>
+                      .
+                    </>
+                  )}
+                </label>
+              </div>
+              {consentError && (
+                <p
+                  id="lf-consent-error"
+                  role="alert"
+                  className="mt-1 text-xs font-medium text-destructive"
+                >
+                  {t.errors.consent}
+                </p>
+              )}
+            </div>
+
             <button
               type="submit"
               disabled={submitting}
