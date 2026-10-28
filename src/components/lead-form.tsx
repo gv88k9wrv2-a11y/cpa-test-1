@@ -17,7 +17,7 @@ const COPY = {
     eyebrow: "פגישת ייעוץ דיסקרטית",
     title: "בואו נדבר בארבע עיניים",
     subtitle:
-      "מלאו את הפרטים כדי להכין פנייה בדוא״ל למשרד. הפניות מטופלות בהתאם לנהלי המשרד ולמדיניות הפרטיות.",
+      "מלאו את הפרטים כדי לשלוח פנייה ישירה למשרד. הפניות מטופלות בהתאם לנהלי המשרד ולמדיניות הפרטיות.",
     name: "שם מלא",
     company: "שם החברה / הסטארט-אפ",
     email: "כתובת אימייל",
@@ -49,7 +49,7 @@ const COPY = {
     eyebrow: "Introductory Call",
     title: "Let's have a confidential conversation",
     subtitle:
-      "Complete the details to prepare an email inquiry to the office. Inquiries are handled in accordance with the firm’s procedures and privacy policy.",
+      "Complete the details to send a direct inquiry to the office. Inquiries are handled in accordance with the firm’s procedures and privacy policy.",
     name: "Full Name",
     company: "Company / Startup Name",
     email: "Business Email Address",

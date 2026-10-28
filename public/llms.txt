@@ -41,6 +41,7 @@
 
 ## תוכן מקצועי
 
+- [רילוקיישן וניתוק תושבות מס](https://nimrodi.co.il/blog/relocation-tax-residency-israel): המדריך המלא לישראלים היוצאים לחו״ל – מבחן מרכז החיים וחזקות ימים, ניתוק תושבות, סעיף 100א ומס יציאה, ביטוח לאומי, אופציות ותגמול הייטק (102/RSU), רילוקיישן לארה״ב (FBAR/FATCA), אמנות מס וצ׳קליסט; נדרשת בדיקה פרטנית
 - [מדריך מפעל טכנולוגי מועדף ומפעל מועדף (PTE)](https://nimrodi.co.il/blog/preferred-technological-enterprise): מדריך מקיף לחוק לעידוד השקעות הון, תנאי זכאות (מפעל תחרותי, שיעור יצוא ומו״פ), שיעורי מס מופחתים אפשריים, נוסחת Nexus ודרישות דיווח
 - [עוסק מורשה מול חברה בע״מ](https://nimrodi.co.il/blog/self-employed-vs-company-israel): בחינת כדאיות ההתאגדות לפי רווחים וצורכי משיכה, חברות ארנק, משיכות בעלים וטעויות נפוצות; נדרשת בדיקה פרטנית
 - [כספי קריפטו במערכת הבנקאית בישראל](https://nimrodi.co.il/blog/crypto-funds-bank-israel): תיעוד מסלול הכסף, מקור ההון, אישורי רו״ח, הוראה 411 והסדרת דיווחי עבר; אין הבטחה לקבלת כספים בבנק
@@ -58,6 +59,7 @@
 
 ## English pages
 
+- [Relocation and Terminating Israeli Tax Residency (2026)](https://nimrodi.co.il/en/blog/relocation-tax-residency): Complete guide for Israeli expats – center-of-life tests and day-count presumptions, residency severance, Section 100A exit tax, National Insurance, high-tech equity awards (102/RSU), U.S. relocation reporting (FBAR/FATCA), treaty tie-breakers and a checklist; individual review required
 - [Preferred Technological Enterprise (PTE) Guide](https://nimrodi.co.il/en/blog/preferred-technological-enterprise): Comprehensive guide to Israel's Law for the Encouragement of Capital Investments, eligibility conditions, potential reduced corporate tax rates, Nexus ratio considerations, and filing requirements
 - [Voluntary Disclosure & Tax Regularization](https://nimrodi.co.il/en/voluntary-disclosure): Exposure review, amended filings and banking documentation; professional confidentiality, no attorney-client privilege or guaranteed outcome
 - [Foreign Companies in Israel](https://nimrodi.co.il/en/cpa-foreign-companies): Subsidiary or branch accounting, permanent establishment, transfer pricing and payroll

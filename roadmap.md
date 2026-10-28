@@ -1,5 +1,9 @@
 # Requested updates
 
+- [x] Improvement batch 2026-10-28: fix /גילוי-מרצון-מס-הכנסה redirect to /voluntary-disclosure in both public/_redirects and src/routes/$.tsx; add 301s /ביקורת-וחשבונאות/ → /audit, /ייעוץ-עסקי-וליווי-עסקי/ → /services, /contact-us-צור-קשר/ → /contact, /contact.html → /contact, /רואה-חשבון-בהרצליה → /cpa-herzliya. Verified live (301 after router trailing-slash 307 normalization), build OK; not published.
+- [x] Improvement batch 2026-10-28: add the bilingual relocation / tax-residency anchor guide to llms.txt (HE bullet in professional content, EN bullet in English pages) and llms-full.txt (full Professional-content subsection with 2026-10-27 publication note + anchor-guide links under the International tax & relocation deep-dive); verified served files.
+- [x] Improvement batch 2026-10-28: lead-form microcopy — HE "מלאו את הפרטים כדי לשלוח פנייה ישירה למשרד", EN "Complete the details to send a direct inquiry to the office"; verified in SSR output both languages.
+
 - [x] Embed the full approved Hebrew and English relocation articles supplied 2026-10-27 07:14 UTC: all 11 sections in order, section 4 tables, section 10 FAQs, exact disclaimers and numerical example. Verified 200 responses, all sections, four FAQs per language, Article/FAQPage/Breadcrumb schemas, date, canonical/hreflang, actual language switching, paired sitemap and desktop/mobile rendering without runtime errors. No publication performed.
 
 - [x] Catch-all route: 301 malformed URLs containing http:/https: (plain and percent-encoded) to the canonical root; robots noindex,nofollow on every not-found render (root head detects the "/$" match, plus both article not-found branches); all REDIRECTS kept. Verified live: 301 to /, 404 pages noindex,nofollow, normal pages index,follow, build OK; not published.
