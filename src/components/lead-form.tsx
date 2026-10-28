@@ -43,6 +43,7 @@ const COPY = {
       email: "כתובת אימייל אינה תקינה – ודאו שהיא כוללת @ ודומיין חוקי.",
       phone: "מספר טלפון אינו תקין. הזינו מספר מקומי (למשל 050-1234567) או בין־לאומי החל ב-+.",
       message: "אנא פרטו בקצרה במה נוכל לסייע (לפחות 10 תווים).",
+      consent: "עליכם לסמן את האישור לתנאי השימוש ולמדיניות הפרטיות כדי לשלוח את הפנייה.",
     },
   },
   en: {
@@ -77,6 +78,7 @@ const COPY = {
       phone:
         "Invalid phone number. Enter a local number (e.g. 050-1234567) or international starting with +.",
       message: "Please tell us briefly how we can help (at least 10 characters).",
+      consent: "Please accept the Terms of Use and Privacy Policy to send your inquiry.",
     },
   },
 } as const;
@@ -151,6 +153,8 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
   const [sendError, setSendError] = useState(false);
   const [savedWithoutEmail, setSavedWithoutEmail] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [consent, setConsent] = useState(false);
+  const [consentError, setConsentError] = useState(false);
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(
     `https://wa.me/${WHATSAPP_NUMBER}`,
   );
@@ -169,8 +173,8 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
 
   const buildBody = () =>
     lang === "he"
-      ? `תחום / שירות: ${source}\nכתובת עמוד: ${pageUrl()}\n\nפנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n`
-      : `Service / Page: ${source}\nPage URL: ${pageUrl()}\n\nNew inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
+      ? `תחום / שירות: ${source}\nכתובת עמוד: ${pageUrl()}\n\nפנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n\nאישור תנאי שימוש ומדיניות פרטיות: כן\n`
+      : `Service / Page: ${source}\nPage URL: ${pageUrl()}\n\nNew inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n\nTerms of Use & Privacy Policy consent: yes\n`;
 
   const buildSubject = () =>
     lang === "he" ? `פנייה [${source}] – ${form.name}` : `Inquiry [${source}] – ${form.name}`;
@@ -182,6 +186,11 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
     if (Object.keys(validation).length > 0) {
       const first = Object.keys(validation)[0];
       document.getElementById(`lf-${first}`)?.focus();
+      return;
+    }
+    if (!consent) {
+      setConsentError(true);
+      document.getElementById("lf-consent")?.focus();
       return;
     }
     if (submitting || sending.current) return;
@@ -204,7 +213,7 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
     try {
       if (persistVoluntaryInquiry) {
         inquiryId.current = inquiryId.current ?? crypto.randomUUID();
-        await storeInquiry({ data: { id: inquiryId.current, ...form, language: lang } });
+        await storeInquiry({ data: { id: inquiryId.current, ...form, language: lang, consent: true } });
         stored = true;
       }
       if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
@@ -258,6 +267,8 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
     setSubmitted(false);
     setSavedWithoutEmail(false);
     setErrors({});
+    setConsent(false);
+    setConsentError(false);
     setForm({ name: "", company: "", email: "", phone: "", message: "" });
     setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}`);
   };
@@ -413,6 +424,56 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
                 {t.sendError}
               </p>
             )}
+
+            <div className="mt-5">
+              <div
+                className={`flex items-start gap-3 rounded-md border p-3 ${
+                  consentError ? "border-destructive" : "border-input"
+                }`}
+              >
+                <input
+                  id="lf-consent"
+                  type="checkbox"
+                  required
+                  checked={consent}
+                  onChange={(e) => {
+                    setConsent(e.target.checked);
+                    setConsentError(false);
+                  }}
+                  aria-invalid={consentError}
+                  aria-describedby={consentError ? "lf-consent-error" : undefined}
+                  className="mt-0.5 h-4 w-4 shrink-0 accent-gold"
+                />
+                <label htmlFor="lf-consent" className="text-sm leading-relaxed text-foreground">
+                  {lang === "he" ? (
+                    <>
+                      קראתי ואני מאשר/ת את{" "}
+                      <Link to="/privacy-policy" className="text-gold-text underline underline-offset-2">
+                        תנאי השימוש ואת מדיניות הפרטיות
+                      </Link>{" "}
+                      של האתר.
+                    </>
+                  ) : (
+                    <>
+                      I have read and accept the site&rsquo;s{" "}
+                      <Link to="/en/privacy-policy" className="text-gold-text underline underline-offset-2">
+                        Terms of Use and Privacy Policy
+                      </Link>
+                      .
+                    </>
+                  )}
+                </label>
+              </div>
+              {consentError && (
+                <p
+                  id="lf-consent-error"
+                  role="alert"
+                  className="mt-1 text-xs font-medium text-destructive"
+                >
+                  {t.errors.consent}
+                </p>
+              )}
+            </div>
 
             <button
               type="submit"
