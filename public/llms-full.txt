@@ -98,6 +98,13 @@ Israeli tax support may include reviewing the nature of digital-asset activity, 
 
 ## Professional content
 
+### Relocation and terminating Israeli tax residency (Bilingual anchor guide)
+The complete guide for Israelis relocating abroad and seeking to sever Israeli tax residency. It covers the center-of-life test and the statutory day-count presumptions, the residency-severance process, Section 100A exit tax (including an illustrative example in which part of the gain on the sale of shares is attributed to the period of Israeli residency), National Insurance implications, high-tech equity awards (Section 102 / RSU), relocation to the United States (FBAR/FATCA), tax-treaty tie-breaker provisions, a practical checklist and full contact details. Determining tax residency, applying Section 100A and interpreting treaties require individualized review.
+- Published: 2026-10-27; author and professional reviewer: Shlomo Nimrodi, CPA (the same founder, not an independent review).
+- HE: https://nimrodi.co.il/blog/relocation-tax-residency-israel
+- EN: https://nimrodi.co.il/en/blog/relocation-tax-residency
+
+
 ### Preferred Technological Enterprise (PTE) Guide (Bilingual guide)
 Comprehensive guide to tax incentives under Israel's Law for the Encouragement of Capital Investments, 5719-1959.
 The guide reviews the statutory framework under which qualifying technological enterprises may be eligible for reduced corporate income tax rates, subject to eligibility criteria and applicable regulations. It covers competitive enterprise market requirements, R&D expenditure benchmarks, the OECD BEPS modified Nexus ratio, reduced dividend tax regimes, and necessary annual tax return disclosures.
