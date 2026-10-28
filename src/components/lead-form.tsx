@@ -43,6 +43,7 @@ const COPY = {
       email: "כתובת אימייל אינה תקינה – ודאו שהיא כוללת @ ודומיין חוקי.",
       phone: "מספר טלפון אינו תקין. הזינו מספר מקומי (למשל 050-1234567) או בין־לאומי החל ב-+.",
       message: "אנא פרטו בקצרה במה נוכל לסייע (לפחות 10 תווים).",
+      consent: "עליכם לסמן את האישור לתנאי השימוש ולמדיניות הפרטיות כדי לשלוח את הפנייה.",
     },
   },
   en: {
@@ -77,6 +78,7 @@ const COPY = {
       phone:
         "Invalid phone number. Enter a local number (e.g. 050-1234567) or international starting with +.",
       message: "Please tell us briefly how we can help (at least 10 characters).",
+      consent: "Please accept the Terms of Use and Privacy Policy to send your inquiry.",
     },
   },
 } as const;
@@ -169,8 +171,8 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
 
   const buildBody = () =>
     lang === "he"
-      ? `תחום / שירות: ${source}\nכתובת עמוד: ${pageUrl()}\n\nפנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n`
-      : `Service / Page: ${source}\nPage URL: ${pageUrl()}\n\nNew inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n`;
+      ? `תחום / שירות: ${source}\nכתובת עמוד: ${pageUrl()}\n\nפנייה חדשה מהאתר\n\nשם: ${form.name}\nחברה: ${form.company || "—"}\nאימייל: ${form.email}\nטלפון: ${form.phone}\n\nהודעה:\n${form.message}\n\nאישור תנאי שימוש ומדיניות פרטיות: כן\n`
+      : `Service / Page: ${source}\nPage URL: ${pageUrl()}\n\nNew inquiry from the website\n\nName: ${form.name}\nCompany: ${form.company || "—"}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}\n\nTerms of Use & Privacy Policy consent: yes\n`;
 
   const buildSubject = () =>
     lang === "he" ? `פנייה [${source}] – ${form.name}` : `Inquiry [${source}] – ${form.name}`;
