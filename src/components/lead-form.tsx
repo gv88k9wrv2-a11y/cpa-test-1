@@ -213,7 +213,7 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
     try {
       if (persistVoluntaryInquiry) {
         inquiryId.current = inquiryId.current ?? crypto.randomUUID();
-        await storeInquiry({ data: { id: inquiryId.current, ...form, language: lang } });
+        await storeInquiry({ data: { id: inquiryId.current, ...form, language: lang, consent: true } });
         stored = true;
       }
       if (!WEB3FORMS_ACCESS_KEY) throw new Error("missing key");
@@ -267,6 +267,8 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
     setSubmitted(false);
     setSavedWithoutEmail(false);
     setErrors({});
+    setConsent(false);
+    setConsentError(false);
     setForm({ name: "", company: "", email: "", phone: "", message: "" });
     setLastWhatsAppUrl(`https://wa.me/${WHATSAPP_NUMBER}`);
   };
