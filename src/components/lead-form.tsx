@@ -153,6 +153,8 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
   const [sendError, setSendError] = useState(false);
   const [savedWithoutEmail, setSavedWithoutEmail] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [consent, setConsent] = useState(false);
+  const [consentError, setConsentError] = useState(false);
   const [lastWhatsAppUrl, setLastWhatsAppUrl] = useState<string>(
     `https://wa.me/${WHATSAPP_NUMBER}`,
   );
@@ -184,6 +186,11 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
     if (Object.keys(validation).length > 0) {
       const first = Object.keys(validation)[0];
       document.getElementById(`lf-${first}`)?.focus();
+      return;
+    }
+    if (!consent) {
+      setConsentError(true);
+      document.getElementById("lf-consent")?.focus();
       return;
     }
     if (submitting || sending.current) return;
