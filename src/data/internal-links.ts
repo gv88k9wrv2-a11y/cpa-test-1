@@ -15,6 +15,8 @@ export type TaxTopic = {
   heading: string;
   /** Section introduction rendered at the target. */
   intro: string;
+  /** Optional full-guide reference rendered inside the topic section. */
+  link?: RelatedService;
   group: "A" | "B";
 };
 

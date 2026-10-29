@@ -11,7 +11,12 @@ import { RelatedServiceBlock } from "./internal-links";
 import { PageSummary } from "./page-summary";
 import { GoogleReviewsBadge } from "./social-proof";
 
-export type ServiceFAQ = { q: string; a: string };
+export type ServiceFAQ = {
+  q: string;
+  a: string;
+  /** Optional pointer to a full guide, rendered as a link below the answer text. */
+  link?: { label: string; to: string; params?: Record<string, string> };
+};
 
 export type ServiceLandingEnProps = {
   eyebrow: string;
