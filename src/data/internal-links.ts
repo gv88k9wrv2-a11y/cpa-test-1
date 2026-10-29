@@ -49,6 +49,11 @@ export const TAX_TOPICS: Record<Lang, TaxTopic[]> = {
       label: "מיסוי בין־לאומי",
       heading: "מיסוי בין־לאומי ותושבות מס",
       intro: "בחינת תושבות מס, הכנסות מחו״ל, זיכוי מס זר, צדדים קשורים והחזקות בחברות זרות.",
+      link: {
+        label: "המדריך המקיף לניתוק תושבות מס ומיסוי רילוקיישן מישראל",
+        to: "/blog/$slug",
+        params: { slug: "relocation-tax-residency-israel" },
+      },
       group: "A",
     },
     {
@@ -137,6 +142,11 @@ export const TAX_TOPICS: Record<Lang, TaxTopic[]> = {
       heading: "International tax and tax residency",
       intro:
         "Review of tax residency, foreign income, foreign tax credit, related parties and holdings in foreign companies.",
+      link: {
+        label: "Comprehensive Israeli Tax Residency Severance & Relocation Guide",
+        to: "/en/blog/$slug",
+        params: { slug: "relocation-tax-residency" },
+      },
       group: "A",
     },
     {

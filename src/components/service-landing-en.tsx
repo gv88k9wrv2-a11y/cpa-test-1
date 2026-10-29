@@ -172,6 +172,17 @@ export function ServiceLandingEn({
                   </summary>
                   <div className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">
                     {f.a}
+                    {f.link ? (
+                      <p className="mt-3 font-semibold whitespace-normal">
+                        <Link
+                          to={f.link.to as "/services"}
+                          params={f.link.params as never}
+                          className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+                        >
+                          {f.link.label}
+                        </Link>
+                      </p>
+                    ) : null}
                   </div>
                 </details>
               ))}

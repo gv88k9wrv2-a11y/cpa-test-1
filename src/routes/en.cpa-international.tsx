@@ -13,6 +13,11 @@ const FAQS = [
   {
     q: "Can I sever Israeli tax residency by relocating?",
     a: "Relocation does not by itself determine whether Israeli tax residency has ended. The position depends on the statutory tests, the individual’s factual circumstances, applicable presumptions, treaty provisions and supporting documentation. Within the agreed scope, we can assist with the Israeli tax analysis and organization of relevant information, without guaranteeing the position that a tax authority may adopt.",
+    link: {
+      label: "Read the full guide: terminating Israeli tax residency and relocation",
+      to: "/en/blog/$slug",
+      params: { slug: "relocation-tax-residency" },
+    },
   },
   {
     q: "How does the US-Israel tax treaty work in practice?",
