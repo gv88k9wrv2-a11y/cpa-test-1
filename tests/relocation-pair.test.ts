@@ -15,3 +15,17 @@ describe("approved relocation article pairing", () => {
     expect(heHrefForEnSlug("relocation-tax-residency")).toBe("/blog/relocation-tax-residency-israel");
   });
 });
+
+describe("international tax topics reference the relocation guide", () => {
+  test("the Hebrew international-tax topic links to the Hebrew guide", () => {
+    const topic = TAX_TOPICS.he.find((t) => t.id === "international-tax");
+    expect(topic?.link?.to).toBe("/blog/$slug");
+    expect(topic?.link?.params).toEqual({ slug: "relocation-tax-residency-israel" });
+  });
+
+  test("the English international-tax topic links to the English guide", () => {
+    const topic = TAX_TOPICS.en.find((t) => t.id === "international-tax");
+    expect(topic?.link?.to).toBe("/en/blog/$slug");
+    expect(topic?.link?.params).toEqual({ slug: "relocation-tax-residency" });
+  });
+});
