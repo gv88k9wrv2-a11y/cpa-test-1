@@ -13,6 +13,11 @@ const FAQS = [
   {
     q: "Can I sever Israeli tax residency by relocating?",
     a: "Relocation does not by itself determine whether Israeli tax residency has ended. The position depends on the statutory tests, the individual’s factual circumstances, applicable presumptions, treaty provisions and supporting documentation. Within the agreed scope, we can assist with the Israeli tax analysis and organization of relevant information, without guaranteeing the position that a tax authority may adopt.",
+    link: {
+      label: "Read the full guide: terminating Israeli tax residency and relocation",
+      to: "/en/blog/$slug",
+      params: { slug: "relocation-tax-residency" },
+    },
   },
   {
     q: "How does the US-Israel tax treaty work in practice?",
@@ -84,7 +89,27 @@ export const Route = createFileRoute("/en/cpa-international")({
         },
         {
           title: "Relocation & residency severance",
-          body: "A move abroad does not by itself determine Israeli tax residency. The position depends on the statutory tests, factual circumstances, applicable presumptions, treaty provisions and supporting documentation. Within the agreed scope, the firm may assist with the Israeli tax analysis, exit-tax considerations, organization of relevant information and coordination with an adviser in the destination country, without guaranteeing the position a tax authority may adopt.",
+          body: (
+            <>
+              <p>
+                A move abroad does not by itself determine Israeli tax residency. The position
+                depends on the statutory tests, factual circumstances, applicable presumptions,
+                treaty provisions and supporting documentation. Within the agreed scope, the firm
+                may assist with the Israeli tax analysis, exit-tax considerations, organization of
+                relevant information and coordination with an adviser in the destination country,
+                without guaranteeing the position a tax authority may adopt.
+              </p>
+              <p className="mt-4">
+                <Link
+                  to="/en/blog/$slug"
+                  params={{ slug: "relocation-tax-residency" }}
+                  className="font-semibold text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+                >
+                  Comprehensive Israeli Tax Residency Severance &amp; Relocation Guide
+                </Link>
+              </p>
+            </>
+          ),
         },
         {
           title: "Treaty planning & cross-border",

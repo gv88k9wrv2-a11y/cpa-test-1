@@ -16,7 +16,26 @@ const EXISTING_TOPIC_IDS = new Set([
 
 const TOPIC_SECTIONS = TAX_TOPICS.he
   .filter((t) => !EXISTING_TOPIC_IDS.has(t.id))
-  .map((t) => ({ id: t.id, title: t.heading, body: t.intro }));
+  .map((t) => ({
+    id: t.id,
+    title: t.heading,
+    body: t.link ? (
+      <>
+        <p>{t.intro}</p>
+        <p className="mt-4">
+          <Link
+            to={t.link.to as "/services"}
+            params={t.link.params as never}
+            className="font-semibold text-primary underline decoration-gold/60 underline-offset-4 hover:text-gold-text"
+          >
+            {t.link.label}
+          </Link>
+        </p>
+      </>
+    ) : (
+      t.intro
+    ),
+  }));
 
 const FAQS = [
   {
