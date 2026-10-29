@@ -2,6 +2,7 @@ import { describe, expect, test } from "bun:test";
 import { BLOG_POSTS } from "../src/data/blog-posts";
 import { BLOG_POSTS_EN } from "../src/data/blog-posts-en";
 import { enHrefForHeSlug, heHrefForEnSlug } from "../src/data/blog-pairs";
+import { TAX_TOPICS } from "../src/data/internal-links";
 
 describe("approved relocation article pairing", () => {
   test("both articles use the approved publication date", () => {
