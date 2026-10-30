@@ -62,6 +62,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
         { label: "יש לי הכנסות משכר דירה", to: "/tax-consulting", hash: "real-estate-tax-israel" },
         { label: "אני לפני רילוקיישן או חזרה לישראל", to: "/cpa-international" },
         { label: "אני עצמאי וצריך דיווח או דוח שנתי", to: "/cpa-freelancers" },
+        { label: "אני מחפש רואה חשבון בהרצליה", to: "/cpa-herzliya" },
       ],
     },
     trust: {
@@ -83,6 +84,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           { label: "חשבות שכר", to: "/payroll" },
           { label: "סטארטאפים וחברות טכנולוגיה", to: "/cpa-startups" },
           { label: "מנהל כספים במיקור חוץ (Fractional CFO)", to: "/fractional-cfo" },
+          { label: "רואה חשבון בהרצליה", to: "/cpa-herzliya" },
         ],
       },
       {
@@ -195,6 +197,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           label: "I am self-employed and need reporting or an annual return",
           to: "/en/cpa-freelancers",
         },
+        { label: "I am looking for a CPA in Herzliya", to: "/en/cpa-herzliya" },
       ],
     },
     trust: {
@@ -216,6 +219,7 @@ export const HOME_CONTENT: Record<"he" | "en", HomeContent> = {
           { label: "Payroll", to: "/en/payroll" },
           { label: "Startups & Technology Companies", to: "/en/cpa-startups" },
           { label: "Fractional CFO & Financial Management", to: "/en/fractional-cfo" },
+          { label: "CPA in Herzliya", to: "/en/cpa-herzliya" },
         ],
       },
       {
