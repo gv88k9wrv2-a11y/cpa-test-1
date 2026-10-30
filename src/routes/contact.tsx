@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
@@ -99,6 +99,16 @@ function ContactPage() {
                 value="ימים א׳–ה׳ · 09:00–18:00"
               />
             </div>
+            <p className="mt-8 text-center text-sm leading-relaxed text-muted-foreground">
+              המשרד ממוקם בגלגלי הפלדה 16, הרצליה פיתוח. מחפשים{" "}
+              <Link
+                to="/cpa-herzliya"
+                className="font-semibold text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+              >
+                רואה חשבון בהרצליה
+              </Link>
+              ? בעמוד השירות תמצאו את מלוא המידע על הליווי שלנו באזור.
+            </p>
           </div>
         </section>
 
