@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import {
@@ -104,6 +104,16 @@ function ContactEn() {
               </div>
             </div>
           </div>
+          <p className="mx-auto mt-8 max-w-4xl px-4 text-center text-sm leading-relaxed text-muted-foreground sm:px-6">
+            Our office is located at 16 Galgalei HaPlada St., Herzliya Pituach. Looking for a{" "}
+            <Link
+              to="/en/cpa-herzliya"
+              className="font-semibold text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+            >
+              CPA in Herzliya
+            </Link>
+            ? Visit the service page for full details about our work in the area.
+          </p>
         </section>
 
         <LeadForm lang="en" serviceName="Contact Us" />

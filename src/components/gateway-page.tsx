@@ -7,7 +7,13 @@ import { ProfessionalDisclaimer } from "./professional-disclaimer";
 
 type Lang = "he" | "en";
 
-export type GatewaySection = { id: string; title: string; body: string };
+export type GatewaySection = {
+  id: string;
+  title: string;
+  body: string;
+  /** Optional internal link rendered below the section body. */
+  link?: { label: string; to: string };
+};
 
 function PathLink({
   to,
@@ -96,6 +102,17 @@ export function GatewayPage({
                     {s.title}
                   </h2>
                   <p className="mt-4 leading-relaxed text-muted-foreground">{s.body}</p>
+                  {s.link ? (
+                    <p className="mt-4 font-semibold">
+                      <PathLink
+                        to={s.link.to}
+                        className="inline-flex items-center gap-2 text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
+                      >
+                        {s.link.label}
+                        <Arrow className="h-4 w-4 shrink-0 text-gold-text" aria-hidden />
+                      </PathLink>
+                    </p>
+                  ) : null}
                 </article>
               ))}
             </div>

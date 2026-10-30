@@ -32,6 +32,14 @@ export const Route = createFileRoute("/en/companies")({
       intro="Accounting, audit, tax, payroll and financial-management services for Israeli companies, startups, foreign companies operating in Israel and nonprofit organizations."
       instruction="Choose the company type or professional service that best matches your needs."
       groups={COMPANIES_GROUPS_EN}
+      sections={[
+        {
+          id: "cpa-herzliya",
+          title: "A CPA Firm in Herzliya Pituach",
+          body: "Our office is located at 16 Galgalei HaPlada St., Herzliya Pituach, serving companies and startups in Herzliya, Ramat HaSharon, Ra'anana, Tel Aviv and the surrounding area — as well as remotely via Zoom and digital collaboration tools.",
+          link: { label: "Visit the CPA in Herzliya page", to: "/en/cpa-herzliya" },
+        },
+      ]}
       ctaLabel="Contact Us →"
       ctaTo="/en/contact"
     />
