@@ -13,6 +13,8 @@
 
 ## Project rules
 
+- Expanded bilingual professional FAQs share a typed data module across service and central FAQ pages; render and serialize the same entries to prevent editorial and schema drift.
+
 - Hebrew blog sections support escaped inline local Markdown links, bold emphasis and optional typed comparison tables; article-specific disclaimers override the shared disclaimer without duplicating it, preserving approved editorial structure safely.
 - Bilingual blog sections can place post-level FAQs inline and paragraphs after comparison tables; the shared FAQ list keeps approved article order without duplicating FAQ content or schema.
 

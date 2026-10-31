@@ -1,5 +1,7 @@
 # Requested updates
 
+- [ ] Embed the expanded bilingual international/startup/Herzliya FAQs in eight requested pages with matching FAQPage schemas; verify preview and compilation without publishing.
+
 - [x] Improvement batch 2026-10-28: fix /גילוי-מרצון-מס-הכנסה redirect to /voluntary-disclosure in both public/_redirects and src/routes/$.tsx; add 301s /ביקורת-וחשבונאות/ → /audit, /ייעוץ-עסקי-וליווי-עסקי/ → /services, /contact-us-צור-קשר/ → /contact, /contact.html → /contact, /רואה-חשבון-בהרצליה → /cpa-herzliya. Verified live (301 after router trailing-slash 307 normalization), build OK; not published.
 - [x] Improvement batch 2026-10-28: add the bilingual relocation / tax-residency anchor guide to llms.txt (HE bullet in professional content, EN bullet in English pages) and llms-full.txt (full Professional-content subsection with 2026-10-27 publication note + anchor-guide links under the International tax & relocation deep-dive); verified served files.
 - [x] Improvement batch 2026-10-28: lead-form microcopy — HE "מלאו את הפרטים כדי לשלוח פנייה ישירה למשרד", EN "Complete the details to send a direct inquiry to the office"; verified in SSR output both languages.
