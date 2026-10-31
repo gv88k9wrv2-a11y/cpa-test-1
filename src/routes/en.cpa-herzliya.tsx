@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { MapPin } from "lucide-react";
@@ -6,6 +7,7 @@ import heroImg from "../assets/service-startups.webp";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
+  ...EXPANDED_FAQS.herzliya.en,
   {
     q: "Where is the office located?",
     a: "The office is located in Herzliya Pituach. Meetings at the office can be arranged subject to availability, and video meetings are also available.",
@@ -63,6 +65,8 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
         content:
           "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-herzliya` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

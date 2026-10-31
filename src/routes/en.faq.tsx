@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
@@ -5,6 +6,9 @@ import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 const BASE = "https://nimrodi.co.il";
 
 const FAQS = [
+  ...EXPANDED_FAQS.international.en.map((f) => ({ ...f, cat: "International Tax & Relocation" })),
+  ...EXPANDED_FAQS.startups.en.map((f) => ({ ...f, cat: "Companies & Startups" })),
+  ...EXPANDED_FAQS.herzliya.en.map((f) => ({ ...f, cat: "General" })),
   {
     cat: "General",
     q: "Where is your CPA office in Israel and which clients do you serve?",
@@ -26,12 +30,12 @@ const FAQS = [
     a: "We prefer fixed-scope engagements. Fees are based on activity volume, complexity and required services. The proposed scope and fee structure are explained in advance and may change if the agreed work changes.",
   },
   {
-    cat: "Startups",
+    cat: "Companies & Startups",
     q: "When should an Israeli startup engage a CPA firm?",
     a: "A startup may benefit from accounting and tax input before company formation, equity grants, financing or cross-border activity. Legal documents and elections should be addressed with qualified legal and tax advisers in the relevant jurisdictions.",
   },
   {
-    cat: "Startups",
+    cat: "Companies & Startups",
     q: "Can you assist with the Israeli tax analysis of an Israel-Delaware flip?",
     a: "The firm can assist with the Israeli accounting and tax analysis, preparation of information for a tax ruling request and coordination with the company’s Israeli and US advisers. The suitability and implementation of the structure depend on the company, its shareholders, planned activity and applicable law.",
   },
@@ -124,6 +128,8 @@ export const Route = createFileRoute("/en/faq")({
         content:
           "Common questions about working with an Israeli CPA firm: services, process, engagement scope, fees and reporting for companies and individuals. Read more.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/faq` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

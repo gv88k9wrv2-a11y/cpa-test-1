@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
@@ -6,6 +7,7 @@ import heroImg from "../assets/service-international.webp";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
+  ...EXPANDED_FAQS.international.en,
   {
     q: "What tax benefits do new immigrants (olim chadashim) receive?",
     a: "Eligible new residents and returning residents may benefit from certain tax benefits in relation to qualifying foreign-source income, subject to the applicable law, eligibility conditions, and the specific circumstances. Timing and planning of relocation can be critical to maximize the benefit.",
@@ -40,6 +42,8 @@ export const Route = createFileRoute("/en/cpa-international")({
         content:
           "Israeli international tax support for relocation, new immigrants and returning residents, including residency review and cross-border reporting. Contact us.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-international` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

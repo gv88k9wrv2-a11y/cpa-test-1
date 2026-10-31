@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Rocket } from "lucide-react";
@@ -5,6 +6,7 @@ import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-startups.webp";
 
 const FAQS = [
+  ...EXPANDED_FAQS.startups.he,
   {
     q: "מתי סטארטאפ צריך רואה חשבון?",
     a: "כבר לפני הקמת החברה. בחירת מבנה נכון (חברה בע״מ / חברת החזקות), הסכמי מייסדים, שיוך הוני (Founders equity), טיפול נכון ב-vesting וב-83b election – משפיעים על ההכנסה, המס וההצלחה בגיוסים הבאים.",
@@ -66,6 +68,8 @@ export const Route = createFileRoute("/cpa-startups")({
         content:
           "ליווי חשבונאי, מיסויי ופיננסי לסטארטאפים בישראל: הקמה, ניהול שוטף, אופציות לעובדים, מידע לגיוסי הון ודיווח למשקיעים. דברו איתנו על שלב החברה.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-startups" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
