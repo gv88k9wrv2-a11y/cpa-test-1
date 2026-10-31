@@ -1,11 +1,14 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 
 const CATEGORIES = [
+  { title: "מיסוי בין־לאומי ורילוקיישן", items: EXPANDED_FAQS.international.he },
   {
     title: "כללי",
     items: [
+      ...EXPANDED_FAQS.herzliya.he,
       {
         q: "מה כדאי לבדוק לפני בחירת רואה חשבון לחברה או לעסק?",
         a: "לפני בחירת רואה חשבון כדאי להגדיר את סוגי השירות הנדרשים, כגון ביקורת, הנהלת חשבונות, שכר, דיווחי מס, ניהול כספים או טיפול בפעילות בין־לאומית. מומלץ לברר מי מטפל בתיק, כיצד מועברים מסמכים, אילו מערכות משמשות לעבודה, מהי תדירות התקשורת, כיצד מוגדרים זמני המענה ומה כלול בשכר הטרחה ובהיקף ההתקשרות. לחברות טכנולוגיה, סטארטאפים וחברות זרות הפועלות בישראל חשוב לבחון גם ניסיון רלוונטי בסוג הפעילות, בדרישות הדיווח, בתוכניות הוניות, בעסקאות בין־חברתיות ובתיאום עם יועצים נוספים.",
@@ -25,8 +28,9 @@ const CATEGORIES = [
     ],
   },
   {
-    title: "לחברות וסטארטאפים",
+    title: "חברות וסטארטאפים",
     items: [
+      ...EXPANDED_FAQS.startups.he,
       {
         q: "אילו שירותים עשוי לכלול ליווי חשבונאי לחברה או לסטארטאפ?",
         a: "בהתאם לצורכי החברה ולהיקף ההתקשרות, הליווי עשוי לכלול הנהלת חשבונות, עיבוד שכר, מידע ניהולי תקופתי, דוחות שנתיים, ייעוץ מס, שירותי CFO, הכנת מידע לגיוסי הון וסיוע בהיערכות לתהליכי בדיקת נאותות או הנפקה.",
@@ -149,6 +153,8 @@ export const Route = createFileRoute("/faq")({
         content:
           "מדריך שאלות ותשובות של נמרודי ושות׳ רואי חשבון: אופן העבודה, היקף השירות, מיסוי, דיווחים וליווי עצמאים וחברות. קראו לפני שמתחילים לעבוד עם רואה חשבון.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/faq" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Rocket } from "lucide-react";
@@ -6,6 +7,7 @@ import heroImg from "../assets/service-startups.webp";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
+  ...EXPANDED_FAQS.startups.en,
   {
     q: "When does a startup need a CPA?",
     a: "Accounting and tax input may be useful before or shortly after incorporation, depending on the proposed structure, jurisdictions, financing plans, founders’ arrangements and equity-compensation model. US legal and tax matters should be reviewed with appropriately qualified US advisers.",
@@ -55,6 +57,8 @@ export const Route = createFileRoute("/en/cpa-startups")({
         content:
           "Accounting, tax and CFO support for Israeli startups, including reporting, financial models and investor information according to the agreed scope. Contact the firm.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-startups` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { MapPin } from "lucide-react";
@@ -5,6 +6,7 @@ import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-startups.webp";
 
 const FAQS = [
+  ...EXPANDED_FAQS.herzliya.he,
   {
     q: "איפה ממוקם המשרד?",
     a: "המשרד ממוקם בהרצליה פיתוח. ניתן לתאם פגישה במשרד בכפוף לזמינות, וכן לקיים פגישה בשיחת וידאו.",
@@ -67,6 +69,8 @@ export const Route = createFileRoute("/cpa-herzliya")({
         content:
           "מחפשים רואה חשבון בהרצליה? נמרודי ושות׳ ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת, שכר וחשבות לחברות, סטארטאפים ועסקים. חייגו 09-9582211 עכשיו.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-herzliya" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

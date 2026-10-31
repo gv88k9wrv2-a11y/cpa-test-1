@@ -1,3 +1,4 @@
+import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
@@ -5,6 +6,7 @@ import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-international.webp";
 
 const FAQS = [
+  ...EXPANDED_FAQS.international.he,
   {
     q: "מה זה ניתוק תושבות מס ומתי הוא נחשב שהושלם?",
     a: "ניתוק תושבות לצורכי מס נבחן לפי מבחן מרכז החיים, החזקות המספריות והוראות הדין החלות בשנת המס הרלוונטית. הבחינה עשויה להתייחס, בין היתר, למקום המגורים, למשפחה, לעיסוק, לנכסים, לקשרים הכלכליים ולימי השהייה. החזקות המספריות אינן המבחן היחיד, ויש לבחון את מכלול העובדות והתיעוד בכל מקרה.",
@@ -71,6 +73,8 @@ export const Route = createFileRoute("/cpa-international")({
         content:
           "ליווי מיסוי בין־לאומי לרילוקיישן, לעולים חדשים ולתושבים חוזרים: בחינת תושבות, אמנות מס, דיווחים בישראל ותיאום עם יועצים בחו״ל. נשמח לשוחח על המקרה.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-international" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
