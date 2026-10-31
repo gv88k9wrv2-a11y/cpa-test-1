@@ -86,6 +86,14 @@ export const PERSON_JSONLD = {
     "Foreign companies in Israel",
     "Payroll",
     "Bookkeeping",
+    "Law for the Encouragement of Capital Investments",
+    "Preferred Technological Enterprise (PTE)",
+    "OECD BEPS Nexus ratio",
+    "Section 100A exit tax",
+    "Section 102 equity compensation",
+    "Israel Invoice model",
+    "Double tax treaties",
+    "Form 161 and executive severance",
   ],
 };
 

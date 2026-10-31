@@ -4,6 +4,9 @@ import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 // that do not honor that file, e.g. Lovable's TanStack Start hosting).
 const REDIRECTS: Record<string, string> = {
   "relocation-tax-advice": "/cpa-international",
+  "cfo": "/fractional-cfo",
+  pizoim: "/payroll",
+  "index.html": "/",
   "international-taxation": "/cpa-international",
   "tax-return-submission": "/tax-consulting",
   "deductible-expenses-2025": "/tax-consulting",
