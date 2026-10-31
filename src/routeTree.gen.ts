@@ -33,6 +33,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TaxConsultingRouteImport } from './routes/tax-consulting'
 import { Route as TeamRouteImport } from './routes/team'
 import { Route as VoluntaryDisclosureRouteImport } from './routes/voluntary-disclosure'
+import { Route as DotwellKnownArdDotjsonRouteImport } from './routes/[.]well-known.ard[.]json'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as EnIndexRouteImport } from './routes/en.index'
@@ -177,6 +178,11 @@ const TeamRoute = TeamRouteImport.update({
 const VoluntaryDisclosureRoute = VoluntaryDisclosureRouteImport.update({
   id: '/voluntary-disclosure',
   path: '/voluntary-disclosure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DotwellKnownArdDotjsonRoute = DotwellKnownArdDotjsonRouteImport.update({
+  id: '/.well-known/ard.json',
+  path: '/.well-known/ard.json',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
@@ -330,6 +336,7 @@ export interface FileRoutesByFullPath {
   '/tax-consulting': typeof TaxConsultingRoute
   '/team': typeof TeamRoute
   '/voluntary-disclosure': typeof VoluntaryDisclosureRoute
+  '/.well-known/ard.json': typeof DotwellKnownArdDotjsonRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/en/about': typeof EnAboutRoute
   '/en/accessibility': typeof EnAccessibilityRoute
@@ -380,6 +387,7 @@ export interface FileRoutesByTo {
   '/tax-consulting': typeof TaxConsultingRoute
   '/team': typeof TeamRoute
   '/voluntary-disclosure': typeof VoluntaryDisclosureRoute
+  '/.well-known/ard.json': typeof DotwellKnownArdDotjsonRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/en/about': typeof EnAboutRoute
   '/en/accessibility': typeof EnAccessibilityRoute
@@ -432,6 +440,7 @@ export interface FileRoutesById {
   '/tax-consulting': typeof TaxConsultingRoute
   '/team': typeof TeamRoute
   '/voluntary-disclosure': typeof VoluntaryDisclosureRoute
+  '/.well-known/ard.json': typeof DotwellKnownArdDotjsonRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/en/about': typeof EnAboutRoute
   '/en/accessibility': typeof EnAccessibilityRoute
@@ -485,6 +494,7 @@ export interface FileRouteTypes {
     | '/tax-consulting'
     | '/team'
     | '/voluntary-disclosure'
+    | '/.well-known/ard.json'
     | '/blog/$slug'
     | '/en/about'
     | '/en/accessibility'
@@ -535,6 +545,7 @@ export interface FileRouteTypes {
     | '/tax-consulting'
     | '/team'
     | '/voluntary-disclosure'
+    | '/.well-known/ard.json'
     | '/blog/$slug'
     | '/en/about'
     | '/en/accessibility'
@@ -586,6 +597,7 @@ export interface FileRouteTypes {
     | '/tax-consulting'
     | '/team'
     | '/voluntary-disclosure'
+    | '/.well-known/ard.json'
     | '/blog/$slug'
     | '/en/about'
     | '/en/accessibility'
@@ -638,6 +650,7 @@ export interface RootRouteChildren {
   TaxConsultingRoute: typeof TaxConsultingRoute
   TeamRoute: typeof TeamRoute
   VoluntaryDisclosureRoute: typeof VoluntaryDisclosureRoute
+  DotwellKnownArdDotjsonRoute: typeof DotwellKnownArdDotjsonRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
@@ -810,6 +823,13 @@ declare module '@tanstack/react-router' {
       path: '/voluntary-disclosure'
       fullPath: '/voluntary-disclosure'
       preLoaderRoute: typeof VoluntaryDisclosureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/ard.json': {
+      id: '/.well-known/ard.json'
+      path: '/.well-known/ard.json'
+      fullPath: '/.well-known/ard.json'
+      preLoaderRoute: typeof DotwellKnownArdDotjsonRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/': {
@@ -1069,6 +1089,7 @@ const rootRouteChildren: RootRouteChildren = {
   TaxConsultingRoute: TaxConsultingRoute,
   TeamRoute: TeamRoute,
   VoluntaryDisclosureRoute: VoluntaryDisclosureRoute,
+  DotwellKnownArdDotjsonRoute: DotwellKnownArdDotjsonRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
