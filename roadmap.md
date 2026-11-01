@@ -1,5 +1,12 @@
 # Requested updates
 
+- [ ] Module 1: correct bilingual menu destinations and verify all requested section anchors.
+- [ ] Module 2: add bilingual quick topic navigation on tax advisory pages.
+- [ ] Module 3: add approved bilingual CFO leadership profile and linked Person schema.
+- [ ] Module 4: complete English audit nonprofit, due-diligence and internal-control sections.
+- [ ] Module 5: verify language-specific OG/Twitter tags and non-www canonicals across content pages; clean IndexNow URLs.
+- [ ] Module 6: add missing bilingual internal-page BreadcrumbList schemas; validate pages, links and compilation without publishing.
+
 - [x] Embed the expanded bilingual international/startup/Herzliya FAQs in eight requested pages with matching FAQPage schemas; all 24 supplied answers verified through visible accordions and JSON-LD, eight pages return 200, existing four regression tests pass, build OK; not published.
 
 - [x] Improvement batch 2026-10-28: fix /גילוי-מרצון-מס-הכנסה redirect to /voluntary-disclosure in both public/_redirects and src/routes/$.tsx; add 301s /ביקורת-וחשבונאות/ → /audit, /ייעוץ-עסקי-וליווי-עסקי/ → /services, /contact-us-צור-קשר/ → /contact, /contact.html → /contact, /רואה-חשבון-בהרצליה → /cpa-herzliya. Verified live (301 after router trailing-slash 307 normalization), build OK; not published.
