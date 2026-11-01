@@ -23,6 +23,7 @@ export type ServiceLandingProps = {
   title: string;
   intro: string;
   highlights: string[];
+  topicNavigation?: ReactNode;
   sections: { id?: string; title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
@@ -39,6 +40,7 @@ export function ServiceLanding({
   title,
   intro,
   highlights,
+  topicNavigation,
   sections,
   faqs,
   ctaHeadline = "מוכנים להתקדם? נשמח לקיים פגישת היכרות ראשונית ולבחון את הצרכים ואת היקף השירות.",
@@ -80,6 +82,8 @@ export function ServiceLanding({
               {title}
             </h1>
             <p className="mt-5 text-lg text-muted-foreground">{intro}</p>
+
+            {topicNavigation ? <div className="mt-6">{topicNavigation}</div> : null}
 
             <div className="mt-5">
               <GoogleReviewsBadge lang="he" />

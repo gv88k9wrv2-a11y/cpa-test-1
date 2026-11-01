@@ -179,6 +179,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           ],
         },
         {
+          id: "due-diligence",
           title: "Continuous Due Diligence & M&A readiness",
           body: "Organized financial and tax information may help a company respond more efficiently to financing or transaction requests. Depending on the agreed scope, the firm may assist with periodic organization of available information and coordination with management and the company’s other advisers:",
           bullets: [

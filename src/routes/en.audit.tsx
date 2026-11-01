@@ -79,6 +79,16 @@ export const Route = createFileRoute("/en/audit")({
       ]}
       sections={[
         {
+          id: "non-profits",
+          title: "Nonprofit Audit & Public Benefit Organizations (NGOs)",
+          body: "Audit and financial reporting for Israeli nonprofits and public benefit organizations depend on the entity’s status, activities, funding sources and applicable requirements. The agreed work may include financial-statement audits, reporting information and review of the presentation of donations and restricted funds. Regulatory approvals remain subject to the relevant authority’s requirements and decisions; an audit does not guarantee approval or identify every compliance issue.",
+        },
+        {
+          id: "internal-controls",
+          title: "Internal Controls & Operational Accounting Review",
+          body: "Within the agreed engagement, the firm may review financial-reporting controls, accounting workflows, reconciliations and supporting documentation. Matters identified can be communicated to management or those charged with governance, together with practical recommendations where appropriate. A separate operational accounting review is distinct from a statutory audit, and neither engagement guarantees identification of every weakness, risk or irregularity.",
+        },
+        {
           title: "Audit approach",
           body: "The audit is planned and performed using a risk-based approach under the applicable professional standards. Procedures are designed in response to assessed risks and materiality, with the objective of obtaining reasonable, but not absolute, assurance about the financial statements. Matters requiring communication are addressed with management or those charged with governance as appropriate.",
         },
@@ -87,7 +97,8 @@ export const Route = createFileRoute("/en/audit")({
           body: "For subsidiaries of foreign parents reporting under IFRS, US GAAP or another group framework, the agreed service may include assistance with reporting information, conversion adjustments and group schedules, in coordination with management and the relevant auditors.",
         },
         {
-          title: "Due diligence",
+          id: "due-diligence",
+          title: "Financial Due Diligence & M&A Support",
           body: "Financial due-diligence procedures are determined by the purpose of the transaction, the available information and the agreed scope. They may include historical financial analysis, revenue and profitability review, working-capital considerations, tax matters and organization of transaction information. The work does not guarantee identification of every risk or missing item.",
         },
       ]}

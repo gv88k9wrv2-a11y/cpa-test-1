@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-tax.webp";
+import { TaxQuickNavigation } from "../components/tax-quick-navigation";
 import { TaxTopicList } from "../components/internal-links";
 import { TAX_TOPICS, TAX_GROUP_TITLES } from "../data/internal-links";
 
@@ -107,6 +108,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
       eyebrow="Israeli Tax Advisory and Digital Asset Reporting"
       title="Israeli Tax Advisory for Companies, Individuals, and Digital Assets"
       intro="Tax planning can help identify relevant considerations, compare available alternatives and document decisions before implementation. The outcome depends on the facts, applicable law and the position of the relevant authorities. Within the agreed scope, the firm assists with Israeli tax analysis, tax-ruling requests, assessments, information requests and digital-asset reporting, with coordination with qualified foreign and legal advisers where required."
+      topicNavigation={<TaxQuickNavigation lang="en" />}
       highlights={[
         "Israeli corporate and individual tax planning",
         "Advance Tax Ruling Requests in Israel from the Israel Tax Authority",
@@ -165,6 +167,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           ],
         },
         {
+          id: "tax-audits",
           title: "Israeli Tax Assessments, Objections, and Appeal Support",
           body: "Tax assessments and objections require review of the facts, documents, deadlines and applicable law. Within the agreed scope, the firm may assist with the accounting and Israeli tax aspects of the response and coordinate with qualified legal counsel when legal representation or court proceedings are required:",
           bullets: [

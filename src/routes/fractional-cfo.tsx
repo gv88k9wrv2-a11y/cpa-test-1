@@ -180,6 +180,7 @@ export const Route = createFileRoute("/fractional-cfo")({
           ],
         },
         {
+          id: "due-diligence",
           title: "היערכות פיננסית ל-Due Diligence ול-M&A",
           body: "היערכות שוטפת לבדיקת נאותות מאפשרת לחברה להגיב באופן יעיל לבקשות מידע בתהליך גיוס הון או M&A. בהתאם להיקף ההתקשרות, השירות כולל ארגון ועדכון של מידע פיננסי ומיסויי ב-Data Room:",
           bullets: [

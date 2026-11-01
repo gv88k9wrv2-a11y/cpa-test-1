@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-tax.webp";
+import { TaxQuickNavigation } from "../components/tax-quick-navigation";
 import { TaxTopicList } from "../components/internal-links";
 import { TAX_TOPICS, TAX_GROUP_TITLES } from "../data/internal-links";
 
@@ -143,6 +144,7 @@ export const Route = createFileRoute("/tax-consulting")({
       eyebrow="ייעוץ מס לחברות וליחידים"
       title="ייעוץ מס לחברות, סטארטאפים, בעלי שליטה ויחידים"
       intro="ייעוץ ותכנון מס מסייעים לחברות, סטארטאפים ויחידים לבחון חלופות, סיכונים וחובות דיווח לפני עסקאות ושינויים מהותיים. המשרד מסייע בניתוח חשבונאי ומיסויי, במיסוי קריפטו ונכסים דיגיטליים, בדיווח על שכר דירה ובהליכים מול רשות המסים, בהתאם לנתונים ולהיקף ההתקשרות."
+      topicNavigation={<TaxQuickNavigation lang="he" />}
       highlights={[
         "תכנון מס ובחינת חובות דיווח לפני עסקאות ושינויי מבנה",
         "חוות דעת חשבונאיות וחוות דעת מס בכתב לסוגיה מוגדרת",
@@ -184,6 +186,7 @@ export const Route = createFileRoute("/tax-consulting")({
           ],
         },
         {
+          id: "tax-audits",
           title: "שומות, השגות ודיונים מול רשות המסים",
           body: "לאחר קבלת דרישה, בירור, שומה או הודעה אחרת מרשות המסים יש לזהות את סוג ההליך, המועד החל והנתונים שעליהם מבוססת הפנייה. בהתאם להרשאה ולהיקף ההתקשרות, ניתן לסייע בריכוז המסמכים והחישובים, בבחינת הפערים ובהכנת מענה מקצועי לרשות. כאשר ההליך מחייב ייעוץ או ייצוג משפטי, העבודה מתואמת עם עורך דין מוסמך בתחום המס.",
           bullets: [
