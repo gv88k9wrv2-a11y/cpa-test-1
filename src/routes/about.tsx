@@ -2,13 +2,16 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, Building2, ChartLine, Handshake, MessageCircle, Star, Users } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
-import { CPA_REGISTRY_URL } from "../lib/meta";
+import { CPA_REGISTRY_URL, buildBreadcrumbJsonLd } from "../lib/meta";
 
 const profileImage = profileAsset.url;
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "אודות נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
+      { name: "twitter:description", content: "אודות נמרודי ושות׳ ורו״ח שלמה נמרודי, בעל רישיון מועצת רואי חשבון במשרד המשפטים משנת 1997. משרד בהרצליה פיתוח הפעיל מאז 2000 ומלווה חברות ועסקים. הכירו אותנו." },
+      { property: "og:locale", content: "he_IL" },
       { title: "אודות נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח משנת 2000" },
       {
         name: "description",
@@ -16,11 +19,7 @@ export const Route = createFileRoute("/about")({
           "אודות נמרודי ושות׳ ורו״ח שלמה נמרודי, בעל רישיון מועצת רואי חשבון במשרד המשפטים משנת 1997. משרד בהרצליה פיתוח הפעיל מאז 2000 ומלווה חברות ועסקים. הכירו אותנו.",
       },
       { property: "og:title", content: "אודות נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
-      {
-        property: "og:description",
-        content:
-          "אודות נמרודי ושות׳ ורו״ח שלמה נמרודי, בעל רישיון מועצת רואי חשבון במשרד המשפטים משנת 1997. משרד בהרצליה פיתוח הפעיל מאז 2000 ומלווה חברות ועסקים. הכירו אותנו.",
-      },
+      { property: "og:description", content: "אודות נמרודי ושות׳ ורו״ח שלמה נמרודי, בעל רישיון מועצת רואי חשבון במשרד המשפטים משנת 1997. משרד בהרצליה פיתוח הפעיל מאז 2000 ומלווה חברות ועסקים. הכירו אותנו." },
       { property: "og:url", content: "https://nimrodi.co.il/about" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
@@ -29,6 +28,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "בית", "url": "https://nimrodi.co.il/"}, {"name": "אודות המשרד", "url": "https://nimrodi.co.il/about"}])) }],
     links: [
       { rel: "canonical", href: "https://nimrodi.co.il/about" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/about" },

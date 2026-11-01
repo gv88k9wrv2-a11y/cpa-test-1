@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarDays, Clock } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
@@ -8,6 +9,11 @@ export const POSTS = BLOG_POSTS;
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "מאמרים בחשבונאות ומיסוי | נמרודי ושות׳" },
+      { name: "twitter:description", content: "מאמרים ועדכונים בנושאי מיסוי, חשבונאות, ליווי חברות וסטארטאפים, נכסים דיגיטליים ופעילות בין־לאומית מאת נמרודי ושות׳ רואי חשבון. כנסו לקריאה נוספת. נשמח לסייע." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "מאמרים בחשבונאות, מיסוי ודיווח | נמרודי ושות׳" },
       {
         name: "description",
@@ -15,17 +21,14 @@ export const Route = createFileRoute("/blog/")({
           "מאמרים ועדכונים בנושאי מיסוי, חשבונאות, ליווי חברות וסטארטאפים, נכסים דיגיטליים ופעילות בין־לאומית מאת נמרודי ושות׳ רואי חשבון. כנסו לקריאה נוספת. נשמח לסייע.",
       },
       { property: "og:title", content: "מאמרים בחשבונאות ומיסוי | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "הבלוג של נמרודי ושות׳ רואי חשבון: עדכונים מקצועיים בנושאי מיסוי, חשבונאות, דיווח לרשויות, סטארטאפים ונכסים דיגיטליים. כנסו לקרוא את המאמרים שלנו. נשמח לסייע.",
-      },
+      { property: "og:description", content: "מאמרים ועדכונים בנושאי מיסוי, חשבונאות, ליווי חברות וסטארטאפים, נכסים דיגיטליים ופעילות בין־לאומית מאת נמרודי ושות׳ רואי חשבון. כנסו לקריאה נוספת. נשמח לסייע." },
       { property: "og:url", content: "https://nimrodi.co.il/blog" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "בית", "url": "https://nimrodi.co.il/"}, {"name": "מאמרים ומדריכים", "url": "https://nimrodi.co.il/blog"}])) }],
     links: [
       { rel: "canonical", href: "https://nimrodi.co.il/blog" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/blog" },

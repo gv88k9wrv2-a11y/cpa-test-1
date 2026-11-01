@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-tax.webp";
+import { TaxQuickNavigation } from "../components/tax-quick-navigation";
 import { TaxTopicList } from "../components/internal-links";
 import { TAX_TOPICS, TAX_GROUP_TITLES } from "../data/internal-links";
 
@@ -58,6 +59,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/tax-consulting")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Israeli Tax Advisory and Digital Asset Reporting | Nimrodi & Co." },
+      { name: "twitter:description", content: "Israeli tax advisory for companies and individuals, including tax-ruling requests, digital-asset reporting, assessments and objections. Contact the firm." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Israeli Tax Advisory and Crypto Reporting | Nimrodi & Co." },
       {
         name: "description",
@@ -68,11 +74,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
         property: "og:title",
         content: "Israeli Tax Advisory and Digital Asset Reporting | Nimrodi & Co.",
       },
-      {
-        property: "og:description",
-        content:
-          "Israeli tax advisory from a Herzliya Pituach CPA firm, including tax-ruling requests, digital-asset reporting and support during assessments and objections.",
-      },
+      { property: "og:description", content: "Israeli tax advisory for companies and individuals, including tax-ruling requests, digital-asset reporting, assessments and objections. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/tax-consulting` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -107,6 +109,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
       eyebrow="Israeli Tax Advisory and Digital Asset Reporting"
       title="Israeli Tax Advisory for Companies, Individuals, and Digital Assets"
       intro="Tax planning can help identify relevant considerations, compare available alternatives and document decisions before implementation. The outcome depends on the facts, applicable law and the position of the relevant authorities. Within the agreed scope, the firm assists with Israeli tax analysis, tax-ruling requests, assessments, information requests and digital-asset reporting, with coordination with qualified foreign and legal advisers where required."
+      topicNavigation={<TaxQuickNavigation lang="en" />}
       highlights={[
         "Israeli corporate and individual tax planning",
         "Advance Tax Ruling Requests in Israel from the Israel Tax Authority",
@@ -165,6 +168,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
           ],
         },
         {
+          id: "tax-audits",
           title: "Israeli Tax Assessments, Objections, and Appeal Support",
           body: "Tax assessments and objections require review of the facts, documents, deadlines and applicable law. Within the agreed scope, the firm may assist with the accounting and Israeli tax aspects of the response and coordinate with qualified legal counsel when legal representation or court proceedings are required:",
           bullets: [

@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { Award, Building2, Calculator, GraduationCap, Mail, UserCheck } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader } from "../components/site-chrome";
@@ -70,6 +71,11 @@ const DEPARTMENTS = [
 export const Route = createFileRoute("/team")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "הצוות של נמרודי ושות׳" },
+      { name: "twitter:description", content: "הכירו את צוות נמרודי ושות׳ בהרצליה פיתוח: רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס, השכר, הביקורת והדיווח. קראו עוד על צוות המשרד ותחומי העיסוק." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "הצוות של נמרודי ושות׳ | שותף מייסד ומחלקות המשרד" },
       {
         name: "description",
@@ -77,17 +83,14 @@ export const Route = createFileRoute("/team")({
           "הכירו את צוות נמרודי ושות׳ בהרצליה פיתוח: רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס, השכר, הביקורת והדיווח. קראו עוד על צוות המשרד ותחומי העיסוק.",
       },
       { property: "og:title", content: "הצוות של נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "צוות נמרודי ושות׳ כולל רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס והשכר, המלווים חברות, סטארטאפים, חברות זרות ועצמאים.",
-      },
+      { property: "og:description", content: "הכירו את צוות נמרודי ושות׳ בהרצליה פיתוח: רואי חשבון, מנהלי חשבונות ואנשי מקצוע בתחומי המס, השכר, הביקורת והדיווח. קראו עוד על צוות המשרד ותחומי העיסוק." },
       { property: "og:url", content: "https://nimrodi.co.il/team" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "בית", "url": "https://nimrodi.co.il/"}, {"name": "הצוות", "url": "https://nimrodi.co.il/team"}])) }],
     links: [
       { rel: "canonical", href: "https://nimrodi.co.il/team" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/team" },

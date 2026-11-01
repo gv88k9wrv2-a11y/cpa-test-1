@@ -45,6 +45,9 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-startups")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "CPA for Startups — Nimrodi & Co." },
+      { name: "twitter:description", content: "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss." },
+      { property: "og:locale", content: "en_US" },
       { title: "CPA for Startups Israel | Section 102 & Delaware Flip" },
       {
         name: "description",
@@ -52,11 +55,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
           "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss.",
       },
       { property: "og:title", content: "CPA for Startups — Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Accounting, tax and CFO support for Israeli startups, including reporting, financial models and investor information according to the agreed scope. Contact the firm.",
-      },
+      { property: "og:description", content: "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-startups` },
@@ -130,6 +129,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
           body: "An Israeli startup may consider an Israel–Delaware Flip in connection with US investment or a change in its group structure. The process can involve Israeli and US tax, accounting and legal considerations. Within the agreed scope, the firm can assist with the Israeli accounting and tax analysis, preparation of information for a tax ruling request, and coordination with the company’s legal and US tax advisers. The suitability and implementation of the structure depend on the company, its shareholders, planned activity and applicable law.",
         },
         {
+          id: "section-102",
           title: "Section 102 ESOP and 409A Valuation Support for Startups",
           body: "Employee equity arrangements may involve Israeli tax, financial-reporting, valuation and legal considerations. The appropriate Section 102 route, accounting treatment and potential need for a 409A valuation depend on the recipient, the instrument, the plan terms, the company’s reporting framework and the circumstances of the grant. Within the agreed scope, the firm can assist with the Israeli accounting and tax analysis, organize the relevant information and coordinate with the company’s legal advisers, trustee, valuation professionals and US advisers where required:",
           bullets: [

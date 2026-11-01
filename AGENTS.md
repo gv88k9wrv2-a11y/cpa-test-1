@@ -13,6 +13,10 @@
 
 ## Project rules
 
+- Content leaf routes own localized OG/Twitter titles and descriptions; use the leaf description for all social descriptions and keep root metadata limited to sitewide defaults to prevent cross-language inheritance.
+- ServiceLanding and ServiceLandingEn accept optional topic navigation above the service details; section IDs remain language-independent so menu fragments and quick navigation target the same subjects.
+- CFO service Person schemas extend the centrally licensed founder using PERSON_ID and ORG_ID, preserving the same entity identity and credentials across pages.
+
 - Expanded bilingual professional FAQs share a typed data module across service and central FAQ pages; render and serialize the same entries to prevent editorial and schema drift.
 
 - Hebrew blog sections support escaped inline local Markdown links, bold emphasis and optional typed comparison tables; article-specific disclaimers override the shared disclaimer without duplicating it, preserving approved editorial structure safely.

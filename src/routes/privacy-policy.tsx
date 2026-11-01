@@ -5,6 +5,11 @@ import { FirmContactBlock } from "../components/firm-contact-block";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "מדיניות פרטיות ותנאי שימוש | נמרודי ושות׳" },
+      { name: "twitter:description", content: "מדיניות הפרטיות ותנאי השימוש של נמרודי ושות׳ רואי חשבון: איסוף מידע, שימוש, שמירה, אבטחה וזכויות משתמש בהתאם לדין החל. קראו את המדיניות המלאה באתר המשרד." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "מדיניות פרטיות ותנאי שימוש | נמרודי ושות׳ – רואי חשבון" },
       {
         name: "description",
@@ -13,11 +18,7 @@ export const Route = createFileRoute("/privacy-policy")({
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "מדיניות פרטיות ותנאי שימוש | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "מדיניות הפרטיות של נמרודי ושות׳: איסוף מידע, שימוש, אבטחה וזכויות משתמש בהתאם לדין החל בישראל. קראו את המדיניות המלאה באתר.",
-      },
+      { property: "og:description", content: "מדיניות הפרטיות ותנאי השימוש של נמרודי ושות׳ רואי חשבון: איסוף מידע, שימוש, שמירה, אבטחה וזכויות משתמש בהתאם לדין החל. קראו את המדיניות המלאה באתר המשרד." },
       { property: "og:url", content: "https://nimrodi.co.il/privacy-policy" },
     ],
     links: [

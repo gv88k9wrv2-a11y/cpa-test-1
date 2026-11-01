@@ -23,6 +23,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/audit")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Audit and Assurance in Israel | Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Audit and Assurance Services in Israel | Nimrodi & Co. CPA" },
       {
         name: "description",
@@ -30,11 +35,7 @@ export const Route = createFileRoute("/en/audit")({
           "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm.",
       },
       { property: "og:title", content: "Audit and Assurance in Israel | Nimrodi & Co. CPA" },
-      {
-        property: "og:description",
-        content:
-          "Audit and assurance in Israel for companies and nonprofits, including statutory audits, IFRS reporting, internal controls and financial due diligence. Contact the firm.",
-      },
+      { property: "og:description", content: "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/audit` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -79,6 +80,16 @@ export const Route = createFileRoute("/en/audit")({
       ]}
       sections={[
         {
+          id: "non-profits",
+          title: "Nonprofit Audit & Public Benefit Organizations (NGOs)",
+          body: "Audit and financial reporting for Israeli nonprofits and public benefit organizations depend on the entity’s status, activities, funding sources and applicable requirements. The agreed work may include financial-statement audits, reporting information and review of the presentation of donations and restricted funds. Regulatory approvals remain subject to the relevant authority’s requirements and decisions; an audit does not guarantee approval or identify every compliance issue.",
+        },
+        {
+          id: "internal-controls",
+          title: "Internal Controls & Operational Accounting Review",
+          body: "Within the agreed engagement, the firm may review financial-reporting controls, accounting workflows, reconciliations and supporting documentation. Matters identified can be communicated to management or those charged with governance, together with practical recommendations where appropriate. A separate operational accounting review is distinct from a statutory audit, and neither engagement guarantees identification of every weakness, risk or irregularity.",
+        },
+        {
           title: "Audit approach",
           body: "The audit is planned and performed using a risk-based approach under the applicable professional standards. Procedures are designed in response to assessed risks and materiality, with the objective of obtaining reasonable, but not absolute, assurance about the financial statements. Matters requiring communication are addressed with management or those charged with governance as appropriate.",
         },
@@ -87,7 +98,8 @@ export const Route = createFileRoute("/en/audit")({
           body: "For subsidiaries of foreign parents reporting under IFRS, US GAAP or another group framework, the agreed service may include assistance with reporting information, conversion adjustments and group schedules, in coordination with management and the relevant auditors.",
         },
         {
-          title: "Due diligence",
+          id: "due-diligence",
+          title: "Financial Due Diligence & M&A Support",
           body: "Financial due-diligence procedures are determined by the purpose of the transaction, the available information and the agreed scope. They may include historical financial analysis, revenue and profitability review, working-capital considerations, tax matters and organization of transaction information. The work does not guarantee identification of every risk or missing item.",
         },
       ]}

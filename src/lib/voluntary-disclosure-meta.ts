@@ -11,6 +11,9 @@ export function voluntaryDisclosureHead(lang: "he" | "en") {
   return {
     meta: [
       { title: c.metaTitle },
+      { name: "twitter:title", content: c.metaTitle },
+      { name: "twitter:description", content: c.description },
+      { property: "og:locale", content: he ? "he_IL" : "en_US" },
       { name: "description", content: c.description },
       { property: "og:title", content: c.metaTitle },
       { property: "og:description", content: c.description },

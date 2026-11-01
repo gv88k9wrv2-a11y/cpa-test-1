@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarDays, Clock } from "lucide-react";
 import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn } from "../components/site-chrome-en";
@@ -8,6 +9,9 @@ const CANONICAL = "https://nimrodi.co.il/en/blog";
 export const Route = createFileRoute("/en/blog/")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Accounting and Tax Insights | Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: "Articles on international taxation, foreign companies in Israel, relocation and tax residency from Nimrodi & Co. CPA. Read the latest available content." },
+      { property: "og:locale", content: "en_US" },
       { title: "Israel Accounting and Tax Insights | Nimrodi & Co. CPA" },
       {
         name: "description",
@@ -15,17 +19,14 @@ export const Route = createFileRoute("/en/blog/")({
           "Articles on international taxation, foreign companies in Israel, relocation and tax residency from Nimrodi & Co. CPA. Read the latest available content.",
       },
       { property: "og:title", content: "Accounting and Tax Insights | Nimrodi & Co. CPA" },
-      {
-        property: "og:description",
-        content:
-          "Articles from Nimrodi & Co. CPA on Israeli taxation, accounting, reporting, startups, foreign companies and crypto and digital assets. Explore the available posts.",
-      },
+      { property: "og:description", content: "Articles on international taxation, foreign companies in Israel, relocation and tax residency from Nimrodi & Co. CPA. Read the latest available content." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: CANONICAL },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "Home", "url": "https://nimrodi.co.il/en"}, {"name": "Articles & Guides", "url": "https://nimrodi.co.il/en/blog"}])) }],
     links: [
       { rel: "canonical", href: CANONICAL },
       { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/blog" },

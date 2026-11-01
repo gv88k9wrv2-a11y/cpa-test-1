@@ -54,6 +54,11 @@ const FAQS = [
 export const Route = createFileRoute("/cpa-freelancers")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "רואה חשבון לעצמאים ולפרילנסרים | נמרודי ושות׳" },
+      { name: "twitter:description", content: "רואה חשבון לעצמאים ולפרילנסרים: פתיחת תיקים ברשויות, הנהלת חשבונות שוטפת, דוח שנתי, הצהרת הון ובחינת מבנה הפעילות העסקית. צרו קשר לתיאום שיחת היכרות ראשונה." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "רואה חשבון לעצמאים ולפרילנסרים | נמרודי ושות׳" },
       {
         name: "description",
@@ -61,11 +66,7 @@ export const Route = createFileRoute("/cpa-freelancers")({
           "רואה חשבון לעצמאים ולפרילנסרים: פתיחת תיקים ברשויות, הנהלת חשבונות שוטפת, דוח שנתי, הצהרת הון ובחינת מבנה הפעילות העסקית. צרו קשר לתיאום שיחת היכרות ראשונה.",
       },
       { property: "og:title", content: "רואה חשבון לעצמאים ולפרילנסרים | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "ליווי חשבונאי ומיסויי לעצמאים ולפרילנסרים בישראל: פתיחת תיקים, ניהול שוטף, דוחות שנתיים והצהרות הון בהיקף מוסכם. דברו איתנו על הצרכים שלכם.",
-      },
+      { property: "og:description", content: "רואה חשבון לעצמאים ולפרילנסרים: פתיחת תיקים ברשויות, הנהלת חשבונות שוטפת, דוח שנתי, הצהרת הון ובחינת מבנה הפעילות העסקית. צרו קשר לתיאום שיחת היכרות ראשונה." },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-freelancers" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

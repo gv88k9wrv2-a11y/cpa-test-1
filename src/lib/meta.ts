@@ -97,6 +97,26 @@ export const PERSON_JSONLD = {
   ],
 };
 
+/** Service-specific profile of the same founder; retain the shared identity and credential. */
+export const CFO_PERSON_JSONLD = {
+  ...PERSON_JSONLD,
+  jobTitle: "Managing Partner & Fractional CFO",
+  worksFor: {
+    "@type": "AccountingService",
+    "@id": ORG_ID,
+    name: "נמרודי ושות׳ - רואי חשבון | Nimrodi & Co. CPAs",
+    url: SITE_ORIGIN,
+  },
+  knowsAbout: [
+    "Fractional CFO",
+    "Financial Modeling",
+    "Startup Fundraising",
+    "M&A Due Diligence",
+    "Cash Flow Management",
+    "Israeli Corporate Tax",
+  ],
+};
+
 /** Reference used as author / reviewedBy on articles. */
 export const AUTHOR_PERSON_REF = {
   "@type": "Person",

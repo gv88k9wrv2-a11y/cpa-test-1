@@ -52,6 +52,9 @@ const FAQS = [
 export const Route = createFileRoute("/cpa-herzliya")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "רואה חשבון בהרצליה | נמרודי ושות׳ – רואי חשבון בהרצליה פיתוח" },
+      { name: "twitter:description", content: "מחפשים רואה חשבון בהרצליה? נמרודי ושות׳ ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת, שכר וחשבות לחברות, סטארטאפים ועסקים. חייגו 09-9582211 עכשיו." },
+      { property: "og:locale", content: "he_IL" },
       {
         title: "רואה חשבון בהרצליה | נמרודי ושות׳ – רואי חשבון בהרצליה פיתוח",
       },
@@ -64,11 +67,7 @@ export const Route = createFileRoute("/cpa-herzliya")({
         property: "og:title",
         content: "רואה חשבון בהרצליה | נמרודי ושות׳ – רואי חשבון בהרצליה פיתוח",
       },
-      {
-        property: "og:description",
-        content:
-          "מחפשים רואה חשבון בהרצליה? נמרודי ושות׳ ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת, שכר וחשבות לחברות, סטארטאפים ועסקים. חייגו 09-9582211 עכשיו.",
-      },
+      { property: "og:description", content: "מחפשים רואה חשבון בהרצליה? נמרודי ושות׳ ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת, שכר וחשבות לחברות, סטארטאפים ועסקים. חייגו 09-9582211 עכשיו." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-herzliya" },

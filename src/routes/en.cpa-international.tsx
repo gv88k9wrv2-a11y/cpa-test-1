@@ -30,6 +30,9 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-international")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "International Tax — Nimrodi & Co." },
+      { name: "twitter:description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
+      { property: "og:locale", content: "en_US" },
       { title: "International Tax & Relocation for Olim | Nimrodi & Co." },
       {
         name: "description",
@@ -37,11 +40,7 @@ export const Route = createFileRoute("/en/cpa-international")({
           "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures.",
       },
       { property: "og:title", content: "International Tax — Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Israeli international tax support for relocation, new immigrants and returning residents, including residency review and cross-border reporting. Contact us.",
-      },
+      { property: "og:description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-international` },

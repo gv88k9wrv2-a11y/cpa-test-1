@@ -31,6 +31,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-freelancers")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "CPA for Freelancers in Israel | Nimrodi & Co." },
+      { name: "twitter:description", content: "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "CPA for Freelancers and Independent Businesses in Israel | Nimrodi" },
       {
         name: "description",
@@ -38,11 +43,7 @@ export const Route = createFileRoute("/en/cpa-freelancers")({
           "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm.",
       },
       { property: "og:title", content: "CPA for Freelancers in Israel | Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Accounting and tax support for freelancers, consultants and independent businesses in Israel, including registration, filings and annual returns. Contact the firm.",
-      },
+      { property: "og:description", content: "CPA services in Israel for freelancers and consultants, including registration, ongoing reporting, annual returns and capital declarations. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/cpa-freelancers` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

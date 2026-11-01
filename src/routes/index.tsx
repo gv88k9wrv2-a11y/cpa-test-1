@@ -28,6 +28,11 @@ const FAQS = [
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "משרד רואי חשבון בהרצליה פיתוח | נמרודי ושות׳ – מאז 2000" },
+      { name: "twitter:description", content: "משרד רואי חשבון בהרצליה פיתוח מאז 2000: הנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס במענה אישי לחברות, סטארטאפים ועצמאים. חייגו 09-9582211 לשיחת היכרות." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "משרד רואי חשבון בהרצליה פיתוח | נמרודי ושות׳ – מאז 2000" },
       {
         name: "description",
@@ -38,11 +43,7 @@ export const Route = createFileRoute("/")({
         property: "og:title",
         content: "משרד רואי חשבון בהרצליה פיתוח | נמרודי ושות׳ – מאז 2000",
       },
-      {
-        property: "og:description",
-        content:
-          "משרד רואי חשבון בהרצליה פיתוח מאז 2000: הנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס במענה אישי לחברות, סטארטאפים ועצמאים. חייגו 09-9582211 לשיחת היכרות.",
-      },
+      { property: "og:description", content: "משרד רואי חשבון בהרצליה פיתוח מאז 2000: הנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס במענה אישי לחברות, סטארטאפים ועצמאים. חייגו 09-9582211 לשיחת היכרות." },
       { property: "og:url", content: "https://nimrodi.co.il/" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

@@ -116,6 +116,9 @@ const FAQ_LINKS: Record<string, { label: string; to: string; hash?: string }> = 
 export const Route = createFileRoute("/en/faq")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Israeli CPA Services FAQ | Nimrodi & Co." },
+      { name: "twitter:description", content: "Answers to common questions on our CPA services, working process, pricing and Israeli taxation for companies, startups, freelancers and foreign clients." },
+      { property: "og:locale", content: "en_US" },
       { title: "Israeli CPA and Tax FAQ | Nimrodi & Co." },
       {
         name: "description",
@@ -123,11 +126,7 @@ export const Route = createFileRoute("/en/faq")({
           "Answers to common questions on our CPA services, working process, pricing and Israeli taxation for companies, startups, freelancers and foreign clients.",
       },
       { property: "og:title", content: "Israeli CPA Services FAQ | Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Common questions about working with an Israeli CPA firm: services, process, engagement scope, fees and reporting for companies and individuals. Read more.",
-      },
+      { property: "og:description", content: "Answers to common questions on our CPA services, working process, pricing and Israeli taxation for companies, startups, freelancers and foreign clients." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/faq` },

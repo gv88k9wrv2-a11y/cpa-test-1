@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
@@ -7,6 +8,11 @@ import { LeadForm } from "../components/lead-form";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "צור קשר עם נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
+      { name: "twitter:description", content: "צרו קשר עם נמרודי ושות׳ רואי חשבון בהרצליה פיתוח בנושאי חשבונאות, מס, שכר, ביקורת וליווי פיננסי שוטף. בעמוד תמצאו טלפון, וואטסאפ, דוא״ל ופרטי הגעה. פנו אלינו." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "יצירת קשר | נמרודי ושות׳ רואי חשבון בהרצליה פיתוח" },
       {
         name: "description",
@@ -14,17 +20,14 @@ export const Route = createFileRoute("/contact")({
           "צרו קשר עם נמרודי ושות׳ רואי חשבון בהרצליה פיתוח בנושאי חשבונאות, מס, שכר, ביקורת וליווי פיננסי שוטף. בעמוד תמצאו טלפון, וואטסאפ, דוא״ל ופרטי הגעה. פנו אלינו.",
       },
       { property: "og:title", content: "צור קשר עם נמרודי ושות׳ | רואי חשבון בהרצליה פיתוח" },
-      {
-        property: "og:description",
-        content:
-          "פרטי התקשרות עם משרד רואי חשבון נמרודי ושות׳ בהרצליה פיתוח: טלפון, וואטסאפ, דוא״ל, פרטי הגעה וטופס פנייה מקוון. נחזור אליכם בהתאם לפרטים שנמסרו ולשעות הפעילות.",
-      },
+      { property: "og:description", content: "צרו קשר עם נמרודי ושות׳ רואי חשבון בהרצליה פיתוח בנושאי חשבונאות, מס, שכר, ביקורת וליווי פיננסי שוטף. בעמוד תמצאו טלפון, וואטסאפ, דוא״ל ופרטי הגעה. פנו אלינו." },
       { property: "og:url", content: "https://nimrodi.co.il/contact" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "640" },
       { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "בית", "url": "https://nimrodi.co.il/"}, {"name": "צור קשר", "url": "https://nimrodi.co.il/contact"}])) }],
     links: [
       { rel: "canonical", href: "https://nimrodi.co.il/contact" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/contact" },

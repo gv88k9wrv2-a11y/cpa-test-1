@@ -1,4 +1,4 @@
-import { buildBreadcrumbJsonLd } from "../lib/meta";
+import { buildBreadcrumbJsonLd, CFO_PERSON_JSONLD } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LineChart } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
@@ -44,6 +44,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/fractional-cfo")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Fractional CFO — Nimrodi & Co." },
+      { name: "twitter:description", content: "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Fractional CFO Services in Israel | Nimrodi & Co." },
       {
         name: "description",
@@ -51,11 +56,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today.",
       },
       { property: "og:title", content: "Fractional CFO — Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Outsourced senior CFO support for startups and foreign companies operating in Israel, including budgets, models, board reporting and transaction preparation. Contact the firm.",
-      },
+      { property: "og:description", content: "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today." },
       { property: "og:url", content: `${BASE}/en/fractional-cfo` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
@@ -66,6 +67,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       { rel: "alternate", hrefLang: "en-US", href: `${BASE}/en/fractional-cfo` },
     ],
     scripts: [
+      { type: "application/ld+json", children: JSON.stringify(CFO_PERSON_JSONLD) },
       {
         type: "application/ld+json",
         children: JSON.stringify(
@@ -102,6 +104,12 @@ export const Route = createFileRoute("/en/fractional-cfo")({
         "mergers and acquisitions, exit and next-round preparation",
       ]}
       sections={[
+        {
+          id: "service-leadership",
+          title: "Service Leadership – Shlomo Nimrodi, CPA",
+          body: <><p className="font-semibold text-primary">Managing Partner & Fractional CFO Practice Lead</p><p className="mt-4">Fractional CFO and outsourced financial management services at Nimrodi & Co. are led directly by Shlomo Nimrodi, CPA. Bringing over 25 years of senior financial, accounting, and strategic leadership for technology companies, international startups, and growth-stage enterprises, our clients receive direct, hands-on partner involvement.</p></>,
+          bullets: ["Financial modeling, annual budgeting, and cash flow governance (Burn Rate & Runway forecasting).", "Preparing financial datasets and presentations for investor fundraising rounds (Seed, Series A+).", "Board of Directors reporting, executive financial summaries, and monthly management accounts.", "Data room structuring and leading financial due diligence for M&A and investment transactions.", "Strategic coordination with audit firms, banking institutions, and tax authorities in Israel and abroad."],
+        },
         {
           title: "Strategic Corporate Finance",
           body: (
@@ -179,6 +187,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
           ],
         },
         {
+          id: "due-diligence",
           title: "Continuous Due Diligence & M&A readiness",
           body: "Organized financial and tax information may help a company respond more efficiently to financing or transaction requests. Depending on the agreed scope, the firm may assist with periodic organization of available information and coordination with management and the company’s other advisers:",
           bullets: [

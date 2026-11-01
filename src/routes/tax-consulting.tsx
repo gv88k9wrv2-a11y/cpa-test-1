@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileSpreadsheet } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-tax.webp";
+import { TaxQuickNavigation } from "../components/tax-quick-navigation";
 import { TaxTopicList } from "../components/internal-links";
 import { TAX_TOPICS, TAX_GROUP_TITLES } from "../data/internal-links";
 
@@ -95,6 +96,11 @@ const FAQS = [
 export const Route = createFileRoute("/tax-consulting")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "ייעוץ מס לחברות ויחידים | נמרודי ושות׳" },
+      { name: "twitter:description", content: "ייעוץ מס לחברות, לסטארטאפים וליחידים בישראל: תכנון מס, חוות דעת, החלטות מיסוי, נכסים דיגיטליים, שכר דירה והשגות מול רשות המסים. פנו אלינו לשיחת היכרות." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "ייעוץ מס לחברות, יחידים וסטארטאפים | נמרודי ושות׳" },
       {
         name: "description",
@@ -102,11 +108,7 @@ export const Route = createFileRoute("/tax-consulting")({
           "ייעוץ מס לחברות, לסטארטאפים וליחידים בישראל: תכנון מס, חוות דעת, החלטות מיסוי, נכסים דיגיטליים, שכר דירה והשגות מול רשות המסים. פנו אלינו לשיחת היכרות.",
       },
       { property: "og:title", content: "ייעוץ מס לחברות ויחידים | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "ייעוץ מס לחברות, ליזמים ולמשקיעים בישראל: תכנון מס, החלטות מיסוי, מיסוי קריפטו ונכסים דיגיטליים, שכר דירה, שומות והשגות. פנו אלינו לשיחת היכרות ראשונית.",
-      },
+      { property: "og:description", content: "ייעוץ מס לחברות, לסטארטאפים וליחידים בישראל: תכנון מס, חוות דעת, החלטות מיסוי, נכסים דיגיטליים, שכר דירה והשגות מול רשות המסים. פנו אלינו לשיחת היכרות." },
       { property: "og:url", content: "https://nimrodi.co.il/tax-consulting" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
@@ -143,6 +145,7 @@ export const Route = createFileRoute("/tax-consulting")({
       eyebrow="ייעוץ מס לחברות וליחידים"
       title="ייעוץ מס לחברות, סטארטאפים, בעלי שליטה ויחידים"
       intro="ייעוץ ותכנון מס מסייעים לחברות, סטארטאפים ויחידים לבחון חלופות, סיכונים וחובות דיווח לפני עסקאות ושינויים מהותיים. המשרד מסייע בניתוח חשבונאי ומיסויי, במיסוי קריפטו ונכסים דיגיטליים, בדיווח על שכר דירה ובהליכים מול רשות המסים, בהתאם לנתונים ולהיקף ההתקשרות."
+      topicNavigation={<TaxQuickNavigation lang="he" />}
       highlights={[
         "תכנון מס ובחינת חובות דיווח לפני עסקאות ושינויי מבנה",
         "חוות דעת חשבונאיות וחוות דעת מס בכתב לסוגיה מוגדרת",
@@ -184,6 +187,7 @@ export const Route = createFileRoute("/tax-consulting")({
           ],
         },
         {
+          id: "tax-audits",
           title: "שומות, השגות ודיונים מול רשות המסים",
           body: "לאחר קבלת דרישה, בירור, שומה או הודעה אחרת מרשות המסים יש לזהות את סוג ההליך, המועד החל והנתונים שעליהם מבוססת הפנייה. בהתאם להרשאה ולהיקף ההתקשרות, ניתן לסייע בריכוז המסמכים והחישובים, בבחינת הפערים ובהכנת מענה מקצועי לרשות. כאשר ההליך מחייב ייעוץ או ייצוג משפטי, העבודה מתואמת עם עורך דין מוסמך בתחום המס.",
           bullets: [

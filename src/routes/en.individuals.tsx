@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { INDIVIDUALS_GROUPS_EN } from "../data/nav-content";
@@ -9,6 +10,9 @@ const DESCRIPTION =
 export const Route = createFileRoute("/en/individuals")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Tax Services for Individuals | Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: DESCRIPTION },
+      { property: "og:locale", content: "en_US" },
       { title: "Tax Services for Individuals | Nimrodi & Co. CPA" },
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: "Tax Services for Individuals | Nimrodi & Co. CPA" },
@@ -19,6 +23,7 @@ export const Route = createFileRoute("/en/individuals")({
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "Home", "url": "https://nimrodi.co.il/en"}, {"name": "Individuals & Self-Employed", "url": "https://nimrodi.co.il/en/individuals"}])) }],
     links: [
       { rel: "canonical", href: `${BASE}/en/individuals` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/individuals` },

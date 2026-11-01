@@ -246,32 +246,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { property: "og:site_name", content: "נמרודי ושות׳ – רואי חשבון" },
         { property: "og:locale", content: "he_IL" },
         { name: "twitter:card", content: "summary_large_image" },
-        { title: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות" },
-        {
-          property: "og:title",
-          content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות",
-        },
-        {
-          name: "twitter:title",
-          content: "נמרודי ושות׳ – רואי חשבון בהרצליה לסטארטאפים וחברות זרות",
-        },
-        {
-          name: "description",
-          content:
-            "משרד רואי חשבון בהרצליה פיתוח המלווה חברות, סטארטאפים, חברות זרות ועצמאים בהנהלת חשבונות, שכר, דוחות, ביקורת וייעוץ מס בהיקף מוסכם. מוזמנים ליצור איתנו קשר.",
-        },
-        {
-          property: "og:description",
-          content:
-            "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת ומס לחברות, סטארטאפים וחברות זרות, בהתאם לצורכי הדיווח ולהיקף ההתקשרות.",
-        },
-        {
-          name: "twitter:description",
-          content:
-            "שירותי הנהלת חשבונות, שכר, דוחות כספיים, ביקורת, מס ודיווח על נכסים דיגיטליים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות.",
-        },
-        { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
-        { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
+
       ],
       links: [
         { rel: "stylesheet", href: appCss },

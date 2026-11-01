@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { COMPANIES_GROUPS_HE } from "../data/nav-content";
@@ -9,6 +10,9 @@ const DESCRIPTION =
 export const Route = createFileRoute("/companies")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "חברות וסטארטאפים | נמרודי ושות׳ רואי חשבון" },
+      { name: "twitter:description", content: DESCRIPTION },
+      { property: "og:locale", content: "he_IL" },
       { title: "חברות וסטארטאפים | נמרודי ושות׳ רואי חשבון" },
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: "חברות וסטארטאפים | נמרודי ושות׳ רואי חשבון" },
@@ -19,6 +23,7 @@ export const Route = createFileRoute("/companies")({
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "בית", "url": "https://nimrodi.co.il/"}, {"name": "חברות וסטארטאפים", "url": "https://nimrodi.co.il/companies"}])) }],
     links: [
       { rel: "canonical", href: `${BASE}/companies` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/companies` },
