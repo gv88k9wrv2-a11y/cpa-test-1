@@ -1,11 +1,11 @@
 # Requested updates
 
-- [ ] Module 1: correct bilingual menu destinations and verify all requested section anchors.
-- [ ] Module 2: add bilingual quick topic navigation on tax advisory pages.
-- [ ] Module 3: add approved bilingual CFO leadership profile and linked Person schema.
-- [ ] Module 4: complete English audit nonprofit, due-diligence and internal-control sections.
-- [ ] Module 5: verify language-specific OG/Twitter tags and non-www canonicals across content pages; clean IndexNow URLs.
-- [ ] Module 6: add missing bilingual internal-page BreadcrumbList schemas; validate pages, links and compilation without publishing.
+- [x] Module 1: corrected bilingual menu destinations; all 22 menu anchor destinations verified and startup/CFO/nonprofit links clicked in both languages.
+- [x] Module 2: added bilingual quick topic navigation above tax details; all seven links per language clicked successfully; mobile layout verified.
+- [x] Module 3: added exact approved bilingual CFO leadership paragraphs and five points; Person schema retains shared founder/organization IDs and licensing credential; desktop/mobile verified.
+- [x] Module 4: completed English audit nonprofit, due-diligence and internal-control sections, with distinct anchors and professional scope limitations.
+- [x] Module 5: verified page-specific OG/Twitter metadata, 150–160 character descriptions and non-www canonicals on 44 content pages and social/canonical parity on 25 articles; removed page-specific root inheritance; IndexNow canonical normalization tested with mocked fetch, no external submission.
+- [x] Module 6: added all 12 requested BreadcrumbList schemas; JSON-LD parsed on content pages, 9 regression tests passed, latest build OK, no browser runtime errors; not published.
 
 - [x] Embed the expanded bilingual international/startup/Herzliya FAQs in eight requested pages with matching FAQPage schemas; all 24 supplied answers verified through visible accordions and JSON-LD, eight pages return 200, existing four regression tests pass, build OK; not published.
 
