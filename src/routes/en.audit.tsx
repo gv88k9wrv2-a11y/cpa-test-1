@@ -23,6 +23,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/audit")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Audit and Assurance in Israel | Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Audit and Assurance Services in Israel | Nimrodi & Co. CPA" },
       {
         name: "description",
@@ -30,11 +35,7 @@ export const Route = createFileRoute("/en/audit")({
           "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm.",
       },
       { property: "og:title", content: "Audit and Assurance in Israel | Nimrodi & Co. CPA" },
-      {
-        property: "og:description",
-        content:
-          "Audit and assurance in Israel for companies and nonprofits, including statutory audits, IFRS reporting, internal controls and financial due diligence. Contact the firm.",
-      },
+      { property: "og:description", content: "Audit and assurance services in Israel for companies and nonprofits, including statutory audits, IFRS reporting and financial due diligence. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/audit` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

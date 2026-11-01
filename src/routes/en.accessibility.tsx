@@ -10,6 +10,11 @@ const DESCRIPTION =
 export const Route = createFileRoute("/en/accessibility")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Accessibility Statement — Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: DESCRIPTION },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Accessibility Statement — Nimrodi & Co. CPA" },
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: "Accessibility Statement — Nimrodi & Co. CPA" },

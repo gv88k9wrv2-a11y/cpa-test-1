@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, CheckCircle2, MessageCircle } from "lucide-react";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
-import { CPA_REGISTRY_URL } from "../lib/meta";
+import { CPA_REGISTRY_URL, buildBreadcrumbJsonLd } from "../lib/meta";
 
 const profileImage = profileAsset.url;
 import {
@@ -16,6 +16,9 @@ const BASE = "https://nimrodi.co.il";
 export const Route = createFileRoute("/en/about")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "About Nimrodi & Co." },
+      { name: "twitter:description", content: "About Nimrodi & Co. and Shlomo Nimrodi, CPA, licensed since 1997 by Israel’s Auditors Council, Ministry of Justice. Based in Herzliya Pituach. Meet our firm." },
+      { property: "og:locale", content: "en_US" },
       { title: "About Nimrodi & Co. | CPA Firm in Herzliya Pituach Since 2000" },
       {
         name: "description",
@@ -23,17 +26,14 @@ export const Route = createFileRoute("/en/about")({
           "About Nimrodi & Co. and Shlomo Nimrodi, CPA, licensed since 1997 by Israel’s Auditors Council, Ministry of Justice. Based in Herzliya Pituach. Meet our firm.",
       },
       { property: "og:title", content: "About Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "About Nimrodi & Co. and Shlomo Nimrodi, CPA, licensed since 1997 by Israel’s Auditors Council, Ministry of Justice. Based in Herzliya Pituach. Meet our firm.",
-      },
+      { property: "og:description", content: "About Nimrodi & Co. and Shlomo Nimrodi, CPA, licensed since 1997 by Israel’s Auditors Council, Ministry of Justice. Based in Herzliya Pituach. Meet our firm." },
       { property: "og:url", content: `${BASE}/en/about` },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "Home", "url": "https://nimrodi.co.il/en"}, {"name": "About the Firm", "url": "https://nimrodi.co.il/en/about"}])) }],
     links: [
       { rel: "canonical", href: `${BASE}/en/about` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/about` },

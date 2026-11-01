@@ -59,6 +59,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/tax-consulting")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Israeli Tax Advisory and Digital Asset Reporting | Nimrodi & Co." },
+      { name: "twitter:description", content: "Israeli tax advisory for companies and individuals, including tax-ruling requests, digital-asset reporting, assessments and objections. Contact the firm." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Israeli Tax Advisory and Crypto Reporting | Nimrodi & Co." },
       {
         name: "description",
@@ -69,11 +74,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
         property: "og:title",
         content: "Israeli Tax Advisory and Digital Asset Reporting | Nimrodi & Co.",
       },
-      {
-        property: "og:description",
-        content:
-          "Israeli tax advisory from a Herzliya Pituach CPA firm, including tax-ruling requests, digital-asset reporting and support during assessments and objections.",
-      },
+      { property: "og:description", content: "Israeli tax advisory for companies and individuals, including tax-ruling requests, digital-asset reporting, assessments and objections. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/tax-consulting` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

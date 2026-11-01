@@ -61,6 +61,9 @@ const FAQS = [
 export const Route = createFileRoute("/cpa-international")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "ייעוץ מס בין־לאומי ורילוקיישן בישראל | נמרודי ושות׳" },
+      { name: "twitter:description", content: "ייעוץ מס בין־לאומי בישראל: רילוקיישן, בחינת תושבות מס, עולים חדשים ותושבים חוזרים, אמנות מס ודיווח על נכסים והכנסות בחו״ל. פנו אלינו לבחינת המקרה שלכם." },
+      { property: "og:locale", content: "he_IL" },
       { title: "ייעוץ מס בין־לאומי, רילוקיישן ותושבות מס בישראל | נמרודי ושות׳" },
       {
         name: "description",
@@ -68,11 +71,7 @@ export const Route = createFileRoute("/cpa-international")({
           "ייעוץ מס בין־לאומי בישראל: רילוקיישן, בחינת תושבות מס, עולים חדשים ותושבים חוזרים, אמנות מס ודיווח על נכסים והכנסות בחו״ל. פנו אלינו לבחינת המקרה שלכם.",
       },
       { property: "og:title", content: "ייעוץ מס בין־לאומי ורילוקיישן בישראל | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "ליווי מיסוי בין־לאומי לרילוקיישן, לעולים חדשים ולתושבים חוזרים: בחינת תושבות, אמנות מס, דיווחים בישראל ותיאום עם יועצים בחו״ל. נשמח לשוחח על המקרה.",
-      },
+      { property: "og:description", content: "ייעוץ מס בין־לאומי בישראל: רילוקיישן, בחינת תושבות מס, עולים חדשים ותושבים חוזרים, אמנות מס ודיווח על נכסים והכנסות בחו״ל. פנו אלינו לבחינת המקרה שלכם." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-international" },

@@ -54,6 +54,11 @@ const FAQS = [
 export const Route = createFileRoute("/payroll")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "שירותי שכר ותלושים | נמרודי ושות׳" },
+      { name: "twitter:description", content: "שירותי שכר לחברות בישראל: הפקת תלושים, דיווחי מעסיק שוטפים, טופסי 106 ו־161 וליווי תוכניות אופציות לעובדים בהיקף מוסכם. פנו אלינו לבחינת מערך השכר שלכם." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "שירותי שכר ותלושים לחברות | 102, 106, אופציות | נמרודי ושות׳" },
       {
         name: "description",
@@ -61,11 +66,7 @@ export const Route = createFileRoute("/payroll")({
           "שירותי שכר לחברות בישראל: הפקת תלושים, דיווחי מעסיק שוטפים, טופסי 106 ו־161 וליווי תוכניות אופציות לעובדים בהיקף מוסכם. פנו אלינו לבחינת מערך השכר שלכם.",
       },
       { property: "og:title", content: "שירותי שכר ותלושים | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "מערך שכר לחברות ולסטארטאפים: תלושי שכר, דיווחי מעסיק, טופסי 106 ו־161 וליווי תוכניות אופציות לעובדים. דברו איתנו על היקף השירות.",
-      },
+      { property: "og:description", content: "שירותי שכר לחברות בישראל: הפקת תלושים, דיווחי מעסיק שוטפים, טופסי 106 ו־161 וליווי תוכניות אופציות לעובדים בהיקף מוסכם. פנו אלינו לבחינת מערך השכר שלכם." },
       { property: "og:url", content: "https://nimrodi.co.il/payroll" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

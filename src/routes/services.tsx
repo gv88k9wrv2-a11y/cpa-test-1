@@ -114,6 +114,11 @@ const GROUPS: ServiceGroup[] = [
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "שירותי משרד רואי חשבון נמרודי ושות׳" },
+      { name: "twitter:description", content: "שירותי חשבונאות, ביקורת, מס, הנהלת חשבונות, שכר ודיווח לחברות, סטארטאפים, עצמאים וחברות זרות, לרבות נכסים דיגיטליים. עיינו בשירותים ופנו אלינו לשיחת היכרות." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "שירותי ראיית חשבון, מס וניהול כספים | נמרודי ושות׳" },
       {
         name: "description",
@@ -121,11 +126,7 @@ export const Route = createFileRoute("/services")({
           "שירותי חשבונאות, ביקורת, מס, הנהלת חשבונות, שכר ודיווח לחברות, סטארטאפים, עצמאים וחברות זרות, לרבות נכסים דיגיטליים. עיינו בשירותים ופנו אלינו לשיחת היכרות.",
       },
       { property: "og:title", content: "שירותי משרד רואי חשבון נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "שירותי חשבונאות, שכר, ביקורת, מס ומידע ניהולי לחברות, סטארטאפים, עצמאים וחברות זרות, בהתאם לצורך ולהיקף ההתקשרות.",
-      },
+      { property: "og:description", content: "שירותי חשבונאות, ביקורת, מס, הנהלת חשבונות, שכר ודיווח לחברות, סטארטאפים, עצמאים וחברות זרות, לרבות נכסים דיגיטליים. עיינו בשירותים ופנו אלינו לשיחת היכרות." },
       { property: "og:url", content: "https://nimrodi.co.il/services" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

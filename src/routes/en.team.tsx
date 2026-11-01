@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { Link, createFileRoute } from "@tanstack/react-router";
 import heroImg from "../assets/team-photo.webp";
 import { Building2, Calculator, GraduationCap, UserCheck, Users } from "lucide-react";
@@ -8,6 +9,11 @@ const BASE = "https://nimrodi.co.il";
 export const Route = createFileRoute("/en/team")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Our Team — Nimrodi & Co." },
+      { name: "twitter:description", content: "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Nimrodi & Co. CPA Team | Herzliya Pituach, Israel" },
       {
         name: "description",
@@ -15,15 +21,12 @@ export const Route = createFileRoute("/en/team")({
           "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients.",
       },
       { property: "og:title", content: "Our Team — Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Meet the team at Nimrodi & Co. CPA in Herzliya Pituach, working with companies, startups, foreign businesses and individuals in Israel. Read more about us.",
-      },
+      { property: "og:description", content: "Meet Shlomo Nimrodi, CPA and the team at Nimrodi & Co. — a boutique CPA firm in Herzliya Pituach serving companies, startups and international clients." },
       { property: "og:url", content: `${BASE}/en/team` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "Home", "url": "https://nimrodi.co.il/en"}, {"name": "Team", "url": "https://nimrodi.co.il/en/team"}])) }],
     links: [
       { rel: "canonical", href: `${BASE}/en/team` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/team` },

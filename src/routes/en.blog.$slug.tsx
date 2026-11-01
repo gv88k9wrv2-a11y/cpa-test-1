@@ -44,13 +44,13 @@ export const Route = createFileRoute("/en/blog/$slug")({
     const url = `${ORIGIN}/en/blog/${params.slug}`;
     return {
       meta: [
+      { name: "twitter:title", content: post.title },
+      { name: "twitter:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
+      { property: "og:locale", content: "en_US" },
         { title: post.metaTitle?.includes("|") ? post.metaTitle : `${post.metaTitle ?? post.title} | Nimrodi & Co.` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
-        {
-          property: "og:description",
-          content: toMetaDescription(post.metaDescription ?? post.excerpt),
-        },
+        { property: "og:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },

@@ -141,6 +141,9 @@ const FAQ_JSONLD = {
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "שאלות ותשובות – נמרודי ושות׳" },
+      { name: "twitter:description", content: "שאלות ותשובות על שירותי רואה חשבון: ליווי חברות ועצמאים, מיסוי בין־לאומי, נכסים דיגיטליים, שכר, דוחות וגיוסי הון. קראו את התשובות ופנו אלינו בכל שאלה נוספת." },
+      { property: "og:locale", content: "he_IL" },
       { title: "שאלות ותשובות | נמרודי ושות׳ – רואי חשבון בהרצליה" },
       {
         name: "description",
@@ -148,11 +151,7 @@ export const Route = createFileRoute("/faq")({
           "שאלות ותשובות על שירותי רואה חשבון: ליווי חברות ועצמאים, מיסוי בין־לאומי, נכסים דיגיטליים, שכר, דוחות וגיוסי הון. קראו את התשובות ופנו אלינו בכל שאלה נוספת.",
       },
       { property: "og:title", content: "שאלות ותשובות – נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "מדריך שאלות ותשובות של נמרודי ושות׳ רואי חשבון: אופן העבודה, היקף השירות, מיסוי, דיווחים וליווי עצמאים וחברות. קראו לפני שמתחילים לעבוד עם רואה חשבון.",
-      },
+      { property: "og:description", content: "שאלות ותשובות על שירותי רואה חשבון: ליווי חברות ועצמאים, מיסוי בין־לאומי, נכסים דיגיטליים, שכר, דוחות וגיוסי הון. קראו את התשובות ופנו אלינו בכל שאלה נוספת." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/faq" },

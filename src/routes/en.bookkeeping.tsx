@@ -23,6 +23,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/bookkeeping")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT reporting and management reports. Contact the firm." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Bookkeeping for Companies in Israel | Nimrodi & Co. CPA" },
       {
         name: "description",
@@ -30,11 +35,7 @@ export const Route = createFileRoute("/en/bookkeeping")({
           "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT reporting and management reports. Contact the firm.",
       },
       { property: "og:title", content: "Bookkeeping Services in Israel | Nimrodi & Co. CPA" },
-      {
-        property: "og:description",
-        content:
-          "Cloud bookkeeping and periodic reporting for companies and startups in Israel, including VAT, withholding and management reports. Contact the firm.",
-      },
+      { property: "og:description", content: "Bookkeeping services in Israel for companies and startups, including transaction recording, periodic VAT reporting and management reports. Contact the firm." },
       { property: "og:url", content: `${BASE}/en/bookkeeping` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

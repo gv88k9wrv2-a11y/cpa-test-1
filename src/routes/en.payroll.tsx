@@ -23,6 +23,11 @@ const FAQS = [
 export const Route = createFileRoute("/en/payroll")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Payroll & ESOP Services — Nimrodi & Co." },
+      { name: "twitter:description", content: "Payroll services in Israel for companies and startups, including payslips, employer reporting, Section 102 information and annual forms. Contact the firm today." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Israeli Payroll Services | Section 102 ESOP | Nimrodi & Co." },
       {
         name: "description",
@@ -30,11 +35,7 @@ export const Route = createFileRoute("/en/payroll")({
           "Payroll services in Israel for companies and startups, including payslips, employer reporting, Section 102 information and annual forms. Contact the firm today.",
       },
       { property: "og:title", content: "Payroll & ESOP Services — Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Israeli payroll administration and equity-plan reporting for companies and startups, including payslips, employer filings and annual forms. Contact the firm.",
-      },
+      { property: "og:description", content: "Payroll services in Israel for companies and startups, including payslips, employer reporting, Section 102 information and annual forms. Contact the firm today." },
       { property: "og:url", content: `${BASE}/en/payroll` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

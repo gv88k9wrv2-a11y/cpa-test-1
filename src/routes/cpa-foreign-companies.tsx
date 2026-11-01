@@ -50,6 +50,11 @@ const FAQS = [
 export const Route = createFileRoute("/cpa-foreign-companies")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "ליווי חברות זרות בישראל | נמרודי ושות׳ רואי חשבון" },
+      { name: "twitter:description", content: "ליווי חברות זרות בישראל: בחינת מבנה של חברה בת או סניף, ניהול שכר מקומי, מחירי העברה ודיווחים שוטפים לרשויות המס בהיקף מוסכם. פנו אלינו לתיאום שיחת היכרות." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "ליווי חברות זרות בישראל | חברה בת, סניף ודיווחי מס" },
       {
         name: "description",
@@ -57,11 +62,7 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
           "ליווי חברות זרות בישראל: בחינת מבנה של חברה בת או סניף, ניהול שכר מקומי, מחירי העברה ודיווחים שוטפים לרשויות המס בהיקף מוסכם. פנו אלינו לתיאום שיחת היכרות.",
       },
       { property: "og:title", content: "ליווי חברות זרות בישראל | נמרודי ושות׳ רואי חשבון" },
-      {
-        property: "og:description",
-        content:
-          "שירותי חשבונאות ומס לחברות זרות הפועלות בישראל, לרבות בחינת מבנה הפעילות, שכר, מחירי העברה ודיווחים שוטפים. קראו על היקף השירות האפשרי.",
-      },
+      { property: "og:description", content: "ליווי חברות זרות בישראל: בחינת מבנה של חברה בת או סניף, ניהול שכר מקומי, מחירי העברה ודיווחים שוטפים לרשויות המס בהיקף מוסכם. פנו אלינו לתיאום שיחת היכרות." },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-foreign-companies" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

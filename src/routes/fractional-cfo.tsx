@@ -1,4 +1,4 @@
-import { buildBreadcrumbJsonLd } from "../lib/meta";
+import { buildBreadcrumbJsonLd, CFO_PERSON_JSONLD } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LineChart } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
@@ -46,6 +46,11 @@ const FAQS = [
 export const Route = createFileRoute("/fractional-cfo")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Fractional CFO – נמרודי ושות׳" },
+      { name: "twitter:description", content: "שירותי Fractional CFO לחברות ולסטארטאפים: תקציב, ניהול תזרים, מודלים פיננסיים, דיווח להנהלה ולדירקטוריון והיערכות לעסקאות. תאמו שיחה על היקף הליווי הנדרש." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Fractional CFO | ניהול כספים אסטרטגי | נמרודי ושות׳" },
       {
         name: "description",
@@ -53,11 +58,7 @@ export const Route = createFileRoute("/fractional-cfo")({
           "שירותי Fractional CFO לחברות ולסטארטאפים: תקציב, ניהול תזרים, מודלים פיננסיים, דיווח להנהלה ולדירקטוריון והיערכות לעסקאות. תאמו שיחה על היקף הליווי הנדרש.",
       },
       { property: "og:title", content: "Fractional CFO – נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "שירותי Fractional CFO לסטארטאפים ולחברות זרות בישראל: תקציב, תזרים מזומנים, מודלים פיננסיים, דיווח לדירקטוריון והיערכות לגיוס הון. תאמו עמנו שיחת היכרות.",
-      },
+      { property: "og:description", content: "שירותי Fractional CFO לחברות ולסטארטאפים: תקציב, ניהול תזרים, מודלים פיננסיים, דיווח להנהלה ולדירקטוריון והיערכות לעסקאות. תאמו שיחה על היקף הליווי הנדרש." },
       { property: "og:url", content: "https://nimrodi.co.il/fractional-cfo" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
@@ -70,6 +71,7 @@ export const Route = createFileRoute("/fractional-cfo")({
       { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/fractional-cfo" },
     ],
     scripts: [
+      { type: "application/ld+json", children: JSON.stringify(CFO_PERSON_JSONLD) },
       {
         type: "application/ld+json",
         children: JSON.stringify(
@@ -103,6 +105,12 @@ export const Route = createFileRoute("/fractional-cfo")({
         "היערכות פיננסית ל-M&A, אקזיט או סבב גיוס נוסף",
       ]}
       sections={[
+        {
+          id: "service-leadership",
+          title: "הובלת השירות – רו״ח שלמה נמרודי",
+          body: <><p className="font-semibold text-primary">שותף מנהל ומוביל תחום ניהול כספים ו־Fractional CFO</p><p className="mt-4">שירותי ניהול הכספים במיקור חוץ (Fractional CFO) במשרד נמרודי ושות׳ מובלים ישירות על ידי רו״ח שלמה נמרודי. עם מעל 25 שנות ניסיון בליווי חשבונאי, עסקי ופיננסי של חברות טכנולוגיה, סטארטאפים בפעילות בין־לאומית ועסקים בצמיחה, השירות מעניק לחברות שותף פיננסי אסטרטגי ומעורבות אישית מעשית (Hands-on).</p></>,
+          bullets: ["בניית מודלים פיננסיים, תקציב שנתי ובקרת תזרים מזומנים (Cash Runway & Burn Rate).", "הכנת נתונים פיננסיים ומצגות לסבבי גיוס הון (Seed, Round A ומעלה).", "ליווי ישיבות הנהלה ודירקטוריון והפקת דוחות ניהוליים תקופתיים.", "ניהול חדרי מידע (Data Rooms) והובלת בדיקות נאותות (Due Diligence) בעסקאות M&A.", "תיאום מול רואי חשבון מבקרים, מוסדות בנקאיים ורשויות המס בישראל ובחו״ל."],
+        },
         {
           title: "ניהול כספים ואסטרטגיה פיננסית לחברות",
           body: (

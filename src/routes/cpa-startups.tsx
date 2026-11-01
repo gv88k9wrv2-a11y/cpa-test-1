@@ -56,6 +56,9 @@ const FAQS = [
 export const Route = createFileRoute("/cpa-startups")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "רואה חשבון לסטארטאפים | נמרודי ושות׳" },
+      { name: "twitter:description", content: "רואה חשבון לסטארטאפים: הנהלת חשבונות, שכר, תוכניות אופציות לעובדים, דוחות כספיים, מידע לגיוסי הון וניהול פיננסי שוטף בהיקף מוסכם. תאמו איתנו שיחת היכרות היום." },
+      { property: "og:locale", content: "he_IL" },
       { title: "רואה חשבון לסטארטאפים ולגיוסי הון | נמרודי ושות׳" },
       {
         name: "description",
@@ -63,11 +66,7 @@ export const Route = createFileRoute("/cpa-startups")({
           "רואה חשבון לסטארטאפים: הנהלת חשבונות, שכר, תוכניות אופציות לעובדים, דוחות כספיים, מידע לגיוסי הון וניהול פיננסי שוטף בהיקף מוסכם. תאמו איתנו שיחת היכרות היום.",
       },
       { property: "og:title", content: "רואה חשבון לסטארטאפים | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "ליווי חשבונאי, מיסויי ופיננסי לסטארטאפים בישראל: הקמה, ניהול שוטף, אופציות לעובדים, מידע לגיוסי הון ודיווח למשקיעים. דברו איתנו על שלב החברה.",
-      },
+      { property: "og:description", content: "רואה חשבון לסטארטאפים: הנהלת חשבונות, שכר, תוכניות אופציות לעובדים, דוחות כספיים, מידע לגיוסי הון וניהול פיננסי שוטף בהיקף מוסכם. תאמו איתנו שיחת היכרות היום." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-startups" },

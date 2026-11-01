@@ -1,3 +1,4 @@
+import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
@@ -14,6 +15,11 @@ const BASE = "https://nimrodi.co.il";
 export const Route = createFileRoute("/en/contact")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Contact Nimrodi & Co." },
+      { name: "twitter:description", content: "Contact Nimrodi & Co. in Herzliya Pituach for an introductory discussion about accounting, tax, payroll, audit and ongoing financial services in Israel today." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Contact Nimrodi & Co. | CPA Firm in Herzliya Pituach" },
       {
         name: "description",
@@ -21,15 +27,12 @@ export const Route = createFileRoute("/en/contact")({
           "Contact Nimrodi & Co. in Herzliya Pituach for an introductory discussion about accounting, tax, payroll, audit and ongoing financial services in Israel today.",
       },
       { property: "og:title", content: "Contact Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Contact Nimrodi & Co. CPA in Herzliya Pituach to discuss accounting, tax, payroll, audit or reporting needs for a company or business in Israel.",
-      },
+      { property: "og:description", content: "Contact Nimrodi & Co. in Herzliya Pituach for an introductory discussion about accounting, tax, payroll, audit and ongoing financial services in Israel today." },
       { property: "og:url", content: `${BASE}/en/contact` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(buildBreadcrumbJsonLd([{"name": "Home", "url": "https://nimrodi.co.il/en"}, {"name": "Contact", "url": "https://nimrodi.co.il/en/contact"}])) }],
     links: [
       { rel: "canonical", href: `${BASE}/en/contact` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/contact` },

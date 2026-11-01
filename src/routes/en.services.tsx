@@ -106,6 +106,11 @@ const GROUPS = [
 export const Route = createFileRoute("/en/services")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Accounting and Tax Services in Israel | Nimrodi & Co." },
+      { name: "twitter:description", content: "Accounting, tax and financial services in Israel for companies and startups: audit, payroll, bookkeeping, tax advisory and CFO support. Explore our services." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "CPA Services in Israel | Nimrodi & Co., Herzliya Pituach" },
       {
         name: "description",
@@ -113,11 +118,7 @@ export const Route = createFileRoute("/en/services")({
           "Accounting, tax and financial services in Israel for companies and startups: audit, payroll, bookkeeping, tax advisory and CFO support. Explore our services.",
       },
       { property: "og:title", content: "Accounting and Tax Services in Israel | Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Accounting, tax and financial services for companies and startups in Israel: audit, bookkeeping, payroll, tax advisory and CFO support. Explore our services.",
-      },
+      { property: "og:description", content: "Accounting, tax and financial services in Israel for companies and startups: audit, payroll, bookkeeping, tax advisory and CFO support. Explore our services." },
       { property: "og:url", content: `${BASE}/en/services` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },

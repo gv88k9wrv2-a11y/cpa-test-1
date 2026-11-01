@@ -5,6 +5,11 @@ import { FirmContactBlock } from "../components/firm-contact-block";
 export const Route = createFileRoute("/en/privacy-policy")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
+      { name: "twitter:description", content: "Privacy policy and terms of use for Nimrodi & Co. CPA in Herzliya: confidentiality practices, applicable privacy requirements and client data security." },
+      { property: "og:locale", content: "en_US" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
       {
         name: "description",
@@ -13,11 +18,7 @@ export const Route = createFileRoute("/en/privacy-policy")({
       },
       { name: "robots", content: "index, follow" },
       { property: "og:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
-      {
-        property: "og:description",
-        content:
-          "How Nimrodi & Co. CPA collects, uses, stores and protects personal information from clients and website visitors under Israeli law. Read the full policy.",
-      },
+      { property: "og:description", content: "Privacy policy and terms of use for Nimrodi & Co. CPA in Herzliya: confidentiality practices, applicable privacy requirements and client data security." },
       { property: "og:url", content: "https://nimrodi.co.il/en/privacy-policy" },
     ],
     links: [

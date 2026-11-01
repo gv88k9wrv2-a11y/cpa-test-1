@@ -58,6 +58,11 @@ const FAQS = [
 export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "ביקורת דוחות כספיים לחברות | נמרודי ושות׳ רואי חשבון" },
+      { name: "twitter:description", content: "ביקורת דוחות כספיים לחברות, עמותות ושותפויות בהתאם לתקינה החלה, לרבות סקירות תקופתיות, בחינת בקרות פנימיות ומכתבים להנהלה. פנו אלינו לבחינת היקף העבודה." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "ביקורת דוחות כספיים לחברות | נמרודי ושות׳ רואי חשבון" },
       {
         name: "description",
@@ -65,11 +70,7 @@ export const Route = createFileRoute("/audit")({
           "ביקורת דוחות כספיים לחברות, עמותות ושותפויות בהתאם לתקינה החלה, לרבות סקירות תקופתיות, בחינת בקרות פנימיות ומכתבים להנהלה. פנו אלינו לבחינת היקף העבודה.",
       },
       { property: "og:title", content: "ביקורת דוחות כספיים לחברות | נמרודי ושות׳ רואי חשבון" },
-      {
-        property: "og:description",
-        content:
-          "שירותי ביקורת וסקירה לדוחות כספיים של חברות, עמותות ושותפויות בהתאם לתקינה החלה, לצד מכתבים להנהלה. נשמח לשוחח על היקף הביקורת הנדרש.",
-      },
+      { property: "og:description", content: "ביקורת דוחות כספיים לחברות, עמותות ושותפויות בהתאם לתקינה החלה, לרבות סקירות תקופתיות, בחינת בקרות פנימיות ומכתבים להנהלה. פנו אלינו לבחינת היקף העבודה." },
       { property: "og:url", content: "https://nimrodi.co.il/audit" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

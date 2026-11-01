@@ -54,6 +54,11 @@ const FAQS = [
 export const Route = createFileRoute("/bookkeeping")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "הנהלת חשבונות לחברות ולעצמאים | נמרודי ושות׳" },
+      { name: "twitter:description", content: "הנהלת חשבונות לחברות ולעצמאים בישראל: קליטת מסמכים, התאמות בנקים וספקים, דיווחי מע״מ ומקדמות והפקת מידע ניהולי תקופתי. דברו איתנו על ההיקף המתאים לכם." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "הנהלת חשבונות לחברות ולעצמאים | נמרודי ושות׳" },
       {
         name: "description",
@@ -61,11 +66,7 @@ export const Route = createFileRoute("/bookkeeping")({
           "הנהלת חשבונות לחברות ולעצמאים בישראל: קליטת מסמכים, התאמות בנקים וספקים, דיווחי מע״מ ומקדמות והפקת מידע ניהולי תקופתי. דברו איתנו על ההיקף המתאים לכם.",
       },
       { property: "og:title", content: "הנהלת חשבונות לחברות ולעצמאים | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "שירותי הנהלת חשבונות שוטפת לחברות ולעצמאים במערכות דיגיטליות, כולל התאמות, דיווחים תקופתיים ודוחות ניהוליים. נשמח לשוחח על צורכי העסק.",
-      },
+      { property: "og:description", content: "הנהלת חשבונות לחברות ולעצמאים בישראל: קליטת מסמכים, התאמות בנקים וספקים, דיווחי מע״מ ומקדמות והפקת מידע ניהולי תקופתי. דברו איתנו על ההיקף המתאים לכם." },
       { property: "og:url", content: "https://nimrodi.co.il/bookkeeping" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

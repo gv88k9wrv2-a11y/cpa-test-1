@@ -45,6 +45,9 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-startups")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "CPA for Startups — Nimrodi & Co." },
+      { name: "twitter:description", content: "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss." },
+      { property: "og:locale", content: "en_US" },
       { title: "CPA for Startups Israel | Section 102 & Delaware Flip" },
       {
         name: "description",
@@ -52,11 +55,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
           "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss.",
       },
       { property: "og:title", content: "CPA for Startups — Nimrodi & Co." },
-      {
-        property: "og:description",
-        content:
-          "Accounting, tax and CFO support for Israeli startups, including reporting, financial models and investor information according to the agreed scope. Contact the firm.",
-      },
+      { property: "og:description", content: "CPA services for Israeli startups, including bookkeeping, payroll, employee-equity matters, financial reporting and audit support. Contact the firm to discuss." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-startups` },

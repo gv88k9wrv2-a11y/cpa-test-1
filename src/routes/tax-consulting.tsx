@@ -96,6 +96,11 @@ const FAQS = [
 export const Route = createFileRoute("/tax-consulting")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "ייעוץ מס לחברות ויחידים | נמרודי ושות׳" },
+      { name: "twitter:description", content: "ייעוץ מס לחברות, לסטארטאפים וליחידים בישראל: תכנון מס, חוות דעת, החלטות מיסוי, נכסים דיגיטליים, שכר דירה והשגות מול רשות המסים. פנו אלינו לשיחת היכרות." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "ייעוץ מס לחברות, יחידים וסטארטאפים | נמרודי ושות׳" },
       {
         name: "description",
@@ -103,11 +108,7 @@ export const Route = createFileRoute("/tax-consulting")({
           "ייעוץ מס לחברות, לסטארטאפים וליחידים בישראל: תכנון מס, חוות דעת, החלטות מיסוי, נכסים דיגיטליים, שכר דירה והשגות מול רשות המסים. פנו אלינו לשיחת היכרות.",
       },
       { property: "og:title", content: "ייעוץ מס לחברות ויחידים | נמרודי ושות׳" },
-      {
-        property: "og:description",
-        content:
-          "ייעוץ מס לחברות, ליזמים ולמשקיעים בישראל: תכנון מס, החלטות מיסוי, מיסוי קריפטו ונכסים דיגיטליים, שכר דירה, שומות והשגות. פנו אלינו לשיחת היכרות ראשונית.",
-      },
+      { property: "og:description", content: "ייעוץ מס לחברות, לסטארטאפים וליחידים בישראל: תכנון מס, חוות דעת, החלטות מיסוי, נכסים דיגיטליים, שכר דירה והשגות מול רשות המסים. פנו אלינו לשיחת היכרות." },
       { property: "og:url", content: "https://nimrodi.co.il/tax-consulting" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

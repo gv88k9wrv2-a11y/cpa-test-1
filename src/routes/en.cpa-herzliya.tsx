@@ -53,6 +53,9 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-herzliya")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "CPA in Herzliya | Nimrodi & Co. CPAs – Herzliya Pituach" },
+      { name: "twitter:description", content: "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211." },
+      { property: "og:locale", content: "en_US" },
       { title: "CPA in Herzliya | Nimrodi & Co. CPAs – Herzliya Pituach" },
       {
         name: "description",
@@ -60,11 +63,7 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
           "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211.",
       },
       { property: "og:title", content: "CPA in Herzliya | Nimrodi & Co. CPAs – Herzliya Pituach" },
-      {
-        property: "og:description",
-        content:
-          "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211.",
-      },
+      { property: "og:description", content: "Looking for a CPA in Herzliya? Nimrodi & Co. CPAs, 16 Galgalei HaPlada St., Herzliya Pituach. Tax, audit, payroll and accounting. Call +972 9-958-2211." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-herzliya` },

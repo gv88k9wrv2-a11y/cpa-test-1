@@ -7,6 +7,11 @@ const UPDATED_HE = "אוגוסט 2026";
 export const Route = createFileRoute("/accessibility")({
   head: () => ({
     meta: [
+      { name: "twitter:title", content: "הצהרת נגישות | נמרודי ושות׳ רואי חשבון" },
+      { name: "twitter:description", content: "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: נגישות האתר, הסדרי ההגעה והנגישות הפיזית במשרד בהרצליה ודרכי פנייה לבקשת התאמה. קראו ופנו אלינו לבירור ראשוני." },
+      { property: "og:locale", content: "he_IL" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "הצהרת נגישות | נמרודי ושות׳ רואי חשבון" },
       {
         name: "description",
@@ -14,11 +19,7 @@ export const Route = createFileRoute("/accessibility")({
           "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: נגישות האתר, הסדרי ההגעה והנגישות הפיזית במשרד בהרצליה ודרכי פנייה לבקשת התאמה. קראו ופנו אלינו לבירור ראשוני.",
       },
       { property: "og:title", content: "הצהרת נגישות | נמרודי ושות׳ רואי חשבון" },
-      {
-        property: "og:description",
-        content:
-          "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: עקרונות הנגישות באתר, מידע על הגעה ועל נגישות פיזית במשרד בהרצליה פיתוח ודרכי פנייה לתיאום התאמה. נשמח לסייע.",
-      },
+      { property: "og:description", content: "הצהרת הנגישות של נמרודי ושות׳ רואי חשבון: נגישות האתר, הסדרי ההגעה והנגישות הפיזית במשרד בהרצליה ודרכי פנייה לבקשת התאמה. קראו ופנו אלינו לבירור ראשוני." },
       { property: "og:url", content: "https://nimrodi.co.il/accessibility" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },

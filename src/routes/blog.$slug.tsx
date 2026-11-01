@@ -42,13 +42,13 @@ export const Route = createFileRoute("/blog/$slug")({
     const { post } = loaderData;
     return {
       meta: [
+      { name: "twitter:title", content: post.title },
+      { name: "twitter:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
+      { property: "og:locale", content: "he_IL" },
         { title: post.metaTitle?.includes("|") ? post.metaTitle : `${post.metaTitle ?? post.title} | נמרודי ושות׳` },
         { name: "description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:title", content: post.title },
-        {
-          property: "og:description",
-          content: toMetaDescription(post.metaDescription ?? post.excerpt),
-        },
+        { property: "og:description", content: toMetaDescription(post.metaDescription ?? post.excerpt) },
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
         { property: "og:url", content: `${ORIGIN}/blog/${params.slug}` },
