@@ -99,6 +99,7 @@ export const Route = createFileRoute("/cpa-startups")({
   }),
   component: () => (
     <ServiceLanding
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="משרד סטארטאפ בהרצליה פיתוח"
       icon={Rocket}

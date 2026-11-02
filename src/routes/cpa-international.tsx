@@ -108,6 +108,7 @@ export const Route = createFileRoute("/cpa-international")({
   }),
   component: () => (
     <ServiceLanding
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="ייעוץ מס בין־לאומי, רילוקיישן ודיווח על נכסים בחו״ל"
       icon={Plane}

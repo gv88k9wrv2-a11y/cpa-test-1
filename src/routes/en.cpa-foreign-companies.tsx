@@ -80,6 +80,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
   }),
   component: () => (
     <ServiceLandingEn
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="Foreign company accounting and tax services in Israel"
       icon={Globe2}

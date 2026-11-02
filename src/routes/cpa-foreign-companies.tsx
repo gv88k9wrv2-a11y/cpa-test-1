@@ -101,6 +101,7 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
   }),
   component: () => (
     <ServiceLanding
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="מגדל משרדים עם דגלים של חברות בין־לאומיות"
       icon={Globe2}

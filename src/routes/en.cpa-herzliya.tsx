@@ -91,6 +91,7 @@ export const Route = createFileRoute("/en/cpa-herzliya")({
   }),
   component: () => (
     <ServiceLandingEn
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="CPA office building in Herzliya Pituach"
       icon={MapPin}
