@@ -1,3 +1,4 @@
+import { SectionQuickNavigation, sectionAnchorId } from "./section-quick-navigation";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -24,6 +25,7 @@ export type ServiceLandingEnProps = {
   intro: string;
   highlights: string[];
   topicNavigation?: ReactNode;
+  sectionNavigation?: boolean;
   sections: { id?: string; title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
@@ -40,6 +42,7 @@ export function ServiceLandingEn({
   intro,
   highlights,
   topicNavigation,
+  sectionNavigation,
   sections,
   faqs,
   ctaHeadline = "Ready to review your accounting and tax needs? Contact us for an introductory discussion about the proposed scope of service.",
@@ -80,6 +83,11 @@ export function ServiceLandingEn({
             <p className="mt-5 text-lg text-muted-foreground">{intro}</p>
 
             {topicNavigation ? <div className="mt-6">{topicNavigation}</div> : null}
+            {sectionNavigation && !topicNavigation ? (
+              <div className="mt-6">
+                <SectionQuickNavigation lang="en" sections={sections} />
+              </div>
+            ) : null}
 
             <div className="mt-5">
               <GoogleReviewsBadge lang="en" />
@@ -135,8 +143,8 @@ export function ServiceLandingEn({
         <section className="py-16">
           <div className="mx-auto max-w-4xl space-y-12 px-4 sm:px-6">
             <PageSummary pathname={pathname} lang="en" />
-            {sections.map((s) => (
-              <article key={s.title} id={s.id} className="scroll-mt-24">
+            {sections.map((s, i) => (
+              <article key={s.title} id={sectionAnchorId(s, i)} className="scroll-mt-24">
                 <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
                   {s.title}
                 </h2>

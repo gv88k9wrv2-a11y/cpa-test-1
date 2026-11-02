@@ -83,6 +83,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
   }),
   component: () => (
     <ServiceLandingEn
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="Modern startup office in Herzliya Pituach"
       icon={Rocket}

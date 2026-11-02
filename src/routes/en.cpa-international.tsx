@@ -71,6 +71,7 @@ export const Route = createFileRoute("/en/cpa-international")({
   }),
   component: () => (
     <ServiceLandingEn
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="World map illustrating international tax connections"
       icon={Plane}

@@ -97,6 +97,7 @@ export const Route = createFileRoute("/cpa-herzliya")({
   }),
   component: () => (
     <ServiceLanding
+      sectionNavigation
       heroImage={heroImg}
       heroImageAlt="משרד רואי חשבון בהרצליה פיתוח"
       icon={MapPin}
