@@ -201,7 +201,8 @@ export function SiteHeader() {
       >
         דלג לתוכן העיקרי
       </a>
-      <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
+      <div className="h-[71px]" aria-hidden="true" />
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
         <div className="mx-auto flex h-[70px] max-w-7xl items-center justify-between gap-3 px-4 sm:px-6">
           {/* Logo */}
           <Link to="/" className="flex shrink-0 items-center gap-2 whitespace-nowrap leading-tight">
@@ -586,7 +587,7 @@ function MobileMenu({ enHref }: { enHref: string }) {
       <div
         id="mobile-menu-he"
         hidden={!open}
-        className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-border bg-background shadow-xl"
+        className="fixed inset-x-0 top-[70px] z-50 max-h-[calc(100dvh-71px)] overflow-y-auto border-t border-border bg-background shadow-xl"
         onClick={(e) => {
           if ((e.target as HTMLElement).closest("a")) closeMenu();
         }}
