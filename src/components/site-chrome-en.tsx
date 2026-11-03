@@ -200,7 +200,8 @@ export function SiteHeaderEn() {
       >
         Skip to main content
       </a>
-      <header className="sticky top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
+      <div className="h-[71px]" aria-hidden="true" />
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-gold/40 bg-background/95 backdrop-blur-md">
         <div className="mx-auto flex h-[70px] max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
           <Link to="/en" className="flex shrink-0 items-center gap-2 leading-tight">
             <img src="/apple-touch-icon.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-md" />
@@ -580,7 +581,7 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
       <div
         id="mobile-menu-en"
         hidden={!open}
-        className="fixed inset-x-0 top-16 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-border bg-background shadow-xl"
+        className="fixed inset-x-0 top-[70px] z-50 max-h-[calc(100dvh-71px)] overflow-y-auto border-t border-border bg-background shadow-xl"
         onClick={(e) => {
           if ((e.target as HTMLElement).closest("a")) closeMenu();
         }}

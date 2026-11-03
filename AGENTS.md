@@ -13,6 +13,8 @@
 
 ## Project rules
 
+- Both language headers use viewport-fixed positioning with an equal-height flow spacer; mobile panels start below the header so navigation remains accessible without covering page content.
+
 - Content leaf routes own localized OG/Twitter titles and descriptions; use the leaf description for all social descriptions and keep root metadata limited to sitewide defaults to prevent cross-language inheritance.
 - ServiceLanding and ServiceLandingEn accept optional topic navigation above the service details; section IDs remain language-independent so menu fragments and quick navigation target the same subjects.
 - CFO service Person schemas extend the centrally licensed founder using PERSON_ID and ORG_ID, preserving the same entity identity and credentials across pages.
