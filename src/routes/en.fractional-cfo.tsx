@@ -44,19 +44,19 @@ const FAQS = [
 export const Route = createFileRoute("/en/fractional-cfo")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Fractional CFO — Nimrodi & Co." },
-      { name: "twitter:description", content: "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today." },
+      { name: "twitter:title", content: "Fractional CFO & Outsourced Financial Management | Shlomo Nimrodi CPA" },
+      { name: "twitter:description", content: "Experienced fractional CFO and outsourced financial management in Israel: cash-flow forecasting, budgeting, investor reporting, and M&A due diligence." },
       { property: "og:locale", content: "en_US" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Fractional CFO Services in Israel | Nimrodi & Co." },
+      { title: "Fractional CFO & Outsourced Financial Management | Shlomo Nimrodi CPA" },
       {
         name: "description",
         content:
-          "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today.",
+          "Experienced fractional CFO and outsourced financial management in Israel: cash-flow forecasting, budgeting, investor reporting, and M&A due diligence.",
       },
-      { property: "og:title", content: "Fractional CFO — Nimrodi & Co." },
-      { property: "og:description", content: "Fractional CFO services in Israel for budgeting, cash-flow planning, financial models, management reporting and board packages. Contact Nimrodi & Co. today." },
+      { property: "og:title", content: "Fractional CFO & Outsourced Financial Management | Shlomo Nimrodi CPA" },
+      { property: "og:description", content: "Experienced fractional CFO and outsourced financial management in Israel: cash-flow forecasting, budgeting, investor reporting, and M&A due diligence." },
       { property: "og:url", content: `${BASE}/en/fractional-cfo` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
