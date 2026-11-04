@@ -10,7 +10,7 @@ type Lang = "he" | "en";
 export type GatewaySection = {
   id: string;
   title: string;
-  body: string;
+  body: React.ReactNode;
   /** Optional internal link rendered below the section body. */
   link?: { label: string; to: string };
 };
@@ -101,7 +101,7 @@ export function GatewayPage({
                   <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
                     {s.title}
                   </h2>
-                  <p className="mt-4 leading-relaxed text-muted-foreground">{s.body}</p>
+                  <div className="mt-4 leading-relaxed text-muted-foreground">{s.body}</div>
                   {s.link ? (
                     <p className="mt-4 font-semibold">
                       <PathLink

@@ -1,5 +1,5 @@
 import { buildBreadcrumbJsonLd } from "../lib/meta";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { COMPANIES_GROUPS_HE } from "../data/nav-content";
 
@@ -38,6 +38,18 @@ export const Route = createFileRoute("/companies")({
       instruction="בחרו את סוג החברה או את השירות המקצועי המתאים."
       groups={COMPANIES_GROUPS_HE}
       sections={[
+        {
+          id: "tech-growth",
+          title: "חברות טכנולוגיה ומיזמים בשלבי צמיחה",
+          body: (
+            <>
+              חברות טכנולוגיה ומיזמים בשלבי צמיחה נדרשים למענה מותאם: ראו את שירותי{" "}
+              <Link to="/cpa-startups" className="font-semibold text-primary underline decoration-gold/60 underline-offset-4">רואה חשבון לסטארטאפים</Link>{" "}
+              הכוללים תוכניות אופציות סעיף 102 ודיווחים רב־מטבעיים, וכן שירותי{" "}
+              <Link to="/fractional-cfo" className="font-semibold text-primary underline decoration-gold/60 underline-offset-4">CFO במיקור חוץ</Link> לניהול תקציב ותזרים מול משקיעים.
+            </>
+          ),
+        },
         {
           id: "cpa-herzliya",
           title: "משרד רואי חשבון בהרצליה פיתוח",

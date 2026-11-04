@@ -94,6 +94,10 @@ export const PERSON_JSONLD = {
     "Israel Invoice model",
     "Double tax treaties",
     "Form 161 and executive severance",
+    "Fractional CFO Services / Outsourced CFO",
+    "Section 102 Stock Options",
+    "Foreign Tax Credit & Double Taxation Treaties",
+    "Israeli Branch Registration for Foreign Companies",
   ],
 };
 

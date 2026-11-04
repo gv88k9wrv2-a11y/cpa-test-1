@@ -145,6 +145,17 @@ export const Route = createFileRoute("/cpa-international")({
                   המדריך המקיף לניתוק תושבות מס ומיסוי רילוקיישן מישראל
                 </Link>
               </p>
+              <p className="mt-4">
+                מתכננים מעבר לחו״ל או חזרה לישראל? קראו את המדריך המקיף בנושא{" "}
+                <Link
+                  to="/blog/$slug"
+                  params={{ slug: "relocation-tax-residency-israel" }}
+                  className="font-semibold text-primary underline decoration-gold/60 underline-offset-4"
+                >
+                  ניתוק תושבות לצרכי מס ורילוקיישן
+                </Link>
+                , הכולל ניתוח מבחן מרכז החיים, מס יציאה ודוגמאות מעשיות.
+              </p>
             </>
           ),
           bullets: [

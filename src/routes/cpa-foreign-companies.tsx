@@ -121,7 +121,24 @@ export const Route = createFileRoute("/cpa-foreign-companies")({
       sections={[
         {
           title: "בחירת המבנה המתאים",
-          body: "בחירת מבנה פעילות לחברה זרה בישראל היא החלטה מרכזית. נבחן חברה בת, סניף או EOR לפי היקף הפעילות, מדינת האם, אמנות המס והתוכניות העסקיות.",
+          body: (
+            <>
+              <p>בחירת מבנה פעילות לחברה זרה בישראל היא החלטה מרכזית. נבחן חברה בת, סניף או EOR לפי היקף הפעילות, מדינת האם, אמנות המס והתוכניות העסקיות.</p>
+              <div className="mt-4 overflow-x-auto">
+                <table className="w-full min-w-[560px] border border-border text-sm">
+                  <caption className="mb-2 text-start font-semibold text-foreground">סניף רשום (Branch) מול חברה בת ישראלית (Subsidiary)</caption>
+                  <thead className="bg-muted"><tr><th className="p-2 text-start">נושא</th><th className="p-2 text-start">סניף רשום (Branch)</th><th className="p-2 text-start">חברה בת (Subsidiary)</th></tr></thead>
+                  <tbody>
+                  <tr className="border-t border-border"><th className="p-2 text-start font-semibold">מעמד משפטי</th><td className="p-2">זרוע של החברה הזרה, ללא אישיות משפטית נפרדת; נרשמת כחברת חוץ ברשם החברות</td><td className="p-2">חברה ישראלית בע״מ עם אישיות משפטית נפרדת</td></tr>
+                  <tr className="border-t border-border"><th className="p-2 text-start font-semibold">אחריות תאגידית</th><td className="p-2">החברה האם אחראית ישירות להתחייבויות הסניף</td><td className="p-2">האחריות מוגבלת, ככלל, לנכסי החברה הבת</td></tr>
+                  <tr className="border-t border-border"><th className="p-2 text-start font-semibold">מיסוי רווחים</th><td className="p-2">רווחי הסניף המיוחסים לפעילות בישראל חייבים במס חברות; אין מס דיבידנד על העברת רווחים לחברה האם</td><td className="p-2">מס חברות ברמת החברה הבת; חלוקת דיבידנד לחברה האם עשויה לחייב ניכוי במקור, בכפוף לאמנת המס</td></tr>
+                  <tr className="border-t border-border"><th className="p-2 text-start font-semibold">חובות דיווח</th><td className="p-2">דוח שנתי לרשות המסים על הפעילות בישראל ודיווחים לרשם החברות</td><td className="p-2">דוחות כספיים מבוקרים, דוח שנתי לרשות המסים ודיווחים לרשם החברות</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-2 text-xs">ההשוואה כללית; המיסוי בפועל תלוי בדין החל, באמנות המס ובנסיבות הפעילות.</p>
+            </>
+          ),
         },
         {
           title: "הקמת חברה זרה או סניף בישראל",
