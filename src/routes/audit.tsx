@@ -59,7 +59,7 @@ export const Route = createFileRoute("/audit")({
   head: () => ({
     meta: [
       { name: "twitter:title", content: "ביקורת דוחות כספיים לחברות ועסקים | שלמה נמרודי משרד רואי חשבון" },
-      { name: "twitter:description", content: "ביקורת דוחות כספיים שנתיים לחברות בע"מ, תאגידים ועמותות בהתאם לתקני ביקורת מקובלים, IFRS ותקינה ישראלית. חוות דעת מקצועית וליווי צמוד. פנו אלינו לתיאום פגישה." },
+      { name: "twitter:description", content: "ביקורת דוחות כספיים שנתיים לחברות בע״מ, תאגידים ועמותות בהתאם לתקני ביקורת מקובלים, IFRS ותקינה ישראלית. חוות דעת מקצועית וליווי צמוד. פנו אלינו לתיאום פגישה." },
       { property: "og:locale", content: "he_IL" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -67,10 +67,10 @@ export const Route = createFileRoute("/audit")({
       {
         name: "description",
         content:
-          "ביקורת דוחות כספיים שנתיים לחברות בע"מ, תאגידים ועמותות בהתאם לתקני ביקורת מקובלים, IFRS ותקינה ישראלית. חוות דעת מקצועית וליווי צמוד. פנו אלינו לתיאום פגישה.",
+          "ביקורת דוחות כספיים שנתיים לחברות בע״מ, תאגידים ועמותות בהתאם לתקני ביקורת מקובלים, IFRS ותקינה ישראלית. חוות דעת מקצועית וליווי צמוד. פנו אלינו לתיאום פגישה.",
       },
       { property: "og:title", content: "ביקורת דוחות כספיים לחברות ועסקים | שלמה נמרודי משרד רואי חשבון" },
-      { property: "og:description", content: "ביקורת דוחות כספיים שנתיים לחברות בע"מ, תאגידים ועמותות בהתאם לתקני ביקורת מקובלים, IFRS ותקינה ישראלית. חוות דעת מקצועית וליווי צמוד. פנו אלינו לתיאום פגישה." },
+      { property: "og:description", content: "ביקורת דוחות כספיים שנתיים לחברות בע״מ, תאגידים ועמותות בהתאם לתקני ביקורת מקובלים, IFRS ותקינה ישראלית. חוות דעת מקצועית וליווי צמוד. פנו אלינו לתיאום פגישה." },
       { property: "og:url", content: "https://nimrodi.co.il/audit" },
       { property: "og:image", content: "https://nimrodi.co.il/og-image.jpg" },
       { property: "og:image:width", content: "1200" },
