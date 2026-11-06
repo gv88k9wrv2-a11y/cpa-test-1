@@ -87,7 +87,8 @@ export function GoogleReviewsBadge({
   lang?: Lang;
   variant?: "light" | "dark";
 }) {
-  const label = lang === "he" ? "5.0 ★★★★★ (72 ביקורות ב-Google)" : "5.0 ★★★★★ (72 Google Reviews)";
+  const label =
+    lang === "he" ? "5.0 ★★★★★ (מעל 70 ביקורות ב-Google)" : "5.0 ★★★★★ (70+ Google Reviews)";
   const linkLabel = lang === "he" ? "לקריאת כל הביקורות ב-Google" : "Read all reviews on Google";
   const colors =
     variant === "dark"

@@ -93,10 +93,6 @@ export function ServiceLanding({
               </div>
             ) : null}
 
-            <div className="mt-5">
-              <GoogleReviewsBadge lang="he" />
-            </div>
-
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {highlights.map((h) => (
                 <li
