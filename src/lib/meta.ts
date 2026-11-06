@@ -77,6 +77,7 @@ export const PERSON_JSONLD = {
   },
   description: "Shlomo Nimrodi, CPA, holds an Israeli CPA license since 1997 and is the founding partner of Nimrodi & Co., active since 2000.",
   hasCredential: CPA_CREDENTIAL_JSONLD,
+  sameAs: ["https://www.linkedin.com/in/shlomo-nimrodi-60734"],
   knowsLanguage: ["he", "en"],
   knowsAbout: [
     "Financial statement audit",
