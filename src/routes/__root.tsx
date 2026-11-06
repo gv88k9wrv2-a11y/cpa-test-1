@@ -210,7 +210,10 @@ const ORG_JSONLD = {
       availableLanguage: ["he", "en"],
     },
   ],
-  sameAs: ["https://maps.app.goo.gl/jxWz9287qp3QRVFg8"],
+  sameAs: [
+    "https://maps.app.goo.gl/jxWz9287qp3QRVFg8",
+    "https://www.linkedin.com/in/shlomo-nimrodi-60734",
+  ],
 };
 
 const WEBSITE_JSONLD = {
