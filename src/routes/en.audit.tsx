@@ -7,6 +7,14 @@ import heroImg from "../assets/service-audit.webp";
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
   {
+    q: "When is an Israeli private company or startup required to submit audited financial statements?",
+    a: "Under Israeli law, private limited liability companies must appoint an independent auditor and submit annual audited financial statements alongside their corporate tax returns to the Israel Tax Authority. For growing startups, audited financials are also required for Israel Innovation Authority (IIA) grant acquittals, venture capital investor reporting, and financial due diligence.",
+  },
+  {
+    q: "What is the distinction between financial statement preparation and a statutory audit?",
+    a: "Financial statement preparation involves compiling and adjusting accounting records under management’s responsibility in accordance with IFRS or Israeli GAAP. A statutory audit is an independent examination conducted by a licensed Certified Public Accountant (CPA) under applicable Israeli auditing standards to issue a formal auditor’s report on the fair presentation of the financial statements.",
+  },
+  {
     q: "How is the applicable financial reporting framework determined?",
     a: "The applicable financial reporting framework depends on the type of entity, its reporting obligations, relevant regulation and the needs of shareholders, lenders or other stakeholders. Financial statements may be prepared under IFRS, Israeli accounting standards or another applicable framework. The firm performs audit services according to the agreed engagement and relevant professional requirements, while management remains responsible for preparing the financial statements.",
   },

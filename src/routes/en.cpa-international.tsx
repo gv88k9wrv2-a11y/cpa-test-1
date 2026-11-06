@@ -30,17 +30,17 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-international")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "International Tax — Nimrodi & Co." },
-      { name: "twitter:description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
+      { name: "twitter:title", content: "International Tax Advisory in Israel | Cross-Border & Relocation CPA | Nimrodi & Co." },
+      { name: "twitter:description", content: "Israeli international tax: US-Israel treaty, subsidiary setup, Delaware Flips, relocation residency severance, transfer pricing and cross-border structuring." },
       { property: "og:locale", content: "en_US" },
-      { title: "International Tax & Relocation for Olim | Nimrodi & Co." },
+      { title: "International Tax Advisory in Israel | Cross-Border & Relocation CPA | Nimrodi & Co." },
       {
         name: "description",
         content:
-          "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures.",
+          "Israeli international tax: US-Israel treaty, subsidiary setup, Delaware Flips, relocation residency severance, transfer pricing and cross-border structuring.",
       },
-      { property: "og:title", content: "International Tax — Nimrodi & Co." },
-      { property: "og:description", content: "Israeli international tax planning: relocation, tax residency severance, new immigrant benefits, returning residents, tax treaties and cross-border structures." },
+      { property: "og:title", content: "International Tax Advisory in Israel | Cross-Border & Relocation CPA | Nimrodi & Co." },
+      { property: "og:description", content: "Israeli international tax: US-Israel treaty, subsidiary setup, Delaware Flips, relocation residency severance, transfer pricing and cross-border structuring." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-international` },
@@ -87,6 +87,11 @@ export const Route = createFileRoute("/en/cpa-international")({
         "Crypto & digital asset taxation",
       ]}
       sections={[
+        {
+          id: "cross-border-advisory",
+          title: "Cross-Border Tax Advisory: US-Israel Structuring, Subsidiary Setup & Permanent Establishment",
+          body: "When does an Israeli company require cross-border international tax advisory? Tech companies and multinational businesses require structured tax planning when establishing foreign subsidiaries (e.g., Delaware C-Corp), executing intellectual property migration, managing intercompany transfer pricing under Section 85A of the Israeli Income Tax Ordinance, or mitigating Permanent Establishment (PE) exposure for global sales and remote founders.",
+        },
         {
           title: "New immigrants & returning residents",
           body: "Eligible new residents and senior returning residents may qualify for certain tax benefits relating to specified foreign-source income and gains, subject to the applicable law, eligibility conditions and individual circumstances. Equity compensation, pensions, trusts and transactions before or after relocation should be reviewed with qualified advisers in the relevant jurisdictions.",
