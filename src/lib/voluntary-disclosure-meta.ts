@@ -31,7 +31,7 @@ export function voluntaryDisclosureHead(lang: "he" | "en") {
       { type: "application/ld+json", children: JSON.stringify({
         "@context": "https://schema.org", "@type": "AccountingService", "@id": ORG_ID,
         name: he ? "נמרודי ושות׳ – רואי חשבון" : "Nimrodi & Co. CPA",
-        url: origin, telephone: "+972 9-958-2211", email: "office@nimrodi.co.il",
+        url: origin, telephone: "+972 9-958-2211", email: "office@nimrodi.co.il", sameAs: ["https://maps.app.goo.gl/jxWz9287qp3QRVFg8", "https://www.linkedin.com/in/shlomo-nimrodi-60734"],
         founder: { "@id": PERSON_ID },
         address: { "@type": "PostalAddress", streetAddress: he ? "גלגלי הפלדה 16" : "16 Galgalei HaPlada St.", addressLocality: he ? "הרצליה פיתוח" : "Herzliya Pituach", postalCode: "4672216", addressCountry: "IL" },
         openingHoursSpecification: { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "18:00" },
