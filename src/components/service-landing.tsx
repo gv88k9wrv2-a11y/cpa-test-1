@@ -93,10 +93,6 @@ export function ServiceLanding({
               </div>
             ) : null}
 
-            <div className="mt-5">
-              <GoogleReviewsBadge lang="he" />
-            </div>
-
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {highlights.map((h) => (
                 <li
@@ -126,6 +122,10 @@ export function ServiceLanding({
                 <Phone className="h-4 w-4" aria-hidden />
                 09-9582211
               </a>
+            </div>
+
+            <div className="mt-6">
+              <GoogleReviewsBadge lang="he" />
             </div>
 
             {heroImage ? (

@@ -90,9 +90,6 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
               >
                 {t.hero.paragraph}
               </p>
-              <div className="mt-5">
-                <GoogleReviewsBadge lang={lang} variant="dark" />
-              </div>
               <div
                 className={`flex flex-col sm:mt-8 sm:gap-3 ${isHe ? "mt-6 gap-3" : "mt-5 gap-2.5"}`}
               >
@@ -127,6 +124,9 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                     {t.hero.buttons[2].label}
                   </PathLink>
                 )}
+              </div>
+              <div className="mt-6">
+                <GoogleReviewsBadge lang={lang} variant="dark" />
               </div>
             </div>
           </div>
