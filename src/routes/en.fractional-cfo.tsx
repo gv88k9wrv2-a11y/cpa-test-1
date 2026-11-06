@@ -45,7 +45,7 @@ export const Route = createFileRoute("/en/fractional-cfo")({
   head: () => ({
     meta: [
       { name: "twitter:title", content: "Fractional CFO Services in Israel | Outsourced Tech & Startup CFO | Nimrodi & Co. CPA" },
-      { name: "twitter:description", content: "Fractional CFO services in Israel for startups and growth companies, led by Shlomo Nimrodi CPA: budgeting, cash-flow forecasting, board reporting and M&A due diligence." },
+      { name: "twitter:description", content: "Fractional CFO services in Israel for startups and growth companies, led by Shlomo Nimrodi CPA: budgeting, cash-flow forecasts, board reporting and M&A due diligence." },
       { property: "og:locale", content: "en_US" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -53,10 +53,10 @@ export const Route = createFileRoute("/en/fractional-cfo")({
       {
         name: "description",
         content:
-          "Fractional CFO services in Israel for startups and growth companies, led by Shlomo Nimrodi CPA: budgeting, cash-flow forecasting, board reporting and M&A due diligence.",
+          "Fractional CFO services in Israel for startups and growth companies, led by Shlomo Nimrodi CPA: budgeting, cash-flow forecasts, board reporting and M&A due diligence.",
       },
       { property: "og:title", content: "Fractional CFO Services in Israel | Outsourced Tech & Startup CFO | Nimrodi & Co. CPA" },
-      { property: "og:description", content: "Fractional CFO services in Israel for startups and growth companies, led by Shlomo Nimrodi CPA: budgeting, cash-flow forecasting, board reporting and M&A due diligence." },
+      { property: "og:description", content: "Fractional CFO services in Israel for startups and growth companies, led by Shlomo Nimrodi CPA: budgeting, cash-flow forecasts, board reporting and M&A due diligence." },
       { property: "og:url", content: `${BASE}/en/fractional-cfo` },
       { property: "og:image", content: `${BASE}/og-image.jpg` },
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
