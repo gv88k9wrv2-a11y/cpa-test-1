@@ -120,6 +120,10 @@ export function ServiceLandingEn({
               </a>
             </div>
 
+            <div className="mt-6">
+              <GoogleReviewsBadge lang="en" />
+            </div>
+
             {heroImage ? (
               <div className="mt-12 overflow-hidden rounded-2xl border border-border shadow-xl">
                 <img

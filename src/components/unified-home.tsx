@@ -125,6 +125,9 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                   </PathLink>
                 )}
               </div>
+              <div className="mt-6">
+                <GoogleReviewsBadge lang={lang} variant="dark" />
+              </div>
             </div>
           </div>
         </section>
