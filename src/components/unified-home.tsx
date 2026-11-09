@@ -129,6 +129,9 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
               <div className="mt-6">
                 <GoogleReviewsBadge lang={lang} variant="dark" />
               </div>
+              <div className="mt-5">
+                <ProfessionalMembership lang={lang} variant="dark" />
+              </div>
             </div>
           </div>
         </section>
@@ -200,9 +203,6 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 flex justify-center">
-              <ProfessionalMembership lang={lang} />
-            </div>
           </div>
         </section>
 
