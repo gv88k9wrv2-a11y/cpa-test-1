@@ -1,6 +1,6 @@
 # Requested updates
 
-- [ ] Add the supplied ICPAS affiliation logo to bilingual home trust strips, footers and About pages; align memberOf with the official site; verify without publishing.
+- [x] Add the supplied ICPAS affiliation logo to bilingual home trust strips, footers and About pages; Person/CFO and AccountingService memberOf point to the official site. Verified four pages on desktop/mobile, image loading, schemas and no overflow; 20 tests pass, build OK; not published.
 
 - [x] Module 1: corrected bilingual menu destinations; all 22 menu anchor destinations verified and startup/CFO/nonprofit links clicked in both languages.
 - [x] Module 2: added bilingual quick topic navigation above tax details; all seven links per language clicked successfully; mobile layout verified.
