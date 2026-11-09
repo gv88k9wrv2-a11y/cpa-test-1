@@ -30,6 +30,8 @@ export type ServiceLandingProps = {
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
   ctaText?: string;
+  ctaButtonLabel?: string;
+  whatsappMessage?: string;
 
   icon: LucideIcon;
   heroImage?: string;
@@ -48,6 +50,8 @@ export function ServiceLanding({
   faqs,
   ctaHeadline = "מוכנים להתקדם? נשמח לקיים פגישת היכרות ראשונית ולבחון את הצרכים ואת היקף השירות.",
   ctaText,
+  ctaButtonLabel = "קבעו שיחת היכרות →",
+  whatsappMessage,
 
   icon: Icon,
   heroImage,
@@ -55,6 +59,7 @@ export function ServiceLanding({
   govPortals,
 }: ServiceLandingProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const whatsappUrl = whatsappMessage ? `${WHATSAPP_URL.split("?")[0]}?text=${encodeURIComponent(whatsappMessage)}` : WHATSAPP_URL;
 
   return (
     <div className="min-h-screen bg-background">
@@ -107,7 +112,7 @@ export function ServiceLanding({
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95"
@@ -234,7 +239,7 @@ export function ServiceLanding({
 
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
@@ -246,7 +251,7 @@ export function ServiceLanding({
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
-                קבעו שיחת היכרות →
+                {ctaButtonLabel}
               </Link>
             </div>
           </div>
