@@ -35,6 +35,15 @@ const SITE_ORIGIN = "https://nimrodi.co.il";
 export const ORG_ID = `${SITE_ORIGIN}/#organization`;
 export const PERSON_ID = `${SITE_ORIGIN}/#shlomo-nimrodi`;
 
+export const ICPAS_URL = "https://icpas.org.il";
+export const ICPAS_MEMBERSHIP_JSONLD = {
+  "@type": "Organization",
+  "@id": `${ICPAS_URL}/#organization`,
+  name: "Institute of Certified Public Accountants in Israel",
+  alternateName: "לשכת רואי חשבון בישראל",
+  url: ICPAS_URL,
+};
+
 /** Official public registry search; not an individual license-number assertion. */
 export const CPA_REGISTRY_URL = "https://www.gov.il/he/departments/dynamiccollectors/cpa-search?skip=0&LastName=%D7%A0%D7%9E%D7%A8%D7%95%D7%93%D7%99&FirstName=%D7%A9%D7%9C%D7%9E%D7%94";
 export const CPA_CREDENTIAL_JSONLD = {
@@ -77,6 +86,7 @@ export const PERSON_JSONLD = {
   },
   description: "Shlomo Nimrodi, CPA, holds an Israeli CPA license since 1997 and is the founding partner of Nimrodi & Co., active since 2000.",
   hasCredential: CPA_CREDENTIAL_JSONLD,
+  memberOf: ICPAS_MEMBERSHIP_JSONLD,
   sameAs: ["https://www.linkedin.com/in/shlomo-nimrodi-60734"],
   knowsLanguage: ["he", "en"],
   knowsAbout: [

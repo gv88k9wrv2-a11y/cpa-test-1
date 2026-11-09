@@ -5,6 +5,7 @@ import { FloatingWhatsAppEn, SiteFooterEn, SiteHeaderEn, WHATSAPP_URL_EN } from 
 import { ExecutiveTestimonials, GoogleReviewsBadge } from "./social-proof";
 import { HOME_CONTENT } from "../data/home-content";
 import heroImage from "../assets/hero-office.webp";
+import { ProfessionalMembership } from "./professional-membership";
 
 type Lang = "he" | "en";
 
@@ -199,6 +200,9 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
                 </li>
               ))}
             </ul>
+            <div className="mt-8 flex justify-center">
+              <ProfessionalMembership lang={lang} />
+            </div>
           </div>
         </section>
 

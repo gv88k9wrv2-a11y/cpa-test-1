@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, CheckCircle2, MessageCircle } from "lucide-react";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
 import { CPA_REGISTRY_URL, buildBreadcrumbJsonLd } from "../lib/meta";
+import { ProfessionalMembership } from "../components/professional-membership";
 
 const profileImage = profileAsset.url;
 import {
@@ -117,6 +118,9 @@ function AboutEn() {
                     Shlomo Nimrodi, CPA, has held an Israeli CPA license since 1997, issued by the Auditors Council, Ministry of Justice. View the official licensing registry.
                   </a>
                 </p>
+                <div className="mt-6">
+                  <ProfessionalMembership lang="en" />
+                </div>
               </div>
             </article>
 

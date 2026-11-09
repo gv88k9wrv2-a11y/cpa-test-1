@@ -17,6 +17,7 @@ import {
   LineChart,
 } from "lucide-react";
 import { SocialIcons } from "./social-proof";
+import { ProfessionalMembership } from "./professional-membership";
 import {
   ABOUT_GROUP_EN,
   COMPANIES_BOTTOM_EN,
@@ -713,6 +714,9 @@ export function SiteFooterEn() {
               Follow us
             </div>
             <SocialIcons lang="en" variant="footer" />
+          </div>
+          <div className="mt-6">
+            <ProfessionalMembership lang="en" variant="dark" />
           </div>
         </div>
         <div>
