@@ -164,7 +164,10 @@ export const Route = createFileRoute("/en/cpa-international")({
           },
         ],
       }}
-      {...RELOCATION_CONTENT.en}
+      ctaHeadline={RELOCATION_CONTENT.en.ctaHeadline}
+      ctaText={RELOCATION_CONTENT.en.ctaText}
+      ctaButtonLabel={RELOCATION_CONTENT.en.ctaButtonLabel}
+      whatsappMessage={RELOCATION_CONTENT.en.whatsappMessage}
       faqs={FAQS}
     />
   ),

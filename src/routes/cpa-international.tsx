@@ -268,7 +268,10 @@ export const Route = createFileRoute("/cpa-international")({
         ],
       }}
       faqs={FAQS}
-      {...RELOCATION_CONTENT.he}
+      ctaHeadline={RELOCATION_CONTENT.he.ctaHeadline}
+      ctaText={RELOCATION_CONTENT.he.ctaText}
+      ctaButtonLabel={RELOCATION_CONTENT.he.ctaButtonLabel}
+      whatsappMessage={RELOCATION_CONTENT.he.whatsappMessage}
     />
   ),
 });
