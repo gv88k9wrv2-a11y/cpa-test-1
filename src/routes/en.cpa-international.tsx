@@ -1,3 +1,4 @@
+import { RELOCATION_CONTENT } from "../data/relocation-residency";
 import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
@@ -30,17 +31,17 @@ const FAQS = [
 export const Route = createFileRoute("/en/cpa-international")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "International Tax Advisory in Israel | Cross-Border & Relocation CPA | Nimrodi & Co." },
-      { name: "twitter:description", content: "Israeli international tax: US-Israel treaty, subsidiary setup, Delaware Flips, relocation residency severance, transfer pricing and cross-border structuring." },
+      { name: "twitter:title", content: RELOCATION_CONTENT.en.title },
+      { name: "twitter:description", content: RELOCATION_CONTENT.en.description },
       { property: "og:locale", content: "en_US" },
-      { title: "International Tax Advisory in Israel | Cross-Border & Relocation CPA | Nimrodi & Co." },
+      { title: RELOCATION_CONTENT.en.title },
       {
         name: "description",
         content:
-          "Israeli international tax: US-Israel treaty, subsidiary setup, Delaware Flips, relocation residency severance, transfer pricing and cross-border structuring.",
+          RELOCATION_CONTENT.en.description,
       },
-      { property: "og:title", content: "International Tax Advisory in Israel | Cross-Border & Relocation CPA | Nimrodi & Co." },
-      { property: "og:description", content: "Israeli international tax: US-Israel treaty, subsidiary setup, Delaware Flips, relocation residency severance, transfer pricing and cross-border structuring." },
+      { property: "og:title", content: RELOCATION_CONTENT.en.title },
+      { property: "og:description", content: RELOCATION_CONTENT.en.description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${BASE}/en/cpa-international` },
@@ -48,6 +49,7 @@ export const Route = createFileRoute("/en/cpa-international")({
       { name: "twitter:image", content: `${BASE}/og-image.jpg` },
     ],
     links: [
+      { rel: "alternate", hrefLang: "x-default", href: "https://nimrodi.co.il/cpa-international" },
       { rel: "canonical", href: `${BASE}/en/cpa-international` },
       { rel: "alternate", hrefLang: "he-IL", href: `${BASE}/cpa-international` },
       { rel: "alternate", hrefLang: "en-US", href: `${BASE}/en/cpa-international` },
@@ -114,9 +116,10 @@ export const Route = createFileRoute("/en/cpa-international")({
                   params={{ slug: "relocation-tax-residency" }}
                   className="font-semibold text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold"
                 >
-                  Comprehensive Israeli Tax Residency Severance &amp; Relocation Guide
+                  Israeli tax residency and relocation tax planning
                 </Link>
               </p>
+              <p className="mt-4">{RELOCATION_CONTENT.en.disclaimer}</p>
             </>
           ),
         },
@@ -161,6 +164,7 @@ export const Route = createFileRoute("/en/cpa-international")({
           },
         ],
       }}
+      {...RELOCATION_CONTENT.en}
       faqs={FAQS}
     />
   ),
