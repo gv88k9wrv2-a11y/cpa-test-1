@@ -8,6 +8,7 @@ import { HE_TO_EN_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 import { BlogInlineContent } from "../components/blog-inline-content";
 import { BlogFaqList } from "../components/blog-faq-list";
+import { RELOCATION_CONTENT } from "../data/relocation-residency";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -153,6 +154,7 @@ function PostNotFound() {
 
 function BlogPostPage() {
   const { post } = Route.useLoaderData() as { post: BlogPost; slug: string };
+  const relocation = post.translationKey === "relocation-tax-residency" ? RELOCATION_CONTENT.he : undefined;
 
   const related = (post.relatedSlugs ?? [])
     .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
@@ -299,13 +301,13 @@ function BlogPostPage() {
           <ProfessionalDisclaimer lang="he" text={post.disclaimer} className="mt-10" />
 
           <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
-            <h2 className="font-display text-2xl font-bold">רוצים לשוחח על המצב הספציפי שלכם?</h2>
+            <h2 className="font-display text-2xl font-bold">{relocation?.ctaHeadline ?? "רוצים לשוחח על המצב הספציפי שלכם?"}</h2>
             <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-              אפשר ליצור קשר לצורך שיחת היכרות ראשונית ובחינת הצרכים.
+              {relocation?.ctaText ?? "אפשר ליצור קשר לצורך שיחת היכרות ראשונית ובחינת הצרכים."}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <a
-                href={WHATSAPP_URL}
+                href={relocation ? `${WHATSAPP_URL.split("?")[0]}?text=${encodeURIComponent(relocation.whatsappMessage)}` : WHATSAPP_URL}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
@@ -317,7 +319,7 @@ function BlogPostPage() {
                 to="/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
               >
-                קבעו שיחת היכרות →
+                {relocation?.ctaButtonLabel ?? "קבעו שיחת היכרות →"}
               </Link>
             </div>
           </div>

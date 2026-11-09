@@ -1,17 +1,13 @@
+import { RELOCATION_FAQS } from "./relocation-residency";
 export type ExpandedFAQ = { q: string; a: string };
 
 /** Approved bilingual answers shared by visible FAQs and FAQPage schemas. */
 export const EXPANDED_FAQS: Record<"international" | "startups" | "herzliya", Record<"he" | "en", ExpandedFAQ[]>> = {
   "international": {
     "he": [
-      {
-        "q": "מתי ישראלי שיוצא לרילוקיישן נחשב כמי שניתק תושבות לצרכי מס?",
-        "a": "ניתוק תושבות מס בישראל מוכרע לפי מבחן \"מרכז החיים\" (המהותי) ולפי \"חזקת הימים\" (הטכנית) הקבועה בסעיף 1 לפקודת מס הכנסה. כדי לסתור את חזקת התושבות, נדרש להראות העתקה ממשית של מרכז החיים המשפחתי, הכלכלי והאישי לחו״ל (מגורים קבועים, העברת התא המשפחתי, סיום שכירות או מכירת נכסים, פתיחת חשבונות בנק מקומיים וניתוק זיקות בישראל). בנוסף, מקובל כי נדרשת תקופה רצופה של לפחות 3–4 שנים מחוץ לישראל כדי לבסס ניתוק מוחלט, לצד מילוי שאלון לקביעת תושבות מול רשויות המס והביטוח הלאומי במועד המתאים."
-      },
-      {
-        "q": "מהו מס יציאה (סעיף 100א) ועל מי הוא חל בעת רילוקיישן?",
-        "a": "מס יציאה לפי סעיף 100א לפקודת מס הכנסה רואה באדם שחדל להיות תושב ישראל כאילו מכר את נכסיו ביום שלפני ניתוק התושבות. המס חל בעיקר על נכסי הון, מניות, ניירות ערך, אופציות ותגמולי הייטק (102/RSU). הדין מאפשר לדחות את תשלום המס עד למועד המימוש בפועל בחו״ל (אקזיט או מכירה); בעת המימוש, המס מחושב בדרך כלל באופן ליניארי לפי יחס תקופת ההחזקה בישראל לעומת סך תקופת ההחזקה, בהתאם לנסיבות ולהוראות הדין החלות."
-      },
+      ...RELOCATION_FAQS.he,
+
+
       {
         "q": "אילו הטבות מס מגיעות לתושב חוזר ותיק או לעולה חדש בישראל?",
         "a": "תושב חוזר ותיק (מי ששהה בחו״ל לפחות 10 שנים רצופות) ועולה חדש זכאים לפטור ממס בישראל ומחובת דיווח למשך 10 שנים על כלל הכנסותיהם הפסיביות והאקטיביות שמקורן מחוץ לישראל (כגון שכר עבודה בחו״ל, דיבידנדים, ריבית, דמי שכירות ורווחי הון ממכירת נכסים שנרכשו בחו״ל). מנגד, תושב חוזר \"רגיל\" (ששהה בחו״ל מעל שנתיים או שש שנים) זכאי לחבילת פטורים מצומצמת יותר, בעיקר על הכנסות פסיביות מנכסים שנרכשו בתקופת שהותו מחוץ לישראל."
@@ -20,10 +16,7 @@ export const EXPANDED_FAQS: Record<"international" | "startups" | "herzliya", Re
         "q": "האם תשלום מס במדינת היעד (כגון ארה״ב או בריטניה) פוטר אוטומטית ממס בישראל?",
         "a": "לא באופן אוטומטי. אם רשות המסים בישראל עדיין רואה באדם תושב ישראל, חלה עליו חובת דיווח עולמית. עם זאת, מכוח אמנות למניעת כפל מס שעליהן חתומה ישראל (כולל האמנה מול ארה״ב ובריטניה), נקבעים \"מבחני שובר שוויון\" (Tie-Breaker Rules) לקביעת תושבות יחידה, וניתן לקבל זיכוי ממס זר כנגד המס הישראלי כדי למנוע תשלום כפול, בכפוף לדיווח שנתי מסודר בישראל."
       },
-      {
-        "q": "כיצד יש לפעול מול המוסד לביטוח לאומי בעת יציאה לרילוקיישן?",
-        "a": "ביטוח לאומי בוחן תושבות בנפרד ממס הכנסה. ישראלי היוצא לחו״ל נדרש להסדיר את מעמדו באמצעות שאלון לקביעת תושבות במוסד לביטוח לאומי. כל עוד התושבות לא בוטלה, קיימת חובת תשלום דמי ביטוח מינימליים מדי חודש; לאחר שנתיים של שהות בחו״ל ללא תשלום, או עם אישור ניתוק תושבות יזום, מתבטלות הזכויות הרפואיות במסגרת חוק ביטוח בריאות ממלכתי, ונחסכות חשיפות לתשלומים רטרואקטיביים וקנסות."
-      },
+
       {
         "q": "מה ההבדל המיסויי והמשפטי בין פתיחת סניף זר (Branch) לבין הקמת חברה-בת ישראלית (Subsidiary)?",
         "a": "הקמת חברה-בת ישראלית (Subsidiary) יוצרת ישות משפטית ישראלית נפרדת המגדרת את חבות המשפטית והמיסויית של חברת האם, וחייבת במס חברות ישראלי (23%) על הכנסותיה בישראל. לעומת זאת, רישום סניף זר (חברה זרה רשומה ברשם החברות) אינו מפריד את הישות המשפטית של חברת האם, ועלול לחשוף אותה לדרישות דיווח וביקורת בישראל ולחשיפות משפטיות ישירות. מבחינת מיסוי, חברה-בת נהנית בדרך כלל מוודאות רגולטורית גבוהה יותר, גישה למשטר הטבות מס לחברות הייטק (כגון מפעל טכנולוגי מועדף), ויכולת ברורה יותר להסדיר מחירי העברה (Cost+, סעיף 85א)."
@@ -34,14 +27,9 @@ export const EXPANDED_FAQS: Record<"international" | "startups" | "herzliya", Re
       }
     ],
     "en": [
-      {
-        "q": "When is an Israeli relocating abroad considered to have officially severed Israeli tax residency?",
-        "a": "Severing Israeli tax residency is determined by the substantive \"Center of Vital Interests\" test alongside the statutory \"Day-Count Presumption\" under Section 1 of the Israeli Income Tax Ordinance. Rebutting residency requires demonstrating a genuine relocation of family, economic, and personal life abroad (permanent home, relocation of family unit, terminating Israeli leases or disposing of assets, opening local bank accounts, and cutting ties in Israel). Additionally, establishing a continuous period of at least 3–4 years abroad is generally standard practice to solidify non-resident status, alongside filing the appropriate residency determination questionnaire with the Israel Tax Authority and National Insurance Institute."
-      },
-      {
-        "q": "What is the Israeli Exit Tax (Section 100A) and who is subject to it upon relocation?",
-        "a": "Under Section 100A of the Israeli Income Tax Ordinance, an individual ceasing to be an Israeli tax resident is deemed to have sold their capital assets on the day prior to departure. The exit tax primarily impacts capital assets, company shares, securities, options, and tech equity compensation (Section 102/RSUs). The law permits deferring tax payment until actual realization abroad; upon realization, the capital gain is typically taxed linearly based on the proportion of the Israeli holding period relative to the total holding period, subject to statutory provisions and factual circumstances."
-      },
+      ...RELOCATION_FAQS.en,
+
+
       {
         "q": "What tax exemptions and benefits apply to Returning Residents and New Immigrants (Olim)?",
         "a": "Veteran Returning Residents (individuals who resided outside Israel for at least 10 consecutive years) and New Immigrants (Olim Chadashim) are eligible for a 10-year holiday exempting them from Israeli tax and reporting requirements on all foreign-sourced active and passive income (including overseas employment, dividends, interest, rental income, and capital gains from assets purchased abroad). Ordinary Returning Residents (residing abroad for over 2 or 6 years) qualify for a narrower set of exemptions, primarily on passive income from assets acquired during their period abroad."
@@ -50,10 +38,7 @@ export const EXPANDED_FAQS: Record<"international" | "startups" | "herzliya", Re
         "q": "Does paying tax in the destination country (e.g., US or UK) automatically eliminate Israeli tax obligations?",
         "a": "Not automatically. If the Israel Tax Authority continues to view an individual as an Israeli tax resident, worldwide reporting and tax obligations still apply. However, bilateral double taxation treaties entered into by Israel (including treaties with the US and UK) establish \"Tie-Breaker Rules\" to assign a single residency state, and provide foreign tax credits against Israeli tax liability to prevent double taxation, subject to timely annual Israeli tax filings."
       },
-      {
-        "q": "How should individuals relocating abroad handle the National Insurance Institute (Bituach Leumi)?",
-        "a": "The National Insurance Institute assesses residency independently of the Israel Tax Authority. Individuals relocating abroad must regularize their status by submitting a residency determination questionnaire. Unless residency cancellation is formally established, minimal monthly health and social insurance payments remain mandatory. After 2 continuous years abroad without payments, or upon approved severance of residency, coverage under the National Health Insurance Law is suspended, eliminating retroactive liability risks and penalties."
-      },
+
       {
         "q": "What is the tax and corporate difference between opening an Israeli branch vs. an Israeli subsidiary?",
         "a": "Incorporating a local Israeli subsidiary creates a distinct legal entity that ring-fences the foreign parent company from liability, subjecting only the subsidiary to Israeli corporate tax (23%) on its Israeli-sourced income. In contrast, registering a foreign branch (registering an overseas corporation with the Israeli Registrar of Companies) maintains direct legal and fiscal ties to the parent, potentially exposing the parent company to Israeli reporting, audit requirements, and legal claims. From a tax perspective, a local subsidiary generally provides greater regulatory certainty, eligibility for Israeli tech tax incentives (such as Preferred Technological Enterprise status), and a cleaner framework for transfer pricing agreements (such as Cost-Plus models under Section 85A)."

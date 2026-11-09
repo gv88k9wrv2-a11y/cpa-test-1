@@ -13,6 +13,7 @@ import { EN_TO_HE_SLUG } from "../data/blog-pairs";
 import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 import { BlogInlineContent } from "../components/blog-inline-content";
 import { BlogFaqList } from "../components/blog-faq-list";
+import { RELOCATION_CONTENT } from "../data/relocation-residency";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -158,6 +159,7 @@ function PostNotFoundEn() {
 
 function BlogPostPageEn() {
   const { post } = Route.useLoaderData() as { post: BlogPostEn; slug: string };
+  const relocation = post.translationKey === "relocation-tax-residency" ? RELOCATION_CONTENT.en : undefined;
 
   const related = (post.relatedSlugs ?? [])
     .map((slug) => BLOG_POSTS_EN.find((p) => p.slug === slug))
@@ -316,15 +318,14 @@ function BlogPostPageEn() {
 
           <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
             <h2 className="font-display text-2xl font-bold">
-              Need help with an Israeli accounting or tax matter?
+              {relocation?.ctaHeadline ?? "Need help with an Israeli accounting or tax matter?"}
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-              Contact our Israeli CPA firm for an introductory discussion about your accounting,
-              tax, and reporting needs.
+              {relocation?.ctaText ?? "Contact our Israeli CPA firm for an introductory discussion about your accounting, tax, and reporting needs."}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <a
-                href={WHATSAPP_URL_EN}
+                href={relocation ? `${WHATSAPP_URL_EN.split("?")[0]}?text=${encodeURIComponent(relocation.whatsappMessage)}` : WHATSAPP_URL_EN}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
@@ -336,7 +337,7 @@ function BlogPostPageEn() {
                 to="/en/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
               >
-                Schedule a Consultation →
+                {relocation?.ctaButtonLabel ?? "Schedule a Consultation →"}
               </Link>
             </div>
           </div>

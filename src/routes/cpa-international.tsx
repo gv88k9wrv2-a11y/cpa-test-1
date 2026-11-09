@@ -1,3 +1,4 @@
+import { RELOCATION_CONTENT } from "../data/relocation-residency";
 import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
@@ -61,17 +62,17 @@ const FAQS = [
 export const Route = createFileRoute("/cpa-international")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "ייעוץ מס בינלאומי לחברות ורילוקיישן | מיסוי אמריקאי ואמנות מס | נמרודי רואי חשבון" },
-      { name: "twitter:description", content: "ייעוץ מס בין־לאומי בישראל: רילוקיישן, בחינת תושבות מס, עולים חדשים ותושבים חוזרים, אמנות מס ודיווח על נכסים והכנסות בחו״ל. פנו אלינו לבחינת המקרה שלכם." },
+      { name: "twitter:title", content: RELOCATION_CONTENT.he.title },
+      { name: "twitter:description", content: RELOCATION_CONTENT.he.description },
       { property: "og:locale", content: "he_IL" },
-      { title: "ייעוץ מס בינלאומי לחברות ורילוקיישן | מיסוי אמריקאי ואמנות מס | נמרודי רואי חשבון" },
+      { title: RELOCATION_CONTENT.he.title },
       {
         name: "description",
         content:
-          "ייעוץ מס בין־לאומי בישראל: רילוקיישן, בחינת תושבות מס, עולים חדשים ותושבים חוזרים, אמנות מס ודיווח על נכסים והכנסות בחו״ל. פנו אלינו לבחינת המקרה שלכם.",
+          RELOCATION_CONTENT.he.description,
       },
-      { property: "og:title", content: "ייעוץ מס בינלאומי לחברות ורילוקיישן | מיסוי אמריקאי ואמנות מס | נמרודי רואי חשבון" },
-      { property: "og:description", content: "ייעוץ מס בין־לאומי בישראל: רילוקיישן, בחינת תושבות מס, עולים חדשים ותושבים חוזרים, אמנות מס ודיווח על נכסים והכנסות בחו״ל. פנו אלינו לבחינת המקרה שלכם." },
+      { property: "og:title", content: RELOCATION_CONTENT.he.title },
+      { property: "og:description", content: RELOCATION_CONTENT.he.description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-international" },
@@ -81,6 +82,7 @@ export const Route = createFileRoute("/cpa-international")({
       { name: "twitter:image", content: "https://nimrodi.co.il/og-image.jpg" },
     ],
     links: [
+      { rel: "alternate", hrefLang: "x-default", href: "https://nimrodi.co.il/cpa-international" },
       { rel: "canonical", href: "https://nimrodi.co.il/cpa-international" },
       { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/cpa-international" },
       {
@@ -150,17 +152,7 @@ export const Route = createFileRoute("/cpa-international")({
                   המדריך המקיף לניתוק תושבות מס ומיסוי רילוקיישן מישראל
                 </Link>
               </p>
-              <p className="mt-4">
-                מתכננים מעבר לחו״ל או חזרה לישראל? קראו את המדריך המקיף בנושא{" "}
-                <Link
-                  to="/blog/$slug"
-                  params={{ slug: "relocation-tax-residency-israel" }}
-                  className="font-semibold text-primary underline decoration-gold/60 underline-offset-4"
-                >
-                  ניתוק תושבות לצרכי מס ורילוקיישן
-                </Link>
-                , הכולל ניתוח מבחן מרכז החיים, מס יציאה ודוגמאות מעשיות.
-              </p>
+              <p className="mt-4">{RELOCATION_CONTENT.he.disclaimer}</p>
             </>
           ),
           bullets: [
@@ -276,7 +268,10 @@ export const Route = createFileRoute("/cpa-international")({
         ],
       }}
       faqs={FAQS}
-      ctaHeadline="לפני מעבר לחו״ל או חזרה לישראל, כדאי לבחון את השלכות המס והדיווח."
+      ctaHeadline={RELOCATION_CONTENT.he.ctaHeadline}
+      ctaText={RELOCATION_CONTENT.he.ctaText}
+      ctaButtonLabel={RELOCATION_CONTENT.he.ctaButtonLabel}
+      whatsappMessage={RELOCATION_CONTENT.he.whatsappMessage}
     />
   ),
 });

@@ -30,6 +30,8 @@ export type ServiceLandingEnProps = {
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
   ctaText?: string;
+  ctaButtonLabel?: string;
+  whatsappMessage?: string;
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
@@ -47,12 +49,15 @@ export function ServiceLandingEn({
   faqs,
   ctaHeadline = "Ready to review your accounting and tax needs? Contact us for an introductory discussion about the proposed scope of service.",
   ctaText,
+  ctaButtonLabel = "Schedule a Consultation →",
+  whatsappMessage,
   icon: Icon,
   heroImage,
   heroImageAlt,
   govPortals,
 }: ServiceLandingEnProps) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const whatsappUrl = whatsappMessage ? `${WHATSAPP_URL_EN.split("?")[0]}?text=${encodeURIComponent(whatsappMessage)}` : WHATSAPP_URL_EN;
 
   return (
     <div className="min-h-screen bg-background">
@@ -103,7 +108,7 @@ export function ServiceLandingEn({
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href={WHATSAPP_URL_EN}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-5 py-3 font-semibold text-gold-foreground transition hover:brightness-95"
@@ -222,7 +227,7 @@ export function ServiceLandingEn({
             {ctaText ? <p className="mt-4 text-muted-foreground">{ctaText}</p> : null}
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a
-                href={WHATSAPP_URL_EN}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 font-semibold text-gold-foreground hover:brightness-95"
@@ -234,7 +239,7 @@ export function ServiceLandingEn({
                 to="/en/contact"
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
-                Schedule a Consultation →
+                {ctaButtonLabel}
               </Link>
             </div>
           </div>

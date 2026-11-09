@@ -1,5 +1,7 @@
 # Requested updates
 
+- [x] Approved relocation/residency update: exact bilingual international-page metadata, four shared visible/schema FAQs, contextual CTA/WhatsApp, corrected existing article/legal wording and descriptive links, consolidated AI references. Four routes return 200, canonical/hreflang and exact answer/schema parity verified, 26 internal destinations resolve, desktop/mobile screenshots show no horizontal overflow or runtime errors; 24 tests pass and build/typecheck OK. No separate tax-residency-severance article exists, so its future link is deferred; not published.
+
 - [x] Add the supplied ICPAS affiliation logo to bilingual home trust strips, footers and About pages; Person/CFO and AccountingService memberOf point to the official site. Verified four pages on desktop/mobile, image loading, schemas and no overflow; 20 tests pass, build OK; not published.
 
 - [x] Module 1: corrected bilingual menu destinations; all 22 menu anchor destinations verified and startup/CFO/nonprofit links clicked in both languages.
