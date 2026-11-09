@@ -1,3 +1,4 @@
+import { RELOCATION_FAQS, RELOCATION_CONTENT } from "./relocation-residency";
 import imgCrypto from "../assets/blog-crypto.webp";
 import imgEquity from "../assets/blog-equity.webp";
 import imgTax from "../assets/blog-tax-planning.webp";
@@ -352,7 +353,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     relatedService: { href: "/en/cpa-international", label: "International tax and relocation planning" },
     title: "Relocation and Terminating Israeli Tax Residency: The Complete Guide for Israelis Moving Abroad (2026)",
     metaTitle: "Terminating Israeli Tax Residency: Exit Tax, Relocation & National Insurance Guide | Nimrodi & Co.",
-    excerpt: "Center of Life Test: Israeli tax residency is not determined solely by the number of days spent outside Israel. The Israel Tax Authority and courts examine the totality of an individual's personal, family, economic, and social ties.\n\nExit Tax (Section 100A): Individuals ceasing to be Israeli tax residents may become subject to exit tax rules on capital assets, including shares, stock options, RSUs, and other capital assets. Tax may be paid immediately or deferred until realization.\n\nNational Insurance: Severing tax residency with the Israel Tax Authority does not automatically terminate residency status with the National Insurance Institute (NII). The issue must be reviewed separately.\n\nTax Treaties: In cases of dual residency, international tax treaties may determine residency status and allocate taxing rights between countries through tie-breaker rules.",
+    excerpt: RELOCATION_FAQS.en[0].a.split("\n\n")[1] + "\n\n" + RELOCATION_FAQS.en[1].a,
     metaDescription:
       "Planning a relocation abroad? Comprehensive guide by Shlomo Nimrodi, CPA, covering Israeli tax residency termination, Section 100A exit tax, National Insurance, RSUs, employee stock options, and tax treaties.",
     date: "2026-10-27",
@@ -384,49 +385,32 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   },
   {
     "h": "3. Exit Tax – Section 100A of the Income Tax Ordinance",
-    "p": [
-      "Section 100A of the Israeli Income Tax Ordinance is among the most significant considerations in relocation tax planning. The provision ensures that capital gains accrued on assets during the period of Israeli tax residency are subject to Israeli taxation, even if the assets are disposed of after residency ends.",
-      "Definition of Asset Under Section 100A\nThe exit tax generally applies to an individual's capital assets, including:\nShares in private and publicly traded corporations.\n\nStock options, RSUs, and equity-based instruments.\n\nIntangible assets and capital rights.",
-      "The provision generally does not apply to real estate located in Israel (taxable upon sale under the Real Estate Taxation Law) or assets retaining an explicit territorial tax connection to Israel.",
-      "Tax Mechanics: Two Statutory Alternatives\nTaxpayers may choose between two alternatives:\nPayment Upon Departure: The asset is valued on the date residency terminates, tax is calculated on the deemed gain accrued to that date, and the Israeli tax connection for that asset is severed.\n\nDeferral Until Actual Disposal: Payment is deferred until the asset is sold. Upon realization, tax is calculated on a linear basis: the proportion of the gain corresponding to the period of Israeli residency relative to the total holding period is allocated to Israel and taxed accordingly.",
-      "Illustrative Numerical Example (Linear Allocation)\nAn individual purchased shares in a private company for NIS 100,000.\nAfter 4 years, Israeli tax residency terminated and tax was deferred.\nFour years later (total holding period of 8 years), the shares were sold for NIS 500,000 (total capital gain: NIS 400,000).",
-      "Simply stated, residency in Israel accounted for 4 of the 8 holding years; therefore, approximately 50% of the gain (NIS 200,000) may be attributed to the period of Israeli residency and may create an Israeli tax liability, subject to applicable law.",
-      "Calculations may be affected by transitional rules, regulations, CPI indexation, currency fluctuations, and applicable tax treaties."
-    ]
+    "p": RELOCATION_FAQS.en[1].a.split("\n\n")
   },
   {
     "h": "4. Employee Stock Options, RSUs and Equity Compensation",
-    "p": [
-      "Many technology professionals and executives hold complex forms of equity compensation, including:\nSection 102 options.\n\nRestricted Stock Units (RSUs).\n\nRestricted Shares.\n\nEmployee Stock Purchase Plans (ESPPs).",
-      "Relocation frequently creates overlap between multiple tax jurisdictions."
-    ],
+    "p": [RELOCATION_FAQS.en[1].a.split("\n\n")[1]],
     "table": {
-      "headers": [
-        "Compensation Type",
-        "Key Relocation Issue"
-      ],
-      "rows": [
-        [
-          "Section 102 Options",
-          "Vesting periods spanning multiple countries and trustee holding requirements"
-        ],
-        [
-          "RSUs",
-          "Taxable events upon vesting and possible dual-tax exposure"
-        ],
-        [
-          "ESPP Plans",
-          "Classification of benefits and timing issues"
-        ],
-        [
-          "Restricted Shares",
-          "Allocation between periods of employment in different jurisdictions"
-        ]
-      ]
-    },
-    "afterTable": [
-      "In many cases, detailed allocation calculations are required to determine which portion of the benefit relates to work performed in Israel versus abroad."
+  "headers": [
+    "Compensation Type",
+    "Key Relocation Issue"
+  ],
+  "rows": [
+    [
+      "Section 102 Options",
+      "Type of award, grant date and vesting periods"
+    ],
+    [
+      "RSUs",
+      "Employment periods in and outside Israel and realization or sale dates"
+    ],
+    [
+      "Other equity awards",
+      "Applicable tax treaty and case-specific review"
     ]
+  ]
+},
+    "afterTable": [RELOCATION_FAQS.en[1].a.split("\n\n")[2]]
   },
   {
     "h": "5. Founders, Controlling Shareholders and Israeli Companies",
@@ -440,13 +424,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   },
   {
     "h": "6. National Insurance Institute (NII) and Healthcare",
-    "p": [
-      "A common misconception is that terminating tax residency automatically terminates residency for National Insurance purposes. The two regimes operate under distinct legal frameworks.",
-      "Key Considerations:\nOngoing Contributions: An individual regarded as an Israeli resident for National Insurance purposes who does not work in Israel may remain liable for minimum National Insurance and health insurance contributions. Unpaid contributions may generate debts, interest, and penalties.",
-      "Residency Status Questionnaire: In appropriate cases, individuals may proactively submit a questionnaire to determine residency status with the NII.",
-      "Extended Absence Abroad: Long-term residence abroad may serve as a significant indicator that residency has ceased, though status depends on the totality of circumstances rather than duration alone.",
-      "Waiting Period for Healthcare: Ceasing to be an Israeli resident results in loss of state healthcare coverage. Upon a future return, a statutory waiting period applies (one month per year of absence, up to a maximum of six months), which may in certain circumstances be redeemed through a statutory payment."
-    ]
+    "p": RELOCATION_FAQS.en[0].a.split("\n\n")
   },
   {
     "h": "7. Relocating to the United States",
@@ -483,30 +461,13 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     "h": "11. Moving Abroad? Plan Before You Leave",
     "p": [
       "Decisions made before departure may affect taxation, exit tax exposure, National Insurance obligations, and double taxation risks for years to come.",
-      "Early planning can significantly reduce risk and help establish a defensible tax position.",
+      "For [Israeli tax residency and relocation tax planning](/en/cpa-international), review the facts, documentation, applicable law and relevant tax treaty before the move.",
       "Nimrodi & Co. – Certified Public Accountants\nAddress: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel\nPhone: +972-9-958-2211\nEmail: office@nimrodi.co.il\nWebsite: https://nimrodi.co.il/en",
       "Relevant Services\nInternational Tax Advisory.\n\nRelocation Tax Planning.\n\nRSU and Equity Compensation Taxation.\n\nTax Planning for Entrepreneurs and Controlling Shareholders.\n\nNational Insurance Status Review.\n\nDigital Asset Taxation.\n\nRental Income Tax Advisory."
     ]
   }
 ],
-    faqs: [
-  {
-    "q": "Does spending more than 183 days outside Israel automatically terminate Israeli tax residency?",
-    "a": "No. Day counts are only one factor. The center-of-life test remains the primary consideration."
-  },
-  {
-    "q": "Can I own property in Israel and still qualify as a foreign resident?",
-    "a": "Yes. Ownership alone does not determine residency. The manner in which the property is used is often significant."
-  },
-  {
-    "q": "Does the Israeli exit tax apply to stock options?",
-    "a": "In many cases it may, but treatment depends on the nature of the rights, vesting terms, and individual circumstances."
-  },
-  {
-    "q": "Should I continue paying National Insurance while abroad?",
-    "a": "The answer depends on the expected duration of relocation, family circumstances, and long-term objectives."
-  }
-],
+    faqs: RELOCATION_FAQS.en,
     disclaimer: "The information contained in this guide is provided for general informational purposes only and does not constitute tax advice, legal advice, a professional opinion, or an official position of the Israel Tax Authority, the National Insurance Institute, or any other authority. Determining tax residency, applying Section 100A, interpreting tax treaties, and complying with international reporting obligations require an individualized review of the relevant facts, documentation, and circumstances. Consultation with a qualified CPA specializing in international taxation is strongly recommended before taking any action based on this guide.",
   },
   {
