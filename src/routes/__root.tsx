@@ -1,4 +1,4 @@
-import { ORG_ID, PERSON_ID, PERSON_JSONLD } from "../lib/meta";
+import { ORG_ID, PERSON_ID, PERSON_JSONLD, ICPAS_MEMBERSHIP_JSONLD } from "../lib/meta";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -164,6 +164,7 @@ const ORG_JSONLD = {
     longitude: 34.8085,
   },
   founder: { "@id": PERSON_ID },
+  memberOf: ICPAS_MEMBERSHIP_JSONLD,
   employee: { "@id": PERSON_ID },
   knowsAbout: [
     "ביקורת דוחות כספיים",

@@ -3,6 +3,7 @@ import { Award, Building2, ChartLine, Handshake, MessageCircle, Star, Users } fr
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import profileAsset from "../assets/shlomo-nimrodi-profile.jpg.asset.json";
 import { CPA_REGISTRY_URL, buildBreadcrumbJsonLd } from "../lib/meta";
+import { ProfessionalMembership } from "../components/professional-membership";
 
 const profileImage = profileAsset.url;
 
@@ -115,6 +116,7 @@ function AboutPage() {
                   רואה חשבון שלמה נמרודי מחזיק ברישיון משנת 1997 מטעם מועצת רואי חשבון במשרד המשפטים. לעיון במאגר הרישוי הרשמי.
                 </a>
               </p>
+              <ProfessionalMembership lang="he" />
               <p>
                 שירותי המשרד כוללים, בהתאם לצורכי הלקוח ולהיקף ההתקשרות, ביקורת ודוחות כספיים, הנהלת
                 חשבונות, שכר, ייעוץ ודיווחי מס, טיפול בהצהרות הון, פתיחת תיקים ותמיכה בתהליכים

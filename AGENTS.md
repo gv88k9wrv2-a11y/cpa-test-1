@@ -13,6 +13,8 @@
 
 ## Project rules
 
+- Professional association logos and links use a shared bilingual affiliation component and membership schema constant, separate from CPA licensing credentials; third-party affiliation logos do not replace the firm's branding.
+
 - Both language headers use viewport-fixed positioning with an equal-height flow spacer; mobile panels start below the header so navigation remains accessible without covering page content.
 
 - Content leaf routes own localized OG/Twitter titles and descriptions; use the leaf description for all social descriptions and keep root metadata limited to sitewide defaults to prevent cross-language inheritance.
