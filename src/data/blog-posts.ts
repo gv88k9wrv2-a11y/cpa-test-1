@@ -1,4 +1,5 @@
 import { RELOCATION_FAQS, RELOCATION_CONTENT } from "./relocation-residency";
+import { DESTINATION_FAQS, destinationArticleSections } from "./relocation-destinations";
 import imgTax from "../assets/blog-tax-planning.webp";
 import imgEquity from "../assets/blog-equity.webp";
 import imgCrypto from "../assets/blog-crypto.webp";
@@ -1179,12 +1180,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "h": "6. המוסד לביטוח לאומי וביטוח בריאות",
     "p": RELOCATION_FAQS.he[0].a.split("\n\n")
   },
-  {
-    "h": "7. רילוקיישן לארצות הברית: דגשים ייחודיים",
-    "p": [
-      "מעבר לארה״ב מציב אתגרים ייחודיים בשל שיטת המיסוי האמריקאית:\n- שיטת מיסוי גלובלית כפולה: ארה״ב ממסה אזרחים ובעלי גרין קארד על בסיס פרסונלי גלובלי.\n- אמנת המס ישראל–ארה״ב: האמנה כוללת סעיף שימור זכויות (Saving Clause) המגביל במקרים רבים את יכולתם של אזרחים אמריקאים להסתמך על הוראות האמנה להפחתת מס בארה״ב.\n- מבחן הנוכחות המהותית (Substantial Presence Test): ישראלי שאינו אזרח ארה״ב עלול להפוך לתושב מס אמריקאי (US Resident Alien) אם שהה בארה״ב מספר ימים מסוים לאורך 3 שנים.\n- חובות דיווח בינלאומיות (FBAR, FATCA): אי-דיווח על חשבונות זרים, נכסים פיננסיים או קרנות השתלמות עלול לגרור עיצומים כספיים.\n- ביטוח לאומי בארה״ב: בהיעדר אמנת ביטוח סוציאלי (Totalization Agreement) מלאה, יש לבחון כל מקרה לגופו כדי למנוע כפל תשלום דמי ביטוח."
-    ]
-  },
+  ...destinationArticleSections("he"),
   {
     "h": "8. אמנות למניעת כפל מס: שוברי שוויון (Tie-Breaker Rules)",
     "p": [
@@ -1214,7 +1210,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ]
   }
 ],
-    faqs: RELOCATION_FAQS.he,
+    faqs: [...RELOCATION_FAQS.he, ...DESTINATION_FAQS.he],
     disclaimer: "המידע במאמר זה מובא לצורכי מידע כללי בלבד ואינו מהווה חוות דעת מקצועית, ייעוץ מס, ייעוץ משפטי או עמדה מחייבת של רשות המסים, המוסד לביטוח לאומי או כל רשות אחרת. קביעת תושבות מס, תחולת סעיף 100א, יישום אמנות מס וחובות דיווח בינלאומיות מחייבים בחינה פרטנית של מכלול העובדות, המסמכים והנסיבות בכל מקרה ומקרה. מומלץ לקבל ייעוץ מקצועי מותאם אישית מרואה חשבון מוסמך לפני קבלת החלטות או ביצוע פעולות הנוגעות לרילוקיישן או לניתוק תושבות.",
   },
   {

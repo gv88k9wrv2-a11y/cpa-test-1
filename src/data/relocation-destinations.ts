@@ -103,3 +103,23 @@ export const DESTINATION_FAQS = {
     },
   ],
 };
+
+export function destinationArticleSections(lang: "he" | "en") {
+  const content = DESTINATION_CONTENT[lang];
+  return [
+    { h: `7. ${content.heading}`, p: [content.intro] },
+    ...content.sections.map((section, index) => ({
+      h: section.h,
+      p: [
+        ...section.p,
+        ...(index === 0 && lang === "he" ? ["[אמנת המס ישראל–ארה״ב וחובות דיווח](/blog/us-israel-tax-considerations)"] : []),
+        ...(index === 2 ? [
+          content.disclaimer,
+          lang === "he"
+            ? "[מיסוי בינלאומי ותכנון מס לרילוקיישן](/cpa-international) · [ייעוץ מס ליחידים ולעסקים](/tax-consulting)"
+            : "[International tax and relocation planning](/en/cpa-international) · [Tax consulting for individuals and businesses](/en/tax-consulting)",
+        ] : []),
+      ],
+    })),
+  ];
+}

@@ -1,4 +1,6 @@
 import { RELOCATION_CONTENT } from "../data/relocation-residency";
+import { DESTINATION_FAQS } from "../data/relocation-destinations";
+import { destinationServiceSections } from "../components/relocation-destinations";
 import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
@@ -8,6 +10,7 @@ import heroImg from "../assets/service-international.webp";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
+  ...DESTINATION_FAQS.en,
   ...EXPANDED_FAQS.international.en,
   {
     q: "What tax benefits do new immigrants (olim chadashim) receive?",
@@ -150,6 +153,7 @@ export const Route = createFileRoute("/en/cpa-international")({
             </>
           ),
         },
+        ...destinationServiceSections("en"),
       ]}
       govPortals={{
         title: "Israeli Tax Benefits & Relocation Resources",

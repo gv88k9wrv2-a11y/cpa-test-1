@@ -1,4 +1,5 @@
 import { RELOCATION_FAQS, RELOCATION_CONTENT } from "./relocation-residency";
+import { DESTINATION_FAQS, destinationArticleSections } from "./relocation-destinations";
 import imgCrypto from "../assets/blog-crypto.webp";
 import imgEquity from "../assets/blog-equity.webp";
 import imgTax from "../assets/blog-tax-planning.webp";
@@ -426,17 +427,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     "h": "6. National Insurance Institute (NII) and Healthcare",
     "p": RELOCATION_FAQS.en[0].a.split("\n\n")
   },
-  {
-    "h": "7. Relocating to the United States",
-    "p": [
-      "Relocating to the US presents unique considerations due to the US tax system:",
-      "Worldwide Taxation: The US taxes citizens and permanent residents (green card holders) on worldwide income.",
-      "Saving Clause: The US-Israel Tax Treaty includes a Saving Clause that limits the ability of US citizens to rely on treaty provisions to reduce US taxation.",
-      "Substantial Presence Test: Non-US citizens may become US tax residents under this test based on days spent in the US over a three-year period.",
-      "International Reporting Obligations: Strict reporting applies to foreign accounts, trusts, pension plans, and foreign entities (e.g., FBAR, Form 8938, Form 5471, PFIC rules).",
-      "Social Security Considerations: In the absence of a comprehensive Totalization Agreement between Israel and the US, social security obligations should be evaluated on a case-by-case basis."
-    ]
-  },
+  ...destinationArticleSections("en"),
   {
     "h": "8. Tax Treaties and Tie-Breaker Rules",
     "p": [
@@ -467,7 +458,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     ]
   }
 ],
-    faqs: RELOCATION_FAQS.en,
+    faqs: [...RELOCATION_FAQS.en, ...DESTINATION_FAQS.en],
     disclaimer: "The information contained in this guide is provided for general informational purposes only and does not constitute tax advice, legal advice, a professional opinion, or an official position of the Israel Tax Authority, the National Insurance Institute, or any other authority. Determining tax residency, applying Section 100A, interpreting tax treaties, and complying with international reporting obligations require an individualized review of the relevant facts, documentation, and circumstances. Consultation with a qualified CPA specializing in international taxation is strongly recommended before taking any action based on this guide.",
   },
   {
