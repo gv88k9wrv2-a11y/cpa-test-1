@@ -35,8 +35,8 @@
 
 ## מיסוי בין־לאומי
 
-- [מיסוי בין־לאומי ורילוקיישן](https://nimrodi.co.il/cpa-international): בחינת מרכז החיים וחזקות ימי שהייה; השלכות מס יציאה אפשריות לפי סעיף 100א; אופציות ו־RSU דורשים ניתוח פרטני נפרד; אמנות מס ותושבות בביטוח לאומי הנבחנת בנפרד מתושבות מס הכנסה. אין הבטחת תוצאה
-- [Israeli tax residency and relocation tax planning](https://nimrodi.co.il/en/cpa-international): Center-of-life analysis and statutory day-count presumptions; potential Section 100A exit-tax implications; separate case-specific stock-option and RSU analysis; applicable tax treaties and a separate National Insurance residency determination. No guaranteed outcome
+- [מיסוי בין־לאומי ורילוקיישן](https://nimrodi.co.il/cpa-international): בחינת מרכז החיים וחזקות ימי שהייה; השלכות אפשריות לפי סעיף 100א וניתוח פרטני נפרד של אופציות ו־RSU; אמנת ישראל–ארה״ב, מס פדרלי לעומת מדינתי ודיווח חשבונות ונכסים בארה״ב ככל שחל לפי התנאים, הספים והחריגים; קפריסין ויוון כמשטרי מס נפרדים; UK Statutory Residence Test ואמנות ביטחון סוציאלי ככל שקיימות. הטבות במדינת היעד אינן מנתקות כשלעצמן תושבות ישראלית; תושבות ביטוח לאומי נבחנת בנפרד. אין הבטחת תוצאה
+- [Israeli tax residency and relocation tax planning](https://nimrodi.co.il/en/cpa-international): Center-of-life and day-count analysis; potential Section 100A implications and separate case-specific equity-compensation review; Israel-US treaty, federal vs state tax and US foreign-account/asset reporting subject to applicable requirements, thresholds and exceptions; separate Cyprus and Greece tax regimes; UK Statutory Residence Test and social-security agreements where available. Destination incentives do not themselves terminate Israeli residency; National Insurance residency is separate. No guaranteed outcome
 - [חברות זרות בישראל](https://nimrodi.co.il/cpa-foreign-companies): מוסד קבע, מחירי העברה, אמנות מס, חברה בת או סניף
 - [הנהלת חשבונות](https://nimrodi.co.il/bookkeeping): תיעוד חשבונאי ובנקאי ("מסלול הכסף"), התאמות בנקים וכרטיסי אשראי
 

@@ -1,4 +1,6 @@
 import { RELOCATION_CONTENT } from "../data/relocation-residency";
+import { DESTINATION_FAQS } from "../data/relocation-destinations";
+import { destinationServiceSections } from "../components/relocation-destinations";
 import { EXPANDED_FAQS } from "../data/expanded-faqs";
 import { buildBreadcrumbJsonLd } from "../lib/meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
@@ -7,6 +9,7 @@ import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-international.webp";
 
 const FAQS = [
+  ...DESTINATION_FAQS.he,
   ...EXPANDED_FAQS.international.he,
   {
     q: "מה זה ניתוק תושבות מס ומתי הוא נחשב שהושלם?",
@@ -252,6 +255,7 @@ export const Route = createFileRoute("/cpa-international")({
             "תכנון העברה בין דורית והיבטי Estate Tax בארה״ב, בהתאם לנכסים, למעמד הנישום ולדין האמריקאי החל",
           ],
         },
+        ...destinationServiceSections("he"),
       ]}
       govPortals={{
         title: 'מיסוי בין־לאומי, מע"מ יבוא/יצוא ואמנות מס',

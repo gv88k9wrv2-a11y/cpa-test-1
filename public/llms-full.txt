@@ -71,6 +71,13 @@ Ceasing Israeli tax residency may require consideration of Section 100A exit-tax
 
 Income-tax residency and National Insurance residency are separate determinations. National Insurance applies its own center-of-life analysis and administrative procedures. Contributions may continue depending on residency, status and income; a determination or filing with one authority does not necessarily determine the outcome before the other.
 
+Destination-specific planning may involve:
+- United States: the Israel-US tax treaty, federal and state taxation assessed separately, US tax-residency tests including the Substantial Presence Test subject to statutory rules and exceptions, foreign financial reporting including FBAR and FATCA where applicable under the relevant requirements, thresholds and exceptions, and case-specific equity-compensation analysis. Federal treaty relief does not automatically determine state-tax treatment.
+- Cyprus and Greece: separate destination-country regimes with different eligibility conditions, Israeli center-of-life considerations, applicable treaties and remote-work/business-activity implications. Visits to Israel form part of the facts, not an independent residency test; remote work may raise payroll, social-security or permanent-establishment issues depending on the structure. Destination-country incentives do not themselves terminate Israeli tax residency.
+- United Kingdom and Europe: UK Statutory Residence Test (SRT) and potential Split Year Treatment in qualifying circumstances, applicable treaties and bilateral social-security agreements where available. Agreements cover certain jurisdictions and differ in scope and insurance branches; the specific agreement must be reviewed individually.
+
+Tax treatment depends on the facts and current law. Section 100A exit-tax analysis and equity-compensation analysis are separate issues; no outcome is guaranteed.
+
 Professional planning may be particularly relevant for split-family arrangements, significant Israeli assets, continuing Israeli business activity, equity compensation and potential dual residency. A CPA opinion is not generally mandatory; reviewing complex cases several months before relocation is a planning recommendation, not a statutory requirement. Outcomes depend on the facts, documentation, applicable law and relevant tax treaty; no outcome is guaranteed. The information is general professional information only, not a tax opinion, legal advice or a binding residency determination.
 - HE: https://nimrodi.co.il/cpa-international
 - EN: https://nimrodi.co.il/en/cpa-international

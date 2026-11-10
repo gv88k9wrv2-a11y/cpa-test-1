@@ -1,5 +1,7 @@
 # Requested updates
 
+- [x] Destination-specific relocation update: approved HE/EN US, Cyprus/Greece and UK/Europe sections on international services and existing relocation guides; two shared visible/schema FAQs added per page, contextual existing-page links and consolidated llms entries. Four pages return 200; all visible FAQs match schema, canonical/hreflang verified, seven related destinations resolve, desktop/mobile verified without overflow or runtime errors; 33 tests pass and harness build OK. No same-language English treaty article or separate severance article exists, so no placeholder links added. No publication; standalone TypeScript check not manually run under harness workflow.
+
 - [x] Approved relocation/residency update: exact bilingual international-page metadata, four shared visible/schema FAQs, contextual CTA/WhatsApp, corrected existing article/legal wording and descriptive links, consolidated AI references. Four routes return 200, canonical/hreflang and exact answer/schema parity verified, 26 internal destinations resolve, desktop/mobile screenshots show no horizontal overflow or runtime errors; 24 tests pass and build/typecheck OK. No separate tax-residency-severance article exists, so its future link is deferred; not published.
 
 - [x] Add the supplied ICPAS affiliation logo to bilingual home trust strips, footers and About pages; Person/CFO and AccountingService memberOf point to the official site. Verified four pages on desktop/mobile, image loading, schemas and no overflow; 20 tests pass, build OK; not published.
