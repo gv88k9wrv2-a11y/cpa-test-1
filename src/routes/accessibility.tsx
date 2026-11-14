@@ -40,7 +40,7 @@ function AccessibilityPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      <main id="main-content">
+      <main id="main-content" dir="rtl">
         <section className="border-b border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6">
             <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
@@ -88,7 +88,7 @@ function AccessibilityPage() {
                 <p>
                   <strong>טלפון:</strong>{" "}
                   <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
-                    09-9582211
+                    <bdi dir="ltr">09-9582211</bdi>
                   </a>
                 </p>
                 <p>
@@ -99,7 +99,7 @@ function AccessibilityPage() {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-gold hover:underline"
                   >
-                    054-6688681
+                    <bdi dir="ltr">054-6688681</bdi>
                   </a>
                 </p>
                 <p>

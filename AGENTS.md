@@ -39,3 +39,5 @@
 - Founder credentials and official registry URL are defined centrally in src/lib/meta.ts and reused by Person and article author/reviewer references and About-page registry links — keeps licensing facts consistent without asserting a license number or independent review.
 - Official NAP is 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel / גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל; phone +972 9-958-2211 (09-9582211) — keep all visible and structured references synchronized.
 - Service pages opt into `sectionNavigation` to render a top TOC from section titles; anchors use the section id or a stable `topic-N` fallback so links always match headings.
+
+- Legal leaf routes keep approved text literal in the existing legal-page layout, while footer-only legal link lists stay separate from mobile navigation to avoid unrelated menu changes.
