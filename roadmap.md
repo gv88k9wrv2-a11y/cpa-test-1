@@ -49,4 +49,4 @@
 - [x] Verify both home and About pages at desktop/mobile widths, logo rendering, registry links, no horizontal overflow, and no runtime errors; build OK.
 
 - [ ] Legal HE/EN privacy replacements and new Terms pages/footer links: blocked on four full approved final texts absent from handoff and uploaded files; preserve current legal/accessibility content rather than invent legal copy.
-- [ ] Add global opt-in GA4 consent, bilingual banner/footer preferences, local persistence and withdrawal; preserve measurement ID and non-PII events; test before consent, grant, rejection and reload. Do not publish.
+- [x] Add global opt-in GA4 consent, bilingual banner/footer preferences, local persistence and withdrawal; preserve measurement ID and non-PII event parameters. HE desktop/EN mobile browser checks confirm no GA script/cookies before consent, cookies after grant, saved preferences after reload and cookie removal plus no tag reload after withdrawal; no runtime errors or horizontal overflow. Consent/affiliation regression tests pass and harness build OK. Legal/accessibility pages unchanged; no publication.
