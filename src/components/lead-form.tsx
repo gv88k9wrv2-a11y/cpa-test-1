@@ -3,6 +3,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { storeVoluntaryInquiry } from "../lib/voluntary-inquiry.functions";
 import { Link } from "@tanstack/react-router";
 import { CheckCircle2, Loader2, Mail, MessageCircle, Send, ShieldCheck } from "lucide-react";
+import { sendAnalyticsEvent } from "../lib/analytics-consent";
 
 type Lang = "he" | "en";
 
@@ -241,10 +242,7 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
       if (!res.ok || !json.success) throw new Error(`send failed ${res.status}`);
 
       try {
-        const w = window as unknown as { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
-        w.dataLayer = w.dataLayer || [];
-        w.dataLayer.push({ event: "form_submission", form_id: "lead_form", language: lang });
-        w.gtag?.("event", "form_submission", { form_id: "lead_form", language: lang });
+        sendAnalyticsEvent("form_submission", { form_id: "lead_form", language: lang });
       } catch {
         /* noop */
       }

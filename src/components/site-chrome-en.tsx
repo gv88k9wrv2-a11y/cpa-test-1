@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { SocialIcons } from "./social-proof";
 import { ProfessionalMembership } from "./professional-membership";
+import { CookiePreferencesLink } from "./cookie-consent";
 import {
   ABOUT_GROUP_EN,
   COMPANIES_BOTTOM_EN,
@@ -779,6 +780,7 @@ export function SiteFooterEn() {
               </Link>
             </li>
           ))}
+          <li><CookiePreferencesLink lang="en" /></li>
         </ul>
       </nav>
       <div className="w-full border-t border-primary-foreground/10 px-4 py-5 text-center text-sm text-primary-foreground/60">
