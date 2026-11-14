@@ -13,6 +13,8 @@
 
 ## Project rules
 
+- GA4 uses the shared explicit analytics-consent gate and loads only after a grant; the first root head script establishes denied defaults, and footer preferences reuse the single banner so withdrawal and non-PII events share one permission source.
+
 - Professional association logos and links use a shared bilingual affiliation component and membership schema constant, separate from CPA licensing credentials; third-party affiliation logos do not replace the firm's branding.
 
 - Both language headers use viewport-fixed positioning with an equal-height flow spacer; mobile panels start below the header so navigation remains accessible without covering page content.

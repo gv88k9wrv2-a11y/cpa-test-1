@@ -15,6 +15,9 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ScrollToTop } from "../components/scroll-to-top";
 import { AccessibilityWidget } from "../components/accessibility-widget";
+import { CookieConsent } from "../components/cookie-consent";
+import { CONSENT_DEFAULTS } from "../lib/consent-defaults";
+import { sendPageView, watchAnalyticsConsent } from "../lib/analytics-consent";
 
 // Inject robots noindex,nofollow on error/404 renders so Google never indexes them.
 function useNoindex() {
@@ -36,10 +39,6 @@ function useNoindex() {
     };
   }, []);
 }
-
-// GA4 Measurement ID — analytics enabled.
-const GA4_MEASUREMENT_ID = "G-DVPW43Z6TN";
-const GA_ENABLED = GA4_MEASUREMENT_ID.startsWith("G-") && !GA4_MEASUREMENT_ID.includes("XXXX");
 
 function NotFoundComponent() {
   useNoindex();
@@ -271,6 +270,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         },
       ],
       scripts: [
+        { children: CONSENT_DEFAULTS },
         {
           type: "application/ld+json",
           children: JSON.stringify(ORG_JSONLD),
@@ -284,17 +284,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           children: JSON.stringify(PERSON_JSONLD),
         },
 
-        ...(GA_ENABLED
-          ? [
-              {
-                src: `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`,
-                async: true,
-              },
-              {
-                children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA4_MEASUREMENT_ID}',{send_page_view:false});`,
-              },
-            ]
-          : []),
       ],
     };
   },
@@ -352,18 +341,8 @@ function RootComponent() {
       });
   }, []);
 
-  useEffect(() => {
-    if (!GA_ENABLED || typeof window === "undefined") return;
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void; dataLayer?: unknown[] };
-    const page_path = window.location.pathname + window.location.search;
-    w.dataLayer = w.dataLayer || [];
-    w.dataLayer.push({ event: "page_view", page_path, page_title: document.title });
-    w.gtag?.("event", "page_view", {
-      page_path,
-      page_title: document.title,
-      page_location: window.location.href,
-    });
-  }, [pathname]);
+  useEffect(() => watchAnalyticsConsent(), []);
+  useEffect(() => { sendPageView(); }, [pathname]);
 
   const isEnglish = pathname === "/en" || pathname.startsWith("/en/");
 
@@ -372,6 +351,7 @@ function RootComponent() {
       <Outlet />
       <ScrollToTop lang={isEnglish ? "en" : "he"} />
       <AccessibilityWidget lang={isEnglish ? "en" : "he"} />
+      <CookieConsent lang={isEnglish ? "en" : "he"} />
     </QueryClientProvider>
   );
 }
