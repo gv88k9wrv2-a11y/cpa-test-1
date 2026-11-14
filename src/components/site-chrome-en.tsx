@@ -673,6 +673,12 @@ function MobileMenuEn({ heHref }: { heHref: string }) {
   );
 }
 
+const FOOTER_LEGAL_LINKS_EN = [
+  { to: "/en/privacy-policy", label: "Privacy Policy" },
+  { to: "/en/terms", label: "Terms of Use" },
+  { to: "/en/accessibility", label: "Accessibility" },
+] as const;
+
 export function SiteFooterEn() {
   return (
     <footer className="mt-24 border-t border-border/60 bg-primary text-primary-foreground">
@@ -770,7 +776,7 @@ export function SiteFooterEn() {
         className="w-full border-t border-primary-foreground/10"
       >
         <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 px-4 py-5 text-sm text-primary-foreground/80">
-          {LEGAL_LINKS_EN.map((l) => (
+          {FOOTER_LEGAL_LINKS_EN.map((l) => (
             <li key={l.to}>
               <Link
                 to={l.to}

@@ -5,184 +5,152 @@ import { FirmContactBlock } from "../components/firm-contact-block";
 export const Route = createFileRoute("/en/privacy-policy")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
-      { name: "twitter:description", content: "Privacy policy and terms of use for Nimrodi & Co. CPA in Herzliya: confidentiality practices, applicable privacy requirements and client data security." },
-      { property: "og:locale", content: "en_US" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { title: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
-      {
-        name: "description",
-        content:
-          "Privacy policy and terms of use for Nimrodi & Co. CPA in Herzliya: confidentiality practices, applicable privacy requirements and client data security.",
-      },
-      { name: "robots", content: "index, follow" },
-      { property: "og:title", content: "Privacy Policy & Terms of Use | Nimrodi & Co. CPA" },
-      { property: "og:description", content: "Privacy policy and terms of use for Nimrodi & Co. CPA in Herzliya: confidentiality practices, applicable privacy requirements and client data security." },
-      { property: "og:url", content: "https://nimrodi.co.il/en/privacy-policy" },
+      {"title": "Privacy Policy | Nimrodi & Co. CPA"},
+      {"name": "description", "content": "Privacy Policy for Nimrodi & Co. Certified Public Accountants: data collection, service providers, analytics, security and privacy rights. Read the full policy."},
+      {"property": "og:title", "content": "Privacy Policy | Nimrodi & Co. CPA"},
+      {"property": "og:description", "content": "Privacy Policy for Nimrodi & Co. Certified Public Accountants: data collection, service providers, analytics, security and privacy rights. Read the full policy."},
+      {"property": "og:type", "content": "website"},
+      {"property": "og:locale", "content": "en_US"},
+      {"property": "og:url", "content": "https://nimrodi.co.il/en/privacy-policy"},
+      {"name": "twitter:title", "content": "Privacy Policy | Nimrodi & Co. CPA"},
+      {"name": "twitter:description", "content": "Privacy Policy for Nimrodi & Co. Certified Public Accountants: data collection, service providers, analytics, security and privacy rights. Read the full policy."},
+      {"name": "twitter:card", "content": "summary_large_image"},
+      {"name": "robots", "content": "index, follow"},
     ],
     links: [
-      { rel: "canonical", href: "https://nimrodi.co.il/en/privacy-policy" },
-      { rel: "alternate", hrefLang: "he-IL", href: "https://nimrodi.co.il/privacy-policy" },
-      { rel: "alternate", hrefLang: "en-US", href: "https://nimrodi.co.il/en/privacy-policy" },
+      {"rel": "canonical", "href": "https://nimrodi.co.il/en/privacy-policy"},
+      {"rel": "alternate", "hrefLang": "he-IL", "href": "https://nimrodi.co.il/privacy-policy"},
+      {"rel": "alternate", "hrefLang": "en-US", "href": "https://nimrodi.co.il/en/privacy-policy"},
     ],
   }),
-  component: PrivacyPageEn,
+  component: LegalPageEn,
 });
 
-function PrivacyPageEn() {
+function LegalPageEn() {
   return (
     <>
       <SiteHeaderEn />
-      <main id="main-content" className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+      <main id="main-content" className="mx-auto max-w-3xl px-4 py-16 sm:px-6" dir="ltr">
         <header className="border-b border-border/60 pb-6">
-          <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
-            Privacy Policy &amp; Terms of Use
-          </h1>
-          <p className="mt-3 text-sm text-muted-foreground">Last updated: August 2026</p>
+          <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">Privacy Policy</h1>
+          <p className="mt-3 text-foreground">Nimrodi &amp; Co. Certified Public Accountants</p>
+          <p className="mt-3 text-sm text-muted-foreground">Last Updated: November 2026</p>
         </header>
-
         <article className="mt-10 space-y-10 text-foreground leading-relaxed">
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              1. Confidentiality and Scope
-            </h2>
-            <p className="mt-3">
-              Nimrodi &amp; Co. CPA Firm ("the Firm") is subject to the professional confidentiality
-              and ethics obligations applicable to certified public accountants in Israel and
-              handles personal information in accordance with applicable law, internal procedures
-              and the relevant engagement arrangements.
-            </p>
-            <p className="mt-3">
-              This policy governs interactions with the Firm's website. Formal professional services
-              provided to clients are governed by separate, direct engagement letters, and not
-              through this website.
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">1. Scope</h2>
+            <p className="mt-3">Nimrodi &amp; Co. Certified Public Accountants (the "Office") respects the privacy of website visitors, individuals contacting the Office and users of its digital services.</p>
+            <p className="mt-3">This Policy applies, as relevant, to the Office website, contact forms, CPAI, online questionnaires and Service Routes, campaign-originated enquiries and relevant digital communication channels referring to this Policy.</p>
+            <p className="mt-3">Professional services are also governed by separate engagement agreements.</p>
           </section>
-
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              2. Submission of Documents and Financial Information
-            </h2>
-            <p className="mt-3">
-              This site is a promotional and informational website only. The website does not
-              provide a dedicated system for uploading or securely submitting sensitive financial or
-              personal documents. Users should not enter or submit sensitive financial, personal or
-              confidential information through the website inquiry form when such information is not
-              necessary for an initial inquiry.
-            </p>
-            <p className="mt-3">
-              Clients should submit documents and data only through channels specifically authorized
-              by the Firm for the relevant engagement. The appropriate submission method will be
-              communicated directly by the Firm.
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">2. Controller</h2>
+            <p className="mt-3">The controller is:</p>
+            <p className="mt-3">Nimrodi &amp; Co. Certified Public Accountants<br />16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel<br />Telephone: <bdi dir="ltr">09-958-2211</bdi><br />Email: office@nimrodi.co.il<br />Website: https://nimrodi.co.il</p>
           </section>
-
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              3. Data Collection &amp; Purpose (Amendment 13 Notice)
-            </h2>
-            <p className="mt-3">
-              Through the website's contact forms we collect only the details you voluntarily choose
-              to provide: full name, company name, business email, direct phone number, and message
-              content. <strong>You are under no legal obligation</strong> to provide this
-              information.
-            </p>
-            <p className="mt-3">
-              This data is used solely to respond to your inquiry and coordinate a consultation.
-              Personal information is not sold or rented to third parties. However, where necessary
-              to operate the website and provide related services, information may be processed by
-              service providers acting on behalf of the firm, such as hosting, cloud infrastructure,
-              security and technology service providers, subject to applicable law and appropriate
-              safeguards.
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">3. Voluntary Provision of Information</h2>
+            <p className="mt-3">Providing information through the website or CPAI is voluntary unless expressly stated otherwise.</p>
+            <p className="mt-3">Without information required for a particular enquiry, the Office may be unable to receive the enquiry, contact the individual or determine the appropriate service.</p>
           </section>
-
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              4. Data Security, Infrastructure Providers &amp; Cookies
-            </h2>
-            <p className="mt-3">
-              The site is secured using HTTPS encryption. The site may collect standard technical
-              information (e.g., IP address, browser type, and functional / analytics cookies) for
-              security and to improve the browsing experience.
-            </p>
-            <p className="mt-3">
-              Technical processing may involve trusted cloud infrastructure, hosting and technology
-              service providers bound by strict security and confidentiality obligations. The site
-              is intended for a general business and professional audience and does not knowingly
-              collect information from minors.
-            </p>
-            <p className="mt-3">
-              Information may also be processed or stored outside Israel by trusted service
-              providers that implement appropriate security and confidentiality measures.
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">4. Information We May Collect</h2>
+            <p className="mt-3">Depending on the interaction and Service Route, the Office may collect:</p>
+            <ul className="mt-3 list-disc space-y-1 ps-6">
+              <li>name and contact details;</li>
+              <li>company or business name, where provided;</li>
+              <li>requested service;</li>
+              <li>responses to structured Service Route questions;</li>
+              <li>information reasonably necessary to receive, classify and route the enquiry;</li>
+              <li>communication preferences and consents;</li>
+              <li>campaign and referral information;</li>
+              <li>technical and operational information needed for operation, security and misuse prevention.</li>
+            </ul>
+            <p className="mt-3">The categories of information may vary between Service Routes.</p>
+            <p className="mt-3">The Office seeks to limit collection to information reasonably necessary for the relevant purposes.</p>
           </section>
-
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              5. Data Retention, User Rights &amp; Contact
-            </h2>
-            <p className="mt-3">
-              Data is retained only for the period required to handle your inquiry or as required by
-              applicable record-keeping obligations under law. You have the right to inspect,
-              correct, or request deletion of personal information held by the Firm.
-            </p>
-            <p className="mt-3">
-              For privacy-related questions or to exercise your privacy rights, please contact:{" "}
-              <a href="mailto:office@nimrodi.co.il" className="text-gold-text underline">
-                office@nimrodi.co.il
-              </a>
-              .
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">5. Purposes</h2>
+            <p className="mt-3">Information may be used to receive, classify and manage enquiries; contact individuals; manage Leads; arrange calls or meetings; manage the handling of an enquiry; operate and secure the services; prevent misuse and spam; measure campaign sources; comply with applicable requirements; protect the Office's rights; and send updates or marketing information where an appropriate basis exists.</p>
+            <p className="mt-3">A material new use of personal information will be assessed in accordance with applicable law, including any additional notice or consent requirements.</p>
           </section>
-
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              6. Professional Disclaimer &amp; No Reliance
-            </h2>
-            <p className="mt-3">
-              All content, articles, and information presented on the site are provided for general
-              informational purposes only. The information{" "}
-              <strong>does not constitute accounting, tax, legal, or financial advice</strong> and
-              is not a substitute for a formal professional opinion or individualized advice
-              tailored to each client's specific circumstances.
-            </p>
-            <p className="mt-3">
-              The Firm shall not be liable for any consequences arising from reliance on the
-              information published on the site without first obtaining individualized professional
-              advice.
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">6. CPAI and Service Routes</h2>
+            <p className="mt-3">CPAI is used to receive enquiries, operate structured Service Route questionnaires, perform preliminary classification and route enquiries.</p>
+            <p className="mt-3">Service Routes may change and expand over time.</p>
+            <p className="mt-3">Unless expressly stated otherwise, questionnaires, classifications, results or information displayed through CPAI do not constitute professional, accounting, tax or legal advice, a binding determination regarding residency, tax liability or reporting obligations, or a guarantee of any outcome.</p>
+            <p className="mt-3">Professional conclusions require individual review of the relevant facts and circumstances.</p>
           </section>
-
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">
-              7. Privacy Policy Updates
-            </h2>
-            <p className="mt-3">
-              We may update this Privacy Policy from time to time to reflect legal, operational, or
-              service changes. The updated version will be published on this website and will become
-              effective upon publication.
-            </p>
+            <h2 className="font-display text-2xl font-bold text-primary">7. Route-Specific Information</h2>
+            <p className="mt-3">Where a Service Route materially changes the categories of information, processing purposes, providers, AI use, document handling or retention, the Office will assess whether an additional notice or Policy update is required.</p>
           </section>
-
-          <section className="rounded-2xl border border-gold/40 bg-gold/5 p-6">
-            <h2 className="font-display text-2xl font-bold text-primary">8. Office Contact</h2>
-            <address className="mt-3 not-italic leading-8">
-              <strong>Nimrodi &amp; Co. CPA</strong>
-              <br />
-              Address: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel
-              <br />
-              Phone:{" "}
-              <a href="tel:+97299582211" className="text-gold-text underline">
-                +972 9-958-2211
-              </a>
-              <br />
-              Email:{" "}
-              <a href="mailto:office@nimrodi.co.il" className="text-gold-text underline">
-                office@nimrodi.co.il
-              </a>
-            </address>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">8. Client Documents</h2>
+            <p className="mt-3">Active approved public CPAI Service Routes are not intended for the submission of Client professional documents.</p>
+            <p className="mt-3">Do not submit identification documents, passports, bank-account information, passwords, tax returns, payroll documents, agreements, financial statements or other professional Client documents through these Routes.</p>
+            <p className="mt-3">Where documents are required, the Office will provide instructions. Under the current policy, documents requested by the Office are sent directly to office@nimrodi.co.il.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">9. Artificial Intelligence</h2>
+            <p className="mt-3">The Office may use technology and artificial-intelligence tools for internal or controlled purposes, such as assisting with research, organizing information and preparing working drafts.</p>
+            <p className="mt-3">At present, active public CPAI Service Routes are not intended to provide Clients with automatic professional opinions or professional responses generated through AI.</p>
+            <p className="mt-3">Any material change in the processing of personal information through AI will be assessed under applicable law, and relevant notices and policies will be updated where required before such use is introduced.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">10. WhatsApp</h2>
+            <p className="mt-3">WhatsApp may be used for general communication and coordination and is not a Client-document channel.</p>
+            <p className="mt-3">Where documents are required, the Office will provide instructions. Under the current policy, documents requested by the Office are sent directly to office@nimrodi.co.il.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">11. Service Providers</h2>
+            <p className="mt-3">The Office may use external providers for hosting, databases, security, communications, analytics, campaigns and other technology services.</p>
+            <p className="mt-3">Access will be limited, where reasonably possible, to the information and systems required for the relevant service, and provider arrangements will be reviewed and managed in accordance with applicable requirements.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">12. International Transfers</h2>
+            <p className="mt-3">Certain providers may process or store information outside Israel.</p>
+            <p className="mt-3">Where personal information is transferred outside Israel, the Office will act in accordance with applicable legal requirements governing such transfers.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">13. Cookies, Analytics and Campaign Attribution</h2>
+            <p className="mt-3">The website and digital services may use cookies and similar technologies for operation, security, preferences, usage measurement and campaign attribution.</p>
+            <p className="mt-3">The Office website uses Google Analytics to understand website usage and performance. Non-essential technologies will be operated according to applicable consent choices where required.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">14. Information Security</h2>
+            <p className="mt-3">The Office uses organizational and technological measures intended to reduce information-security risks and limit access according to need.</p>
+            <p className="mt-3">No internet-connected system can be guaranteed to be completely secure.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">15. Retention</h2>
+            <p className="mt-3">Information will be retained for a period reasonably necessary for the purposes for which it was collected, handling the enquiry, managing the relationship, complying with applicable requirements, protecting rights and securing the services.</p>
+            <p className="mt-3">The Office will periodically assess whether information remains necessary and seek to minimize information that is no longer required, subject to applicable law and Office policies.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">16. Rights</h2>
+            <p className="mt-3">Subject to applicable law and its conditions, individuals may contact the Office regarding access to and correction of personal information.</p>
+            <p className="mt-3">Individuals may also submit a deletion request. Such requests will be considered subject to applicable law, retention purposes and obligations applicable to the Office.</p>
+            <p className="mt-3">This Policy does not guarantee deletion in every circumstance.</p>
+            <p className="mt-3">Privacy enquiries: office@nimrodi.co.il.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">17. Marketing Communications</h2>
+            <p className="mt-3">Where required, consent for marketing communications will be requested separately.</p>
+            <p className="mt-3">Declining marketing communications does not prevent submission or handling of a professional enquiry.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">18. Minors</h2>
+            <p className="mt-3">The website and CPAI are not intended to knowingly collect personal information from minors.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">19. Changes</h2>
+            <p className="mt-3">This Policy may be updated following changes in law, services, systems, providers or processing activities.</p>
+            <p className="mt-3">The latest update date will appear at the top of the page.</p>
+          </section>
+          <section>
+            <h2 className="font-display text-2xl font-bold text-primary">20. Contact</h2>
+            <p className="mt-3">Nimrodi &amp; Co. Certified Public Accountants<br />16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel<br />Telephone: <bdi dir="ltr">09-958-2211</bdi><br />Email: office@nimrodi.co.il<br />Website: https://nimrodi.co.il</p>
           </section>
         </article>
         <FirmContactBlock lang="en" />

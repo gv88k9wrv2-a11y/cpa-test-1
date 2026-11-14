@@ -682,6 +682,12 @@ function MobileMenu({ enHref }: { enHref: string }) {
   );
 }
 
+const FOOTER_LEGAL_LINKS = [
+  { to: "/privacy-policy", label: "מדיניות פרטיות" },
+  { to: "/terms", label: "תנאי שימוש" },
+  { to: "/accessibility", label: "הצהרת נגישות" },
+] as const;
+
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border/60 bg-primary text-primary-foreground">
@@ -774,7 +780,7 @@ export function SiteFooter() {
         className="w-full border-t border-primary-foreground/10"
       >
         <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 px-4 py-5 text-sm text-primary-foreground/80">
-          {LEGAL_LINKS.map((l) => (
+          {FOOTER_LEGAL_LINKS.map((l) => (
             <li key={l.to}>
               <Link
                 to={l.to}
