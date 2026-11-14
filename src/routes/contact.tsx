@@ -76,7 +76,7 @@ function ContactPage() {
         <section className="py-16">
           <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <div className="space-y-4">
-              <ContactCard icon={Phone} title="טלפון" value="09-9582211" href="tel:099582211" />
+              <ContactCard icon={Phone} title="טלפון" value="09-958-2211" href="tel:099582211" />
               <ContactCard
                 icon={MessageCircle}
                 title="וואטסאפ"
