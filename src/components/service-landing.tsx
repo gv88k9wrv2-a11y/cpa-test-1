@@ -125,7 +125,7 @@ export function ServiceLanding({
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-5 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
                 <Phone className="h-4 w-4" aria-hidden />
-                09-9582211
+                09-958-2211
               </a>
             </div>
 

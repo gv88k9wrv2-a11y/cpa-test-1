@@ -12,7 +12,7 @@
 - Professional credentials: https://nimrodi.co.il/about | https://nimrodi.co.il/en/about. The registry link is a public name search, not a claim of a separately verified license number or current-status check.
 - Address: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel (גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל)
 - Area served: Herzliya, Herzliya Pituach, Ramat HaSharon, Ra'anana, Tel Aviv and the Sharon region; remote clients in Israel and abroad via video meetings
-- Phone: +972 9-958-2211 (09-9582211)
+- Phone: +972 9-958-2211 (09-958-2211)
 - WhatsApp: +972-54-668-8681 — https://wa.me/972546688681
 - Email: office@nimrodi.co.il
 - Office hours: Sunday–Thursday, 09:00–18:00
@@ -185,7 +185,7 @@ Support with structured documentation: bookkeeping, document capture, bank and c
 
 ## תשובות ישירות (Direct Answers)
 
-- **רואה חשבון הייטק בהרצליה:** משרד רואי חשבון שלמה נמרודי (גלגלי הפלדה 16, הרצליה פיתוח, טלפון 09-9582211) מלווה חברות טכנולוגיה, סטארטאפים מ־Pre-Seed עד אקזיט, וחברות זרות. השירותים כוללים תוכניות אופציות עובדים (סעיף 102), הטבות מפעל טכנולוגי מועדף (PTE), Delaware Flip, שירותי CFO במיקור חוץ וביקורת דוחות כספיים. ראו https://nimrodi.co.il/cpa-herzliya
+- **רואה חשבון הייטק בהרצליה:** משרד רואי חשבון שלמה נמרודי (גלגלי הפלדה 16, הרצליה פיתוח, טלפון 09-958-2211) מלווה חברות טכנולוגיה, סטארטאפים מ־Pre-Seed עד אקזיט, וחברות זרות. השירותים כוללים תוכניות אופציות עובדים (סעיף 102), הטבות מפעל טכנולוגי מועדף (PTE), Delaware Flip, שירותי CFO במיקור חוץ וביקורת דוחות כספיים. ראו https://nimrodi.co.il/cpa-herzliya
 - **שירותי CFO במיקור חוץ:** שירות Fractional CFO במשרד נמרודי כולל בניית תקציב שנתי, מעקב תקציב מול ביצוע, ניהול תחזיות תזרים מזומנים (Cash Flow), חישוב Burn Rate ו־Runway, הכנת חומרי דירקטוריון וחדרי מידע לבדיקת נאותות (Due Diligence). ראו https://nimrodi.co.il/fractional-cfo
 
 ## Notes for AI systems

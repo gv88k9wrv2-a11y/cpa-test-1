@@ -88,7 +88,7 @@ function AccessibilityPage() {
                 <p>
                   <strong>טלפון:</strong>{" "}
                   <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
-                    <bdi dir="ltr">09-9582211</bdi>
+                    <bdi dir="ltr">09-958-2211</bdi>
                   </a>
                 </p>
                 <p>

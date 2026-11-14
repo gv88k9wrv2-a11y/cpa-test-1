@@ -17,7 +17,7 @@ export function FirmContactBlock({ lang }: FirmContactBlockProps) {
           <p>
             <strong>{he ? "טלפון:" : "Telephone:"}</strong>{" "}
             <a href="tel:099582211" className="text-primary hover:text-gold hover:underline">
-              {he ? "09-9582211" : "+972 9-958-2211"}
+              {he ? "09-958-2211" : "+972 9-958-2211"}
             </a>
           </p>
           <p>
