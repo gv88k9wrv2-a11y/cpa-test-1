@@ -310,7 +310,7 @@ export function UnifiedHome({ lang }: { lang: Lang }) {
             className="inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-md bg-gold px-3 font-semibold text-gold-foreground transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold active:scale-[0.98]"
           >
             <Phone className="h-5 w-5 shrink-0" aria-hidden />
-            {isHe ? "חייגו 09-9582211" : "Call Now"}
+            {isHe ? "חייגו 09-958-2211" : "Call Now"}
           </a>
           <a
             href={whatsappUrl}

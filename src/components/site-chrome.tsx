@@ -35,7 +35,7 @@ const WHATSAPP_URL =
   "https://wa.me/972546688681?text=" + encodeURIComponent("פנייה מהאתר – נמרודי ושות׳");
 
 const PHONE_TEL = "tel:099582211";
-const PHONE_DISPLAY = "09-9582211";
+const PHONE_DISPLAY = "09-958-2211";
 const WHATSAPP_DISPLAY = "054-6688681";
 const EMAIL = "office@nimrodi.co.il";
 const ADDRESS_HE = "גלגלי הפלדה 16, הרצליה פיתוח, 4672216, ישראל";
