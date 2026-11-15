@@ -446,16 +446,24 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
                   {lang === "he" ? (
                     <>
                       קראתי ואני מאשר/ת את{" "}
+                      <Link to="/terms" className="text-gold-text underline underline-offset-2">
+                        תנאי השימוש
+                      </Link>{" "}
+                      ואת{" "}
                       <Link to="/privacy-policy" className="text-gold-text underline underline-offset-2">
-                        תנאי השימוש ואת מדיניות הפרטיות
+                        מדיניות הפרטיות
                       </Link>{" "}
                       של האתר.
                     </>
                   ) : (
                     <>
                       I have read and accept the site&rsquo;s{" "}
+                      <Link to="/en/terms" className="text-gold-text underline underline-offset-2">
+                        Terms of Use
+                      </Link>{" "}
+                      and{" "}
                       <Link to="/en/privacy-policy" className="text-gold-text underline underline-offset-2">
-                        Terms of Use and Privacy Policy
+                        Privacy Policy
                       </Link>
                       .
                     </>
@@ -509,6 +517,10 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
                     בשליחת הטופס אתם מאשרים כי קראתם את{" "}
                     <Link to="/privacy-policy" className="text-gold-text underline">
                       מדיניות הפרטיות
+                    </Link>{" "}
+                    ואת{" "}
+                    <Link to="/terms" className="text-gold-text underline">
+                      תנאי השימוש
                     </Link>
                     .
                   </>
@@ -517,6 +529,10 @@ export function LeadForm({ lang = "he", serviceName, persistVoluntaryInquiry = f
                     By submitting this form, you acknowledge that you have read the{" "}
                     <Link to="/en/privacy-policy" className="text-gold-text underline">
                       Privacy Policy
+                    </Link>{" "}
+                    and{" "}
+                    <Link to="/en/terms" className="text-gold-text underline">
+                      Terms of Use
                     </Link>
                     .
                   </>
