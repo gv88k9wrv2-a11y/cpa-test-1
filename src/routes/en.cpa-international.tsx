@@ -124,6 +124,7 @@ export const Route = createFileRoute("/en/cpa-international")({
                 </Link>
               </p>
               <p className="mt-4">{RELOCATION_CONTENT.en.disclaimer}</p>
+              <FocusedConversionCta lang="en" topic="relocation" className="mt-6" />
             </>
           ),
         },

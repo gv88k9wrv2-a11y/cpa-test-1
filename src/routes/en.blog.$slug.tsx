@@ -161,6 +161,7 @@ function PostNotFoundEn() {
 function BlogPostPageEn() {
   const { post } = Route.useLoaderData() as { post: BlogPostEn; slug: string };
   const relocation = post.translationKey === "relocation-tax-residency" ? RELOCATION_CONTENT.en : undefined;
+  const conversion = ARTICLE_CTA_PLACEMENTS.en[post.slug as keyof typeof ARTICLE_CTA_PLACEMENTS.en];
 
   const related = (post.relatedSlugs ?? [])
     .map((slug) => BLOG_POSTS_EN.find((p) => p.slug === slug))
