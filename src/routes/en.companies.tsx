@@ -39,6 +39,18 @@ export const Route = createFileRoute("/en/companies")({
       groups={COMPANIES_GROUPS_EN}
       sections={[
         {
+          id: "tech-growth",
+          title: "Technology Companies and Growing Ventures",
+          body: (
+            <>
+              Technology companies and growing ventures need support tailored to their stage: see our{" "}
+              <Link to="/en/cpa-startups" className="font-semibold text-primary underline decoration-gold/60 underline-offset-4">startup CPA services</Link>{" "}
+              for Section 102 plans and multi-currency reporting, and our{" "}
+              <Link to="/en/fractional-cfo" className="font-semibold text-primary underline decoration-gold/60 underline-offset-4">Fractional CFO</Link> services for budgeting, cash flow and investor reporting.
+            </>
+          ),
+        },
+        {
           id: "cpa-herzliya",
           title: "A CPA Firm in Herzliya Pituach",
           body: "Our office is located at 16 Galgalei HaPlada St., Herzliya Pituach, serving companies and startups in Herzliya, Ramat HaSharon, Ra'anana, Tel Aviv and the surrounding area — as well as remotely via Zoom and digital collaboration tools.",

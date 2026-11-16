@@ -7,6 +7,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-international.webp";
+import { FocusedConversionCta } from "../components/focused-conversion-cta";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [

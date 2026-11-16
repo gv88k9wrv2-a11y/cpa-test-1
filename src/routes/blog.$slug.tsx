@@ -9,6 +9,7 @@ import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 import { BlogInlineContent } from "../components/blog-inline-content";
 import { BlogFaqList } from "../components/blog-faq-list";
 import { RELOCATION_CONTENT } from "../data/relocation-residency";
+import { ARTICLE_CTA_PLACEMENTS, FocusedConversionCta } from "../components/focused-conversion-cta";
 
 const ORIGIN = "https://nimrodi.co.il";
 
