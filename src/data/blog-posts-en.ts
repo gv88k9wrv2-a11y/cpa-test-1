@@ -171,7 +171,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Professional Consultation & Advisory",
         p: [
-          "Evaluating eligibility for tax incentives under Israel's Law for the Encouragement of Capital Investments? Nimrodi & Co. CPAs assists software companies, startups, and technology enterprises in assessing eligibility for Preferred Enterprise and Preferred Technological Enterprise (PTE) regimes, modeling tax impacts, preparing defensible Nexus documentation, and assisting with tax authority interactions, reporting requirements and auditor coordination. See also our [corporate tax consulting and planning](/en/tax-consulting) services.",
+          "Evaluating eligibility for tax incentives under Israel's Law for the Encouragement of Capital Investments? Nimrodi & Co. CPAs assists software companies, startups, and technology enterprises in assessing eligibility for Preferred Enterprise and Preferred Technological Enterprise (PTE) regimes, modeling tax impacts, preparing defensible Nexus documentation, and assisting with tax authority interactions, reporting requirements and auditor coordination. See also our [corporate tax consulting and planning](/en/tax-consulting) and [Fractional CFO services](/en/fractional-cfo).",
           "**Phone:** 09-958-2211 · **Email:** office@nimrodi.co.il · **Address:** 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel",
         ],
       },
@@ -859,7 +859,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       {
         h: "Cash runway and commitments",
         p: [
-          "A cash forecast should include payroll, suppliers, taxes, grant restrictions, debt, contractual commitments and expected collection dates. Document the assumptions and compare forecast to actual results each month. Separate committed costs from optional plans and identify payments denominated in foreign currency. This creates a clearer basis for hiring, fundraising and spending decisions.",
+          "A cash forecast should include payroll, suppliers, taxes, grant restrictions, debt, contractual commitments and expected collection dates. Document the assumptions and compare forecast to actual results each month. Separate committed costs from optional plans and identify payments denominated in foreign currency. This creates a clearer basis for hiring, fundraising and spending decisions. For ongoing budgeting, cash-flow and management-reporting support, see our [Fractional CFO](/en/fractional-cfo) services.",
         ],
       },
       {

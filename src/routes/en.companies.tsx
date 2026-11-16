@@ -1,5 +1,5 @@
 import { buildBreadcrumbJsonLd } from "../lib/meta";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { COMPANIES_GROUPS_EN } from "../data/nav-content";
 
