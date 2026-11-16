@@ -226,7 +226,7 @@ function BlogPostPageEn() {
           </div>
 
           <div className="mt-8 space-y-10">
-            {post.sections.map((s) => (
+            {post.sections.map((s, index) => (
               <section key={s.h}>
                 <h2 className="font-display text-2xl font-bold text-primary">{s.h}</h2>
                 <div className="mt-4 space-y-4">
