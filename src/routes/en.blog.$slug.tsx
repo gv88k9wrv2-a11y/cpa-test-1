@@ -251,6 +251,9 @@ function BlogPostPageEn() {
                   </p>
                 ))}
                 {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="en" /> : null}
+                {conversion?.afterSection === index ? (
+                  <FocusedConversionCta lang="en" topic={conversion.topic} className="mt-8" />
+                ) : null}
               </section>
             ))}
           </div>
