@@ -49,25 +49,19 @@ const FAQS = [
   },
 ];
 
+export const HERZLIYA_TITLE = "רואה חשבון בהרצליה פיתוח | גלגלי הפלדה 16 | נמרודי ושות׳";
+export const HERZLIYA_DESCRIPTION = "רואה חשבון בהרצליה ובהרצליה פיתוח: משרד נמרודי ושות׳ בגלגלי הפלדה 16 מלווה חברות, סטארטאפים ועסקים במס, ביקורת והנהלת חשבונות. תיאמו פגישה: 09-958-2211.";
+
 export const Route = createFileRoute("/cpa-herzliya")({
   head: () => ({
     meta: [
-      { name: "twitter:title", content: "רואה חשבון בהרצליה פיתוח | נמרודי ושות׳ – משרד רואי חשבון" },
-      { name: "twitter:description", content: "מחפשים רואה חשבון בהרצליה? משרד שלמה נמרודי ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת דוחות, חשבות שכר ומיסוי חברות והייטק. תיאום פגישה: 09-9582211." },
+      { name: "twitter:title", content: HERZLIYA_TITLE },
+      { name: "twitter:description", content: HERZLIYA_DESCRIPTION },
       { property: "og:locale", content: "he_IL" },
-      {
-        title: "רואה חשבון בהרצליה פיתוח | נמרודי ושות׳ – משרד רואי חשבון",
-      },
-      {
-        name: "description",
-        content:
-          "מחפשים רואה חשבון בהרצליה? משרד שלמה נמרודי ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת דוחות, חשבות שכר ומיסוי חברות והייטק. תיאום פגישה: 09-9582211.",
-      },
-      {
-        property: "og:title",
-        content: "רואה חשבון בהרצליה פיתוח | נמרודי ושות׳ – משרד רואי חשבון",
-      },
-      { property: "og:description", content: "מחפשים רואה חשבון בהרצליה? משרד שלמה נמרודי ברחוב גלגלי הפלדה 16, הרצליה פיתוח. ליווי מס, ביקורת דוחות, חשבות שכר ומיסוי חברות והייטק. תיאום פגישה: 09-9582211." },
+      { title: HERZLIYA_TITLE },
+      { name: "description", content: HERZLIYA_DESCRIPTION },
+      { property: "og:title", content: HERZLIYA_TITLE },
+      { property: "og:description", content: HERZLIYA_DESCRIPTION },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "https://nimrodi.co.il/cpa-herzliya" },

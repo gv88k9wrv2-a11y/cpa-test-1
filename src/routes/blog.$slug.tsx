@@ -9,6 +9,7 @@ import { ProfessionalDisclaimer } from "../components/professional-disclaimer";
 import { BlogInlineContent } from "../components/blog-inline-content";
 import { BlogFaqList } from "../components/blog-faq-list";
 import { RELOCATION_CONTENT } from "../data/relocation-residency";
+import { ARTICLE_CTA_PLACEMENTS, FocusedConversionCta } from "../components/focused-conversion-cta";
 
 const ORIGIN = "https://nimrodi.co.il";
 
@@ -155,6 +156,7 @@ function PostNotFound() {
 function BlogPostPage() {
   const { post } = Route.useLoaderData() as { post: BlogPost; slug: string };
   const relocation = post.translationKey === "relocation-tax-residency" ? RELOCATION_CONTENT.he : undefined;
+  const conversion = ARTICLE_CTA_PLACEMENTS.he[post.slug as keyof typeof ARTICLE_CTA_PLACEMENTS.he];
 
   const related = (post.relatedSlugs ?? [])
     .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
@@ -219,7 +221,7 @@ function BlogPostPage() {
           </div>
 
           <div className="mt-8 space-y-10">
-            {post.sections.map((s) => (
+            {post.sections.map((s, index) => (
               <section key={s.h}>
                 <h2 className="font-display text-2xl font-bold text-primary">{s.h}</h2>
                 <div className="mt-4 space-y-4">
@@ -244,6 +246,9 @@ function BlogPostPage() {
                   </p>
                 ))}
                 {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="he" /> : null}
+                {conversion?.afterSection === index ? (
+                  <FocusedConversionCta lang="he" topic={conversion.topic} className="mt-8" />
+                ) : null}
               </section>
             ))}
           </div>

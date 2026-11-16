@@ -7,6 +7,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Plane } from "lucide-react";
 import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-international.webp";
+import { FocusedConversionCta } from "../components/focused-conversion-cta";
 
 const FAQS = [
   ...DESTINATION_FAQS.he,
@@ -156,6 +157,7 @@ export const Route = createFileRoute("/cpa-international")({
                 </Link>
               </p>
               <p className="mt-4">{RELOCATION_CONTENT.he.disclaimer}</p>
+              <FocusedConversionCta lang="he" topic="relocation" className="mt-6" />
             </>
           ),
           bullets: [

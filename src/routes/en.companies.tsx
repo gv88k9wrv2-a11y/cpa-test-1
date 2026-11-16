@@ -1,5 +1,5 @@
 import { buildBreadcrumbJsonLd } from "../lib/meta";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { GatewayPage } from "../components/gateway-page";
 import { COMPANIES_GROUPS_EN } from "../data/nav-content";
 
@@ -38,6 +38,18 @@ export const Route = createFileRoute("/en/companies")({
       instruction="Choose the company type or professional service that best matches your needs."
       groups={COMPANIES_GROUPS_EN}
       sections={[
+        {
+          id: "tech-growth",
+          title: "Technology Companies and Growing Ventures",
+          body: (
+            <>
+              Technology companies and growing ventures need support tailored to their stage: see our{" "}
+              <Link to="/en/cpa-startups" className="font-semibold text-primary underline decoration-gold/60 underline-offset-4">startup CPA services</Link>{" "}
+              for Section 102 plans and multi-currency reporting, and our{" "}
+              <Link to="/en/fractional-cfo" className="font-semibold text-primary underline decoration-gold/60 underline-offset-4">Fractional CFO</Link> services for budgeting, cash flow and investor reporting.
+            </>
+          ),
+        },
         {
           id: "cpa-herzliya",
           title: "A CPA Firm in Herzliya Pituach",
