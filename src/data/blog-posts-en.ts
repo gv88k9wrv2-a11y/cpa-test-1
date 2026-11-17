@@ -58,11 +58,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       label: "CPA services for startups and tech ventures in Israel",
     },
     title: "Preferred Technological Enterprise (PTE): Tax Incentives Guide for Israeli Tech Companies",
-    metaTitle: "Preferred Technological Enterprise (PTE)",
+    metaTitle: "Preferred Technological Enterprise (PTE) Israel: Tax Guide | Nimrodi & Co.",
     excerpt:
       "Israel's Law for the Encouragement of Capital Investments provides technology companies, software ventures, and startups with the opportunity to benefit from reduced corporate tax rates, which may apply where statutory requirements are satisfied, alongside reduced dividend withholding tax. Eligibility depends on R&D expenditure tests, qualified intellectual property (IP), international competitiveness, and application of the OECD Nexus approach. This guide reviews key eligibility criteria, calculation mechanics, and reporting requirements with the Israel Tax Authority.",
     metaDescription:
-      "Guide to Israel's Preferred Technological Enterprise (PTE) regime: eligibility, Nexus rules, dividend taxation, reporting requirements and tax incentives.",
+      "Eligibility criteria and tax incentives under Israel's Preferred Technological Enterprise (PTE) regime, including Nexus rules, R&D requirements, dividend taxation and reporting.",
     date: "2026-10-19",
     readMin: 11,
     category: "Corporate & Tech Tax",
@@ -93,6 +93,23 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
         p: [
           "The Law for the Encouragement of Capital Investments, 5719-1959, serves as one of the State of Israel's central economic incentive frameworks designed to foster business expansion, exports, and research and development (R&D). While historical incentive regimes focused primarily on traditional, asset-heavy industrial plants, modern legislative amendments—most notably Amendment 73—realigned the tax framework with the knowledge-based economy, targeting software companies, startups, and intellectual property (IP)-intensive ventures.",
           "For technology companies operating in Israel, distinguishing between a **Preferred Enterprise** and a **Preferred Technological Enterprise (PTE)** is critical. Selecting the appropriate track, combined with rigorous compliance with international Nexus principles (OECD BEPS Action 5), can yield a substantially reduced corporate tax rate relative to the standard rate, alongside significant dividend withholding tax relief—strictly subject to satisfying statutory provisions and examining the specific circumstances of each case.",
+        ],
+      },
+      {
+        h: "In Brief: Key Tests Considered in Assessing Preferred Technological Enterprise (PTE) Eligibility",
+        p: [
+          "**1. Technological Activity and R&D:** Review of qualifying research and development expenditure and the applicable technological-activity tests.",
+          "**2. Qualifying Intangible Asset:** Assessment of whether the relevant income derives from an intangible asset meeting the applicable statutory requirements, such as qualifying software or other eligible rights.",
+          "**3. Company and Operational Characteristics:** Review of revenue, workforce, growth, investment and alternative statutory routes, including Innovation Authority recognition where applicable.",
+          "**4. Competitive Enterprise and Technological Income:** Assessment of the relevant competitive-enterprise requirements together with the calculation of Preferred Technological Income under the applicable Nexus rules.",
+          "*This is a high-level summary only. Actual eligibility depends on the complete statutory framework, applicable regulations, relevant facts and reporting requirements for the specific tax year.*",
+        ],
+      },
+      {
+        h: "2026 Update: R&D Incentives and Global Minimum Tax",
+        p: [
+          "Israel introduced significant developments in 2026 affecting the tax-incentive environment for R&D-intensive companies and large multinational groups. These developments include changes to the R&D incentive framework and the implementation of Pillar Two global minimum tax rules for multinational groups within the applicable scope.",
+          "Companies considering Preferred Enterprise or Preferred Technological Enterprise benefits, particularly members of multinational groups, should therefore review the rules applicable to the specific tax year rather than rely solely on historical incentive rates.",
         ],
       },
       {
@@ -165,7 +182,7 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
           "**1. Inadequate R&D Time and Project Tracking:** Failure to maintain a clear evidentiary separation between qualified R&D activities and routine technical support, implementation, or sales operations.",
           "**2. IP Acquisitions Without Prior Nexus Modeling:** Purchasing source code or technology assets from related entities without modeling how the acquisition will affect the Nexus denominator and overall effective tax rate.",
           "**3. Cross-Border Transactions and Transfer Pricing:** Inconsistent transfer pricing methodologies between the foreign parent and the Israeli development center, creating exposure to dual-jurisdiction tax audits.",
-          "**4. Incomplete Annual Tax Return Filings:** Omitting required forms and supporting documentation from the annual corporate tax return (such as Form 973 for calculating preferred technological income, Form 901A, and related filings in accordance with statutory provisions and Israel Tax Authority directives). Additional notifications, declarations, and attachments may be required depending on the chosen track and filing circumstances.",
+          "**4. Incomplete Annual Tax Return Filings:** Omitting required forms and supporting documentation from the annual corporate tax return (such as Form 901A and related filings in accordance with statutory provisions and Israel Tax Authority directives). Form 973 is an annual notification for a technological/preferred enterprise and is filed with the company's annual tax return in accordance with Israel Tax Authority requirements and applicable law. Additional notifications, declarations, and attachments may be required depending on the chosen track and filing circumstances.",
         ],
       },
       {
