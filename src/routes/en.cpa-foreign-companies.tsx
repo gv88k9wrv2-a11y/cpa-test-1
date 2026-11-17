@@ -1,5 +1,5 @@
 import { buildBreadcrumbJsonLd } from "../lib/meta";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Globe2 } from "lucide-react";
 import { ServiceLandingEn, buildFaqJsonLd } from "../components/service-landing-en";
 import heroImg from "../assets/service-foreign.webp";
@@ -156,7 +156,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
         },
         {
           title: "Israeli Tax Incentives for Foreign-Owned Companies",
-          body: "Foreign-owned Israeli subsidiaries may qualify for Israeli tax incentives or Israel Innovation Authority support, subject to the relevant program, eligibility conditions, required approvals, and law applying at the relevant time:",
+          body: <>Foreign-owned Israeli subsidiaries may qualify for Israeli <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">tax incentives for technology companies in Israel</Link> or Israel Innovation Authority support, subject to the relevant program, eligibility conditions, required approvals, and law applying at the relevant time:</>,
           bullets: [
             "Assessment of potential eligibility for Preferred Technological Enterprise tax benefits in Israel",
             "Review of Israeli dividend taxation and potential relief under the applicable incentive regime",

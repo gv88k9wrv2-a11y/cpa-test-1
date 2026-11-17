@@ -128,7 +128,7 @@ export const Route = createFileRoute("/en/tax-consulting")({
         },
         {
           title: "Israeli Tax Review Before a Transaction",
-          body: "Before a transaction, relevant tax considerations may include fundraising, mergers and acquisitions, secondary sales, spin-offs and other structural changes. Within the agreed scope, the firm may assist with Israeli tax analysis and scenario review based on the available facts and assumptions.",
+          body: <>Before a transaction, relevant tax considerations may include fundraising, mergers and acquisitions, secondary sales, spin-offs and other structural changes. Within the agreed scope, the firm may assist with Israeli tax analysis and scenario review based on the available facts and assumptions. For incentive-regime considerations, see our <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">Israel PTE and Preferred Enterprise guide</Link>.</>,
         },
         {
           title: "Advance Tax Ruling Requests",

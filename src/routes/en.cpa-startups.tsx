@@ -143,7 +143,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Preferred Technological Enterprise and Israeli Startup Tax Incentives",
-          body: "Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law. Within the agreed scope, the firm can assist with an initial eligibility review, preparation of accounting and tax information, and relevant filings. Eligibility, the applicable rate and acceptance of the company’s position remain subject to the law, the facts and the decisions of the relevant authorities:",
+          body: <>Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law (see our guide to <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">Preferred Technological Enterprise (PTE) eligibility</Link>). Within the agreed scope, the firm can assist with an initial eligibility review, preparation of accounting and tax information, and relevant filings. Eligibility, the applicable rate and acceptance of the company’s position remain subject to the law, the facts and the decisions of the relevant authorities:</>,
           bullets: [
             "Assessment of startup eligibility for Preferred Technological Enterprise tax benefits in Israel",
             "Assessment of potential eligibility for Special Preferred Technological Enterprise tax benefits in Israel",
