@@ -4,6 +4,7 @@ import heroImg from "../assets/contact-office.webp";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { FloatingWhatsApp, SiteFooter, SiteHeader, WHATSAPP_URL } from "../components/site-chrome";
 import { LeadForm } from "../components/lead-form";
+import { ContactFormAnchor } from "../components/contact-form-anchor";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -43,6 +44,7 @@ function ContactPage() {
       <SiteHeader />
 
       <main id="main-content">
+        <ContactFormAnchor />
         <section className="border-b border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
             <div className="text-sm font-semibold uppercase tracking-widest text-gold-text">
@@ -115,7 +117,9 @@ function ContactPage() {
           </div>
         </section>
 
-        <LeadForm lang="he" serviceName="יצירת קשר" />
+        <div id="contact-form" className="scroll-mt-24">
+          <LeadForm lang="he" serviceName="יצירת קשר" />
+        </div>
       </main>
 
       <SiteFooter />

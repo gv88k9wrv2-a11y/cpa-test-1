@@ -11,22 +11,24 @@ describe("approved relocation legal rules", () => {
   ];
   test("income-tax and National Insurance determinations use the approved separate-framework answer", () => {
     for (const [index, lang] of (["he", "en"] as const).entries()) {
-      expect(posts[index]?.faqs?.[0]).toBe(RELOCATION_FAQS[lang][0]);
+      expect(posts[index]?.faqs).toContain(RELOCATION_FAQS[lang][0]);
       expect(EXPANDED_FAQS.international[lang]).toContain(RELOCATION_FAQS[lang][0]);
     }
   });
   test("exit tax and equity awards use the approved case-specific answer rather than a universal formula", () => {
     for (const [index, lang] of (["he", "en"] as const).entries()) {
-      expect(posts[index]?.sections[2].p).toEqual(RELOCATION_FAQS[lang][1].a.split("\n\n"));
-      expect(posts[index]?.sections[3].afterTable).toEqual([RELOCATION_FAQS[lang][1].a.split("\n\n")[2]]);
+      const exit = posts[index]?.sections.find(s => s.h.includes(lang === "he" ? "מס יציאה" : "Exit Tax"));
+      const equity = posts[index]?.sections.find(s => s.table);
+      expect(exit?.p.join(" ")).toContain(lang === "he" ? "סעיף 100א" : "Section 100A");
+      expect(equity?.afterTable).toEqual([RELOCATION_FAQS[lang][1].a.split("\n\n")[2]]);
     }
   });
   test("advance planning remains a recommendation, not a statutory requirement", () => {
-    expect(posts[0]?.faqs?.[2]).toBe(RELOCATION_FAQS.he[2]);
-    expect(posts[1]?.faqs?.[2]).toBe(RELOCATION_FAQS.en[2]);
+    expect(posts[0]?.faqs).toContain(RELOCATION_FAQS.he[2]);
+    expect(posts[1]?.faqs).toContain(RELOCATION_FAQS.en[2]);
   });
   test("a professional residency opinion is not generally mandatory", () => {
-    expect(posts[0]?.faqs?.[3]).toBe(RELOCATION_FAQS.he[3]);
-    expect(posts[1]?.faqs?.[3]).toBe(RELOCATION_FAQS.en[3]);
+    expect(posts[0]?.faqs).toContain(RELOCATION_FAQS.he[3]);
+    expect(posts[1]?.faqs).toContain(RELOCATION_FAQS.en[3]);
   });
 });

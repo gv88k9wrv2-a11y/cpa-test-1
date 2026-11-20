@@ -9,6 +9,7 @@ import {
   WHATSAPP_URL_EN,
 } from "../components/site-chrome-en";
 import { LeadForm } from "../components/lead-form";
+import { ContactFormAnchor } from "../components/contact-form-anchor";
 
 const BASE = "https://nimrodi.co.il";
 
@@ -47,6 +48,7 @@ function ContactEn() {
     <div className="min-h-screen bg-background">
       <SiteHeaderEn />
       <main id="main-content">
+        <ContactFormAnchor />
         <section className="border-b border-border/60 bg-gradient-to-b from-secondary/60 to-background">
           <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-20 text-center">
             <h1 className="font-display text-4xl font-bold text-primary sm:text-5xl">
@@ -119,7 +121,9 @@ function ContactEn() {
           </p>
         </section>
 
-        <LeadForm lang="en" serviceName="Contact Us" />
+        <div id="contact-form" className="scroll-mt-24">
+          <LeadForm lang="en" serviceName="Contact Us" />
+        </div>
       </main>
       <SiteFooterEn />
       <FloatingWhatsAppEn />

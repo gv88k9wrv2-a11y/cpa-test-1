@@ -1,5 +1,6 @@
+import { RELOCATION_SUMMARIES, RELOCATION_REPORTING, RELOCATION_EXIT_TAX, RELOCATION_UPDATED_DATE, relocationArticleFaqs } from "./relocation-update";
 import { RELOCATION_FAQS, RELOCATION_CONTENT } from "./relocation-residency";
-import { DESTINATION_FAQS, destinationArticleSections } from "./relocation-destinations";
+import { destinationArticleSections } from "./relocation-destinations";
 import imgCrypto from "../assets/blog-crypto.webp";
 import imgEquity from "../assets/blog-equity.webp";
 import imgTax from "../assets/blog-tax-planning.webp";
@@ -369,12 +370,13 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       "preferred-technological-enterprise",
     ],
     relatedService: { href: "/en/cpa-international", label: "International tax and relocation planning" },
-    title: "Relocation and Terminating Israeli Tax Residency: The Complete Guide for Israelis Moving Abroad (2026)",
-    metaTitle: "Terminating Israeli Tax Residency: Exit Tax, Relocation & National Insurance Guide | Nimrodi & Co.",
-    excerpt: RELOCATION_FAQS.en[0].a.split("\n\n")[1] + "\n\n" + RELOCATION_FAQS.en[1].a,
+    title: "Israel Tax Residency and Relocation: A Practical Guide for Israelis Moving Abroad",
+    metaTitle: "Israeli Tax Residency & Relocation Guide | Nimrodi & Co.",
+    excerpt: RELOCATION_SUMMARIES.en,
     metaDescription:
-      "Planning a relocation abroad? Comprehensive guide by Shlomo Nimrodi, CPA, covering Israeli tax residency termination, Section 100A exit tax, National Insurance, RSUs, employee stock options, and tax treaties.",
+      "Israeli tax residency and relocation: center of life, Form 1348, Section 100A exit tax, RSUs and National Insurance considerations. Read the practical guide.",
     date: "2026-10-27",
+    modifiedDate: RELOCATION_UPDATED_DATE,
     readMin: 14,
     category: "International Tax",
     image: imgIntl,
@@ -385,11 +387,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       "Since the tax reform that took effect in the early 2000s, Israel has operated under a personal worldwide taxation regime.",
       "As a result, an Israeli tax resident is generally subject to Israeli taxation on worldwide income, even when income is earned, generated, or received outside Israel.",
       "Accordingly, individuals relocating abroad who fail to establish a valid termination of Israeli tax residency may remain exposed to Israeli taxation on:\nSalary paid by a foreign employer.\n\nForeign business and self-employment income.\n\nCapital gains and investment income.\n\nEmployee stock options, RSUs, and ESPP plans.\n\nPassive income from foreign sources, including rental income, dividends, and interest.",
-      "Proper tax planning before departure may significantly reduce tax exposure, prevent disputes with tax authorities, and minimize the risk of double taxation."
+      "Reviewing tax and residency issues before departure is recommended. Early planning helps identify exposures, reporting obligations and potential double taxation according to the circumstances, without guaranteeing an outcome."
     ]
   },
   {
-    "h": "2. Who Is Considered an Israeli Tax Resident?",
+    "h": "Center of Life and Days Spent in Israel",
     "p": [
       "Section 1 of the Israeli Income Tax Ordinance provides that an individual is generally considered an Israeli resident if their center of life is in Israel.",
       "The Substantive Test – Center of Life\nThe Israel Tax Authority and Israeli courts examine the totality of circumstances through several categories of ties.",
@@ -401,13 +403,11 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       "Importantly, these presumptions are rebuttable by both the taxpayer and the tax authority. An individual spending fewer than 183 days in Israel may still be classified as a resident if their center of life remains in Israel; conversely, an individual meeting a presumption may rebut it by establishing that their center of life has shifted abroad."
     ]
   },
+  RELOCATION_REPORTING.en,
+  RELOCATION_EXIT_TAX.en,
   {
-    "h": "3. Exit Tax – Section 100A of the Income Tax Ordinance",
-    "p": RELOCATION_FAQS.en[1].a.split("\n\n")
-  },
-  {
-    "h": "4. Employee Stock Options, RSUs and Equity Compensation",
-    "p": [RELOCATION_FAQS.en[1].a.split("\n\n")[1]],
+    "h": "Stock Options, RSUs and Section 102 upon Relocation",
+    "p": ["The analysis depends on plan type, Section 102 applicability, grant and vesting dates, employment periods in Israel and abroad, realization or sale, tax residency and the applicable treaty. Potential Section 100A implications are reviewed separately where relevant."],
     "table": {
   "headers": [
     "Compensation Type",
@@ -431,6 +431,10 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     "afterTable": [RELOCATION_FAQS.en[1].a.split("\n\n")[2]]
   },
   {
+    "h": "Income Tax Residency vs National Insurance Residency",
+    "p": RELOCATION_FAQS.en[0].a.split("\n\n")
+  },
+  {
     "h": "5. Founders, Controlling Shareholders and Israeli Companies",
     "p": [
       "Relocation by a founder or significant shareholder may have consequences not only for the individual but also for the company.",
@@ -441,20 +445,17 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     ]
   },
   {
-    "h": "6. National Insurance Institute (NII) and Healthcare",
-    "p": RELOCATION_FAQS.en[0].a.split("\n\n")
-  },
-  ...destinationArticleSections("en"),
-  {
     "h": "8. Tax Treaties and Tie-Breaker Rules",
     "p": [
       "Where an individual qualifies as a tax resident of two countries simultaneously, the applicable tax treaty may determine residency.",
       "Most Israeli treaties generally apply the following hierarchy:\nPermanent Home.\n\nCenter of Vital Interests.\n\nHabitual Abode.\n\nNationality.\n\nMutual Agreement Procedure (MAP)."
     ]
   },
+  ...destinationArticleSections("en"),
   {
-    "h": "9. Relocation Checklist",
+    "h": "Pre-Relocation Professional Checklist",
     "p": [
+      "Review expected Israeli and destination-country residency, the applicable treaty, days spent in each country, permanent home and family location, business activity and companies, assets and Section 100A, options and RSUs under Section 102, National Insurance and health coverage, and reporting obligations in both countries.",
       "Before Departure\nReview assets and investments.\n\nAnalyze exit tax exposure.\n\nReview stock options and RSUs.\n\nConsider National Insurance implications.\n\nReview the applicable tax treaty.\n\nStructure employment arrangements properly.",
       "Year of Departure\nMaintain records of travel days.\n\nPreserve relocation documentation.\n\nReview Israeli tax filing obligations.",
       "After Relocation\nMonitor visits to Israel.\n\nMaintain consistency with residency claims.\n\nTrack compliance obligations in the destination country."
@@ -465,17 +466,9 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     "p": [],
     "faqs": true
   },
-  {
-    "h": "11. Moving Abroad? Plan Before You Leave",
-    "p": [
-      "Decisions made before departure may affect taxation, exit tax exposure, National Insurance obligations, and double taxation risks for years to come.",
-      "For [Israeli tax residency and relocation tax planning](/en/cpa-international), review the facts, documentation, applicable law and relevant tax treaty before the move.",
-      "Nimrodi & Co. – Certified Public Accountants\nAddress: 16 Galgalei HaPlada St., Herzliya Pituach 4672216, Israel\nPhone: +972-9-958-2211\nEmail: office@nimrodi.co.il\nWebsite: https://nimrodi.co.il/en",
-      "Relevant Services\nInternational Tax Advisory.\n\nRelocation Tax Planning.\n\nRSU and Equity Compensation Taxation.\n\nTax Planning for Entrepreneurs and Controlling Shareholders.\n\nNational Insurance Status Review.\n\nDigital Asset Taxation.\n\nRental Income Tax Advisory."
-    ]
-  }
+
 ],
-    faqs: [...RELOCATION_FAQS.en, ...DESTINATION_FAQS.en],
+    faqs: relocationArticleFaqs("en"),
     disclaimer: "The information contained in this guide is provided for general informational purposes only and does not constitute tax advice, legal advice, a professional opinion, or an official position of the Israel Tax Authority, the National Insurance Institute, or any other authority. Determining tax residency, applying Section 100A, interpreting tax treaties, and complying with international reporting obligations require an individualized review of the relevant facts, documentation, and circumstances. Consultation with a qualified CPA specializing in international taxation is strongly recommended before taking any action based on this guide.",
   },
   {

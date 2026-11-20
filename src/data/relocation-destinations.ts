@@ -112,9 +112,10 @@ export function destinationArticleSections(lang: "he" | "en") {
       h: section.h,
       p: [
         ...section.p,
-        ...(index === 0 && lang === "he" ? ["[אמנת המס ישראל–ארה״ב וחובות דיווח](/blog/us-israel-tax-considerations)"] : []),
+        ...(index === 0 ? [lang === "he"
+          ? "[מיסוי ודיווח בין ישראל לארצות הברית](/blog/us-israel-tax-considerations)"
+          : "For US citizens living in Israel, see [Israeli tax reporting for US citizens](/en/blog/israeli-tax-reporting-us-citizens). This guide addresses that specific context, not every relocation to the United States."] : []),
         ...(index === 2 ? [
-          content.disclaimer,
           lang === "he"
             ? "[מיסוי בינלאומי ותכנון מס לרילוקיישן](/cpa-international) · [ייעוץ מס ליחידים ולעסקים](/tax-consulting)"
             : "[International tax and relocation planning](/en/cpa-international) · [Tax consulting for individuals and businesses](/en/tax-consulting)",

@@ -65,7 +65,7 @@ Part-time senior financial management for growing companies: budgeting, cash-flo
 - EN: https://nimrodi.co.il/en/fractional-cfo
 
 ### International tax & relocation / tax residency
-Israeli tax residency is generally assessed using the statutory center-of-life framework together with applicable day-count presumptions. Relevant facts may include permanent home, family residence, employment, business activity, financial interests, assets and time spent in Israel. Form 1348 may be relevant depending on the individual's reporting obligations and circumstances.
+Israeli tax residency is generally assessed using the statutory center-of-life framework together with applicable day-count presumptions. Relevant facts may include permanent home, family residence, employment, business activity, financial interests, assets and time spent in Israel. Fewer than 183 days in Israel do not by themselves guarantee non-residency. Form 1348 may be relevant depending on the individual's reporting obligations and circumstances; filing it does not itself establish non-residency.
 
 Ceasing Israeli tax residency may require consideration of Section 100A exit-tax implications. Options, RSUs and Section 102 awards require separate case-specific analysis of award type, grant date, vesting and employment periods, realization or sale dates and the applicable tax treaty. No universal linear allocation method should be assumed.
 
@@ -114,7 +114,7 @@ Israeli tax support may include reviewing the nature of digital-asset activity, 
 ## Professional content
 
 ### Relocation and terminating Israeli tax residency (Bilingual anchor guide)
-The bilingual guide covers center-of-life analysis and statutory day-count presumptions, potential Section 100A exit-tax implications, separate case-specific analysis of options, RSUs and Section 102 awards, applicable tax treaties, National Insurance residency as a separate determination and a practical checklist. Outcomes depend on facts and applicable law and are not guaranteed. See the International tax & relocation / tax residency section for the consolidated professional summary.
+The bilingual guide covers center-of-life analysis and statutory day-count presumptions, Form 1348 factual disclosures subject to filing obligations and circumstances (filing does not itself establish non-residency), potential Section 100A exit-tax implications, separate case-specific analysis of options, RSUs and Section 102 awards, applicable tax treaties, National Insurance residency as a separate determination and a practical checklist. Outcomes depend on facts and applicable law and are not guaranteed. See the International tax & relocation / tax residency section for the consolidated professional summary.
 - Published: 2026-10-27; author and professional reviewer: Shlomo Nimrodi, CPA (the same founder, not an independent review).
 - HE: https://nimrodi.co.il/blog/relocation-tax-residency-israel
 - EN: https://nimrodi.co.il/en/blog/relocation-tax-residency

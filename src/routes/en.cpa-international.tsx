@@ -1,4 +1,5 @@
 import { RELOCATION_CONTENT } from "../data/relocation-residency";
+import { RELOCATION_ADDITIONAL_FAQS } from "../data/relocation-update";
 import { DESTINATION_FAQS } from "../data/relocation-destinations";
 import { destinationServiceSections } from "../components/relocation-destinations";
 import { EXPANDED_FAQS } from "../data/expanded-faqs";
@@ -11,6 +12,7 @@ import { FocusedConversionCta } from "../components/focused-conversion-cta";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
+  ...RELOCATION_ADDITIONAL_FAQS.en,
   ...DESTINATION_FAQS.en,
   ...EXPANDED_FAQS.international.en,
   {
@@ -77,6 +79,7 @@ export const Route = createFileRoute("/en/cpa-international")({
   }),
   component: () => (
     <ServiceLandingEn
+      contactFormAnchor
       sectionNavigation
       heroImage={heroImg}
       heroImageAlt="World map illustrating international tax connections"

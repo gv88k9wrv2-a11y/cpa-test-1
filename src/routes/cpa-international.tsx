@@ -1,4 +1,5 @@
 import { RELOCATION_CONTENT } from "../data/relocation-residency";
+import { RELOCATION_ADDITIONAL_FAQS } from "../data/relocation-update";
 import { DESTINATION_FAQS } from "../data/relocation-destinations";
 import { destinationServiceSections } from "../components/relocation-destinations";
 import { EXPANDED_FAQS } from "../data/expanded-faqs";
@@ -10,6 +11,7 @@ import heroImg from "../assets/service-international.webp";
 import { FocusedConversionCta } from "../components/focused-conversion-cta";
 
 const FAQS = [
+  ...RELOCATION_ADDITIONAL_FAQS.he,
   ...DESTINATION_FAQS.he,
   ...EXPANDED_FAQS.international.he,
   {
@@ -114,6 +116,7 @@ export const Route = createFileRoute("/cpa-international")({
   }),
   component: () => (
     <ServiceLanding
+      contactFormAnchor
       sectionNavigation
       heroImage={heroImg}
       heroImageAlt="ייעוץ מס בין־לאומי, רילוקיישן ודיווח על נכסים בחו״ל"
@@ -142,7 +145,7 @@ export const Route = createFileRoute("/cpa-international")({
           body: (
             <>
               <p>
-                לפני שאתה עולה על המטוס – יש לתכנן. עיתוי היציאה, מבנה ההכנסות בשנת המעבר, מכירת
+                מומלץ לבחון את השלכות המס לפני המעבר. עיתוי היציאה, מבנה ההכנסות בשנת המעבר, מכירת
                 נכסים בישראל, קרנות פנסיה והשתלמות, אופציות 102 שלא בשלו, RSU שממתינים לוסטינג – כל
                 אלה משפיעים על חבות המס. תכנון מוקדם של שנת המעבר עשוי להשפיע על חבות המס ועל חובות
                 הדיווח, בהתאם לנתונים ולהוראות הדין.

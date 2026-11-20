@@ -196,6 +196,7 @@ function BlogPostPage() {
               })}
             </span>
             <span aria-hidden="true">·</span>
+            {post.modifiedDate ? <span>עודכן: {new Date(post.modifiedDate).toLocaleDateString("he-IL", { month: "long", year: "numeric" })}</span> : null}
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" aria-hidden />
               {post.readMin} דק׳ קריאה
@@ -216,9 +217,9 @@ function BlogPostPage() {
             </div>
           ) : null}
 
-          <div className="mt-8">
+          {!relocation ? <div className="mt-8">
             <SummaryBox text={post.excerpt} lang="he" />
-          </div>
+          </div> : null}
 
           <div className="mt-8 space-y-10">
             {post.sections.map((s, index) => (
@@ -246,7 +247,8 @@ function BlogPostPage() {
                   </p>
                 ))}
                 {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="he" /> : null}
-                {conversion?.afterSection === index ? (
+                {relocation && index === 0 ? <div className="mt-8"><SummaryBox text={post.excerpt} lang="he" /></div> : null}
+                {!relocation && conversion?.afterSection === index ? (
                   <FocusedConversionCta lang="he" topic={conversion.topic} className="mt-8" />
                 ) : null}
               </section>
@@ -303,7 +305,7 @@ function BlogPostPage() {
 
           {/* Professional disclaimer */}
           {/* Required on all professional-content pages. Do not remove or duplicate. */}
-          <ProfessionalDisclaimer lang="he" text={post.disclaimer} className="mt-10" />
+          {!relocation ? <ProfessionalDisclaimer lang="he" text={post.disclaimer} className="mt-10" /> : null}
 
           <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
             <h2 className="font-display text-2xl font-bold">{relocation?.ctaHeadline ?? "רוצים לשוחח על המצב הספציפי שלכם?"}</h2>
@@ -322,12 +324,16 @@ function BlogPostPage() {
               </a>
               <Link
                 to="/contact"
+                hash={relocation ? "contact-form" : undefined}
+                hashScrollIntoView={relocation ? { behavior: "instant", block: "start" } : undefined}
                 className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
               >
                 {relocation?.ctaButtonLabel ?? "קבעו שיחת היכרות →"}
               </Link>
             </div>
           </div>
+
+          {relocation ? <ProfessionalDisclaimer lang="he" text={post.disclaimer} className="mt-10" /> : null}
 
           {related.length > 0 && (
             <aside className="mt-14 border-t border-border pt-10">

@@ -201,6 +201,7 @@ function BlogPostPageEn() {
               })}
             </span>
             <span aria-hidden="true">·</span>
+            {post.modifiedDate ? <span>Updated: {new Date(post.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}</span> : null}
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" aria-hidden />
               {post.readMin} min read
@@ -221,9 +222,9 @@ function BlogPostPageEn() {
             </div>
           ) : null}
 
-          <div className="mt-8">
+          {!relocation ? <div className="mt-8">
             <SummaryBox text={post.excerpt} lang="en" />
-          </div>
+          </div> : null}
 
           <div className="mt-8 space-y-10">
             {post.sections.map((s, index) => (
@@ -251,7 +252,8 @@ function BlogPostPageEn() {
                   </p>
                 ))}
                 {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="en" /> : null}
-                {conversion?.afterSection === index ? (
+                {relocation && index === 0 ? <div className="mt-8"><SummaryBox text={post.excerpt} lang="en" /></div> : null}
+                {!relocation && conversion?.afterSection === index ? (
                   <FocusedConversionCta lang="en" topic={conversion.topic} className="mt-8" />
                 ) : null}
               </section>
@@ -340,6 +342,8 @@ function BlogPostPageEn() {
               </a>
               <Link
                 to="/en/contact"
+                hash={relocation ? "contact-form" : undefined}
+                hashScrollIntoView={relocation ? { behavior: "instant", block: "start" } : undefined}
                 className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/40 px-6 py-3 font-semibold text-primary-foreground hover:bg-primary-foreground/10"
               >
                 {relocation?.ctaButtonLabel ?? "Schedule a Consultation →"}

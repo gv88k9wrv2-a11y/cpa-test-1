@@ -32,6 +32,7 @@ export type ServiceLandingEnProps = {
   ctaText?: string;
   ctaButtonLabel?: string;
   whatsappMessage?: string;
+  contactFormAnchor?: boolean;
   icon: LucideIcon;
   heroImage?: string;
   heroImageAlt?: string;
@@ -51,6 +52,7 @@ export function ServiceLandingEn({
   ctaText,
   ctaButtonLabel = "Schedule a Consultation →",
   whatsappMessage,
+  contactFormAnchor = false,
   icon: Icon,
   heroImage,
   heroImageAlt,
@@ -237,6 +239,8 @@ export function ServiceLandingEn({
               </a>
               <Link
                 to="/en/contact"
+                hash={contactFormAnchor ? "contact-form" : undefined}
+                hashScrollIntoView={contactFormAnchor ? { behavior: "instant", block: "start" } : undefined}
                 className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90"
               >
                 {ctaButtonLabel}
