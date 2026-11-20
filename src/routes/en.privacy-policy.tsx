@@ -103,9 +103,10 @@ function LegalPageEn() {
             <p className="mt-3">Where documents are required, the Office will provide instructions. Under the current policy, documents requested by the Office are sent directly to office@nimrodi.co.il.</p>
           </section>
           <section>
-            <h2 className="font-display text-2xl font-bold text-primary">11. Service Providers</h2>
-            <p className="mt-3">The Office may use external providers for hosting, databases, security, communications, analytics, campaigns and other technology services.</p>
-            <p className="mt-3">Access will be limited, where reasonably possible, to the information and systems required for the relevant service, and provider arrangements will be reviewed and managed in accordance with applicable requirements.</p>
+            <h2 className="font-display text-2xl font-bold text-primary">11. Service Providers and Disclosure of Information</h2>
+            <p className="mt-3">The Office may disclose information or provide access to it, to the extent necessary for the purposes described in this Policy, to providers assisting in the operation of the services, including providers of hosting and infrastructure, databases, authentication and access, email and communications, information security, analytics and usage measurement, campaign management and other technology services.</p>
+            <p className="mt-3">Information may also be disclosed to professional advisers and service providers of the Office where reasonably necessary for handling an enquiry, and to competent authorities or other parties where disclosure is required or permitted by law.</p>
+            <p className="mt-3">Access and disclosure will be limited, where reasonably possible, to the information necessary for the relevant purpose, and arrangements with external providers will be reviewed and managed in accordance with applicable legal requirements.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl font-bold text-primary">12. International Transfers</h2>
@@ -115,7 +116,7 @@ function LegalPageEn() {
           <section>
             <h2 className="font-display text-2xl font-bold text-primary">13. Cookies, Analytics and Campaign Attribution</h2>
             <p className="mt-3">The website and digital services may use cookies and similar technologies for operation, security, preferences, usage measurement and campaign attribution.</p>
-            <p className="mt-3">The Office website uses Google Analytics to understand website usage and performance. Non-essential technologies will be operated according to applicable consent choices where required.</p>
+            <p className="mt-3">The Office website uses Google Analytics to understand website usage and performance. Non-essential measurement technologies are operated in accordance with the user's choices through the consent-management mechanism. Cookie choices may be changed at any time through the website's Cookie Settings option.</p>
           </section>
           <section>
             <h2 className="font-display text-2xl font-bold text-primary">14. Information Security</h2>
@@ -130,8 +131,7 @@ function LegalPageEn() {
           <section>
             <h2 className="font-display text-2xl font-bold text-primary">16. Rights</h2>
             <p className="mt-3">Subject to applicable law and its conditions, individuals may contact the Office regarding access to and correction of personal information.</p>
-            <p className="mt-3">Individuals may also submit a deletion request. Such requests will be considered subject to applicable law, retention purposes and obligations applicable to the Office.</p>
-            <p className="mt-3">This Policy does not guarantee deletion in every circumstance.</p>
+            <p className="mt-3">Individuals may also submit a request for deletion of personal information. Such a request will be considered in accordance with applicable law, the purposes for which the information is retained and the Office's applicable legal obligations. Nothing in this Policy creates a right to deletion where the Office is permitted or required by law to retain the information.</p>
             <p className="mt-3">Privacy enquiries: office@nimrodi.co.il.</p>
           </section>
           <section>
