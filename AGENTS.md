@@ -25,7 +25,7 @@
 
 - Expanded bilingual professional FAQs share a typed data module across service and central FAQ pages; render and serialize the same entries to prevent editorial and schema drift.
 - Relocation service and article FAQs share bilingual relocation data; service CTA labels/messages are optional props so contextual updates preserve other services and the existing design.
-- Relocation reporting, exit-tax sections, summaries and added FAQs share a browser-safe bilingual data module; contact-anchor navigation is opt-in on shared service layouts and settles contact-page images before scrolling so unrelated services retain their behavior.
+- Relocation reporting, exit-tax sections, summaries and added FAQs share a browser-safe bilingual data module; approved locale-only article revisions remain on that locale's article record to preserve the other language and service wording. Contact-anchor navigation is opt-in on shared service layouts and settles contact-page images before scrolling so unrelated services retain their behavior.
 - Destination-specific relocation paragraphs and FAQs share a bilingual data module across existing services and articles; service adapters retain stable destination anchors to prevent content drift without new country routes.
 
 - Hebrew blog sections support escaped inline local Markdown links, bold emphasis and optional typed comparison tables; article-specific disclaimers override the shared disclaimer without duplicating it, preserving approved editorial structure safely.

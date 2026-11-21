@@ -1,6 +1,5 @@
-import { RELOCATION_SUMMARIES, RELOCATION_REPORTING, RELOCATION_EXIT_TAX, RELOCATION_UPDATED_DATE, relocationArticleFaqs } from "./relocation-update";
-import { RELOCATION_FAQS, RELOCATION_CONTENT } from "./relocation-residency";
-import { destinationArticleSections } from "./relocation-destinations";
+import { RELOCATION_FAQS } from "./relocation-residency";
+import { DESTINATION_FAQS } from "./relocation-destinations";
 import imgCrypto from "../assets/blog-crypto.webp";
 import imgEquity from "../assets/blog-equity.webp";
 import imgTax from "../assets/blog-tax-planning.webp";
@@ -370,19 +369,19 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
       "preferred-technological-enterprise",
     ],
     relatedService: { href: "/en/cpa-international", label: "International tax and relocation planning" },
-    title: "Israel Tax Residency and Relocation: A Practical Guide for Israelis Moving Abroad",
+    title: "Relocation from Israel: Tax Residency, Exit Tax and Reporting Guide",
     metaTitle: "Israeli Tax Residency & Relocation Guide | Nimrodi & Co.",
-    excerpt: RELOCATION_SUMMARIES.en,
+    excerpt: "Moving abroad does not automatically terminate Israeli tax residency.\nIsraeli residency is assessed under the center-of-life framework together with applicable rebuttable day-count presumptions.\nSpending fewer than 183 days in Israel does not, by itself, establish non-resident status.\nForm 1348 may be relevant depending on the individual's filing obligations and circumstances.\nCeasing Israeli tax residency may require consideration of Section 100A exit-tax implications.\nStock options, RSUs and Section 102 awards require a separate, case-specific analysis.\nIncome-tax residency and National Insurance residency are separate determinations.",
     metaDescription:
-      "Israeli tax residency and relocation: center of life, Form 1348, Section 100A exit tax, RSUs and National Insurance considerations. Read the practical guide.",
+      "Israeli tax residency when relocating abroad: center-of-life tests, Form 1348, Section 100A exit tax, RSUs, tax treaties and National Insurance.",
     date: "2026-10-27",
-    modifiedDate: RELOCATION_UPDATED_DATE,
+    modifiedDate: "2026-11-21",
     readMin: 14,
     category: "International Tax",
     image: imgIntl,
     sections: [
   {
-    "h": "1. Introduction: Israel’s Worldwide Taxation System",
+    "h": "Introduction: Israel’s Worldwide Taxation System",
     "p": [
       "Since the tax reform that took effect in the early 2000s, Israel has operated under a personal worldwide taxation regime.",
       "As a result, an Israeli tax resident is generally subject to Israeli taxation on worldwide income, even when income is earned, generated, or received outside Israel.",
@@ -393,49 +392,72 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
   {
     "h": "Center of Life and Days Spent in Israel",
     "p": [
-      "Section 1 of the Israeli Income Tax Ordinance provides that an individual is generally considered an Israeli resident if their center of life is in Israel.",
-      "The Substantive Test – Center of Life\nThe Israel Tax Authority and Israeli courts examine the totality of circumstances through several categories of ties.",
-      "Personal and Family Ties\nLocation of the spouse's primary residence.\n\nPlace of residence of children.\n\nEducational institutions attended by children.\n\nCommunity and social involvement.\n\nOngoing personal and family relationships.",
-      "Economic Ties\nPrincipal place of employment.\n\nLocation of business management.\n\nReal estate holdings in Israel and abroad.\n\nActive bank accounts and credit card usage.\n\nInvestment portfolios and financial assets.",
-      "Behavioral Ties\nIntent regarding the duration of relocation.\n\nMaintenance of a permanent home in the destination country (long-term lease or home purchase).\n\nConduct with authorities in the destination country (filing as a local tax resident).",
-      "As the center of life is relocated in a consistent, substantive, and documented manner, the taxpayer's position regarding termination of Israeli tax residency is strengthened.",
+      "Israeli tax residency is not determined by a single factor. The analysis generally focuses on where an individual's center of life is located, taking into account the individual's overall family, economic and social ties together with the applicable statutory day-count presumptions.",
+      "Relevant facts may include:",
+      "- availability of a permanent home;\n- where the individual and immediate family live;\n- place of employment or business activity;\n- economic and financial interests;\n- ownership and use of assets;\n- personal and social connections; and\n- the number and pattern of days spent in Israel and abroad.",
+      "Israeli law also contains rebuttable day-count presumptions. These presumptions must be considered together with the statutory center-of-life framework.",
       "The Quantitative Test – Statutory Day Presumptions\nThe Ordinance establishes two rebuttable presumptions based on physical presence:\nFirst Presumption: Physical presence in Israel for 183 days or more during the tax year.\n\nSecond Presumption: Physical presence in Israel for 30 days or more during the tax year, combined with presence of 425 days or more during that tax year and the two preceding tax years.",
-      "Importantly, these presumptions are rebuttable by both the taxpayer and the tax authority. An individual spending fewer than 183 days in Israel may still be classified as a resident if their center of life remains in Israel; conversely, an individual meeting a presumption may rebut it by establishing that their center of life has shifted abroad."
+      "Spending fewer than 183 days in Israel does not, by itself, establish non-resident status."
     ]
   },
-  RELOCATION_REPORTING.en,
-  RELOCATION_EXIT_TAX.en,
+  {
+    "h": "Form 1348: Supporting a Non-Residency Position",
+    "p": [
+      "Depending on the individual's Israeli filing obligations and the circumstances specified in the Income Tax Ordinance, a person taking the position that they are not an Israeli tax resident may be required to attach Form 1348 to the Israeli annual tax return.",
+      "The form requests factual information concerning days spent in Israel, permanent homes, family residence, employment and business activities, financial assets, medical coverage, National Insurance payments, and the foreign jurisdiction in which tax residency is claimed.",
+      "Filing Form 1348 does not constitute approval of non-resident status. The declared position remains subject to review and a different determination by the Israel Tax Authority.",
+      "[Israeli relocation tax advisory](/en/cpa-international)"
+    ]
+  },
+  {
+    "h": "Exit Tax under Section 100A of the Israeli Income Tax Ordinance",
+    "p": [
+      "Ceasing Israeli tax residency may require an analysis of Section 100A of the Israeli Income Tax Ordinance in relation to relevant assets and rights.",
+      "The application of Section 100A, the calculation of the relevant gain, and the associated reporting and payment consequences depend on the nature of the asset, the relevant dates, the individual's circumstances and the law applicable to the relevant tax year.",
+      "Relocation should not be described as automatically creating an immediate tax payment in every case."
+    ]
+  },
   {
     "h": "Stock Options, RSUs and Section 102 upon Relocation",
-    "p": ["The analysis depends on plan type, Section 102 applicability, grant and vesting dates, employment periods in Israel and abroad, realization or sale, tax residency and the applicable treaty. Potential Section 100A implications are reviewed separately where relevant."],
+    "p": [
+      "Relocation can create Israeli and foreign tax issues in relation to stock options, RSUs and other equity awards.",
+      "The analysis may depend on the type of plan, Section 102 where applicable, grant and vesting dates, periods of employment in Israel and abroad, realization or sale dates, tax residency and the applicable tax treaty.",
+      "Potential Section 100A implications should be reviewed separately where relevant."
+    ],
     "table": {
-  "headers": [
-    "Compensation Type",
-    "Key Relocation Issue"
-  ],
-  "rows": [
-    [
-      "Section 102 Options",
-      "Type of award, grant date and vesting periods"
-    ],
-    [
-      "RSUs",
-      "Employment periods in and outside Israel and realization or sale dates"
-    ],
-    [
-      "Other equity awards",
-      "Applicable tax treaty and case-specific review"
+      "headers": [
+        "Compensation Type",
+        "Key Relocation Issue"
+      ],
+      "rows": [
+        [
+          "Section 102 Options",
+          "Type of award, grant date and vesting periods"
+        ],
+        [
+          "RSUs",
+          "Employment periods in and outside Israel and realization or sale dates"
+        ],
+        [
+          "Other equity awards",
+          "Applicable tax treaty and case-specific review"
+        ]
+      ]
+    },
+    "afterTable": [
+      "No single linear allocation methodology should be assumed to apply universally to every stock-option or RSU arrangement."
     ]
-  ]
-},
-    "afterTable": [RELOCATION_FAQS.en[1].a.split("\n\n")[2]]
   },
   {
-    "h": "Income Tax Residency vs National Insurance Residency",
-    "p": RELOCATION_FAQS.en[0].a.split("\n\n")
+    "h": "Income Tax Residency vs. National Insurance Residency",
+    "p": [
+      "Israeli income-tax residency and National Insurance residency are assessed under separate legal and administrative frameworks.",
+      "The National Insurance Institute conducts its own center-of-life assessment and may consider the family unit as a whole. A request to terminate National Insurance residency may also be reviewed retrospectively if the individual or family later returns to Israel.",
+      "A filing or determination before one authority does not automatically determine the individual's status before the other. Contribution and health-insurance consequences should therefore be reviewed separately."
+    ]
   },
   {
-    "h": "5. Founders, Controlling Shareholders and Israeli Companies",
+    "h": "Founders, Controlling Shareholders and Israeli Companies",
     "p": [
       "Relocation by a founder or significant shareholder may have consequences not only for the individual but also for the company.",
       "Management and Control\nForeign tax authorities may argue that a company's effective management is exercised from the destination country.",
@@ -445,30 +467,63 @@ export const BLOG_POSTS_EN: BlogPostEn[] = [
     ]
   },
   {
-    "h": "8. Tax Treaties and Tie-Breaker Rules",
+    "h": "Tax Treaties and Tie-Breaker Rules",
     "p": [
       "Where an individual qualifies as a tax resident of two countries simultaneously, the applicable tax treaty may determine residency.",
       "Most Israeli treaties generally apply the following hierarchy:\nPermanent Home.\n\nCenter of Vital Interests.\n\nHabitual Abode.\n\nNationality.\n\nMutual Agreement Procedure (MAP)."
     ]
   },
-  ...destinationArticleSections("en"),
   {
-    "h": "Pre-Relocation Professional Checklist",
+    "h": "Relocation to the United States",
     "p": [
-      "Review expected Israeli and destination-country residency, the applicable treaty, days spent in each country, permanent home and family location, business activity and companies, assets and Section 100A, options and RSUs under Section 102, National Insurance and health coverage, and reporting obligations in both countries.",
-      "Before Departure\nReview assets and investments.\n\nAnalyze exit tax exposure.\n\nReview stock options and RSUs.\n\nConsider National Insurance implications.\n\nReview the applicable tax treaty.\n\nStructure employment arrangements properly.",
+      "Relocation from Israel to the United States requires consideration of both Israeli and US tax law and, where relevant, the Israel-US income tax treaty.",
+      "Federal and State Taxation:\nThe Israel-US income tax treaty primarily concerns US federal income taxation. State tax residency and income-tax rules must be reviewed separately, as individual US states may apply their own rules and may not apply federal treaty relief in the same manner.",
+      "US Tax Residency and Reporting:\nUS tax residency may arise under the Green Card Test or the Substantial Presence Test, subject to applicable calculation rules, exclusions, elections and treaty considerations.",
+      "US citizens, US tax residents and other individuals entering the US tax system may become subject to worldwide income reporting and foreign financial account or asset reporting requirements, including FBAR and FATCA, subject to the applicable thresholds, requirements and exceptions.",
+      "Equity Compensation:\nStock options, RSUs and other equity awards may require coordinated Israeli and US analysis based on the plan, Section 102 where applicable, grant and vesting dates, periods of employment in each country, realization dates and relevant treaty provisions.",
+      "Potential Section 100A issues should be considered separately."
+    ]
+  },
+  {
+    "h": "Cyprus and Greece: Destination-Country Tax Regimes and Israeli Residency",
+    "p": [
+      "Cyprus and Greece apply separate domestic tax regimes with different eligibility conditions. Obtaining local tax residency or a destination-country tax incentive does not, by itself, determine whether Israeli tax residency has ended.",
+      "Israeli law, destination-country law and the applicable treaty must be reviewed separately."
+    ]
+  },
+  {
+    "h": "United Kingdom and Europe",
+    "p": [
+      "The United Kingdom applies the Statutory Residence Test separately for each UK tax year. Where the statutory conditions for one of the Split Year cases are satisfied, Split Year Treatment applies under the UK rules; it is not simply an optional election.",
+      "The UK analysis should be coordinated with Israel's calendar-year tax system, Israeli residency rules and the applicable tax treaty.",
+      "Israel has bilateral social-security agreements with certain jurisdictions. Refer to such agreements only where actually applicable; do not imply that every European country has an agreement with Israel."
+    ]
+  },
+  {
+    "h": "Pre-Relocation Tax Checklist",
+    "p": [
+      "Before relocating from Israel, consider reviewing:",
+      "1. Expected Israeli tax-residency status.\n2. Tax residency in the destination country.\n3. The applicable bilateral tax treaty.\n4. Expected days in Israel and abroad.\n5. Permanent-home and family arrangements.\n6. Israeli companies and continuing business activity.\n7. Assets potentially relevant to Section 100A.\n8. Stock options, RSUs and Section 102 arrangements.\n9. National Insurance and health-insurance status.\n10. Reporting requirements in Israel and the destination country.",
       "Year of Departure\nMaintain records of travel days.\n\nPreserve relocation documentation.\n\nReview Israeli tax filing obligations.",
       "After Relocation\nMonitor visits to Israel.\n\nMaintain consistency with residency claims.\n\nTrack compliance obligations in the destination country."
     ]
   },
   {
-    "h": "10. Frequently Asked Questions",
+    "h": "Frequently Asked Questions",
     "p": [],
     "faqs": true
-  },
-
+  }
 ],
-    faqs: relocationArticleFaqs("en"),
+    faqs: [
+      {"q": "Do fewer than 183 days in Israel guarantee non-resident status?", "a": "No. Day counts are important, but residency must be assessed under the center-of-life framework together with the applicable rebuttable statutory presumptions."},
+      {"q": "Does filing Form 1348 confirm termination of Israeli tax residency?", "a": "No. Form 1348 reports facts supporting the position taken in the Israeli annual tax return where the relevant filing provisions apply. It does not constitute an advance approval or binding confirmation of non-resident status."},
+      {"q": "What is Israeli exit tax under Section 100A?", "a": "Section 100A may create Israeli tax consequences when a person ceases Israeli tax residency in relation to relevant assets and rights. Its application, calculation, reporting and payment consequences depend on the facts, the relevant asset and the law applicable to the relevant tax year."},
+      {"q": "How can relocation affect stock options and RSUs?", "a": "The analysis may depend on the plan, Section 102 where applicable, grant and vesting dates, work periods in different countries, realization dates, tax residency and treaty provisions. Potential Section 100A implications should be reviewed separately."},
+      {"q": "Is National Insurance residency automatically terminated when income-tax residency ends?", "a": "No. Income-tax residency and National Insurance residency are separate determinations under different legal and administrative frameworks."},
+      RELOCATION_FAQS.en[2],
+      RELOCATION_FAQS.en[3],
+      ...DESTINATION_FAQS.en,
+    ],
     disclaimer: "The information contained in this guide is provided for general informational purposes only and does not constitute tax advice, legal advice, a professional opinion, or an official position of the Israel Tax Authority, the National Insurance Institute, or any other authority. Determining tax residency, applying Section 100A, interpreting tax treaties, and complying with international reporting obligations require an individualized review of the relevant facts, documentation, and circumstances. Consultation with a qualified CPA specializing in international taxation is strongly recommended before taking any action based on this guide.",
   },
   {

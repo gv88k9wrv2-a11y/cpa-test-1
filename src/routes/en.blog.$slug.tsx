@@ -167,6 +167,42 @@ function BlogPostPageEn() {
     .map((slug) => BLOG_POSTS_EN.find((p) => p.slug === slug))
     .filter((p): p is BlogPostEn => p !== undefined && p.slug !== post.slug);
 
+  const relatedService = post.relatedService ? (
+            <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
+              <h2 className="font-display text-xl font-bold text-primary">
+                Related professional service
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <Link
+                  to={post.relatedService.href}
+                  className="font-semibold text-primary hover:text-gold-text hover:underline"
+                >
+                  {post.relatedService.label}
+                </Link>
+              </p>
+              {CFO_SLUGS.has(post.slug) ? (
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Ongoing financial management:{" "}
+                  <Link
+                    to="/en/fractional-cfo"
+                    className="font-semibold text-primary hover:text-gold-text hover:underline"
+                  >
+                    Fractional CFO services in Israel
+                  </Link>
+                </p>
+              ) : null}
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Meet us at the office:{" "}
+                <Link
+                  to="/en/cpa-herzliya"
+                  className="font-semibold text-primary hover:text-gold-text hover:underline"
+                >
+                  CPA in Herzliya Pituach
+                </Link>
+              </p>
+            </aside>
+          ) : null;
+
   return (
     <div className="min-h-screen bg-background">
       <SiteHeaderEn />
@@ -201,12 +237,18 @@ function BlogPostPageEn() {
               })}
             </span>
             <span aria-hidden="true">·</span>
-            {post.modifiedDate ? <span>Updated: {new Date(post.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}</span> : null}
+            {post.modifiedDate && !relocation ? <span>Updated: {new Date(post.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}</span> : null}
             <span className="inline-flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5" aria-hidden />
               {post.readMin} min read
             </span>
           </div>
+
+          {relocation && post.modifiedDate ? (
+            <p className="mt-3 text-xs text-muted-foreground">
+              Reviewed and Updated: {new Date(post.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
+            </p>
+          ) : null}
 
           {post.image ? (
             <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-xl">
@@ -252,7 +294,14 @@ function BlogPostPageEn() {
                   </p>
                 ))}
                 {s.faqs && post.faqs?.length ? <BlogFaqList faqs={post.faqs} lang="en" /> : null}
-                {relocation && index === 0 ? <div className="mt-8"><SummaryBox text={post.excerpt} lang="en" /></div> : null}
+                {relocation && index === 0 ? (
+                  <aside aria-label="Key Takeaways" data-summary="key-takeaways" className="mt-8 rounded-lg border border-gold/40 bg-card p-5 shadow-sm">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-gold-text">Key Takeaways</p>
+                    <ul className="mt-2 list-disc space-y-2 pl-5 leading-relaxed text-foreground">
+                      {post.excerpt.split("\n").map(point => <li key={point}>{point}</li>)}
+                    </ul>
+                  </aside>
+                ) : null}
                 {!relocation && conversion?.afterSection === index ? (
                   <FocusedConversionCta lang="en" topic={conversion.topic} className="mt-8" />
                 ) : null}
@@ -287,41 +336,7 @@ function BlogPostPageEn() {
             </section>
           ) : null}
 
-          {post.relatedService ? (
-            <aside className="mt-14 rounded-2xl border border-border bg-secondary/40 p-6">
-              <h2 className="font-display text-xl font-bold text-primary">
-                Related professional service
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                <Link
-                  to={post.relatedService.href}
-                  className="font-semibold text-primary hover:text-gold-text hover:underline"
-                >
-                  {post.relatedService.label}
-                </Link>
-              </p>
-              {CFO_SLUGS.has(post.slug) ? (
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Ongoing financial management:{" "}
-                  <Link
-                    to="/en/fractional-cfo"
-                    className="font-semibold text-primary hover:text-gold-text hover:underline"
-                  >
-                    Fractional CFO services in Israel
-                  </Link>
-                </p>
-              ) : null}
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                Meet us at the office:{" "}
-                <Link
-                  to="/en/cpa-herzliya"
-                  className="font-semibold text-primary hover:text-gold-text hover:underline"
-                >
-                  CPA in Herzliya Pituach
-                </Link>
-              </p>
-            </aside>
-          ) : null}
+          {!relocation ? relatedService : null}
 
           <div className="mt-14 rounded-2xl bg-primary p-8 text-center text-primary-foreground">
             <h2 className="font-display text-2xl font-bold">
@@ -356,6 +371,8 @@ function BlogPostPageEn() {
           {/* Required on all professional-content pages. Do not remove or duplicate. */}
 
           <ProfessionalDisclaimer lang="en" text={post.disclaimer} className="mt-10" />
+
+          {relocation ? relatedService : null}
 
           {related.length > 0 && (
             <aside className="mt-14 border-t border-border pt-10">

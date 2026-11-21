@@ -11,7 +11,11 @@ describe("approved relocation legal rules", () => {
   ];
   test("income-tax and National Insurance determinations use the approved separate-framework answer", () => {
     for (const [index, lang] of (["he", "en"] as const).entries()) {
-      expect(posts[index]?.faqs).toContain(RELOCATION_FAQS[lang][0]);
+      if (lang === "he") {
+        expect(posts[index]?.faqs).toContain(RELOCATION_FAQS.he[0]);
+      } else {
+        expect(posts[index]?.faqs?.find(f => f.q === "Is National Insurance residency automatically terminated when income-tax residency ends?")?.a).toContain("separate determinations under different legal and administrative frameworks");
+      }
       expect(EXPANDED_FAQS.international[lang]).toContain(RELOCATION_FAQS[lang][0]);
     }
   });
@@ -20,7 +24,11 @@ describe("approved relocation legal rules", () => {
       const exit = posts[index]?.sections.find(s => s.h.includes(lang === "he" ? "מס יציאה" : "Exit Tax"));
       const equity = posts[index]?.sections.find(s => s.table);
       expect(exit?.p.join(" ")).toContain(lang === "he" ? "סעיף 100א" : "Section 100A");
-      expect(equity?.afterTable).toEqual([RELOCATION_FAQS[lang][1].a.split("\n\n")[2]]);
+      if (lang === "he") {
+        expect(equity?.afterTable).toEqual([RELOCATION_FAQS.he[1].a.split("\n\n")[2]]);
+      } else {
+        expect(equity?.afterTable?.join(" ")).toContain("No single linear allocation methodology should be assumed to apply universally");
+      }
     }
   });
   test("advance planning remains a recommendation, not a statutory requirement", () => {
