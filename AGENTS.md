@@ -42,3 +42,5 @@
 - Service pages opt into `sectionNavigation` to render a top TOC from section titles; anchors use the section id or a stable `topic-N` fallback so links always match headings.
 
 - Legal leaf routes keep approved text literal in the existing legal-page layout, while footer-only legal link lists stay separate from mobile navigation to avoid unrelated menu changes.
+
+- Homepage FAQ JSON-LD reads the same localized HOME_CONTENT FAQs as the visible accordion, with one FAQPage per leaf route, to prevent content/schema drift.
