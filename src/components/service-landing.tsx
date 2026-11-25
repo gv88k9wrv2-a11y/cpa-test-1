@@ -15,6 +15,8 @@ import { GoogleReviewsBadge } from "./social-proof";
 export type ServiceFAQ = {
   q: string;
   a: string;
+  /** Inline presentation must preserve the plain answer used by JSON-LD. */
+  answerContent?: ReactNode;
   /** Optional pointer to a full guide, rendered as a link below the answer text. */
   link?: { label: string; to: string; params?: Record<string, string> };
 };
@@ -198,7 +200,7 @@ export function ServiceLanding({
                     {f.q}
                   </summary>
                   <div className="mt-3 text-sm leading-relaxed text-muted-foreground whitespace-pre-line">
-                    {f.a}
+                    {f.answerContent ?? f.a}
                     {f.link ? (
                       <p className="mt-3 font-semibold whitespace-normal">
                         <Link

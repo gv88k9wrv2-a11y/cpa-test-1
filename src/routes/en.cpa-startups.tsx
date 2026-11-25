@@ -7,7 +7,10 @@ import heroImg from "../assets/service-startups.webp";
 
 const BASE = "https://nimrodi.co.il";
 const FAQS = [
-  ...EXPANDED_FAQS.startups.en,
+  ...EXPANDED_FAQS.startups.en.map((faq, index) => index === 0 ? {
+    ...faq,
+    answerContent: <>{faq.a.slice(0, -"Preferred Technological Enterprise (PTE) guide.".length)}<Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">Preferred Technological Enterprise (PTE) guide</Link>.</>,
+  } : faq),
   {
     q: "When does a startup need a CPA?",
     a: "Accounting and tax input may be useful before or shortly after incorporation, depending on the proposed structure, jurisdictions, financing plans, founders’ arrangements and equity-compensation model. US legal and tax matters should be reviewed with appropriately qualified US advisers.",
@@ -143,7 +146,7 @@ export const Route = createFileRoute("/en/cpa-startups")({
         },
         {
           title: "Preferred Technological Enterprise and Israeli Startup Tax Incentives",
-          body: <>Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law (see our guide to <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">Preferred Technological Enterprise (PTE) eligibility</Link>). Within the agreed scope, the firm can assist with an initial eligibility review, preparation of accounting and tax information, and relevant filings. Eligibility, the applicable rate and acceptance of the company’s position remain subject to the law, the facts and the decisions of the relevant authorities:</>,
+          body: <>Companies that meet the applicable statutory conditions may be eligible for tax benefits under the Capital Investments Encouragement Law (see our guide to <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">Preferred Technological Enterprise (PTE) eligibility</Link>). Within the agreed scope, the firm can assist with an initial eligibility review, preparation of accounting and tax information, and relevant filings. Eligibility, the applicable rate and acceptance of the company’s position remain subject to the law, the facts and the decisions of the relevant authorities: For a detailed review of the eligibility tests, Nexus rules and reporting requirements, see our <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">Preferred Technological Enterprise (PTE) guide</Link>.</>,
           bullets: [
             "Assessment of startup eligibility for Preferred Technological Enterprise tax benefits in Israel",
             "Assessment of potential eligibility for Special Preferred Technological Enterprise tax benefits in Israel",

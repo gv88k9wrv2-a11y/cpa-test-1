@@ -53,7 +53,7 @@ export const EXPANDED_FAQS: Record<"international" | "startups" | "herzliya", Re
     "he": [
       {
         "q": "מהם התנאים העיקריים להכרה כ״מפעל טכנולוגי מועדף״ (PTE) ואיזה מס חברות משלמים?",
-        "a": "חברה בעלת מפעל טכנולוגי מועדף לפי החוק לעידוד השקעות הון עשויה ליהנות ממס חברות מופחת של 12% (או 7.5% באזור פיתוח א׳), ומס מופחת על חלוקת דיבידנד (לרוב 20% או 4% לתושבי חוץ בתנאים מסוימים). התנאים המרכזיים כוללים: הכנסות קבוצתיות הנמוכות מ־10 מיליארד ₪; מחקר ופיתוח בהיקף של לפחות 7% מהמחזור או 20 מיליון ₪ לפחות, לצד עמידה באחד מתנאי החדשנות (גידול בעובדים, השקעת קרן הון סיכון, רישום פטנט וכו'); עמידה במבחן מפעל תחרותי (יצוא של לפחות 25% מהכנסות המפעל לשווקים זרים); וחישוב הרווח הטכנולוגי הזכאי בהתאם לנוסחת ה-Nexus של ה-OECD."
+        "a": "חברה בעלת מפעל טכנולוגי מועדף העומדת בתנאים הקבועים בדין עשויה להיות זכאית לשיעורי מס מופחתים על הכנסה טכנולוגית מועדפת. הזכאות נבחנת לפי מכלול התנאים הרלוונטיים, לרבות מאפייני החברה והקבוצה, פעילות מו״פ, עובדים וצמיחה, השקעות, נכס לא מוחשי מוטב, מבחני מפעל בר־תחרות וכללי Nexus. אין די בנתון יחיד לקביעת זכאות, ונדרשת בחינה פרטנית לשנת המס הרלוונטית. להרחבה ראו את המדריך למפעל טכנולוגי מועדף (PTE)."
       },
       {
         "q": "מה ההבדל בין הקצאת אופציות במסלול הוני לעומת מסלול פירותי לפי סעיף 102?",
@@ -71,7 +71,7 @@ export const EXPANDED_FAQS: Record<"international" | "startups" | "herzliya", Re
     "en": [
       {
         "q": "What are the key eligibility requirements and tax rates for a Preferred Technological Enterprise (PTE)?",
-        "a": "Companies qualifying as a Preferred Technological Enterprise (PTE) under the Law for the Encouragement of Capital Investments enjoy a reduced corporate income tax rate of 12% (or 7.5% in Development Zone A), alongside reduced withholding tax on dividends (typically 20%, or 4% for eligible foreign corporate shareholders). Key conditions include: consolidated group revenues under NIS 10 billion; R&D expenditures representing at least 7% of revenues or NIS 20 million, combined with satisfying recognized innovation criteria (e.g., headcount growth, VC funding, patent registration); meeting the competitive enterprise threshold (at least 25% of sales to export markets); and calculating qualifying technological income according to the OECD Nexus approach."
+        "a": "A company with a Preferred Technological Enterprise that satisfies the applicable statutory requirements may qualify for reduced tax rates on Preferred Technological Income. Eligibility requires a case-specific review including the company/group characteristics, R&D activity, workforce and growth, relevant investment, qualifying IP, competitive-enterprise tests and Nexus rules. No single threshold is sufficient by itself to establish eligibility, and a tax-year-specific review is required. For further detail, see our Preferred Technological Enterprise (PTE) guide."
       },
       {
         "q": "What is the difference between the Capital Gains Track and Ordinary Income Track under Section 102?",

@@ -6,7 +6,10 @@ import { ServiceLanding, buildFaqJsonLd } from "../components/service-landing";
 import heroImg from "../assets/service-startups.webp";
 
 const FAQS = [
-  ...EXPANDED_FAQS.startups.he,
+  ...EXPANDED_FAQS.startups.he.map((faq, index) => index === 0 ? {
+    ...faq,
+    answerContent: <>{faq.a.slice(0, -"המדריך למפעל טכנולוגי מועדף (PTE).".length)}<Link to="/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">המדריך למפעל טכנולוגי מועדף (PTE)</Link>.</>,
+  } : faq),
   {
     q: "מתי סטארטאפ צריך רואה חשבון?",
     a: "כבר לפני הקמת החברה. בחירת מבנה נכון (חברה בע״מ / חברת החזקות), הסכמי מייסדים, שיוך הוני (Founders equity), טיפול נכון ב-vesting וב-83b election – משפיעים על ההכנסה, המס וההצלחה בגיוסים הבאים.",
@@ -164,7 +167,7 @@ export const Route = createFileRoute("/cpa-startups")({
         },
         {
           title: "בחינת הטבות מס ומסלולי סיוע אפשריים לחברות טכנולוגיה",
-          body: <>חברות טכנולוגיה העומדות בתנאים הקבועים בדין עשויות להיות זכאיות להטבות או למסלולי סיוע (ראו <Link to="/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">תנאי זכאות למפעל טכנולוגי מועדף (PTE)</Link>). ניתן לסייע בבחינת זכאות אפשרית, בהכנת מידע ובדיווחים הנדרשים במסגרת השירות המוסכם. הזכאות, שיעור ההטבה והאישור נקבעים לפי הדין, הנתונים והחלטות הרשויות הרלוונטיות:</>,
+          body: <>חברות טכנולוגיה העומדות בתנאים הקבועים בדין עשויות להיות זכאיות להטבות או למסלולי סיוע (ראו <Link to="/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">תנאי זכאות למפעל טכנולוגי מועדף (PTE)</Link>). ניתן לסייע בבחינת זכאות אפשרית, בהכנת מידע ובדיווחים הנדרשים במסגרת השירות המוסכם. הזכאות, שיעור ההטבה והאישור נקבעים לפי הדין, הנתונים והחלטות הרשויות הרלוונטיות: להרחבה על מבחני הזכאות, כללי ה־Nexus ודרישות הדיווח, ראו את <Link to="/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">המדריך למפעל טכנולוגי מועדף (PTE)</Link>.</>,
           bullets: [
             "בחינת זכאות אפשרית להטבות מפעל מועדף או מפעל טכנולוגי מועדף",
             "בחינת מסלולי סיוע אפשריים של רשות החדשנות בהתאם לפעילות, לשלב החברה ולתנאי המסלול",
