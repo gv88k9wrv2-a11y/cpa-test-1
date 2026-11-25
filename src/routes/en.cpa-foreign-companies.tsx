@@ -99,10 +99,27 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
       ]}
       sections={[
         {
+          id: "activity-type",
+          navTitle: "Nature of the Israeli Operation",
+          title: "The Nature of the Israeli Operation Matters",
+          body: (
+            <>
+              <p>Before choosing an Israeli subsidiary, branch, EOR or another structure, the group should first define what the Israeli operation will actually do. The nature of the activity may affect tax registrations, payroll, transfer pricing, intercompany agreements, group reporting and potential permanent-establishment exposure.</p>
+              <p className="mt-3"><strong>Holding Company</strong> — review of investments, financing, dividends, related-party transactions and group reporting.</p>
+              <p className="mt-3"><strong>Service Company</strong> — review of the service model, cost base, intercompany remuneration, personnel and transfer-pricing documentation.</p>
+              <p className="mt-3"><strong>R&amp;D Center</strong> — review of R&amp;D expenditure, employees, intellectual property, DEMPE functions, transfer pricing and potential Israeli technology incentives.</p>
+              <p className="mt-3"><strong>Trading Company</strong> — review of sales, imports and exports, inventory, VAT, customer and supplier credit, and related-party transactions. Customs, import-licensing and trade-regulatory matters are coordinated with appropriately qualified advisers where required.</p>
+              <p className="mt-3">The appropriate structure cannot be determined from the activity label alone. The facts, parent jurisdiction, applicable tax treaty, agreements, employees, assets and planned Israeli operations should be reviewed together.</p>
+            </>
+          ),
+        },
+        {
+          id: "topic-1",
           title: "Israeli Subsidiary, Branch, and Operating Structure Review",
           body: "Possible operating structures may include an Israeli subsidiary, branch, Employer of Record or another arrangement. The accounting and tax review depends on the planned activity, scale, treaty position, intellectual-property arrangements, employment model and future plans. Legal aspects are reviewed separately with qualified counsel.",
         },
         {
+          id: "topic-2",
           title: "Accounting and Tax Support for Setting Up Operations in Israel",
           body: "Once the proposed structure has been selected, we can assist with the accounting, tax and reporting aspects:",
           bullets: [
@@ -114,6 +131,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
         {
+          id: "topic-3",
           title: "Global payroll coordination for Israeli operations",
           body: "Employing personnel in Israel may involve payroll, tax, pension, insurance and employment-law requirements. The agreed service may include the following payroll and reporting activities, while legal, pension and insurance advice is coordinated separately:",
           bullets: [
@@ -126,12 +144,19 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
         {
+          id: "topic-4",
           title: "Ongoing management & parent reporting",
-          body: "After setup, the agreed services may include bookkeeping, payroll coordination, tax reporting and group-reporting information. Responsibilities for financial statements, management decisions and external audit are defined separately and remain subject to applicable independence requirements.",
+          body: "After setup, the agreed services may include bookkeeping, payroll coordination, tax reporting and group-reporting information. Responsibilities for financial information and statements, accounting and compliance services, management decisions, legal advice and statutory audit are defined separately under the applicable law and engagement terms. Where the firm acts as statutory auditor, any additional services are assessed in advance under the applicable independence requirements and the circumstances of the engagement.",
         },
         {
+          id: "topic-5",
           title: "Israeli Transfer Pricing and BEPS Documentation",
-          body: "For foreign companies in Israel with material related-party transactions, the firm may assist with Israeli transfer pricing analysis and documentation based on the entities, transactions, functions, assets, risks, available information, and rules applying to the relevant period:",
+          body: (
+            <>
+              <p>For foreign companies in Israel with material related-party transactions, the firm may assist with Israeli transfer pricing analysis and documentation based on the entities, transactions, functions, assets, risks, available information, and rules applying to the relevant period:</p>
+              <p className="mt-3">An international transaction with a related foreign party, as defined under Section 85A of the Israeli Income Tax Ordinance and the regulations issued under it, must be reported on Israel Tax Authority Form 1385 as part of the annual tax return. As a general rule, a separate form is completed for each reported transaction. The form includes, among other matters, the related party, the nature and type of the transaction, the transfer-pricing method, the profitability rate where applicable, the transaction amount, and a declaration that the transaction was conducted on arm’s-length terms. The scope of any market-conditions study and supporting documentation should be assessed separately under the applicable law and the circumstances of the relevant tax year.</p>
+            </>
+          ),
           bullets: [
             "Transfer pricing benchmarking and comparable-company data review within the agreed scope",
             "Review of the transfer pricing method based on the activity, available data, and applicable Israeli rules",
@@ -142,6 +167,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
         {
+          id: "topic-6",
           title: "Cross-Border Intellectual Property Tax Analysis",
           body: "The location and use of a group's intellectual property may affect its effective tax rate, royalty flows, transfer pricing, and transaction analysis. We assist with the Israeli accounting and tax review of proposed intellectual property structures in Israel and abroad, with qualified legal and other advisers involved where required:",
           bullets: [
@@ -155,6 +181,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
         {
+          id: "topic-7",
           title: "Israeli Tax Incentives for Foreign-Owned Companies",
           body: <>Foreign-owned Israeli subsidiaries may qualify for Israeli <Link to="/en/blog/$slug" params={{ slug: "preferred-technological-enterprise" }} className="text-gold-text underline underline-offset-2">tax incentives for technology companies in Israel</Link> or Israel Innovation Authority support, subject to the relevant program, eligibility conditions, required approvals, and law applying at the relevant time:</>,
           bullets: [
@@ -166,6 +193,7 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           ],
         },
         {
+          id: "topic-8",
           title: "Fractional CFO Services for Foreign Companies in Israel",
           body: "Foreign groups operating in Israel may require local financial reporting, budgeting, payroll coordination, and communication with overseas headquarters. Subject to the agreed scope and independence requirements, the firm can provide fractional CFO services and coordinate with the company’s accounting, tax, audit, and legal advisers.",
           bullets: [
@@ -188,6 +216,10 @@ export const Route = createFileRoute("/en/cpa-foreign-companies")({
           {
             label: "Israel Tax Authority: International Taxation and Tax Treaties",
             href: "https://www.gov.il/en/departments/israel_tax_authority",
+          },
+          {
+            label: "Israel Tax Authority – Form 1385: International Transactions with Related Foreign Parties",
+            href: "https://www.gov.il/en/service/itc-1385",
           },
         ],
       }}

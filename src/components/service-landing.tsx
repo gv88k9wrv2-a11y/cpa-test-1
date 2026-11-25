@@ -28,7 +28,7 @@ export type ServiceLandingProps = {
   highlights: string[];
   topicNavigation?: ReactNode;
   sectionNavigation?: boolean;
-  sections: { id?: string; title: string; body: ReactNode; bullets?: string[] }[];
+  sections: { id?: string; navTitle?: string; title: string; body: ReactNode; bullets?: string[] }[];
   faqs: ServiceFAQ[];
   ctaHeadline?: string;
   ctaText?: string;

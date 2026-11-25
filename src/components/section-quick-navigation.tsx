@@ -7,7 +7,7 @@ export function SectionQuickNavigation({
   sections,
 }: {
   lang: "he" | "en";
-  sections: { id?: string; title: string }[];
+  sections: { id?: string; title: string; navTitle?: string }[];
 }) {
   const heading = lang === "he" ? "ניווט מהיר בעמוד:" : "Quick Page Navigation:";
   return (
@@ -20,7 +20,7 @@ export function SectionQuickNavigation({
               href={`#${sectionAnchorId(s, i)}`}
               className="text-primary underline decoration-gold/60 underline-offset-4 hover:text-gold-text"
             >
-              {s.title}
+              {s.navTitle ?? s.title}
             </a>
           </li>
         ))}
