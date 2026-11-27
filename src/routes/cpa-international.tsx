@@ -151,6 +151,9 @@ export const Route = createFileRoute("/cpa-international")({
                 הדיווח, בהתאם לנתונים ולהוראות הדין.
               </p>
               <p className="mt-4">
+                להעמקה בסממנים המשפחתיים, הכלכליים והחברתיים הנבחנים בקביעת תושבות, ראו את <Link to="/blog/$slug" params={{ slug: "center-of-life-tax-residency" }} className="text-primary underline decoration-gold/60 underline-offset-4 hover:decoration-gold">המדריך למבחן מרכז החיים לצורכי מס</Link>.
+              </p>
+              <p className="mt-4">
                 <Link
                   to="/blog/$slug"
                   params={{ slug: "relocation-tax-residency-israel" }}

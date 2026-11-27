@@ -36,7 +36,13 @@ export const Route = createFileRoute("/individuals")({
       h1="יחידים ועצמאים"
       intro="שירותי מס ודיווח ליחידים ולעצמאים, לרבות דוחות שנתיים, הצהרות הון, קריפטו, שכר דירה, רילוקיישן, גילוי מרצון והחזרי מס."
       instruction="בחרו את הנושא המתאים כדי להגיע לעמוד השירות הרלוונטי."
-      groups={INDIVIDUALS_GROUPS_HE}
+      groups={INDIVIDUALS_GROUPS_HE.map((group) => group.title === "נכסים והכנסות" ? {
+        ...group,
+        items: group.items.flatMap((item) => item.hash === "investments-options-digital-assets" && item.label === "קריפטו ונכסים דיגיטליים" ? [
+          item,
+          { label: "הפקדת כספי קריפטו בבנק בישראל", to: "/blog/crypto-funds-bank-israel" },
+        ] : [item]),
+      } : group)}
       ctaLabel="צור קשר →"
       ctaTo="/contact"
     />
